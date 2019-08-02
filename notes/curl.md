@@ -1,8 +1,8 @@
 ---
-tags: [bash, heredoc, linux/network]
+tags: [bash, heredoc]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2019-08-02T06:57:15.223Z'
+modified: '2019-08-02T07:39:38.335Z'
 ---
 
 # curl

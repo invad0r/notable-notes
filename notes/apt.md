@@ -1,8 +1,8 @@
 ---
-tags: [linux/packagemanager]
+tags: [linux]
 title: apt
 created: '2019-07-30T20:20:43.614Z'
-modified: '2019-07-30T20:35:53.347Z'
+modified: '2019-08-02T07:39:15.247Z'
 ---
 
 # apt

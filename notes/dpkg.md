@@ -1,8 +1,8 @@
 ---
-tags: [linux/packagemanager]
+tags: [linux]
 title: dpkg
 created: '2019-07-30T20:19:32.637Z'
-modified: '2019-07-30T20:25:02.659Z'
+modified: '2019-08-02T07:39:15.248Z'
 ---
 
 # dpkg

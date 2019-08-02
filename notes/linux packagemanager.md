@@ -1,8 +1,8 @@
 ---
-tags: [linux, linux/packagemanager]
+tags: [linux]
 title: linux packagemanager
 created: '2019-07-30T06:19:49.268Z'
-modified: '2019-07-30T20:39:56.137Z'
+modified: '2019-08-02T07:39:15.249Z'
 ---
 
 # linux packagemanager
