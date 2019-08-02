@@ -1,8 +1,8 @@
 ---
-tags: [container/docker, linux/packagemanager]
+tags: [container/docker, linux]
 title: apk
 created: '2019-07-30T20:26:52.476Z'
-modified: '2019-07-30T20:37:01.456Z'
+modified: '2019-08-02T07:39:15.243Z'
 ---
 
 # apk
