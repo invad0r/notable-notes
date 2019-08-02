@@ -1,8 +1,8 @@
 ---
-tags: [editor, packagemanager]
+tags: [editor]
 title: atom
 created: '2019-07-30T06:19:48.989Z'
-modified: '2019-07-30T07:56:20.695Z'
+modified: '2019-07-30T20:37:25.171Z'
 ---
 
 # atom

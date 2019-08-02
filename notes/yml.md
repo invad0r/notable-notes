@@ -1,8 +1,8 @@
 ---
-tags: [lang/yaml]
+tags: [yml]
 title: yml
 created: '2019-07-30T06:19:49.267Z'
-modified: '2019-07-30T08:46:23.526Z'
+modified: '2019-08-01T08:23:13.011Z'
 ---
 
 # yml

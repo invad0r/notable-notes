@@ -62,7 +62,7 @@ xxd docker-compose.yml    # hexdump of file
 
 ## table hexadecimal
 
-```text
+```
 #     _0    _1    _2    _3    _4    _5    _6    _7    _8    _9    _A    _B    _C    _D    _E    _F
 
 # 0_  NUL   SOH   STX   ETX   EOT   ENQ   ACK   BEL   BS    HT    LF    VT    FF    CR    SO    SI
