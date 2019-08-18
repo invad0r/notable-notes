@@ -2,14 +2,12 @@
 tags: [bash, bash/builtin]
 title: bash fc
 created: '2019-07-30T06:19:49.048Z'
-modified: '2019-08-02T06:50:07.514Z'
+modified: '2019-08-18T19:16:37.887Z'
 ---
 
 # bash fc
-
-`fix command`
-> open last command from history in editor and run
-
+> `fix command` - open last command from history in editor and run
+[[bash history]]
 
 ```sh
 fc -l -1000       # list last 1000 command from history

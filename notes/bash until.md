@@ -2,7 +2,7 @@
 tags: [bash, bash/keyword]
 title: bash until
 created: '2019-07-30T06:19:49.023Z'
-modified: '2019-08-02T08:39:01.453Z'
+modified: '2019-08-18T19:34:02.139Z'
 ---
 
 # bash until
@@ -22,5 +22,4 @@ until nc -z -v -w30 "$DB_HOST" "$DB_PORT"; do
 done
 ```
 
-### see also
-- [nc](:note:56c4ea6dc4bb6d30d593)
+see also: [[nc]]
