@@ -2,7 +2,7 @@
 tags: [git]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2019-07-30T06:34:05.985Z'
+modified: '2019-08-16T06:03:41.475Z'
 ---
 
 # git
@@ -63,20 +63,6 @@ git stash       # Put your current changes into stash.
 git stash pop   # Apply stored stash content into working directory, and clear stash.
 
 git status      # Clear stash without applying it into working directory
-```
-
-
-### BRANCHING MODEL
-```sh
-git branch [-l|-r|-a]       # List branches -l: local, -r: remote, -a: local and remote
-
-git branch [name]           # Create new branch, referencing the current HEAD
-
-git checkout [-b] [name]    # Switch working directory  to the specified branch. With -b: Git will create he specified branch if it does not exist
-
-git merge [from name]       # Join specified [from name] branch into your current branch (the one you are on currenlty).
-
-git branch -d [name]        # Remove selected branch, if it is already merged into any other. -D  instead of -d  forces deletion.
 ```
 
 ### log - review work
