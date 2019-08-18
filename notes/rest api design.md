@@ -2,7 +2,7 @@
 tags: [api]
 title: rest api design
 created: '2019-07-30T06:19:49.224Z'
-modified: '2019-07-30T07:13:58.842Z'
+modified: '2019-08-18T16:28:39.567Z'
 ---
 
 # rest api design
@@ -48,7 +48,7 @@ You should use medium grained, not fine nor coarse. Resources shouldn’t be nes
 
 ### consider the following five subdomains
 |||
-|--|--|
+|--                |--                                      |
 | Production       | https://api.fakecompany.com            |
 | Tests            | https://api.sandbox.fakecompany.com    |
 | Developer portal | https://developers.fakecompany.com     |
@@ -86,6 +86,9 @@ e.g.: an order contains products.
 `GET /orders/1234/products/1`
 
 ## CRUD-like operations
+
+[[acronym]]
+
 Use HTTP verbs for CRUD operations `Create/Read/Update/Delete`
 | HTTP Verb  | Collection `/orders` | Instance `/orders/{id}` |
 |--|--|--|
