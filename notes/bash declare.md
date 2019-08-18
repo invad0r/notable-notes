@@ -2,32 +2,31 @@
 tags: [bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2019-07-30T06:22:29.786Z'
+modified: '2019-08-18T19:48:38.694Z'
 ---
 
 # bash declare
 
-`declare` and `typeset` are synonym
+`declare` and [[bash typeset]] are synonym
 
 ```sh
-declare
+declare -r foo=bar        # readonly
+  
+declare -i                # integer
+  
+declare -a                # array
+  
+declare -A                # associative array !
+  
+declare -f                # function(s)
+  
+declare -x                # export
+  
+declare -x var=$value
+```
 
-  -r # readonly
-  
-  -i # integer
-  
-  -a # array
-  
-  -A # associative array !
-  
-  -f # function(s)
-  
-  -x # export
-  
-  -x var=$value
-
-# just using the option prints all values of one type
-
+## print all values of one type
+```sh
 declare -xp         #  exported vairables
 
 declare -f          # list sourced functions
@@ -36,7 +35,9 @@ declare -F          # list only function names
 
 declare -p          # show variables
 
+```
 
+```sh
 declare -a                   # variables are treated as arrays
 
 declare -A                   # variables are treated as associative arrays

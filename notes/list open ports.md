@@ -2,22 +2,12 @@
 tags: [network]
 title: list open ports
 created: '2019-07-30T06:19:49.165Z'
-modified: '2019-08-02T07:48:12.341Z'
+modified: '2019-08-18T19:39:46.360Z'
 ---
 
 # list open ports
 
-## ss -tuna,please!
-```sh
-ss -tunapls
-  # -n - dont try to resolve ip addresses
-  # -p show PIDs using the sockat
-  # listening or connection         which protocols ?
-  # default: connections            default: all
-  # -l listening                      -t: TCP
-  # -a both                           -u: UDP
-  #                                   -x: unix domain sockets
-```
+- tuna,please! [[ss]]
 
 ## netstat
 ```sh

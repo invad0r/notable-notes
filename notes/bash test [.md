@@ -2,7 +2,7 @@
 tags: [bash, bash/builtin]
 title: 'bash test ['
 created: '2019-07-30T06:19:49.021Z'
-modified: '2019-08-02T08:40:25.908Z'
+modified: '2019-08-18T19:43:14.025Z'
 ---
 
 # bash test [
@@ -43,6 +43,7 @@ file1 -ot file2           # file1 is older than file2
 ```
 
 ### int
+[[bash arithmetic]]
 ```sh
 # arg1 and arg2 may be positive or negative integers
 arg1 -lt arg2             # less than

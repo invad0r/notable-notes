@@ -2,7 +2,7 @@
 tags: [bash, bash/builtin]
 title: bash set
 created: '2019-07-30T06:19:49.019Z'
-modified: '2019-08-18T15:40:45.385Z'
+modified: '2019-08-18T19:45:08.924Z'
 ---
 
 # bash set
@@ -10,7 +10,7 @@ modified: '2019-08-18T15:40:45.385Z'
 > modify shell behavior
 > Set or unset values of shell options and positional parameters.
 
-[[bash unset]]
+[[bash unset]], [[bash environment]]
 
 ```sh
 set 1 2 3 | echo $@     # set positional params

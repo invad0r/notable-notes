@@ -1,11 +1,11 @@
 ---
 tags: [network]
-title: ip arping ethtool ss
+title: ip arping ethtool
 created: '2019-07-30T06:19:49.082Z'
-modified: '2019-08-02T07:48:12.350Z'
+modified: '2019-08-18T19:36:13.640Z'
 ---
 
-# ip arping ethtool ss
+# ip arping ethtool
 
 ```sh
 ls -l /sys/class/net    # show interfaces
@@ -116,16 +116,6 @@ ethtool -g eth0   # Display ring buffer for eth0
 ethtool -i eth0   # Display driver information for eth0
 ethtool -p eth0   # Identify eth0 by sight, typically by causing LEDs to blink on the network port
 ethtool -S eth0   # Display network and driver statistics for eth0
-```
-
-## ss
-```sh
-ss      # Display socket statistics. The below options can be combined
-ss -a   # Show all sockets (listening and non-listening)
-ss -e   # Show detailed socket information
-ss -o   # Show timer information
-ss -n   # Do not resolve addresses
-ss -p   # Show process using the socke
 ```
 
 ## NET-TOOLS VS. IPROUTE PACKAGE COMMANDS

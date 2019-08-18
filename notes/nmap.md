@@ -2,12 +2,12 @@
 tags: [network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2019-08-02T07:46:54.568Z'
+modified: '2019-08-18T19:36:37.592Z'
 ---
 
 # nmap
 
-`= network mapper`
+`network mapper`
 
 ### scanning options
 ```sh

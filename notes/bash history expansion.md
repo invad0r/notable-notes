@@ -2,13 +2,14 @@
 tags: [bash]
 title: bash history expansion
 created: '2019-07-30T06:19:49.010Z'
-modified: '2019-07-30T06:22:29.792Z'
+modified: '2019-08-18T19:59:23.562Z'
 ---
 
 # bash history expansion
 
-`bang bang`
+[[bash history]]
 
+## `bang bang`
 ```sh
 !!		          # repeats the last command
 sudo !!

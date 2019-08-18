@@ -2,21 +2,14 @@
 tags: [bash, bash/keyword]
 title: bash for
 created: '2019-07-30T06:19:49.007Z'
-modified: '2019-08-02T08:37:51.376Z'
+modified: '2019-08-18T19:52:27.129Z'
 ---
 
 # bash for
 
 ```sh
-for x := 1 to 10 do
-begin
-  statements
-end
-```
-
-```sh
-for name [in list]; do
-  statements that can use $name
+for name [in words]; do
+  command $name;
 done
 ```
 
