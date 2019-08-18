@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2019-07-30T06:22:29.764Z'
+modified: '2019-08-02T08:35:17.857Z'
 ---
 
 # bash
@@ -18,3 +18,5 @@ bash -i            # shell is interactive.
 
 bash -l            # act as if it had been invoked as a login shell
 ```
+
+[[bash debugging.md]]

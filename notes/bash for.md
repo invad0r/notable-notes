@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [bash, bash/keyword]
 title: bash for
 created: '2019-07-30T06:19:49.007Z'
-modified: '2019-07-30T06:22:29.790Z'
+modified: '2019-08-02T08:37:51.376Z'
 ---
 
 # bash for
