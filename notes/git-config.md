@@ -2,13 +2,13 @@
 tags: [git, heredoc]
 title: git-config
 created: '2019-08-01T07:03:58.247Z'
-modified: '2019-08-01T07:05:57.912Z'
+modified: '2019-08-02T10:21:08.175Z'
 ---
 
 # git-config
 
 ```sh
-cat <EOF >> ~/.gitconfig
+cat <<EOF > ~/.gitconfig
 [core]
   editor = vim
 
@@ -21,7 +21,7 @@ EOF
 ```
 
 ```sh
-cat <EOF >> ~/.gitconfig-github
+cat <<EOF > ~/.gitconfig-github
 [user]
   name = invad0r
   email = invad0r@gmx.net
