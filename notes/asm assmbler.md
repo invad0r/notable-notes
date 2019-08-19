@@ -1,8 +1,8 @@
 ---
-tags: [lang/asm]
+tags: [lang]
 title: asm assmbler
 created: '2019-07-30T06:19:48.988Z'
-modified: '2019-07-30T09:06:01.981Z'
+modified: '2019-08-19T07:21:33.196Z'
 ---
 
 # asm assmbler
