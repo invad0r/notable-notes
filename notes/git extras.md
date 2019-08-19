@@ -1,11 +1,11 @@
 ---
-tags: [git]
-title: git-extras
+tags: [brew, git]
+title: git extras
 created: '2019-07-30T06:19:49.062Z'
-modified: '2019-07-30T06:34:05.992Z'
+modified: '2019-08-19T13:38:10.999Z'
 ---
 
-# git-extras
+# git extras
 
 
 ### install
