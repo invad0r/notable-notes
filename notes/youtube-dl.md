@@ -1,8 +1,7 @@
 ---
-tags: [cli]
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2019-07-30T08:29:46.851Z'
+modified: '2019-08-19T14:12:04.134Z'
 ---
 
 # youtube-dl

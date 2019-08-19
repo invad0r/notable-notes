@@ -1,11 +1,11 @@
 ---
-tags: [osx]
-title: osx - network
+tags: [network, osx]
+title: osx networksetup airport
 created: '2019-07-30T06:19:49.196Z'
-modified: '2019-07-30T06:43:25.123Z'
+modified: '2019-08-19T14:11:22.946Z'
 ---
 
-# osx - network
+# osx networksetup airport
 
 
 ```sh

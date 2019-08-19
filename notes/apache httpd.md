@@ -1,8 +1,8 @@
 ---
-tags: [cli, linux]
+tags: [linux]
 title: apache httpd
 created: '2019-07-30T06:19:48.985Z'
-modified: '2019-07-30T09:05:39.597Z'
+modified: '2019-08-19T14:12:04.089Z'
 ---
 
 # apache httpd

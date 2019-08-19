@@ -1,8 +1,7 @@
 ---
-tags: [kafka]
 title: kafka
 created: '2019-07-30T06:19:49.147Z'
-modified: '2019-08-18T14:53:45.272Z'
+modified: '2019-08-19T14:33:10.849Z'
 ---
 
 # kafka

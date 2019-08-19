@@ -1,8 +1,8 @@
 ---
-tags: [lang/c, printf]
+tags: [lang/c]
 title: c printf
 created: '2019-08-01T07:29:42.543Z'
-modified: '2019-08-01T07:29:54.308Z'
+modified: '2019-08-19T14:07:48.491Z'
 ---
 
 # c printf

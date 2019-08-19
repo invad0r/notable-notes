@@ -1,8 +1,8 @@
 ---
-tags: [brew, cli]
+tags: [brew]
 title: fzf
 created: '2019-07-30T06:19:49.058Z'
-modified: '2019-07-30T08:12:45.026Z'
+modified: '2019-08-19T14:12:04.097Z'
 ---
 
 # fzf

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: systemd jounralctl
 created: '2019-08-19T09:11:28.583Z'
-modified: '2019-08-19T09:11:49.484Z'
+modified: '2019-08-19T14:04:48.373Z'
 ---
 
 # systemd jounralctl

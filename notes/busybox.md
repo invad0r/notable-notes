@@ -1,11 +1,11 @@
 ---
 tags: [linux]
-title: linux - busybox
+title: busybox
 created: '2019-07-30T06:19:49.154Z'
-modified: '2019-07-30T06:31:12.595Z'
+modified: '2019-08-19T14:08:20.144Z'
 ---
 
-# linux - busybox
+# busybox
 
 Busybox is like a swiss army knife: one thing with many functions.
 

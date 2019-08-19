@@ -1,11 +1,12 @@
 ---
+favorited: true
 tags: [bash]
-title: bash cli processing cycle
+title: bash processing cycle
 created: '2019-07-30T06:19:48.994Z'
-modified: '2019-08-01T07:20:15.368Z'
+modified: '2019-08-19T14:29:14.139Z'
 ---
 
-# bash cli processing cycle
+# bash processing cycle
 
 > The default order for command lookup is `functions`, followed by `built-ins`, with scripts and executables last.
 > There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.

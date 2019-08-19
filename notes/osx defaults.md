@@ -1,11 +1,11 @@
 ---
 tags: [osx]
-title: osx - defaults
+title: osx defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2019-07-30T06:43:25.112Z'
+modified: '2019-08-19T14:08:53.151Z'
 ---
 
-# osx - defaults
+# osx defaults
 
 
 ```sh

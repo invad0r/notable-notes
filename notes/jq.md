@@ -1,8 +1,8 @@
 ---
-tags: [bash, cli, json]
+tags: [bash, json]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2019-08-02T08:25:27.898Z'
+modified: '2019-08-19T14:12:04.117Z'
 ---
 
 # jq
