@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin, printf]
+tags: [bash, bash/builtin]
 title: bash snippets
 created: '2019-07-30T06:19:48.991Z'
-modified: '2019-08-02T06:35:53.830Z'
+modified: '2019-08-19T14:07:43.847Z'
 ---
 
 # bash snippets 

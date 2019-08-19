@@ -1,8 +1,8 @@
 ---
-tags: [cli, vmware]
+tags: [vmware]
 title: govc
 created: '2019-07-30T06:19:49.075Z'
-modified: '2019-07-30T08:03:20.234Z'
+modified: '2019-08-19T14:12:04.098Z'
 ---
 
 # govc

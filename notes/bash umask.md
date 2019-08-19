@@ -1,13 +1,13 @@
 ---
-tags: [linux]
-title: linux - umask
+tags: [bash/builtin, linux]
+title: bash umask
 created: '2019-07-30T06:19:49.162Z'
-modified: '2019-07-30T06:31:12.604Z'
+modified: '2019-08-19T14:07:02.987Z'
 ---
 
-# linux - umask
+# bash umask
 
-* builtin that controls file creation mode mask and determins initial file-permission values
+* [[bash builtin]] that controls file creation mode mask and determins initial file-permission values
 * doesnt enforce rights it forbids them !
 * filter strips away permissions
 

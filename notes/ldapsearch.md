@@ -1,8 +1,8 @@
 ---
-tags: [cli, linux]
+tags: [linux]
 title: ldapsearch
 created: '2019-07-30T06:19:49.153Z'
-modified: '2019-08-18T14:50:10.641Z'
+modified: '2019-08-19T14:12:04.122Z'
 ---
 
 # ldapsearch

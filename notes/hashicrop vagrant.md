@@ -1,8 +1,8 @@
 ---
-tags: [cli, iac]
+tags: [iac]
 title: hashicrop vagrant
 created: '2019-07-30T06:19:49.078Z'
-modified: '2019-08-18T15:00:40.784Z'
+modified: '2019-08-19T14:12:04.107Z'
 ---
 
 # hashicrop vagrant

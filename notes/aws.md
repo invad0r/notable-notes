@@ -1,8 +1,7 @@
 ---
-tags: [cli]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2019-07-30T07:25:01.760Z'
+modified: '2019-08-19T14:12:04.096Z'
 ---
 
 # aws

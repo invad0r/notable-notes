@@ -1,11 +1,11 @@
 ---
 tags: [brew, osx]
-title: brew
+title: osx brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2019-07-30T20:38:03.376Z'
+modified: '2019-08-19T14:09:14.439Z'
 ---
 
-# brew
+# osx brew
 
 ```sh
 brew list

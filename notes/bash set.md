@@ -2,7 +2,7 @@
 tags: [bash, bash/builtin]
 title: bash set
 created: '2019-07-30T06:19:49.019Z'
-modified: '2019-08-18T19:45:08.924Z'
+modified: '2019-08-19T14:21:05.303Z'
 ---
 
 # bash set
@@ -25,7 +25,7 @@ $-      # prints The current set of options in your current shell.
 ```
 [What does $- mean in Bash? - Stack Overflow](https://stackoverflow.com/a/42757277/2087704)
 
-#### set / unset
+#### set unset
 ```sh
 # set             # unset
 set -o OPTION     set +o OPTION
@@ -46,7 +46,7 @@ set -o histexpand      set -H
 set -o history                              # e.g. using `fc` when not sourcing script 
 set -o ignoreeof
 set -o keyword        set -k
-set -o monitor        set -m                # jobcontrol => fg/bg
+set -o monitor        set -m                # enable jobcontrol => fg/bg
 set -o noclobber      set -C
 set -o noexec         set -n
 set -o noglob         set -f
@@ -63,6 +63,5 @@ set -o vi
 set -o xtrace         set -x
 ```
 
-[bash - Set and Shopt - Why Two? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/425642/193945)
-
-[Bash Reference Manual: Modifying Shell Behavior](https://www.gnu.org/software/bash/manual/html_node/Modifying-Shell-Behavior.html)
+- [Set and Shopt - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/425642/193945)
+- [Bash Reference Manual: Modifying Shell Behavior](https://www.gnu.org/software/bash/manual/html_node/Modifying-Shell-Behavior.html)

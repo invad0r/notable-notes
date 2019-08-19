@@ -1,8 +1,7 @@
 ---
-tags: [encoding/ascii]
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2019-07-30T09:06:14.044Z'
+modified: '2019-08-19T14:33:01.569Z'
 ---
 
 # ascii

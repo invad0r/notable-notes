@@ -1,8 +1,8 @@
 ---
-tags: [cli, prometheus]
+tags: [prometheus]
 title: promtool
 created: '2019-07-30T06:19:49.218Z'
-modified: '2019-08-02T09:40:13.466Z'
+modified: '2019-08-19T14:12:04.131Z'
 ---
 
 # promtool

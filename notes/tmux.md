@@ -1,8 +1,7 @@
 ---
-tags: [tmux]
 title: tmux
 created: '2019-07-30T06:19:49.253Z'
-modified: '2019-07-30T07:00:47.924Z'
+modified: '2019-08-19T14:33:15.026Z'
 ---
 
 # tmux

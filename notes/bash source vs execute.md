@@ -1,8 +1,9 @@
 ---
+favorited: true
 tags: [bash]
 title: bash source vs execute
 created: '2019-07-30T06:19:49.020Z'
-modified: '2019-08-18T19:58:19.789Z'
+modified: '2019-08-19T14:13:04.439Z'
 ---
 
 # bash source vs execute
