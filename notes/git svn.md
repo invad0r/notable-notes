@@ -1,11 +1,11 @@
 ---
 tags: [git]
-title: git-svn
+title: git svn
 created: '2019-07-30T06:19:49.249Z'
-modified: '2019-07-30T08:49:04.072Z'
+modified: '2019-08-19T13:38:20.913Z'
 ---
 
-# git-svn
+# git svn
 
 `subversion`
 
