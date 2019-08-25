@@ -1,15 +1,13 @@
 ---
-tags: [bash]
+tags: [linux]
 title: sed
 created: '2019-07-30T06:19:49.228Z'
-modified: '2019-07-30T08:14:16.302Z'
+modified: '2019-08-23T11:01:53.073Z'
 ---
 
 # sed
 
 `Stream EDitor`
-
-[Sed - An Introduction and Tutorial](http://www.grymoire.com/Unix/Sed.html)
 
 ### substitution
 ```sh
@@ -49,7 +47,8 @@ Non greedy matching:
 
 % echo "<b>foo</b>bar" | sed 's/<[^>]*>//g'
 foobar
-
 ```
 
-[0x2a.at - sed - non greedy matching](https://0x2a.at/blog/2008/07/sed--non-greedy-matching/)
+## see also
+- [Sed - An Introduction and Tutorial](http://www.grymoire.com/Unix/Sed.html)
+- [0x2a.at - sed - non greedy matching](https://0x2a.at/blog/2008/07/sed--non-greedy-matching/)

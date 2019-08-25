@@ -1,13 +1,13 @@
 ---
-tags: [lang/awk, linux]
+tags: [awk, linux]
 title: awk
 created: '2019-07-30T06:19:48.989Z'
-modified: '2019-08-02T07:17:00.040Z'
+modified: '2019-08-25T20:00:14.758Z'
 ---
 
 # awk
-* initially developed in 1977 by `A`lfred Aho, Peter `W`einberger, and Brian `K`ernighan
-* [Learn awk in Y Minutes](https://learnxinyminutes.com/docs/awk/)
+
+> initially developed in 1977 by `A`lfred Aho, Peter `W`einberger, and Brian `K`ernighan
 
 ### implementations
 ```
@@ -65,3 +65,6 @@ tolower("FOO")                  # => "foo"
 
 toupper("foo")                  # => "FOO"
 ```
+
+## see also
+- [awk - learnxinyminutes.com](https://learnxinyminutes.com/docs/awk/)

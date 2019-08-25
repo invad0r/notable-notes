@@ -2,7 +2,7 @@
 tags: [linux]
 title: apache httpd
 created: '2019-07-30T06:19:48.985Z'
-modified: '2019-08-19T14:12:04.089Z'
+modified: '2019-08-25T19:58:50.919Z'
 ---
 
 # apache httpd
@@ -43,4 +43,6 @@ apachectl -t -D DUMP_MODULES      # list loaded modules
 ls /etc/apache2/mods-enabled/		  # list enabled modules
 ls /etc/apache2/mods-available/		# list available modules
 ```
-[Generate Mozilla Security Recommended Web Server Configuration Files](https://mozilla.github.io/server-side-tls/ssl-config-generator/)
+
+## see also
+- [Generate Mozilla Security Recommended Web Server Configuration Files](https://mozilla.github.io/server-side-tls/ssl-config-generator/)

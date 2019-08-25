@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [linux, osx]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2019-07-30T14:03:19.330Z'
+modified: '2019-08-20T08:44:23.924Z'
 ---
 
 # date

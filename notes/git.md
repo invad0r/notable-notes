@@ -2,7 +2,7 @@
 tags: [git]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2019-08-19T13:48:32.508Z'
+modified: '2019-08-23T09:33:04.248Z'
 ---
 
 # git
@@ -11,12 +11,10 @@ modified: '2019-08-19T13:48:32.508Z'
 ```sh
 ssh -Tv git@example.com       # test-ssh-connection
 ```
-[[ssh]]
+
 
 ### day-to-day
 ```sh
-git status                # See the status of your work. New, staged, modified files. Current branch.
-
 git diff [file]           # Show changes between working directory and staging area.
 
 git diff --staged [file]  # Shows changes in the staging area that haven't been commited.
@@ -29,9 +27,6 @@ git add [file]            # Add a file to the staging area. Use . instead of ful
 git reset [file]          # Get file back from staging area to working directory.
 
 git reset HEAD -- FILE    # undo git add FILE
-
-
-git commit -m "message"   # Create commit from changes added to the staging area. You can provide -m otherways $EDITOR will be opened.
 
 
 git add --patch file      # add specific lines to commit
@@ -63,4 +58,6 @@ git checkout e7s..37^ --  path/file.sh    # note ^ after SHA !
 git rev-list --all registrator.go \
   | ( while read revision; do git grep -F 'swarm' $revision registrator.go done )
 ```
-[search for string in a single files history - Stack Overflow](https://stackoverflow.com/a/10223136)
+## see also
+- [[ssh]]
+- [search for string in a single files history - Stack Overflow](https://stackoverflow.com/a/10223136)

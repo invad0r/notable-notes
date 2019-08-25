@@ -2,7 +2,7 @@
 tags: [virtualization]
 title: vboxmanage
 created: '2019-07-30T06:19:49.257Z'
-modified: '2019-07-30T06:27:31.785Z'
+modified: '2019-08-22T09:18:46.932Z'
 ---
 
 # vboxmanage
@@ -53,7 +53,6 @@ vboxmanage showvminfo vm04-zca8
 vboxmanage snapshot vm04-zca8 restore snap1-before-upgrade
 vboxmanage snapshot vm04-zca8 delete snap1-before-upgrade
 ```
-[VirtualBox snapshots using the CLI – Dirk-Jan's blog](http://www.vleeuwen.net/2012/12/virtualbox-snapshots-using-the-cli)
 
 ## get vm ip
 ```sh
@@ -113,6 +112,9 @@ VBoxManage modifyvm $VM_NAME \
 #  --trunk-type netadp \
 #  --upper-ip 192.168.99.254
 ```
-[Create VirtualBox VM from cli](https://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html)
-[Chapter8 VBoxManage](https://www.virtualbox.org/manual/ch08.html)
-[dotfiles/boot2docker magicmonty/dotfiles](https://github.com/magicmonty/dotfiles/blob/master/bin/boot2docker)
+
+## see also
+- [Create VirtualBox VM from cli](https://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html)
+- [Chapter8 VBoxManage](https://www.virtualbox.org/manual/ch08.html)
+- [dotfiles/boot2docker magicmonty/dotfiles](https://github.com/magicmonty/dotfiles/blob/master/bin/boot2docker)
+- [VirtualBox snapshots using the CLI – Dirk-Jan's blog](http://www.vleeuwen.net/2012/12/virtualbox-snapshots-using-the-cli)

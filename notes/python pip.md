@@ -1,8 +1,8 @@
 ---
-tags: [lang/python]
+tags: [python]
 title: python pip
 created: '2019-08-02T07:21:18.995Z'
-modified: '2019-08-02T07:21:39.043Z'
+modified: '2019-08-20T07:23:37.556Z'
 ---
 
 # python pip

@@ -1,8 +1,8 @@
 ---
-tags: [lang/c]
+tags: [c]
 title: c datatypes
 created: '2019-08-19T12:57:28.967Z'
-modified: '2019-08-19T13:22:37.936Z'
+modified: '2019-08-20T07:24:43.387Z'
 ---
 
 # c datatypes

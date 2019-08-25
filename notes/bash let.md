@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash let
 created: '2019-08-02T06:42:37.607Z'
-modified: '2019-08-02T08:44:27.191Z'
+modified: '2019-08-20T07:21:21.966Z'
 ---
 
 # bash let

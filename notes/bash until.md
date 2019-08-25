@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/keyword]
+tags: [bash/keyword]
 title: bash until
 created: '2019-07-30T06:19:49.023Z'
-modified: '2019-08-18T19:34:02.139Z'
+modified: '2019-08-20T07:20:38.988Z'
 ---
 
 # bash until

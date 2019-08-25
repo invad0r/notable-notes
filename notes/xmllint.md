@@ -1,8 +1,8 @@
 ---
-tags: [bash, xml]
+tags: [linux]
 title: xmllint
 created: '2019-08-01T08:20:39.353Z'
-modified: '2019-08-01T08:55:16.385Z'
+modified: '2019-08-20T07:25:37.213Z'
 ---
 
 # xmllint

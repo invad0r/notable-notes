@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: list open ports
 created: '2019-07-30T06:19:49.165Z'
-modified: '2019-08-18T19:39:46.360Z'
+modified: '2019-08-20T09:47:48.693Z'
 ---
 
 # list open ports

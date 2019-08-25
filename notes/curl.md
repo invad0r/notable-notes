@@ -1,8 +1,8 @@
 ---
-tags: [bash, curl, network]
+tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2019-08-05T19:52:24.367Z'
+modified: '2019-08-20T07:20:01.221Z'
 ---
 
 # curl

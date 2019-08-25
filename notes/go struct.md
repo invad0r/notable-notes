@@ -1,8 +1,8 @@
 ---
-tags: [lang/go]
+tags: [go]
 title: go struct
 created: '2019-07-30T06:19:49.074Z'
-modified: '2019-07-30T08:02:09.545Z'
+modified: '2019-08-25T20:09:57.041Z'
 ---
 
 # go struct
@@ -50,5 +50,5 @@ d1 := Student{"David", 1}
 d2 := Student{"David", 2}
 fmt.Println(d1 == d2) // false
 ```
-
-[Create, initialize and compare structs · YourBasic Go](https://yourbasic.org/golang/structs-explained/)
+## see also
+- [Create, initialize and compare structs · YourBasic Go](https://yourbasic.org/golang/structs-explained/)

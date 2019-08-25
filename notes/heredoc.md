@@ -1,13 +1,13 @@
 ---
-tags: [bash, heredoc, linux]
+tags: [heredoc, linux]
 title: heredoc
 created: '2019-07-30T06:19:49.079Z'
-modified: '2019-08-01T07:13:52.955Z'
+modified: '2019-08-25T20:15:35.134Z'
 ---
 
 # heredoc
 
-> "here document is a special-purpose code block. It uses a form of I/O redirection to feed a command list to an interactive program or a command
+> here-document is a special-purpose code block. It uses a form of I/O redirection to feed a command list to an interactive program or a command
 
 ## promt
 ```sh
@@ -33,7 +33,6 @@ echo 1
     EOF
 ls
 ```
-[HereDocument - Greg's Wiki](https://mywiki.wooledge.org/HereDocument)
 
 ## cat
 
@@ -45,7 +44,6 @@ cat <<EOF > .pre-commit-config.yaml
     - id: terraform_fmt
 EOF
 ```
-[Here Documents](http://www.tldp.org/LDP/abs/html/here-docs.html)
 
 ### sudo redirect cat
 ```sh
@@ -69,7 +67,6 @@ FROM alpine
 RUN apk --no-cache add htop
 EOF
 ```
-
     
 ### curl data
 ```sh
@@ -80,7 +77,7 @@ curl http://localhost -d @- <<REQUEST_BODY
 }
 REQUEST_BODY
 ```
-[Nice here document feature I have found recently is heredoc with pipe, e.g. c... | Hacker News](https://news.ycombinator.com/item?id=7596375)
+https://news.ycombinator.com/item?id=7596375)
 
 ### ssh commands
 ```sh
@@ -89,7 +86,6 @@ uptime
 sudo update -y
 EOSSH
 ```
-
 
 ### anon heredoc
 
@@ -124,6 +120,8 @@ cat <<EOF |
 > echo $line;
 > done
 ```
-
-https://docs.gitlab.com/ee/development/changelog.html
-[Changelog entries \| GitLab](https://docs.gitlab.com/ee/development/changelog.html)
+## see also
+- [[yml]]
+- [HereDocument - Greg's Wiki](https://mywiki.wooledge.org/HereDocument)
+- [Here Documents](http://www.tldp.org/LDP/abs/html/here-docs.html)
+- [Nice here document feature I have found recently - ycombinator.com](https://news.ycombinator.com/item?id=7596375)

@@ -1,7 +1,7 @@
 ---
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2019-08-19T14:12:04.134Z'
+modified: '2019-08-23T14:53:00.982Z'
 ---
 
 # youtube-dl
@@ -17,3 +17,6 @@ youtube-dl \
   --playlist-start 17 \
   PLs0kY...1zFPzbn
 ```
+
+## see also
+- [[eyeD3]]

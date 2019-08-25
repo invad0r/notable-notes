@@ -1,8 +1,8 @@
 ---
-tags: [lang/java]
+tags: [java]
 title: pattern lazy loading
 created: '2019-08-14T06:52:21.265Z'
-modified: '2019-08-18T14:57:04.670Z'
+modified: '2019-08-20T07:24:24.720Z'
 ---
 
 # pattern lazy loading

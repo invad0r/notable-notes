@@ -1,8 +1,8 @@
 ---
-tags: [lang/php]
+tags: [php]
 title: php datatypes
 created: '2019-08-19T12:09:16.122Z'
-modified: '2019-08-19T12:09:20.575Z'
+modified: '2019-08-20T07:23:53.572Z'
 ---
 
 # php datatypes

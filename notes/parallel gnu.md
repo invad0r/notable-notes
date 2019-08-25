@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [linux]
 title: parallel gnu
 created: '2019-07-30T06:19:49.203Z'
-modified: '2019-07-30T08:10:06.742Z'
+modified: '2019-08-20T07:20:01.236Z'
 ---
 
 # parallel gnu

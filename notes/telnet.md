@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: telnet
 created: '2019-07-30T06:19:49.252Z'
-modified: '2019-08-02T07:46:54.565Z'
+modified: '2019-08-20T09:47:48.689Z'
 ---
 
 # telnet

@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/keyword]
+tags: [bash/keyword]
 title: bash select
 created: '2019-07-30T06:19:49.018Z'
-modified: '2019-08-02T08:38:47.976Z'
+modified: '2019-08-20T07:20:38.986Z'
 ---
 
 # bash select

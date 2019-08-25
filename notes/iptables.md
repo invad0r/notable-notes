@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: iptables
 created: '2019-07-30T06:19:49.083Z'
-modified: '2019-08-02T07:48:12.351Z'
+modified: '2019-08-20T09:47:48.691Z'
 ---
 
 # iptables

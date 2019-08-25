@@ -2,12 +2,12 @@
 tags: [bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2019-08-18T19:48:38.694Z'
+modified: '2019-08-25T20:06:16.112Z'
 ---
 
 # bash declare
 
-`declare` and [[bash typeset]] are synonym
+`declare` and `typeset` are synonym
 
 ```sh
 declare -r foo=bar        # readonly
@@ -52,7 +52,7 @@ declare -r                   # makes the variables read-only
 
 declare -x                   # marks the variables for export via the environment
 ```
-http://tldp.org/LDP/abs/html/declareref.html
+
 
 
 ## useful for identifying variables, environmental, ..
@@ -72,3 +72,7 @@ purple reddish-orange light green
 declare | grep Colors
 Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
 ```
+
+## see also
+- [[bash typeset]]
+- [declareref - tldp.org](http://tldp.org/LDP/abs/html/declareref.html)

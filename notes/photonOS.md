@@ -1,11 +1,11 @@
 ---
 tags: [linux, vmware]
-title: photonOS
+title: photonos
 created: '2019-07-30T06:19:49.205Z'
-modified: '2019-07-30T08:49:54.088Z'
+modified: '2019-08-23T11:00:55.777Z'
 ---
 
-# photonOS
+# photonos
 
 
 ```
@@ -26,7 +26,6 @@ container host optimized for vsphere & cloud computing using `systemd` and `tiny
 -> bootable immutable versioned FS-Trees
 -> client/server architecture
 
-[Downloading Photon OS · vmware/photon Wiki · GitHub](https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
 
 ## kickstart
 ```sh
@@ -42,8 +41,6 @@ mkisofs -R -l -L -D -b isolinux/isolinux.bin \
 
 ## install photon
 
-[Getting started with Photon OS and vSphere Integrated Containers - CormacHogan.com](https://cormachogan.com/2016/04/07/getting-started-photon-os-vsphere-integrated-containers/)
-[Install vSphere Integrated Containers v0.1 via VMware Photon OS TP2 – think-v](http://blog.think-v.com/?p=3649)
 ## ssh
 ```sh
 # Enable root login in /etc/ssh/sshd_config
@@ -52,10 +49,7 @@ sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
 systemctl restart sshd
 ```
 
-## installed packages
 
-https://github.com/vmware/photon/blob/master/common/data/packages_minimal.json
-https://github.com/vmware/photon/blob/master/common/data/packages_full.json
 
 ## dockerd
 ```sh
@@ -73,4 +67,11 @@ iptables -A INPUT -p tcp --dport 2375 -j ACCEPT   # ! not safe for restart
 
 systemctl start docker
 ```
-[How to enable Docker Remote API on Photon OS - Cloud Native Apps](https://blogs.vmware.com/cloudnative/2016/09/28/enable-docker-remote-api-photon-os/)
+
+## see also
+- [Downloading Photon OS · GitHub](https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
+- [Getting started with Photon OS and vSphere Integrated Containers - CormacHogan.com](https://cormachogan.com/2016/04/07/getting-started-photon-os-vsphere-integrated-containers/)
+- [packages_full.json · github](https://github.com/vmware/photon/blob/master/common/data/packages_full.json)
+- [packages_minimal.json · github](https://github.com/vmware/photon/blob/master/common/data/packages_minimal.json)
+- [Install vSphere Integrated Containers v0.1 via VMware Photon OS TP2 – think-v](http://blog.think-v.com/?p=3649)
+- [How to enable Docker Remote API on Photon OS - Cloud Native Apps](https://blogs.vmware.com/cloudnative/2016/09/28/enable-docker-remote-api-photon-os/)

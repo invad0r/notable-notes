@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash set
 created: '2019-07-30T06:19:49.019Z'
-modified: '2019-08-19T14:21:05.303Z'
+modified: '2019-08-20T07:21:21.975Z'
 ---
 
 # bash set

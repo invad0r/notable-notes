@@ -1,8 +1,8 @@
 ---
-tags: [lang/ruby]
+tags: [buildtool, ruby]
 title: ruby bundle
 created: '2019-07-30T06:19:49.225Z'
-modified: '2019-08-02T07:25:30.784Z'
+modified: '2019-08-22T09:36:43.099Z'
 ---
 
 # ruby bundle
@@ -32,4 +32,5 @@ bundle exec rake gitlab:backup:restore RAILS_ENV=production
 
 app:rake gitlab:backup:create
 ```
-[GitHub - sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab/tree/e56b05963e86be76c6d17d9c6068a0d49e1e4306)
+## see also
+- [sameersbn/docker-gitlab - github.com](https://github.com/sameersbn/docker-gitlab/tree/e56b05963e86be76c6d17d9c6068a0d49e1e4306)

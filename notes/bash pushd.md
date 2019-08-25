@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash pushd
 created: '2019-08-02T06:42:37.617Z'
-modified: '2019-08-18T16:09:32.927Z'
+modified: '2019-08-20T07:21:21.971Z'
 ---
 
 # bash pushd

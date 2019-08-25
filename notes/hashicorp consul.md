@@ -1,7 +1,8 @@
 ---
+tags: [curl, iac]
 title: hashicorp consul
 created: '2019-07-30T06:19:49.077Z'
-modified: '2019-08-19T14:12:04.100Z'
+modified: '2019-08-20T09:45:33.760Z'
 ---
 
 # hashicorp consul

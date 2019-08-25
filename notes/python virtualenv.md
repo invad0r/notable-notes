@@ -1,8 +1,8 @@
 ---
-tags: [lang/python]
+tags: [python]
 title: python virtualenv
 created: '2019-07-30T06:19:49.221Z'
-modified: '2019-07-30T08:08:59.440Z'
+modified: '2019-08-20T07:23:37.557Z'
 ---
 
 # python virtualenv

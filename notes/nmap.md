@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2019-08-18T19:36:37.592Z'
+modified: '2019-08-20T09:47:48.684Z'
 ---
 
 # nmap
