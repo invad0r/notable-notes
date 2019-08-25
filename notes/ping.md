@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: ping
 created: '2019-07-30T06:19:49.207Z'
-modified: '2019-08-02T07:46:54.567Z'
+modified: '2019-08-20T09:47:48.685Z'
 ---
 
 # ping 

@@ -1,8 +1,8 @@
 ---
-tags: [lang/go]
+tags: [go]
 title: go maps
 created: '2019-07-30T06:19:49.068Z'
-modified: '2019-07-30T08:02:09.520Z'
+modified: '2019-08-20T07:22:54.438Z'
 ---
 
 # go maps

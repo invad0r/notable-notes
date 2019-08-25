@@ -1,8 +1,8 @@
 ---
-tags: [lang/awk]
+tags: [awk, linux]
 title: awk snippets
 created: '2019-08-02T07:17:02.123Z'
-modified: '2019-08-02T07:17:50.148Z'
+modified: '2019-08-20T09:46:08.525Z'
 ---
 
 # awk snippets

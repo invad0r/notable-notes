@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: ip arping ethtool
 created: '2019-07-30T06:19:49.082Z'
-modified: '2019-08-18T19:36:13.640Z'
+modified: '2019-08-20T09:47:48.692Z'
 ---
 
 # ip arping ethtool

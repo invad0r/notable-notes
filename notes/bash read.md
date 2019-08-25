@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash read
 created: '2019-07-30T06:19:49.017Z'
-modified: '2019-08-02T06:35:53.827Z'
+modified: '2019-08-20T07:21:21.972Z'
 ---
 
 # bash read

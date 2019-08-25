@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash unalias
 created: '2019-08-02T06:42:37.649Z'
-modified: '2019-08-18T15:39:25.565Z'
+modified: '2019-08-20T07:21:21.988Z'
 ---
 
 # bash unalias

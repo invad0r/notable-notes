@@ -1,35 +1,56 @@
 ---
-tags: [linux]
+tags: [initsystem, linux]
 title: systemd systemctl
 created: '2019-07-30T06:19:49.250Z'
-modified: '2019-08-19T09:11:57.284Z'
+modified: '2019-08-22T07:22:21.287Z'
 ---
 
 # systemd systemctl
 
-[[systemd jounralctl]]
-
-[What is the difference between service and systemctl? - Server Fault](https://serverfault.com/questions/867322/what-is-the-difference-between-service-and-systemctl)
+> Query or send control commands to the systemd manager.
 
 ```sh
-systemctl list-unit-files --state=enabled
+systemctl --failed      # list failed units
 
 systemctl --type=service      # list current services
 
+
+systemctl list-units
+
+systemctl list-units --all
+
+systemctl list-units --all --state=inactive
+
+systemctl list-units --type=service
+
+systemctl list-unit-files --state=enabled
+
+systemctl list-dependencies sshd.service
+
+
+systemctl is-active application.service
+
+systemctl is-enabled application.service
+
+systemctl is-failed application.service
 ```
 
+## Checking Unit Properties
+```sh
+systemctl show sshd.service
+```
 
 ```sh
-systemctl start foo.service
+systemctl start unit.service
 
-systemctl stop foo.service
+systemctl stop unit.service
 
-systemctl restart foo.service
+systemctl restart unit.service
 ```
 
 ### status
 ```sh
-systemctl status docker.service
+systemctl status unit.service
 
 systemctl -l status service-name
 
@@ -52,11 +73,14 @@ systemctl --output=json status docker-volume-netshare.service
     # cat
     # with-unit
 ```
-[systemd/man/journalctl#-o](https://www.freedesktop.org/software/systemd/man/journalctl#-o)
 
 ### show property
 ```sh
-systemctl show your.service     # get all properties
+systemctl show unit.service     # get all properties
 
-systemctl show docker-volume-netshare.service --property=ActiveState
+systemctl show unit.service --property=ActiveState
 ```
+
+## see also
+- [[systemd jounralctl]]
+- [What is the difference between service and systemctl? - Server Fault](https://serverfault.com/questions/867322/what-is-the-difference-between-service-and-systemctl)

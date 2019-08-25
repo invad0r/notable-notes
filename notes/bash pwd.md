@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash pwd
 created: '2019-08-02T06:42:37.618Z'
-modified: '2019-08-18T16:01:13.307Z'
+modified: '2019-08-20T07:21:21.972Z'
 ---
 
 # bash pwd

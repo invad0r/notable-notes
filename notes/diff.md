@@ -1,8 +1,8 @@
 ---
-tags: [bash, linux]
+tags: [linux]
 title: diff
 created: '2019-07-30T06:19:49.036Z'
-modified: '2019-07-30T18:53:00.131Z'
+modified: '2019-08-20T07:20:01.230Z'
 ---
 
 # diff

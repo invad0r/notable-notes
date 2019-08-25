@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2019-08-18T19:40:13.381Z'
+modified: '2019-08-20T09:47:48.687Z'
 ---
 
 # ss

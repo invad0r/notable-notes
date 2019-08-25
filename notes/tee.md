@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [linux]
 title: tee
 created: '2019-07-30T06:19:49.251Z'
-modified: '2019-08-19T14:31:06.111Z'
+modified: '2019-08-20T07:20:01.241Z'
 ---
 
 # tee

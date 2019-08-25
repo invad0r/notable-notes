@@ -1,8 +1,8 @@
 ---
-tags: [lang/php]
+tags: [php]
 title: php composer
 created: '2019-07-30T06:19:49.206Z'
-modified: '2019-07-30T08:04:18.070Z'
+modified: '2019-08-20T07:23:53.571Z'
 ---
 
 # php composer

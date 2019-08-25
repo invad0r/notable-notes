@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash fc
 created: '2019-07-30T06:19:49.048Z'
-modified: '2019-08-18T19:16:37.887Z'
+modified: '2019-08-20T07:21:21.959Z'
 ---
 
 # bash fc

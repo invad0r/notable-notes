@@ -1,8 +1,8 @@
 ---
-tags: [bash, linux]
+tags: [linux]
 title: ftp
 created: '2019-07-30T06:19:49.056Z'
-modified: '2019-07-30T09:04:31.251Z'
+modified: '2019-08-20T07:20:01.233Z'
 ---
 
 # ftp

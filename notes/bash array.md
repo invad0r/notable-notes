@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash array
 created: '2019-08-01T07:14:55.242Z'
-modified: '2019-08-02T08:28:36.485Z'
+modified: '2019-08-25T20:05:14.674Z'
 ---
 
 # bash array
@@ -29,4 +29,7 @@ echo ${!SWARM[@]}   # print keys
 echo ${SWARM[swarm-1]}
 unset SWARM[sswarm-1]
 ```
-[Bash associative array examples – Andy Balaam's Blog](https://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/)
+
+## see also
+- [[bash declare]]
+- [Bash associative array examples – Andy Balaam's Blog](https://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/)

@@ -1,47 +1,22 @@
 ---
-tags: [bash, json]
+tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2019-08-19T14:12:04.117Z'
+modified: '2019-08-20T12:10:11.891Z'
 ---
 
 # jq
 
-```sh
-  --raw-output / -r   # output no quotes
+[[yq]]
 
-  --unbuffered        # if you're piping a slow data source into jq and piping jq's output elsewhere
-```
-
+## query
 ```sh
+--raw-output / -r   # output no quotes
+
+--unbuffered        # if you're piping a slow data source into jq and piping jq's output elsewhere
+
 cat .docker/config.json | jq -r '.auths | keys[]'   # get only keys from auths{} object
 ```
-
-
-```sh
-# Add field
-echo '{"hello": "world"}' | jq --arg foo bar '. + {foo: $foo}'
-# {
-#   "hello": "world",
-#   "foo": "bar"
-# }
-
-
-# Override field value
-echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: $foo}'
-# {
-#   "hello": "bar"
-# }
-
-
-# Concat and add
-echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: ("not" + $foo)}'
-# {
-#   "hello": "world",
-#   "foo": "notbar"
-# }
-```
-
 ### filter values
 ```sh
 # removes from .[], ..map for array 
@@ -49,6 +24,30 @@ echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: ("not" + $foo)}'
 
 # keeps whitelisted from .[]
 | jq --unbuffered 'map({access, basicAuth, name, type, url})'
+```
+
+### add field
+```sh
+echo '{"hello": "world"}' | jq --arg foo bar '. + {foo: $foo}'
+```
+```json
+{  "hello": "world", "foo": "bar"  }
+```
+
+### override field value
+```sh
+echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: $foo}'
+```
+```json
+{ "hello": "bar" }
+```
+
+### concat and add
+```sh
+echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: ("not" + $foo)}'
+```
+```json
+{ "hello": "world", "foo": "notbar" }
 ```
 
 ### pint in same line
@@ -62,24 +61,21 @@ docker exec -t consul consul watch -type=service -service=swarm-a \
 [json - Printing multiple values on the same line - Stack Overflow](https://stackoverflow.com/a/46131963)
 
 ### get value of dynamic object names
-```sh
-# {
-#  "traefik-metrics-192-csHt9CK1Pq5ATmZ-i-8km0dPkoU": {
-#    "url": "http://10.32.23.150:7070",
-#    "weight": 1
-#  },
-#  "traefik-metrics-193-zHtiw3Y4-N-RYUIP7DxczqBU3ZE": {
-#    "url": "http://10.32.23.151:7070",
-#    "weight": 1
-#  },
-# ...
+```json
+{ "traefik-metrics-192-csHt9CK1Pq5ATmZ-i-8km0dPkoU": { "url": "http://10.32.23.150:7070", "weight": 1 },
+ "traefik-metrics-193-zHtiw3Y4-N-RYUIP7DxczqBU3ZE": { "url": "http://10.32.23.151:7070", "weight": 1 },
+...
+```
 
-curl --silent --request GET --url http://swarm-a.service.ddev.domain.net:7070/api/providers/consul_catalog/backends/backend-traefik-metrics \
+```sh
+curl \
+  --silent \
+  --request GET \
+  --url http://swarm-a.service.ddev.domain.net:7070/api/providers/consul_catalog/backends/backend-traefik-metrics \
   | jq -r '.servers  | keys[] as $k | "\(.[$k] | .url)"'
   
 # http://10.32.23.150:7070
 # http://10.32.23.151:7070
-# ..
 ```
 [json - jq print key and value for all in sub-object - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/406425)
 

@@ -1,8 +1,8 @@
 ---
-tags: [virtualization]
+tags: [linux, virtualization]
 title: kickstart
 created: '2019-07-30T06:19:49.148Z'
-modified: '2019-07-30T09:03:25.737Z'
+modified: '2019-08-20T09:15:32.725Z'
 ---
 
 # kickstart

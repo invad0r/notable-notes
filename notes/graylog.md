@@ -1,8 +1,8 @@
 ---
-tags: [api]
+tags: [curl]
 title: graylog
 created: '2019-07-30T06:19:48.987Z'
-modified: '2019-08-18T15:09:07.087Z'
+modified: '2019-08-20T09:45:20.216Z'
 ---
 
 # graylog

@@ -1,8 +1,8 @@
 ---
-tags: [lang/ruby]
+tags: [ruby]
 title: ruby
 created: '2019-07-30T06:19:49.226Z'
-modified: '2019-08-02T07:24:19.099Z'
+modified: '2019-08-20T07:23:13.710Z'
 ---
 
 # ruby 

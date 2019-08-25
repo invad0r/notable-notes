@@ -1,11 +1,13 @@
 ---
-tags: [bash]
+tags: [linux]
 title: sort
 created: '2019-07-30T06:19:49.240Z'
-modified: '2019-08-18T18:35:57.555Z'
+modified: '2019-08-21T06:10:54.298Z'
 ---
 
 # sort
+
+[[du]]
 
 ```sh
 rpm -q kenerl   | sort -V     # order by semantic version

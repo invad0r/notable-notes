@@ -1,8 +1,8 @@
 ---
-tags: [lang/java]
+tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2019-08-18T14:54:46.854Z'
+modified: '2019-08-20T07:24:24.708Z'
 ---
 
 # java

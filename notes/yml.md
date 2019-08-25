@@ -2,14 +2,17 @@
 tags: [yml]
 title: yml
 created: '2019-07-30T06:19:49.267Z'
-modified: '2019-08-01T08:23:13.011Z'
+modified: '2019-08-25T20:13:08.408Z'
 ---
 
 # yml
 
+`yaml`
+
+- `---` are used to signal the start of a document
+- serves to signal the start of a document if no directives are present.
+
 ## collection types
-
-
 ```yml
 # maps / dictionaries
 val:
@@ -47,21 +50,8 @@ example: |+     # All newlines from end   (keep)
 
 example: >3     # indendation indicator
 ```
+## see also
+- [yaml.org/spec/1.2](https://yaml.org/spec/1.2/spec.pdf)
+- [YAML Multiline Strings](https://yaml-multiline.info/)
+- [[heredoc]]
 
-[YAML Multiline Strings](https://yaml-multiline.info/)
-
-## yq
-
-### update inplace via script
-```sh
-# ../update-deploy.yml
-# services.application.deploy.mode: replicated
-# services.application.deploy.replicas: 0
-
-yq w -i -s ../update.yml file.yml
-```
-
-
-```sh
-yq r file.yml services.application.image
-```

@@ -2,17 +2,20 @@
 tags: [git]
 title: git bulk
 created: '2019-08-19T13:35:33.103Z'
-modified: '2019-08-19T13:38:06.751Z'
+modified: '2019-08-23T09:18:57.996Z'
 ---
 
 # git bulk
 
-part of [[git extras]]
+> part of git extras
 
 ```
-git-bulk --addcurrent $(pwd)
+git bulk --addcurrent $(pwd)
 
-git-bulk --listall
+git bulk --listall
 
-git-bulk pull
+git bulk pull
 ```
+
+## see also
+- [[git extras]]

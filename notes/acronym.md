@@ -2,10 +2,12 @@
 tags: [Notebooks]
 title: acronym
 created: '2019-08-18T16:14:42.254Z'
-modified: '2019-08-18T16:27:11.677Z'
+modified: '2019-08-20T08:35:29.028Z'
 ---
 
 # acronym
+
+ [[ascii]] - `American Standard Code for Infromation Interchange`
 
 ## acid
 > set of properties that guarante reliable databse transactions

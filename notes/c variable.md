@@ -1,8 +1,8 @@
 ---
-tags: [lang/c]
+tags: [c]
 title: c variable
 created: '2019-07-30T07:57:55.607Z'
-modified: '2019-07-30T08:01:45.869Z'
+modified: '2019-08-20T07:24:43.381Z'
 ---
 
 # c variable

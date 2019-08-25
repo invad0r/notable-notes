@@ -1,8 +1,8 @@
 ---
-tags: [network]
+tags: [linux, network]
 title: wget
 created: '2019-07-30T06:19:49.266Z'
-modified: '2019-08-02T07:45:37.615Z'
+modified: '2019-08-20T09:47:48.690Z'
 ---
 
 # wget

@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash unset
 created: '2019-08-02T06:42:37.651Z'
-modified: '2019-08-18T15:43:17.971Z'
+modified: '2019-08-20T07:21:21.989Z'
 ---
 
 # bash unset

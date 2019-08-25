@@ -2,7 +2,7 @@
 tags: [git]
 title: git log
 created: '2019-08-19T13:29:05.856Z'
-modified: '2019-08-19T13:30:46.506Z'
+modified: '2019-08-20T10:40:25.803Z'
 ---
 
 # git log
@@ -19,6 +19,13 @@ git log ..ref         # List commit, that are present on ref and not merged into
 git reflog            # List operations (like checkouts, commits etc.) made on local repository.
 
 git log --follow -p -- file   # follow file history
+```
+
+## review the differences 
+> git and have 1 and 1 different commits each, respectively
+
+```sh
+git log HEAD..origin/master   # see where origin/master branch has diverged
 ```
 
 ## pretty format

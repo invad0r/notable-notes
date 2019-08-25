@@ -2,13 +2,12 @@
 tags: [linux]
 title: dd
 created: '2019-07-30T06:19:49.033Z'
-modified: '2019-07-30T18:51:26.744Z'
+modified: '2019-08-22T09:33:05.499Z'
 ---
 
 # dd
 
 `disk dump`
-
 
 ```sh
 dd if=/dev/zero of=/Users/user/filesize/foo.dat bs=1m count=24
@@ -20,7 +19,7 @@ dd if=/dev/zero of=/Users/user/filesize/foo.dat bs=1m count=24
 # 24+0 records out
 # 25165824 bytes transferred in 0.026832 secs (937899773 bytes/sec)
 ```
-[OSX illegal numeric value](https://rendezvouswithpavan.wordpress.com/2015/06/16/dd-bs-illegal-numeric-value-error-on-mac-os-x/)
+
 
 
 ## i/o performance testing
@@ -39,5 +38,7 @@ oflag=dsync  # use synchronized I/O for data    trust that all my parameters are
 oflag=sync   # likewise, but also for metadata
 ```
 
-[Linux I/O Performance Tests using dd - Thomas-Krenn-Wiki](https://www.thomas-krenn.com/en/wiki/Linux_I/O_Performance_Tests_using_dd)
-[linux - why is dd with direct flag much slower than dsync - Stack Overflow](https://stackoverflow.com/a/50882704/2087704)
+## see also
+- [OSX illegal numeric value](https://rendezvouswithpavan.wordpress.com/2015/06/16/dd-bs-illegal-numeric-value-error-on-mac-os-x/)
+- [Linux I/O Performance Tests using dd - Thomas-Krenn-Wiki](https://www.thomas-krenn.com/en/wiki/Linux_I/O_Performance_Tests_using_dd)
+- [linux - why is dd with direct flag much slower than dsync - Stack Overflow](https://stackoverflow.com/a/50882704/2087704)

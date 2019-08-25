@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash trap
 created: '2019-08-02T06:42:37.638Z'
-modified: '2019-08-02T08:32:04.355Z'
+modified: '2019-08-20T07:21:21.983Z'
 ---
 
 # bash trap

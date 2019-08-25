@@ -1,8 +1,8 @@
 ---
-tags: [api]
+tags: [curl]
 title: gitlab
 created: '2019-07-30T06:19:49.064Z'
-modified: '2019-08-02T07:59:17.161Z'
+modified: '2019-08-20T09:45:17.042Z'
 ---
 
 # gitlab

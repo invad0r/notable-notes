@@ -2,15 +2,13 @@
 tags: [bash]
 title: bash arithmetic
 created: '2019-07-30T06:19:48.992Z'
-modified: '2019-08-02T08:44:05.997Z'
+modified: '2019-08-25T20:02:30.703Z'
 ---
 
 # bash arithmetic
 
 >  most (if not all) GNU/Linux shells only perform `integer` operations.
 
-- [How can I do division with variables in a Linux shell? - Stack Overflow](https://stackoverflow.com/a/18093887)
-- [How to Add Calculations to a Bash Script](https://www.lifewire.com/arithmetic-in-bash-2200566)
 
 ## printf
 ```sh
@@ -45,7 +43,9 @@ echo "(2/3)+(7/8)" | bc -l          # = 1.54166666666666666666
 ```
 
 ## expr
+
 > `evaluate expression` using only `integer` and tops out at `2^63 - 1`
+
 ```sh
 expr 1 + 1           # = 2
 
@@ -57,8 +57,9 @@ expr $myvar / 3      # = 1
 
 expr $myvar \* 3     # = 9
 ```
-[What is the difference between bcl and expr? Stack Exchange](https://unix.stackexchange.com/a/327468)
 
-## let
-
-[[bash let.md]]
+## see also
+- [[bash let.md]]
+- [How can I do division with variables in a Linux shell? - Stack Overflow](https://stackoverflow.com/a/18093887)
+- [How to Add Calculations to a Bash Script](https://www.lifewire.com/arithmetic-in-bash-2200566)
+- [What is the difference between bcl and expr? Stack Exchange](https://unix.stackexchange.com/a/327468)

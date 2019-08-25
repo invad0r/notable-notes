@@ -1,8 +1,8 @@
 ---
-tags: [bash, bash/builtin]
+tags: [bash/builtin]
 title: bash fg
 created: '2019-08-02T06:42:37.596Z'
-modified: '2019-08-19T14:19:02.089Z'
+modified: '2019-08-20T07:21:21.960Z'
 ---
 
 # bash fg

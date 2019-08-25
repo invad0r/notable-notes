@@ -1,8 +1,8 @@
 ---
-tags: [lang/java]
+tags: [java]
 title: java access modifiers
 created: '2019-08-13T11:26:57.432Z'
-modified: '2019-08-18T14:59:39.157Z'
+modified: '2019-08-20T07:24:24.716Z'
 ---
 
 # java access modifiers

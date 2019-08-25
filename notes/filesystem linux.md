@@ -1,11 +1,15 @@
 ---
-tags: [linux]
+tags: [filesystem, linux]
 title: filesystem linux
 created: '2019-07-30T06:19:49.053Z'
-modified: '2019-08-18T15:13:07.887Z'
+modified: '2019-08-23T11:10:57.519Z'
 ---
 
 # filesystem linux
+
+```sh
+cat /proc/filesystems
+```
 
 ## Filesystem Hierarchy Standard (FHS)
 ```sh
@@ -17,9 +21,6 @@ modified: '2019-08-18T15:13:07.887Z'
 /usr/bin  # Same as first, but for general system-wide binaries.
 /usr/sbin # Same as above, but for scripts with superuser (root) privileges required.
 ```
-[Differences between /bin, /sbin, /usr/bin, /usr/sbin, /usr/local/bin, /usr/local/sbin - Ask Ubuntu](http://askubuntu.com/a/308048/219213)
-[Why are there so many different ways to measure disk usage? - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/120311/why-are-there-so-many-different-ways-to-measure-disk-usage)
-
 
 # blocksize
 ```sh
@@ -63,49 +64,12 @@ chmod [u|g][+|-][r|w|x]
       user or group
 ```
 
-## problem: boot partition full
-```sh
-df -h
-
-uname -r
-
-cd /boot
-du -sk * | sort -n
-
-showmount
-mountpoint
-
-cat /etc/export
-OR
-showmount -e
-
-
-dpkg --list 'linux-image*'
-
-dpkg --configure -a
-```
-
-## types
-
-* shm - shared memory a.k.a. tempfs
-  * shm is shared data between processes not threads
-  * can be used to set permissions on memory
-* ext
-  * ext2
-  * ext3
-  * ext4
-* lsofs
-* sysfs
-* procfs
-* nfs
-* ntfs, vfat
-* cifs = Common Internet File System; CIFS-Protcol successor to SMB-Protocol
-
-```sh
-cat /proc/filesystems
-
-nodev   sysfs
-nodev   rootfs
-nodev   tmpfs
-..
-```
+## see also
+- [Differences between /bin, /sbin, /usr/bin, /usr/sbin, /usr/local/bin, /usr/local/sbin - Ask Ubuntu](http://askubuntu.com/a/308048/219213)
+- [Why are there so many different ways to measure disk usage? - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/120311/why-are-there-so-many-different-ways-to-measure-disk-usage)
+- [[ext]]
+- [[lsofs]]
+- [[sysfs]]
+- [[procfs]]
+- [[nfs]]
+- [[shm]]

@@ -1,8 +1,8 @@
 ---
-tags: [lang/go]
+tags: [go]
 title: go func
 created: '2019-07-30T06:19:49.067Z'
-modified: '2019-07-30T08:02:09.516Z'
+modified: '2019-08-25T20:09:25.745Z'
 ---
 
 # go func
@@ -35,8 +35,6 @@ fmt.Println(nextInt())      // 3
 newInts := intSeq()
 fmt.Println(newInts())      // 1
 ```
-
-[Go by Example: Closures](https://gobyexample.com/closures)
 
 ### functions parameterized by type e.g.
 ```go
@@ -75,4 +73,6 @@ func main() {
   fmt.Println(c) // [10, 20]
 }
 ```
-[Go: Function types and values \| Programming.Guide](https://programming.guide/go/function-pointer-type-declaration.html)
+## see also
+- [Go by Example: Closures](https://gobyexample.com/closures)
+- [Function types and values - Programming.Guide](https://programming.guide/go/function-pointer-type-declaration.html)

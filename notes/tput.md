@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [linux]
 title: tput
 created: '2019-07-30T06:19:49.254Z'
-modified: '2019-07-30T06:24:51.589Z'
+modified: '2019-08-20T07:20:01.242Z'
 ---
 
 # tput

@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2019-08-01T07:18:14.082Z'
+modified: '2019-08-25T20:06:40.962Z'
 ---
 
 # bash bats
@@ -18,6 +18,5 @@ modified: '2019-08-01T07:18:14.082Z'
 }
 ```
 
-### examples
-
-[govmomi/test_helper.bash at master · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/blob/master/govc/test/test_helper.bash)
+### see also
+- [govmomi/test_helper.bash at master · GitHub](https://github.com/vmware/govmomi/blob/master/govc/test/test_helper.bash)
