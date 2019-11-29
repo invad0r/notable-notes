@@ -2,12 +2,11 @@
 tags: [bash/builtin]
 title: bash fc
 created: '2019-07-30T06:19:49.048Z'
-modified: '2019-08-20T07:21:21.959Z'
+modified: '2019-08-29T12:21:20.541Z'
 ---
 
 # bash fc
 > `fix command` - open last command from history in editor and run
-[[bash history]]
 
 ```sh
 fc -l -1000       # list last 1000 command from history
@@ -29,6 +28,7 @@ set -o history             # enable history
 history | grep git
 ```
 
-["history" stops working when run inside bash script - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/112362/193945)
-
-[Rapidly invoke an editor to write a long, complex, or tricky command](https://www.commandlinefu.com/commands/view/1446/rapidly-invoke-an-editor-to-write-a-long-complex-or-tricky-command)
+## see also
+- [[bash history]]
+- ["history" stops working when run inside bash script - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/112362/193945)
+- [Rapidly invoke an editor to write a long, complex, or tricky command](https://www.commandlinefu.com/commands/view/1446/rapidly-invoke-an-editor-to-write-a-long-complex-or-tricky-command)

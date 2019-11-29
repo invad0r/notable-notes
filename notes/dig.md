@@ -2,23 +2,22 @@
 tags: [dns, linux]
 title: dig
 created: '2019-07-30T06:19:49.037Z'
-modified: '2019-07-30T08:45:22.671Z'
+modified: '2019-09-24T04:30:43.937Z'
 ---
 
 # dig
 
-`domain information groper`
+> `domain information groper`
 
-### install
-`apt install dnsutils`
-`apk add --no-cache bind-tools`
+## install
+`apt install dnsutils`, `yum install bind-utils`, `apk add --no-cache bind-tools`
 
-### specific nameserver
+## specific nameserver
 ```sh
 dig @server name type   # If no server argument is provided, dig consults /etc/resolv.conf
 ```
 
-### options
+## options
 
 ```
 +[no]all    Set or clear all display flags.
@@ -30,30 +29,16 @@ dig @server name type   # If no server argument is provided, dig consults /etc/r
 dig +noall +answer +authority +additional na-cc.domain.net
 ```
 
-### authorative query
+## authorative query
 ```sh
-dig +noall +answer ns {ots.de,ots.ch,na.cc}
-
-  # return 
-  # ots.de.                 74019   IN      NS      ns8.colt.net.
-  # ots.de.                 74019   IN      NS      ns1.de.colt.net.
-  # ots.ch.                 86335   IN      NS      ns8.colt.net.
-  # ots.ch.                 86335   IN      NS      ns1.de.colt.net.
-  # na.cc.                  7835    IN      NS      ns8.colt.net.
-  # na.cc.                  7835    IN      NS      ns1.de.colt.net.
+dig +noall +answer ns {host.com,host.net,host.org}
 ```
 
-### non authorative query
+## non authorative query
 ```sh
-dig +noall +answer {ots.de,ots.ch,na.cc}
-  # ots.de.                 73791   IN      A       46.137.127.165                                        
-  # ots.ch.                 795     IN      A       46.137.127.165                                        
-  # na.cc.                  7607    IN      A       46.137.127.165 
-  
-  # notice different ttl after seconr query 
-  # ots.de.                 73641   IN      A       46.137.127.165
-  # ots.ch.                 645     IN      A       46.137.127.165
-  # na.cc.                  7457    IN      A       46.137.127.165
+dig +noall +answer {host.com,host.net,host.org}
 ```
-[dns - TTL when querying for any record with dig - Super User](https://superuser.com/a/873408/341187)
+
+## see also
+- [TTL when querying for any record with dig - Super User](https://superuser.com/a/873408/341187)
 

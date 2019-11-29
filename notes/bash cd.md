@@ -2,23 +2,27 @@
 tags: [bash/builtin]
 title: bash cd
 created: '2019-08-02T06:42:37.564Z'
-modified: '2019-08-20T07:21:21.947Z'
+modified: '2019-11-28T08:09:57.273Z'
 ---
 
 # bash cd
 
-[[bash dirs]], [[bash pushd]], [[bash popd]], [[bash pwd]]
-
+## usage
 ```sh
 cd      # move to homedir
 cd ~    # move to ~ expands to homedir `$HOME`
 
 cd -    # change to previous dir
-
 ```
-## shopt
 
-[[bash shopt]]
+## shopt
 ```sh
 shopt -s cdspell    # correct misspelled dir
 ```
+
+## see also
+- [[bash shopt]] 
+- [[bash dirs]] 
+- [[bash pushd]] 
+- [[bash popd]] 
+- [[bash pwd]]

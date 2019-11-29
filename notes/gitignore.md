@@ -2,7 +2,7 @@
 tags: [git]
 title: gitignore
 created: '2019-08-19T13:48:58.623Z'
-modified: '2019-08-19T13:49:21.540Z'
+modified: '2019-11-18T13:26:51.224Z'
 ---
 
 # gitignore
@@ -18,3 +18,6 @@ modified: '2019-08-19T13:49:21.540Z'
 
 *.swp               # all  files *.swp
 ```
+
+## see also
+- 

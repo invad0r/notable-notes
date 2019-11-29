@@ -2,7 +2,7 @@
 tags: [c, java, javascript, python]
 title: typing
 created: '2019-07-30T06:19:49.256Z'
-modified: '2019-08-20T09:46:36.492Z'
+modified: '2019-10-23T14:31:40.369Z'
 ---
 
 # typing
@@ -23,12 +23,13 @@ modified: '2019-08-20T09:46:36.492Z'
 
 ### language differences
 
-| Language       | Static? | Implicit Conversions? | Rules Enforced? | Memory-Safe? |
-|--              |--       |--                     |--               |--            |
-| [[c]]          | Strong  | Depends               | Weak            | Weak         |
-| [[java]]       | Strong  | Depends               | Strong          | Strong       |
-| haskell        | Strong  | Strong                | Strong          | Strong       |
-| [[python]]     | Weak    | Depends               | Strong          | Strong       |
-| [[javascript]] | Weak    | Weak                  | Weak            | Strong       |
+Language       | Static? | Implicit Conversions? | Rules Enforced? | Memory-Safe?
+--             |--       |--                     |--               |--           
+[[c]]          | Strong  | Depends               | Weak            | Weak        
+[[java]]       | Strong  | Depends               | Strong          | Strong      
+haskell        | Strong  | Strong                | Strong          | Strong      
+[[python]]     | Weak    | Depends               | Strong          | Strong      
+[[javascript]] | Weak    | Weak                  | Weak            | Strong      
 
-[Strong and weak typing – Programmer's Compendium](https://www.destroyallsoftware.com/compendium/strong-and-weak-typing?share_key=6b0dd1ec18ab6102)
+## see also
+- [Strong and weak typing – Programmer's Compendium](https://www.destroyallsoftware.com/compendium/strong-and-weak-typing?share_key=6b0dd1ec18ab6102)

@@ -2,7 +2,7 @@
 tags: [initsystem, linux]
 title: systemd
 created: '2019-08-20T14:38:14.235Z'
-modified: '2019-08-22T07:19:08.450Z'
+modified: '2019-10-23T06:04:58.010Z'
 ---
 
 # systemd
@@ -27,6 +27,7 @@ systemd-analyze blame   # list of all running units, ordered by the time taken t
 
 
 ## see also
+- [[systemctl]]
 - [[unix socket]]
 - [[d-bus]]
 - [[cgroups]]

@@ -2,11 +2,12 @@
 tags: [database]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2019-08-18T14:21:22.536Z'
+modified: '2019-11-14T09:01:43.029Z'
 ---
 
 # psql
 
+## usage
 ```sql
 psql DBNAME USERNAME
 
@@ -30,8 +31,7 @@ DESCRIBE TABLE
 
 \x auto         # output format
 ```
-[PSQL-META-COMMANDS](https://www.postgresql.org/docs/current/static/app-psql.html#APP-PSQL-META-COMMANDS)
-[alternate-output-format-for-psql](https://stackoverflow.com/questions/9604723/alternate-output-format-for-psql)
+
 
 ### init
 ```sql
@@ -52,3 +52,9 @@ UPDATE users SET admin = 't' WHERE id = '38';
 select admin from users where id = '38';
 ROLLBACK;
 ```
+
+## see also
+- [PSQL-META-COMMANDS](https://www.postgresql.org/docs/current/static/app-psql.html#APP-PSQL-META-COMMANDS)
+- [alternate-output-format-for-psql](https://stackoverflow.com/questions/9604723/alternate-output-format-for-psql)
+- [[mongo]]
+- [[mysql]]

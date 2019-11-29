@@ -2,21 +2,40 @@
 tags: [bash/builtin]
 title: bash trap
 created: '2019-08-02T06:42:37.638Z'
-modified: '2019-08-20T07:21:21.983Z'
+modified: '2019-11-26T08:14:05.974Z'
 ---
 
 # bash trap
 
-```sh
-trap 'echo "VARIABLE-TRACE> \$DOCKER_HOST= \"$DOCKER_HOST\""' DEBUG
-```
+> Defines and activates handlers to be run when the shell receives signals or other conditions
 
+## usage
 ```sh
-trap cmd sig1 sig2  # executes a command when a signal is received by the script
+trap -l       # print a list of signal names and their corresponding numbers
+
+trap -p CMD   # display the trap commands associated with each SIGNAL_SPEC
+
+trap 'echo "VARIABLE-TRACE> \$DOCKER_HOST= \"$DOCKER_HOST\""' DEBUG   # debugging
+
+trap CMD sig1 sig2  # executes a command when a signal is received by the script
+
 trap "" sig1 sig2   # ignores that signals
+
 trap - sig1 sig2    # resets the action taken when the signal is received to the default
 ```
 
+## signals
+SIGNAME   | SIGVAL          | Effect                  | shortcut
+--        | --              | --                      | --
+`SIGHUP`  | `1`             | Hangup                  | 
+`SIGINT`  | `2`             | Interrupt from keyboard | <kbd>ctrl + c</kbd>
+`SIGKILL` | `9`             | Kill-Signal             |
+`SIGTERM` | `15`            | Terminate-Signal        |
+`SIGSTOP` | `17`,`19`,`23`  | Stop proc               | <kbd>ctl + z </kbd>
+
+`SIGKILL` and `SIGSTOP` cannot be caught, blocked or ignored !
+
+## go defer
 ```sh
 # golang like defer
 # https://twitter.com/TheNikhita/status/1061973769470795776
@@ -52,3 +71,7 @@ function returntrap {
 
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 ```
+
+## see also
+- [[bash debugging]]
+- [[mktemp]]

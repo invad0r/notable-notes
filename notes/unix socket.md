@@ -2,7 +2,7 @@
 tags: [container/docker, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2019-08-22T07:16:36.447Z'
+modified: '2019-10-23T14:55:57.984Z'
 ---
 
 # unix socket
@@ -16,7 +16,6 @@ modified: '2019-08-22T07:16:36.447Z'
   - It looks and behaves much like a low-level file descriptor. 
   - This happens because the commands like read () and write () works with the same way they do with the files and pipes.
 
-[what-socket - linux.com](https://www.linux.com/news/what-socket)
 
 
 ### socket
@@ -27,3 +26,5 @@ modified: '2019-08-22T07:16:36.447Z'
 
 ## see also
 - [[docker engine api]]
+- [what-socket - linux.com](https://www.linux.com/news/what-socket)
+- [[socat]]

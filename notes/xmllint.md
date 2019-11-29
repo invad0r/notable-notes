@@ -2,7 +2,7 @@
 tags: [linux]
 title: xmllint
 created: '2019-08-01T08:20:39.353Z'
-modified: '2019-08-20T07:25:37.213Z'
+modified: '2019-08-28T22:14:10.589Z'
 ---
 
 # xmllint
@@ -57,13 +57,14 @@ xmllint --shell /tmp/namespace.xml
 xmllint --xpath "/*[local-name()='chat']" /tmp/namespace.xml
 ```
 
-
 ### pom.xml
-
 ```sh
 xmllint --shell pom.xml <<< 'setns ns=http://maven.apache.org/POM/4.0.0
 cat /ns:project/ns:version/text()'
 
 xmllint --xpath '/*[local-name()="project"]/*[local-name()="version"]/text()' pom.xml
 ```
-[get-pom-xml-version-with-xmllint](https://stackoverflow.com/a/41115011/2087704)
+
+## see also
+- [[mvn]]
+- [get-pom-xml-version-with-xmllint](https://stackoverflow.com/a/41115011/2087704)

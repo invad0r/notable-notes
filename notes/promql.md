@@ -2,17 +2,13 @@
 tags: [prometheus]
 title: promql
 created: '2019-07-30T06:19:49.216Z'
-modified: '2019-07-30T08:09:26.935Z'
+modified: '2019-11-17T17:42:31.448Z'
 ---
 
 # promql
-`prometheus query language`
+> `prometheus query language`
 
-* [Querying basics | Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-* [PromQL for Humans](https://timber.io/blog/promql-for-humans/)
-* [PromQL queries for the rest of us](https://www.weave.works/blog/promql-queries-for-the-rest-of-us/)
-
-
+## usage
 ```sh
 topk(10, count by (__name__)({__name__=~".+"}))    # top 10 metrics
 
@@ -38,6 +34,12 @@ sum by (instance) (irate(node_disk_io_time_ms{instance=~"swarm-2.node.ddev.domai
 /api/v1/label/name/values          # labels which use name=".."
 
 /-/reload
+
 ```
-[Prometheus: grouping metrics by metric names - Stack Overflow](https://stackoverflow.com/a/49151596)
-[Google Groups](https://groups.google.com/d/msg/prometheus-developers/oK_bx8rHmZs/0AA3lWnwAQAJ)
+## see also
+- [[promtool]]
+- [Querying basics | Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+- [PromQL for Humans](https://timber.io/blog/promql-for-humans/)
+- [PromQL queries for the rest of us](https://www.weave.works/blog/promql-queries-for-the-rest-of-us/)
+- [Prometheus: grouping metrics by metric names - Stack Overflow](https://stackoverflow.com/a/49151596)
+- [Google Groups](https://groups.google.com/d/msg/prometheus-developers/oK_bx8rHmZs/0AA3lWnwAQAJ)

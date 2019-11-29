@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2019-08-19T14:12:04.096Z'
+modified: '2019-11-15T06:41:18.929Z'
 ---
 
 # aws
@@ -19,3 +20,6 @@ aws configure --profile user2
 ```sh
 aws s3api list-objects --bucket na-terraform-state --output text
 ```
+
+## see also
+- [[mc]]

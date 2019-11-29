@@ -2,15 +2,12 @@
 tags: [bash/builtin]
 title: bash jobs
 created: '2019-08-02T06:42:37.604Z'
-modified: '2019-08-20T07:21:21.965Z'
+modified: '2019-08-29T12:25:35.215Z'
 ---
 
 # bash jobs
 
 > Lists the jobs running in the background, giving the job number
-
-[[bash process-handling]], [[bash fg]], [[bash bg]]
-
 
 ```sh
 jobs         # lists all jobs (use with -l to see associated PID)
@@ -26,3 +23,7 @@ jobs         # lists all jobs (use with -l to see associated PID)
 | `%-`     | Last job                 |
 | `$!`     | Last background process  |
 
+## see also
+- [[bash process-handling]]
+- [[bash fg]]
+- [[bash bg]]

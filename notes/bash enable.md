@@ -2,13 +2,12 @@
 tags: [bash/builtin]
 title: bash enable
 created: '2019-08-02T06:42:37.583Z'
-modified: '2019-08-20T07:21:21.954Z'
+modified: '2019-08-29T12:19:38.558Z'
 ---
 
 # bash enable
 > Enable and disable shell builtins.
 
-[[bash builtin]]
 
 ## options
 ```sh
@@ -22,3 +21,6 @@ modified: '2019-08-20T07:21:21.954Z'
 -f        Load builtin NAME from shared object FILENAME
 -d        Remove a builtin loaded with -f
 ```
+
+## see also
+- [[bash builtin]]

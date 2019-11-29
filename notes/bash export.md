@@ -2,7 +2,7 @@
 tags: [bash/builtin]
 title: bash export
 created: '2019-08-02T06:42:37.589Z'
-modified: '2019-08-20T07:21:21.957Z'
+modified: '2019-08-29T12:20:40.956Z'
 ---
 
 # bash export
@@ -25,9 +25,11 @@ export -f myFunc
 ```sh
 export -p
 ```
-see also [[bash declare]]
 
 ## mutliple vairables
 ```sh
 export A=1 B=2 C=3
 ```
+
+## see also
+- [[bash declare]]

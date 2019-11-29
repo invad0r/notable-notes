@@ -2,21 +2,19 @@
 tags: [database]
 title: sqlite
 created: '2019-07-30T06:19:49.240Z'
-modified: '2019-07-30T08:49:23.716Z'
+modified: '2019-11-14T09:02:46.947Z'
 ---
 
 # sqlite
 
-```bash
+## usage
+```sh
 sqlite3 grafana.db    # create or us database
 ```
     
 ```sql
 .open ./var/lib/grafana/grafana.db
-``` 
 
-
-```sql
 .databases
 
 .tables
@@ -50,3 +48,8 @@ INSERT INTO playsearch SELECT rowid, text FROM plays;
 -- Now we can search for our soliloquy:
 SELECT rowid, text FROM playsearch WHERE text MATCH "whether tis nobler";
 ```
+
+## see also
+- [[mysql]]
+- [[psql]]
+- [[mongo]]

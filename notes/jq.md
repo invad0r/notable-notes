@@ -2,88 +2,87 @@
 tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2019-08-20T12:10:11.891Z'
+modified: '2019-10-23T14:21:39.243Z'
 ---
 
 # jq
 
-[[yq]]
+> Command-line JSON processor - transform JSON in various ways, by selecting, iterating, reducing and otherwise mangling JSON documents
 
-## query
+## flags
 ```sh
---raw-output / -r   # output no quotes
+--raw-output, -r      # output no quotes
 
---unbuffered        # if you're piping a slow data source into jq and piping jq's output elsewhere
+--unbuffered          # if you're piping a slow data source into jq and piping jq's output elsewhere
 
-cat .docker/config.json | jq -r '.auths | keys[]'   # get only keys from auths{} object
+--null-input, -n      # Don't read any input at all! useful when using jq as a simple calculator or to construct JSON data from scratch
+
+--sort-keys, -S       # Output the fields of each object with the keys in sorted order
+                      # diff <(jq -S . fileA.json) <(jq -S . fileA.json)
 ```
+
+## `tojson` `fromjson`
+```sh
+echo '[1, "foo", ["foo"]]' | jq '. | tostring'
+
+echo '[1, "foo", ["foo"]]' | jq '. | tojson'
+
+echo '"[1,\"foo\",[\"foo\"]]"' | jq '. | fromjson'
+```
+
+## string interpolation
+```sh
+STDOUT | jq '.[]| "\(.id) \(.name)"'  # print in one line
+
+jq -n -r '["abc","def"] | "\(.[0]) \(.[1])"'
+```
+
+```sh
+STDOUT | jq -r '.auths | keys[]'   # get only keys from auths{} object
+```
+## select
+- get a object based on object's value
+```sh
+jq '.VirtualMachines[].Config.Hardware.Device[] | select(.Key== 2000) | .CapacityInBytes'
+```
+
 ### filter values
 ```sh
-# removes from .[], ..map for array 
-| jq --unbuffered 'map(del(.database, .id, .isDefault, .jsonData, .orgId, .password, .typeLogoUrl, .user))'
+STDOUT | jq --unbuffered 'map(del(.database, .id, .isDefault, .jsonData, .orgId, .password, .typeLogoUrl, .user))' # removes from .[], ..map for array 
 
-# keeps whitelisted from .[]
-| jq --unbuffered 'map({access, basicAuth, name, type, url})'
+STDOUT | jq --unbuffered 'map({access, basicAuth, name, type, url})'   # keeps whitelisted from .[]
+
+STDOUT | jq 'map(.price) | add'         #  will take an array of JSON objects as input and return the sum of their "price" fields
 ```
 
-### add field
 ```sh
-echo '{"hello": "world"}' | jq --arg foo bar '. + {foo: $foo}'
-```
-```json
-{  "hello": "world", "foo": "bar"  }
+echo '{"hello": "world"}' | jq --arg foo bar '. + {foo: $foo}'      # add field: {  "hello": "world", "foo": "bar"  }
+
+echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: $foo}'    # override field value: { "hello": "bar" }
+
+echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: ("not" + $foo)}'    # concat and add: { "hello": "world", "foo": "notbar" }
 ```
 
-### override field value
-```sh
-echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: $foo}'
-```
-```json
-{ "hello": "bar" }
-```
-
-### concat and add
-```sh
-echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: ("not" + $foo)}'
-```
-```json
-{ "hello": "world", "foo": "notbar" }
-```
-
-### pint in same line
+### print in same line
 ```sh
 docker exec -t consul consul watch -type=service -service=swarm-a \
-
   | jq -r '.[] | [.Node.Node, .Service.Service] | @tsv'    # input must be an array, and it is rendered as TSV (tab-separated values).
-
-  | jq -r '.[] | "\(.Node.Node) \(.Service.Service)"'      # String interpolation
 ```
-[json - Printing multiple values on the same line - Stack Overflow](https://stackoverflow.com/a/46131963)
 
 ### get value of dynamic object names
-```json
-{ "traefik-metrics-192-csHt9CK1Pq5ATmZ-i-8km0dPkoU": { "url": "http://10.32.23.150:7070", "weight": 1 },
- "traefik-metrics-193-zHtiw3Y4-N-RYUIP7DxczqBU3ZE": { "url": "http://10.32.23.151:7070", "weight": 1 },
-...
-```
-
 ```sh
-curl \
-  --silent \
-  --request GET \
-  --url http://swarm-a.service.ddev.domain.net:7070/api/providers/consul_catalog/backends/backend-traefik-metrics \
-  | jq -r '.servers  | keys[] as $k | "\(.[$k] | .url)"'
+STDOUT | jq -r '.servers  | keys[] as $k | "\(.[$k] | .url)"'
   
+# { "traefik-metrics-192-csHt9CK1Pq5ATmZ-i-8km0dPkoU": { "url": "http://10.32.23.150:7070", "weight": 1 },
+#  "traefik-metrics-193-zHtiw3Y4-N-RYUIP7DxczqBU3ZE": { "url": "http://10.32.23.151:7070", "weight": 1 },
+#
+# results:
 # http://10.32.23.150:7070
 # http://10.32.23.151:7070
 ```
-[json - jq print key and value for all in sub-object - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/406425)
 
-
-## compare
-```sh
-jq -S . fileA.json > fileA_fmt.json
-jq -S . fileB.json > fileB_fmt.json
-
-diff fileA_fmt.json fileB_fmt.json
-```
+## see also
+- [[yq]]
+- [[govc vm]]
+- [jq print key and value for all in sub-object - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/406425)
+- [Printing multiple values on the same line - Stack Overflow](https://stackoverflow.com/a/46131963)

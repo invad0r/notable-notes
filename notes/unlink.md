@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: unlink
 created: '2019-08-22T07:15:21.582Z'
-modified: '2019-08-22T07:16:19.511Z'
+modified: '2019-08-28T08:01:45.015Z'
 ---
 
 # unlink

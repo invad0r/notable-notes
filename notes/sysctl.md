@@ -2,40 +2,35 @@
 tags: [linux, osx]
 title: sysctl
 created: '2019-07-30T06:19:49.249Z'
-modified: '2019-07-30T09:04:53.791Z'
+modified: '2019-10-23T14:41:43.873Z'
 ---
 
 # sysctl 
 
-configure kernel parameters at runtime 
+> configure kernel parameters at runtime 
 
+## usage
 ```sh
-sysctl -a   # print all
+sysctl -a                             # print all
 
+sysctl vm.swappiness                  # get single value
 
-sysctl vm.swappiness          # get single value
+sysctl -n, --values                   # print only values of a variables
+sysctl -n machdep.cpu.brand_string    # get cpu infor on osx: "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz"
 
-cat /proc/sys/vm/swappiness   # same single value
-
-
-/etc/sysctl.conf              # sysctl values are loaded at boot time from the 
-
-vi /etc/sysctl.conf           # Modify Kernel parameter in /etc/sysctl.conf for permanent change
-sysctl –p
-
-
-
-
-sysctl –w {variable-name=value}  # Modify kernel parameter temporarily
+sysctl –w {variable-name=value}       # Modify kernel parameter temporarily
 
 sysctl -w vm.max_map_count=262144
+
+cat /proc/sys/vm/swappiness           # same single value
 ```
 
-
-
-## osx
+## config
 ```sh
-sysctl -n machdep.cpu.brand_string
+/etc/sysctl.conf              # where sysctl values are loaded at boot time  - modify Kernel parameter for permanent change
 
-  # Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz
+sysctl -p, --load[=<file>]    # read values from file
 ```
+
+## see also
+- [[dmesg]]

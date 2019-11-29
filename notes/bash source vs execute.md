@@ -3,12 +3,12 @@ favorited: true
 tags: [bash]
 title: bash source vs execute
 created: '2019-07-30T06:19:49.020Z'
-modified: '2019-08-19T14:13:04.439Z'
+modified: '2019-09-24T09:24:24.871Z'
 ---
 
 # bash source vs execute
 
-[[bash source]]
+
 
 ## determine if script is sourced or executed
 ```sh
@@ -21,3 +21,8 @@ if [[ "$(basename ${BASH_SOURCE[0]})" == "${0}" ]];              then echo "call
 
 [ "$_" != "$0" ] && echo "Script is being sourced" || echo "Script is a subshell"
 ```
+
+## see also
+- [[bash]]
+- [[bash source]]
+- [[bash parameter expansion]]

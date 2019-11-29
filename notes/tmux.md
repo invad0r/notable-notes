@@ -1,22 +1,24 @@
 ---
+tags: [linux]
 title: tmux
 created: '2019-07-30T06:19:49.253Z'
-modified: '2019-08-19T14:33:15.026Z'
+modified: '2019-08-28T09:31:19.265Z'
 ---
 
 # tmux
 
-[tmux cheatsheet](https://devhints.io/tmux) 
+> `terminal multiplexer` enables a number of terminals to be created, accessed, and controlled from a single screen
 
-
+<kbd>C-b + :</kbd> - prompt
 ```sh
 :set status-style "bg=red"
 ```
 
 ## conf
 ```sh
-C-b :source-file ~/.tmux.conf         # reloadload .tmux.conf withough killing tmux session
-
+:source-file ~/.tmux.conf         # reloadload .tmux.conf withough killing tmux session
+```
+```sh
 tmux source-file ~/.tmux.conf
 
 # show options
@@ -25,37 +27,36 @@ tmux show-options -w    # window
 tmux show-options -s    # server
 ```
 ## windows (tabs) / panes
+<kbd>C-b + ?</kbd>    - show keybindings
+<kbd>C-b + &</kbd>    - kill window
+<kbd>C-b + x</kbd>    - kill pane
+<kbd>C-b + c</kbd>    - new window
+<kbd>C-b + ,</kbd>    - name window
+<kbd>C-b + w</kbd>    - list windows
+<kbd>C-b + f</kbd>    - find window
+<kbd>C-b + &</kbd>    - kill window
+
+<kbd>C-b + .</kbd>  # move window - prompted for a new number
+
 ```
-C-b ?               # show keybindings
-C-b &               # kill window
-C-b x               # kill pane
-C-b c               # new window
-C-b ,               # name window
-C-b w               # list windows
-C-b f               # find window
-C-b &               # kill window
-
-C-b .               # move window - prompted for a new number
-C-b :movew<CR>      # move window to the next unused number
-
-swap-window -s 1 -t 0      # swap -source to -target
-swap-window -t -1          # swap current window with next
-
-C-b %               # horizontal split
-C-b "               # vertical split
-
-C-b o               # swap panes
-C-b q               # show pane numbers
-C-b x               # kill pane
-C-b ⍽               # space - toggle between layouts
+:movew                      # move window to the next unused number
+:swap-window -s 1 -t 0      # swap -source to -target
+:swap-window -t -1          # swap current window with next
 ```
+
+<kbd>C-b + %</kbd> - horizontal split
+<kbd>C-b + "</kbd> - vertical split
+
+<kbd>C-b + o</kbd> - swap panes
+<kbd>C-b + q</kbd> - show pane numbers
+<kbd>C-b + x</kbd> - kill pane
+<kbd>C-b + ⍽</kbd> - space - toggle between layouts
 ### join-pane
 ```
 join-pane -t :1      # moves current pante to window target 1
 
 tmux join-pane -s 7 -t 6   # move window 7 as pane to window 6
 ```
-[Moving tmux pane to window - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window)
 
 
 ## custom session
@@ -84,3 +85,7 @@ function window1 {
 	watch -d 'for color in {blue,green}; do echo $color; docker service inspect mb-api-${color}_application --format="{{json .Spec.Labels.SERVICE_8080_TAGS}}"; echo; done'
 }
 ```
+
+## see also
+- [tmux cheatsheet](https://devhints.io/tmux) 
+- [Moving tmux pane to window - unix.stackexchange.com](https://unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window)

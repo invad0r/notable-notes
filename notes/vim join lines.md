@@ -2,7 +2,7 @@
 tags: [vim]
 title: vim join lines
 created: '2019-07-31T06:11:23.688Z'
-modified: '2019-07-31T06:42:56.380Z'
+modified: '2019-08-26T08:43:21.863Z'
 ---
 
 # vim join lines
@@ -20,5 +20,8 @@ modified: '2019-07-31T06:42:56.380Z'
 
 :%s/\n/ /g # subst line break with space
 ```
+
+## see also
+- [[vim substitute]]
 
 

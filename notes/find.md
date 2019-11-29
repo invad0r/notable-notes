@@ -2,12 +2,18 @@
 tags: [linux, regex]
 title: find
 created: '2019-07-30T06:19:49.054Z'
-modified: '2019-08-22T11:57:17.898Z'
+modified: '2019-08-28T21:45:06.232Z'
 ---
 
 # find
 
-### `-exec`
+```sh
+find . \( -name '*.txt' -o -name '*.md' \) \! -empty    # .txt or .md files under the current directory that are not empty (> 0 bytes).
+
+find . -iname '*expenses*' # case insensitive way to search for filenames
+```
+
+## `-exec`
 ```sh
 find -exec command {} \;  # escape semicolon to prevent shell from interpreting it
 
@@ -33,7 +39,7 @@ find . -type f -exec chmod 664 '{}' \;
 find . -type d -exec chmod ug=rwx,g+s,o=rx '{}' \;
 ```
 
-### patterns / regex
+## patterns / regex
 > `-name` uses pattern
 ```sh
 find . -type f -name "[!.]*"    # ignore all dotfiles

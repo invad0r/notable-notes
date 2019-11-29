@@ -2,7 +2,7 @@
 tags: [bash/builtin]
 title: bash pwd
 created: '2019-08-02T06:42:37.618Z'
-modified: '2019-08-20T07:21:21.972Z'
+modified: '2019-08-29T12:27:20.305Z'
 ---
 
 # bash pwd
@@ -22,4 +22,6 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ```
-[reliable-way-for-a-bash-script-to-get-the-full-path](https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself/4774063)
+
+## see also
+- [reliable-way-for-a-bash-script-to-get-the-full-path](https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself/4774063)

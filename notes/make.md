@@ -2,7 +2,7 @@
 tags: [buildtool, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2019-08-22T11:49:48.202Z'
+modified: '2019-09-26T07:01:31.535Z'
 ---
 
 # make
@@ -12,8 +12,14 @@ modified: '2019-08-22T11:49:48.202Z'
 - `.am` stands for `automake`
 - `.in` input for `configure` think of template
 
+## usage
+
 ```sh
 make -f MyOtherMakefile     # specify other file
+
+make clean                  # run specific target
+
+make -B venv                # always run target
 ```
 
 ### target
@@ -22,10 +28,6 @@ make -f MyOtherMakefile     # specify other file
 
 clean :
 	rm -f *.dat
-```
-
-```sh
-make clean    # call specific target
 ```
 
 ```make
@@ -48,8 +50,8 @@ all:
 ## patterns and functions
 
 ## see also
-- [[automake]]
 - [[gcc]]
+- [[automake]]
 - [what-how-makefile](https://opensource.com/article/18/8/what-how-makefile)
 - [what-are-makefile-am-and-makefile-in](https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in)
 - [confused-about-configure-script-and-makefile-in](https://stackoverflow.com/a/26832773/2087704)

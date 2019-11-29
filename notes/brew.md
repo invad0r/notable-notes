@@ -2,19 +2,22 @@
 tags: [brew, osx, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2019-08-22T08:27:08.043Z'
+modified: '2019-09-23T06:40:59.458Z'
 ---
 
 # brew
 
+> package manager for macOS
+
+## usage
 ```sh
 brew list
 
 brew search PACKAGE
 
 brew update           # update brew itself
-
 brew up               # alias for update
+
 
 brew upgrade PACKAGE
 
@@ -30,7 +33,7 @@ brew missing
 brew man        # generate brew man-pages
 ```
 
-## install
+## packages
 ```sh
 brew install inetutils
   gnu-getopt

@@ -2,7 +2,7 @@
 tags: [linux]
 title: head
 created: '2019-08-21T06:25:10.878Z'
-modified: '2019-08-21T06:30:13.106Z'
+modified: '2019-08-29T12:33:55.670Z'
 ---
 
 # head
@@ -12,5 +12,8 @@ modified: '2019-08-21T06:30:13.106Z'
 ```sh
 head -q -n2 *.properties      # print first 2 line and not filename-header
 ```
----
-[[tail]], [[file]], [[stat]]
+
+## see also
+- [[tail]]
+- [[file]]
+- [[stat]]

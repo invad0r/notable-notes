@@ -2,7 +2,7 @@
 tags: [go/pkg]
 title: go fmt
 created: '2019-07-30T06:19:49.066Z'
-modified: '2019-08-25T20:08:40.518Z'
+modified: '2019-08-29T12:32:05.064Z'
 ---
 
 # go fmt
@@ -22,5 +22,5 @@ modified: '2019-08-25T20:08:40.518Z'
 %%	   // a literal percent sign; consumes no value
 ```
 
-## see alos
+## see also
 - [fmt - The Go Programming Language](https://golang.org/pkg/fmt/#hdr-Printing)

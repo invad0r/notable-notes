@@ -2,7 +2,7 @@
 tags: [brew]
 title: xargs
 created: '2019-07-30T06:19:49.266Z'
-modified: '2019-07-30T07:05:48.488Z'
+modified: '2019-10-02T07:26:10.467Z'
 ---
 
 # xargs
@@ -16,3 +16,7 @@ modified: '2019-07-30T07:05:48.488Z'
 ```sh
 echo 210 | xargs -I {} bash -c "if [[ "{}" =~ 2 ]]; then echo {}; fi"
 ```
+
+## see also
+- [[curl]]
+- [[parallel]]

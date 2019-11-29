@@ -1,8 +1,8 @@
 ---
-tags: [initsystem, linux]
+tags: [initsystem, linux, systemd]
 title: systemd unit
 created: '2019-08-20T06:14:13.706Z'
-modified: '2019-08-22T07:23:04.028Z'
+modified: '2019-08-27T07:14:56.501Z'
 ---
 
 # systemd unit

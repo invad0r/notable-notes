@@ -2,7 +2,7 @@
 tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2019-08-20T07:20:01.221Z'
+modified: '2019-08-28T08:54:11.451Z'
 ---
 
 # curl
@@ -61,7 +61,6 @@ curl -sS "https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_judo?action
   | grep -Eoi "flagIOCmedalist\|\[\[(.+)\]\]" \
   | cut -c"19-" | cut -d \] -f 1 | cut -d \| -f 2 | sort | uniq -c | sort -nr       # extracting-data-from-wikipedia
 ```
-[Extracting data from Wikipedia using curl, grep, cut and other shell commands | Loige](http://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands)
 
 ## cache
 
@@ -70,5 +69,10 @@ curl -H 'Cache-Control: no-cache' --url "http://www.example.com"
 
 curl --url "http://www.example.com?$(date +%s)"
 ```
-[linux - Curl command without using cache - Stack Overflow](https://stackoverflow.com/questions/31653271/curl-command-without-using-cache)
+
+## see also
+- [[curl data]]
+- [[curl write-out]]
+- [Extracting data from Wikipedia - loige.co](http://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands)
+- [linux - Curl command without using cache - Stack Overflow](https://stackoverflow.com/questions/31653271/curl-command-without-using-cache)
 

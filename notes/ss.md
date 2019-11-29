@@ -2,12 +2,13 @@
 tags: [linux, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2019-08-20T09:47:48.687Z'
+modified: '2019-11-15T06:54:44.391Z'
 ---
 
 # ss
 > display `socket statistics`
 
+## usage
 ```sh
 ss -a   # Show all sockets (listening and non-listening)
 
@@ -20,7 +21,7 @@ ss -n   # Do not resolve addresses
 ss -p   # Show process using the socke
 ```
 
-## tuna,please! [[list open ports]] 
+## tuna,please! 
 
 ```sh
 ss -tunapls
@@ -32,3 +33,7 @@ ss -tunapls
   # -a both                           -u: UDP
   #                                   -x: unix domain sockets
 ```
+
+## see also
+- [[list open ports]] 
+- [[netstat]]

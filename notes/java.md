@@ -2,51 +2,54 @@
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2019-08-20T07:24:24.708Z'
+modified: '2019-09-24T14:21:29.674Z'
 ---
 
 # java
 
-`jvm - java virtual machine`
+> `jvm - java virtual machine`
 
-### Standard Options
+## Standard Options
 ```sh
-java              # List all standard options.
+java                # List all standard options.
 
--Dblog=RebelLabs                  # Sets a ‘blog’ system property to ‘RebelLabs’. 
-System.getProperty("blog");       # Retrieve/set it during runtime like this:
-System.setProperty("blog", "RL"); # //RebelLabs
+  -version          # current version
+  -cp               # class path
 
--javaagent:/path/to/agent.jar # Loads the java agent in agent.jar.
+  -Dblog=RebelLabs                  # Sets a ‘blog’ system property to ‘RebelLabs’. 
+  System.getProperty("blog");       # Retrieve/set it during runtime like this:
+  System.setProperty("blog", "RL"); # //RebelLabs
 
--agentpath:pathname           # Loads the native agent library specified by the absolute path name.
+  -javaagent:/path/to/agent.jar     # Loads the java agent in agent.jar.
 
--verbose:[class/gc/jni]       # Displays information about each loaded class/gc event/JNI activity.
+  -agentpath:pathname               # Loads the native agent library specified by the absolute path name.
+
+  -verbose:[class/gc/jni]           # Displays information about each loaded class/gc event/JNI activity.
 ```
 
-### Non-Standard Options Advanced Options
+## Non-Standard Options Advanced Options
 ```sh
-java -X               # List all non-standard options.
+java -X                 # List all non-standard options.
 
--Xint                 # Runs the application in interpreted-only mode.
+  -Xint                 # Runs the application in interpreted-only mode.
 
--Xbootclasspath:path  # Path and archive list of boot class files.
+  -Xbootclasspath:path  # Path and archive list of boot class files.
 
--Xloggc:filename  # Log verbose GC events to filename.
+  -Xloggc:filename      # Log verbose GC events to filename.
 
--Xms1g            # Set the initial size (in bytes) of the heap.
+  -Xms1g                # Set the initial size (in bytes) of the heap.
 
--Xmx8g            # Specifies the max size (in bytes) of the heap.
+  -Xmx8g                # Specifies the max size (in bytes) of the heap.
 
--Xnoclassgc       # Disables class garbage collection.
+  -Xnoclassgc           # Disables class garbage collection.
 
--Xprof            # Profiles the running program.
+  -Xprof                # Profiles the running program.
 ```
 
 
 ## Advanced Options
 
-### BEHAVIOR
+## BEHAVIOR
 ```sh
 -XX:+UseConcMarkSweepGC           # Enables CMS garbage collection.
 
@@ -61,7 +64,7 @@ java -X               # List all non-standard options.
 -XX:+UnlockCommercialFeatures)    # Enables the use of the Java Flight Recorder.
 ```
 
-### DEBUGGING
+## DEBUGGING
 ```sh
 -XX:ErrorFile=file.log        # Save the error data to file.log.
 
@@ -75,7 +78,7 @@ java -X               # List all non-standard options.
 ```
 
 
-### PERFORMANCE
+## PERFORMANCE
 ```sh
 -XX:MaxPermSize=128m (Java 7 or earlier)  # Sets the max perm space size (in bytes).
 
@@ -93,6 +96,10 @@ XX:+AggressiveOpts              # Enables the use of aggressive performance opti
 
 -XX:OnError="cmd args"          # Run user-defined commands on fatal error.
 ```
+
+## see also
+- [[javac]]
+- [[sdk]]
 
 
 

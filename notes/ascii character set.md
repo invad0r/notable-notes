@@ -1,10 +1,12 @@
 ---
 title: ascii character set
 created: '2019-08-21T09:34:39.585Z'
-modified: '2019-08-21T09:35:01.817Z'
+modified: '2019-09-04T07:15:56.698Z'
 ---
 
 # ascii character set
+
+`man ascii`
 
 ## table hexadecimal
 
@@ -35,3 +37,7 @@ modified: '2019-08-21T09:35:01.817Z'
 # 7_   p     q     r     s    t      u     v     w     x     y     z     {     |     }     ~     DEL
 # 112  0070  0071  0072  0073  0074  0075  0076  0077  0078  0079  007A  007B  007C  007D  007E  007F
 ```
+
+## see also
+- [[ascii]]
+- [[url encoding]]

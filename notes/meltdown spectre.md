@@ -2,22 +2,20 @@
 tags: [Notebooks]
 title: meltdown spectre
 created: '2019-07-30T06:19:49.177Z'
-modified: '2019-08-18T14:39:38.922Z'
+modified: '2019-11-15T06:40:42.225Z'
 ---
 
 # meltdown spectre
 
-https://meltdownattack.com/ or https://spectreattack.com/
-
-https://googleprojectzero.blogspot.de/2018/01/reading-privileged-memory-with-side.html
-https://cyber.wtf/2017/07/28/negative-result-reading-kernel-memory-from-user-mode/
-
-https://www.kb.cert.org/vuls/id/584653
+- https://meltdownattack.com/ or https://spectreattack.com/
+- https://googleprojectzero.blogspot.de/2018/01/reading-privileged-memory-with-side.html
+- https://cyber.wtf/2017/07/28/negative-result-reading-kernel-memory-from-user-mode/
+- https://www.kb.cert.org/vuls/id/584653
 
 
-variant 1: `CVE-2017-5753` bounds-check bypass aka spectre 
-variant 2: `CVE-2017-5715` branch target injection aka spectre 
-variant 3: `CVE-2017-5754` rogue data cache load aka meltdown
+- variant 1: `CVE-2017-5753` bounds-check bypass aka spectre 
+- variant 2: `CVE-2017-5715` branch target injection aka spectre 
+- variant 3: `CVE-2017-5754` rogue data cache load aka meltdown
 
 | |Spectre|Meltdown|
 |:--|:--|:--|

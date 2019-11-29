@@ -2,7 +2,7 @@
 tags: [brew, git]
 title: git extras
 created: '2019-07-30T06:19:49.062Z'
-modified: '2019-08-19T13:38:10.999Z'
+modified: '2019-11-21T11:49:38.322Z'
 ---
 
 # git extras
@@ -12,7 +12,7 @@ modified: '2019-08-19T13:38:10.999Z'
 `brew install git-extras`
 
 
-### commands
+## usage
 ```sh
 git info        # show information about the repository
 
@@ -25,4 +25,6 @@ git bulk
 git repl        # read evaluate print loop ....FTW !!!
 ```
 
-[git-extras/Commands.md at master · tj/git-extras · GitHub](https://github.com/tj/git-extras/blob/master/Commands.md)
+## see also
+- [[git bulk]]
+- [git-extras/Commands.md at master · tj/git-extras · GitHub](https://github.com/tj/git-extras/blob/master/Commands.md)

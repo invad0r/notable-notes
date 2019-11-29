@@ -2,12 +2,10 @@
 tags: [bash/builtin]
 title: bash fg
 created: '2019-08-02T06:42:37.596Z'
-modified: '2019-08-20T07:21:21.960Z'
+modified: '2019-08-29T12:21:55.159Z'
 ---
 
 # bash fg
-
-[[bash jobs]], [[bash bg]], [[bash process-handling]]
 
 ```sh
 fg           # brings a background job into the foreground
@@ -28,3 +26,8 @@ fg %?string  # brings job whose command contains string
 | `%-`     | Last job                 |
 | `$!`     | Last background process  |
 
+
+## see also
+- [[bash jobs]]
+- [[bash bg]]
+- [[bash process-handling]]

@@ -2,7 +2,7 @@
 tags: [container, container/docker]
 title: docker snipptes
 created: '2019-07-30T06:19:49.041Z'
-modified: '2019-08-18T15:19:17.050Z'
+modified: '2019-09-03T12:57:14.234Z'
 ---
 
 # docker snipptes
@@ -12,7 +12,6 @@ modified: '2019-08-18T15:19:17.050Z'
 docker exec -it --env 'PS1=[consul]\w \$ ' consul ash   # set prompt 
 
 docker exec -it --env 'PS1=['$ENV_KEY'] \s-\v\$ ' nexus_nexus_1 bash
-
 ```
 
 ### format
@@ -31,12 +30,6 @@ docker run -it -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest \
 
 docker run --rm httpd:2.4-alpine htpasswd -nbB admin PASSWORD | cut -d ":" -f 2    # generate password
 
-```
-### get ENV and HOST via AWK
-```sh
-for host in $(docker node ls --format "{{.Hostname}}"); do
-  docker-connect $(awk 'BEGIN{FS="."}{print substr($3,2),$1}' <<< $host);
-done
 ```
 
 ### debugging
@@ -67,8 +60,6 @@ docker swarm update --task-history-limit=1
 
 docker info --format "{{json .Swarm}}" | jq '.Cluster.Spec.Orchestration.TaskHistoryRetentionLimit'
 ```
-[linux - How to clear Docker task history - Stack Overflow](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)
-
 
 ## failed to deactivate service binding for container srv
 
@@ -89,4 +80,9 @@ for endpoint_map in $(docker network inspect -f '{{range $container_id, $contain
   fi
 done
 ```
-[Starting container failed: Address already in use · GitHub](https://github.com/moby/moby/issues/31698#issuecomment-320294893)
+
+## see also
+- [[awk]]
+- [linux - How to clear Docker task history - Stack Overflow](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)
+- [Starting container failed: Address already in use · GitHub](https://github.com/moby/moby/issues/31698#issuecomment-320294893)
+

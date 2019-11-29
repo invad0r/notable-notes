@@ -2,25 +2,20 @@
 tags: [linux]
 title: watch
 created: '2019-07-30T06:19:49.265Z'
-modified: '2019-08-20T07:20:01.244Z'
+modified: '2019-09-23T06:36:18.166Z'
 ---
 
 # watch
 
+> execute a program periodically, showing output fullscreen
 
 ```sh
 watch -d "ps -ef | awk -F' ' '{print \$2}'"   # use double quotes and escape $
   # -n .5  --interval
-```
-[bash - Using the watch command with an argument that contains quotes - Super User](https://superuser.com/a/276706)
 
-```sh
-watch -d 'docker service ps --filter desired-state=running --format "{{.Node}} {{.Name}}" $(docker service ls --filter mode=replicated -q) | sort | column -t'
-```
+watch -d 'docker service ps --filter desired-state=running --format "{{.Node}} {{.Name}}" $(docker service ls --filter mode=replicated -q)'
 
-### poor man java monitoring
-```sh
-watch 'for pid in `jps` ; do echo -n "$pid " && ps huH p $pid | wc -l ; done'   
+watch 'for pid in `jps` ; do echo -n "$pid " && ps huH p $pid | wc -l ; done'     # poor man java monitoring
 ```
 
 ### watch-alternative using while
@@ -33,3 +28,9 @@ while sleep 5; do   # every 5 seconds
   done
 done
 ```
+
+## see also
+- [[consul]]
+- [Using the watch command with an argument that contains quotes - Super User](https://superuser.com/a/276706)
+- [[bash while]]
+- [[bash printf]]
