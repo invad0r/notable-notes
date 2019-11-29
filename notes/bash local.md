@@ -2,15 +2,14 @@
 tags: [bash/builtin]
 title: bash local
 created: '2019-08-02T06:42:37.608Z'
-modified: '2019-08-20T07:21:21.967Z'
+modified: '2019-11-28T08:11:51.700Z'
 ---
 
 # bash local
 
-> Local variables can only be used within a function; they are visible only to the function where they are defined and its children.
+> Local variables can only be used within a function; they are visible only to the function where they are defined and its children
 
-[[bash function.md]]
-
+## usage
 ```sh
 foo(){
 
@@ -20,3 +19,6 @@ foo(){
 foo
 echo "foo: $foo"
 ```
+
+## see also
+- [[bash function.md]]

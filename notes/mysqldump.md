@@ -1,27 +1,24 @@
 ---
-tags: [database]
+tags: [database, mysql]
 title: mysqldump
 created: '2019-08-18T14:33:58.877Z'
-modified: '2019-08-18T14:35:35.817Z'
+modified: '2019-11-14T09:06:18.476Z'
 ---
 
 # mysqldump
 
+## usage
 ```sh
-mysqldump -uUser -pUserPassword YourDatabaseName > wantedsqlfile.sql
+mysqldump -uUSER -pPASSWORD DBNAME > BACKUP.sql        # export
 
-mysqldump -uUser -pUserPassword YourDatabaseName < wantedsqlfile.sql
-```
+mysqldump -uUSER -pPASSWORD DBNAME < BACKUP.sql        # import
 
-## encrypted
-```sh
-mysqldump -uUser -pPASS DATABASE | gzip > filename_to_compress.sql.gz				# For Export
 
-gunzip < filename_to_compress.sql.gz | mysql -uUser -pPass DATABASE     		# For Import
-```
+mysqldump -uUSER -pPASSWORD DBNAME | gzip > BACKUP.sql.gz				# for encrypted export
 
-## ignore tables
-```sh
+gunzip < BACKUP.sql.gz | mysql -uUSER -pPASSWORD DBNAME     		# for encrypted import
+
+# ignore tables
 mysqldump \
   --no-data \
   --ignore-table=DATABASE.jos_mpm \
@@ -35,3 +32,7 @@ mysqldump \
   -h$HOST -u$USR -p$PWD \
   $DB > $(date +%Y-%m-%d)_DATA_$DB.sql
 ```
+
+## see also
+- [[mysql]]
+- [[mongodump]]

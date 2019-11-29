@@ -2,7 +2,7 @@
 tags: [git]
 title: git svn
 created: '2019-07-30T06:19:49.249Z'
-modified: '2019-08-19T13:38:20.913Z'
+modified: '2019-11-18T13:27:16.654Z'
 ---
 
 # git svn
@@ -35,4 +35,5 @@ git svn clone \
   --trunk=joomla_portalv3/com_portal https://repo/svn/general dest_dir-tmp
 ```
 
-[how-to-migrate-svn-repository](http://stackoverflow.com/questions/79165/how-to-migrate-svn-repository-with-history-to-a-new-git-repository)
+## see also
+- [how-to-migrate-svn-repository](http://stackoverflow.com/questions/79165/how-to-migrate-svn-repository-with-history-to-a-new-git-repository)

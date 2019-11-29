@@ -2,7 +2,7 @@
 tags: [compiler, java]
 title: javac
 created: '2019-08-21T14:45:10.678Z'
-modified: '2019-08-21T14:48:16.393Z'
+modified: '2019-09-24T14:16:08.799Z'
 ---
 
 # javac
@@ -14,3 +14,6 @@ modified: '2019-08-21T14:48:16.393Z'
 ```sh
 javac -d . Foo.java   # -d specify directory for package
 ```
+
+## see also
+- [[java]]

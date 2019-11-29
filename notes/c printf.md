@@ -2,11 +2,12 @@
 tags: [c]
 title: c printf
 created: '2019-08-01T07:29:42.543Z'
-modified: '2019-08-20T07:24:43.388Z'
+modified: '2019-11-28T11:51:39.074Z'
 ---
 
 # c printf
 
+## usage
 ```c
 printf("format", args)            // is used to print the data onto the standard output which is often a computer monitor.
 
@@ -14,4 +15,6 @@ sprintf(char *, "format", args)   // stores the formated data in a string pointe
 
 fprintf(FILE *fp, "format", args) // formated data is saved on a file which is pointed to by the file pointer
 ```
-[c - Difference between fprintf, printf and sprintf? - Stack Overflow](https://stackoverflow.com/a/30969793)
+
+## see also
+- [c - Difference between fprintf, printf and sprintf? - Stack Overflow](https://stackoverflow.com/a/30969793)

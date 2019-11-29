@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2019-08-22T09:15:46.568Z'
+modified: '2019-10-18T05:57:18.904Z'
 ---
 
 # ssh
@@ -10,13 +10,17 @@ modified: '2019-08-22T09:15:46.568Z'
 `secure shell`
 
 ```sh
-ssh -T git@github.com         # test ssh-connection
+ssh -T git@github.com           # test ssh-connection
 
-ssh -t  # Force pseudo-terminal allocation.
+ssh -t                          # Force pseudo-terminal allocation.
 
-ssh -i /Users/user/.ssh/google_compute_engine # use different identity file
+ssh -i /Users/user/.ssh/gce     # use different identity file
 
-ssh -p PORT user@host         # connects specified port
+ssh -p PORT user@host           # connects specified port
+
+ssh -n docker@${node} 'uptime'  # don't read from stdin, e.g. in a loop
+
+  #    -n    Redirects stdin from `/dev/null` (actually, prevents reading from `stdin`)
 ```
 
 ## options
@@ -28,16 +32,14 @@ ssh -p PORT user@host         # connects specified port
 -o LogLevel=ERROR # QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
 
 -o CheckHostIP=no
--o HostKeyAlias=compute.1407099891930101147 
--o IdentitiesOnly=yes 
--o StrictHostKeyChecking=no 
--o UserKnownHostsFile=/Users/user/.ssh/google_compute_known_hosts 
-```
 
-### don't read from stdin
-`-n` Redirects stdin from /dev/null (actually, prevents reading from stdin).  This must be used when ssh is run in the background.
-```sh
-while read node; do ssh -n docker@${node} 'uptime'; done
+-o HostKeyAlias=compute.1407099891930101147 
+
+-o IdentitiesOnly=yes 
+
+-o StrictHostKeyChecking=no 
+
+-o UserKnownHostsFile=/Users/user/.ssh/google_compute_known_hosts 
 ```
 
 ## see also

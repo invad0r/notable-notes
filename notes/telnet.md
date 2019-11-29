@@ -2,13 +2,12 @@
 tags: [linux, network]
 title: telnet
 created: '2019-07-30T06:19:49.252Z'
-modified: '2019-08-20T09:47:48.689Z'
+modified: '2019-09-23T06:33:23.864Z'
 ---
 
 # telnet
 
 ## test email
-
 ```sh
 telnet smtp.mydomain.com 25
 
@@ -23,7 +22,7 @@ this is test number 1
 sent from linux box
 .
 ```
-https://stackoverflow.com/a/11988455
+
 
 
 ```sh
@@ -43,3 +42,6 @@ Connection: close
 
 Connection closed by foreign host.
 ```
+## see also
+- [[nc]]
+- [check-if-smtp-is-working-from-commandline - stackoverflow](https://stackoverflow.com/a/11988455)

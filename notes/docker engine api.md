@@ -2,20 +2,20 @@
 tags: [container/docker, curl]
 title: docker engine api
 created: '2019-08-20T09:42:39.909Z'
-modified: '2019-08-21T10:49:58.816Z'
+modified: '2019-11-04T12:34:35.935Z'
 ---
 
 # docker engine api
-
-[[unix socket]]
-[docker engine api](https://docs.docker.com/engine/api/v1.24/)
 
 ```sh
 -H unix:///var/run/docker.sock    # docker-daemon listen unix socket
 ```
 
-### docker start container
+## docker start container
 ```sh
+curl --unix-socket /var/run/docker.sock http:/containers/json
+
+
 curl \
   -XPOST \
   --unix-socket /var/run/docker.sock \
@@ -30,7 +30,7 @@ curl \
   --unix-socket /var/run/docker.sock \
   http://localhost/containers/fcb6...7d65/start
 ```
-[[curl]]
+
 
 ### events
 ```sh
@@ -98,3 +98,8 @@ EOF
 
 /Plugin.Activate
 ```
+
+## see also
+- [[curl]]
+- [[unix socket]]
+- [docker engine api](https://docs.docker.com/engine/api/v1.24/)

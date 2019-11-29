@@ -1,33 +1,22 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2019-08-25T19:59:01.189Z'
+modified: '2019-09-04T07:15:51.398Z'
 ---
 
 # ascii
 
 > `ASCII - American Standard Code for Infromation Interchange` is a character `encoding`standard for electronic communication
 
-[[url encoding]]
-
-## ascii character set
-
-```sh
-man ascii
-```
-
 ### print all avail. characters
 ```sh
-for ((i=32;i<127;i++)) do
-  printf "\\$(printf %03o "$i")"; 
-done
-printf "\n"
+for ((i=32;i<127;i++)) do printf "\\$(printf %03o "$i")"; done printf "\n"
 ```
-    
-| char | oct | hex |dec |
-| :--  | :-- | :-- |:-- |
-| `"`  | 042 | 22  | 34 |
-| `J`  | 112 | 4a  | 74 |
+
+char | oct | hex |dec
+:--  | :-- | :-- |:--
+`"`  | 042 | 22  | 34
+`J`  | 112 | 4a  | 74
 
 
 ```sh
@@ -49,14 +38,11 @@ echo '"' | tr -d "\n" | od -An -t uC
 #    remove "newline" char                     -t     select a type
 #                                              u      type is unsigned decimal.
 #                                              C      of size (one) char
-
-
-```
-
-## hexdump file
-```sh
-xxd docker-compose.yml    # hexdump of file
 ```
 
 ## see also
+- [[url encoding]]
+- [[ascii character set]]
+- [[xxd]]
+- [[od]]
 - [Jafrog's dev blog](http://jafrog.com/2013/11/23/colors-in-terminal.html)

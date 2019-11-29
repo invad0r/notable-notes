@@ -2,13 +2,20 @@
 tags: [ssh]
 title: ssh config
 created: '2019-08-22T08:32:53.895Z'
-modified: '2019-08-22T11:07:42.184Z'
+modified: '2019-10-23T14:52:08.807Z'
 ---
 
 # ssh config
 
+> ssh client configuration
+
 ```
 man ssh_config
+```
+
+## use different config file
+```sh
+ssh -F /dev/null root@host   # debug config problem
 ```
 
 ## `~/.ssh/config` entries

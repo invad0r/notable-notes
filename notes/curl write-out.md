@@ -2,14 +2,19 @@
 tags: [curl]
 title: curl write-out
 created: '2019-08-02T12:00:25.439Z'
-modified: '2019-08-18T13:59:59.230Z'
+modified: '2019-10-02T07:25:53.378Z'
 ---
 
 # curl write-out
 
 ## write-out xargs
 ```sh
- xargs -I $ curl -s --write-out "\n %{http_code} - %{url_effective}" --output /dev/null --url $
+xargs -I $ curl -s --write-out "\n %{http_code} - %{url_effective}" --output /dev/null --url $
+```
+
+## url encode
+```sh
+curl -s -o /dev/null -w "%{url_effective}\n" --get --data-urlencode "some random" --data-urlencode "foo=bar" ""
 ```
 
 ## curl http_code
@@ -61,3 +66,8 @@ time_starttransfer: %{time_starttransfer}\n
 -----------------------------------------\n
 time_total:         %{time_total}\n
 ```
+
+## see also
+- [[curl]]
+- [[url encoding]]
+- [[xargs]]

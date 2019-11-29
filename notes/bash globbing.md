@@ -2,13 +2,18 @@
 tags: [bash]
 title: bash globbing
 created: '2019-07-30T06:19:49.009Z'
-modified: '2019-07-30T06:22:29.792Z'
+modified: '2019-08-29T12:23:39.830Z'
 ---
 
 # bash globbing
 
-wildcards aka `pathname-expansion` refered to as globbing.
-pathname-expansion `expands`: `*`,`?`, `.` and `[..]`
+> wildcards aka `pathname-expansion` refered to as globbing.
+
+pathname-expansion `expands`: 
+- `*`
+- `?`
+-  `.` 
+- `[..]`
 ```sh
 # wildcards:
 

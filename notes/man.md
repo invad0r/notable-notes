@@ -2,25 +2,21 @@
 tags: [linux]
 title: man
 created: '2019-07-30T06:19:49.175Z'
-modified: '2019-07-30T09:08:18.457Z'
+modified: '2019-09-23T06:27:34.086Z'
 ---
 
 # man
 
-[The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
+> format and display the on-line manual pages
 
+## install
+`apt-get install man-db`
+
+## environment
 ```sh
-aproppos namespace    # searches for man pages with namespaces
-```
+MANPAGER=less
 
-```sh
-apt-get install man-db
-
-export MANPAGER=less
-```
-
-## manpage locations
-```sh
+# manpage locations
 MANPATH /usr/man
 MANPATH /usr/share/man
 MANPATH /usr/local/man
@@ -28,61 +24,47 @@ MANPATH /usr/local/share/man
 MANPATH /usr/X11R6/man
 ```
 
-## bookmarks of important man-pages
+## usage
 ```sh
-man 7 signal    # list linux standart signals e.g. SIGSEGV
+man -k intro      # equivalent to apropos
 
-man ascii       # list ascii table
-
-man 3 printf    # print ascii table and hex values
-
-man 3 readline  # e.g. keymaps
-
-man hier        # description of the filesystem hierarchy
+man -f intro      # equivalent to whatis; lookup pages and print short description
 ```
 
-## excerpt from `$ man man`
+## sections
 ```sh
-1   Executable programs or shell commands
-2   System calls (functions provided by the kernel)
-3   Library calls (functions within program libraries)
-4   Special files (usually found in /dev)
-5   File formats and conventions eg /etc/passwd
-6   Games
-7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)
-8   System administration commands (usually only for root)
-9   Kernel routines [Non standard]
+man man     # on linux
 
+1 User commands,executable programs, shell commands
+  man-pages includes a very few Section 1 pages that document programs supplied by the GNU C library.
 
+  man(1)
 
-1: User commands; man-pages includes a very few Section 1 pages that document programs supplied by the GNU C library.
-2: System calls documents the system calls provided by the Linux kernel.
-3: Library functions documents the functions provided by the standard C library.
-4: Devices documents details of various devices, most of which reside in /dev.
-5: Files describes various file formats, and includes proc(5), which documents the /proc file system.
-7: Overviews, conventions, and miscellaneous.
-8: Superuser and system administration commands; man-pages includes a very few Section 8 pages that document programs supplied by the GNU C library.
+2 System calls (functions provided by the kernel)
 
+3 Library calls (functions within program libraries)
+
+  printf (3)    # print ascii table and hex values
+  readline (3)  # e.g. keymaps
+
+4 Devices documents details of various devices, most of which reside in /dev.
+
+5 Files describes various file formats, and includes proc(5), which documents the /proc file system.
+
+6 Games
+
+7 Overviews, conventions, and miscellaneous. (including macro packages and conventions), e.g. man(7), groff(7)
+
+  signal (7)     # list linux standart signals e.g. SIGSEGV
+  ascii (7)      # list ascii table
+  hier (7)      # layout of filesystems
+
+8 System administration commands (usually only for root)
+
+9 Kernel routines [Non standard]
 ```
-## colorize manpage
-```sh
-man() {
-  env \
-    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-    LESS_TERMCAP_md=$(printf "\e[1;31m") \
-    LESS_TERMCAP_me=$(printf "\e[0m") \
-    LESS_TERMCAP_se=$(printf "\e[0m") \
-    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-    LESS_TERMCAP_ue=$(printf "\e[0m") \
-    LESS_TERMCAP_us=$(printf "\e[1;32m") \
-    man "$@"
-}
-```
-[Colorized man pages](http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized)
-
 
 ## custom manpage
-
 ```sh
 cat <<EOF > ./nuseradd
 .\" Manpage for nuseradd.
@@ -106,3 +88,9 @@ EOF
 
 man ./nuseradd
 ```
+
+## see also
+- [The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
+- [Colorized man pages](http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized)
+- [[apropos]]
+- [[whatis]]

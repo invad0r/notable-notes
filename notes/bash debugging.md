@@ -2,23 +2,30 @@
 tags: [bash]
 title: bash debugging
 created: '2019-07-30T06:19:49.021Z'
-modified: '2019-08-18T19:00:59.543Z'
+modified: '2019-11-25T06:57:21.159Z'
 ---
 
 # bash debugging
 
-[[bash trap]]
+> some ways to debug shell-scripts
 
-
+## variables
 ```sh
-bash -n scriptname  # don't run commands; check for syntax errors only
-set -o noexec       # alternative (set option in script)
+${BASH_SOURCE}
+${LINENO}
+${FUNCNAME[0]}
+```
 
-bash -v scriptname  # echo commands before running them
-set -o verbose      # alternative (set option in script)
+## flags
+```sh
+bash -n SCRIPT.sh     # don't run commands; check for syntax errors only
+set -o noexec         # alternative option set inside script
 
-bash -x scriptname  # echo commands after command-line processing
-set -o xtrace       # alternative (set option in script)
+bash -v SCRIPT.sh     # echo commands before running them
+set -o verbose        # alternative option set inside script
+
+bash -x SCRIPT.sh     # echo commands after command-line processing
+set -o xtrace         # alternative option set inside script
 ```
 
 ## breakpoint
@@ -32,8 +39,6 @@ $ dbg> someVariable
 
 ## debugger
 ```sh
-#!/bin/bash
-
 echo "LINENO: $LINENO"
 
 trap 'echo "VARIABLE-TRACE> \$variable = \"$variable\""' DEBUG  # Echoes the value of $variable after every command.
@@ -63,4 +68,8 @@ exit 0
 #      Just multiplied $variable by 3.
 #    VARIABLE-TRACE> $variable = "87"
 ```
-[Debugging](http://tldp.org/LDP/abs/html/debugging.html)
+
+## see also
+- [[bash trap]]
+- [Debugging](http://tldp.org/LDP/abs/html/debugging.html)
+- https://wiki.bash-hackers.org/scripting/debuggingtips#making_xtrace_more_useful

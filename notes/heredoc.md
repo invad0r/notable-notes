@@ -2,7 +2,7 @@
 tags: [heredoc, linux]
 title: heredoc
 created: '2019-07-30T06:19:49.079Z'
-modified: '2019-08-25T20:15:35.134Z'
+modified: '2019-09-04T06:20:03.576Z'
 ---
 
 # heredoc
@@ -120,7 +120,9 @@ cat <<EOF |
 > echo $line;
 > done
 ```
+
 ## see also
+- [[cat]]
 - [[yml]]
 - [HereDocument - Greg's Wiki](https://mywiki.wooledge.org/HereDocument)
 - [Here Documents](http://www.tldp.org/LDP/abs/html/here-docs.html)

@@ -2,7 +2,7 @@
 tags: [git]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2019-08-23T09:33:04.248Z'
+modified: '2019-09-05T06:24:52.400Z'
 ---
 
 # git
@@ -59,5 +59,7 @@ git rev-list --all registrator.go \
   | ( while read revision; do git grep -F 'swarm' $revision registrator.go done )
 ```
 ## see also
+- [[git config]]
 - [[ssh]]
+- [[gitlab api]]
 - [search for string in a single files history - Stack Overflow](https://stackoverflow.com/a/10223136)

@@ -2,7 +2,7 @@
 tags: [ruby]
 title: ruby
 created: '2019-07-30T06:19:49.226Z'
-modified: '2019-08-20T07:23:13.710Z'
+modified: '2019-08-28T22:09:45.848Z'
 ---
 
 # ruby 
@@ -13,7 +13,6 @@ modified: '2019-08-20T07:23:13.710Z'
 > https://softwareengineering.stackexchange.com/a/24461/276395
 
 - symbol is immutable
-
 - used in hashes
 
 ```ruby

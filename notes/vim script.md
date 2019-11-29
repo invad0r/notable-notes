@@ -2,10 +2,11 @@
 tags: [vim]
 title: vim script
 created: '2019-07-30T06:19:49.260Z'
-modified: '2019-07-30T06:24:37.669Z'
+modified: '2019-08-26T06:59:17.731Z'
 ---
 
 # vim script
+
 ```sh
 :for i in range(2016,2020)
 :  for j in range(1,12)

@@ -2,24 +2,23 @@
 tags: [bash/builtin]
 title: bash dirs
 created: '2019-08-02T06:42:37.579Z'
-modified: '2019-08-20T07:21:21.952Z'
+modified: '2019-11-28T08:11:20.030Z'
 ---
 
 # bash dirs
 
 > Display directory stack.
 
-[[bash popd]]
-[[bash pushd]]
 
-`dirs [-clpv] [+N] [-N]`
+## usage
+```sh
+dirs [-clpv] [+N] [-N]
 
-## options
-
-      -c        clear the directory stack by deleting all of the elements
-      -l        do not print tilde-prefixed versions of directories relative to your home directory
-      -p        print the directory stack with one entry per line
-      -v        print the directory stack with one entry per line prefixed with its position in the stack
+    -c       # clear the directory stack by deleting all of the elements
+    -l       # do not print tilde-prefixed versions of directories relative to your home directory
+    -p       # print the directory stack with one entry per line
+    -v       # print the directory stack with one entry per line prefixed with its position in the stack
+```
 
 ## arguments
 
@@ -33,3 +32,7 @@ modified: '2019-08-20T07:21:21.952Z'
 ```sh
 $DIRSTACK
 ```
+
+## see also
+- [[bash popd]]
+- [[bash pushd]]

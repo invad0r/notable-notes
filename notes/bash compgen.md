@@ -2,11 +2,12 @@
 tags: [bash/builtin]
 title: bash compgen
 created: '2019-08-02T06:13:41.072Z'
-modified: '2019-08-20T07:21:21.948Z'
+modified: '2019-11-28T08:10:15.288Z'
 ---
 
 # bash compgen
 
+## usage
 ```sh
 compgen -W "now tomorrow never"
 now
@@ -53,4 +54,5 @@ compgen -k      # Names of Shell reserved words
 -v    # Names of shell variables
 ```
 
-[[bash built-in vs keyword]]
+## see also
+- [[bash built-in vs keyword]]

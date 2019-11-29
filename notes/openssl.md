@@ -1,17 +1,13 @@
 ---
-tags: [encryption, linux, network]
+tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2019-08-20T09:47:48.676Z'
+modified: '2019-11-13T06:39:40.603Z'
 ---
 
 # openssl
 
-- mkcert self-signed for localhost: [mkcert: valid HTTPS certificates for localhost](https://blog.filippo.io/mkcert-valid-https-certificates-for-localhost/)
-- [OpenSSL CLI HowTo](https://www.madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands)
-- [OpenSSL command cheatsheet – freeCodeCamp.org](https://medium.freecodecamp.org/openssl-command-cheatsheet-b441be1e8c4a)
-- [OpenSSL — Dan's Cheat Sheets 1 documentation](https://cheat.readthedocs.io/en/latest/openssl.html)
-- [The Most Common OpenSSL Commands](https://www.sslshopper.com/article-most-common-openssl-commands.html)
+> `openssl` is a cryptography toolkit implementing the `ssl` and `tls` network protocols and related cryptography standards
 
 ### determin certificate type
 - `X509` standard defines certificates
@@ -24,18 +20,11 @@ modified: '2019-08-20T09:47:48.676Z'
   - All you don't know is whether those certificate & private key are `RSA` or `DSA`. You can check by extracting the certificate(s) and then examine them
 
 ```sh
-openssl pkcs12 -in mycert.p12 -clcerts -nokeys -out mycert.crt
-openssl x509   -in mycert.crt -text
-```
-[How to determine certificate type from file - Stack Overflow](http://stackoverflow.com/questions/1722181/how-to-determine-certificate-type-from-file)
+openssl pkcs12 -in CERT.p12 -clcerts -nokeys -out CERT.crt
 
-### rand - generate pseudo-random bytes and password
-```sh
-openssl rand -base64 32      # generate random numner
+openssl x509   -in CERT.crt -text
 
-openssl passwd MySecret      # generate hash: 8E4vqBR4UOYF.
-
-openssl passwd -1 MySecret   # generate shadow-style-hash: $1$sXiKzkus$haDZ9JpVrRHBznY5OxB82.
+openssl crl2pkcs7 -nocrl -certfile CHAIN.pem | openssl pkcs7 -print_certs -text -noout
 ```
 
 ### verify certificate against CAfile
@@ -45,36 +34,6 @@ foo.crt: OK
 ```
 
 
-### s_client
-```sh
-openssl s_client -connect google.com:443                  # test ssl connection
-GET / HTTP/1.1
-Host: www.google.com
-# returns html
-Q         # type Q and return
-DONE
-```
-```sh
-openssl s_client -connect b.com:443 -servername a.com   # multiple hosts on the same IP address and you need to use Server Name Indication (SNI) to access this site
-
-echo | openssl s_client -connect www.bar.baz:443 -servername bar.baz 2>/dev/null | openssl x509 -noout -dates
-
-echo | openssl s_client -connect bar.baz:443 2>&1 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'    # retrieve remote certificate
-
-openssl s_client -connect localhost:443 -debug
-```
-[openssl -connect returns wrong certificate - Stack Overflow](http://stackoverflow.com/a/24615393)
-[Check SSL Certificate Expiration Date and More - ShellHacks](http://www.shellhacks.com/en/HowTo-Check-SSL-Certificate-Expiration-Date-from-the-Linux-Shell)
-
-```sh
-openssl s_client 
-  -connect gateway.sandbox.push.apple.com:2195 
-  -CAfile CA/entrust_2048_ca.cer 
-  -debug
-  -showcerts 
-  -cert newfile.pem
-```
-
 ### rsa - RSA key management
 ```sh
 openssl rsa -in privateKey.key -check
@@ -82,7 +41,6 @@ openssl rsa -in privateKey.key -check
 openssl rsa -in private_key_noenc.pem -out private_key_noenc.pem          # remove passphrase
 
 openssl rsa -aes256 -in private_key_noenc.key -out private_key_enc.key    
-
 ```
 
 ### req - pkcs10 x509 - certificate Signing Request (csr) management
@@ -160,21 +118,15 @@ openssl rsa  -noout -modulus -in example.key | openssl sha256
 openssl x509 -noout -modulus -in example.crt | openssl sha256
 openssl req  -noout -modulus -in example.csr | openssl sha256
 ```
----
-### Certificate = Valication Level + Type
 
+## see also
+- [[keytool]]
+- [mkcert: valid HTTPS certificates for localhost](https://blog.filippo.io/mkcert-valid-https-certificates-for-localhost/)
+- [OpenSSL CLI HowTo](https://www.madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands)
+- [OpenSSL command cheatsheet – freeCodeCamp.org](https://medium.freecodecamp.org/openssl-command-cheatsheet-b441be1e8c4a)
+- [OpenSSL — Dan's Cheat Sheets 1 documentation](https://cheat.readthedocs.io/en/latest/openssl.html)
+- [The Most Common OpenSSL Commands](https://www.sslshopper.com/article-most-common-openssl-commands.html)
+- [How to determine certificate type from file - Stack Overflow](http://stackoverflow.com/questions/1722181/how-to-determine-certificate-type-from-file)
+- [openssl -connect returns wrong certificate - Stack Overflow](http://stackoverflow.com/a/24615393)
+- [Check SSL Certificate Expiration Date and More - ShellHacks](http://www.shellhacks.com/en/HowTo-Check-SSL-Certificate-Expiration-Date-from-the-Linux-Shell)
 
-### Valication Level
-- `EV` Extended Validation Certificates
-- `OV` Organization Validated Certificates
-- `DV` Domain Validated Certificates
-
-### Type
-- Single Domain Certificates
-- Wildcard SSL Certificate
-- `MDC` Multi Domain SSL Certificate used with SAN-Extension
-- `UCC` Unified Communications Certificate used with SAN-Extension
-
-[The Difference between Wildcard & Multi Domain (SAN) SSL Certificate](https://cheapsslsecurity.com/blog/the-difference-between-wildcard-and-multi-domain-san-ssl-certificate/)
-[Types of SSL Certificate from InstantSSL | Comodo CA](https://www.instantssl.com/ssl-faqs/types-of-ssl-certificate.html)
-[Difference Between Wildcard SSL Vs SAN Certificate - Hashed Out by The SSL Store™](https://www.thesslstore.com/blog/difference-between-wildcard-ssl-vs-san-certificate/)

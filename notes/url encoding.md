@@ -1,14 +1,38 @@
 ---
 title: url encoding
 created: '2019-08-21T09:32:17.675Z'
-modified: '2019-08-21T09:35:15.957Z'
+modified: '2019-09-04T06:17:39.551Z'
 ---
 
 # url encoding
 
-[[ascii]], [[ascii character set]]
+> urls can only be sent over the Internet using the ASCII character-set.
 
-> URLs can only be sent over the Internet using the ASCII character-set.
->   Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format.
->   URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits.
->   URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign or with %20.
+- urls often contain characters outside the `ascii` set and has to be converted into a valid `ascii` format
+- url encoding replaces unsafe `ascii` characters with a `%` followed by two hexadecimal digits
+- urls cannot contain spaces - encoding normally replaces a space with a `+` sign or with `%20`
+
+
+## encode
+```sh
+echo -ne 'some random\nbytes' | xxd -plain | tr -d '\n' | sed 's/\(..\)/%\1/g'
+
+curl -s -o /dev/null -w "%{url_effective}\n" --get --data-urlencode "some random" --data-urlencode "foo=bar" ""
+```
+
+## decode
+```sh
+url_decode ()
+{
+    : "${*//+/ }";
+    echo -e "${_//%/\\x}"
+}
+```
+
+## see also
+- [[ascii]]
+- [[ascii character set]]
+- [[curl write-out]]
+- [[xxd]]
+- [[tr]]
+- [how-to-urlencode-data-for-curl-command - stackoverflow.vom](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)

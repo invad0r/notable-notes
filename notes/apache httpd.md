@@ -2,7 +2,7 @@
 tags: [linux]
 title: apache httpd
 created: '2019-07-30T06:19:48.985Z'
-modified: '2019-08-25T19:58:50.919Z'
+modified: '2019-11-28T11:55:22.213Z'
 ---
 
 # apache httpd
@@ -26,23 +26,6 @@ service apache2 restart
 a2ensite vhosts_nam.com.conf   # enable site
 ```
 
-## apachectl
-
-### test config
-```sh
-apachectl configtest          
-
-/usr/local/apache/bin/apachectl configtest
-```
-### list modules
-```sh
-apache2ctl -M                     # list loaded modules
-
-apachectl -t -D DUMP_MODULES      # list loaded modules
-
-ls /etc/apache2/mods-enabled/		  # list enabled modules
-ls /etc/apache2/mods-available/		# list available modules
-```
-
 ## see also
+- [[apachectl]]
 - [Generate Mozilla Security Recommended Web Server Configuration Files](https://mozilla.github.io/server-side-tls/ssl-config-generator/)

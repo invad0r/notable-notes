@@ -1,11 +1,13 @@
 ---
-tags: [linux]
+tags: [linux, packagemanager]
 title: dpkg
 created: '2019-07-30T20:19:32.637Z'
-modified: '2019-08-02T07:39:15.248Z'
+modified: '2019-09-19T10:59:11.881Z'
 ---
 
 # dpkg
+
+> package manager for debian
 
 ## instal package
 ```sh
@@ -15,6 +17,22 @@ dpkg -i package.deb
 ```sh
 apt install ./package.deb
 apt --fix-broken install
+```
+
+## find out package
+```sh
+dpkg -S $(which ip)
+
+dpkg -S free.
+```
+
+## search in dpkg database
+```sh
+dpkg-query -S '/bin/ls'
+dpkg-query -S 'passwd*'
+dpkg-query --search '/path/to/file'
+dpkg-query --search '/usr/bin/passwd'
+dpkg-query --search '/etc/passwd'
 ```
 
 ## find install packages
@@ -46,7 +64,6 @@ Second letter -> current package state:
 Third letter -> error state (you normally shouldn't see a thrid letter):
     r ... reinst-required (package broken, reinstallation required)
 ```
-[What do the various dpkg flags like 'ii' 'rc' mean? - Ask Ubuntu](http://askubuntu.com/a/18807)
 
 ## repositories
 ```sh
@@ -54,3 +71,7 @@ grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*     # list-all-repos
 
 dpkg -r srcclr      # remove ?!
 ```
+
+## see also
+- [[packagemanagers]]
+- [What do the various dpkg flags like 'ii' 'rc' mean? - Ask Ubuntu](http://askubuntu.com/a/18807)

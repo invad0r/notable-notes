@@ -2,12 +2,14 @@
 tags: [linux]
 title: stat
 created: '2019-07-30T06:19:49.247Z'
-modified: '2019-07-30T08:49:30.941Z'
+modified: '2019-10-23T14:44:50.692Z'
 ---
 
 # stat
 
+> display file status
 
+## usage
 
 ```sh
 ls -ls foo.dat    # -s argument to ls returns file size in blocks, just like du
@@ -26,4 +28,5 @@ stat -f "%k, %z, %b" foo.dat
   # 4096, 25165824, 49152
 ```
 
-
+## see also
+- [[ls]]

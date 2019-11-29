@@ -2,22 +2,22 @@
 tags: [linux]
 title: free
 created: '2019-07-30T06:19:49.055Z'
-modified: '2019-07-30T08:16:19.433Z'
+modified: '2019-10-29T05:42:10.796Z'
 ---
 
 # free
 
+## install
+`apt-get install procps`
+
+## usage
+
 ```sh
 free -h   # human readable
 
-```
-
-```sh
               total        used        free      shared  buff/cache   available
 Mem:           7.8G        4.7G        152M         19M        3.0G        2.8G
 Swap:          2.8G        413M        2.4G
-
-
 
 
 total       # Total installed memory (MemTotal and SwapTotal in /proc/meminfo)
@@ -32,14 +32,21 @@ buff/cache  # Sum of buffers and cache
             # buffers Memory used by kernel buffers (Buffers in /proc/meminfo)
             # cache   Memory used by the page cache and slabs (Cached and Slab in /proc/meminfo)
 
-available   # Estimation of how much memory is available for starting new applications, without swapping. Unlike the data provided by the cache or free fields, this field takes into account page cache and also that not all reclaimable memory slabs will be reclaimed due to items being in use (MemAvailable in /proc/meminfo, available on kernels 3.14, emulated on kernels 2.6.27+, otherwise the same as free)
+available   # Estimation of how much memory is available for starting new applications, without swapping. 
+            # Unlike the data provided by the cache or free fields, this field takes into account page cache and also that not all reclaimable memory slabs will be reclaimed due to items being in use (MemAvailable in /proc/meminfo, available on kernels 3.14, emulated on kernels 2.6.27+, otherwise the same as free)
+```
 
+```sh
+cat /proc/meminfo
 ```
 
 
+## clear memory cache
 ```sh
 sudo sync && sudo sh -c "echo 1 > /proc/sys/vm/drop_caches"
 ```
 
-[How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
+## see also
+- [[procfs]]
+- [How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
 

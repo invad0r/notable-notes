@@ -2,10 +2,17 @@
 tags: [linux]
 title: cron
 created: '2019-07-30T06:19:49.031Z'
-modified: '2019-07-30T18:51:10.791Z'
+modified: '2019-11-25T07:07:27.487Z'
 ---
 
 # cron
+
+## usage
+```sh
+crontab -l | tee >(head -n1) | grep "^[^#;]"      # show only active jobs
+
+cat /var/spool/cron/crontabs/root                 # location of cron files for individual users
+```
 
 ```sh
 # .---------------- minute (0 - 59)
@@ -23,22 +30,13 @@ for user in $(cut -f1 -d: /etc/passwd); do \
   echo $user; \
   crontab -u $user -l;   
 done
-
-cat /var/spool/cron/crontabs/root      # location of cron files for individual users
-
-
-crontab -l | tee >(head -n1) | grep "^[^#;]"      # show only active jobs
 ```
-[cron - Location of the crontab file - Unix & Linux Stack Exchange](http://unix.stackexchange.com/a/196010)
-
-
 
 ## debugging cron
 ```sh
 #!/bin/bash
 
 # cron wrapper script
-#
 # 0 4 * * 1,3,4,5,6,7 /bin/bash /home/voloshin/presseportal/presseportal/bin/tools/viperTester.sh
 
 DIR=$(dirname "${BASH_SOURCE[0]}")
@@ -57,3 +55,6 @@ echo "" >> $LOG 2>&1
 echo "---" >> $LOG 2>&1
 echo "`date` Cron cmd is done." >> $LOG 2>&1
 ```
+
+## see also
+- [cron - Location of the crontab file - Unix & Linux Stack Exchange](http://unix.stackexchange.com/a/196010)

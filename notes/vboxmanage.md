@@ -2,11 +2,14 @@
 tags: [virtualization]
 title: vboxmanage
 created: '2019-07-30T06:19:49.257Z'
-modified: '2019-08-22T09:18:46.932Z'
+modified: '2019-10-23T14:28:28.689Z'
 ---
 
 # vboxmanage
 
+> Oracle VM VirtualBox Command Line Management Interface
+
+## usage
 ```sh
 vboxmanage list vms
 
@@ -15,7 +18,7 @@ vboxmanage list runningvms
 vboxmanage list bridgedifs        # get ip of bridged box
 ```
 
-# find out ip address
+## find out ip address
 ```sh
 vboxmanage guestproperty get "web" "/VirtualBox/GuestInfo/Net/0/V4/IP"    # returns the first IP of NIC likely to be NAT 10.0.*.*
 
@@ -46,7 +49,7 @@ arp -a | grep -i 08:00:27:09:33:C0
 # ? (192.168.1.155) at 08:00:27:09:33:c0 [ether] on eth0
 ```
 
-## make snapshot
+## vm snapshot
 ```sh
 vboxmanage snapshot vm04-zca8 take snap1-before-upgrade
 vboxmanage showvminfo vm04-zca8

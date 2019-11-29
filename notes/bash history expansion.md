@@ -2,12 +2,10 @@
 tags: [bash]
 title: bash history expansion
 created: '2019-07-30T06:19:49.010Z'
-modified: '2019-08-18T19:59:23.562Z'
+modified: '2019-08-29T12:25:00.994Z'
 ---
 
 # bash history expansion
-
-[[bash history]]
 
 ## `bang bang`
 ```sh
@@ -45,11 +43,8 @@ a    # Cause changes to be applied over the entire event line. Used in conjuncti
 G    # Apply the following ‘s’ modifier once to each word in the event.
 
 ```
-[Bash Reference Manual - Modifiers](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Modifiers)
-
 
 ### Expanding for historical arguments
-
 ```sh
 ls !^           # get the first argument of a particular command
 
@@ -77,7 +72,9 @@ ls !^           # get the first argument of a particular command
 !!:s/string1/string2/.
 
 !#                   # The entire command line typed so far.
-
 ```
 
-[Bash Event-Designators](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Event-Designators)
+## see also
+- [[bash history]]
+- [Bash Event-Designators](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Event-Designators)
+- [Bash Reference Manual - Modifiers](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Modifiers)

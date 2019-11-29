@@ -1,7 +1,8 @@
 ---
+tags: [vmware]
 title: powershell
 created: '2019-07-30T06:19:49.207Z'
-modified: '2019-08-19T14:12:04.124Z'
+modified: '2019-08-28T08:14:31.653Z'
 ---
 
 # powershell

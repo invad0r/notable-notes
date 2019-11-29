@@ -2,7 +2,7 @@
 tags: [bash]
 title: gnu readline
 created: '2019-07-30T06:19:49.019Z'
-modified: '2019-08-22T21:17:43.574Z'
+modified: '2019-10-17T12:00:20.402Z'
 ---
 
 # gnu readline
@@ -48,7 +48,7 @@ Control-j: "\C-a$(\C-e)"    # macro moves to the beginning of the line with Ctrl
                             # adds `$(` then moves to the end of the line with Ctrl-E and adds `)`
 ```
 
-
 ## see also
+- [[bash bind]]
 - [Is there a way to make alt-f and alt-b jump word forward on Mac? - Stack Overflow](https://stackoverflow.com/questions/20146972/is-there-a-way-to-make-alt-f-and-alt-b-jump-word-forward-and-backward-instead-of)
 - [readline - twobithistory.org](https://twobithistory.org/2019/08/22/readline.html)

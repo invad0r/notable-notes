@@ -2,7 +2,7 @@
 tags: [brew, osx, packagemanager]
 title: brew tap
 created: '2019-08-22T08:24:53.732Z'
-modified: '2019-08-22T08:25:43.868Z'
+modified: '2019-09-23T06:41:29.705Z'
 ---
 
 # brew tap
@@ -16,3 +16,7 @@ brew tap tapname             # add tap
 
 brew untap tapname           # remove a tap
 ```
+
+## see also
+- [[brew]]
+- [[brew cask]]

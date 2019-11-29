@@ -2,75 +2,12 @@
 tags: [vmware]
 title: govc
 created: '2019-07-30T06:19:49.075Z'
-modified: '2019-08-19T14:12:04.098Z'
+modified: '2019-09-03T07:01:09.814Z'
 ---
 
 # govc
 
-
-
-govc is an vSphere CLI built on govmomi, the vSphere Go SDK. It has a robust inventory browser command.
-
-[Automate your vCenter interactions from the Linux commandline with govmomi and govc | Velenux Home Page](https://velenux.wordpress.com/2016/09/19/automate-your-vcenter-interactions-from-the-linux-commandline-with-govmomi-and-govc/)
-
-## vm
-```sh
-govc vm.info -json ${vm} | jq '.VirtualMachines[].Guest.Net[] | .IpConfig | .IpAddress'
-
-govc vm.info -json ${vm} | jq '.VirtualMachines[]' | grep -o -E '10\.32\.[0-9]{1,3}\.[0-9]{1,3}';
-```
-
-## find
-
-```sh
-govc find --help
-
-govc find -type p                                  
-# -type 
-#  a    VirtualApp
-#  c    ClusterComputeResource
-#  d    Datacenter
-#  f    Folder
-#  g    DistributedVirtualPortgroup
-#  h    HostSystem
-#  m    VirtualMachine
-#  n    Network
-#  o    OpaqueNetwork
-#  p    ResourcePool
-#  r    ComputeResource
-#  s    Datastore
-#  w    DistributedVirtualSwitch
-
-govc find -type m -name "*packer*"  # find machines which contain packer
-```
-
-### find host by IP
-```sh
-govc find . -type m -guest.ipAddress "10.32.22.8" -runtime.powerState poweredOn
-```
-[govc find with -guest.ipAddress argument returns more than one result · Issue #1089 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/1089)
-
-### find all network and get object-names
-```sh
-govc find -type n | gxargs -d '\n' -I% govc object.collect -s % name
-```
-[Network info · Issue #742 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/742)
-
-### find hosts that have the datastore mounted using
-```sh 
-# -host can be the HostSystem name or inventory path.
-govc find . -type h -datastore $(govc find -i ./datastore -name iso_images)
-```
-[datastore.upload broken pipe · Issue #832 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/832)
-
-### find all vms running linux
-```sh
-govc find . -type m -runtime.powerState poweredOn -guest.guestFamily linuxGuest
-
-govc find . -type m -runtime.powerState poweredOn -guest.guestId '*Linux*'
-
-govc find . -type m -runtime.powerState poweredOn -guest.guestId '*[ubuntu][Linux]*'
-```
+> govc is an vSphere CLI built on govmomi, the vSphere Go SDK. It has a robust inventory browser command.
 
 ## ls
 ```sh
@@ -95,7 +32,6 @@ govc ls -l 'host/*' | grep ResourcePool | awk '{print $1}' # | xargs -n1 -t govc
 
 govc pool.info "/na Hamburg/host/naCluster02/Resources"
 ```
-[pool.info command appears broken · Issue #203 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/203#issuecomment-70699130)
 
 ### host
 ```sh
@@ -131,7 +67,12 @@ govc find vm -type m -datastore $(govc find -i datastore -name datastore3)
 
 ```sh
 for i in $(govc find vm -type m | grep -i "node" | cut -d/ -f2); do
-  DATASTORE=$(govc vm.info -json "$i" | jq --raw-output '.VirtualMachines[].Config.Hardware.Device[] | select(.DeviceInfo.Label=="CD/DVD drive 1" ) | .Backing.FileName');
+  DATASTORE=$( \
+    govc vm.info -json "$i" \
+      | jq --raw-output '.VirtualMachines[].Config.Hardware.Device[] \
+      | select(.DeviceInfo.Label=="CD/DVD drive 1" ) \
+      | .Backing.FileName'
+    );
   printf "%s: %s" "$i" "$DATASTORE";
 done
 ```
@@ -175,3 +116,11 @@ govc snapshot.tree -vm ./vm/mq-1.node.dint.domain.net -D -i -d
 
 govc snapshot.create -vm ./vm/gitlab.node.dint.domain.net pre-gitlab-v12-upgrade
 ```
+
+## see also
+- [[govc find]]
+- [[jq]]
+- [Automate your vCenter interactions from the Linux commandline with govmomi and govc | Velenux Home Page](https://velenux.wordpress.com/2016/09/19/automate-your-vcenter-interactions-from-the-linux-commandline-with-govmomi-and-govc/)
+- [Network info · Issue #742 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/742)
+- [datastore.upload broken pipe · Issue #832 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/832)
+- [pool.info command appears broken · Issue #203 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/203#issuecomment-70699130)

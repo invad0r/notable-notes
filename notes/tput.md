@@ -2,10 +2,12 @@
 tags: [linux]
 title: tput
 created: '2019-07-30T06:19:49.254Z'
-modified: '2019-08-20T07:20:01.242Z'
+modified: '2019-09-23T06:33:55.836Z'
 ---
 
 # tput
+
+> initialize a terminal or query terminfo database
 
 ```sh
 infocmp     # prints terminal info
@@ -52,4 +54,6 @@ tput cup 5 20    # move the cursor to the position 20 characters to the right an
   8 	# Not used
   9 	# Reset to default color
 ```
-[LinuxCommand.org: tput](http://linuxcommand.org/lc3_adv_tput.php)
+
+## see also
+- [LinuxCommand.org: tput](http://linuxcommand.org/lc3_adv_tput.php)
