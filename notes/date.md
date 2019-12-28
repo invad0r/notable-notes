@@ -2,7 +2,7 @@
 tags: [linux, osx]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2019-11-27T12:26:20.319Z'
+modified: '2019-12-05T07:04:24.041Z'
 ---
 
 # date
@@ -38,5 +38,6 @@ man strftime
 ```
 
 ## see also
+- [[hwclock]]
 - [[timedatectl]]
 - [[strftime]]

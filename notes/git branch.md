@@ -2,18 +2,23 @@
 tags: [git]
 title: git branch
 created: '2019-08-16T06:03:00.514Z'
-modified: '2019-11-21T11:48:46.422Z'
+modified: '2019-12-04T15:03:39.042Z'
 ---
 
 # git branch
 
+> git branch 
+
 ## usage
 ```sh
 git branch -l    # list local branches
+
 git branch -r    # list remote 
+
 git branch -a    # list all: local and remote   
 
 git branch -v     # verbose
+
 git branch -vv    # more verbose e.g. show gone branches `[origin/refactoring: gone]`
 
 

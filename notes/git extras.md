@@ -2,15 +2,13 @@
 tags: [brew, git]
 title: git extras
 created: '2019-07-30T06:19:49.062Z'
-modified: '2019-11-21T11:49:38.322Z'
+modified: '2019-12-26T11:34:57.932Z'
 ---
 
 # git extras
 
-
-### install
+## install
 `brew install git-extras`
-
 
 ## usage
 ```sh

@@ -2,23 +2,21 @@
 tags: [brew, container, container/k8s]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2019-08-28T08:11:09.337Z'
+modified: '2019-12-26T11:32:11.201Z'
 ---
 
 # minikube
 
 > `minikube` uses `libmachine` see also `docker machine`
 
-### setup
+## installation
 ```sh
-brew install kubectl          # autocompleten should be configured 
-
 brew cask install minikube
 
 minikube completion bash > /usr/local/etc/bash_completion.d/minikube-completion
 ```
 
-
+## usage
 ```sh
 minikube start
 
@@ -40,4 +38,5 @@ minikube stop
 ```
 
 ## see also
+- [[kubectl]]
 - [[kubernetes]]

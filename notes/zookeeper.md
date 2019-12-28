@@ -1,17 +1,18 @@
 ---
 title: zookeeper
 created: '2019-09-23T09:47:31.660Z'
-modified: '2019-10-02T08:10:21.042Z'
+modified: '2019-12-17T09:03:13.587Z'
 ---
 
 # zookeeper
 
 ## usage
 ```sh
-echo stat | nc localhost 2181 | grep Mode     # determine which node is acting as a leader
+zookeeper-shell zookeeper-1:2181                # starts interactive shell
 
+zookeeper-shell zookeeper-2:2181 ls /brokers/ids      # get a list of available brokers
 
-zookeeper-shell.sh zookeeper-2:2181 ls /brokers/ids
+echo stat | nc localhost 2181 | grep Mode             # determine which node is acting as a leader
 ```
 
 ## commands

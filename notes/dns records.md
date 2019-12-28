@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [dns]
 title: dns records
 created: '2019-07-30T06:19:49.039Z'
-modified: '2019-08-18T15:22:11.313Z'
+modified: '2019-12-26T19:28:03.203Z'
 ---
 
 # dns records

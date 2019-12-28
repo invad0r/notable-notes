@@ -2,7 +2,7 @@
 tags: [git]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2019-09-05T06:24:52.400Z'
+modified: '2019-12-04T15:04:05.329Z'
 ---
 
 # git
@@ -33,6 +33,8 @@ git add --patch file      # add specific lines to commit
 
 
 git diff HEAD@{1} .env    # diff wir previouse version
+
+git merge --abort         # cancel merge conflict
 ```
 
 ### reverting changes

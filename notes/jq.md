@@ -2,16 +2,18 @@
 tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2019-10-23T14:21:39.243Z'
+modified: '2019-12-25T20:32:35.714Z'
 ---
 
 # jq
 
 > Command-line JSON processor - transform JSON in various ways, by selecting, iterating, reducing and otherwise mangling JSON documents
 
-## flags
+## usage
 ```sh
---raw-output, -r      # output no quotes
+jq -c     # compact no pretty print
+
+jq --raw-output, -r      # output no quotes
 
 --unbuffered          # if you're piping a slow data source into jq and piping jq's output elsewhere
 

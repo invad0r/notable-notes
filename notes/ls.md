@@ -2,7 +2,7 @@
 tags: [filesystem, linux, osx]
 title: ls
 created: '2019-07-30T06:19:49.165Z'
-modified: '2019-10-23T14:45:10.035Z'
+modified: '2019-12-03T08:03:09.452Z'
 ---
 
 # ls
@@ -28,6 +28,9 @@ ls -r                             # reverse sort
 ls -S                             # sort by size
 
 ls -t                             # sort by date
+
+ls -Z, --context                  # security context so it fits on most displays. Displays only mode, user, group, security context and file name.
+                                  # aka "SELinux context"
 ```
 
 ## file mode

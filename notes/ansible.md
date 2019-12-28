@@ -2,19 +2,20 @@
 tags: [iac]
 title: ansible
 created: '2019-07-30T06:19:27.514Z'
-modified: '2019-11-28T11:53:44.809Z'
+modified: '2019-12-25T20:58:07.634Z'
 ---
 
 # ansible
 
-## usgae
+## usage
 ```sh
 ansible all -m ping -s    # adhoc command
 
-ansible -i hosts all -m ping                        # uses local hosts file
+ansible all -m shell -a 'cat /etc/*release'
 
-ansibele all -m shell -a 'cat /etc/*release'
+ansible -i hosts all -m ping                        # uses local hosts file
 ```
 
 ## see also
 - [[ansible-playbook]]
+- [[ssh]]

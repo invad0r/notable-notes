@@ -2,7 +2,7 @@
 tags: [linux]
 title: chronyc
 created: '2019-10-26T17:54:31.118Z'
-modified: '2019-11-29T11:36:30.999Z'
+modified: '2019-12-05T07:04:15.602Z'
 ---
 
 # chronyc
@@ -41,5 +41,7 @@ chronyc sources -v    # displays information about the current time sources that
 
 ## see also
 - [[chronyd]]
+- [[date]]
+- [[hwclock]]
 - https://blacksaildivision.com/ntp-centos
 - https://docs.fedoraproject.org/en-US/Fedora/18/html/System_Administrators_Guide/sect-Checking_if_chrony_is_synchronized.html

@@ -2,11 +2,12 @@
 tags: [editor]
 title: atom
 created: '2019-07-30T06:19:48.989Z'
-modified: '2019-07-30T20:37:25.171Z'
+modified: '2019-12-26T19:29:14.700Z'
 ---
 
 # atom
 
+## usage
 <kbd>cmd + shift + p </kbd>  # command palette will pop up
 
 <kbd>cmd + ;</kbd>           # open setting view
@@ -24,8 +25,8 @@ apm install remember-session
 ```
 
 ## test
-
-
 <kbd>ctl + shift + p</kbd>
 Window:Reload
 
+## see also
+- 

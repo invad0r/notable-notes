@@ -2,13 +2,13 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2019-10-18T05:57:18.904Z'
+modified: '2019-12-21T17:03:52.914Z'
 ---
 
 # ssh
+> `secure shell`
 
-`secure shell`
-
+## usage
 ```sh
 ssh -T git@github.com           # test ssh-connection
 
@@ -21,6 +21,8 @@ ssh -p PORT user@host           # connects specified port
 ssh -n docker@${node} 'uptime'  # don't read from stdin, e.g. in a loop
 
   #    -n    Redirects stdin from `/dev/null` (actually, prevents reading from `stdin`)
+
+ssh -C                          # compress all data stdin, stdout, stderr, x11, tpc, unix-domain-connections via gzip
 ```
 
 ## options
@@ -43,6 +45,7 @@ ssh -n docker@${node} 'uptime'  # don't read from stdin, e.g. in a loop
 ```
 
 ## see also
+- [[last]]
 - [Connecting to GitHub with SSH - User Documentation](https://help.github.com/articles/connecting-to-github-with-ssh/)
 - [ssh_config(5) - LogLevel](http://man.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5?query=ssh_config#LogLevel)
 - [Shell script while read line loop stops after the first line - Stack Overflow](https://stackoverflow.com/a/13800476)
