@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash braces
 created: '2019-09-24T06:43:14.231Z'
-modified: '2019-09-24T06:55:26.191Z'
+modified: '2019-12-21T10:09:18.181Z'
 ---
 
 # bash braces
@@ -23,11 +23,27 @@ $(...)        # execute the command in the parens in a subshell and return its s
 COMMAND | { echo "nope"; exit 1; }
 ```
 
-## expansion
+## arithmetic expansion
 ```sh
 $((...))      # arithmetic expansion and return the result
 ```
+```sh
+$((1+1))
 
+$((2*2))
+
+$((4/2))
+
+$((2**2))
+
+$((base#number))  # convert number from base to decimal
+$((2#1111))  # 15
+$((8#16))    # 14
+$((16#FF))   # 255
+
+```
+
+## parameter expansion
 ```sh
 ${...}        # parameter expansion and return the value
 ```

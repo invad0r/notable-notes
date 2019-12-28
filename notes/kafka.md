@@ -1,7 +1,7 @@
 ---
 title: kafka
 created: '2019-07-30T06:19:49.147Z'
-modified: '2019-11-29T10:42:21.193Z'
+modified: '2019-12-09T08:55:56.058Z'
 ---
 
 # kafka
@@ -36,11 +36,13 @@ kafka-console-producer --broker-list kafka-1:9092 --topic foo.bar    # then star
 ```sh
 kafka-console-consumer --bootstrap-server kafka-1:9094 --topic test   # consume messages
 
-kafka-console-consumer --bootstrap-server kafka-1:9092 --topic foo.bar --from-beginning
+kafka-console-consumer --bootstrap-server kafka-1:9092 --from-beginning --topic foo.bar 
 
 kafka-console-consumer --bootstrap-server kafka-1:9092 --topic foo.bar --partition 0 --offset 2  # get offset
 
 kafka-console-consumer --consumer.config ssl.conf --bootstrap-server kafka-1:9092 --topic customerEvents --from-beginning
+
+kafka-console-consumer --consumer.config ssl.conf --bootstrap-server kafka-1:9092 --from-beginning --topic foo.bar 
 ```
 
 ## kafka-delete-records

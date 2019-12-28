@@ -2,21 +2,29 @@
 tags: [brew]
 title: xargs
 created: '2019-07-30T06:19:49.266Z'
-modified: '2019-10-02T07:26:10.467Z'
+modified: '2019-12-26T14:16:49.245Z'
 ---
 
 # xargs
+> command line utility for building an execution pipeline from standard input
 
-
-### install
+## install
 `brew install findutils` (as `gxargs`)
-[macos - Replacement for xargs -d in osx - Super User](https://superuser.com/questions/467176/replacement-for-xargs-d-in-osx)
 
-### replace string
+## usage
 ```sh
-echo 210 | xargs -I {} bash -c "if [[ "{}" =~ 2 ]]; then echo {}; fi"
+echo 'one two three' | xargs mkdir
+
+echo 'one two three' | xargs -t rm                  # -t prints each command that will be executed 
+
+echo 'one two three' | xargs -p touch               # -p will print the command to be executed and prompt the user to run it
+
+cat foo.txt | xargs -I % sh -c 'echo %; mkdir %'    # -I replaces occurrences of the argument with the argument passed to xargs
+
+echo 210    | xargs -I {} bash -c "if [[ "{}" =~ 2 ]]; then echo {}; fi"   # replace string
 ```
 
 ## see also
 - [[curl]]
 - [[parallel]]
+- [Replacement for xargs -d in osx](https://superuser.com/questions/467176/replacement-for-xargs-d-in-osx)

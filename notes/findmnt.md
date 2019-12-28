@@ -2,7 +2,7 @@
 tags: [linux]
 title: findmnt
 created: '2019-10-17T05:41:04.763Z'
-modified: '2019-11-29T11:36:39.065Z'
+modified: '2019-12-09T09:59:50.299Z'
 ---
 
 # findmnt
@@ -14,6 +14,8 @@ modified: '2019-11-29T11:36:39.065Z'
 findmnt -l    # list view 
 
 findmnt -t nfs  # list nfs mounts
+
+findmnt -it nfs # invert search => no nfs 
 
   #  -t, --types <list>     limit the set of filesystems by FS types
 

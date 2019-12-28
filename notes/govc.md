@@ -2,12 +2,14 @@
 tags: [vmware]
 title: govc
 created: '2019-07-30T06:19:49.075Z'
-modified: '2019-09-03T07:01:09.814Z'
+modified: '2019-12-28T15:55:31.798Z'
 ---
 
 # govc
 
 > govc is an vSphere CLI built on govmomi, the vSphere Go SDK. It has a robust inventory browser command.
+
+## usage
 
 ## ls
 ```sh

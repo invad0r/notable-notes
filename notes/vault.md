@@ -1,14 +1,18 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2019-11-29T11:49:21.034Z'
+modified: '2019-12-02T08:50:08.747Z'
 ---
 
 # vault
 
 ## usage
 ```sh
-# $VAULT_TOKEN $VAULT_ADDR should be set when interacting with cli
+# should be set when interacting with cli
+VAULT_TOKEN=
+VAULT_ADDR="http://localhost:8200
+
+
 
 vault status
 

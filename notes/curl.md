@@ -2,7 +2,7 @@
 tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2019-08-28T08:54:11.451Z'
+modified: '2019-12-10T14:45:10.383Z'
 ---
 
 # curl
@@ -75,4 +75,4 @@ curl --url "http://www.example.com?$(date +%s)"
 - [[curl write-out]]
 - [Extracting data from Wikipedia - loige.co](http://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands)
 - [linux - Curl command without using cache - Stack Overflow](https://stackoverflow.com/questions/31653271/curl-command-without-using-cache)
-
+- [[wget]]

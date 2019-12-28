@@ -1,16 +1,18 @@
 ---
 tags: [brew, osx]
-title: osx pbcopy pbpaste
+title: pbcopy pbpaste
 created: '2019-07-30T06:19:49.205Z'
-modified: '2019-08-19T14:10:21.357Z'
+modified: '2019-12-26T11:36:48.750Z'
 ---
 
-# osx pbcopy pbpaste
+# pbcopy pbpaste
 
+## usage
 ```sh
 pbcopy < vim-cheatsheet.md
-```
 
-```sh
 pbpaste
 ```
+
+## see also
+-  
