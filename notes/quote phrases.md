@@ -2,31 +2,23 @@
 tags: [Notebooks]
 title: quote phrases
 created: '2019-07-30T06:19:27.513Z'
-modified: '2019-08-18T16:18:02.415Z'
+modified: '2019-12-29T20:09:38.334Z'
 ---
 
 # quote phrases
 
----
+`Lingua Franka`          fränkische sprache / pidgin language
+`Jevons Paradox/Effect`  increase usage when cheaper         
 
-| | |
-|--|--|
-| `Lingua Franka`         | fränkische sprache / pidgin language |
-| `Jevons Paradox/Effect` | increase usage when cheaper          |
+`laconic`
 
-
-#### laconic
-`“IF”` A perfect representation of Spartan character. As Philip II of Macedon was conquering Greek city-states left and right,
-Sparta was left alone. Philip had achieved a crushing victory, and Sparta was relatively weak and without walls.
-Philip sent a message to the Spartans saying `“If I invade Lakonia you will be destroyed, never to rise again.”` 
-The Spartans replied with one word, `“If.”`
-
-Philip eventually decided to bypass Sparta as it was a poor region and not worth the fight.
-Neither Philip nor Alexander attacked the Spartans while they ruled.
+`IF` 
+As Philip II of Macedon was conquering Greek city-states left and right, Sparta was left alone. Philip had achieved a crushing victory, and Sparta was relatively weak and without walls. Philip sent a message to the Spartans saying `“If I invade Lakonia you will be destroyed, never to rise again.”` The Spartans replied with one word, `“If.”`
+Philip eventually decided to bypass Sparta as it was a poor region and not worth the fight. Neither Philip nor Alexander attacked the Spartans while they ruled.
 
 `“With it or on it”`
-Most people are more familiar with the longer `“Come back with this shield or on it,”` 
-but in everyday use, it was shortened to just five words as a woman handed his shield to a departing soldier.
+Most people are more familiar with the longer `“Come back with this shield or on it,”`, but in everyday use, it was shortened to just five words as a woman handed his shield to a departing soldier.
+
 [Some of the Best Catchphrases Of The Ancient Spartans](https://www.warhistoryonline.com/instant-articles/best-spartan-laconic-phrases-boldest-wittiest-lines-ever-recorded.html)
 
 ## quotes

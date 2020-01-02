@@ -2,19 +2,19 @@
 tags: [git]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2019-12-04T15:04:05.329Z'
+modified: '2020-01-02T04:25:20.536Z'
 ---
 
 # git
 
-### test remote ssh connection
+> distributed version-control system for tracking changes in source code during software development.
+
+## usage
 ```sh
 ssh -Tv git@example.com       # test-ssh-connection
-```
 
+git show COMMIT           # show changes of commit
 
-### day-to-day
-```sh
 git diff [file]           # Show changes between working directory and staging area.
 
 git diff --staged [file]  # Shows changes in the staging area that haven't been commited.

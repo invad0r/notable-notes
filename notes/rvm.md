@@ -2,7 +2,7 @@
 tags: [ruby, versionmanager]
 title: rvm
 created: '2019-08-02T07:23:19.957Z'
-modified: '2019-08-28T22:09:19.403Z'
+modified: '2020-01-02T12:34:17.824Z'
 ---
 
 # rvm
@@ -30,6 +30,7 @@ bash -l -c "rvm use 2.0.0"
 ```
 
 ## see also
+- [[ruby]]
 - [rvm.io](http://rvm.io/)
 - [apt - ruby-lang.org](https://www.ruby-lang.org/en/documentation/installation/#apt)
 - [rvm-is-not-a-function - stackoverflow](http://stackoverflow.com/a/30739863)

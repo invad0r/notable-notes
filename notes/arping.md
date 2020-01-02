@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: arping
 created: '2019-12-26T19:30:34.765Z'
-modified: '2019-12-26T19:31:33.100Z'
+modified: '2019-12-30T07:34:27.794Z'
 ---
 
 # arping

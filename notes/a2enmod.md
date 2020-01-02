@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: a2enmod
 created: '2019-12-26T19:41:19.878Z'
-modified: '2019-12-28T15:45:02.321Z'
+modified: '2019-12-30T07:30:43.545Z'
 ---
 
 # a2enmod

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: sudo
 created: '2019-10-23T14:42:02.208Z'
-modified: '2019-10-23T14:43:53.005Z'
+modified: '2019-12-30T07:34:09.303Z'
 ---
 
 # sudo

@@ -1,7 +1,8 @@
 ---
+tags: [linux, osx]
 title: zip
 created: '2019-09-26T06:55:59.693Z'
-modified: '2019-10-08T06:02:53.562Z'
+modified: '2019-12-30T07:34:45.462Z'
 ---
 
 # zip

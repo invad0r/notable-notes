@@ -1,8 +1,8 @@
 ---
-tags: [database, mysql]
+tags: [database]
 title: mysqlcheck
 created: '2019-08-18T14:36:02.403Z'
-modified: '2019-11-18T12:41:34.729Z'
+modified: '2019-12-30T07:33:15.449Z'
 ---
 
 # mysqlcheck

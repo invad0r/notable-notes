@@ -1,12 +1,12 @@
 ---
 title: asm assmbler
 created: '2019-07-30T06:19:48.988Z'
-modified: '2019-08-20T09:46:42.315Z'
+modified: '2019-12-30T07:38:12.341Z'
 ---
 
 # asm assmbler
 
-
+## usage
 ```
 EAX,EBX,ECX,EDX - "general purpose", more or less interchangeable
 
@@ -29,7 +29,8 @@ void junk( void )
         "popl %eax \n"
    );
 }
-
 ```
 
+## see also
+- 
 

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: mktemp
 created: '2019-11-26T08:13:04.385Z'
-modified: '2019-11-26T08:16:57.849Z'
+modified: '2019-12-30T07:33:45.655Z'
 ---
 
 # mktemp

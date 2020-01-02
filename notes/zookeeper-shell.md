@@ -1,10 +1,10 @@
 ---
-title: zookeeper
+title: zookeeper-shell
 created: '2019-09-23T09:47:31.660Z'
-modified: '2019-12-17T09:03:13.587Z'
+modified: '2019-12-30T07:34:56.922Z'
 ---
 
-# zookeeper
+# zookeeper-shell
 
 ## usage
 ```sh

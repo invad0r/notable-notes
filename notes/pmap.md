@@ -1,10 +1,12 @@
 ---
+tags: [linux]
 title: pmap
 created: '2019-12-11T11:14:55.135Z'
-modified: '2019-12-11T11:15:24.761Z'
+modified: '2019-12-30T07:34:09.257Z'
 ---
 
 # pmap
+> report memory map of a process
 
 ## usage
 ```sh
@@ -21,4 +23,4 @@ memtop() {
 
 ```
 ## see also
--
+- 
