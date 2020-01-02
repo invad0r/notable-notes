@@ -1,7 +1,7 @@
 ---
 title: vagrantfile
 created: '2019-12-25T10:59:18.542Z'
-modified: '2019-12-25T11:26:26.727Z'
+modified: '2020-01-02T12:34:22.290Z'
 ---
 
 # vagrantfile
@@ -24,4 +24,5 @@ end
 ```
 
 ## see also
+- [[ruby]]
 - [[vagrant]]

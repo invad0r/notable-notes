@@ -2,7 +2,7 @@
 tags: [linux]
 title: ps
 created: '2019-07-30T06:19:49.218Z'
-modified: '2019-09-23T06:30:44.531Z'
+modified: '2020-01-02T14:32:02.999Z'
 ---
 
 # ps
@@ -32,14 +32,12 @@ ps -e     # standard-style
 ps aux    # bsd-style
 ps -ef    # standard-style
 
+#   a    show processes for all users
+#   u    display the process's user/owner
+#   x    also show processes not attached to a terminal
 
-    # a = show processes for all users
-    # u = display the process's user/owner
-    # x = also show processes not attached to a terminal
-```
 
-## format
-```sh
+# format
 ps -o KEYWORD
 
 ps -o user,pid,time
@@ -47,24 +45,18 @@ ps -o user,pid,time
 ps -o user pid comm command
 
 ps xawf -eo pid,user,cgroup,args
-```
 
-## snippets
-```sh
+
+ps aux | sort -nrk 3,3 | head -n 5                      # top 5 processes
+
 ps aux | grep apache  | awk '{print $6/1024 " MB";}'    # Ram consumption per apache process
+
 ps aux | grep "[f]nord"                                 # don't show grep in result
-```
-
-## pgrep
-```sh
-pgrep -f    #  search the full command line and not only the process name
-      -l    # 
-```
-
-## pkill
-```sh
-pkill -f mediaboss  # match full path
 ```
 
 ## see also
 - [ps man page](http://linuxcommand.org/lc3_man_pages/ps1.html)
+- [[pgrep]]
+- [[pkill]]
+- [[sort]]
+- [[awk]]

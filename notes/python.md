@@ -2,7 +2,7 @@
 tags: [python]
 title: python
 created: '2019-07-30T06:19:49.222Z'
-modified: '2019-12-26T11:24:19.589Z'
+modified: '2020-01-02T13:07:05.129Z'
 ---
 
 # python
@@ -22,15 +22,14 @@ python -c CMD_STRING                                                      # prog
 python -c 'import yaml,sys; yaml.safe_load(sys.stdin)' < yamltest.txt     # validate yaml
 
 python -c 'import sys,json; print json.load(sys.stdin)[0]["Name"]' < <(docker network inspect terraform_default)
-```
 
-```python
-dict(foo="bar", person="alice")       # constructor to make a new dictionary
-
-yield     # statement used like 'return' which returns a generator object
+python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < in.yaml > out.json
 ```
 
 ## see also
+- [[irb]]
 - [[pip]]
 - [[pyenv]]
 - [[virtualenv]]
+- [[ruby]]
+- [[yaml]]

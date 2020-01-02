@@ -1,14 +1,13 @@
 ---
 tags: [curl]
-title: gitlab
+title: gitlab api
 created: '2019-07-30T06:19:49.064Z'
-modified: '2019-11-18T13:26:08.200Z'
+modified: '2019-12-30T13:11:54.514Z'
 ---
 
-# gitlab
+# gitlab api
 
-## usage api
-
+## usage
 ```sh
 X-Total 	                # The total number of items
 X-Total-Pages 	          # The total number of pages
@@ -17,13 +16,12 @@ X-Page 	                  # The index of the current page (starting at 1)
 X-Next-Page 	            # The index of the next page
 X-Prev-Page   	          # The index of the previous page
 private-token: TOKEN      # token..
+```
 
-
+```sh
 GET "/api/v4/projects/8/issues/8/notes?per_page=3&page=2"
 
 GET "/api/v4/projects/?private_token=TOKEN&per_page=2&page=1"
-
-
 
 # get projects with a schedule
 GET "HOST/api/v4/projects?simple=true&per_page=100"             | awk 'BEGIN {FS=": "}/^X-Total-Pages/{print $2}'
@@ -31,8 +29,8 @@ GET "HOST/api/v4/projects?simple=true&per_page=100"             | awk 'BEGIN {FS
 GET "HOST/api/v4/projects?simple=true&per_page=100&page=${page}" | jq '.[].id'
 
 curl --no-buffer -s "HOST/api/v4/projects/${id}" | jq '.name'
-curl --no-buffer -s "HOST/api/v4/projects/${id}/pipeline_schedules" | jq '.'
 
+curl --no-buffer -s "HOST/api/v4/projects/${id}/pipeline_schedules" | jq '.'
 
 
 # namespace
@@ -50,8 +48,6 @@ GET "/api/v4/runners/all?status=active"
 
 DELETE "/api/v4/runners/161"
 ```
-
-
 
 ## see also
 - [[gitlab-runner]]

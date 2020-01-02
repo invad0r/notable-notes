@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: last
 created: '2019-12-21T17:03:56.861Z'
-modified: '2019-12-21T17:08:34.197Z'
+modified: '2019-12-30T07:34:09.323Z'
 ---
 
 # last

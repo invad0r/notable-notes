@@ -2,7 +2,7 @@
 tags: [buildtool, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2019-09-26T07:01:31.535Z'
+modified: '2020-01-02T13:05:31.126Z'
 ---
 
 # make
@@ -56,3 +56,4 @@ all:
 - [what-are-makefile-am-and-makefile-in](https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in)
 - [confused-about-configure-script-and-makefile-in](https://stackoverflow.com/a/26832773/2087704)
 - [Automation and Make: Introduction](http://swcarpentry.github.io/make-novice/01-intro/index.html)
+- [[bundle rake]]

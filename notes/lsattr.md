@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: lsattr
 created: '2019-10-18T08:23:37.571Z'
-modified: '2019-12-03T08:00:56.615Z'
+modified: '2019-12-30T07:34:20.251Z'
 ---
 
 # lsattr

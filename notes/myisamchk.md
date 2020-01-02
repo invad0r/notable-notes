@@ -1,8 +1,8 @@
 ---
-tags: [mysql]
+tags: [database]
 title: myisamchk
 created: '2019-08-29T06:08:17.952Z'
-modified: '2019-08-29T06:16:44.175Z'
+modified: '2019-12-30T07:33:15.384Z'
 ---
 
 # myisamchk

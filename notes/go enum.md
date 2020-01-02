@@ -2,12 +2,14 @@
 tags: [go]
 title: go enum
 created: '2019-07-30T06:19:49.065Z'
-modified: '2019-08-21T15:24:53.923Z'
+modified: '2020-01-02T12:37:04.352Z'
 ---
 
 # go enum
+
 > user definded type consisting of set of name constants called `enumerators`
 
+## usage
 ```go
 enum rainbowColors {
   red    = 1
@@ -31,5 +33,7 @@ results in:
   StatusClosed = 1
   StatusUnknown = 2
 */
-
 ```
+
+## see also
+- [[ruby symbol]]

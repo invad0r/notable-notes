@@ -1,8 +1,8 @@
 ---
-tags: [mysql]
+tags: [database]
 title: mysqladmin
 created: '2019-08-29T06:15:54.673Z'
-modified: '2019-08-29T06:16:44.186Z'
+modified: '2019-12-30T07:33:15.430Z'
 ---
 
 # mysqladmin

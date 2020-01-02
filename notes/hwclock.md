@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: hwclock
 created: '2019-12-05T07:04:33.069Z'
-modified: '2019-12-05T07:08:58.733Z'
+modified: '2019-12-30T07:36:17.392Z'
 ---
 
 # hwclock
