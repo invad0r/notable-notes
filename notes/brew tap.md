@@ -2,7 +2,7 @@
 tags: [brew, osx, packagemanager]
 title: brew tap
 created: '2019-08-22T08:24:53.732Z'
-modified: '2019-12-26T11:25:55.377Z'
+modified: '2020-01-03T07:23:31.735Z'
 ---
 
 # brew tap
@@ -16,6 +16,8 @@ brew tap                     # list tapped repositories
 brew tap tapname             # add tap
 
 brew untap tapname           # remove a tap
+
+brew tap caskroom/cask       # get cask
 ```
 
 ## see also

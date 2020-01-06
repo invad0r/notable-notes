@@ -1,7 +1,7 @@
 ---
 title: gitlab-rake
-created: '2019-12-30T14:02:03.960Z'
-modified: '2019-12-30T14:02:21.050Z'
+created: '2020-01-03T14:25:36.220Z'
+modified: '2020-01-03T14:28:58.473Z'
 ---
 
 # gitlab-rake
@@ -9,6 +9,11 @@ modified: '2019-12-30T14:02:21.050Z'
 ## usage
 ```sh
 gitlab-rake gitlab:check SANITIZE=true
+
+bundle exec rake gitlab:backup:create RAILS_ENV=production
+
+gitlab-rake gitlab:backup:restore BACKUP=TIMESTAMP_NUMBER
 ```
 ## see also
 - [[gitlab-ctl]]
+- [[bundle rake]]

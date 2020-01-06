@@ -1,7 +1,7 @@
 ---
 title: pkill
 created: '2020-01-02T14:25:22.992Z'
-modified: '2020-01-02T14:31:13.580Z'
+modified: '2020-01-03T13:12:31.271Z'
 ---
 
 # pkill
@@ -11,8 +11,11 @@ modified: '2020-01-02T14:31:13.580Z'
 ## usage
 ```sh
 pkill -f PROCESS_NAME     # match full path
+
+pkill -HUP sshd
 ```
 
 ## see also
 - [[ps]]
 - [[pgrep]]
+

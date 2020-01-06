@@ -2,23 +2,21 @@
 tags: [ssh]
 title: ssh config
 created: '2019-08-22T08:32:53.895Z'
-modified: '2019-10-23T14:52:08.807Z'
+modified: '2020-01-03T13:14:54.915Z'
 ---
 
 # ssh config
 
 > ssh client configuration
 
-```
-man ssh_config
-```
-
-## use different config file
+## usage
 ```sh
-ssh -F /dev/null root@host   # debug config problem
+man ssh_config
+
+ssh -F /dev/null root@host   # debug config problem by using different config file
 ```
 
-## `~/.ssh/config` entries
+## .ssh/config
 ```sh 
 Host                    # Defines host or hosts to which the configuration section applies. 
                         # The section ends with a new Host section or the end of the file. 

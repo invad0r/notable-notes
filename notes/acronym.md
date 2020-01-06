@@ -2,12 +2,10 @@
 tags: [Notebooks]
 title: acronym
 created: '2019-08-18T16:14:42.254Z'
-modified: '2019-08-20T08:35:29.028Z'
+modified: '2020-01-03T07:49:27.060Z'
 ---
 
 # acronym
-
- [[ascii]] - `American Standard Code for Infromation Interchange`
 
 ## acid
 > set of properties that guarante reliable databse transactions
@@ -36,7 +34,6 @@ C R U D
 | Update 	         |  `UPDATE`  | `PATCH` or `PUT` |
 | Delete (Destroy) |  `DELETE`  | `DELETE`         |                                       
 
-
 [[rest api design]]
 
 ## solid
@@ -52,7 +49,9 @@ S O L I D
 
 
 # CAP 
+
 > theorem aka `Brewer's theorem`
+
 ```
 C A P
 | | └─ consistency

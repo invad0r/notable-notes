@@ -2,7 +2,7 @@
 tags: [linux]
 title: crontab
 created: '2019-07-30T06:19:49.031Z'
-modified: '2020-01-02T13:40:22.798Z'
+modified: '2020-01-03T07:39:50.638Z'
 ---
 
 # crontab
@@ -45,8 +45,10 @@ cat /var/spool/cron/crontabs/root                 # location of cron files for i
  0    22     *     *   1-5    CMD          # at 22:00 on every day-of-week from Monday through Friday
 
 30 18 * * * rm /path/dir/* > /cronlogs/file.log     # cron execution execution log  
+
+0 9 * * * USER [ -x /usr/lib/mailman/cron/disabled ] && /usr/lib/mailman/cron/disabled
 ```
 
 ## see also
-- https://crontab.guru/
+- [crontab.guru](https://crontab.guru/)
 - [Location of the crontab file](http://unix.stackexchange.com/a/196010)

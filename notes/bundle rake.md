@@ -2,7 +2,7 @@
 tags: [ruby]
 title: bundle rake
 created: '2020-01-02T13:04:55.184Z'
-modified: '2020-01-02T13:06:04.964Z'
+modified: '2020-01-03T14:28:24.952Z'
 ---
 
 # bundle rake
@@ -25,3 +25,4 @@ app:rake gitlab:backup:create
 ## see also
 - [[ruby]]
 - [[make]]
+- [[gitlab-rake]]
