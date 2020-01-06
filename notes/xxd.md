@@ -2,7 +2,7 @@
 tags: [linux]
 title: xxd
 created: '2019-09-04T06:14:01.648Z'
-modified: '2019-10-23T14:25:20.089Z'
+modified: '2020-01-03T08:39:45.594Z'
 ---
 
 # xxd
@@ -16,9 +16,10 @@ xxd docker-compose.yml    # hexdump file
 
 xxd -plain                # output in postscript continuous hexdump style. Also known as plain hexdump style.
 
-xxd -r <<<'0 4a'
+xxd -r <<<'0 4a'           # decimal
 ```
 
 ## see also
 - [[url encoding]]
 - [[ascii]]
+- [[od]]

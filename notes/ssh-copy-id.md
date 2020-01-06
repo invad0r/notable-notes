@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh-copy-id
 created: '2019-07-30T06:19:49.244Z'
-modified: '2019-10-23T14:51:19.414Z'
+modified: '2020-01-03T13:12:59.467Z'
 ---
 
 # ssh-copy-id
@@ -11,7 +11,7 @@ modified: '2019-10-23T14:51:19.414Z'
 
 ## usage
 ```sh
-ssh-copy-id user@host       # adds your ssh key to host
+ssh-copy-id user@host                         # adds your ssh key to host
 
 ssh-copy-id -i .ssh/foo@bar.pub user@server
 ```

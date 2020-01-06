@@ -1,7 +1,7 @@
 ---
 title: gitlab-ctl
 created: '2019-12-30T14:01:10.332Z'
-modified: '2020-01-02T11:44:37.458Z'
+modified: '2020-01-03T14:23:42.336Z'
 ---
 
 # gitlab-ctl
@@ -13,6 +13,9 @@ gitlab-ctl show-config
 gitlab-ctl reconfigure
 
 gitlab-ctl restart
+
+gitlab-ctl stop unicorn
+gitlab-ctl stop sidekiq
 ```
 
 ## see also

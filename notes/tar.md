@@ -2,7 +2,7 @@
 tags: [linux, osx]
 title: tar
 created: '2019-07-30T06:19:49.251Z'
-modified: '2019-10-08T06:02:35.845Z'
+modified: '2020-01-03T12:28:00.450Z'
 ---
 
 # tar
@@ -11,9 +11,9 @@ modified: '2019-10-08T06:02:35.845Z'
 
 `.tgz` is same as `.tar.gz`/`.tar.gzip`
 
-## create
+## usage
 ```sh
-tar cvzf archive.tar.gzip dirname/
+tar cvzf archive.tar.gzip dirname/      # create
 
   #   -c     create archive
   #   -v     verbose
@@ -22,38 +22,33 @@ tar cvzf archive.tar.gzip dirname/
 
 tar cvfj archive-name.tar.bz2 dirname/
   #   -j    filter the archive through bzip2
-```
 
-## extract / untar
-```sh
-tar xvf archive.tar
+
+tar xvf archive.tar                     # extract / untar
   # -x      extract files from archive
+
 
 docker export tempconsul | tar -C ./rootfs -xf -
   # -C dir    Changes the working directory in the middle of a command line
   # -f stdin  `-` ist stdin
-```
 
-## listing
-```sh
-tar tvf archive.tar
+
+tar tvf archive.tar                     # listing
   # -t      List archive contents to stdout.
 
 tar ztvf archive.tar.gz    # gzipped file
 
 tar tvf archive.tar.gz 'search-pattern'
 tar tvf archive.tar.gz 'path/*/file'
-```
 
-## estimating
-```sh
-tar -czf - archive | wc -c
 
-tar -cjf - archive | wc -c
-```
 
-## progress
-```sh
+tar -czf - archive | wc -c       # estimating
+
+tar -cjf - archive | wc -c        # estimating
+
+
+# progress
 tar cf - erl_crash.dump -P \
   | pv -s $(( $(du -sk erl_crash.dump | cut -f1) * 1024 )) \
   | gzip > erl_crash.dump.tar.gz
