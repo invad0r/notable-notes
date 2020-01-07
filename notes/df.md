@@ -2,7 +2,7 @@
 tags: [filesystem, linux]
 title: df
 created: '2019-07-30T06:19:49.036Z'
-modified: '2019-09-02T05:05:23.561Z'
+modified: '2020-01-07T10:11:12.607Z'
 ---
 
 # df
@@ -27,4 +27,4 @@ df -T     # -T, --print-type      - print file system type
 ```
 
 ## see also
-- 
+- [[du]]

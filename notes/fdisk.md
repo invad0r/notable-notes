@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [filesystem, linux]
 title: fdisk
 created: '2019-09-02T04:54:15.186Z'
-modified: '2019-11-29T11:45:43.644Z'
+modified: '2020-01-07T10:16:12.584Z'
 ---
 
 # fdisk
