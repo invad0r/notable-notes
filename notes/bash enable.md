@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash enable
 created: '2019-08-02T06:42:37.583Z'
-modified: '2019-08-29T12:19:38.558Z'
+modified: '2020-01-10T10:17:09.278Z'
 ---
 
 # bash enable

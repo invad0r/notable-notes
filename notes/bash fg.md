@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash fg
 created: '2019-08-02T06:42:37.596Z'
-modified: '2019-08-29T12:21:55.159Z'
+modified: '2020-01-15T07:21:17.907Z'
 ---
 
 # bash fg
@@ -31,3 +31,4 @@ fg %?string  # brings job whose command contains string
 - [[bash jobs]]
 - [[bash bg]]
 - [[bash process-handling]]
+- [[bash waits]]

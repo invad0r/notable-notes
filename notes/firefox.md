@@ -2,14 +2,13 @@
 tags: [Notebooks]
 title: firefox
 created: '2019-07-30T06:19:49.054Z'
-modified: '2019-08-01T07:01:57.831Z'
+modified: '2020-01-16T07:56:37.646Z'
 ---
 
 # firefox
 
 
 ## about
-
 
     about:preferences#search
 
@@ -39,4 +38,5 @@ If you are looking for a specific type of result, like a bookmark or tag, you ca
     Add @ to search for matches in web addresses (URLs).
     Add $ to search for matches in suggestions. 
 
-[Awesome Bar - Search your Firefox bookmarks, history and tabs from the address bar | Firefox Help](https://support.mozilla.org/en-US/kb/awesome-bar-search-firefox-bookmarks-history-tabs#w_changing-results-on-the-fly)
+## see also
+- [Awesome Bar - Search your Firefox bookmarks, history and tabs from the address bar | Firefox Help](https://support.mozilla.org/en-US/kb/awesome-bar-search-firefox-bookmarks-history-tabs#w_changing-results-on-the-fly)

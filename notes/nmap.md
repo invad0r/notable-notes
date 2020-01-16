@@ -2,12 +2,11 @@
 tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2019-08-20T09:47:48.684Z'
+modified: '2020-01-16T07:57:16.453Z'
 ---
 
 # nmap
-
-`network mapper`
+> `network mapper`
 
 ### scanning options
 ```sh
@@ -28,7 +27,7 @@ port scanning methods
  -sU             # Scan UDP-Port
  -sP             # Ping-Scan
 ```
-#### examples
+## usage
 ```sh
 nmap localhost                    # list own open ports
 
@@ -51,6 +50,8 @@ nmap -sP 192.168.0.0/24                           # for specific  subnets
 nmap -sP 192.168.1.100-254                        # Ping a range of IP addresses
 
 nmap -T4 -sP 192.168.2.0/24 && egrep "00:00:00:00:00:00" /proc/net/arp    # Find unused IPs on a given subnet
+
+nmap -sP 192.168.1.1/24   # scan network
 ```
 
 ### Scan Network for Rogue APs. host-timeout 20m –max-scan-delay 1000 -oA wapscan 10.0.0.0/8
@@ -79,3 +80,6 @@ sudo nmap -F -O 192.168.0.1-255 | grep "Running: " > /tmp/os; \
 echo "$(cat /tmp/os | grep Linux | wc -l) Linux device(s)"; \
 echo "$(cat /tmp/os | grep Windows | wc -l) Window(s) devices"
 ```
+
+## see also
+- [[ss]]

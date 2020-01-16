@@ -2,11 +2,14 @@
 tags: [linux, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2019-11-15T06:54:44.391Z'
+modified: '2020-01-16T07:57:07.597Z'
 ---
 
 # ss
 > display `socket statistics`
+
+## install
+`yum install iproute`, `apt install iproute`
 
 ## usage
 ```sh
@@ -19,11 +22,8 @@ ss -o   # Show timer information
 ss -n   # Do not resolve addresses
 
 ss -p   # Show process using the socke
-```
 
-## tuna,please! 
-
-```sh
+# tuna, please! 
 ss -tunapls
   # -n - dont try to resolve ip addresses
   # -p show PIDs using the sockat
@@ -35,5 +35,4 @@ ss -tunapls
 ```
 
 ## see also
-- [[list open ports]] 
 - [[netstat]]

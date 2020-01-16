@@ -2,7 +2,7 @@
 tags: [linux]
 title: stat
 created: '2019-07-30T06:19:49.247Z'
-modified: '2019-10-23T14:44:50.692Z'
+modified: '2020-01-14T06:52:43.641Z'
 ---
 
 # stat
@@ -30,3 +30,4 @@ stat -f "%k, %z, %b" foo.dat
 
 ## see also
 - [[ls]]
+- [[readlink]]

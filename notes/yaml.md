@@ -1,42 +1,41 @@
 ---
 tags: [yml]
-title: yml
+title: yaml
 created: '2019-07-30T06:19:49.267Z'
-modified: '2020-01-02T12:33:04.856Z'
+modified: '2020-01-11T19:22:38.362Z'
 ---
 
-# yml
+# yaml
 
-`yaml`
+> yaml ain't markup langau - is a human friendly data serialization standard for all programming languages
 
-- `---` are used to signal the start of a document
-- serves to signal the start of a document if no directives are present.
-
-## collection types
+## usage
 ```yml
-# maps / dictionaries
+--- # are used to signal the start of a document; serves to signal the start of a document if no directives are present.
+
+
+# collection types: maps / dictionaries
 val:
   sval: "bar"
   bval: true
   
-# sequence / arrays
+# collection types: sequence / arrays
 val:
 - sval=bar
 - bval=true   # true is not evaluated at first !
-```
-
-## Block Scalars
-
-Block Style Indicator
-- literal: `|`
-- float: `>`
-
-Block Chomping Indicator
-- strip: `-`
-- keep: `+`
 
 
-```sh
+# Block Scalars
+
+# Block Style Indicator
+# - literal: `|`
+# - float: `>`
+
+# Block Chomping Indicator
+# - strip: `-`
+# - keep: `+`
+
+
 example: | \n   # Keep newlines (literal)
   some text.
 

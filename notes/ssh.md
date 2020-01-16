@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2019-12-21T17:03:52.914Z'
+modified: '2020-01-08T09:24:11.217Z'
 ---
 
 # ssh
@@ -30,6 +30,7 @@ ssh -C                          # compress all data stdin, stdout, stderr, x11, 
 -o ServerAliveInterval=60 -o ServerAliveCountMax=120   # 120 x 60
 
 -o StrictHostKeyChecking=no
+-o StrictHostKeyChecking=accept-new
 
 -o LogLevel=ERROR # QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
 
@@ -38,8 +39,6 @@ ssh -C                          # compress all data stdin, stdout, stderr, x11, 
 -o HostKeyAlias=compute.1407099891930101147 
 
 -o IdentitiesOnly=yes 
-
--o StrictHostKeyChecking=no 
 
 -o UserKnownHostsFile=/Users/user/.ssh/google_compute_known_hosts 
 ```

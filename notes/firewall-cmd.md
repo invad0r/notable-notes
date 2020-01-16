@@ -2,7 +2,7 @@
 tags: [linux]
 title: firewall-cmd
 created: '2019-08-23T13:34:33.074Z'
-modified: '2019-10-31T13:19:33.302Z'
+modified: '2020-01-15T10:14:19.153Z'
 ---
 
 # firewall-cmd
@@ -123,3 +123,4 @@ firewall-cmd --direct --get-all-rules
  - [[ip]]
  - [[firewalld]]
  - [[iptables]]
+ - [[netstat]]

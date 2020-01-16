@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash export
 created: '2019-08-02T06:42:37.589Z'
-modified: '2019-08-29T12:20:40.956Z'
+modified: '2020-01-10T10:17:09.353Z'
 ---
 
 # bash export

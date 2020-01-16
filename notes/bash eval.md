@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash eval
 created: '2019-07-30T06:19:49.005Z'
-modified: '2019-08-20T07:21:21.955Z'
+modified: '2020-01-10T10:17:09.296Z'
 ---
 
 # bash eval

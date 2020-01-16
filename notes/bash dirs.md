@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash dirs
 created: '2019-08-02T06:42:37.579Z'
-modified: '2019-11-28T08:11:20.030Z'
+modified: '2020-01-10T10:17:09.210Z'
 ---
 
 # bash dirs

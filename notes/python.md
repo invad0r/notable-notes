@@ -2,7 +2,7 @@
 tags: [python]
 title: python
 created: '2019-07-30T06:19:49.222Z'
-modified: '2020-01-02T13:07:05.129Z'
+modified: '2020-01-11T19:11:21.734Z'
 ---
 
 # python
@@ -10,6 +10,8 @@ modified: '2020-01-02T13:07:05.129Z'
 ## usage
 ```sh
 python                  # start repl
+
+python -q               # start repl without version info
 
 
 python -m MODULE                                           # run library module as a script
@@ -32,4 +34,6 @@ python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, i
 - [[pyenv]]
 - [[virtualenv]]
 - [[ruby]]
+- [[java]]
+- [[php]]
 - [[yaml]]

@@ -2,12 +2,14 @@
 tags: [linux, virtualization]
 title: kickstart
 created: '2019-07-30T06:19:49.148Z'
-modified: '2019-08-29T12:34:48.614Z'
+modified: '2020-01-14T04:53:40.914Z'
 ---
 
 # kickstart
 
+> used primarily by RHEL/centos to automatically perform unattended operating system installation and configuration
 
+## usage
 ```sh
 timeout 1
 noescape 1 
