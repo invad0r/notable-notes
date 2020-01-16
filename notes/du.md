@@ -2,7 +2,7 @@
 tags: [filesystem, linux]
 title: du
 created: '2019-07-30T06:19:49.046Z'
-modified: '2019-11-28T08:21:25.636Z'
+modified: '2020-01-14T04:50:18.745Z'
 ---
 
 # du
@@ -10,7 +10,6 @@ modified: '2019-11-28T08:21:25.636Z'
 > `disk usage` estimates and displays the disk space used by files.
 
 ## usage
-
 ```sh
 du -sk ./* | sort -nr       # total in kb
 # └─┬─┘
@@ -40,4 +39,5 @@ tar cf - /folder-with-big-files -P | pv -s $(du -sb /folder-with-big-files | awk
 ````
 
 ## see also
+- [[df]]
 - [[sort]]

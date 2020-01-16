@@ -1,7 +1,7 @@
 ---
 title: gitlab-rails
 created: '2019-12-30T13:15:51.142Z'
-modified: '2020-01-02T12:34:10.932Z'
+modified: '2020-01-13T09:04:21.794Z'
 ---
 
 # gitlab-rails
@@ -38,6 +38,9 @@ user.save!
 appsettings = ApplicationSetting.find_by(password_authentication_enabled_for_web: false)  # locate application settings
 appsettings.password_authentication_enabled_for_web = true
 appsettings.save!
+
+
+Gitlab::LDAP::Config.providers
 ```
 
 ## see also

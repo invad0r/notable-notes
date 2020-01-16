@@ -1,8 +1,8 @@
 ---
-tags: [python]
+tags: [python/built-in]
 title: python dict
 created: '2020-01-02T13:07:08.843Z'
-modified: '2020-01-02T13:08:44.849Z'
+modified: '2020-01-10T10:18:43.640Z'
 ---
 
 # python dict

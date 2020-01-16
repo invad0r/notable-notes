@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash complete
 created: '2019-07-30T06:19:48.994Z'
-modified: '2019-11-28T08:10:26.497Z'
+modified: '2020-01-10T10:17:09.126Z'
 ---
 
 # bash complete

@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash alias
 created: '2019-08-02T06:42:37.554Z'
-modified: '2019-11-28T08:08:50.321Z'
+modified: '2020-01-10T10:17:08.948Z'
 ---
 
 # bash alias

@@ -2,7 +2,7 @@
 tags: [linux]
 title: ln
 created: '2019-08-28T09:33:38.811Z'
-modified: '2019-12-26T14:23:10.579Z'
+modified: '2020-01-14T08:45:27.445Z'
 ---
 
 # ln
@@ -17,4 +17,5 @@ ls -l FSOURCE_FILENAME SYMBOLIC_FILENAME   # verify new soft link
 ```
 
 ## see also
+- [[readlink]]
 - [[brew]]

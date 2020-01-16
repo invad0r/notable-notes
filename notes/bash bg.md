@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash bg
 created: '2019-08-02T06:42:37.556Z'
-modified: '2019-11-28T08:09:16.642Z'
+modified: '2020-01-15T07:21:13.225Z'
 ---
 
 # bash bg
@@ -18,3 +18,4 @@ fg <job>                 # brings job to the foreground
 - [[bash jobs]]
 - [[bash fg]]
 - [[bash process-handling]]
+- [[bash waits]]

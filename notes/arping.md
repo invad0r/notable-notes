@@ -2,10 +2,14 @@
 tags: [linux]
 title: arping
 created: '2019-12-26T19:30:34.765Z'
-modified: '2019-12-30T07:34:27.794Z'
+modified: '2020-01-16T08:02:30.826Z'
 ---
 
 # arping
+> send ARP requests to a neighbour host 
+
+## install
+`apt install arping`, `yum install arping`
 
 ## usage
 ```sh

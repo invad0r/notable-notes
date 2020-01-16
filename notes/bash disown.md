@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash disown
 created: '2019-08-02T06:42:37.580Z'
-modified: '2019-08-29T12:19:23.440Z'
+modified: '2020-01-10T10:17:09.225Z'
 ---
 
 # bash disown

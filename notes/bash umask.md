@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin, linux]
+tags: [bash/built-in, linux]
 title: bash umask
 created: '2019-07-30T06:19:49.162Z'
-modified: '2019-08-19T14:07:02.987Z'
+modified: '2020-01-10T10:17:09.968Z'
 ---
 
 # bash umask

@@ -1,8 +1,8 @@
 ---
-tags: [bash/builtin]
+tags: [bash/built-in]
 title: bash jobs
 created: '2019-08-02T06:42:37.604Z'
-modified: '2019-08-29T12:25:35.215Z'
+modified: '2020-01-15T07:21:04.120Z'
 ---
 
 # bash jobs
@@ -27,3 +27,4 @@ jobs         # lists all jobs (use with -l to see associated PID)
 - [[bash process-handling]]
 - [[bash fg]]
 - [[bash bg]]
+- [[bash waits]]
