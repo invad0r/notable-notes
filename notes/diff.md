@@ -2,13 +2,15 @@
 tags: [linux]
 title: diff
 created: '2019-07-30T06:19:49.036Z'
-modified: '2019-12-26T11:34:16.705Z'
+modified: '2020-01-16T09:05:35.611Z'
 ---
 
 # diff
 
 ## usage
 ```sh
+diff -q file1 file2               # only output if files differ
+
 diff -y file1.json file2.json      # -y, --side-by-side
 
 diff --unified file1.json file2.json

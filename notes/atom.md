@@ -2,7 +2,7 @@
 tags: [editor]
 title: atom
 created: '2019-07-30T06:19:48.989Z'
-modified: '2019-12-26T19:29:14.700Z'
+modified: '2020-01-16T08:05:37.421Z'
 ---
 
 # atom

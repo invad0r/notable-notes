@@ -2,7 +2,7 @@
 tags: [bash/keyword]
 title: bash function
 created: '2019-07-30T06:19:49.008Z'
-modified: '2019-10-07T06:09:00.470Z'
+modified: '2020-01-16T08:12:55.240Z'
 ---
 
 # bash function
@@ -12,33 +12,40 @@ The function refers to passed arguments by position (positional parameters).
 `$*`  expands positional params to one words: `$1c$2c..` `c` is the first character of `IFS`
 `$#` holds the number of positional parameters.
 
+## usage
 ```sh
 function func() {
-  ..
+  # ..
 }
-```
 
-### run function as subshell
-```sh
-func() (
+func() (             # run function as subshell
+  # ..
 )
-```
 
-```sh
+
 unset -f functname  # deletes a function definition
 
 declare -f          # displays all defined functions in your login session
+
+
+# simple bash database - usage: source db.sh
+db_set() { echo "$1,$2" >> database; }        
+db_get() { grep "^$1," database | sed -e "s/^$1,//" | tail -n 1; }
 ```
 
 ## variables
 ```sh
-${FUNCNAME[0]}    # Current function.
-${FUNCNAME[1]}    # Parent function.
-${FUNCNAME[2]}    # So on and so forth.
+${FUNCNAME[0]}    # Current function
 
-${FUNCNAME[@]}    # All functions including parents.
+${FUNCNAME[1]}    # Parent function
+
+${FUNCNAME[2]}    # So on and so forth
+
+${FUNCNAME[@]}    # All functions including parents
 ```
 
 ## see also
 - [[bash]]
+- [[bash parameter expansion]]
 - [arguments - What is $@ in Bash? - Stack Overflow](https://stackoverflow.com/a/3898681/2087704)
+- [Log-structured storage - Julia Evans](https://jvns.ca/blog/2017/06/11/log-structured-storage/)

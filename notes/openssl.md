@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2019-11-13T06:39:40.603Z'
+modified: '2020-01-17T07:46:24.835Z'
 ---
 
 # openssl
@@ -19,23 +19,22 @@ modified: '2019-11-13T06:39:40.603Z'
   - contains at least one `X509` client certificate (which contains a public key) and the corresponding private keys
   - All you don't know is whether those certificate & private key are `RSA` or `DSA`. You can check by extracting the certificate(s) and then examine them
 
+
+## usage
 ```sh
 openssl pkcs12 -in CERT.p12 -clcerts -nokeys -out CERT.crt
 
 openssl x509   -in CERT.crt -text
 
 openssl crl2pkcs7 -nocrl -certfile CHAIN.pem | openssl pkcs7 -print_certs -text -noout
-```
-
-### verify certificate against CAfile
-```sh
-openssl verify -CAfile foo.cain.crt foo.crt
-foo.crt: OK
-```
 
 
-### rsa - RSA key management
-```sh
+openssl verify -CAfile foo.cain.crt foo.crt   # verify certificate against CAfile
+#  foo.crt: OK
+
+
+
+# rsa - RSA key management
 openssl rsa -in privateKey.key -check
 
 openssl rsa -in private_key_noenc.pem -out private_key_noenc.pem          # remove passphrase

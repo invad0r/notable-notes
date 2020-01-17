@@ -2,13 +2,16 @@
 tags: [curl, heredoc, linux, network]
 title: curl data
 created: '2019-08-02T11:59:22.744Z'
-modified: '2019-08-20T07:20:01.228Z'
+modified: '2020-01-16T08:16:12.354Z'
 ---
 
 # curl data 
 
-## heredoc
+## usage
 ```sh
+ -d @myfile.json     # data from file
+
+# heredoc
 curl -0 -v -XPOST \
   http://www.example.com/api/users \
   -d @- << EOF
@@ -31,8 +34,6 @@ echo curl -XPOST   \
 EOF
 )
 ```
-## data from file
-```sh
--d @myfile.json
-```
 
+## see also
+- [[curl]]
