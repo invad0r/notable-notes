@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [bash]
 title: bash database
 created: '2019-07-30T06:19:48.995Z'
-modified: '2019-08-29T12:17:20.976Z'
+modified: '2020-01-16T08:09:55.667Z'
 ---
 
 # bash database

@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2019-09-24T09:24:42.082Z'
+modified: '2020-01-17T07:48:43.934Z'
 ---
 
 # bash
@@ -16,6 +16,8 @@ bash -c "echo 1"   # -c read command-string
 bash -i            # shell is interactive.
 
 bash -l            # act as if it had been invoked as a login shell
+
+bash -x            # dump what bash runs on startup http://superuser.com/a/144777
 ```
 
 ## variables
@@ -30,6 +32,7 @@ ${FUNCNAME[@]}          # All functions including parents.
 ```
 
 ## see also
+- [[env]]
 - [[bash debugging.md]]
 - [[bash parameter expansion]]
 - [[bash source vs execute]]

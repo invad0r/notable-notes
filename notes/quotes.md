@@ -1,11 +1,11 @@
 ---
 tags: [Notebooks]
-title: quote phrases
+title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2019-12-29T20:09:38.334Z'
+modified: '2020-01-16T14:48:56.934Z'
 ---
 
-# quote phrases
+# quotes
 
 `Lingua Franka`          fränkische sprache / pidgin language
 `Jevons Paradox/Effect`  increase usage when cheaper         
@@ -19,19 +19,12 @@ Philip eventually decided to bypass Sparta as it was a poor region and not worth
 `“With it or on it”`
 Most people are more familiar with the longer `“Come back with this shield or on it,”`, but in everyday use, it was shortened to just five words as a woman handed his shield to a departing soldier.
 
-[Some of the Best Catchphrases Of The Ancient Spartans](https://www.warhistoryonline.com/instant-articles/best-spartan-laconic-phrases-boldest-wittiest-lines-ever-recorded.html)
-
-## quotes
 ```
-"Not only is the Universe stranger than we think, it is stranger than we can think."
-    ― Werner Heisenberg, Across the Frontiers 
+Not only is the Universe stranger than we think, it is stranger than we can think. ~ Werner Heisenberg, Across the Frontiers 
 ```
-
 ```
-"Courage is not the absence of fear, but rather the judgement that something is more important than fear."
-    — The Princess Diaries
+Courage is not the absence of fear, but rather the judgement that something is more important than fear. ~ The Princess Diaries
 ```
-
 ```
 "The vast accumulations of knowledge—or at least of information—deposited by the nineteenth century 
 have been responsible for an equally vast ignorance. When there is so much to be known,
@@ -40,7 +33,7 @@ when every one knows a little about a great many things,
 it becomes increasingly difficult for anyone to know whether he knows what he is talking about or not. 
 And when we do not know, or when we do not know enough, we tend always to substitute emotions for thoughts."
 
-— T.S. Eliot, The Sacred Wood
+~ T.S. Eliot, The Sacred Wood
 ```
 
 ```
@@ -55,100 +48,62 @@ and the judgment about appearances of the present unsure and immature"
 Freedom is doing what you love to do, if you love to do what you ought to do.
 We won’t discover lasting liberty by indulging in whatever we want, 
 but by letting God transform our desires.
-
-— desiringgod.org
+~ desiringgod.org
 ```
-
 ```
-What Is Important Is Seldom Urgent and What Is Urgent Is Seldom Important
-    — Dwight D. Eisenhower
+What Is Important Is Seldom Urgent and What Is Urgent Is Seldom Important ~ Dwight D. Eisenhower
 ```
-
 ```
-Simplicity recognizes the imports thing while ignoring the trivial things
-    — amazon review, on the one thing
+Simplicity recognizes the imports thing while ignoring the trivial things ~ amazon review, on the one thing
 ```
-
 ```
-exhort one another every day
-    — HEB 3:13
+exhort one another every day ~ HEB 3:13
 ```
-
 ```
-Seek God with all your heart; Prayer and fasting; Reading and meditating; 
-  ~ Philip
+Seek God with all your heart; Prayer and fasting; Reading and meditating; ~ Philip
 ```
-
 ```
-The mass of men lead lives of quiet desperation. What is called Resignation is confirmed desperation. 
-  ~ Henry David Therau
+The mass of men lead lives of quiet desperation. What is called Resignation is confirmed desperation. ~ Henry David Therau
 ```
-
 ```
-Very often what God first helps us towards is not the virtue itself but just this power of always trying again.
-~ CS Lewis
+Very often what God first helps us towards is not the virtue itself but just this power of always trying again. ~ CS Lewis
 ```
-
 ```
-“The more we let God take us over, the more truly ourselves we become - because He made us. He invented us." 
-
-~ CS Lewis
+“The more we let God take us over, the more truly ourselves we become - because He made us. He invented us." ~ CS Lewis
 ```
-
 ```
-"Living by faith includes the call to something greater than cowardly self-preservation." 
-
-~ Tolkien
+"Living by faith includes the call to something greater than cowardly self-preservation." ~ Tolkien
 ```
-
 ```
 Every moment…is always Present for Him. If you like to put it this way, 
 He has all eternity in which to listen to a split second of prayer…
 ```
-
 ```
-Hör auf Angst zu haben und kümmere dich nicht darum, das ist meine Aufgabe. Du bist so defensiv wenn du Angst hast. 
-~ Tim Juretzek
+Hör auf Angst zu haben und kümmere dich nicht darum, das ist meine Aufgabe. Du bist so defensiv wenn du Angst hast. ~ Tim Juretzek
 ```
-
 ```
 "A strong man acts within that which constrains him."
 ```
-
 ```
-Beweisen und stetig und beharrlich dran bleiben - 
-Jesus hat sich zuerst als Schreiner bewiesen - 
-Gott erfüllte Handwerker mit Weisheit 
-~ Michael
+Beweisen und stetig und beharrlich dran bleiben. Jesus hat sich zuerst als Schreiner bewiesen. Gott erfüllte Handwerker mit Weisheit. ~ Michael
 ```
 
 ```
-"feeding the flesh- which is never satisfied"
+"feeding the flesh- which is never satisfied" ~ Jack
 
-"Payed from the neck down" meticulous, crafty"
+"Payed from the neck down" meticulous, crafty" ~ Jack
 
-~Jack
-
-A worse (woman) would've a done me rightly (=Alot less would've been good for me) 
-~ Grandad/Jack
+A worse (woman) would've a done me rightly (=Alot less would've been good for me) ~ Grandad/Jack
 ```
 
 ```
-Prepare yourself for the Future that's coming, Not the Future you Wish were coming 
-~ Daniel miessler 
+Prepare yourself for the Future that's coming, Not the Future you Wish were coming ~ Daniel miessler 
 ```
-
 ```
-You cannot keep birds from flying over your head,
-but you can keep them from building a nest in your Hair 
-~ Martin Luther
+You cannot keep birds from flying over your head, but you can keep them from building a nest in your Hair. ~ Martin Luther
 ```
-
 ```
-Whoever conceals his transgressions will not prosper,
-but he who confesses and forsakes them will obtain mercy.
-
-- proverbs 28,13
+Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy. ~ proverbs 28,13
 ```
 
 ```
@@ -207,9 +162,8 @@ Between stimulus and response, there is a space.
 In that space is our power to choose our response,
 and in our response lies our growth and our freedom.
 
-victor fankl
+~ victor fankl
 ```
-
 ```
 I, even I, am the LORD, And besides Me there is no savior. 
 
@@ -219,3 +173,9 @@ Therefore you are My witnesses,” Says the LORD, “that I am God.
 
 - Isaiah 43:11-12
 ```
+```
+"What good is the warmth of summer, without the cold of winter to give it sweetness." ~ John Steinbeck
+```
+
+## see also
+- [Some of the Best Catchphrases Of The Ancient Spartans](https://www.warhistoryonline.com/instant-articles/best-spartan-laconic-phrases-boldest-wittiest-lines-ever-recorded.html)

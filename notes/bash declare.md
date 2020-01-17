@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2019-11-28T08:11:06.624Z'
+modified: '2020-01-17T07:41:03.084Z'
 ---
 
 # bash declare
@@ -74,5 +74,6 @@ Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
 ```
 
 ## see also
+- [[bash export]]
 - [[bash typeset]]
 - [declareref - tldp.org](http://tldp.org/LDP/abs/html/declareref.html)

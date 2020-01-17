@@ -2,13 +2,13 @@
 tags: [linux]
 title: watch
 created: '2019-07-30T06:19:49.265Z'
-modified: '2019-09-23T06:36:18.166Z'
+modified: '2020-01-16T20:27:46.908Z'
 ---
 
 # watch
-
 > execute a program periodically, showing output fullscreen
 
+## usage
 ```sh
 watch -d "ps -ef | awk -F' ' '{print \$2}'"   # use double quotes and escape $
   # -n .5  --interval
@@ -18,7 +18,7 @@ watch -d 'docker service ps --filter desired-state=running --format "{{.Node}} {
 watch 'for pid in `jps` ; do echo -n "$pid " && ps huH p $pid | wc -l ; done'     # poor man java monitoring
 ```
 
-### watch-alternative using while
+## watch alternative
 ```sh
 while sleep 5; do   # every 5 seconds
   printf "\033c";   # clear screen

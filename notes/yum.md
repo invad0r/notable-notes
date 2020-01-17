@@ -2,7 +2,7 @@
 tags: [linux, packagemanager]
 title: yum
 created: '2019-07-30T20:38:53.233Z'
-modified: '2019-09-17T12:00:00.902Z'
+modified: '2020-01-16T08:06:26.867Z'
 ---
 
 # yum
@@ -14,17 +14,14 @@ modified: '2019-09-17T12:00:00.902Z'
 yum install -y package
 
 yum install -q package
-```
 
-## find out package
-```sh
-yum provides $(which ip)
 
-yum whatprovides */mkpasswd
-```
+yum provides $(which ip)        # find out package
 
-## repository
-```sh
+yum whatprovides */mkpasswd     # find out package
+
+
+# repository
 yum makecache fast  # Download yum repository data to cache
 ```
 

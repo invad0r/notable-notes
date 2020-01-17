@@ -2,7 +2,7 @@
 tags: [initsystem, linux]
 title: systemd
 created: '2019-08-20T14:38:14.235Z'
-modified: '2019-10-23T06:04:58.010Z'
+modified: '2020-01-17T08:03:48.435Z'
 ---
 
 # systemd
@@ -16,15 +16,14 @@ modified: '2019-10-23T06:04:58.010Z'
 - Implements an elaborate transactional dependency-based service control logic
 - systemd manages `units`, which are representations of system resources and services `systemd unit`
 
-## systemd commands
-
+## usage
 ```sh
 systemd-analyze         # get the boot process duration with the following
+
 systemd-analyze time
 
 systemd-analyze blame   # list of all running units, ordered by the time taken to initialize
 ```
-
 
 ## see also
 - [[systemctl]]

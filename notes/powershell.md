@@ -2,11 +2,12 @@
 tags: [vmware]
 title: powershell
 created: '2019-07-30T06:19:49.207Z'
-modified: '2019-08-28T08:14:31.653Z'
+modified: '2020-01-17T07:46:36.724Z'
 ---
 
 # powershell
 
+## usage
 ```sh
 $myString = @"
 	This is the first line
