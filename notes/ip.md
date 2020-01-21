@@ -2,7 +2,7 @@
 tags: [network]
 title: ip
 created: '2019-09-03T11:51:54.855Z'
-modified: '2020-01-16T07:40:12.594Z'
+modified: '2020-01-21T23:09:23.256Z'
 ---
 
 # ip
@@ -32,6 +32,8 @@ addr                            # display IP Addresses and property information 
 ip addr                         # Show information for all addresses
 ip addr show en0                # show info to interface en0
 ip addr show dev em1            # display information only for device em1
+ip -brief -color address show
+ip -br -c a s
 
 link                            # Manage and display the state of all network interfaces
 ip link                         # Show information for all interfaces
