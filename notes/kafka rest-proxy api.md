@@ -1,10 +1,10 @@
 ---
-title: kafka rest-proxy
+title: kafka rest-proxy api
 created: '2019-10-02T08:00:18.210Z'
-modified: '2019-11-29T10:44:27.352Z'
+modified: '2020-01-20T18:27:42.654Z'
 ---
 
-# kafka rest-proxy
+# kafka rest-proxy api
 
 ## usage
 ```sh
@@ -23,4 +23,4 @@ curl -s -XGET http://HOST:8082/topics/testTopic/partitions |jq
 
 ## see also
 - [[kafka]]
-- [[kafka schema-registry]]
+- [[kafka schema-registry api]]

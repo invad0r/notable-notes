@@ -1,7 +1,7 @@
 ---
 title: capabilities
 created: '2020-01-17T07:20:37.598Z'
-modified: '2020-01-17T07:38:35.959Z'
+modified: '2020-01-20T12:40:13.407Z'
 ---
 
 # capabilities
@@ -21,6 +21,11 @@ modified: '2020-01-17T07:38:35.959Z'
 Privileged processes bypass all kernel permission checks
 unprivileged processes are subject to full permission checking based on the process's credentials (usually: effective UID, effective GID, and supplementary group list)
 
+## usage
+```sh
+man 7 capabilities
+```
+
 ## capabilities list
 ```sh
 CAP_IPC_LOCK  # lock memory
@@ -28,3 +33,4 @@ CAP_IPC_LOCK  # lock memory
 ## see also
 - [[capsh]]
 - [[getcap]]
+- [[docker-compose]]

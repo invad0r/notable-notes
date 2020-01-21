@@ -2,7 +2,7 @@
 tags: [buildtool, java]
 title: ant
 created: '2019-08-20T07:46:08.815Z'
-modified: '2019-11-28T11:54:16.798Z'
+modified: '2020-01-18T06:55:26.902Z'
 ---
 
 # ant
@@ -32,4 +32,3 @@ ant hello      # run target: hello
 
 ## see also
 - [[mvn]]
-- [[aant]]
