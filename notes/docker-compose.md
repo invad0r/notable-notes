@@ -1,9 +1,9 @@
 ---
-attachments: [docker-compose.go-build.yml]
+pinned: true
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2019-11-15T06:58:18.753Z'
+modified: '2020-01-20T12:41:41.067Z'
 ---
 
 # docker-compose
@@ -19,7 +19,27 @@ docker-compose ps
 docker-compose up -d service_name
 ```
 
+## compose file version 3 reference
+```yml
+cap_add:
+  - ALL
+
+cap_drop:
+  - NET_ADMIN
+  - SYS_ADMIN
+```
+
+## compose file version 3 reference
+```yml
+cap_add:
+  - ALL
+cap_drop:
+  - NET_ADMIN
+  - SYS_ADMIN
+```
+
 ## see also
 - [docker-compose.terraform-run.yml](@attachment/docker-compose.terraform-run.yml)
 - [docker-compose.go-build.yml](@attachment/docker-compose.go-build.yml)
+- [[capabilities]]
 - [[yml]]

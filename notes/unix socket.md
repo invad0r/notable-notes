@@ -2,7 +2,7 @@
 tags: [container/docker, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2019-10-23T14:55:57.984Z'
+modified: '2020-01-21T07:27:58.415Z'
 ---
 
 # unix socket
@@ -17,7 +17,6 @@ modified: '2019-10-23T14:55:57.984Z'
   - This happens because the commands like read () and write () works with the same way they do with the files and pipes.
 
 
-
 ### socket
 - combination of IP-Address and Port-Number
 - 2 types:
@@ -28,3 +27,4 @@ modified: '2019-10-23T14:55:57.984Z'
 - [[docker engine api]]
 - [what-socket - linux.com](https://www.linux.com/news/what-socket)
 - [[socat]]
+- [[ss]]

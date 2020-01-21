@@ -1,10 +1,10 @@
 ---
-title: kafka schema-registry
+title: kafka schema-registry api
 created: '2019-10-02T08:00:24.539Z'
-modified: '2019-11-29T10:44:56.373Z'
+modified: '2020-01-20T18:27:48.861Z'
 ---
 
-# kafka schema-registry
+# kafka schema-registry api
 
 ## usage
 ```sh
@@ -24,4 +24,4 @@ curl -s -X GET \
 
 ## see also
 - [[kafka]]
-- [[kafka rest-proxy]]
+- [[kafka rest-proxy api]]

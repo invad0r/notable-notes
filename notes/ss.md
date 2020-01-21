@@ -2,14 +2,14 @@
 tags: [linux, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2020-01-16T07:57:07.597Z'
+modified: '2020-01-20T08:12:03.767Z'
 ---
 
 # ss
 > display `socket statistics`
 
 ## install
-`yum install iproute`, `apt install iproute`
+`yum install iproute`, `apt install iproute`, `bew install ss`
 
 ## usage
 ```sh
@@ -36,3 +36,4 @@ ss -tunapls
 
 ## see also
 - [[netstat]]
+- [[socat]]

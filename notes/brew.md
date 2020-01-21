@@ -2,12 +2,15 @@
 tags: [brew, osx, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2020-01-03T07:32:25.968Z'
+modified: '2020-01-20T08:14:36.987Z'
 ---
 
 # brew
 
 > package manager for macOS
+
+## install
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 ## usage
 ```sh
@@ -37,13 +40,10 @@ brew man              # generate brew man-pages
 
 brew install grep --with-default-names     # used with-default-names to avoid prefixing with "g"
 
-brew install 
+brew install
   inetutils
   gnu-getopt
-  socat
   findutils
-  netcat
-  ss
   pstree
   rmtrash
   mkcert
