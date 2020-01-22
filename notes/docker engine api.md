@@ -2,38 +2,30 @@
 tags: [container/docker, curl]
 title: docker engine api
 created: '2019-08-20T09:42:39.909Z'
-modified: '2019-11-04T12:34:35.935Z'
+modified: '2020-01-21T10:10:48.927Z'
 ---
 
 # docker engine api
 
+## usage
 ```sh
 -H unix:///var/run/docker.sock    # docker-daemon listen unix socket
-```
-
-## docker start container
-```sh
-curl --unix-socket /var/run/docker.sock http:/containers/json
 
 
-curl \
-  -XPOST \
-  --unix-socket /var/run/docker.sock \
+curl --unix-socket /var/run/docker.sock http:/containers/json   # docker start container
+
+
+curl -XPOST --unix-socket /var/run/docker.sock \
   -d '{"Image":"nginx"}' \
   -H 'Content-Type: application/json' \
   http://localhost/containers/create
+#  { "Id": "fcb65c6147efcb6...7d65", "Warnings":null }
 
-{ "Id": "fcb65c6147efcb6...7d65", "Warnings":null }
-
-curl \
-  -XPOST \
-  --unix-socket /var/run/docker.sock \
+curl -XPOST --unix-socket /var/run/docker.sock \
   http://localhost/containers/fcb6...7d65/start
-```
 
 
-### events
-```sh
+# events
 docker run \                                      # run container 
   -ti \                                           # in interactive-mode
   -v /var/run/docker.sock:/var/run/docker.sock \  # bind mounts the docker.sock
@@ -41,15 +33,10 @@ docker run \                                      # run container
 
 # inside container
 curl --unix-socket /var/run/docker.sock http://localhost/events
-```
 
 
-### plugins
-`github.com/docker/go-plugins-helpers/`
-```sh
-curl \
-  -XGET \
-  --unix-socket /run/docker/plugins/nfs.sock/Plugin.Activate \
+# plugins
+curl -XGET --unix-socket /run/docker/plugins/nfs.sock/Plugin.Activate \
   http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate
 
 
@@ -60,37 +47,25 @@ Post http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate
 
 %2F => /
 
-curl \
-  -XGET \
-  --unix-socket /run/docker/plugins/nfs.sock \
+curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
   http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate  # /VolumeDriver.List
+#  {"Implements": ["VolumeDriver"]}
 
-{"Implements": ["VolumeDriver"]}
-
-curl \
-  -XGET \
-  --unix-socket /run/docker/plugins/nfs.sock \
+curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
   http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.List
+#  {"Volumes":[]}
 
-{"Volumes":[]}
-
-curl \
-  -XGET \
-  --unix-socket /run/docker/plugins/nfs.sock \
+curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
   http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Path
 
 EOF
 
-curl \
-  -XGET \
-  --unix-socket /run/docker/plugins/nfs.sock \
+curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
   http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Capabilities
 
 {"Capabilities":{"Scope":"local"}}
 
-curl \
-  -XGET \
-  --unix-socket /run/docker/plugins/nfs.sock \
+curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
   http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Get
 
 EOF
@@ -103,3 +78,4 @@ EOF
 - [[curl]]
 - [[unix socket]]
 - [docker engine api](https://docs.docker.com/engine/api/v1.24/)
+- https://github.com/docker/go-plugins-helpers/

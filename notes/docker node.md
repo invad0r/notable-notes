@@ -1,15 +1,17 @@
 ---
+deleted: true
 tags: [container/docker]
 title: docker node
 created: '2019-09-03T12:52:54.863Z'
-modified: '2019-09-03T12:53:21.044Z'
+modified: '2020-01-21T10:11:16.470Z'
 ---
 
 # docker node
 
-## get node ip
+#
 ```sh
-docker node inspect $(docker node ls --format '{{.Hostname}}')| jq -r '.[].ManagerStatus.Addr'
+
+
 ```
 
 

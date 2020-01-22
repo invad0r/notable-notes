@@ -2,10 +2,12 @@
 tags: [container, container/docker]
 title: docker-machine
 created: '2019-07-30T06:19:49.044Z'
-modified: '2019-11-15T06:43:09.924Z'
+modified: '2020-01-21T10:12:52.083Z'
 ---
 
 # docker-machine
+
+>  tool that lets you install Docker Engine on virtual hosts, and manage the hosts
 
 ## usage
 ```sh
@@ -21,4 +23,4 @@ docker-machine create \
 ```
 
 ## see also
-- 
+- [[docker]]

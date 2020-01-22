@@ -1,17 +1,16 @@
 ---
 title: dockerd
 created: '2020-01-03T13:18:17.258Z'
-modified: '2020-01-03T13:19:02.552Z'
+modified: '2020-01-21T10:13:00.986Z'
 ---
 
 # dockerd
 
 > docker daemon
 
-## usgae
+## usage
 ```sh
 systemctl stop docker
-
 
 vim /etc/default/docker
 

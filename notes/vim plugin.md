@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [vim]
 title: vim plugin
 created: '2019-08-26T06:54:17.714Z'
-modified: '2019-08-26T06:56:09.872Z'
+modified: '2020-01-22T09:11:20.924Z'
 ---
 
 # vim plugin

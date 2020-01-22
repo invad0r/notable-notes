@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [container, container/docker]
 title: docker snipptes
 created: '2019-07-30T06:19:49.041Z'
-modified: '2019-09-03T12:57:14.234Z'
+modified: '2020-01-21T10:03:56.842Z'
 ---
 
 # docker snipptes
