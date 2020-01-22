@@ -1,16 +1,16 @@
 ---
 tags: [vim]
-title: vim command
+title: vim command mode
 created: '2019-09-05T11:15:25.126Z'
-modified: '2019-09-06T13:16:10.900Z'
+modified: '2020-01-22T09:25:14.693Z'
 ---
 
-# vim command
+# vim command mode
 
-## help
+## usage
 
 ```vim
-:h
+:h                  ;get help
 :help
 		vim-modes
 ```
@@ -75,5 +75,16 @@ modified: '2019-09-06T13:16:10.900Z'
 :bw         # buffer wipe / delete all buffers
 ```
 
+
+```vi
+:10,100s/^/#/      ; substitute (that reads, from line 10 to 100 substitute line start (^) with a # sign.)
+
+:1, 21 j           ; join line 1 to 21
+
+:%s/\n/ /g         ; subst line break with space
+```
+
 ## see also
 - [[vim set]]
+- [[vim]]
+- [[vim visual mode]]

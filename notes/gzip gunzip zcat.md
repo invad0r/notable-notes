@@ -1,18 +1,23 @@
 ---
 tags: [linux, osx]
-title: zcat
+title: gzip gunzip zcat
 created: '2019-10-08T06:01:59.458Z'
-modified: '2019-10-08T06:29:02.332Z'
+modified: '2020-01-22T13:56:28.300Z'
 ---
 
-# zcat
+# gzip gunzip zcat
+
+> used gzcat on osx !
 
 ## usage
-```
-used gzcat on osx !
+```sh
+gzip -d     # decompress
+gunzip
+zcat
 ```
 
 ## see also
 - [[tar]]
-- [[zip]]
+- [[zip unzip]]
+- [[pigz unpigz]]
 - [zcat-gzcat-works-in-linux-not-on-osx - serverfault.com](https://serverfault.com/a/570026/200496)

@@ -1,7 +1,7 @@
 ---
 title: pkill
 created: '2020-01-02T14:25:22.992Z'
-modified: '2020-01-03T13:12:31.271Z'
+modified: '2020-01-21T09:43:31.240Z'
 ---
 
 # pkill
@@ -16,6 +16,7 @@ pkill -HUP sshd
 ```
 
 ## see also
+- [[kill]]
 - [[ps]]
 - [[pgrep]]
 

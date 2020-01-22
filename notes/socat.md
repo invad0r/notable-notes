@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: socat
 created: '2019-07-30T06:19:49.239Z'
-modified: '2020-01-21T07:27:30.449Z'
+modified: '2020-01-21T07:33:32.445Z'
 ---
 
 # socat
@@ -24,15 +24,24 @@ socat STDIO FILE:/home/user/test,create                       # read from stdin 
 socat FILE:/tmp/test1 FILE:/tmp/test:append
 
 
-socat - TCP:poftut.com:www,crnl                               # surf web over stdin
+socat - TCP:host.com:www,crnl                               # surf web over stdin
 
 
 socat UDP-LISTEN:8888 -               # listen and print to stdout
 socat UDP:localhost:8888 -
 
-socat tcp­-listen:9999,reuseaddr -    # allow other sockets to bind to address even if parts of it are in use
-socat ­-x tcp:localhost:9999 -        #  write transferred also to stderr in hexadecimal format
+socat TCP-LISTEN:9999,reuseaddr -    # allow other sockets to bind to address even if parts of it are in use
+socat ­-x TCP:localhost:9999 -        #  write transferred also to stderr in hexadecimal format
 
+
+socat - TCP4:localhost:80 OR socat STDIN TCP4:localhost:80      # same as `nc localhost 80`
+socat TCP4-LISTEN:700 STDOUT                                    # same as `nc -lp localhost 700`
+socat TCP4-LISTEN:700 EXEC:/bin/bash                            # same as `nc -lp localhost 700 -e /bin/bash`
+
+
+socat OPENSSL-LISTEN:443,cert=/cert.pem -               # ssl server
+socat - OPENSSL:localhost:443                           # connect via ssl
+socat TCP4-LISTEN:5000,fork OPENSSL:localhost:443       # listen and handle multiple clients with fork
 
 socat TCP4-LISTEN:1234,reuseaddr,fork gopen:/home/user/capture,seek-end=,append
 
@@ -50,3 +59,4 @@ socat -d -d -lmlocal2 \
 - [[unix socket]]
 - [[nmap]]
 - [[ncat]]
+- [[nc]]

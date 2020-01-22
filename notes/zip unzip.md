@@ -1,11 +1,11 @@
 ---
 tags: [linux, osx]
-title: zip
+title: zip unzip
 created: '2019-09-26T06:55:59.693Z'
-modified: '2019-12-30T07:34:45.462Z'
+modified: '2020-01-22T13:54:46.706Z'
 ---
 
-# zip
+# zip unzip
 
 > package and compress (archive) files
 
@@ -17,4 +17,4 @@ unzip 4d-app-zip
 ```
 ## see also
 - [[tar]]
-- [[zcat]]
+- [[gzip gunzip zcat]]

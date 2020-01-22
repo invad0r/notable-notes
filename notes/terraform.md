@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2020-01-20T09:27:57.104Z'
+modified: '2020-01-21T09:31:59.485Z'
 ---
 
 # terraform
@@ -34,3 +34,4 @@ terraform graph -draw-cycles -type=plan-destroy -module-depth=2 \
 ## see also
 - [Configuring Resources - Terraform by HashiCorp](https://www.terraform.io/docs/configuration/resources.html#syntax)
 - [[dot]]
+- [[consul]]

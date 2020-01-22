@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2020-01-17T07:41:03.084Z'
+modified: '2020-01-22T09:42:37.109Z'
 ---
 
 # bash declare
@@ -17,7 +17,7 @@ declare -i                # integer
   
 declare -a                # array
 
-  declare -a arr=('aa' 'bb' 'cc' 'dd' 'ee')
+declare -a arr=('aa' 'bb' 'cc' 'dd' 'ee')
   
 declare -A                # associative array !
   

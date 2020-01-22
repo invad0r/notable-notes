@@ -2,7 +2,7 @@
 tags: [iac]
 title: consul
 created: '2019-08-28T09:45:08.570Z'
-modified: '2019-11-12T07:49:37.385Z'
+modified: '2020-01-21T10:03:05.181Z'
 ---
 
 # consul
@@ -21,20 +21,17 @@ consul watch -type=service -service=
 consul watch -type=service -service=service
 
 
-consul operator raft list-peers
-```
 
-## members
-```sh
+consul operator raft list-peers
+
+
 consul members -http-addr=HOST
 
 consul force-leave -http-addr=HOST MEMBER         # remove member
 
 consul members -status=left -http-addr=HOST       # get left members
-```
 
-## kv store
-```sh
+
 consul kv get -keys
 
 consul kv get -http-addr=consul.foo.bar -recurse openstorage

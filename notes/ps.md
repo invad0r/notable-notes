@@ -2,7 +2,7 @@
 tags: [linux]
 title: ps
 created: '2019-07-30T06:19:49.218Z'
-modified: '2020-01-02T14:32:02.999Z'
+modified: '2020-01-22T12:50:03.292Z'
 ---
 
 # ps
@@ -60,3 +60,4 @@ ps aux | grep "[f]nord"                                 # don't show grep in res
 - [[pkill]]
 - [[sort]]
 - [[awk]]
+- [[grep]]
