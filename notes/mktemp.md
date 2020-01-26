@@ -2,7 +2,7 @@
 tags: [linux]
 title: mktemp
 created: '2019-11-26T08:13:04.385Z'
-modified: '2019-12-30T07:33:45.655Z'
+modified: '2020-01-23T08:24:56.081Z'
 ---
 
 # mktemp
@@ -22,3 +22,4 @@ WORKSPACE="$(mktemp --directory)"
 
 ## see also
 - [[bash trap]]
+- [[bash pushd popd]]

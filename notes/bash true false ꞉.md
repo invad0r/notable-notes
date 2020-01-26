@@ -1,15 +1,16 @@
 ---
 tags: [bash/built-in]
-title: bash true
+title: 'bash true false :'
 created: '2019-08-02T06:42:37.640Z'
-modified: '2020-01-10T10:17:09.903Z'
+modified: '2020-01-26T17:29:38.653Z'
 ---
 
-# bash true
+# bash true false :
 
 > Return a successful result.
 
-[[bash false]]
+## see also
+- [[bash false]]
 
  Exit Status:
     Always succeeds.

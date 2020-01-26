@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2020-01-17T07:48:43.934Z'
+modified: '2020-01-23T09:23:23.162Z'
 ---
 
 # bash
@@ -18,10 +18,11 @@ bash -i            # shell is interactive.
 bash -l            # act as if it had been invoked as a login shell
 
 bash -x            # dump what bash runs on startup http://superuser.com/a/144777
-```
 
-## variables
-```sh
+
+# variables
+$0                      # current shell ?
+
 $BASH
 
 $BASH_VERSION           # As a string.
@@ -35,6 +36,6 @@ ${FUNCNAME[@]}          # All functions including parents.
 - [[env]]
 - [[bash debugging.md]]
 - [[bash parameter expansion]]
-- [[bash source vs execute]]
+- [[bash built-in vs keyword]]
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html?#What-is-a-shell_003f)
 - [pure-bash-bible - github.com](https://github.com/dylanaraps/pure-bash-bible)

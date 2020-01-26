@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2019-09-21T19:09:30.925Z'
+modified: '2020-01-26T17:06:12.637Z'
 ---
 
 # bash redirects
@@ -17,17 +17,22 @@ n>|file    # forces output to file from file descriptor n even if noclobber is s
 <> file    # uses file as both standard input and standard output
 n<>file    # uses file as both input and output for file descriptor n
 
-<<label       # here-document
-<<< string    # here-string
-<()
+
+[n]<<[-]word          # here-document
+  here-document
+delimiter
+
+[n]<<< word           # here-string
+
+<()       #  process substitution
 
 
 n>file     # directs file descriptor n to file
 n<file     # takes file descriptor n from file
 n>>file    # directs file description n to file; append to file if it already exists
-```
 
-```sh
+
+
 n>&        # duplicates standard output to file descriptor n
 n<&        # duplicates standard input from file descriptor n
 n>&m       # file descriptor n is made to be a copy of the output file descriptor
@@ -54,4 +59,5 @@ grep Linux file1 | diff file2 -
 ## see also
 - [[tee]]
 - [[tar]]
+- [[bash process substitution]]
 - [special-chars.html - tldp.org](http://tldp.org/LDP/abs/html/special-chars.html#DASHREF2)

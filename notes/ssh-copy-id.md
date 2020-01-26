@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh-copy-id
 created: '2019-07-30T06:19:49.244Z'
-modified: '2020-01-03T13:12:59.467Z'
+modified: '2020-01-24T11:52:52.245Z'
 ---
 
 # ssh-copy-id
@@ -18,4 +18,5 @@ ssh-copy-id -i .ssh/foo@bar.pub user@server
 
 ## see also
 - [[ssh]]
+- [[sshpass]]
 - [[ssh-keygen]]

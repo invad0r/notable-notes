@@ -2,7 +2,7 @@
 tags: [linux]
 title: crontab
 created: '2019-07-30T06:19:49.031Z'
-modified: '2020-01-03T07:39:50.638Z'
+modified: '2020-01-24T09:21:39.031Z'
 ---
 
 # crontab
@@ -11,44 +11,47 @@ modified: '2020-01-03T07:39:50.638Z'
 
 ## usage
 ```sh
-crontab -e    # edit crontab file, or create one if it doesn’t already exist.
+crontab -e              # edit or create crontab file: /var/spool/cron/crontabs/USER
 
+crontab -r              # remove your crontab file.
 
-crontab -l    # crontab list of cronjobs , display crontab file contents.
+crontab -v              # display the last time you edited your crontab file. (This option is only available on a few systems.)
+
+crontab -l              # crontab list of cronjobs , display crontab file contents.
+
+crontab -u $USER -l     # find out which user has a crontab; see also /var/spool/cron/crontabs
 
 crontab -l | tee >(head -n1) | grep "^[^#;]"      # show only active jobs
+```
+### crontab file
+```sh
+#    .--------------------------- minute (0 - 59)
+#    |     .--------------------- hour (0 - 23)
+#    |     |     .--------------- day of month (1 - 31)
+#    |     |     |     .--------- month (1 - 12) OR jan,feb,mar,apr ...
+#    |     |     |     |     .--- day of week (0 - 6) (Sunday=0 or 7)  OR sun,mon,tue,wed,thu,fri,sat
+#    |     |     |     |     |
+#    *     *     *     *     *    USER CMD
 
+     *     *     *     *     *    CMD          # every minute; cron has a 60 sec granularity and can't go lower !
+     */10  *     *     *     *    CMD          # every 10th minute
+     00    *     *     *     *    CMD          # every hour
+     0    22     *     *   1-5    CMD          # at 22:00 on every day-of-week from Monday through Friday
 
-crontab -r    # remove your crontab file.
+     30   18     *     *     *    rm /path/dir/* > /cronlogs/file.log     # cron execution log
 
-crontab -v    # display the last time you edited your crontab file. (This option is only available on a few systems.)
+     0     9     *     *     *    USER [ -x /usr/lib/mailman/cron/disabled ] && /usr/lib/mailman/cron/disabled
+```
 
-
-
-crontab -u $USER -l                               # find out which user has a crontab
-
-cat /var/spool/cron/crontabs/root                 # location of cron files for individual users
-
-
-#    .---------------- minute (0 - 59)
-#    |  .------------- hour (0 - 23)
-#    |  |  .---------- day of month (1 - 31)
-#    |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
-#    |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7)  OR sun,mon,tue,wed,thu,fri,sat
-#    |  |  |  |  |
-#    *  *  *  *  *  USER command to be executed
-#
-
- *     *     *     *     *    CMD          # every minute
-00     *     *     *     *    CMD          # every hour
- */10  *     *     *     *    CMD          # every 10th minute
- 0    22     *     *   1-5    CMD          # at 22:00 on every day-of-week from Monday through Friday
-
-30 18 * * * rm /path/dir/* > /cronlogs/file.log     # cron execution execution log  
-
-0 9 * * * USER [ -x /usr/lib/mailman/cron/disabled ] && /usr/lib/mailman/cron/disabled
+### log files
+```sh
+/var/lib/boot2docker/log/crond.log      # boot2docker
+/var/spool/cron/crontabs/USER           # location of cron files for individual users
 ```
 
 ## see also
+- [[crond]]
+- [[tree]]
+- [[bash process substitution]]
 - [crontab.guru](https://crontab.guru/)
 - [Location of the crontab file](http://unix.stackexchange.com/a/196010)

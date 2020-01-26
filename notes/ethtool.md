@@ -2,11 +2,12 @@
 tags: [linux, network]
 title: ethtool
 created: '2019-09-03T12:00:55.754Z'
-modified: '2019-09-03T12:04:01.178Z'
+modified: '2020-01-22T14:22:14.291Z'
 ---
 
 # ethtool
 
+## usage
 ```sh
 ethtool           # Query or control network driver and hardware settings
 ethtool -g eth0   # Display ring buffer for eth0

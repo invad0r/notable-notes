@@ -1,7 +1,8 @@
 ---
+tags: [dns]
 title: nslookup
 created: '2020-01-16T07:23:01.811Z'
-modified: '2020-01-16T07:29:49.681Z'
+modified: '2020-01-23T12:15:24.052Z'
 ---
 
 # nslookup

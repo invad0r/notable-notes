@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2020-01-20T08:12:03.767Z'
+modified: '2020-01-23T12:42:53.409Z'
 ---
 
 # ss
@@ -13,25 +13,19 @@ modified: '2020-01-20T08:12:03.767Z'
 
 ## usage
 ```sh
-ss -a   # Show all sockets (listening and non-listening)
+# -a     Show all sockets (listening and non-listening)
+# -e     Show detailed socket information
+# -o     Show timer information
+# -n     dont try to resolve ip addresses
+# -p     show PIDs using the socket
+#
+#  listening or connection         which protocols ?
+#  default: connections            default: all
+#  -l listening                      -t: TCP
+#  -a both                           -u: UDP
+#                                    -x: unix domain sockets
 
-ss -e   # Show detailed socket information
-
-ss -o   # Show timer information
-
-ss -n   # Do not resolve addresses
-
-ss -p   # Show process using the socke
-
-# tuna, please! 
-ss -tunapls
-  # -n - dont try to resolve ip addresses
-  # -p show PIDs using the sockat
-  # listening or connection         which protocols ?
-  # default: connections            default: all
-  # -l listening                      -t: TCP
-  # -a both                           -u: UDP
-  #                                   -x: unix domain sockets
+ss -tunapls       # tuna, please! 
 ```
 
 ## see also
