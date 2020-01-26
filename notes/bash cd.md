@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash cd
 created: '2019-08-02T06:42:37.564Z'
-modified: '2020-01-10T10:17:09.070Z'
+modified: '2020-01-23T08:24:14.897Z'
 ---
 
 # bash cd
@@ -23,6 +23,5 @@ shopt -s cdspell    # correct misspelled dir
 ## see also
 - [[bash shopt]] 
 - [[bash dirs]] 
-- [[bash pushd]] 
-- [[bash popd]] 
+- [[bash pushd ]] 
 - [[bash pwd]]

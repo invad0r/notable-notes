@@ -2,7 +2,7 @@
 tags: [filesystem, linux]
 title: du
 created: '2019-07-30T06:19:49.046Z'
-modified: '2020-01-14T04:50:18.745Z'
+modified: '2020-01-22T14:19:56.285Z'
 ---
 
 # du
@@ -11,21 +11,20 @@ modified: '2020-01-14T04:50:18.745Z'
 
 ## usage
 ```sh
-du -sk ./* | sort -nr       # total in kb
-# └─┬─┘
-# -s  Display only a total for each argument
-# -k  Sizes in kilobytes (default)
-
-# If the environment variable BLOCKSIZE is set, and the -k option is not specified,  the block counts will be displayed in units of that size block.
+# options:
+#    -c      Display a grand total
+#    -h      "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.
+#    -k      Sizes in kilobytes (default)
+#    -s      Display only a total for each argument
+#    -s      Display an entry for each specified file.  (Equivalent to -d 0)
+#
+# If the environment variable BLOCKSIZE is set, and the -k option is not specified,
+# the block counts will be displayed in units of that size block.
 # If BLOCKSIZE is not set, and the -k option is not specified, the block counts will be displayed in 512-byte blocks.
 
+du -sk ./* | sort -nr       # total in kb
 
 du -chsh ./*
-
-# -c      Display a grand total
-# -h      "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.
-# -s      Display an entry for each specified file.  (Equivalent to -d 0)
-
 
 du -chsh aufs/diff/* | sort -rk 1 | head -20    # top 20 largest file
 
@@ -41,3 +40,6 @@ tar cf - /folder-with-big-files -P | pv -s $(du -sb /folder-with-big-files | awk
 ## see also
 - [[df]]
 - [[sort]]
+- [[tar]]
+- [[gzip]]
+- [[pv]]

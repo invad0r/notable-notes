@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash parameter expansion
 created: '2019-07-30T06:19:49.015Z'
-modified: '2019-09-25T06:42:03.621Z'
+modified: '2020-01-24T15:32:10.215Z'
 ---
 
 # bash parameter expansion 
@@ -99,6 +99,9 @@ ${parameter,pattern}
 ${parameter,,pattern}
 
 echo ${FOO^^}   # all upercase
+
+echo ${foo,,}   # all to lowercase
+echo ${foo^^}   # all to upercase
 ```
 
 ## pattern matching
@@ -138,6 +141,7 @@ echo ${FOO^^}   # all upercase
 ```
 
 ## see also
+- [[bash set unset]]
 - [[tr]]
 - [[bash]]
 - [[bash braces]]

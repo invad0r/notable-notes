@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-01-22T10:39:05.596Z'
+modified: '2020-01-22T15:27:14.479Z'
 ---
 
 # vault
@@ -50,3 +50,4 @@ vault write -format=json pki/root/generate/internal common_name="pki-ca-root" tt
 - [[terraform]]
 - [[tee]]
 - [[jq]]
+- [[bash process substitution]]

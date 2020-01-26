@@ -2,11 +2,13 @@
 tags: [linux, regex]
 title: find
 created: '2019-07-30T06:19:49.054Z'
-modified: '2019-08-28T21:45:06.232Z'
+modified: '2020-01-23T08:25:11.944Z'
 ---
 
 # find
 
+
+## usage
 ```sh
 find . \( -name '*.txt' -o -name '*.md' \) \! -empty    # .txt or .md files under the current directory that are not empty (> 0 bytes).
 

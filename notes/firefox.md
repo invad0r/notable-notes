@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: firefox
 created: '2019-07-30T06:19:49.054Z'
-modified: '2020-01-16T07:56:37.646Z'
+modified: '2020-01-23T08:53:58.740Z'
 ---
 
 # firefox
@@ -19,6 +19,8 @@ modified: '2020-01-16T07:56:37.646Z'
     about:config
     
         dom.webnotifications.enabled = false !
+
+    about:logins    # lockwise password etc
 
 
 
@@ -39,4 +41,5 @@ If you are looking for a specific type of result, like a bookmark or tag, you ca
     Add $ to search for matches in suggestions. 
 
 ## see also
+- [[duckduckgo]]
 - [Awesome Bar - Search your Firefox bookmarks, history and tabs from the address bar | Firefox Help](https://support.mozilla.org/en-US/kb/awesome-bar-search-firefox-bookmarks-history-tabs#w_changing-results-on-the-fly)

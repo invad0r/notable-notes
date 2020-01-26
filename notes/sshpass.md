@@ -2,7 +2,7 @@
 tags: [ssh]
 title: sshpass
 created: '2019-07-30T06:19:49.247Z'
-modified: '2019-10-23T14:45:36.843Z'
+modified: '2020-01-24T14:48:20.445Z'
 ---
 
 # sshpass
@@ -11,18 +11,16 @@ modified: '2019-10-23T14:45:36.843Z'
 
 ## usage
 ```sh
-sshpass -p 'secretpassword' ssh -o StrictHostKeyChecking=no username@server.example.com  
+sshpass -p "PASS" ssh -o StrictHostKeyChecking=no USER@HOST
 
-sshpass -p ${SSH_PASS} ssh \
-  -n \
-  -o PreferredAuthentications=password \
-  -o PubkeyAuthentication=no \
-  -o StrictHostKeyChecking=no \
-  ${SSH_USER}@${host} $@
+sshpass -p "PASS" ssh-o PreferredAuthentications=password -o PubkeyAuthentication=no -o StrictHostKeyChecking=no USER@HOST CMD
+
+sshpass -p "PASS" ssh-copy-id USER@HOST -p PORT     # copy public key
 ```
 
 ## see also
 - [[ssh]]
+- [[ssh-copy-id]]
 - [Login To SSH Server / Provide SSH Password Using A Shell Script - nixCraft](https://www.cyberciti.biz/faq/noninteractive-shell-script-ssh-password-provider/)
 - [Using while loop to ssh to multiple servers - unix.stackexchange.com](https://unix.stackexchange.com/a/107801/193945)
 

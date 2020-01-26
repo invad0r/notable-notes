@@ -2,57 +2,52 @@
 tags: [bash/built-in]
 title: bash eval
 created: '2019-07-30T06:19:49.005Z'
-modified: '2020-01-10T10:17:09.296Z'
+modified: '2020-01-26T16:58:06.861Z'
 ---
 
 # bash eval
 
 >`eval` - construct command by concatenating arguments
 
+## usage
 ```sh
 foo='ls -lah'
 eval $foo
-```
 
-```sh
 c="echo"; a1="Hello, "; a2="World!"; eval $c $a1 $a2
-```
 
-### usage
-
-#### Perform var assignment using var names passed as string values.
-```sh
+# Perform var assignment using var names passed as string values.
 key="mykey"
 val="myval"
 eval $key=$val
 
 echo $mykey
 myval
-```
+
+# building a command array because bash handles double-quotes differently
+# on command execution - this can be problematic when variables contain spaces
+# e.g. --network="${NETWORKD}"
+#      --networkd=Docker Test
+# here `Test` would be the next option instead of the argument of --network
+cmd=(
+  docker-machine \
+  create \
+  --driver vmwarevsphere \
+  --vmwarevsphere-datacenter=\"${ENV_VSPHERE_DATACENTER}\" \
+  --vmwarevsphere-network=\"${ENV_VSPHERE_NETWORK}\" \
+  ${DOCKER_HOST_FQDN}
+)
+eval "${cmd[@]}"
 
 
-#### run cron command from file
-```sh
+# run cron command from file
 # /etc/cron.d/repeatme
-*/10 * * * * root program arg1 arg2
-
+# */10 * * * * root program arg1 arg2
 eval $( cut -d ' ' -f 6- /etc/cron.d/repeatme)
 ```
 
-[The perils of Bash ‘eval’ - .debug - Medium](https://medium.com/dot-debug/the-perils-of-bash-eval-cc5f9e309cae)
 
-
-#### building create command that respects quotes !
-```sh
-ENV_VSPHERE_HOSTSYSTEM='cluster/vhost01.domain.net'
-ENV_VSPHERE_BOOT2DOCKER_URL='file:///Users/user/boot2docker.iso'
-
-CMD=(
-docker-machine create
---vmwarevsphere-username=\"${ENV_VSPHERE_USERNAME}\"
---vmwarevsphere-boot2docker-url=\"${ENV_VSPHERE_BOOT2DOCKER_URL}\"
-foo.node.ddev.domain.net
-)
-
-eval ${CMD[@]}
-```
+## see also
+- [The perils of Bash ‘eval’ - .debug - Medium](https://medium.com/dot-debug/the-perils-of-bash-eval-cc5f9e309cae)
+- [[docker-machine]]
+- [[cut]]

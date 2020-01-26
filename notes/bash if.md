@@ -2,11 +2,12 @@
 tags: [bash/keyword]
 title: bash if
 created: '2019-07-30T06:19:49.011Z'
-modified: '2019-08-20T07:20:38.985Z'
+modified: '2020-01-23T09:03:14.464Z'
 ---
 
 # bash if
 
+## usage
 ```sh
 statement1 && statement2  # and operator
 
@@ -22,3 +23,6 @@ if condition; then
   statements]
 fi
 ```
+
+## see also
+- [[bash test []]

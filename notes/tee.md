@@ -2,7 +2,7 @@
 tags: [linux]
 title: tee
 created: '2019-07-30T06:19:49.251Z'
-modified: '2019-10-23T14:36:23.129Z'
+modified: '2020-01-22T15:27:05.796Z'
 ---
 
 # tee
@@ -21,3 +21,4 @@ CMD | tee >(jq -r .data > data.json) >(jq -r .id > id.json) >(jq -r .user > user
 - [[bash redirects]]
 - [[jq]]
 - [[vault]]
+- [[bash process substitution]]

@@ -1,7 +1,7 @@
 ---
 title: gitlab-rails
 created: '2019-12-30T13:15:51.142Z'
-modified: '2020-01-13T09:04:21.794Z'
+modified: '2020-01-23T13:46:28.009Z'
 ---
 
 # gitlab-rails
@@ -15,13 +15,16 @@ console         # Start the Rails console (short-cut alias: "c")
 server          # Start the Rails server (short-cut alias: "s")
 test            # Run tests except system tests (short-cut alias: "t")
 test:system     # Run system tests
-dbconsole       # Start a console for the database specified in config/database.yml (short-cut alias: "db")
 new             # Create a new Rails application. "rails new my_app" creates a new application called MyApp in "./my_app"
 
-gitlab-rails console
-gitlab-rails console -e production
 ```
 
+### console
+```sh
+gitlab-rails console
+
+gitlab-rails console -e production
+```
 ```ruby
 # Reset root/admin password
 # find the user:
@@ -39,8 +42,39 @@ appsettings = ApplicationSetting.find_by(password_authentication_enabled_for_web
 appsettings.password_authentication_enabled_for_web = true
 appsettings.save!
 
-
 Gitlab::LDAP::Config.providers
+```
+
+### dbconsole
+> Start a console for the database specified in config/database.yml
+```sh
+gitlab-rails dbconsole
+gitlab-rails db             # short-cut alias
+```
+```sql
+SELECT * FROM pg_stat_ssl;  /* check whether clients are using SSL, you can issue this SQL query */
+
+/* Show all unique JiraService properties */
+SELECT DISTINCT properties FROM services WHERE type LIKE '%JiraService%';
+
+/* View the first 5 Lines */
+SELECT id,properties FROM services WHERE type LIKE '%JiraService%' LIMIT 5;
+
+/* Replace an old URL */
+UPDATE services 
+SET properties = replace(properties, 'https://oldproject.atlassian.net', 'https://newproject.atlassian.net') 
+WHERE type LIKE '%JiraService%';
+
+/* Replace an old authentication token  */
+UPDATE services 
+SET properties = replace(properties, 'oldtoken', 'newtoken') 
+WHERE type LIKE '%JiraService%';
+
+/* Set the whole config string */
+UPDATE services 
+SET properties = '{"api_url":"","jira_issue_transition_id":"","password":"newapitoken","url":"https://someproject.atlassian.net","username":"yourusername"}' 
+WHERE type LIKE '%JiraService%';
+
 ```
 
 ## see also

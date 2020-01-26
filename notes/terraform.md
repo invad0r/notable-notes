@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2020-01-21T09:31:59.485Z'
+modified: '2020-01-23T07:08:28.826Z'
 ---
 
 # terraform
