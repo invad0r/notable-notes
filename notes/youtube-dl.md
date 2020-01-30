@@ -1,13 +1,15 @@
 ---
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2019-11-15T06:59:54.015Z'
+modified: '2020-01-28T09:45:11.027Z'
 ---
 
 # youtube-dl
 
 ## usage
 ```sh
+youtube-dl --continue --extract-audio --audio-format mp3 h3Q12OkBTHk
+
 # extract audio from playlist starting at playlist-index: 17
 youtube-dl \
   --no-overwrites \

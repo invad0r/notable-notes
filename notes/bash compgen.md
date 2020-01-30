@@ -2,10 +2,12 @@
 tags: [bash/built-in]
 title: bash compgen
 created: '2019-08-02T06:13:41.072Z'
-modified: '2020-01-10T10:17:09.107Z'
+modified: '2020-01-29T07:44:53.744Z'
 ---
 
 # bash compgen
+
+> display possible completions depending on the options
 
 ## usage
 ```sh
@@ -20,10 +22,9 @@ never
 
 compgen -W "now tomorrow never" t
 tomorrow
-```
 
-## env variables
-```sh
+
+# env variables
 COMPREPLY     # array variable used to store the completions
 
 COMP_WORDS    # array of all words typed after the name of the program the compspec belongs to
@@ -32,26 +33,28 @@ COMP_CWORD    # index of COMP_WORDS array pointing to the word the current curso
               # - index of the word the cursor was when the tab key was pressed
               
 COMP_LINE     # the current command line
-```
 
-```sh
+
 compgen -c x    # Names of all commands starting with x
 
 compgen -a      # Names of alias, like alias but only alias names
+
+compgen -A variable | grep X  # get all variables starting with X; see also: `echo ${!X*}`
 
 compgen -b      # Names of shell builtins => list-builtins, like help
 
 compgen -k      # Names of Shell reserved words
 
--d    # Names of directory
--e    # Names of exported shell variables
--f    # Names of file and functions
--g    # Names of groups
--j    # Names of job
-
--s    # Names of service
--u    # Names of userAlias names
--v    # Names of shell variables
+# options:
+# -d     Names of directory
+# -e     Names of exported shell variables
+# -f     Names of file and functions
+# -g     Names of groups
+# -j     Names of job
+#
+# -s     Names of service
+# -u     Names of userAlias names
+# -v     Names of shell variables
 ```
 
 ## see also

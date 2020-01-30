@@ -2,11 +2,12 @@
 tags: [bash/built-in]
 title: bash pushd popd
 created: '2019-08-02T06:42:37.617Z'
-modified: '2020-01-23T08:24:36.881Z'
+modified: '2020-01-27T07:49:34.934Z'
 ---
 
 # bash pushd popd
 
+## usage
 ```sh
 pushd /opt/path/logs    # switch to path and put on the stack
 

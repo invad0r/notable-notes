@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2020-01-23T09:23:23.162Z'
+modified: '2020-01-27T08:03:44.209Z'
 ---
 
 # bash
@@ -38,4 +38,5 @@ ${FUNCNAME[@]}          # All functions including parents.
 - [[bash parameter expansion]]
 - [[bash built-in vs keyword]]
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html?#What-is-a-shell_003f)
+- https://www.tldp.org/LDP/abs/html/internalvariables.html
 - [pure-bash-bible - github.com](https://github.com/dylanaraps/pure-bash-bible)

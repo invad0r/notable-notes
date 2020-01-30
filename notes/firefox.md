@@ -2,25 +2,26 @@
 tags: [Notebooks]
 title: firefox
 created: '2019-07-30T06:19:49.054Z'
-modified: '2020-01-23T08:53:58.740Z'
+modified: '2020-01-29T16:26:20.663Z'
 ---
 
 # firefox
 
 
 ## about
+```sh
+about:preferences#search
 
-    about:preferences#search
+about:telemetry
 
-    about:telemetry
+about:performance           # starts taskmanager
 
-    about:performance
-    
-    about:config
-    
-        dom.webnotifications.enabled = false !
+about:config
 
-    about:logins    # lockwise password etc
+    dom.webnotifications.enabled = false !
+
+about:logins                # lockwise password etc
+```
 
 
 

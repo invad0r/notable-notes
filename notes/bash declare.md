@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2020-01-22T09:42:37.109Z'
+modified: '2020-01-29T07:20:03.171Z'
 ---
 
 # bash declare
@@ -53,27 +53,15 @@ declare -r                   # makes the variables read-only
 declare -x                   # marks the variables for export via the environment
 ```
 
-
-
 ## useful for identifying variables, environmental, ..
 ```sh
-declare | grep HOME
-HOME=/home/bozo
+declare | grep foo      # foo=bar
 
-
-zzy=68
-declare | grep zzy
-zzy=68
-
-
-Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
-echo ${Colors[@]}
-purple reddish-orange light green
-declare | grep Colors
-Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
+declare | grep Colors   # Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
 ```
 
 ## see also
 - [[bash export]]
 - [[bash typeset]]
+- [[bash array]]
 - [declareref - tldp.org](http://tldp.org/LDP/abs/html/declareref.html)
