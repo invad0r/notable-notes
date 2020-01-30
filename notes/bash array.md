@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash array
 created: '2019-08-01T07:14:55.242Z'
-modified: '2019-11-28T08:12:34.109Z'
+modified: '2020-01-29T07:18:39.143Z'
 ---
 
 # bash array
@@ -29,19 +29,31 @@ echo ${!SWARM[@]}   # print keys
 
 echo ${SWARM[swarm-1]}
 unset SWARM[swarm-1]
-```
 
-## remove element
-```sh
+
 declare -a foo=(a b c)
 s=1
 e=2
-foo=("${foo[@]:s:e}")
+foo=("${foo[@]:s:e}")   # remove element
 echo ${foo[@]}
 b c
 
 
-function foo() { elem=$1; next=$((elem+1)); shift; declare -a bar=($@); len=${#bar[@]}; [ $elem -ge $len ] &&{ echo "elem > len"; return 1; }; bar=(${bar[@]:0:elem} ${bar[@]:next}); echo "final: ${bar[@]}"; }
+function foo() { 
+  elem=$1; 
+  next=$((elem+1)); 
+  shift; 
+  declare -a bar=($@); 
+  len=${#bar[@]}; 
+  [ $elem -ge $len ] && { echo "elem > len"; return 1; }; 
+  bar=(${bar[@]:0:elem} ${bar[@]:next}); 
+  echo "final: ${bar[@]}"; 
+}
+
+
+Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
+echo ${Colors[@]}       # purple reddish-orange light green
+declare | grep Colors   # Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
 ```
 
 ## see also

@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2020-01-24T15:02:50.328Z'
+modified: '2020-01-30T07:02:51.160Z'
 ---
 
 # ssh
@@ -52,6 +52,7 @@ ssh -C                          # compress all data stdin, stdout, stderr, x11, 
 ## see also
 - [[sshpass]]
 - [[last]]
+- [[tty]]
 - [Connecting to GitHub with SSH - User Documentation](https://help.github.com/articles/connecting-to-github-with-ssh/)
 - [ssh_config(5) - LogLevel](http://man.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5?query=ssh_config#LogLevel)
 - [Shell script while read line loop stops after the first line - Stack Overflow](https://stackoverflow.com/a/13800476)

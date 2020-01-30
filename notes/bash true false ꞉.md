@@ -2,15 +2,14 @@
 tags: [bash/built-in]
 title: 'bash true false :'
 created: '2019-08-02T06:42:37.640Z'
-modified: '2020-01-26T17:29:38.653Z'
+modified: '2020-01-27T07:28:29.012Z'
 ---
 
 # bash true false :
 
 > Return a successful result.
 
-## see also
-- [[bash false]]
+## usage
 
- Exit Status:
-    Always succeeds.
+## see also
+- [[bash while]]

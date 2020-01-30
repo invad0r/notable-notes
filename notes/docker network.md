@@ -2,13 +2,12 @@
 tags: [container, container/docker]
 title: docker network
 created: '2019-07-30T06:19:49.041Z'
-modified: '2019-08-28T12:24:32.547Z'
+modified: '2020-01-28T08:52:25.197Z'
 ---
 
 # docker network
 
 ## docker overlay networks
-
 - network namepsace
 - XVLAN
 - Netlink

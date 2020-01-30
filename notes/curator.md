@@ -2,7 +2,7 @@
 tags: [elasticsearch]
 title: curator
 created: '2019-09-19T08:01:33.456Z'
-modified: '2019-10-08T04:49:01.777Z'
+modified: '2020-01-27T07:50:02.257Z'
 ---
 
 # curator
@@ -38,7 +38,6 @@ es_repo_mgr --config .curator/config.yml create fs --repository filebeat_backup 
 
 es_repo_mgr delete
 ```
-
 
 ## see also
 - [[elasticsearch api cat]]

@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash parameter expansion
 created: '2019-07-30T06:19:49.015Z'
-modified: '2020-01-24T15:32:10.215Z'
+modified: '2020-01-29T07:46:30.339Z'
 ---
 
 # bash parameter expansion 
@@ -43,21 +43,31 @@ ${_}      # ($_, an underscore.) At shell startup, set to the absolute pathname 
           # set to final argument of previous command executed.
 ```
 
-## substring
+## indirect expansion
+```sh
+NAME="VARIABLE"
+VARIABLE=42
+echo ${!NAME}   # 42
 
+# exceptions to this are the expansions of:
+${!prefix*} 
+${!name[@]}
+```
+
+## substring
 ```sh
 ${PARAMETER#PATTERN}      # match from beginning/left to end/right
 #        --->
 ${PARAMETER##PATTERN}     # more greedy
-```
-```sh
+
+
 ${PARAMETER%PATTERN}      # match from end/right to beginning/left
 #        <---   
 ${PARAMETER%%PATTERN}     # more greendy
 
 ${pages%%[[:cntrl:]]}     # remove carriage-return symbol \r
-```
-```sh
+
+
 for i in $(ls -d docker-*); do mv $i ${i#docker-}; done         # remove prefix "docker-" from directories
 
 [ ! -z "${NUM##*[!0-9]*}" ] && { echo "is a number: $NUM"; }    # check if number
@@ -70,8 +80,8 @@ ${string:offset}           # Extracts substring from $string at $offset
                            # [1] starting at $offset.
 
 ${string:offset:length}  # extracts $length characters of substring from $string at $offset.
-```
-```sh
+
+
 FOO="9781786466204-go_design_patterns.pdf"
 echo ${FOO:0:13};  # 9781786466204
 echo ${FOO:14};    # go_design_patterns.pdf
@@ -133,11 +143,6 @@ echo ${foo^^}   # all to upercase
 @(pattern-list) # Matches one of the given patterns.
 
 !(pattern-list) # Matches anything except one of the given patterns. 
-```
-
-```sh
-# $'15\r'
-# 
 ```
 
 ## see also

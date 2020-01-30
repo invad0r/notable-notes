@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-01-22T15:27:14.479Z'
+modified: '2020-01-28T08:52:43.773Z'
 ---
 
 # vault
@@ -25,8 +25,8 @@ vault secrets list -detailed
 vault list secret
 
 vault list int-ca/roles
-vault read int-ca/roles/kafka-server
 
+vault read int-ca/roles/kafka-server
 
 
 # create a role

@@ -2,24 +2,20 @@
 tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2020-01-16T08:15:13.256Z'
+modified: '2020-01-28T08:51:09.520Z'
 ---
 
 # curl
 
 ## usage
 ```sh
-# public ip
-curl ifconfig.me
-curl icanhazip.com
-curl ipecho.net/plain
-curl ipinfo.io/ip
+curl [ifconfig.me|icanhazip.com|ipecho.net/plain|ipinfo.io/ip]    # get public ip
 
 curl -O url                     # write output to a local file named
 
-curl -LO githuburl              # redo the request on the new place/redirect
-
 curl -o filename url            # write output to a local file named
+
+curl -LO githuburl              # redo the request on the new place/redirect
 
 curl -s url	                    # --silent
 
@@ -40,13 +36,11 @@ curl -sS "https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_judo?action
   | grep -Eoi "flagIOCmedalist\|\[\[(.+)\]\]" \
   | cut -c"19-" | cut -d \] -f 1 | cut -d \| -f 2 | sort | uniq -c | sort -nr             # extracting-data-from-wikipedia
 
-# dict protocol
-# aliases:
+# dict protocol - aliases:
 # m - match and find
 # d - define and lookup
 curl dict://dict.org/m:curl
 curl dict://dict.org/d:heisenbug:jargon
-curl dict://dict.org/d:daniel:web1913
 curl dict://dict.org/find:curl
 
 # Commands that break the URL description of the RFC (but not the DICT protocol) are

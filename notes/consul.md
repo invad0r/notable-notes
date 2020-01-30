@@ -2,7 +2,7 @@
 tags: [iac]
 title: consul
 created: '2019-08-28T09:45:08.570Z'
-modified: '2020-01-21T10:03:05.181Z'
+modified: '2020-01-28T08:46:46.665Z'
 ---
 
 # consul
@@ -14,6 +14,9 @@ modified: '2020-01-21T10:03:05.181Z'
 consul catalog nodes -http-addr=host              # working against remove consul-cluster 
 
 consul catalog nodes -service=swarm-a -detailed
+
+
+consul services deregister -id=SERVICEID          # find out service-id via curl api
 
 
 consul watch -type=service -service=
