@@ -2,10 +2,22 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2019-08-22T15:00:29.104Z'
+modified: '2020-02-03T04:34:20.300Z'
 ---
 
 # go
+
+## install
+```sh
+curl -O https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
+tar xvzf go1.13.7.linux-amd64.tar.gz
+mv go /usr/local/
+
+# add to ~/.bashrc
+export GOPATH=$(go env GOPATH)
+#export GO11MODULE=on
+export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
+```
 
 ```
   has                             doesn't have
