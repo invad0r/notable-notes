@@ -2,7 +2,7 @@
 tags: [linux, osx]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2019-12-05T07:04:24.041Z'
+modified: '2020-01-30T13:16:48.725Z'
 ---
 
 # date
@@ -27,8 +27,9 @@ date -v -11d                      # subtract 11 days from current date
 
 date +"%m-%d-%y_%H-%M"            # formatting
 
+date +%s                          # get unix timestamp
 
-date +%s        # get unix timestamp
+date +%F_%H-%M                    # 2020-01-30_13-16
 ```
 
 ```sh

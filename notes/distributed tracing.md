@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: distributed tracing
 created: '2019-07-30T06:19:49.038Z'
-modified: '2019-07-30T07:03:04.213Z'
+modified: '2020-02-01T08:29:09.268Z'
 ---
 
 # distributed tracing
@@ -24,7 +24,7 @@ modified: '2019-07-30T07:03:04.213Z'
 `baggage`
 - reference or unique-ID + Data (kev:val) => `span-conect`
 
-
+## see also
 [Intro to Distributed Tracing](https://www.kartar.net/2019/07/intro-to-distributed-tracing)
 [opentracing.io/docs/overview/spans](https://opentracing.io/docs/overview/spans/)
 
