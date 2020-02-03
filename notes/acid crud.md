@@ -1,11 +1,11 @@
 ---
 tags: [Notebooks]
-title: acronym
+title: acid crud
 created: '2019-08-18T16:14:42.254Z'
-modified: '2020-01-03T07:49:27.060Z'
+modified: '2020-02-01T08:31:03.545Z'
 ---
 
-# acronym
+# acid crud
 
 ## acid
 > set of properties that guarante reliable databse transactions
@@ -35,28 +35,4 @@ C R U D
 | Delete (Destroy) |  `DELETE`  | `DELETE`         |                                       
 
 [[rest api design]]
-
-## solid
-> five object-oriented design principles by Robert C. Martin aka Uncle Bob.
-```
-S O L I D
-| | | | └─ Dependency Inversion Principe
-| | | └─── Interface Segregation Principle
-| | └───── Liskov Substituation Principle
-| └─────── Open Close Principle
-└───────── Single Responsibility Principle
-```
-
-
-# CAP 
-
-> theorem aka `Brewer's theorem`
-
-```
-C A P
-| | └─ consistency
-| └─── availability
-└───── partition
-```
-[[distributed]]
 

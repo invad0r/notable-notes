@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: iptables
 created: '2019-07-30T06:19:49.083Z'
-modified: '2019-10-30T15:14:35.320Z'
+modified: '2020-01-30T11:33:26.128Z'
 ---
 
 # iptables
@@ -10,7 +10,6 @@ modified: '2019-10-30T15:14:35.320Z'
 > administration tool for IPv4 packet filtering and NAT 
 
 ## usage
-
 ```sh
 iptables -F                   # flush/remove all rules
 
@@ -25,6 +24,37 @@ iptables -S DOCKER
 iptables -t nat -L POSTROUTING    # list chain:POSTROUTING in table:nat
 
 iptables -S DOCKER-USER
+
+# Basic iptables Options
+# Command 	                    Description
+# -A, --append chain            Add one or more rules to the end of the selected chain.
+# -C, --check chain             Check for a rule matching the specifications in the selected chain.
+# -D, --delete chain	          Delete one or more rules from the selected chain.
+# -F, --flush 	                Delete all the rules one-by-one.
+# -I, --insert chain            Insert one or more rules into the selected chain as the given rule number.
+# -L, --list 	                  Display the rules in the selected chain.
+# -n, --numeric 	              Display the IP address or hostname and post number in numeric format.
+# -N, --new-chain name 	        Create a new user-defined chain.
+# -v, --verbose 	              Provide more information when used with the list option.
+# -X, --delete-chain name 	    Delete the user-defined chain.
+#
+# -p, --protocol 	            The protocol, such as TCP, UDP, etc.
+# -s, --source 	              Can be an address, network name, hostname, etc.
+# -d, --destination           An address, hostname, network name, etc.
+# -j, --jump 	                Specifies the target of the rule; i.e. what to do if the packet matches.
+# -g, --goto chain 	          Specifies that the processing will continue in a user-specified chain.
+# -i, --in-interface 	        Names the interface from where packets are received.
+# -o, --out-interface 	      Name of the interface by which a packet is being sent.
+# -f, --fragment 	            The rule will only be applied to the second and subsequent fragments of fragmented packets.
+# -c, --set-counters 	        Enables the admin to initialize the packet and byte counters of a rule.
+#
+# --ctstate state           Define the list of states for the rule to match on.
+#                                NEW         - connection has not yet been seen.
+#                                RELATED     - connection is new, but is related to another connection already permitted.
+#                                ESTABLISHED - connection is already established.
+#                                INVALID     - traffic couldn't be identified for some reason.
+#
+# --match       -m match
 ```
 
 ## backup restore
@@ -32,45 +62,6 @@ iptables -S DOCKER-USER
 iptables-save    > iptables_bckp
 
 iptables-restore < iptables_bckp
-```
-
-## Basic iptables Options
-```sh
-Command 	                    Description
--A, --append chain            Add one or more rules to the end of the selected chain.
--C, --check chain             Check for a rule matching the specifications in the selected chain.
--D, --delete chain	          Delete one or more rules from the selected chain.
--F, --flush 	                Delete all the rules one-by-one.
--I, --insert chain            Insert one or more rules into the selected chain as the given rule number.
--L, --list 	                  Display the rules in the selected chain.
--n, --numeric 	              Display the IP address or hostname and post number in numeric format.
--N, --new-chain name 	        Create a new user-defined chain.
--v, --verbose 	              Provide more information when used with the list option.
--X, --delete-chain name 	    Delete the user-defined chain.
-
-
-Option     	                Description
--p, --protocol 	            The protocol, such as TCP, UDP, etc.
--s, --source 	              Can be an address, network name, hostname, etc.
--d, --destination           An address, hostname, network name, etc.
--j, --jump 	                Specifies the target of the rule; i.e. what to do if the packet matches.
--g, --goto chain 	          Specifies that the processing will continue in a user-specified chain.
--i, --in-interface 	        Names the interface from where packets are received.
--o, --out-interface 	      Name of the interface by which a packet is being sent.
--f, --fragment 	            The rule will only be applied to the second and subsequent fragments of fragmented packets.
--c, --set-counters 	        Enables the admin to initialize the packet and byte counters of a rule.
-
-
-
-
---ctstate state           Define the list of states for the rule to match on.
-                                NEW         - connection has not yet been seen.
-                                RELATED     - connection is new, but is related to another connection already permitted.
-                                ESTABLISHED - connection is already established.
-                                INVALID     - traffic couldn't be identified for some reason.
-
-
---match       -m match
 ```
 
 ## rules
@@ -89,18 +80,15 @@ iptables -A POSTROUTING -s 10.32.254.0/24 ! -o docker0 -j MASQUERADE   # docker 
   # that are not going to be sent via the interface `! -o docker0` 
   # where the latter is Dockers default bridge-interface and the former is its IPv4-subnet
   # instructs to jump to MASQUERADE which assigns the corresponding IP of the outgoing interface to matching packets.
-```
 
-## docker
-```sh
-iptables -A DOCKER -d 172.17.0.2/32 ! -i docker0 -o docker0 -p tcp -m tcp — dport 443 -j ACCEPT
+
+iptables -A DOCKER -d 172.17.0.2/32 ! -i docker0 -o docker0 -p tcp -m tcp — dport 443 -j ACCEPT   # docker
 ```
 
 
 ## netfilter tables
 > tables are made up of `built-in` chains and may also contain `user-defined` chains
 > built-in tables will depend on the kernel configuration and the installed modules
-
 ```sh
 iptables -vL -t nat
 ```
@@ -135,4 +123,5 @@ iptables -vL -t nat
 ## see also
 - [[iptables-extensions]]
 - [[firewall-cmd]]
+- [[nat]]
 - https://www.linode.com/docs/security/firewalls/control-network-traffic-with-iptables/

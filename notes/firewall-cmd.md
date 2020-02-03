@@ -2,7 +2,7 @@
 tags: [linux]
 title: firewall-cmd
 created: '2019-08-23T13:34:33.074Z'
-modified: '2020-01-15T10:14:19.153Z'
+modified: '2020-01-30T12:20:41.283Z'
 ---
 
 # firewall-cmd
@@ -14,14 +14,12 @@ modified: '2020-01-15T10:14:19.153Z'
 
 To add and activate a permanent rule, you can use one of two methods.
 
-Add the rule to both the permanent and runtime sets.
 ```sh
+# Add the rule to both the permanent and runtime sets.
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --zone=public --add-service=http
-```
 
-Add the rule to the permanent set and reload FirewallD.
-```sh
+# Add the rule to the permanent set and reload FirewallD.
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --reload
 ```
