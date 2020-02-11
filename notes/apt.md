@@ -2,7 +2,7 @@
 tags: [linux, packagemanager]
 title: apt
 created: '2019-07-30T20:20:43.614Z'
-modified: '2020-01-16T07:32:23.166Z'
+modified: '2020-02-03T12:27:28.199Z'
 ---
 
 # apt
@@ -12,13 +12,14 @@ modified: '2020-01-16T07:32:23.166Z'
 ```sh
 apt update
 
-apt install FOO
+apt install PKG
 
-apt remove FOO
+apt remove PKG
 
 apt autoremove         # remove former dependencies
 
 apt list --installed
+
 ```
 
 ### repository commands
@@ -35,5 +36,3 @@ add-apt-repository -r ppa:ian-berke/ppa-drawers
 ## see also
 - [[apt-file]]
 - [[apt-cache]]
-- [[packagemanagers]]
-

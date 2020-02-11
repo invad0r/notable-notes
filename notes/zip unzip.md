@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: zip unzip
 created: '2019-09-26T06:55:59.693Z'
-modified: '2020-01-22T13:54:46.706Z'
+modified: '2020-02-04T12:21:27.138Z'
 ---
 
 # zip unzip

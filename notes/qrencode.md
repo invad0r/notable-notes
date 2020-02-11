@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: qrencode
 created: '2019-12-29T18:42:05.637Z'
-modified: '2019-12-30T07:30:27.673Z'
+modified: '2020-02-04T12:21:27.544Z'
 ---
 
 # qrencode

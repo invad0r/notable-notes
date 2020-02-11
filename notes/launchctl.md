@@ -1,8 +1,8 @@
 ---
-tags: [initsystem, osx]
+tags: [initsystem, macos]
 title: launchctl
 created: '2019-09-04T14:00:13.320Z'
-modified: '2019-09-23T06:47:34.638Z'
+modified: '2020-02-04T12:21:27.429Z'
 ---
 
 # launchctl

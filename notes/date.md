@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2020-01-30T13:16:48.725Z'
+modified: '2020-02-04T12:25:22.750Z'
 ---
 
 # date
@@ -12,7 +12,7 @@ modified: '2020-01-30T13:16:48.725Z'
 ## usage
 ```sh
 
-date -r 1563533492792             # convert unix timestamp on osx
+date -r 1563533492792             # convert unix timestamp on macos
 
 date -d "@1563533492792"          # convert unix timestamp on linux
 

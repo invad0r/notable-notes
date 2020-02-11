@@ -1,8 +1,8 @@
 ---
-tags: [container/docker, linux, packagemanager]
+tags: [linux, packagemanager]
 title: apk
 created: '2019-07-30T20:26:52.476Z'
-modified: '2019-11-28T11:56:59.906Z'
+modified: '2020-02-04T12:33:51.620Z'
 ---
 
 # apk
@@ -15,6 +15,7 @@ apk info    # list installed
 
 apk add --no-cache package  # install package
 
+apk del pkg
 
 # unsatisfiable constraints
 #  if package is only available in edge alpine repo, not in a stable one
@@ -22,7 +23,6 @@ echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositorie
 ```
 
 ## see also
-- [[packagemanagers]]
 - [wiki.alpinelinux.org](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management)
 - [docker-alpine :: viewdocs.io](http://gliderlabs.viewdocs.io/docker-alpine/)
 - [BusyBox - The Swiss Army Knife of Embedded Linux](https://busybox.net/downloads/BusyBox.html)

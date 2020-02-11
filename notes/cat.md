@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: cat
 created: '2019-09-04T06:20:06.676Z'
-modified: '2020-01-27T07:13:34.928Z'
+modified: '2020-02-04T12:21:27.269Z'
 ---
 
 # cat
