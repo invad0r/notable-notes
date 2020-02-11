@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: apropos
 created: '2019-09-23T05:22:20.385Z'
-modified: '2019-09-24T09:21:05.134Z'
+modified: '2020-02-04T12:21:27.157Z'
 ---
 
 # apropos

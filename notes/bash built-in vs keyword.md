@@ -1,9 +1,8 @@
 ---
-favorited: true
 tags: [bash]
 title: bash built-in vs keyword
 created: '2019-08-02T08:47:35.961Z'
-modified: '2020-01-23T09:09:03.460Z'
+modified: '2020-02-04T12:31:42.634Z'
 ---
 
 # bash built-in vs keyword

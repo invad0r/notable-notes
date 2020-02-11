@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: install
 created: '2019-09-25T07:09:47.701Z'
-modified: '2019-09-25T07:27:08.537Z'
+modified: '2020-02-04T12:21:27.410Z'
 ---
 
 # install

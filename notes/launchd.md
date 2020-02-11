@@ -1,8 +1,8 @@
 ---
-tags: [initsystem, linux, osx]
+tags: [initsystem, linux, macos]
 title: launchd
 created: '2019-08-21T06:37:19.782Z'
-modified: '2019-09-04T14:00:49.349Z'
+modified: '2020-02-04T12:21:27.449Z'
 ---
 
 # launchd

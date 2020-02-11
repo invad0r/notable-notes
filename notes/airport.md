@@ -1,8 +1,8 @@
 ---
-tags: [network, osx]
+tags: [macos, network]
 title: airport
 created: '2019-07-30T06:19:49.196Z'
-modified: '2019-11-28T11:53:02.808Z'
+modified: '2020-02-04T12:21:27.120Z'
 ---
 
 # airport

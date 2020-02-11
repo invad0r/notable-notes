@@ -1,8 +1,8 @@
 ---
-tags: [brew, osx, packagemanager]
+tags: [brew, macos, packagemanager]
 title: brew tap
 created: '2019-08-22T08:24:53.732Z'
-modified: '2020-01-03T07:23:31.735Z'
+modified: '2020-02-04T12:21:27.251Z'
 ---
 
 # brew tap

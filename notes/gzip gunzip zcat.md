@@ -1,13 +1,13 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: gzip gunzip zcat
 created: '2019-10-08T06:01:59.458Z'
-modified: '2020-01-22T13:56:28.300Z'
+modified: '2020-02-04T12:26:45.489Z'
 ---
 
 # gzip gunzip zcat
 
-> used gzcat on osx !
+> used gzcat on macos !
 
 ## usage
 ```sh
