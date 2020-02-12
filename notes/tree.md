@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: tree
 created: '2019-10-05T03:18:36.580Z'
-modified: '2019-10-05T17:03:55.781Z'
+modified: '2020-02-04T12:21:27.633Z'
 ---
 
 # tree

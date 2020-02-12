@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-01-28T08:52:43.773Z'
+modified: '2020-02-04T08:49:16.933Z'
 ---
 
 # vault
@@ -16,6 +16,8 @@ $VAULT_TOKEN
 $VAULT_ADDR
 
 vault login -address=https://ADDRESS:8200 TOKEN
+
+vault auth -method=ldap username=user
 
 vault status -address=http://ADDRESS:8200
 

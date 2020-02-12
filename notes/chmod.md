@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: chmod
 created: '2019-10-04T09:17:53.956Z'
-modified: '2019-10-18T08:23:57.033Z'
+modified: '2020-02-04T12:21:27.313Z'
 ---
 
 # chmod

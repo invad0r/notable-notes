@@ -1,8 +1,8 @@
 ---
-tags: [network, osx]
+tags: [macos, network]
 title: networksetup
 created: '2019-09-06T06:34:44.756Z'
-modified: '2019-09-06T06:36:44.629Z'
+modified: '2020-02-04T12:21:27.487Z'
 ---
 
 # networksetup

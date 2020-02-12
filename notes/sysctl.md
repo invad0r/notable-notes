@@ -1,8 +1,8 @@
 ---
-tags: [linux, osx]
+tags: [linux, macos]
 title: sysctl
 created: '2019-07-30T06:19:49.249Z'
-modified: '2019-10-23T14:41:43.873Z'
+modified: '2020-02-04T12:28:35.409Z'
 ---
 
 # sysctl 
@@ -16,7 +16,7 @@ sysctl -a                             # print all
 sysctl vm.swappiness                  # get single value
 
 sysctl -n, --values                   # print only values of a variables
-sysctl -n machdep.cpu.brand_string    # get cpu infor on osx: "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz"
+sysctl -n machdep.cpu.brand_string    # get cpu infor on macos: "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz"
 
 sysctl –w {variable-name=value}       # Modify kernel parameter temporarily
 
