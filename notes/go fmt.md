@@ -2,24 +2,25 @@
 tags: [go/pkg]
 title: go fmt
 created: '2019-07-30T06:19:49.066Z'
-modified: '2019-08-29T12:32:05.064Z'
+modified: '2020-02-08T08:23:16.462Z'
 ---
 
 # go fmt
 
 
-## printf
-
+## usage
 ```go
-%v	   // the value in a default format
+fmt.printf("output: %v", o)
 
-%+v	   // add field names, when printing structs
+//%v	    the value in a default format
 
-%#v	   // a Go-syntax representation of the value
+//%+v	    add field names, when printing structs
 
-%T	   // a Go-syntax representation of the type of the value
+//%#v	    a Go-syntax representation of the value
 
-%%	   // a literal percent sign; consumes no value
+//%T	    a Go-syntax representation of the type of the value
+
+//%%	    a literal percent sign; consumes no value
 ```
 
 ## see also
