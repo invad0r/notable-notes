@@ -2,7 +2,7 @@
 tags: [linux]
 title: ps
 created: '2019-07-30T06:19:49.218Z'
-modified: '2020-01-22T12:50:03.292Z'
+modified: '2020-02-04T12:28:03.437Z'
 ---
 
 # ps
@@ -16,7 +16,7 @@ modified: '2020-01-22T12:50:03.292Z'
 ```sh
 ps -a           # selects all processes with a tty except session leaders
 
-ps a --forest   # osx not supported !
+ps a --forest   # macos not supported !
 ps fax
 
 ps -C sleep

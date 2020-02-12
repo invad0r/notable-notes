@@ -1,8 +1,8 @@
 ---
-tags: [dns, linux, osx]
+tags: [dns, linux, macos]
 title: dnstop
 created: '2019-09-17T05:04:56.977Z'
-modified: '2019-09-24T09:21:53.384Z'
+modified: '2020-02-04T12:21:27.370Z'
 ---
 
 # dnstop

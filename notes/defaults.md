@@ -1,13 +1,13 @@
 ---
-tags: [osx]
+tags: [macos]
 title: defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2019-08-29T06:35:54.552Z'
+modified: '2020-02-04T12:25:32.533Z'
 ---
 
 # defaults
 
-> access the mac osx user defaults system
+> access the mac macos user defaults system
 
 ```sh
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true    # disable .DS_Store creation
