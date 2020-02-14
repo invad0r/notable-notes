@@ -1,7 +1,7 @@
 ---
 title: dockerd
 created: '2020-01-03T13:18:17.258Z'
-modified: '2020-01-21T10:13:00.986Z'
+modified: '2020-02-14T10:32:24.124Z'
 ---
 
 # dockerd
@@ -30,5 +30,6 @@ systemctl start docker
 ```
 
 ## see also
+- [[docker]]
 - [[systemctl]]
 - [[iptables]]
