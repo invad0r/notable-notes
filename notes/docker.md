@@ -2,7 +2,7 @@
 tags: [container, container/docker]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2020-01-21T10:11:24.145Z'
+modified: '2020-02-14T10:34:07.780Z'
 ---
 
 # docker
@@ -45,18 +45,19 @@ docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Names}}" | awk '{ if( $2 !~ /^
 
 docker info --format="{{json .LiveRestoreEnabled}}"
 
+docker info --format "{{json .Swarm}}" | jq '.Cluster.Spec.Orchestration.TaskHistoryRetentionLimit'
 
-# manage docker inside of docker
-docker run -it -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest \
-  sh -c "apt-get update ; apt-get install docker.io -y ; bash"
+
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest sh -c "apt-get update ; apt-get install docker.io -y ; bash"
 
 docker run --rm httpd:2.4-alpine htpasswd -nbB admin PASSWORD | cut -d ":" -f 2    # generate password
 
 
-# debugging
-docker logs nginx 2>&1 | grep "127."    # grepping logs with 2>&1
+docker logs nginx 2>&1 | grep "127."    # debugging: grepping logs with 2>&1
+
 
 docker events
+
 
 docker inspect 0                        # low level information about container
 
@@ -66,6 +67,8 @@ docker inspect --format '{{.State.Running}}' $CONTAINER_ID    # container runnin
 
 docker inspect --format '{{ index .Config.Labels "com.foo.bar" }}' foo   # index function: can lookup arbitrary strings in the map
 
+docker inspect --format "{{.State.Status}}" $container_id &>/dev/null
+
 
 docker stats $(docker inspect -f '{{.Name}}' $(docker ps -q) | cut -c 2-)
 
@@ -74,33 +77,15 @@ docker stats $(docker ps --format={{.Names}})
 
 docker swarm update --task-history-limit=1        # swarm task-history
 
-docker info --format "{{json .Swarm}}" | jq '.Cluster.Spec.Orchestration.TaskHistoryRetentionLimit'
-
 docker node inspect $(docker node ls --format '{{.Hostname}}')| jq -r '.[].ManagerStatus.Addr'    # get node ip
-```
 
-## failed to deactivate service binding for container srv
 
-```sh
-network_name="ingress"
-for endpoint_map in $(docker network inspect -f '{{range $container_id, $container_def := .Containers}} {{$container_id}}^{{index $container_def "Name"}} {{end}}' $network_name); do
-  container_id=$(echo $endpoint_map | cut -d ^ -f1)
-  container_name=$(echo $endpoint_map | cut -d ^ -f2)
+docker network inspect -f '{{range $container_id, $container_def := .Containers}} {{$container_id}}^{{index $container_def "Name"}} {{end}}'
 
-  if [ $container_id != "ingress-sbox" ]; then
-    docker inspect --format "{{.State.Status}}" $container_id &>/dev/null
-    if [ $? -ne 0 ]; then
-      echo "Removing $container_name"
-      echo docker network disconnect -f $network_name $container_name
-    else
-      echo "Letting $container_name stay"
-    fi
-  fi
-done
+docker network disconnect -f $network_name $container_name
 ```
 
 ## see also
-- [[awk]]
 - [linux - How to clear Docker task history - Stack Overflow](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)
 - [Starting container failed: Address already in use · GitHub](https://github.com/moby/moby/issues/31698#issuecomment-320294893)
 - [Use the Docker command line \| Docker Documentation](https://docs.docker.com/engine/reference/commandline/cli/#environment-vairables)

@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-02-04T08:49:16.933Z'
+modified: '2020-02-14T11:30:45.352Z'
 ---
 
 # vault
@@ -17,11 +17,19 @@ $VAULT_ADDR
 
 vault login -address=https://ADDRESS:8200 TOKEN
 
+
 vault auth -method=ldap username=user
+
 
 vault status -address=http://ADDRESS:8200
 
+
 vault secrets list -detailed
+
+
+vault token lookup TOKEN
+
+vault token capabilities int-ca/issue/kafka   # need token already set !
 
 
 vault list secret
