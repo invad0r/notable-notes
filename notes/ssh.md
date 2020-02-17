@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2020-01-30T07:02:51.160Z'
+modified: '2020-02-17T18:49:02.669Z'
 ---
 
 # ssh
@@ -34,6 +34,8 @@ modified: '2020-01-30T07:02:51.160Z'
 $SSH_CLIENT           # get ip from which you connected to host
 $SSH_CONNECTION
 $SSH_TTY
+
+ssh whoami.filippo.io           # harmless
 
 ssh -T git@github.com           # test ssh-connection
 
