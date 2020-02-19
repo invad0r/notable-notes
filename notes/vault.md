@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-02-14T11:30:45.352Z'
+modified: '2020-02-14T14:58:55.858Z'
 ---
 
 # vault
@@ -53,6 +53,11 @@ vault write -format=json pki/root/generate/internal common_name="pki-ca-root" tt
     >(jq -r .data.certificate > ca.pem) \
     >(jq -r .data.issuing_ca > issuing_ca.pem) \
     >(jq -r .data.private_key > ca-key.pem)
+
+
+vault write transit/path/encrypt/foo plaintext=$(base64 <<< "my secret data")            # encrypt data
+
+vault write transit/path/decrypt/foo ciphertext=vault:v1:3kd1XR2w1lk..8KIWy2VVBA==       # decrypt data
 ```
 
 ## see also

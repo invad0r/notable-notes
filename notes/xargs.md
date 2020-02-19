@@ -2,7 +2,7 @@
 tags: [brew]
 title: xargs
 created: '2019-07-30T06:19:49.266Z'
-modified: '2019-12-26T14:16:49.245Z'
+modified: '2020-02-19T10:22:52.688Z'
 ---
 
 # xargs
@@ -22,6 +22,8 @@ echo 'one two three' | xargs -p touch               # -p will print the command 
 cat foo.txt | xargs -I % sh -c 'echo %; mkdir %'    # -I replaces occurrences of the argument with the argument passed to xargs
 
 echo 210    | xargs -I {} bash -c "if [[ "{}" =~ 2 ]]; then echo {}; fi"   # replace string
+
+# when no -I => defaults to `{}`
 ```
 
 ## see also
