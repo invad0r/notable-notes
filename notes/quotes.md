@@ -2,10 +2,16 @@
 tags: [Notebooks]
 title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2020-02-14T09:11:40.161Z'
+modified: '2020-02-17T10:37:45.152Z'
 ---
 
 # quotes
+
+```
+organizations which design systems .. are constrained to produce designs 
+which are copies of the communication structures of the organization. 
+~ M. Connoway - Connoway's Law"
+```
 
 `Ein Kluger bemerkt alles. Ein Dummer macht über alles eine Bemerkung. ~ Heinrich Heine`
 

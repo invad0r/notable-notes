@@ -1,8 +1,9 @@
 ---
+favorited: true
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2020-01-11T19:17:52.298Z'
+modified: '2020-02-17T13:02:28.695Z'
 ---
 
 # java
@@ -88,6 +89,7 @@ java                                # List all standard options.
 - [[javac]]
 - [[sdk]]
 - [[python]]
+- [[ulimit]]
 
 
 

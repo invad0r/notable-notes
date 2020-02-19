@@ -2,7 +2,7 @@
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2020-01-29T15:33:00.057Z'
+modified: '2020-02-17T11:06:42.652Z'
 ---
 
 # docker-compose
@@ -18,8 +18,13 @@ docker-compose ps
 docker-compose up -d service_name
 ```
 
-## compose file version 3 reference
+## compose file version 2 reference
 ```yml
+ulimits:        # this is docker-compose only !
+  memlock:
+    soft: -1
+    hard: -1
+
 cap_add:
   - ALL
 
@@ -61,4 +66,5 @@ services:
 
 ## see also
 - [[capabilities]]
+- [[ulimit]]
 - [[yml]]
