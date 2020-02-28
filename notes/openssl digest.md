@@ -1,7 +1,7 @@
 ---
 title: openssl digest
 created: '2019-10-11T06:28:37.910Z'
-modified: '2019-11-13T06:41:37.466Z'
+modified: '2020-02-20T13:30:52.011Z'
 ---
 
 # openssl digest
@@ -16,5 +16,6 @@ openssl md5 file.tar.gz
 ```
 
 ## see also
+- [[openssl]]
 - [[md5sum]]
 - [[sha256sum]]

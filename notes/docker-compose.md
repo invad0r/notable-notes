@@ -2,7 +2,7 @@
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2020-02-17T11:06:42.652Z'
+modified: '2020-02-24T08:03:00.614Z'
 ---
 
 # docker-compose
@@ -65,6 +65,8 @@ services:
 ```
 
 ## see also
+- [[yaml]]
+- [[yq]]
 - [[capabilities]]
 - [[ulimit]]
-- [[yml]]
+

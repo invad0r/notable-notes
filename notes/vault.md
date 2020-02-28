@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-02-14T14:58:55.858Z'
+modified: '2020-02-21T13:44:32.655Z'
 ---
 
 # vault
@@ -10,10 +10,11 @@ modified: '2020-02-14T14:58:55.858Z'
 
 ## usage
 ```sh
-vault -autocomplete-install
+vault -autocomplete-install     # setup
 
-$VAULT_TOKEN
-$VAULT_ADDR
+# export to use agent against server or use login
+VAULT_TOKEN
+VAULT_ADDR
 
 vault login -address=https://ADDRESS:8200 TOKEN
 
@@ -39,21 +40,15 @@ vault list int-ca/roles
 vault read int-ca/roles/kafka-server
 
 
+vault write -output-curl-string SECRET    # generate curl
+
 # create a role
 vault write int-ca/roles/vault \
-  max_ttl="8760h" \
-  allowed_domains="vault*" \
-  allow_subdomains=true \
-  allow_glob_domains=true
-
+  max_ttl="8760h" allowed_domains="vault*" allow_subdomains=true allow_glob_domains=true
 
 # redirecting from tee to multiple files
 vault write -format=json pki/root/generate/internal common_name="pki-ca-root" ttl=87600h \
-   | tee \
-    >(jq -r .data.certificate > ca.pem) \
-    >(jq -r .data.issuing_ca > issuing_ca.pem) \
-    >(jq -r .data.private_key > ca-key.pem)
-
+   | tee  >(jq -r .data.certificate > cert.pem)  >(jq -r .data.issuing_ca > intermediate.pem) >(jq -r .data.private_key > key.pem)
 
 vault write transit/path/encrypt/foo plaintext=$(base64 <<< "my secret data")            # encrypt data
 

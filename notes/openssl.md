@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-01-17T07:46:24.835Z'
+modified: '2020-02-20T13:29:36.594Z'
 ---
 
 # openssl
@@ -22,16 +22,14 @@ modified: '2020-01-17T07:46:24.835Z'
 
 ## usage
 ```sh
-openssl pkcs12 -in CERT.p12 -clcerts -nokeys -out CERT.crt
+openssl pkcs12 -in cert.p12 -clcerts -nokeys -out cert.crt
 
-openssl x509   -in CERT.crt -text
+openssl x509   -in cert.crt -text -noout
 
 openssl crl2pkcs7 -nocrl -certfile CHAIN.pem | openssl pkcs7 -print_certs -text -noout
 
 
-openssl verify -CAfile foo.cain.crt foo.crt   # verify certificate against CAfile
-#  foo.crt: OK
-
+openssl verify -CAfile foo.cain.crt foo.crt   # verify certificate against CAfile => foo.crt: OK
 
 
 # rsa - RSA key management
@@ -40,50 +38,40 @@ openssl rsa -in privateKey.key -check
 openssl rsa -in private_key_noenc.pem -out private_key_noenc.pem          # remove passphrase
 
 openssl rsa -aes256 -in private_key_noenc.key -out private_key_enc.key    
-```
 
-### req - pkcs10 x509 - certificate Signing Request (csr) management
-```sh
-# generate a self-signed certificate
-openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout mycert.pem -out mycert.pem    
 
-# generate a self-signed certificate auto-fill
-openssl req \
-  -x509 \
-  -nodes \
-  -days 365 \
-  -sha256 \
-  -subj '/C=US/ST=Oregon/L=Portland/CN=www.foo.bar' \
-  -newkey rsa:2048 \
-  -keyout mycert.pem \
-  -out mycert.pem
+# Verify that private key matches a certificate and CSR
+openssl rsa  -noout -modulus -in example.key | openssl sha256
+openssl x509 -noout -modulus -in example.crt | openssl sha256
+openssl req  -noout -modulus -in example.csr | openssl sha256
 
-openssl req \
-  -x509 \
-  -newkey rsa:2048 \
-  -keyout local.key \
-  -out local.crt \
-  -days 90 \
+
+# req - pkcs10 x509 - certificate Signing Request (csr) management
+# generate a self-signed certificate and key
+openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem
+openssl req -x509 -nodes -days 365         -newkey rsa:2048 -keyout key.pem -out cert.pem
+
+# auto-fill generate a self-signed certificate 
+openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem
+  -subj '/C=US/ST=Oregon/L=Portland/CN=www.foo.bar'
+
+openssl req -x509 -newkey rsa:2048 -keyout local.key -out local.crt -days 90 \
   -subj '/C=US/ST=XX/L=XX/O=IT/OU=IT/CN=foohost.local/emailAddress=it@foohost.net'
-
-openssl req -nodes -newkey rsa:2048 -keyout www_domain_net.key -out www_domain_net.csr
 
 # -nodes             don't encrypt the output key
 # -x509              output a x509 structure instead of a cert. req
 # -newkey rsa:bits   generate a new RSA key of 'bits' in size
 # -newkey dsa:file   generate a new DSA key, parameters taken from CA in 'file'
 # -newkey ec:file    generate a new EC  key, parameters taken from CA in 'file'
-```
 
-### read csr
-```sh
+
+# read csr
 openssl req -noout -text -in int-ca_intermediate.csr
 
 openssl req -in mycsr.csr -noout -text
-```
 
-### x509 certificate data management
-```sh
+
+# x509 certificate data management
 openssl x509 -in somecert{.crt,.pem} -text -noout             # certificate-information from file
 
 openssl x509 -inform der -in aps.cer -noout -text
@@ -93,10 +81,9 @@ openssl x509 -in git.domain.net.crt -noout -subject
 openssl x509 -in git.domain.net.crt -noout -dates
 
 openssl x509 -in git.domain.net.crt -noout -fingerprint
-```
 
-## pkcs12 - public key cryptograpy standarts
-```sh
+
+# pkcs12 - public key cryptograpy standarts
 openssl pkcs12 -export -inkey local.key      -in local.crt  -out local.pfx          # generate pkcs12
 openssl pkcs12 -export -inkey privateKey.key -in bundle.crt -out certificate.pfx
 
@@ -108,14 +95,6 @@ openssl pkcs12 -export -in clientprivcert.pem -out clientprivcert.pfx     # conv
 
 openssl pkcs12 -in path.p12 -out newfile.crt.pem -nokeys  -clcerts    # extract certificate
 openssl pkcs12 -in path.p12 -out newfile.key.pem -nocerts -nodes      # extract key 
-```
-
-
-## Verify that private key matches a certificate and CSR
-```sh
-openssl rsa  -noout -modulus -in example.key | openssl sha256
-openssl x509 -noout -modulus -in example.crt | openssl sha256
-openssl req  -noout -modulus -in example.csr | openssl sha256
 ```
 
 ## see also

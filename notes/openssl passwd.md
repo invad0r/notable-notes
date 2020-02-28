@@ -1,7 +1,7 @@
 ---
 title: openssl passwd
 created: '2019-10-11T06:34:34.744Z'
-modified: '2019-10-11T06:36:59.173Z'
+modified: '2020-02-20T13:30:46.954Z'
 ---
 
 # openssl passwd
@@ -19,4 +19,5 @@ openssl passwd -1 MySecret   # generate shadow-style-hash: $1$sXiKzkus$haDZ9JpVr
 ```
 ## see also
 - [[pass]]
+- [[openssl]]
 - [[openssl rand]]

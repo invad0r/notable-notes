@@ -2,7 +2,7 @@
 tags: [go/tooling]
 title: go env
 created: '2019-08-21T14:55:04.431Z'
-modified: '2020-02-12T04:00:48.500Z'
+modified: '2020-02-21T08:14:30.944Z'
 ---
 
 # go env
@@ -49,4 +49,5 @@ GOGCCFLAGS
 ```
 
 ## see also
-- 
+- [[go]]
+- [[gcc]]

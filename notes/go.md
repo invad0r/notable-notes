@@ -2,7 +2,7 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2020-02-03T04:34:20.300Z'
+modified: '2020-02-21T08:14:08.641Z'
 ---
 
 # go
@@ -53,3 +53,4 @@ if the new line comes after a `token` that could end the statement => insert `;`
 - [[go install]]
 - [[go test]]
 - [[go run]]
+- [[gcc]]
