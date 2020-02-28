@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2020-02-17T10:37:45.152Z'
+modified: '2020-02-26T08:05:02.293Z'
 ---
 
 # quotes
@@ -12,6 +12,8 @@ organizations which design systems .. are constrained to produce designs
 which are copies of the communication structures of the organization. 
 ~ M. Connoway - Connoway's Law"
 ```
+
+`A language that doesn't affect the way you think about programming is not worth knowing. ~ Alan J. Perlis`
 
 `Ein Kluger bemerkt alles. Ein Dummer macht über alles eine Bemerkung. ~ Heinrich Heine`
 

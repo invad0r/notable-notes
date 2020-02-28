@@ -2,7 +2,7 @@
 tags: [linux]
 title: linux fhs
 created: '2019-09-02T05:06:01.427Z'
-modified: '2019-09-03T13:14:26.791Z'
+modified: '2020-02-24T12:22:05.700Z'
 ---
 
 # linux fhs
@@ -37,3 +37,5 @@ modified: '2019-09-03T13:14:26.791Z'
 
 ## see also
 - [[filesystem]]
+- [[procfs]]
+- [[sysfs]]

@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2020-01-20T07:36:15.209Z'
+modified: '2020-02-24T09:03:14.391Z'
 ---
 
 # nmap
@@ -79,9 +79,12 @@ nmap -R -sL 209.85.229.99/27 | awk '{if($3=="not")print"("$2") no PTR";else prin
 sudo nmap -F -O 192.168.0.1-255 | grep "Running: " > /tmp/os; \
 echo "$(cat /tmp/os | grep Linux | wc -l) Linux device(s)"; \
 echo "$(cat /tmp/os | grep Windows | wc -l) Window(s) devices"
+
+nmap --script ssl-enum-ciphers -p PORT HOST   # get availables ssl/tls versions
 ```
 
 ## see also
 - [[ncat]]
 - [[socat]]
 - [[ss]]
+- [[openssl]]

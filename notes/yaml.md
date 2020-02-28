@@ -2,7 +2,7 @@
 tags: [yml]
 title: yaml
 created: '2019-07-30T06:19:49.267Z'
-modified: '2020-01-11T19:22:38.362Z'
+modified: '2020-02-24T08:03:38.097Z'
 ---
 
 # yaml
@@ -50,11 +50,11 @@ example: |+     # All newlines from end   (keep)
 example: >3     # indendation indicator
 ```
 ## see also
-- [[python]]
-- [[ruby]]
 - [[yq]]
 - [yaml.org/spec/1.2](https://yaml.org/spec/1.2/spec.pdf)
 - [YAML Multiline Strings](https://yaml-multiline.info/)
 - [[heredoc]]
+- [[python]]
+- [[ruby]]
 - [[docker-compose]]
 - [[kubectl]]

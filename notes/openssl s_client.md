@@ -1,7 +1,7 @@
 ---
 title: openssl s_client
 created: '2019-10-11T06:30:33.271Z'
-modified: '2019-10-11T06:32:12.105Z'
+modified: '2020-02-20T13:30:31.768Z'
 ---
 
 # openssl s_client
@@ -16,9 +16,8 @@ Host: www.google.com
 # returns html
 Q         # type Q and return
 DONE
-```
 
-```sh
+
 openssl s_client -connect b.com:443 -servername a.com   # multiple hosts on the same IP address and you need to use Server Name Indication (SNI) to access this site
 
 echo | openssl s_client -connect www.bar.baz:443 -servername bar.baz 2>/dev/null | openssl x509 -noout -dates
@@ -26,16 +25,9 @@ echo | openssl s_client -connect www.bar.baz:443 -servername bar.baz 2>/dev/null
 echo | openssl s_client -connect bar.baz:443 2>&1 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'    # retrieve remote certificate
 
 openssl s_client -connect localhost:443 -debug
-```
 
-```sh
-openssl s_client 
-  -connect gateway.sandbox.push.apple.com:2195 
-  -CAfile CA/entrust_2048_ca.cer 
-  -debug
-  -showcerts 
-  -cert newfile.pem
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -CAfile CA/entrust_2048_ca.cer -debug -showcerts  -cert newfile.pem
 ```
 
 ## see also
-- 
+- [[openssl]]

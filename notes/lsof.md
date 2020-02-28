@@ -2,12 +2,15 @@
 tags: [linux]
 title: lsof
 created: '2019-07-30T06:19:49.166Z'
-modified: '2020-01-16T07:59:46.840Z'
+modified: '2020-02-20T09:44:26.144Z'
 ---
 
 # lsof
 
 > list open files
+
+## install
+`apt install lsof`
 
 ## usage
 ```sh
