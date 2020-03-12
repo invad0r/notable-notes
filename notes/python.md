@@ -2,7 +2,7 @@
 tags: [python]
 title: python
 created: '2019-07-30T06:19:49.222Z'
-modified: '2020-01-11T19:11:21.734Z'
+modified: '2020-03-02T07:02:00.594Z'
 ---
 
 # python
@@ -35,5 +35,6 @@ python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, i
 - [[virtualenv]]
 - [[ruby]]
 - [[java]]
+- [[scala]]
 - [[php]]
 - [[yaml]]

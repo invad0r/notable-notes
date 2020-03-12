@@ -2,7 +2,7 @@
 tags: [database, javascript]
 title: mongo
 created: '2019-07-30T06:19:49.178Z'
-modified: '2019-11-14T09:29:06.995Z'
+modified: '2020-02-28T23:02:31.382Z'
 ---
 
 # mongo
@@ -11,6 +11,8 @@ modified: '2019-11-14T09:29:06.995Z'
 
 ## usage
 ```sh
+mongo "mongodb://mongodb0.example.com:28015"
+
 mongo --host=HOST --port=27017
 
 mongo --username admin --password --authenticationDatabase admin --host HOST --port 27017

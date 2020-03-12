@@ -2,7 +2,7 @@
 tags: [buildtool, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2020-01-02T13:05:31.126Z'
+modified: '2020-03-02T09:18:07.316Z'
 ---
 
 # make

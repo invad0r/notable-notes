@@ -2,7 +2,7 @@
 tags: [linux]
 title: findmnt
 created: '2019-10-17T05:41:04.763Z'
-modified: '2020-01-07T07:46:50.116Z'
+modified: '2020-03-03T08:44:19.555Z'
 ---
 
 # findmnt
@@ -26,3 +26,4 @@ findmnt -l -o target,source
 
 ## see also
 - [[mount]]
+- [[showmount]]

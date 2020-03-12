@@ -2,78 +2,65 @@
 tags: [container/docker, go]
 title: go template docker
 created: '2019-07-30T06:19:49.074Z'
-modified: '2019-08-22T09:37:55.368Z'
+modified: '2020-03-02T09:21:51.182Z'
 ---
 
 # go template docker
 
-### context
+## usage
 ```sh
-directive:        "{{ }}"
+# context
+"{{ }}"       # directive
+"."           # current-context e.g. ".Container"
+$             # root-context
 
-current-context:  "."         e.g. .Container
-
-root-context:     $
-```
-
-### control structures
-```sh
+# control structures
 if
-
 with
-
 range
-```
 
-### functions
-```sh
-join      # concatenates a list of strings to create a single string
-          # '{{join .Args " , "}}'
+# functions
+join          # concatenates a list of strings to create a single string
+              # '{{join .Args " , "}}'
+json          # encodes an element as a json string.
+lower         # transforms a string into its lowercase
+split         # lices a string into a list of strings separated by a separator
+              # {{split .Image ":"}}
+title         # capitalizes the first character of a string 
+upper         # transforms a string into its uppercase   
+println       # prints each value on a new line
+              # '{{range $k,$v := .Args}} {{println $v $k}} {{end}}'
+index         # function: can lookup arbitrary strings in the map
 
-json      # encodes an element as a json string.
-  
-lower     # transforms a string into its lowercase
-  
-split     # lices a string into a list of strings separated by a separator
-          # {{split .Image ":"}}
 
-title     # capitalizes the first character of a string 
-  
-upper     # transforms a string into its uppercase 
-  
-println   # prints each value on a new line
-          # '{{range $k,$v := .Args}} {{println $v $k}} {{end}}'
-          
-index     # function: can lookup arbitrary strings in the map
-```
+# docker ps 
+--format "table {{.ID}}\t{{.Image}}\t{{.Names}}" | awk '{ if( $2 !~ /^docker-registry/) print}'
 
-## docker network inspect
-```sh
+# docker info
+--format="{{json .LiveRestoreEnabled}}"
+--format "{{json .Swarm}}" | jq '.Cluster.Spec.Orchestration.TaskHistoryRetentionLimit'
+
+# docker network network
 --format '{{ range $c, $n := .Containers }} => {{$c}} {{$n.Name}} {{end}}'
 
-docker network inspect docker_gwbridge
-
---format '{{.Containers}}'
+--format '{{.Containers}}'    # docker network inspect docker_gwbridge
 
 --format '{{ range $k, $v := index .IPAM.Config 0}}{{.| printf "%s: %s " $k}}{{end}}'
 
 --format '{{ range $key, $val := .Containers}} {{$key}} {{end}}'
 
---format '{{ .Name}} 
+--format '{{ .Name}}
           {{ range $k,$v:= .Containers }}
             {{ printf "%s\n" $k}}
             {{ range $x,$y := $v }}
               {{ printf "%s: %s\n" $x $y}}
             {{end}}
           {{end}}'
-```
-### docker image inspect 
-```sh
---format '{{ range $k, $v := .ContainerConfig.Labels -}} {{ $k }}={{ $v }} {{ end -}}'
-```
 
-### docker container inspect 
-```sh
+# docker image inspect 
+--format '{{ range $k, $v := .ContainerConfig.Labels -}} {{ $k }}={{ $v }} {{ end -}}'
+
+# docker container inspect 
 --format '{{ .Config.Env}}'
 
 --format '{{ .HostConfig.LogConfig.Type}}'
@@ -90,13 +77,10 @@ docker network inspect docker_gwbridge
 
 --format '{{ if (.Parent) }}{{.Id}} {{.Parent}}{{end}}'    # if has parent e.g. docker image inspect $(docker image ls -q)
 
-docker inspect monitoring_exporter_1
-  
-  --format '{{ range $k, $v := .Config.Labels}}{{if eq $k "SERVICE_9100_NAME"}} {{$v}} {{end}} {{end}}'
+--format '{{ range $k, $v := .Config.Labels}}{{if eq $k "SERVICE_9100_NAME"}} {{$v}} {{end}} {{end}}'
 
 # extract laysers from container
-docker inspect 
-  --format '
+--format '
     {{ range $e := .Config.Env}}              ENV {{$e}}    {{end}}
 
     {{ range $e,$v := .Config.ExposedPorts}}  EXPOSE {{$e}} {{end}}

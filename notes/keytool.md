@@ -2,13 +2,15 @@
 tags: [java]
 title: keytool
 created: '2019-10-23T08:27:46.438Z'
-modified: '2020-02-21T08:12:29.588Z'
+modified: '2020-03-02T15:34:41.582Z'
 ---
 
 # keytool
 
-> Key and Certificate Management Tool
-> Manages a keystore (database) of cryptographic keys, X.509 certificate chains, and trusted certificates.
+> manages keystore (database) of cryptographic keys, X.509 certificate chains, and trusted certificates
+
+## installs
+`part of the standard java distribution`
 
 ## usage
 ```sh

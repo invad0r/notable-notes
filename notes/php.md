@@ -2,12 +2,12 @@
 tags: [php]
 title: php
 created: '2019-07-30T06:19:49.206Z'
-modified: '2020-01-11T19:19:15.695Z'
+modified: '2020-03-02T07:06:02.276Z'
 ---
 
 # php
 
-## usgae
+## usage
 ```sh
 php -i 
 
@@ -21,8 +21,16 @@ php -r '
   echo "---".PHP_EOL;
   foreach(dns_get_record("foo.bar.domain.net", DNS_A) as $i){ echo $i["ip"].PHP_EOL; };
 '
+
+# datatypes
+# 8 primitives types:
+#   4 scalar:	    boolean, integer, float, string
+#   2 compound:   array, object
+#   2 special:	  resource, NULL
+# pseudo-types:   mixed, number, callback, array|oject, void)
 ```
 
 ## see also
 - [[python]]
+- [[scala]]
 - [[irb]]

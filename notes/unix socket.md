@@ -2,7 +2,7 @@
 tags: [container/docker, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2020-01-21T07:27:58.415Z'
+modified: '2020-03-02T10:34:32.709Z'
 ---
 
 # unix socket
@@ -24,7 +24,7 @@ modified: '2020-01-21T07:27:58.415Z'
   - datagram
 
 ## see also
-- [[docker engine api]]
 - [what-socket - linux.com](https://www.linux.com/news/what-socket)
 - [[socat]]
 - [[ss]]
+- [[docker api]]
