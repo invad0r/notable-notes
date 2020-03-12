@@ -2,7 +2,7 @@
 tags: [linux]
 title: mount
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-01-20T19:52:23.559Z'
+modified: '2020-03-09T10:21:57.473Z'
 ---
 
 # mount
@@ -35,6 +35,7 @@ mount | mount | grep "^/dev" | awk '{print $1" " $5}'   # filesystem of partitio
 ## see also
 - [[fstab]]
 - [[findmnt]]
+- [[fuser]]
 - [[docker volume]]
 - [[cryptsetup]]
 - [what-is-a-bind-mount - unix.stackexchange.com](https://unix.stackexchange.com/a/198591/193945)

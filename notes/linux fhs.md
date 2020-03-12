@@ -2,7 +2,7 @@
 tags: [linux]
 title: linux fhs
 created: '2019-09-02T05:06:01.427Z'
-modified: '2020-02-24T12:22:05.700Z'
+modified: '2020-03-03T12:58:06.005Z'
 ---
 
 # linux fhs
@@ -39,3 +39,4 @@ modified: '2020-02-24T12:22:05.700Z'
 - [[filesystem]]
 - [[procfs]]
 - [[sysfs]]
+- [Differences between /bin, /sbin, /usr/bin, /usr/sbin, /usr/local/bin, /usr/local/sbin - Ask Ubuntu](http://askubuntu.com/a/308048/219213)

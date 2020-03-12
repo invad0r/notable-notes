@@ -2,7 +2,7 @@
 tags: [linux]
 title: lsof
 created: '2019-07-30T06:19:49.166Z'
-modified: '2020-02-20T09:44:26.144Z'
+modified: '2020-03-09T10:02:26.821Z'
 ---
 
 # lsof
@@ -30,6 +30,7 @@ lsof -w     # ignore warnings; "lsof: no pwd entry for UID 100"
 ```
 
 ## see also
+- [[mount]]
 - [[ls]]
 - [[ss]]
 - [[nmap]]

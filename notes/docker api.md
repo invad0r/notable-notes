@@ -1,11 +1,11 @@
 ---
 tags: [container/docker, curl]
-title: docker engine api
+title: docker api
 created: '2019-08-20T09:42:39.909Z'
-modified: '2020-01-21T10:10:48.927Z'
+modified: '2020-03-02T10:33:56.260Z'
 ---
 
-# docker engine api
+# docker api
 
 ## usage
 ```sh
@@ -77,5 +77,5 @@ EOF
 ## see also
 - [[curl]]
 - [[unix socket]]
-- [docker engine api](https://docs.docker.com/engine/api/v1.24/)
+- [docs.docker.com/engine/api](https://docs.docker.com/engine/api/v1.24/)
 - https://github.com/docker/go-plugins-helpers/

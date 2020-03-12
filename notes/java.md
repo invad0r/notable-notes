@@ -1,9 +1,8 @@
 ---
-favorited: true
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2020-02-17T13:02:28.695Z'
+modified: '2020-03-02T07:02:21.788Z'
 ---
 
 # java

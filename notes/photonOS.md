@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [linux, vmware]
 title: photonos
 created: '2019-07-30T06:19:49.205Z'
-modified: '2020-01-03T14:04:31.490Z'
+modified: '2020-03-02T10:34:15.417Z'
 ---
 
 # photonos

@@ -2,23 +2,12 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-02-20T13:29:36.594Z'
+modified: '2020-03-11T07:13:06.032Z'
 ---
 
 # openssl
 
 > `openssl` is a cryptography toolkit implementing the `ssl` and `tls` network protocols and related cryptography standards
-
-### determin certificate type
-- `X509` standard defines certificates
-- `RSA` and `DSA` are two of the `public key algorithms` that can be used in those certificates
-- certificates are used to hold public keys, and never private keys.
-- `PKCS#12` is a standard for a container which can hold an `X509` client certificates and the corresponding private keys,
-  - as well as (optionally) the `X509` certificates of the CAs that signed the `X509` client certificate(s).
-- if you're examining a `PKCS#12` file (typically `.p12` extension), then you already know:
-  - contains at least one `X509` client certificate (which contains a public key) and the corresponding private keys
-  - All you don't know is whether those certificate & private key are `RSA` or `DSA`. You can check by extracting the certificate(s) and then examine them
-
 
 ## usage
 ```sh
@@ -95,10 +84,36 @@ openssl pkcs12 -export -in clientprivcert.pem -out clientprivcert.pfx     # conv
 
 openssl pkcs12 -in path.p12 -out newfile.crt.pem -nokeys  -clcerts    # extract certificate
 openssl pkcs12 -in path.p12 -out newfile.key.pem -nocerts -nodes      # extract key 
+
+
+
+openssl s_client -connect example.com:25 -starttls smtp -showcerts </dev/null 2>/dev/null   \
+  | openssl x509 -text -noout | grep -A 1 Serial\ Number | tr -d :
+
+openssl s_client -connect example.com:587 -starttls smtp -showcerts </dev/null 2>/dev/null  \
+  | openssl x509 -text -noout | grep -A 1 Serial\ Number | tr -d :
+
+openssl s_client -connect example.com:143 -starttls imap -showcerts </dev/null 2>/dev/null  \
+  | openssl x509 -text -noout | grep -A 1 Serial\ Number | tr -d :
+
+openssl s_client -connect example.com:993 -showcerts </dev/null 2>/dev/null \
+  | openssl x509 -text -noout | grep -A 1 Serial\ Number | tr -d :
 ```
+
+## determin certificate type
+- `X509` standard defines certificates
+- `RSA` and `DSA` are two of the `public key algorithms` that can be used in those certificates
+- certificates are used to hold public keys, and never private keys.
+- `PKCS#12` is a standard for a container which can hold an `X509` client certificates and the corresponding private keys,
+  - as well as (optionally) the `X509` certificates of the CAs that signed the `X509` client certificate(s).
+- if you're examining a `PKCS#12` file (typically `.p12` extension), then you already know:
+  - contains at least one `X509` client certificate (which contains a public key) and the corresponding private keys
+  - All you don't know is whether those certificate & private key are `RSA` or `DSA`. You can check by extracting the certificate(s) and then examine them
+
 
 ## see also
 - [[keytool]]
+- [[p11-kit]]
 - [mkcert: valid HTTPS certificates for localhost](https://blog.filippo.io/mkcert-valid-https-certificates-for-localhost/)
 - [OpenSSL CLI HowTo](https://www.madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands)
 - [OpenSSL command cheatsheet – freeCodeCamp.org](https://medium.freecodecamp.org/openssl-command-cheatsheet-b441be1e8c4a)

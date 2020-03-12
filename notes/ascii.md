@@ -1,12 +1,12 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2020-01-03T08:40:39.276Z'
+modified: '2020-03-02T07:38:33.933Z'
 ---
 
 # ascii
 
-> `ASCII - American Standard Code for Infromation Interchange` is a character `encoding`standard for electronic communication
+> `american standard code for infromation interchange` - character `encoding` standard for electronic communication
 
 ## usage
 ```sh

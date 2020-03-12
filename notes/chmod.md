@@ -2,43 +2,44 @@
 tags: [linux, macos]
 title: chmod
 created: '2019-10-04T09:17:53.956Z'
-modified: '2020-02-04T12:21:27.313Z'
+modified: '2020-03-03T12:55:25.535Z'
 ---
 
 # chmod
 
-## usage
-```sh
-_ rwx rwx rwx [int] owner:group
-^               ^
-|               |
-|               number of hardlinks
-special permissions flag
-    |
-    _ = no special permissions
-    d = directory
-    l = file or dir as symlink
-    s = setuid/set guid => run executable as owner with owner permissions
-    t = sticky bit
-```
-```sh
-chmod [u|g][+|-][r|w|x]
-      |       |     ^
-      |       |     |
-      |       |     read write execute
-      |       add or remove
-      user or group
-```
+> change file modes or Access Control Lists
 
+## usage
 ```sh
 chmod 755 file
 
 chmod 644 dir
 
 chmod -R 644 ./dir
+
+#  chmod [u|g][+|-][r|w|x]
+#        |       |     ^
+#        |       |     |
+#        |       |     read write execute
+#        |       add or remove
+#      user or group
+#
+#  _ rwx rwx rwx [int] owner:group
+#  ^               ^
+#  |               |
+#  |               number of hardlinks
+#  special permissions flag
+#      |
+#      _   no special permissions
+#      d   directory
+#      l   file or dir as symlink
+#      s   setuid/set guid => run executable as owner with owner permissions
+#      t   sticky bit
+#  
 ```
 
 ## see also
+- [[chown]]
 - [[ls]]
 - [[lsattr]]
 - [[chattr]]
