@@ -2,15 +2,15 @@
 tags: [php]
 title: composer
 created: '2019-07-30T06:19:49.206Z'
-modified: '2019-08-28T22:02:55.747Z'
+modified: '2020-03-13T13:59:12.239Z'
 ---
 
 # composer
 
+> dependency manager for php 
+
 ## install
-```sh
-curl -sS https://getcomposer.org/installer | php
-```
+`curl -sS https://getcomposer.org/installer | php`
 
 ## usage
 ```sh
@@ -27,3 +27,4 @@ composer dump-autoload --optimize
 
 ## see also
 - [[php]]
+- [[bundle]]

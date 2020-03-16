@@ -1,11 +1,11 @@
 ---
 tags: [go/pkg]
-title: go fmt
+title: go package fmt
 created: '2019-07-30T06:19:49.066Z'
-modified: '2020-02-08T08:23:16.462Z'
+modified: '2020-03-12T12:19:37.968Z'
 ---
 
-# go fmt
+# go package fmt
 
 
 ## usage

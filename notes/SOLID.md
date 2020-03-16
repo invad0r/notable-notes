@@ -1,7 +1,7 @@
 ---
 title: SOLID
 created: '2020-02-01T08:30:02.163Z'
-modified: '2020-02-01T08:30:39.272Z'
+modified: '2020-03-13T13:51:38.045Z'
 ---
 
 # SOLID
@@ -16,3 +16,6 @@ S O L I D
 | └─────── Open Close Principle
 └───────── Single Responsibility Principle
 ```
+
+## see also
+- [[software design pattern]]

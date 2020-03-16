@@ -2,12 +2,12 @@
 tags: [python]
 title: virtualenv
 created: '2019-07-30T06:19:49.221Z'
-modified: '2019-12-25T20:07:26.182Z'
+modified: '2020-03-13T14:00:47.514Z'
 ---
 
 # virtualenv
 
-> tool to create isolated Python environments
+> tool to create isolated python environments
 
 ## install
 `pip install virtualenv --verbose `

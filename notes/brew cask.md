@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [brew, macos, packagemanager]
 title: brew cask
 created: '2019-08-22T07:27:31.381Z'
-modified: '2020-02-04T12:21:27.233Z'
+modified: '2020-03-12T14:05:12.128Z'
 ---
 
 # brew cask
