@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: brctl
 created: '2019-08-28T12:22:49.494Z'
-modified: '2019-09-06T06:36:58.456Z'
+modified: '2020-03-12T14:06:23.474Z'
 ---
 
 # brctl
@@ -12,7 +12,7 @@ modified: '2019-09-06T06:36:58.456Z'
 ## install 
 `yum install bridge-utils -y`
 
-## show
+## usage
 ```sh
 ip add show docker0
 

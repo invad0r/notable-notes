@@ -2,13 +2,14 @@
 tags: [linux]
 title: dd
 created: '2019-07-30T06:19:49.033Z'
-modified: '2019-08-22T09:33:05.499Z'
+modified: '2020-03-12T14:07:59.249Z'
 ---
 
 # dd
 
-`disk dump`
+> `disk dump`
 
+## usage
 ```sh
 dd if=/dev/zero of=/Users/user/filesize/foo.dat bs=1m count=24
 
@@ -18,21 +19,16 @@ dd if=/dev/zero of=/Users/user/filesize/foo.dat bs=1m count=24
 # 24+0 records in
 # 24+0 records out
 # 25165824 bytes transferred in 0.026832 secs (937899773 bytes/sec)
-```
 
 
-
-## i/o performance testing
-
-```sh
+# i/o performance testing
 dd if=/dev/zero of=/data/$(date +"%m-%d-%y_%H-%M").test bs=1G count=1 oflag=direct
 
 # 1+0 records in
 # 1+0 records out
 # 1073741824 bytes (1.1 GB, 1.0 GiB) copied, 1.94133 s, 553 MB/s
-```
 
-```sh
+
 oflag=direct # use direct I/O for data          allowed to make use of kernel buffering (it just causes a flush+wait for completion periodically
 oflag=dsync  # use synchronized I/O for data    trust that all my parameters are sensible and turn off as much kernel buffering as you can"
 oflag=sync   # likewise, but also for metadata

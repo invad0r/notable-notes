@@ -2,12 +2,15 @@
 tags: [Notebooks]
 title: devops
 created: '2019-07-30T06:19:49.034Z'
-modified: '2019-08-18T15:25:50.107Z'
+modified: '2020-03-13T13:52:37.068Z'
 ---
 
 # devops
 
-aproach to fixing 3 Problems through: culture, automation, measurement and sharing
+### aproach to fixing 3 Problems through
+- culture
+- automation
+- measurement and sharing
 
 ### Fundamental Assumptions of DevOps
 

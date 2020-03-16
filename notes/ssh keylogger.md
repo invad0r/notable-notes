@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [ssh]
 title: ssh keylogger
 created: '2019-07-30T06:19:49.241Z'
-modified: '2020-02-01T06:34:27.690Z'
+modified: '2020-03-13T13:15:04.022Z'
 ---
 
 # ssh keylogger

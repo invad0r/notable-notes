@@ -2,7 +2,7 @@
 tags: [go]
 title: go methods
 created: '2019-07-30T06:19:49.068Z'
-modified: '2019-08-20T07:22:54.439Z'
+modified: '2020-03-12T12:24:45.976Z'
 ---
 
 # go methods
@@ -10,6 +10,7 @@ modified: '2019-08-20T07:22:54.439Z'
 > Go does not have `classes`. However, you can define `methods` on types.
 > A method is a `function` with a special receiver argument. 
 
+## usage
 ```go
 type Vertex struct {
 	X, Y float64
@@ -34,3 +35,5 @@ func (h handler) ServeHttp () {} // method on value
 
 func (h *handler) ServeHttp () {} // method on pointer; pointer modifies reciever
 ```
+
+## see also

