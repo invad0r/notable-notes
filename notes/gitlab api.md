@@ -2,7 +2,7 @@
 tags: [curl]
 title: gitlab api
 created: '2019-07-30T06:19:49.064Z'
-modified: '2020-02-19T13:16:45.415Z'
+modified: '2020-03-16T10:57:58.950Z'
 ---
 
 # gitlab api
@@ -46,6 +46,7 @@ DELETE /api/v4/runners/161
 ```
 
 ## see also
+- [[github api]]
 - [[gitlab-runner]]
 - [[git]]
 - [[curl]]

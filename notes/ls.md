@@ -2,7 +2,7 @@
 tags: [filesystem, linux, macos]
 title: ls
 created: '2019-07-30T06:19:49.165Z'
-modified: '2020-02-04T12:21:27.469Z'
+modified: '2020-03-16T16:35:20.676Z'
 ---
 
 # ls
@@ -22,6 +22,10 @@ ls -d .*	                        # list only .dotfiles and .dotdirs
 ls -d */                          # only directories
 
 ls -r                             # reverse sort
+
+ls -ls foo.dat
+#   -s      argument to ls returns file size in blocks, just like du
+#   49152 -rw-r--r--  1 user  staff  25165824  3 Jan 17:21 foo.dat
 
 ls -S                             # sort by size
 

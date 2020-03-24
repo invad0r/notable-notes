@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2020-01-27T08:03:44.209Z'
+modified: '2020-03-16T17:24:54.353Z'
 ---
 
 # bash
@@ -34,6 +34,7 @@ ${FUNCNAME[@]}          # All functions including parents.
 
 ## see also
 - [[env]]
+- [[bash prompt]]
 - [[bash debugging.md]]
 - [[bash parameter expansion]]
 - [[bash built-in vs keyword]]
