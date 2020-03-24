@@ -2,25 +2,33 @@
 tags: [heredoc, linux]
 title: heredoc
 created: '2019-07-30T06:19:49.079Z'
-modified: '2019-09-04T06:20:03.576Z'
+modified: '2020-03-16T17:46:20.746Z'
 ---
 
 # heredoc
 
 > here-document is a special-purpose code block. It uses a form of I/O redirection to feed a command list to an interactive program or a command
 
-## promt
+## usage
 ```sh
-export PS2='> ' # used in multiline commands
-```
+# ignore the leading tab characters
+# hyphen just after the << is enough to tell bash to ignore the leading tab characters
+<<-     # dash ignores only tab indentation
+'EOF'   # single-quotes avoid shell-substitution
 
-## ignore the leading tab characters
-hyphen just after the << is enough to tell bash to ignore the leading tab characters.
-```sh
-<<-   # dash ignores only tab indentation
-'EOF' # single-quotes avoid shell-substitution
-```
-```sh
+cat <<-EOF
+	echo $HOME
+	echo $$
+	cat <<EOT
+	echo $HOME
+	=====
+	EOT
+	cat <<'EOB'
+	echo $HOME
+	EOB
+EOF
+
+
 echo 1
 # must use tabs for indentation !!!
   grep $1 <<-'EOF'
@@ -32,85 +40,61 @@ echo 1
     discarded when read
     EOF
 ls
-```
 
-## cat
 
-```sh
 cat <<EOF > .pre-commit-config.yaml
 - repo: git://github.com/antonbabenko/pre-commit-terraform
   rev: v1.7.3
   hooks:
     - id: terraform_fmt
 EOF
-```
 
-### sudo redirect cat
-```sh
+# sudo redirect cat
 sudo ash -c "cat >> /var/config.file" <<EOF
   some config
 EOF
-```
 
-### sudo redirect tee
-```sh
-
+# sudo redirect tee
 sudo tee /etc/sysconfig/docker-volume-netshare <<-'EOF'
  some config
 EOF
-```
 
-### docker build
-```sh
+# docker build
 docker build -t htop - << EOF
 FROM alpine
 RUN apk --no-cache add htop
 EOF
-```
-    
-### curl data
-```sh
-curl http://localhost -d @- <<REQUEST_BODY
+
+# curl data
+curl http://host -d @- <<EOF
 {
   "from" : 0,
   "size" : 40
 }
-REQUEST_BODY
-```
-https://news.ycombinator.com/item?id=7596375)
+EOF
 
-### ssh commands
-```sh
-ssh -T docker@HOST <<EOSSH
+
+# ssh commands
+ssh -T docker@HOST <<EOF
 uptime
 sudo update -y
-EOSSH
-```
+EOF
 
-### anon heredoc
 
-```sh
-#!/bin/bash
-
+# anon heredoc
 : <<TESTVARIABLES
 ${HOSTNAME?}${USER?}${MAIL?}  # Print error message if one of the variables not set.
 TESTVARIABLES
-
 exit $?
-```
 
-### using in loop
 
-```sh
-while read line; do
-  echo $line
-done <<EOF
+# using in loop
+while read line; do echo "$line"; done <<EOF
 foo
 bar
 EOF
-```
 
-```sh
+# export PS2='> '     # used in multiline commands# 
 cat <<EOF |
 > test
 > test1

@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [vmware]
 title: govc vm
 created: '2019-09-03T06:58:09.766Z'
-modified: '2019-09-03T13:15:37.454Z'
+modified: '2020-03-18T16:04:02.212Z'
 ---
 
 # govc vm

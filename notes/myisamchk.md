@@ -2,19 +2,16 @@
 tags: [database]
 title: myisamchk
 created: '2019-08-29T06:08:17.952Z'
-modified: '2019-12-30T07:33:15.384Z'
+modified: '2020-03-18T15:27:35.288Z'
 ---
 
 # myisamchk
 
-## checks corrupt table
+## usage
 ```sh
-myisamchk /var/lib/mysql/Abtelefoniertool/bewo_namen.MYI >> /tmp/myisamchk_log.txt	
-```
+myisamchk /var/lib/mysql/Abtelefoniertool/bewo_namen.MYI >> /tmp/myisamchk_log.txt	# checks corrupt table
 
-# repairs corrupt table
-```sh
-myisamchk -r /var/lib/mysql/Abtelefoniertool/bewo_namen.MYI													
+myisamchk -r /var/lib/mysql/Abtelefoniertool/bewo_namen.MYI					  # repairs corrupt table								
 ```
 
 ## see also

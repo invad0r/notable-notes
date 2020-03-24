@@ -2,7 +2,7 @@
 tags: [vmware]
 title: govc
 created: '2019-07-30T06:19:49.075Z'
-modified: '2019-12-28T15:55:31.798Z'
+modified: '2020-03-18T16:04:46.659Z'
 ---
 
 # govc
@@ -79,8 +79,15 @@ for i in $(govc find vm -type m | grep -i "node" | cut -d/ -f2); do
 done
 ```
 
-## restart vm
+## vm
 ```sh
+govc vm.info -json ${vm} | jq '.VirtualMachines[].Guest.Net[] | .IpConfig | .IpAddress'
+
+govc vm.info -json ${vm} | jq '.VirtualMachines[]' | grep -o -E '10\.32\.[0-9]{1,3}\.[0-9]{1,3}';
+
+govc vm.info -json $REPLY | jq '.VirtualMachines[].Config.Hardware.Device[] | select(.Key== 2000) | .CapacityInBytes';
+
+# restart vm
 for vm in $(govc find -type m -name "swarm-*.ddev.domain.net"); do
   UUID=$(govc vm.info -json "$vm" | jq -r '.VirtualMachines[].Summary.Config.Uuid');
   echo $vm
@@ -89,7 +96,6 @@ done
 ```
 
 ## tags
-
 ```sh
 govc tags.ls
 
@@ -101,9 +107,8 @@ govc object.collect -json VirtualMachine:vm-365
 ```
 
 ## tasks
-show current vsphere tasks
 ```sh
-govc tasks -n=20 -f
+govc tasks -n=20 -f     # show current vsphere tasks
 ```
 
 ## metrics

@@ -2,7 +2,7 @@
 tags: [bash]
 title: bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2020-03-12T14:07:29.945Z'
+modified: '2020-03-16T17:35:16.830Z'
 ---
 
 # bats
@@ -31,8 +31,47 @@ bats TEST.bats    # running tests
   echo "output = ${output}"
   [ "$status" -eq 0 ]
 }
+
+# needs space betweetn string and {
+# closing } must be on new line
+@test "Check that ls is available" {
+    command -v ls
+}
+
+@test "Check the we have a /tmp directory" {
+  run stat /tmp
+  # standart bash test
+  # $status and $output available
+  echo $output
+  [ $status = 0 ]
+}
+
+@test "Check that total is listed" {
+  run ls -l
+  echo ${lines[0]}
+  [[ ${lines[0]} =~ "total" ]]
+}
+
+
+setup() {
+  source "$BATS_TEST_DIRNAME/../bash_profile"
+  script="$(basename $BATS_TEST_FILENAME)"
+  script="${script%.*}"
+}
+
+@test "get usage: bluegreen-active" {
+  script="$(basename $BATS_TEST_FILENAME)"
+  script="${script%.*}"
+  run "bluegreen-active -h"
+#  echo "output: $output"
+#  echo "status: $status"
+#  echo ${lines[0]}
+#  [ "$status" -eq 0 ]
+  [ "${lines[0]}" = "usage: source $script.sh ENV" ]
+}
 ```
 
 ## see also
 - https://github.com/sstephenson/bats
 - [govmomi/test_helper.bash · GitHub](https://github.com/vmware/govmomi/blob/master/govc/test/test_helper.bash)
+- [engineyard.com/bats-test-command-line-tools](https://www.engineyard.com/blog/bats-test-command-line-tools)

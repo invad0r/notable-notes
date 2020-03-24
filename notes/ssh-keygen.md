@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh-keygen
 created: '2019-07-30T06:19:49.245Z'
-modified: '2020-02-03T07:46:16.577Z'
+modified: '2020-03-23T15:28:52.708Z'
 ---
 
 # ssh-keygen
@@ -21,7 +21,7 @@ modified: '2020-02-03T07:46:16.577Z'
 #  -a rounds          When saving a new-format private key (i.e. an ed25519 key or when the -o flag is set)
 
 
-ssh-keygen           -t rsa -b 4096                  -C "john@example.net"    # generate ssh-key 4096-bit rsa
+ssh-keygen -t rsa -b 4096 -C "john@example.net"    # generate ssh-key 4096-bit rsa
 
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "john@example.net"    # ed25519
 

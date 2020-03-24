@@ -2,11 +2,12 @@
 tags: [bash]
 title: bash getops
 created: '2019-07-30T06:19:49.009Z'
-modified: '2019-07-30T06:22:29.791Z'
+modified: '2020-03-16T18:01:39.254Z'
 ---
 
 # bash getops
 
+## usage
 ```sh
 while getopts u:d:p:f: option; do
   case "${option}" in
@@ -30,3 +31,7 @@ echo $DATE
 echo $PRODUCT
 echo $FORMAT
 ```
+
+## see also
+- [[bash while]]
+- [[bash case]]

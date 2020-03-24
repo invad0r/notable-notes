@@ -2,7 +2,7 @@
 tags: [compiler, java]
 title: javac
 created: '2019-08-21T14:45:10.678Z'
-modified: '2020-03-02T07:06:22.587Z'
+modified: '2020-03-18T15:56:04.364Z'
 ---
 
 # javac
@@ -14,8 +14,10 @@ modified: '2020-03-02T07:06:22.587Z'
 ## usage
 ```sh
 javac -d . Foo.java   # -d specify directory for package
+                      # call via `java foo.Foo`
 ```
 
 ## see also
 - [[java]]
 - [[ocamlc]]
+- [[mvn]]
