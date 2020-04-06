@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: ping
 created: '2019-07-30T06:19:49.207Z'
-modified: '2020-01-16T07:14:10.486Z'
+modified: '2020-03-31T13:35:05.180Z'
 ---
 
 # ping 
@@ -10,7 +10,7 @@ modified: '2020-01-16T07:14:10.486Z'
 > calculates the "Round Trip Time" `RTT` that it takes a packet to reach a host
 
 ## install
-`apt install iputils-ping`
+`apt install iputils-ping` `yum install iputils`
 
 ## usage
 ```sh

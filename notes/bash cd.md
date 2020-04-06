@@ -2,22 +2,19 @@
 tags: [bash/built-in]
 title: bash cd
 created: '2019-08-02T06:42:37.564Z'
-modified: '2020-01-23T08:24:14.897Z'
+modified: '2020-03-25T08:47:11.845Z'
 ---
 
 # bash cd
 
 ## usage
 ```sh
-cd      # move to homedir
-cd ~    # move to ~ expands to homedir `$HOME`
+cd                    # move to homedir
+cd ~                  # move to ~ expands to homedir `$HOME`
 
-cd -    # change to previous dir
-```
+cd -                  # change to previous dir
 
-## shopt
-```sh
-shopt -s cdspell    # correct misspelled dir
+shopt -s cdspell      # correct misspelled dir
 ```
 
 ## see also
@@ -25,3 +22,4 @@ shopt -s cdspell    # correct misspelled dir
 - [[bash dirs]] 
 - [[bash pushd ]] 
 - [[bash pwd]]
+- [[bash redirects]]

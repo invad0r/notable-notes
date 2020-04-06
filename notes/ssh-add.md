@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh-add
 created: '2019-07-30T06:19:49.243Z'
-modified: '2019-11-08T19:21:12.201Z'
+modified: '2020-03-28T09:35:13.333Z'
 ---
 
 # ssh-add
@@ -13,12 +13,15 @@ modified: '2019-11-08T19:21:12.201Z'
 ```sh
 ssh-add ~/.ssh/PRIVATE_KEY
 
-eval "$(ssh-agent -s)"            # add-ssh-key-to-agent
+eval "$(ssh-agent -s)"        # add-ssh-key-to-agent
 
-ssh-add -l        # Lists fingerprints of all identities currently represented by the agent.
+ssh-add -l                    # list fingerprints of all identities currently represented by the agent
 
-ssh-add -L        # Lists public key parameters of all identities currently represented by the agent.
+ssh-add -L                    # list public key parameters of all identities currently represented by the agent
+
+ssh-add -k                    # add keys
 ```
 
 ## see also
+- [[ssh]]
 - [[bash eval]]

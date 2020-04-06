@@ -1,7 +1,7 @@
 ---
 title: kafka
 created: '2019-07-30T06:19:49.147Z'
-modified: '2020-01-20T18:31:23.814Z'
+modified: '2020-03-25T15:17:49.211Z'
 ---
 
 # kafka
@@ -11,6 +11,16 @@ modified: '2020-01-20T18:31:23.814Z'
 unset KAFKA_OPTS    # unset if deployed with -javaagent
 
 cat ./opt/kafka_2.12-2.1.1/config/server.properties | grep "^[^#;]";  # server configuration
+```
+
+## kafka-acl
+```sh
+kafka-acls --authorizer-properties zookeeper.connect=zookeeper-1:2181 \
+  --add --allow-principal User:CN=$FQDN \
+  --operation All --topic '*' --group '*' --transactional-id '*'
+
+kafka-acls --authorizer-properties zookeeper.connect=zookeeper-1:2181 \
+  --list
 ```
 
 ## kafka-topics
