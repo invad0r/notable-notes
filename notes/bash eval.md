@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash eval
 created: '2019-07-30T06:19:49.005Z'
-modified: '2020-01-26T16:58:06.861Z'
+modified: '2020-03-25T08:15:14.378Z'
 ---
 
 # bash eval
@@ -51,3 +51,4 @@ eval $( cut -d ' ' -f 6- /etc/cron.d/repeatme)
 - [The perils of Bash ‘eval’ - .debug - Medium](https://medium.com/dot-debug/the-perils-of-bash-eval-cc5f9e309cae)
 - [[docker-machine]]
 - [[cut]]
+- [[bash exec]]

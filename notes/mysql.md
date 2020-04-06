@@ -2,12 +2,15 @@
 tags: [database]
 title: mysql
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-03-18T15:28:57.045Z'
+modified: '2020-03-26T13:49:49.207Z'
 ---
 
 # mysql
 
-> asdf
+> mysql cli tool
+
+## install
+`yum install mysql`
 
 ## usage
 ```sql
@@ -88,7 +91,11 @@ SELECT * FROM nicetable WHERE somthing=1;
 UPDATE nicetable SET nicefield='VALUE' WHERE somthing=1;
 SELECT * FROM nicetable WHERE somthing=1; #check
 COMMIT;
-ROLLBACK;   -- or if you want to reset changes 
+ROLLBACK;   -- or if you want to reset changes
+
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...); 
 ```
 
 ## see also

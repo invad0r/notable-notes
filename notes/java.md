@@ -2,7 +2,7 @@
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2020-03-18T15:53:23.781Z'
+modified: '2020-03-24T14:30:47.488Z'
 ---
 
 # java
@@ -11,6 +11,15 @@ modified: '2020-03-18T15:53:23.781Z'
 
 ## usage
 ```sh
+java \
+  -Dlogging.level.root=DEBUG \
+  -Dlogging.level.org.springframework.web=DEBUG \
+  -Dlogging.level.org.hibernate=ERROR \
+  -Djavax.net.ssl.trustStorePassword=PASS -jar -Xmx6144m file.jar
+
+mvn spring-boot:run \
+  -Dspring-boot.run.arguments=--spring.main.banner-mode=off,--customArgument=custom
+
 java                                # List all standard options.
 #    -version                           current version
 #    -cp                                class path
@@ -51,6 +60,7 @@ java                                # List all standard options.
 ```
 
 ## see also
+- [[jar]]
 - [[javac]]
 - [[sdk]]
 - [[python]]

@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash debugging
 created: '2019-07-30T06:19:49.021Z'
-modified: '2020-03-16T17:37:15.010Z'
+modified: '2020-03-25T08:35:08.381Z'
 ---
 
 # bash debugging
@@ -16,7 +16,6 @@ ${BASH_SOURCE}
 ${LINENO}
 ${FUNCNAME[0]}
 
-
 # flags
 bash -n SCRIPT.sh     # don't run commands; check for syntax errors only
 set -o noexec         # alternative option set inside script
@@ -27,6 +26,13 @@ set -o verbose        # alternative option set inside script
 bash -x SCRIPT.sh     # echo commands after command-line processing
 set -o xtrace         # alternative option set inside script
 ````
+
+## redirect xtrace to file
+```sh
+#!/usr/bin/env bash
+exec 2>>debug.log
+set -x
+```
 
 ## simple debugger
 ```sh

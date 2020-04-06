@@ -2,7 +2,7 @@
 tags: [linux, regex]
 title: find
 created: '2019-07-30T06:19:49.054Z'
-modified: '2020-01-23T08:25:11.944Z'
+modified: '2020-03-26T13:23:32.347Z'
 ---
 
 # find
@@ -13,12 +13,10 @@ modified: '2020-01-23T08:25:11.944Z'
 find . \( -name '*.txt' -o -name '*.md' \) \! -empty    # .txt or .md files under the current directory that are not empty (> 0 bytes).
 
 find . -iname '*expenses*' # case insensitive way to search for filenames
-```
 
-## `-exec`
-```sh
+
+# `-exec`
 find -exec command {} \;  # escape semicolon to prevent shell from interpreting it
-
 find -exec command {} +   # each result is appended to command and executed afterwards
 
 # argument _ is $0 in the shell; file-names are passed as the positional arguments
@@ -37,21 +35,24 @@ find . -type d -maxdepth 1 \
   -exec bash -c 'pushd $(pwd) >/dev/null; cd {}; git remote get-url origin; popd >/dev/null;' \;
 
 find . -type f -exec chmod 664 '{}' \;
-
 find . -type d -exec chmod ug=rwx,g+s,o=rx '{}' \;
-```
 
-## patterns / regex
-> `-name` uses pattern
-```sh
+
+# patterns / regex .. `-name` uses pattern
 find . -type f -name "[!.]*"    # ignore all dotfiles
 
 find . -type f -name "*.txt"    # only .txt files
-```
 
-> `-regex`
-```sh
+#`-regex`
 find ...
+
+
+# -mtime
+find . -mtime +0    # find files modified greater than 24 hours ago
+find . -mtime 0     # find files modified between now and 1 day ago
+find . -mtime -1    # find files modified less than 1 day ago (SAME AS -mtime 0)
+find . -mtime 1     # find files modified between 24 and 48 hours ago
+find . -mtime +1    # find files modified more than 48 hours ago
 ```
 
 ## see also

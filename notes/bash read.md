@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash read
 created: '2019-07-30T06:19:49.017Z'
-modified: '2020-03-16T17:06:53.106Z'
+modified: '2020-03-25T08:25:05.951Z'
 ---
 
 # bash read
@@ -58,6 +58,7 @@ done < <(find . -print0)
 ```
 
 ## see also
+- [[bash exec]]
 - [[bash mapfile]]
 - [[bash while]]
 - [[bash process substitution]]
