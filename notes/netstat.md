@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: netstat
 created: '2019-08-28T22:19:06.348Z'
-modified: '2020-01-16T07:57:23.069Z'
+modified: '2020-04-08T09:12:47.035Z'
 ---
 
 # netstat
@@ -26,6 +26,8 @@ netstat -tulpn
     #  -n, [--numeric|-n]    Show numerical addresses instead of trying to determine symbolic host, port or user names
 
 netstat -tunapl         # [--all|-a]
+
+netstat -ant
 ```
 
 ## see also
