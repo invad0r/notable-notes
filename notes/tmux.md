@@ -2,7 +2,7 @@
 tags: [linux]
 title: tmux
 created: '2019-07-30T06:19:49.253Z'
-modified: '2020-03-02T12:37:20.153Z'
+modified: '2020-04-07T06:21:16.223Z'
 ---
 
 # tmux
@@ -33,7 +33,7 @@ tmux show-options -s              # show options: server
 :set status-style "bg=red"
 
 tmux join-pane -s 7 -t 6           # move window 7 as pane to window 6
-:join-pane -t :1                   # moves current pante to window target 1
+:join-pane -t :1                   # moves current pane to window target 1
 
 
 tmux new-window -k -n b-g_monitor
@@ -45,7 +45,7 @@ tmux send-keys -t ${window}.2 'docker service ls --filter name=mb-api-' Enter
 tmux set-window-option -t $SESSION:0 automatic-rename off
 
 :movew                      # move window to the next unused number
-:swap-window -s 1 -t 0      # swap -source to -target
+:swap-window -s 1 -t 0      # swap -source SOURCE to -target TARGET
 :swap-window -t -1          # swap current window with next
 ```
 
