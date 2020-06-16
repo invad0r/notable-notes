@@ -2,22 +2,23 @@
 tags: [vmware]
 title: powershell
 created: '2019-07-30T06:19:49.207Z'
-modified: '2020-01-17T07:46:36.724Z'
+modified: '2020-04-16T07:08:45.541Z'
 ---
 
 # powershell
 
 ## usage
 ```sh
+echo $null >> script.bat    # equivalent to `touch script.bat`
+
+
 $myString = @"
 	This is the first line
 	of a very long string. A "here string"
 	lets you to create blocks of text
 	that span several lines.
 	"@
-```
 
-```sh
 # file Get-TimeResult.ps1
 function Get-TimesResult {
   Param ([int]$a,[int]$b)
@@ -28,9 +29,8 @@ function Get-TimesResult {
 # source file
 . ./Get-TimeResult.ps1
 Get-TimeResult -a 6 -b 8
-```
 
-```sh
+
 Foo-Bar | Out-File docker.json -Append  #  write output to file
 ```
 
@@ -48,6 +48,8 @@ gcm       # alias for get-command
 gcm *get* # lists als command that contain get
 
 Get-Command -PSSnapin snapin
+
+(Get-Command docker).Path       # C:\Program Files\Docker\Docker\resources\bin\docker.exe
 ```
 https://www.youtube.com/watch?v=zps_3l0TQDY
 

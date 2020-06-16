@@ -2,10 +2,13 @@
 tags: [buildtool, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2020-03-02T09:18:07.316Z'
+modified: '2020-04-30T06:58:56.274Z'
 ---
 
 # make
+
+> works on the premise that you have specify a dependency, and then a rule to resolve that dependency [stackoverflow](https://stackoverflow.com/a/2209932/2087704)
+> typically convert a main.c file to a main.o file then run `cc main.c`
 
 > `Makefile.am` is a programmer-defined file and is used by `automake` to generate the `Makefile.in` file 
 
@@ -15,42 +18,52 @@ modified: '2020-03-02T09:18:07.316Z'
 ## usage
 
 ```sh
-make -f MyOtherMakefile     # specify other file
+make -p                       # print default macros
 
-make clean                  # run specific target
 
-make -B venv                # always run target
+make TARGET                   # run specific target
+
+make -f MyOtherMakefile       # specify other file
+
+make -B venv                  # always run target
 ```
 
-### target
+### macros / variables
 ```make
-.PHONY : clean      #  telling Make that this is a phony target, that it does not build anything
 
-clean :
-	rm -f *.dat
-```
 
-```make
-clean:
-  @echo "Cleaning up..."    # suppress echoing the actual command place `@` before command
-  rm *.txt
-```
+# Macros that are names of programs (such as CC)
+#   CC       Program to compiling C programs; default is `cc`
+#   LINT     Program to use to run lint on source code; default is `lint`
+#   CPP      Program to running the C preprocessor, with results to standard output; default is `$(CC) -E'
 
-## variables
-- `${CC}` and `$(CC)` are valid references to call `gcc`
-- `:=` operator, also called the `simply expanded variable` to avoid infinite loops
-```make
+# Macros that contain arguments of the programs
+#   CFLAGS        Extra flags to give to the C compiler
+#   CXXFLAGS      Extra flags to give to the C compiler
+#   LINTFLAGS     Extra flags to give to lint
+
 CC := gcc
 CC := ${CC}
+
+# `${CC}` and `$(CC)` are valid references to call `gcc`
+# `:=` operator, also called the `simply expanded variable` to avoid infinite loops
 
 all:
     @echo ${CC}
 ```
 
-## patterns and functions
+### target
+```make
+.PHONY: clean      #  telling Make that this is a phony target, that it does not build anything
+
+clean:
+  @echo "Cleaning up..."    # suppress echoing the actual command place `@` before command
+  rm *.txt
+```
 
 ## see also
 - [[gcc]]
+- [tutorialspoint.com/.../makefile_macros.htm](https://www.tutorialspoint.com/makefile/makefile_macros.htm)
 - [[automake]]
 - [what-how-makefile](https://opensource.com/article/18/8/what-how-makefile)
 - [what-are-makefile-am-and-makefile-in](https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in)

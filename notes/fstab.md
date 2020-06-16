@@ -1,7 +1,7 @@
 ---
 title: fstab
 created: '2020-01-07T08:18:54.224Z'
-modified: '2020-01-07T08:42:22.530Z'
+modified: '2020-05-06T13:23:17.239Z'
 ---
 
 # fstab
@@ -18,6 +18,8 @@ cat /etc/fstab
 ```
 
 ## see also
+- [[fsck]]
+- [[fdisk]]
 - [[findmnt]]
 - [[lvdisplay]]
 - https://wiki.archlinux.org/index.php/fstab

@@ -2,7 +2,7 @@
 tags: [filesystem, linux]
 title: fdisk
 created: '2019-09-02T04:54:15.186Z'
-modified: '2020-01-07T10:16:12.584Z'
+modified: '2020-05-06T13:20:27.534Z'
 ---
 
 # fdisk
@@ -21,4 +21,5 @@ fdisk /dev/sda        # enter command mode
 
 ## see also
 - [[mkfs]]
+- [[fsck]]
 - [[filesystem]]

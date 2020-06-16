@@ -2,7 +2,7 @@
 tags: [linux]
 title: lsof
 created: '2019-07-30T06:19:49.166Z'
-modified: '2020-03-09T10:02:26.821Z'
+modified: '2020-05-05T06:52:43.298Z'
 ---
 
 # lsof
@@ -18,6 +18,8 @@ modified: '2020-03-09T10:02:26.821Z'
 
 lsof -Pi :PORT
 
+lsof -i :80 | grep LISTEN          # lsof command find out what is using port 80
+
 lsof -iTCP
 
 lsof -iUDP
@@ -27,6 +29,7 @@ lsof -i4
 lsof -i6
 
 lsof -w     # ignore warnings; "lsof: no pwd entry for UID 100"
+
 ```
 
 ## see also

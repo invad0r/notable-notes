@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [vim]
 title: vim register
 created: '2019-08-26T07:01:25.352Z'
-modified: '2019-08-26T07:01:29.900Z'
+modified: '2020-04-22T05:45:54.475Z'
 ---
 
 # vim register

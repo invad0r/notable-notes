@@ -2,13 +2,14 @@
 tags: [linux]
 title: mount
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-03-09T10:21:57.473Z'
+modified: '2020-05-06T13:27:14.119Z'
 ---
 
 # mount
 
-## usage
+> mount a filesystem 
 
+## usage
 ```sh
 mount | column -t
 
@@ -18,14 +19,11 @@ mount -v -t nfs4 \
   10.32.23.10:/nfs-server \
   /var/lib/nfs/data
 
-# bind
-# A bind mount is an alternate view of a directory tree.
+# bind - a bind mount is an alternate view of a directory tree
 mount --bind /some/where /else/where
 mount -o bind /some/where /else/where
-```
 
 
-```sh
 mount | mount | grep "^/dev" | awk '{print $1" " $5}'   # filesystem of partitions
 /dev/sda2 ext4
 /dev/sda1 vfat

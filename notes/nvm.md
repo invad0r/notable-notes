@@ -2,7 +2,7 @@
 tags: [javascript, versionmanager]
 title: nvm
 created: '2019-08-20T09:04:00.908Z'
-modified: '2019-08-28T21:59:40.734Z'
+modified: '2020-05-05T07:23:15.312Z'
 ---
 
 # nvm
@@ -26,3 +26,7 @@ nvm exec 4.2 node --version    # run any arbitrary command in a subshell with th
 
 nvm which 5.0                  # get the path to the executable to where it was installed:
 ```
+
+## see also
+- [[node]]
+- [[npm]]

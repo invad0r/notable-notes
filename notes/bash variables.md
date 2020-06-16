@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash variables
 created: '2019-07-30T06:19:49.023Z'
-modified: '2020-01-17T07:53:34.201Z'
+modified: '2020-04-29T07:18:05.455Z'
 ---
 
 # bash variables
@@ -20,7 +20,7 @@ export VARNAME=value         # defines an environment variable (will be availabl
 
 ${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
 ${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
-${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
+${varname:?'message'}        # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
 ${varname:+word}             # if varname exists and isn't null, return word; otherwise return null
 ${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
 

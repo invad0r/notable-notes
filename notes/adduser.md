@@ -1,7 +1,7 @@
 ---
 title: adduser
 created: '2020-03-23T12:12:51.817Z'
-modified: '2020-03-23T12:17:15.950Z'
+modified: '2020-04-29T06:49:57.518Z'
 ---
 
 # adduser
@@ -10,7 +10,9 @@ modified: '2020-03-23T12:17:15.950Z'
 
 ## usage
 ```sh
-adduser USERNAME
+adduser USER
+
+adduser --home USER_HOME --system --group USER
 ```
 
 ## see also

@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-03-11T07:13:06.032Z'
+modified: '2020-05-08T06:30:16.391Z'
 ---
 
 # openssl
@@ -11,6 +11,10 @@ modified: '2020-03-11T07:13:06.032Z'
 
 ## usage
 ```sh
+openssl version -help     # get version options
+openssl version -a        # show all version data
+openssl version -d        # configuration files and certificates location
+
 openssl pkcs12 -in cert.p12 -clcerts -nokeys -out cert.crt
 
 openssl x509   -in cert.crt -text -noout

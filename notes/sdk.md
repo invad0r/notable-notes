@@ -1,21 +1,23 @@
 ---
 tags: [java, versionmanager]
-title: sdkman
+title: sdk
 created: '2019-08-20T08:05:04.309Z'
-modified: '2019-09-27T06:13:42.081Z'
+modified: '2020-04-28T08:46:39.775Z'
 ---
 
-# sdkman
+# sdk
 
-> manage parallel versions of multiple sdk's - formerly known as `gvm` the `Groovy enVironment Manager`
+> `sdkman` manage parallel versions of multiple sdk's - formerly known as `gvm` the `Groovy enVironment Manager`
 
 ## install
-```sh
-curl -s "https://get.sdkman.io" | bash      # lel
-```
+`curl -s "https://get.sdkman.io" | bash`
 
 ## change java
 ```sh
+sdk install java 12.0.2.hs-adpt
+sdk use java 12.0.2.hs-adpt
+sdk current java
+
 sdk ls java
 
 sdk install sbt                     # latest version of sbt
@@ -28,3 +30,4 @@ sdk default java 8.0.222.hs-adpt    # make default
 ## see also
 - [[java]]
 - [[gradle]]
+- [[mvn]]

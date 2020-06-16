@@ -2,20 +2,18 @@
 tags: [linux]
 title: dmesg
 created: '2019-08-28T06:45:42.937Z'
-modified: '2019-08-28T07:24:16.133Z'
+modified: '2020-04-15T06:33:47.825Z'
 ---
 
 # dmesg
 
-> `display message or driver message` is a command on most Unix-like operating systems that prints the message buffer of the kernel.
+> `display message or driver message` prints the message buffer of the kernel
 
-## log file
-`/var/log/dmesg`
-
-## options
+## usage
 ```sh
-dmesg
+/var/log/dmesg      # log file
 
+dmesg
 
 dmesg -c      # clear dmesg buffer logs
               # -c, --read-clear            read and clear all messages
@@ -48,12 +46,9 @@ dmesg -u      # only userspace messages
 
 # -h, --help     display this help and exit
 # -V, --version  output version information and exit
-```
 
-## facility
-```sh
-dmesg -f user
 
+dmesg -f user     # facility
 #    kern - kernel messages
 #    user - random user-level messages
 #    mail - mail system
@@ -62,12 +57,8 @@ dmesg -f user
 #  syslog - messages generated internally by syslogd
 #     lpr - line printer subsystem
 #    news - network news subsystem
-```
 
-## level
-```sh
-dmesg --level=err,warn
-
+dmesg --level=err,warn      # level
 #  emerg - system is unusable
 #  alert - action must be taken immediately
 #   crit - critical conditions
