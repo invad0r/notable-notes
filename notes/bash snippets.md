@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash snippets
 created: '2019-07-30T06:19:48.991Z'
-modified: '2020-01-10T10:17:09.799Z'
+modified: '2020-05-05T06:52:17.196Z'
 ---
 
 # bash snippets 
@@ -45,7 +45,4 @@ for i in $(find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u); d
     | awk '{print $1;}')";
   done \
   | sort -h -k 2 -r
-
-
-sudo lsof -i :80 | grep LISTEN          # lsof command find out what is using port 80
 ```

@@ -1,7 +1,7 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2020-03-02T07:38:33.933Z'
+modified: '2020-04-16T08:49:54.212Z'
 ---
 
 # ascii
@@ -46,3 +46,4 @@ char | oct | hex |dec
 - [[od]]
 - [Jafrog's dev blog](http://jafrog.com/2013/11/23/colors-in-terminal.html)
 - http://asciimoji.com/
+- [[baudot]]

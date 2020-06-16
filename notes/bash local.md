@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash local
 created: '2019-08-02T06:42:37.608Z'
-modified: '2020-01-10T10:17:09.550Z'
+modified: '2020-05-05T06:53:35.125Z'
 ---
 
 # bash local
@@ -21,4 +21,5 @@ echo "foo: $foo"
 ```
 
 ## see also
-- [[bash function.md]]
+- [[bash function]]
+- [[bash return]]

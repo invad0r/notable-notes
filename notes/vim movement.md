@@ -1,20 +1,20 @@
 ---
+deleted: true
 tags: [vim]
 title: vim movement
 created: '2019-07-30T06:19:49.259Z'
-modified: '2019-08-26T07:00:37.623Z'
+modified: '2020-04-22T05:47:00.221Z'
 ---
 
 # vim movement
 
-
-<kbd>C-b</kbd>   - page backward
-<kbd>C-f</kbd>   - page forward
-
-<kbd>C-d</kbd>   - 1/2 page down
-<kbd>C-u</kbd>   - 1/2 page up
-
 ```sh
+Ctl+b   " page backward
+Ctl+f   " page forward
+
+Ctl+d   " 1/2 page down
+Ctl+u   " 1/2 page up
+
 ''    # move prev curser position
 
 gd    # goto local declartion

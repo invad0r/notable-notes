@@ -1,7 +1,7 @@
 ---
 title: ldd
 created: '2020-02-21T08:19:15.513Z'
-modified: '2020-02-21T08:20:22.670Z'
+modified: '2020-04-24T08:59:00.624Z'
 ---
 
 # ldd
@@ -10,8 +10,15 @@ modified: '2020-02-21T08:20:22.670Z'
 
 ## usage
 ```sh
-ldd file    # prints libraries program needs 
+ldd file    # prints libraries program needs
+
+ldd a.out
+#        linux-vdso.so.1 (0x00007ffe97fc9000)
+#        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f18638a7000)
+#        /lib64/ld-linux-x86-64.so.2 (0x00007f1863a74000)
 ```
 
 ## see also
+- [[ld]]
 - [[gcc]]
+- [[nm]]

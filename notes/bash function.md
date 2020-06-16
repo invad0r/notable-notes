@@ -2,7 +2,7 @@
 tags: [bash/keyword]
 title: bash function
 created: '2019-07-30T06:19:49.008Z'
-modified: '2020-01-16T08:12:55.240Z'
+modified: '2020-05-05T06:53:21.730Z'
 ---
 
 # bash function
@@ -15,11 +15,11 @@ The function refers to passed arguments by position (positional parameters).
 ## usage
 ```sh
 function func() {
-  # ..
+  return 0;
 }
 
 func() (             # run function as subshell
-  # ..
+  echo 0;
 )
 
 
@@ -46,6 +46,8 @@ ${FUNCNAME[@]}    # All functions including parents
 
 ## see also
 - [[bash]]
+- [[bash return]]
+- [[bash local]]
 - [[bash parameter expansion]]
 - [arguments - What is $@ in Bash? - Stack Overflow](https://stackoverflow.com/a/3898681/2087704)
 - [Log-structured storage - Julia Evans](https://jvns.ca/blog/2017/06/11/log-structured-storage/)

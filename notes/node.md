@@ -1,7 +1,7 @@
 ---
 title: node
 created: '2020-02-28T21:20:20.353Z'
-modified: '2020-02-28T22:08:44.878Z'
+modified: '2020-05-05T07:22:49.015Z'
 ---
 
 # node
@@ -18,4 +18,5 @@ node --version
 ```
 
 ## see also
+- [[javascript]]
 - [[npm]]

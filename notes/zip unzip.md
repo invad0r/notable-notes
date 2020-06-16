@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: zip unzip
 created: '2019-09-26T06:55:59.693Z'
-modified: '2020-03-24T13:02:31.415Z'
+modified: '2020-05-13T13:43:33.541Z'
 ---
 
 # zip unzip
@@ -11,12 +11,14 @@ modified: '2020-03-24T13:02:31.415Z'
 
 ## usage
 ```sh
-zip -r 4d-app.zip 4d-app/   # recursively zip all files in dir
+zip -r FILE.zip FILE/   # recursively zip all files in dir
 
-unzip 4d-app-zip
+unzip FILE.zip
 
-unzip -l file.jar     # list files of jar
-zip -d file.jar BOOT-INF/classes/logback/logback-spring.xml # remove file out of jar
+
+unzip -l FILE.jar                                             # list files of jar
+unzip -p FILE.jar META-INF/MANIFEST.MF                        # get current versions
+zip -d FILE.jar BOOT-INF/classes/logback/logback-spring.xml   # remove file out of jar
 ```
 ## see also
 - [[tar]]

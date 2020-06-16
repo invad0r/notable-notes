@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [vim]
 title: vim read
 created: '2019-07-30T06:19:49.260Z'
-modified: '2019-08-26T08:39:44.124Z'
+modified: '2020-04-22T05:45:17.381Z'
 ---
 
 # vim read

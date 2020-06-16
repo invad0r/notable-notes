@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [vim]
 title: vim mark
 created: '2019-09-06T08:25:27.008Z'
-modified: '2019-09-06T09:11:51.944Z'
+modified: '2020-04-22T05:47:23.917Z'
 ---
 
 # vim mark

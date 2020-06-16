@@ -2,7 +2,7 @@
 tags: [javascript, packagemanager]
 title: npm
 created: '2019-07-30T06:19:49.182Z'
-modified: '2020-02-28T22:04:25.557Z'
+modified: '2020-05-05T07:22:37.075Z'
 ---
 
 # npm
@@ -29,6 +29,7 @@ strict-ssl=false
 ```
 
 ## see also
+- [[javascript]]
 - [[node]]
 - [[nexus api]]
 - [Configuring Your .npmrc for an Optimal Node.js Environment](https://nodesource.com/blog/configuring-your-npmrc-for-an-optimal-node-js-environment)

@@ -2,7 +2,7 @@
 tags: [buildtool, java]
 title: mvn
 created: '2019-07-30T06:19:49.084Z'
-modified: '2020-03-18T15:57:21.490Z'
+modified: '2020-05-16T09:28:09.562Z'
 ---
 
 # mvn
@@ -11,11 +11,22 @@ modified: '2020-03-18T15:57:21.490Z'
 
 ## usage
 ```sh
+mvn help:effective-pom -Doutput=effective-pom.xml
+
+mvn help:describe -Dcmd=compile
+
+
+# commands will automatically download and install the plugin if it hasn't already been installed
+mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list            # list  goals by the order they will execute
+mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list-phase      # group goals by phase
+mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list-plugin     # group goals by plugin
+# default: goals search for tasks that run on `mvn deploy`, phases such as `clean` not included
+mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list -Dbuildplan.tasks=clean,install,deploy
+
 mvn clean install
 
 mvn clean deploy        # builds artefact and deploys to repository
 
-mvn help:effective-pom -Doutput=effective-pom.xml
 
 mvn generate-sources
 
@@ -25,12 +36,18 @@ mvn docker:push
 
 mvn dependency:list > dependencies.txt`
 
+# get version from pom.xml
+# --batch-mode
+mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version |grep -Ev "(^\[|Download[ed]\w+:)")'
+mvn --no-transfer-progress org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version |grep -Ev "^\["
+
 
 # encryption
-mvn --encrypt-master-password    # this goes into .m2/settings-security.xml
-    # <settingsSecurity>
-    #   <master>{Pf5qrzaQNlMHkzYc74qsZ+bhvXmZj268aPdygg4YgF0=}</master>
-    # </settingsSecurity>
+mvn --encrypt-master-password    
+#   this goes into .m2/settings-security.xml
+#   <settingsSecurity>
+#     <master>{Pf5qrzaQNlMHkzYc74qsZ+bhvXmZj268aPdygg4YgF0=}</master>
+#   </settingsSecurity>
 mvn --encrypt-password          # server pass
 
 
@@ -49,3 +66,4 @@ mvn package
 - [Maven – Password Encryption](https://maven.apache.org/guides/mini/guide-encryption.html)
 - [[xmllint]]
 - [[sbt]]
+- [[sdk]]

@@ -2,7 +2,7 @@
 tags: [vim]
 title: vim command mode
 created: '2019-09-05T11:15:25.126Z'
-modified: '2020-01-22T09:25:14.693Z'
+modified: '2020-04-23T09:38:14.830Z'
 ---
 
 # vim command mode
@@ -10,78 +10,85 @@ modified: '2020-01-22T09:25:14.693Z'
 ## usage
 
 ```vim
-:h                  ;get help
-:help
-		vim-modes
-```
+:h                        ; get help
+:help vim-modes           ; display help to vim-modes
 
-```vim
-:set
 
-:verbose set filtetype?   #get value of filetype
+:set list                 ; show non printable characters
+:digraphs                 ; list special characters
+
+:verbose set filtetype?   ; get value of filetype
 :scriptnames
 
-:w              # write
-:w !sudo tee %  # write with sudo permission
-
-
-:e file       # edit file
-:wq           # write and quit
+:w                        ; write
+:w !sudo tee %            ; write with sudo permission
+:wq                       ; write and quit
 :x  
-
-:digraphs     # list special characters
 
 :n
 :prev
-:args       # show open files
-```
+:args                     ; show open files
 
-## syntax highlighting
-```vim
-:syntax on
+:syntax on                ; syntax highlighting
 :sy on
-
 :syntax of
 :sy off
-
 :colorscheme <colorscheme>
-:colo delek
-# on osx check avail colorschemes here: /usr/share/vim/vim80/colors
-```
-
-### list buffers
-```sh
-:ls         # list buffers
-:ls!        # list deleted buffers
-```
-
-### edit
-```sh
-:e test.yml           # adds file to buffer
-:e#                   # open prevous file
-:e#3                  # open 3rd last file in buffer
-```
+:colo delek               ; on osx check avail colorschemes here: /usr/share/vim/vim80/colors
 
 
-```sh
-:b buffer-filename    # opens from deleted buffer
+:ls                   ; list buffers
+:ls!                  ; list deleted buffers
 
-:bn         # buffer next
-:bp         # buffer previous
+:e file               ; edit, adds file to buffer
+:e#                   ; open prevous file
+:e#3                  ; open 3rd last file in buffer
 
-:bd         # buffer delete
-:bd 4       # close buffer with id 4
+:b buffer-filename    ; opens from deleted buffer
 
-:bw         # buffer wipe / delete all buffers
-```
+:bn                   ; buffer next
+:bp                   ; buffer previous
+
+:bd                   ; buffer delete
+:bd 4                 ; close buffer with id 4
+
+:bw                   ; buffer wipe / delete all buffers
 
 
-```vi
-:10,100s/^/#/      ; substitute (that reads, from line 10 to 100 substitute line start (^) with a # sign.)
+:tabnew filename		  ; load file in new tab
+:tabm n
+:tabm 2		            ; move current tab to position 2
+:Sexplore
+:Sex                  ; SplitExplore
+:Vex                  ; VerticalExplore
+:Tex                  ; TabExplore    <=== *** this is the one ***
+:Ex
 
-:1, 21 j           ; join line 1 to 21
 
-:%s/\n/ /g         ; subst line break with space
+:10,100s/^/#/         ; substitute (that reads, from line 10 to 100 substitute line start (^) with a # sign.)
+
+:1, 21 j              ; join line 1 to 21
+
+:%s/\n/ /g            ; substitute line break with space
+
+
+:r
+:read
+		name		"insert file content below curser
+		!cmd		"insert cmd content below curser
+
+:r!date     # insert date
+
+
+:reg
+:register
+:di
+:display
+
+:pu
+:put
+:[line]pu[t] [x]	" put text from register x
+:[line]pu[t]! [x]	" put text from register x
 ```
 
 ## see also

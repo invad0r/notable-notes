@@ -1,13 +1,16 @@
 ---
 tags: [c]
-title: c stackoverflow segfault
+title: c segfault
 created: '2019-07-30T07:58:36.045Z'
-modified: '2020-01-21T09:48:06.719Z'
+modified: '2020-04-24T09:28:58.217Z'
 ---
 
-# c stackoverflow segfault
+# c segfault
 
-> A segmentation fault occurs when a program attempts to access a memory location that it is not allowed to access, or attempts to access a memory location in a way that is not allowed (for example, attempting to write to a read-only location, or to overwrite part of the operating system)
+`stackoverflow`
+> segmentation fault occurs when a program attempts to access a memory location that it is not allowed to access, 
+> or attempts to access a memory location in a way that is not allowed 
+> e.g. attempting to write to a read-only location, or to overwrite part of the operating system
 
 ## example
 ```c
