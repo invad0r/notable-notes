@@ -1,8 +1,9 @@
 ---
+pinned: true
 tags: [database]
 title: mysql
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-03-26T13:49:49.207Z'
+modified: '2020-06-24T14:32:59.267Z'
 ---
 
 # mysql
@@ -13,6 +14,11 @@ modified: '2020-03-26T13:49:49.207Z'
 `yum install mysql`
 
 ## usage
+```sh
+mysql -uUSER -pPASS -hHOST -PPORT
+mysql -uUSER -pPASS -hHOST -e "show databases;"
+mysql -uUSER -pPASS -e "SELECT id, name FROM person WHERE name like '%smith%'" database > smiths.txt
+```
 ```sql
 \g        -- go  Send command to mysql server. 
 \G        -- ego Send command to mysql server, display result vertically.

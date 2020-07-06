@@ -2,11 +2,23 @@
 tags: [linux]
 title: xmllint
 created: '2019-08-01T08:20:39.353Z'
-modified: '2019-08-28T22:14:10.589Z'
+modified: '2020-06-24T11:20:35.804Z'
 ---
 
 # xmllint
 
+## install
+`apk add --no-ache libxml2-utils`
+
+## usage
+```sh
+# pom.xml
+xmllint --shell pom.xml <<< 'setns ns=http://maven.apache.org/POM/4.0.0
+cat /ns:project/ns:version/text()'
+```
+```sh
+xmllint --xpath '/*[local-name()="project"]/*[local-name()="version"]/text()' pom.xml   # get version
+```
 
 ## xpath
 ```sh
@@ -55,14 +67,6 @@ xmllint --shell /tmp/namespace.xml
 ### local-name() to match element names
 ```sh
 xmllint --xpath "/*[local-name()='chat']" /tmp/namespace.xml
-```
-
-### pom.xml
-```sh
-xmllint --shell pom.xml <<< 'setns ns=http://maven.apache.org/POM/4.0.0
-cat /ns:project/ns:version/text()'
-
-xmllint --xpath '/*[local-name()="project"]/*[local-name()="version"]/text()' pom.xml
 ```
 
 ## see also

@@ -1,20 +1,24 @@
 ---
+pinned: true
 tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2020-05-06T06:19:10.292Z'
+modified: '2020-07-06T13:34:25.739Z'
 ---
 
 # curl
 
 ## usage
 ```sh
-curl [ifconfig.me|icanhazip.com|ipecho.net/plain|ipinfo.io/ip]    # get public ip
-
 curl -O url                     # write output to a file named
 curl -o filename url            # write output to a file named filename
-curl -L githuburl              # redo the request on the new place/redirect
+
+curl -L githuburl               # redo the request on the new place/redirect
 curl -s url	                    # --silent
+
+select HOST in ifconfig.me icanhazip.com ipecho.net/plain ipinfo.io/ip; do
+  curl $HOST; echo; break;      # get public ip
+done
 
 curl --data "param1=value1&param2=value2" http://hostname/resource
 
@@ -22,11 +26,16 @@ curl --form "fileupload=@filename.txt" http://hostname/resource
 
 curl -XPOST -d @filename http://hostname/resource
 
-curl --proxy "" --include --resolve foo.bar:443:192.200.168.85 https://foo.bar/3ab655     # proxy - resolve for not editing hosts
-
-curl -H 'Cache-Control: no-cache' --url "http://www.example.com"    # cache
+# proxy - resolve for not editing hosts
+curl --proxy "" \
+  --include \
+  --resolve foo.bar:443:192.200.168.85 \
+  https://foo.bar/3ab655
 
 curl --url "http://www.example.com?$(date +%s)"                     # cache breaker
+curl -H 'Cache-Control: no-cache' --url "http://www.example.com"    # cache
+
+curl -H 'Host: foo.com' 1.2.3.4
 
 curl -sS "https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_judo?action=raw" \
   | grep -Eoi "flagIOCmedalist\|\[\[(.+)\]\]" \

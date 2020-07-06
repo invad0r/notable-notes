@@ -1,7 +1,8 @@
 ---
+tags: [versionmanager]
 title: rustup
 created: '2020-02-27T17:03:43.319Z'
-modified: '2020-02-27T18:06:52.352Z'
+modified: '2020-07-06T11:49:33.569Z'
 ---
 
 # rustup
