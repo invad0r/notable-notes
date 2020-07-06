@@ -2,14 +2,14 @@
 tags: [javascript, versionmanager]
 title: nvm
 created: '2019-08-20T09:04:00.908Z'
-modified: '2020-05-05T07:23:15.312Z'
+modified: '2020-07-06T11:47:26.363Z'
 ---
 
 # nvm
 
 > `node version manager` - POSIX-compliant bash script to manage multiple active node.js versions 
 
-
+## usage
 ```sh
 nvm install node # "node" is an alias for the latest version
 

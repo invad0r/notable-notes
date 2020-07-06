@@ -2,10 +2,15 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2020-05-05T07:24:50.671Z'
+modified: '2020-07-02T06:37:25.777Z'
 ---
 
 # c
+
+> general-purpose, procedural language supporting structured programming, lexical variable scope, and recursion, with a static type system
+> imperative procedural language. designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support
+
+## types
 
 [4] basic arithmetic type specifiers 
   
@@ -56,3 +61,4 @@ the modifiers
 
 ## see also
 - [[c variable]]
+- [[sqlite]]

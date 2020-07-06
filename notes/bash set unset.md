@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash set unset
 created: '2019-07-30T06:19:49.019Z'
-modified: '2020-05-06T06:59:37.764Z'
+modified: '2020-07-02T06:55:20.676Z'
 ---
 
 # bash set unset
@@ -40,7 +40,7 @@ set -o noexec           set -n
 set -o noglob           set -f              # disable filename-expansion "globbing"
 set -o nolog
 set -o notify           set -b
-set -o nounset          set -u
+set -o nounset          set -u              # exit when use undeclared variables
 set -o onecmd           set -t
 set -o physical         set -P
 set -o pipefail

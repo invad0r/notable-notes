@@ -2,7 +2,7 @@
 tags: [c]
 title: c include
 created: '2020-04-24T09:16:35.459Z'
-modified: '2020-04-24T09:24:14.325Z'
+modified: '2020-07-02T06:41:23.031Z'
 ---
 
 # c include
@@ -14,6 +14,21 @@ modified: '2020-04-24T09:24:14.325Z'
 #include <filename> /* preprocessor search in -I directories and in predefined directories first, then in the .c file's directory */
 
 #include "filename" /* preprocessor search the source directory first, and then revert to -I and predefined */
+
+
+
+/* 
+  "include-guard" aka "macro-guard", "header-guard" or "file-guard"
+  is a particular construct used to avoid the problem of double inclusion  
+*/
+#ifndef GUARD_H
+#define GUARD_H
+
+struct foo {
+    int member;
+};
+
+#endif /* GUARD_H */
 ```
 ## see also
 - [[gcc]]

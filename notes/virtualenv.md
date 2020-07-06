@@ -2,7 +2,7 @@
 tags: [python]
 title: virtualenv
 created: '2019-07-30T06:19:49.221Z'
-modified: '2020-03-13T14:00:47.514Z'
+modified: '2020-07-06T11:49:03.343Z'
 ---
 
 # virtualenv
@@ -25,5 +25,6 @@ pip install pre-commit
 
 ## see also
 - [[pip]]
-- [python - Virtualenv Command Not Found - Stack Overflow](https://stackoverflow.com/a/36577160)
-- https://virtualenv.pypa.io/en/latest/
+- [Stack Overflow - Virtualenv Command Not Found](https://stackoverflow.com/a/36577160)
+- [virtualenv.pypa.io/en/latest/](https://virtualenv.pypa.io/en/latest/)
+- [[pyenv]]

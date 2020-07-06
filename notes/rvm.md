@@ -2,7 +2,7 @@
 tags: [ruby, versionmanager]
 title: rvm
 created: '2019-08-02T07:23:19.957Z'
-modified: '2020-01-02T12:34:17.824Z'
+modified: '2020-07-06T13:35:54.424Z'
 ---
 
 # rvm
@@ -14,19 +14,14 @@ modified: '2020-01-02T12:34:17.824Z'
 
 ## usage
 ```sh
+bash -l -c "rvm use 2.0.0"      # login shell - rvm is not a function, selecting rubies with 'rvm use ...' will not work.
+
 source ~/.rvm/bin/rvm
 
-rvm list known       # lists installable ruby versions
-rvm list rubies     # list installed rubies
+rvm list known                  # lists installable ruby versions
+rvm list rubies                 # list installed rubies
 
 rvm install 2.0.0
-
-```
-
-## login shell
-> `RVM is not a function, selecting rubies with 'rvm use ...' will not work.`
-```sh
-bash -l -c "rvm use 2.0.0"
 ```
 
 ## see also
