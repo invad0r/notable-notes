@@ -2,73 +2,58 @@
 tags: [container/docker, curl]
 title: docker api
 created: '2019-08-20T09:42:39.909Z'
-modified: '2020-03-02T10:33:56.260Z'
+modified: '2020-07-21T07:44:06.833Z'
 ---
 
 # docker api
 
 ## usage
 ```sh
--H unix:///var/run/docker.sock    # docker-daemon listen unix socket
+-H "unix:///var/run/docker.sock"    # docker-daemon listen unix socket
 
 
-curl --unix-socket /var/run/docker.sock http:/containers/json   # docker start container
+curl --unix-socket /var/run/docker.sock \
+  "http://./debug/pprof/goroutine?debug=2"    # dump stacktrace
+
+curl --unix-socket /var/run/docker.sock \
+  "http://containers/json"                       # start container
 
 
 curl -XPOST --unix-socket /var/run/docker.sock \
-  -d '{"Image":"nginx"}' \
   -H 'Content-Type: application/json' \
-  http://localhost/containers/create
+  -d '{"Image":"nginx"}' \
+  "http://localhost/containers/create"
 #  { "Id": "fcb65c6147efcb6...7d65", "Warnings":null }
 
 curl -XPOST --unix-socket /var/run/docker.sock \
   http://localhost/containers/fcb6...7d65/start
 
 
-# events
-docker run \                                      # run container 
-  -ti \                                           # in interactive-mode
-  -v /var/run/docker.sock:/var/run/docker.sock \  # bind mounts the docker.sock
+# get events from inside container
+docker run -ti \                                  # run in interactive-mode 
+  -v /var/run/docker.sock:/var/run/docker.sock \  # (1) bind mounts the docker.sock
   alpine sh
+curl --unix-socket /var/run/docker.sock \         # (2) get events
+  "http://localhost/events"
 
-# inside container
-curl --unix-socket /var/run/docker.sock http://localhost/events
 
-
-# plugins
 curl -XGET --unix-socket /run/docker/plugins/nfs.sock/Plugin.Activate \
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate
-
-
-Post http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate
-  : dial unix /run/docker/plugins/nfs.sock: connect: connection refused, retr
-
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate
-
-%2F => /
+  "http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate"
 
 curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate  # /VolumeDriver.List
-#  {"Implements": ["VolumeDriver"]}
+  "http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/Plugin.Activate"
 
 curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.List
-#  {"Volumes":[]}
+  "http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.List"
 
 curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Path
-
-EOF
+  "http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Path"
 
 curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Capabilities
-
-{"Capabilities":{"Scope":"local"}}
+  "http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Capabilities"
 
 curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
-  http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Get
-
-EOF
+  "http://%2Frun%2Fdocker%2Fplugins%2Fnfs.sock/VolumeDriver.Get"
 
 
 /Plugin.Activate

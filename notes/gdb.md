@@ -1,7 +1,8 @@
 ---
+tags: [c]
 title: gdb
 created: '2020-04-23T11:34:04.413Z'
-modified: '2020-04-23T11:42:21.168Z'
+modified: '2020-07-21T08:00:07.231Z'
 ---
 
 # gdb

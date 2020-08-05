@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash type
 created: '2019-07-30T06:19:49.022Z'
-modified: '2020-01-15T10:02:48.637Z'
+modified: '2020-07-08T06:52:53.653Z'
 ---
 
 # bash type
@@ -22,6 +22,7 @@ type -F         # list functions
 ```
 
 ## see also
+- [[bash compgen]]
 - [[bash command]]
 - [[which]]
 - [What is the difference between a builtin command and one that is not?](http://unix.stackexchange.com/a/11456)

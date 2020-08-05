@@ -2,7 +2,7 @@
 tags: [linux]
 title: parallel
 created: '2019-07-30T06:19:49.203Z'
-modified: '2019-10-22T04:00:17.615Z'
+modified: '2020-07-28T12:49:33.355Z'
 ---
 
 # parallel
@@ -17,6 +17,7 @@ parallel lame {} -o {.}.mp3 ::: *.wav       # Convert all *.wav to *.mp3 using l
 
 cat bigfile | parallel --pipe grep foobar   # Chop bigfile into 1MB blocks and grep for the string foobar
 
+cat FILE.csv | parallel --eta ./parallel_check-short-links.sh {}
 
 parallel -j2 ./script.sh -- $(echo 1 2 3)
 
@@ -25,26 +26,24 @@ parallel --eta -j8 ./script.sh {} :::: ./foo.csv
 # --bar
 
 
-tail -n +266300 ./OTSDE/shortener_OTSDE_YESPPYESPM_OK.txt.csv | parallel --eta ./parallel_check-short-links.sh {}
-
+CMD | parallel --j 0 --eta bash compress.sh {}
 
 ls *.json | parallel "ls -lh {}"
-```
 
-## input sources
-```sh
-parallel echo ::: cmd line input source
 
-cat input_from_stdin | parallel echo
+# input sources
+parallel echo ::: FILE1 FILE2 FILE3
 
-parallel echo ::: multiple input sources ::: with valuesparallel -a input_from_file echo
+cat INPUT_FILE | parallel echo
 
-parallel echo :::: input_from_file
+parallel echo ::: FILE1 FILE2 FILE3 ::: with valuesparallel -a INPUT_FILE echo
 
-parallel echo :::: input_from_file ::: and command line
+parallel echo :::: INPUT_FILE
+
+parallel echo :::: INPUT_FILE ::: CMD
 ```
 
 ## see also
 - [[xargs]]
-- https://www.gnu.org/software/parallel/parallel_cheat.pdf
-- http://www.shakthimaan.com/posts/2014/11/27/gnu-parallel/news.html
+- [gnu.org/software/parallel/parallel_cheat.pdf](https://www.gnu.org/software/parallel/parallel_cheat.pdf)
+- [shakthimaan.com/.../gnu-parallel/news.html](http://www.shakthimaan.com/posts/2014/11/27/gnu-parallel/news.html)

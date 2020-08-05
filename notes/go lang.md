@@ -1,7 +1,8 @@
 ---
+tags: [go]
 title: go lang
 created: '2020-03-12T12:18:44.154Z'
-modified: '2020-03-12T12:18:50.657Z'
+modified: '2020-07-21T08:02:22.583Z'
 ---
 
 # go lang

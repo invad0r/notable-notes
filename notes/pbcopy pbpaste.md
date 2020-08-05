@@ -2,7 +2,7 @@
 tags: [brew, macos]
 title: pbcopy pbpaste
 created: '2019-07-30T06:19:49.205Z'
-modified: '2020-02-04T12:21:27.526Z'
+modified: '2020-08-03T12:02:22.145Z'
 ---
 
 # pbcopy pbpaste
@@ -15,4 +15,4 @@ pbpaste
 ```
 
 ## see also
--  
+- [[cp]]

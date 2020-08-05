@@ -2,7 +2,7 @@
 tags: [linux]
 title: diff
 created: '2019-07-30T06:19:49.036Z'
-modified: '2020-04-15T08:33:45.153Z'
+modified: '2020-07-27T11:25:04.422Z'
 ---
 
 # diff
@@ -34,4 +34,5 @@ diff -y <(curl -s https://raw.githubusercontent.com/git/git/master/contrib/compl
 ## see also
 - [[bash process substitution]]
 - [[tput]]
+- [[column]]
 - [Make diff Use Full Terminal Width in Side-by-Side Mode - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/9303)

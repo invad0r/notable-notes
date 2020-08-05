@@ -2,7 +2,7 @@
 tags: [network]
 title: ipv4
 created: '2019-09-03T11:30:01.345Z'
-modified: '2019-11-29T11:46:24.510Z'
+modified: '2020-07-17T11:50:16.708Z'
 ---
 
 # ipv4
@@ -20,3 +20,7 @@ AND   1111 1111 . 11111 1111 . 0000 0000 . 0000 0000
       10.10.0.0 to 10.255.255.255 is part of network
 ```
 
+
+## see also
+- [[ip]]
+- [[iptables]]
