@@ -2,7 +2,7 @@
 tags: [c]
 title: c segfault
 created: '2019-07-30T07:58:36.045Z'
-modified: '2020-04-24T09:28:58.217Z'
+modified: '2020-07-24T09:20:42.442Z'
 ---
 
 # c segfault
@@ -26,6 +26,13 @@ int main(int argc, char **argv) {
   char buffer [500];
   strcpy(buffer, argv[1]);
   return 0;
+}
+```
+
+```c
+int *i;
+int main(void) {
+        return*i;
 }
 ```
 

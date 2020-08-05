@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2020-01-23T07:08:28.826Z'
+modified: '2020-07-17T12:15:07.430Z'
 ---
 
 # terraform
@@ -21,6 +21,7 @@ terraform state list        # check state
 
 terraform state show module.path.data.foo.template
 
+terraform state rm module.NAME    # removes all associatd with module.Name
 
 terraform fmt -diff -check  main.tf       # check format configuration
 terraform fmt -write main.tf              # format config

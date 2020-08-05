@@ -2,7 +2,7 @@
 tags: [linux]
 title: mktemp
 created: '2019-11-26T08:13:04.385Z'
-modified: '2020-01-23T08:24:56.081Z'
+modified: '2020-07-21T09:22:15.456Z'
 ---
 
 # mktemp
@@ -12,6 +12,8 @@ modified: '2020-01-23T08:24:56.081Z'
 ## usage
 ```sh
 mktemp -d                   # make a directory instead of a file
+
+cd $(mktemp -d)
 
 mkdtemp -t $(basename $0)  # generate a template (using the supplied prefix and TMPDIR if set) to create a filename template.
 
