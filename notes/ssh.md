@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2020-08-03T12:09:38.940Z'
+modified: '2020-09-01T12:39:03.647Z'
 ---
 
 # ssh
@@ -49,6 +49,21 @@ ssh -n user@host 'uptime'       # don't read from stdin, e.g. in a loop
 # -n    Redirects stdin from `/dev/null` (actually, prevents reading from `stdin`)
 
 ssh -C                          # compress all data stdin, stdout, stderr, x11, tpc, unix-domain-connections via gzip
+```
+
+## session recon/system info
+```sh
+uptime                   # shows current uptime
+w                        # displays whois online
+id
+uname -a                 # shows kernel information
+passwd                   # lets you change your password
+quota -v                 # shows what your disk quota is
+date                     # shows the current date and time
+cal                      # shows the month's calendar
+finger USER              # displays information about user
+last USER                # lists your last logins
+history
 ```
 
 ## see also

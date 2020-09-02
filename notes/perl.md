@@ -1,8 +1,8 @@
 ---
-tags: [perl]
+tags: [perl, webserver]
 title: perl
 created: '2019-07-30T06:19:49.150Z'
-modified: '2020-03-18T15:00:37.374Z'
+modified: '2020-08-12T13:35:15.729Z'
 ---
 
 # perl
@@ -15,6 +15,9 @@ perl -de 42         # starts debugger in repl-mode, 42 has no meaning it's just 
 
 # options:
 #   -v                print version, patchlevel and license
+
+perl -MHTTP::Server::Brick \
+  -e '$s=HTTP::Server::Brick->new(port=>8000); $s->mount("/"=>{path=>"."}); $s->start'
 ```
 
 ```perl

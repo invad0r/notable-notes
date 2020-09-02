@@ -2,7 +2,7 @@
 tags: [linux]
 title: watch
 created: '2019-07-30T06:19:49.265Z'
-modified: '2020-01-16T20:27:46.908Z'
+modified: '2020-09-01T12:46:49.557Z'
 ---
 
 # watch
@@ -31,6 +31,6 @@ done
 
 ## see also
 - [[consul]]
-- [Using the watch command with an argument that contains quotes - Super User](https://superuser.com/a/276706)
 - [[bash while]]
 - [[bash printf]]
+- [Using watch with an argument that contains quotes](https://superuser.com/a/276706)

@@ -2,7 +2,7 @@
 tags: [git]
 title: git remote
 created: '2019-08-23T09:14:38.765Z'
-modified: '2019-11-22T08:52:22.606Z'
+modified: '2020-08-26T06:27:10.879Z'
 ---
 
 # git remote
@@ -35,6 +35,28 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git    # change
 
 git remote set-url origin git@github.com:USERNAME/REPOSITORY.git        # change remote url https -> ssh
 ```
+
+## git setup repository
+```sh
+# setup from empty repository
+git clone git@git.domain.net:user/foo.git
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+# setup existing folder
+git init
+git remote add origin git@git.domain.net:user/foo.git
+git add --all
+git commit
+git push -u origin master
+
+# setup existing Git repository
+git remote add origin git@git.domain.net:user/foo.git
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git    # switch remote url fomr ssh to https
+git push -u origin --all
+git push -u origin --tags
+``` 
 
 ## see also
 - [[git setup repository]]

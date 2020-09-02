@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: iptables
 created: '2019-07-30T06:19:49.083Z'
-modified: '2020-01-30T11:33:26.128Z'
+modified: '2020-08-31T14:06:51.359Z'
 ---
 
 # iptables
@@ -13,7 +13,9 @@ modified: '2020-01-30T11:33:26.128Z'
 ```sh
 iptables -F                   # flush/remove all rules
 
-iptables -L, --list           # list out all of the active rules by specification
+iptables --list               # list all active rules by specification
+iptables -L          
+iptables -L DOCKER-INGRESS    # list only DOCKER-INGRESS chain
 
 
 iptables -S, -list-rules -S  # Print the rules in a chain or all chains

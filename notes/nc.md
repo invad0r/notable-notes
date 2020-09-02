@@ -1,8 +1,8 @@
 ---
-tags: [linux, network]
+tags: [linux, network, webserver]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2020-01-20T08:26:02.804Z'
+modified: '2020-08-12T13:36:27.270Z'
 ---
 
 # nc
@@ -61,6 +61,16 @@ while true; do sudo nc -lp 80 < index.html; done                    # web-server
 
 printf "GET /nc.1 HTTP/1.1\r\nHost: man.openbsd.org\r\n\r\n" | nc man.openbsd.org 80  # get request
 echo -ne "POST /-/reload HTTP/1.0r\nHost: localhostr\n" | nc -i localhost 8080        # post request
+
+#!/bin/sh
+echo "why am i like this"
+while [ 1 ]; do 
+  { 
+    echo -ne "HTTP/1.1 200 OK\nContent-Type: text/html; 
+    charset=UTF-8\nServer: netcat\n\n"; 
+    cat index.md | ./wcgow; 
+  } | nc -w 1 -l -N -p 8080; 
+done
 ```
 
 

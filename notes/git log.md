@@ -2,7 +2,7 @@
 tags: [git]
 title: git log
 created: '2019-08-19T13:29:05.856Z'
-modified: '2019-11-21T11:52:20.264Z'
+modified: '2020-08-26T06:25:41.714Z'
 ---
 
 # git log
@@ -24,12 +24,9 @@ git log HEAD..origin/master   # see where origin/master branch has diverged
                               # "git and have 1 and 1 different commits each, respectively"
 
 git log --oneline --graph --decorate    # An overview with references labels and history graph. One commit er line.
-```
 
-## pretty format
-```sh
-alias glg='git log \
-  --graph \
+# pretty format
+alias glg='git log --graph
   --pretty=format:"%Cred%h%Creset \
   -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" \
   --abbrev-commit'

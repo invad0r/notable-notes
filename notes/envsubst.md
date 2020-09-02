@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: envsubst
 created: '2020-04-24T11:43:39.417Z'
-modified: '2020-05-05T07:25:02.711Z'
+modified: '2020-08-31T09:34:40.585Z'
 ---
 
 # envsubst

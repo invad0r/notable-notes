@@ -1,8 +1,8 @@
 ---
-tags: [packagemanager]
+tags: [packagemanager, rust]
 title: cargo
 created: '2020-02-27T16:59:23.781Z'
-modified: '2020-02-27T19:02:48.110Z'
+modified: '2020-08-31T09:30:40.481Z'
 ---
 
 # cargo

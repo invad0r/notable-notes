@@ -2,7 +2,7 @@
 tags: [ruby]
 title: ruby
 created: '2019-07-30T06:19:49.226Z'
-modified: '2020-01-02T13:02:51.594Z'
+modified: '2020-08-26T11:19:22.015Z'
 ---
 
 # ruby 
@@ -52,7 +52,8 @@ ruby -ryaml -rjson -e 'puts YAML.dump(JSON.load(ARGF))' < file.yml > file.json  
 
  ## see also
  - [[irb]]
- - https://hashrocket.com/blog/posts/ruby-on-the-command-line
+ - [hashrocket.com/blog/posts/ruby-on-the-command-line](https://hashrocket.com/blog/posts/ruby-on-the-command-line)
  - [[python]]
  - [[yaml]]
+ - [[brew]]
 

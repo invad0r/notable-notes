@@ -2,7 +2,7 @@
 tags: [packagemanager]
 title: nix
 created: '2020-06-16T08:44:19.067Z'
-modified: '2020-06-16T08:58:11.399Z'
+modified: '2020-08-26T07:57:28.042Z'
 ---
 
 # nix
@@ -43,3 +43,4 @@ nix-env --rollback
 ```
 ## see also
 - [[brew]]
+- [[apt]]

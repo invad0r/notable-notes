@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [coreutils, macos]
 title: rm
 created: '2019-08-22T07:14:59.460Z'
-modified: '2020-08-03T12:12:53.381Z'
+modified: '2020-09-01T12:43:12.459Z'
 ---
 
 # rm

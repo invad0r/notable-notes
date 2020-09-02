@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: which
 created: '2020-01-15T09:27:59.855Z'
-modified: '2020-03-16T16:29:10.742Z'
+modified: '2020-08-31T09:31:33.555Z'
 ---
 
 # which

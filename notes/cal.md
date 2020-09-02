@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: cal
 created: '2020-06-08T08:22:58.962Z'
-modified: '2020-07-21T08:01:00.873Z'
+modified: '2020-08-31T09:33:42.539Z'
 ---
 
 # cal

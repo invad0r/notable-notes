@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2020-03-12T14:06:12.748Z'
+modified: '2020-08-26T11:19:02.844Z'
 ---
 
 # brew
@@ -16,11 +16,9 @@ modified: '2020-03-12T14:06:12.748Z'
 ```sh
 brew list
 
-
 brew search PACKAGE
 
 brew search gnu       # list possible installed gnu utils
-
 
 brew update           # update brew itself
 brew up               # alias for update
@@ -30,7 +28,6 @@ brew upgrade PACKAGE
 brew cleanup -s       # Scrub the cache, including downloads 
                       # -n, --dry-run  
                       # -v, --verbose
-
 
 brew doctor           # check your system for potential problems
 
@@ -49,8 +46,7 @@ brew install
   mkcert
   bash-completion
 
-
-# an `extension` to brew that allows management of `graphical applications`
+# cask - extension to brew allowing management of gui apps
 brew cask
 
 brew cask install CASK
@@ -62,8 +58,7 @@ brew cask create my-cask           # create-cask
 
 ls /usr/local/Caskroom             # ls installed caskes
 
-
-# adds more repos to the list of formulae that brew tracks, updates, and installs from
+# tap - adds more repos to the list of formulae that brew tracks, updates, and installs from
 brew tap                     # list tapped repositories
 
 brew tap tapname             # add tap
@@ -75,9 +70,11 @@ brew tap caskroom/cask       # get cask
 
 ## see also
 - [caskroom.github.io/search](https://caskroom.github.io/search)
-- [How to install and use GNU Grep in osx](https://apple.stackexchange.com/questions/193288/how-to-install-and-use-gnu-grep-in-osx)
-- [How to replace Mac OS X utilities with GNU core utilities](https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities)
-- [How to use GNU sed on Mac OS X - stackoverflow.com](https://stackoverflow.com/questions/30003570/how-to-use-gnu-sed-on-mac-os-x)
-- [Updating Your Shell with Homebrew - John D. Jameson](https://johndjameson.com/blog/updating-your-shell-with-homebrew/)
-- [How to update bash on Mac OS X Yosemite - superuser.com](https://superuser.com/questions/857250/how-to-update-bash-on-mac-os-x-yosemite)
+- [how to install and use gnu grep in macos](https://apple.stackexchange.com/questions/193288/how-to-install-and-use-gnu-grep-in-osx)
+- [how to replace macos utilities with gnu core utilities](https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities)
+- [how to use gnu sed on macos](https://stackoverflow.com/questions/30003570/how-to-use-gnu-sed-on-mac-os-x)
+- [Updating shell with Homebrew](https://johndjameson.com/blog/updating-your-shell-with-homebrew/)
+- [how to update bash on macos](https://superuser.com/questions/857250/how-to-update-bash-on-mac-os-x-yosemite)
+- [[nix]]
+- [[ruby]]
 

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: apt-file
 created: '2020-01-16T07:31:31.148Z'
-modified: '2020-01-16T07:32:04.495Z'
+modified: '2020-08-31T09:36:13.206Z'
 ---
 
 # apt-file

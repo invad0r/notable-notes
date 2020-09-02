@@ -2,7 +2,7 @@
 tags: [macos]
 title: open
 created: '2020-03-16T16:36:43.316Z'
-modified: '2020-03-16T16:41:42.743Z'
+modified: '2020-08-31T09:21:24.266Z'
 ---
 
 # open
@@ -14,6 +14,8 @@ modified: '2020-03-16T16:41:42.743Z'
 open .            # open current dir in Finder
 
 open http://host  # opens the URL in the default browser
+
+open -a KeyboardViewer      # opens keyboardviwer :)
 
 open -a /Applications/TextEdit.app '/Volumes/Macintosh HD/foo.txt'  # opens the document in TextEdit
 
@@ -29,4 +31,4 @@ open 'file://localhost/Volumes/Macintosh HD/Applications/'    # opens that direc
 ```
 
 ## see also
-- [[-]]
+- [[launchctl]]

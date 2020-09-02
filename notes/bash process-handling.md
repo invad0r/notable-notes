@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash process-handling
 created: '2019-07-30T06:19:49.016Z'
-modified: '2020-02-04T12:31:44.873Z'
+modified: '2020-08-06T09:47:43.910Z'
 ---
 
 # bash process-handling
@@ -25,4 +25,4 @@ myCommand &     # runs job in the background and prompts back the shell
 - [[bash wait]]
 - [[bash set]]
 - [Job Control Commands](http://tldp.org/LDP/abs/html/x9644.html)
-
+- [[nohup]]

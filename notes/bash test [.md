@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: 'bash test ['
 created: '2019-07-30T06:19:49.021Z'
-modified: '2020-01-27T07:42:17.995Z'
+modified: '2020-09-01T12:54:46.898Z'
 ---
 
 # bash test [
@@ -12,6 +12,7 @@ modified: '2020-01-27T07:42:17.995Z'
 ## usage
 ```sh
 help test
+help [
 
 # operator
 -a                        # and operator inside a test conditional expression

@@ -2,7 +2,7 @@
 tags: [bash/keyword]
 title: bash for
 created: '2019-07-30T06:19:49.007Z'
-modified: '2019-09-24T06:40:24.344Z'
+modified: '2020-09-01T12:39:41.600Z'
 ---
 
 # bash for
@@ -85,5 +85,6 @@ done
 ```
 
 ## see also
+- [[seq]]
 - [[bash arithmetic expansion]]
 - [Bash "for" loop without a "in foo bar..." part - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/417296/193945)

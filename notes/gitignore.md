@@ -2,7 +2,7 @@
 tags: [git]
 title: gitignore
 created: '2019-08-19T13:48:58.623Z'
-modified: '2019-11-18T13:26:51.224Z'
+modified: '2020-08-26T06:27:29.151Z'
 ---
 
 # gitignore
@@ -20,4 +20,5 @@ modified: '2019-11-18T13:26:51.224Z'
 ```
 
 ## see also
-- 
+- [[git]]
+- [[docker]]

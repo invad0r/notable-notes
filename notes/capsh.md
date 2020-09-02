@@ -1,7 +1,8 @@
 ---
+tags: [container, linux]
 title: capsh
 created: '2020-01-15T09:24:40.443Z'
-modified: '2020-01-17T07:56:58.208Z'
+modified: '2020-08-31T09:34:13.641Z'
 ---
 
 # capsh

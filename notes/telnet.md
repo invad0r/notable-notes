@@ -2,30 +2,26 @@
 tags: [linux, network]
 title: telnet
 created: '2019-07-30T06:19:49.252Z'
-modified: '2019-09-23T06:33:23.864Z'
+modified: '2020-09-01T09:47:38.500Z'
 ---
 
 # telnet
 
+## usage
+```sh
 ## test email
-```sh
 telnet smtp.mydomain.com 25
+    helo your_domain.com
+    mail from:<test@your_domain.com>
+    rcpt to:<to_email@your_domain.com>
+    data
+    From: test@your_domain.com
+    Subject: test mail from command line
 
-helo your_domain.com
-mail from:<test@your_domain.com>
-rcpt to:<to_email@your_domain.com>
-data
-From: test@your_domain.com
-Subject: test mail from command line
+    this is test number 1
+    sent from linux box
+    .
 
-this is test number 1
-sent from linux box
-.
-```
-
-
-
-```sh
 telnet github.com 80
 
 Trying 192.30.253.113...

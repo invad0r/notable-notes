@@ -1,7 +1,7 @@
 ---
 title: nexus api
 created: '2019-11-05T08:23:35.188Z'
-modified: '2020-02-28T22:03:41.652Z'
+modified: '2020-08-26T11:22:22.443Z'
 ---
 
 # nexus api
@@ -9,13 +9,13 @@ modified: '2020-02-28T22:03:41.652Z'
 ## usage
 ```sh
 # getting auth token for npm
-curl -s -X PUT \
-  -H "Accept: application/json" -H "Content-Type:application/json" \
-  --data '{"name": "'${NPM_USER}'", "password": "'${NPM_PASS}'"}' \
-  http://$NPM_URL-/user/org.couchdb.user:${NPM_USER} \
-  | jq -r '.token'
+curl -s -H "Accept: application/json" -H "Content-Type:application/json" \
+  -X PUT --data '{"name": "USER", "password": "PWD"}' \
+  "http://HOST/-/user/org.couchdb.user:USER" | jq -r '.token'
 ```
 
 ## see also
+- [[docker registry api]]
+- [[jq]]
 - [[graylog api]]
 - [[npm]]

@@ -1,7 +1,8 @@
 ---
+tags: [linux, mac]
 title: pgrep
 created: '2020-01-02T14:25:52.057Z'
-modified: '2020-01-02T14:30:39.767Z'
+modified: '2020-08-31T09:35:52.075Z'
 ---
 
 # pgrep

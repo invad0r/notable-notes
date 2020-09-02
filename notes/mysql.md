@@ -1,9 +1,8 @@
 ---
-pinned: true
 tags: [database]
 title: mysql
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-06-24T14:32:59.267Z'
+modified: '2020-08-24T12:24:43.224Z'
 ---
 
 # mysql

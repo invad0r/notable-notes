@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [coreutils]
 title: sort
 created: '2019-07-30T06:19:49.240Z'
-modified: '2020-06-15T09:51:15.284Z'
+modified: '2020-09-01T12:43:12.488Z'
 ---
 
 # sort
@@ -27,7 +27,7 @@ du -d 1 -h      | sort -h                     # order by human readable output
 ```
 
 ## see also
-- [Sort IP Addresses with GNU sort](https://www.madboa.com/geek/sort-addr/)
 - [[du]]
 - [[locale]]
-- [stackoverflow.com/sorting-floats-with-exponents..](https://stackoverflow.com/questions/10311624/sorting-floats-with-exponents-with-sort-g-bash-command)
+- [Sort IP Addresses with GNU sort](https://www.madboa.com/geek/sort-addr/)
+- [stackoverflow.com/sorting-floats-with-exponents](https://stackoverflow.com/questions/10311624/sorting-floats-with-exponents-with-sort-g-bash-command)

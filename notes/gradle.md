@@ -1,8 +1,8 @@
 ---
-tags: [buildtool, java]
+tags: [buildsystem, java]
 title: gradle
 created: '2019-08-20T07:46:19.821Z'
-modified: '2019-09-27T06:21:43.136Z'
+modified: '2020-08-28T06:43:08.919Z'
 ---
 
 # gradle

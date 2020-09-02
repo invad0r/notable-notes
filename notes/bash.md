@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2020-03-25T08:14:55.950Z'
+modified: '2020-08-11T07:08:47.094Z'
 ---
 
 # bash
@@ -48,6 +48,22 @@ $BASH
 $BASH_VERSION           # As a string.
 ${BASH_VERSINFO[@]}     # As an array.
 ${FUNCNAME[@]}          # All functions including parents.
+
+env x='() { :;}; echo vulnerable' bash -c "echo this is a test"       # shell-shock
+
+[ $[ $RANDOM % 6 ] == 0 ] && rm -rf / || echo "click"                 # russian roulette
+
+
+# generate random 32 character alphanumeric string (lowercase only)
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1          
+
+# bash colors
+color=1;
+while [ "$color" -lt "245" ]; do
+  echo -ne "$color: \\033[38;5;${color}mhello\\033[48;5;${color}mworld\\033[0m "
+  [ $(( color % 12 )) -eq "0" ] && { echo ""; }
+  ((color++));
+done
 ```
 
 ## see also

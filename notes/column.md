@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: column
 created: '2020-07-27T11:16:40.585Z'
-modified: '2020-07-27T11:38:41.008Z'
+modified: '2020-08-31T09:34:23.778Z'
 ---
 
 # column

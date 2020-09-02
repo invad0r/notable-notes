@@ -1,7 +1,8 @@
 ---
+tags: [coreutils]
 title: paste
 created: '2020-08-03T11:16:34.527Z'
-modified: '2020-08-03T11:53:51.611Z'
+modified: '2020-09-01T12:43:12.444Z'
 ---
 
 # paste
