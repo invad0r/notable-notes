@@ -1,8 +1,8 @@
 ---
-tags: [cloud, container, container/k8s]
+tags: [container, container/k8s]
 title: gcloud
 created: '2019-07-30T06:19:49.144Z'
-modified: '2019-08-28T08:13:13.917Z'
+modified: '2020-09-01T13:05:41.237Z'
 ---
 
 # gcloud

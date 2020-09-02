@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [coreutils, macos]
 title: ln
 created: '2019-08-28T09:33:38.811Z'
-modified: '2020-01-14T08:45:27.445Z'
+modified: '2020-09-01T12:43:12.389Z'
 ---
 
 # ln

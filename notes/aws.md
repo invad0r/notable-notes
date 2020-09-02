@@ -1,8 +1,7 @@
 ---
-tags: [cloud]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2020-06-10T09:07:12.695Z'
+modified: '2020-09-01T13:05:47.020Z'
 ---
 
 # aws

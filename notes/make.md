@@ -1,8 +1,8 @@
 ---
-tags: [buildtool, c, go]
+tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2020-04-30T06:58:56.274Z'
+modified: '2020-08-28T06:43:08.936Z'
 ---
 
 # make
@@ -27,12 +27,10 @@ make -f MyOtherMakefile       # specify other file
 
 make -B venv                  # always run target
 ```
-
-### macros / variables
+## Makefile
 ```make
-
-
-# Macros that are names of programs (such as CC)
+# macros / variables
+# macros that are names of programs (such as CC)
 #   CC       Program to compiling C programs; default is `cc`
 #   LINT     Program to use to run lint on source code; default is `lint`
 #   CPP      Program to running the C preprocessor, with results to standard output; default is `$(CC) -E'
@@ -50,10 +48,9 @@ CC := ${CC}
 
 all:
     @echo ${CC}
-```
 
-### target
-```make
+
+# target
 .PHONY: clean      #  telling Make that this is a phony target, that it does not build anything
 
 clean:
@@ -62,11 +59,12 @@ clean:
 ```
 
 ## see also
+- [[cmake]]
+- [[automake]]
+- [[bundle rake]]
 - [[gcc]]
 - [tutorialspoint.com/.../makefile_macros.htm](https://www.tutorialspoint.com/makefile/makefile_macros.htm)
-- [[automake]]
 - [what-how-makefile](https://opensource.com/article/18/8/what-how-makefile)
 - [what-are-makefile-am-and-makefile-in](https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in)
 - [confused-about-configure-script-and-makefile-in](https://stackoverflow.com/a/26832773/2087704)
 - [Automation and Make: Introduction](http://swcarpentry.github.io/make-novice/01-intro/index.html)
-- [[bundle rake]]

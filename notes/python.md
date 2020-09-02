@@ -2,7 +2,7 @@
 tags: [python]
 title: python
 created: '2019-07-30T06:19:49.222Z'
-modified: '2020-03-02T07:02:00.594Z'
+modified: '2020-09-01T08:30:56.460Z'
 ---
 
 # python
@@ -14,9 +14,13 @@ python                  # start repl
 python -q               # start repl without version info
 
 
-python -m MODULE                                           # run library module as a script
+python -m MODULE                                            # run library module as a script
 
-python -m json.tool < <(echo '{"foo":"bar", "val": 1}')    # pretty print json
+python3 -m http.server                                      # start web server
+
+python -m json.tool < <(echo '{"foo":"bar", "val": 1}')     # pretty print json
+
+echo STRING | python -m base64       # encode STRING
 
 
 python -c CMD_STRING                                                      # program passed in as string

@@ -1,7 +1,7 @@
 ---
 title: rndc
 created: '2020-07-22T08:47:45.145Z'
-modified: '2020-07-22T08:51:43.991Z'
+modified: '2020-08-05T09:14:09.925Z'
 ---
 
 # rndc
@@ -23,5 +23,6 @@ rndc thaw 10.168.192.in-addr.arpa
 
 ## see also
 - [[named]]
+- [[BIND]]
 - [[dig]]
 

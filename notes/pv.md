@@ -1,7 +1,7 @@
 ---
 title: pv
 created: '2020-01-22T14:05:40.771Z'
-modified: '2020-03-26T11:26:42.479Z'
+modified: '2020-08-21T09:01:28.298Z'
 ---
 
 # pv
@@ -34,6 +34,9 @@ zcat "$INPUT_FILE" | pv --progress --size $(gzip -l $INPUT_FILE | sed -n '2{p;q}
 mysql_import() {
   zcat $2 | pv --progress --size `gzip -l %s | sed -n 2p | awk '{print $2}'` --name '  Importing.. ' | mysql -uuser -ppass $1
 }
+
+
+pv -tpreb /dev/zero | dd of=/dev/mapper/DEVICE bs=128M     # write zeros to device
 ```
 
 ## see
@@ -42,3 +45,4 @@ mysql_import() {
 - [[tar]]
 - [[nc]]
 - [[awk]]
+- [[dd]]

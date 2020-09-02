@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash eval
 created: '2019-07-30T06:19:49.005Z'
-modified: '2020-03-25T08:15:14.378Z'
+modified: '2020-09-01T12:56:39.869Z'
 ---
 
 # bash eval
@@ -40,15 +40,15 @@ cmd=(
 eval "${cmd[@]}"
 
 
-# run cron command from file
-# /etc/cron.d/repeatme
+# run cron command from file /etc/cron.d/repeatme
 # */10 * * * * root program arg1 arg2
 eval $( cut -d ' ' -f 6- /etc/cron.d/repeatme)
 ```
 
 
 ## see also
-- [The perils of Bash ‘eval’ - .debug - Medium](https://medium.com/dot-debug/the-perils-of-bash-eval-cc5f9e309cae)
-- [[docker-machine]]
 - [[cut]]
+- [[crontab]]
 - [[bash exec]]
+- [[docker-machine]]
+- [the perils of bash `eval`](https://medium.com/dot-debug/the-perils-of-bash-eval-cc5f9e309cae)

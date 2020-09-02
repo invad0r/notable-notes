@@ -1,13 +1,13 @@
 ---
-tags: [linux]
+tags: [coreutils]
 title: tee
 created: '2019-07-30T06:19:49.251Z'
-modified: '2020-01-22T15:27:05.796Z'
+modified: '2020-09-01T12:43:12.523Z'
 ---
 
 # tee
 
-> tee -- pipe fitting
+> `tee` - pipe fitting
 
 ## usage
 ```sh
@@ -18,7 +18,8 @@ CMD | tee >(jq -r .data > data.json) >(jq -r .id > id.json) >(jq -r .user > user
 ```
 
 ## see also
-- [[bash redirects]]
+- [[pee]]
 - [[jq]]
 - [[vault]]
+- [[bash redirects]]
 - [[bash process substitution]]

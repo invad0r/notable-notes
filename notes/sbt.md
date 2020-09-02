@@ -1,13 +1,13 @@
 ---
-tags: [buildtool, scala]
+tags: [buildsystem, scala]
 title: sbt
 created: '2019-07-30T06:19:49.228Z'
-modified: '2020-03-02T07:00:34.094Z'
+modified: '2020-08-28T06:47:44.782Z'
 ---
 
 # sbt
 
-> `simple build tool` for scala
+> `simple build tool` for `scala`
 
 ## usage
 ```sh

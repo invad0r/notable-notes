@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [coreutils]
 title: head
 created: '2019-08-21T06:25:10.878Z'
-modified: '2020-01-24T14:35:11.165Z'
+modified: '2020-09-01T12:43:12.360Z'
 ---
 
 # head

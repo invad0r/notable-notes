@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: acid crud
 created: '2019-08-18T16:14:42.254Z'
-modified: '2020-03-31T06:20:59.263Z'
+modified: '2020-08-24T12:24:59.821Z'
 ---
 
 # acid crud

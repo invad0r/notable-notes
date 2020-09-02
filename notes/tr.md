@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [coreutils]
 title: tr
 created: '2019-07-30T06:19:49.255Z'
-modified: '2020-01-24T12:14:59.278Z'
+modified: '2020-09-01T12:43:12.539Z'
 ---
 
 # tr
@@ -27,5 +27,6 @@ EOF
 ```
 
 ## see also
+- [[seq]]
 - [[url encoding]]
 - [[bash parameter expansion]]

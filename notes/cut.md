@@ -1,7 +1,8 @@
 ---
+tags: [coreutils]
 title: cut
 created: '2020-01-26T16:58:23.384Z'
-modified: '2020-01-26T17:00:48.755Z'
+modified: '2020-09-01T12:43:12.283Z'
 ---
 
 # cut

@@ -2,14 +2,14 @@
 tags: [go]
 title: go struct
 created: '2019-07-30T06:19:49.074Z'
-modified: '2019-08-25T20:09:57.041Z'
+modified: '2020-09-01T13:03:03.950Z'
 ---
 
 # go struct
 
 > a struct is a typed collection of fields, usefull for grouping data into records
 
-## initializeing structs
+## initializing structs
 
 ```go
 type Student struct {

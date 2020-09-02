@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: sysctl
 created: '2019-07-30T06:19:49.249Z'
-modified: '2020-02-17T10:52:10.371Z'
+modified: '2020-08-31T09:22:43.875Z'
 ---
 
 # sysctl 
@@ -35,3 +35,4 @@ sysctl -p, --load[=<file>]    # read values from file
 ## see also
 - [[ulimit]]
 - [[dmesg]]
+- [[launchctl]]

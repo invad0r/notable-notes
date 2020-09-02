@@ -2,12 +2,12 @@
 tags: [go]
 title: go func
 created: '2019-07-30T06:19:49.067Z'
-modified: '2019-08-25T20:09:25.745Z'
+modified: '2020-09-01T13:04:13.554Z'
 ---
 
 # go func
 
-> Functions in Go are first class citizens. Function types and function values can be used and passed around just like other values.
+> functions in go are first-class-citizens - function types and function values can be used and passed around just like other values
 
 ### anonymous functions 
 ```go
@@ -74,5 +74,6 @@ func main() {
 }
 ```
 ## see also
+- [[go init]]
 - [Go by Example: Closures](https://gobyexample.com/closures)
 - [Function types and values - Programming.Guide](https://programming.guide/go/function-pointer-type-declaration.html)

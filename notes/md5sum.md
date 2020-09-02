@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [coreutils]
 title: md5sum
 created: '2019-10-11T06:16:32.667Z'
-modified: '2019-12-30T07:33:45.692Z'
+modified: '2020-09-01T12:43:12.413Z'
 ---
 
 # md5sum

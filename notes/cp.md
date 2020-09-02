@@ -1,7 +1,8 @@
 ---
+tags: [coreutils, macos]
 title: cp
 created: '2020-08-03T12:02:25.389Z'
-modified: '2020-08-03T12:08:32.712Z'
+modified: '2020-09-01T12:43:12.269Z'
 ---
 
 # cp

@@ -1,20 +1,21 @@
 ---
-tags: [buildtool, java]
+tags: [buildsystem, java]
 title: mvn
 created: '2019-07-30T06:19:49.084Z'
-modified: '2020-05-16T09:28:09.562Z'
+modified: '2020-09-02T07:24:48.778Z'
 ---
 
 # mvn
 
-> `maven`, Yiddish word meaning `accumulator of knowledge`, began as an attempt to simplify the build processes in the Jakarta Turbine project
+> `maven`, yiddish word meaning `accumulator of knowledge`, began as an attempt to simplify the build processes in the Jakarta Turbine project
 
 ## usage
 ```sh
+# --batch-mode
+
 mvn help:effective-pom -Doutput=effective-pom.xml
 
 mvn help:describe -Dcmd=compile
-
 
 # commands will automatically download and install the plugin if it hasn't already been installed
 mvn fr.jcgay.maven.plugins:buildplan-maven-plugin:list            # list  goals by the order they will execute
@@ -36,11 +37,6 @@ mvn docker:push
 
 mvn dependency:list > dependencies.txt`
 
-# get version from pom.xml
-# --batch-mode
-mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version |grep -Ev "(^\[|Download[ed]\w+:)")'
-mvn --no-transfer-progress org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version |grep -Ev "^\["
-
 
 # encryption
 mvn --encrypt-master-password    
@@ -59,6 +55,12 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app \
   -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 mvn package
+
+# get version from pom.xml
+mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version \
+  | grep -Ev "(^\[|Download[ed]\w+:)"
+mvn --no-transfer-progress org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version \
+  | grep -Ev "^\["
 ```
 
 ## see also

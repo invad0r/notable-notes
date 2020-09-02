@@ -1,8 +1,8 @@
 ---
-tags: [buildtool, java]
+tags: [buildsystem, java]
 title: ant
 created: '2019-08-20T07:46:08.815Z'
-modified: '2020-01-18T06:55:26.902Z'
+modified: '2020-09-02T07:25:18.810Z'
 ---
 
 # ant
@@ -15,6 +15,8 @@ ant -version
 ant compile
 
 ant package
+
+ant hello      # run target: hello
 ```
 
 ## target
@@ -26,9 +28,7 @@ ant package
     </target>
 </project>
 ```
-```sh
-ant hello      # run target: hello
-```
 
 ## see also
 - [[mvn]]
+- [[java]]

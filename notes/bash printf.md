@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash printf
 created: '2019-07-30T06:19:49.208Z'
-modified: '2020-03-16T17:39:23.894Z'
+modified: '2020-09-01T08:18:44.328Z'
 ---
 
 # bash printf
@@ -44,3 +44,4 @@ i=1; sp="/-\|"; echo -n ' '; while :; do printf "\b${sp:i++%${#sp}:1}"; done
 - [[watch]]
 - [[bash arithmetic expansion]]
 - [[bc]]
+- [[echo]]

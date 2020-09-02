@@ -2,7 +2,7 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2020-07-02T06:37:25.777Z'
+modified: '2020-08-31T11:41:08.813Z'
 ---
 
 # c
@@ -10,55 +10,46 @@ modified: '2020-07-02T06:37:25.777Z'
 > general-purpose, procedural language supporting structured programming, lexical variable scope, and recursion, with a static type system
 > imperative procedural language. designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support
 
-## types
+## usage
+```c
+/* 4 basic arithmetic type specifiers (char, int, float, double) and modifiers (signed, unsigned, short, long) */
 
-[4] basic arithmetic type specifiers 
-  
-    char, int, float, double
-    
-the modifiers 
+/* char type */
+char                      /* 1%c            1 byte  -128 to 127 or 0 to 255  */
+signed char               /* 1%c            1 byte  -128 to 127              */
+unsigned char             /* 1%c            1 byte     0 to 255              */
 
-    signed, unsigned, short, long
-    
-
-## char type
-| Type            |	size      |	Value range                                           |
-|--               |--         |--                                                     |
-| `char`          |	1 byte 	  | -128 to 127 or 0 to 255                               |
-| `unsigned char` |	1 byte 	  | 0 to 255                                              |
-| `signed char`   |	1 byte 	  | -128 to 127                                           |
-
-## integer types
-| Type            |	size      |	Value range                                           |
-|--               |--         |--                                                     |
-| `int`           |	2/4 bytes | -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647  |
-| `unsigned int`  |	2/4 bytes | 0 to 65,535 or 0 to 4,294,967,295                     |
-| `short`         |	2 bytes   | -32,768 to 32,767                                     |
-| `unsigned short`|	2 bytes   | 0 to 65,535                                           |
-| `long`          |	8 bytes   | -9223372036854775808 to 9223372036854775807           |
-| `unsigned long` |	8 bytes   | 0 to 18446744073709551615                             |
+/* integer types */
+int                       /* 2/4%d          2/4 bytes  -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647 */
+unsigned int              /* 2/4%u          2/4 bytes        0 to 65,535 or 0 to 4,294,967,295              */
+short int                 /* 2 %hd          2 bytes    -32,768 to 32,767                                    */
+unsigned short            /*                2 bytes          0 to 65,535                                    */
+long int                  /* 4/8%li         8 bytes -9223372036854775808 to 9223372036854775807             */
+long long int             /* 8 %lli         */
+unsigned long int         /* 4%lu           8 bytes                    0 to 18446744073709551615            */
+unsigned long long int    /* 8%llu          */
 
 
-## floating-point types
-|Type           | size    |	Value range           |	Precision         |
-|--             |--       |--                     |--                 |
-| `float`       |	4 byte  |	1.2E-38 to 3.4E+38    |	6 decimal places  |
-| `double`      |	8 byte  |	2.3E-308 to 1.7E+308  |	15 decimal places |
-| `long double` |	10 byte |	3.4E-4932 to 1.1E+4932|	19 decimal places |
+/*    floating-point types      */
+float                     /* 4%f              4 byte   	  1.2E-38 to 3.4E+38     	6 decimal-places  */
+double                    /* 8%lf             8 byte   	 2.3E-308 to 1.7E+308   	15 decimal-places */
+long double               /* 0/12 or 16%Lf    10 byte  	3.4E-4932 to 1.1E+4932  	19 decimal-places */
 
+/* Enumerated types */
+/*    arithmetic types used to define variables that can only assign certain discrete integer value */
 
-## Enumerated types
+/* void type */
+void                    /* void indicates that no value is available.  */
 
-    arithmetic types used to define variables that can only assign certain discrete integer value
+/* derived types */
+/*    Pointer types, Array types, Structure types, Union types, Function types  */
+int **test              /* pointer to a pointer */
+```
 
-## The type void
-
-    void indicates that no value is available.
-
-## Derived types
-
-    Pointer types, Array types, Structure types, Union types, Function types
 
 ## see also
-- [[c variable]]
+- [[asm]]
+- [[wasm]]
+- [[clang]]
+- [[typesystem]]
 - [[sqlite]]

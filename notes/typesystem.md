@@ -1,11 +1,13 @@
 ---
 tags: [c, java, javascript, python]
-title: typing
+title: typesystem
 created: '2019-07-30T06:19:49.256Z'
-modified: '2019-10-23T14:31:40.369Z'
+modified: '2020-08-26T08:21:43.087Z'
 ---
 
-# typing
+# typesystem
+
+>
 
 #### when is type information required ?
 | compiletime | runtime   |  
@@ -32,4 +34,6 @@ haskell        | Strong  | Strong                | Strong          | Strong
 [[javascript]] | Weak    | Weak                  | Weak            | Strong      
 
 ## see also
-- [Strong and weak typing – Programmer's Compendium](https://www.destroyallsoftware.com/compendium/strong-and-weak-typing?share_key=6b0dd1ec18ab6102)
+- [[c]]
+- [softwareengineering.stackexchange.com/questions/333643/what-is-a-type-system](https://softwareengineering.stackexchange.com/questions/333643/what-is-a-type-system)
+- [Strong and weak typing](https://www.destroyallsoftware.com/compendium/strong-and-weak-typing)

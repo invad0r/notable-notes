@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: containerd
 created: '2020-03-12T13:44:44.636Z'
-modified: '2020-03-12T14:04:25.694Z'
+modified: '2020-08-31T09:34:04.242Z'
 ---
 
 # containerd

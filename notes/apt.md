@@ -2,7 +2,7 @@
 tags: [linux, packagemanager]
 title: apt
 created: '2019-07-30T20:20:43.614Z'
-modified: '2020-02-03T12:27:28.199Z'
+modified: '2020-08-26T07:57:38.962Z'
 ---
 
 # apt
@@ -36,3 +36,5 @@ add-apt-repository -r ppa:ian-berke/ppa-drawers
 ## see also
 - [[apt-file]]
 - [[apt-cache]]
+- [[brew]]
+- [[nix]]

@@ -1,19 +1,21 @@
 ---
-tags: [awk, linux]
+tags: [awk]
 title: awk
 created: '2019-07-30T06:19:48.989Z'
-modified: '2020-01-03T07:45:18.447Z'
+modified: '2020-09-01T12:44:02.346Z'
 ---
 
 # awk
 
-> initially developed in 1977 by `A`lfred Aho, Peter `W`einberger, and Brian `K`ernighan
+> domain-specific-language for text processing, data extraction and reporting
+> data-driven scripting language
+> name derived from authors surnames: Alfred Aho, Peter Weinberger, and Brian Kernighan
 
 ### implementation
-- `nawk`   : “new awk”, an evolution of oawk, the original UNIX implementation, used on *BSD and widely available on Linux
+- `nawk`   : `new awk` (evolution of `oawk`), the original unix implementation
 - `mawk`   : a fast implementation that mostly sticks to standard features
-- `gawk`   : the GNU implementation, with many extensions
-- `Busybox`: small, intended for embedded systems, not many features
+- `gawk`   : the gnu implementation, with many extensions
+- `busybox`: small, intended for embedded systems, not many features
 
 ## usage
 ```sh
@@ -42,23 +44,28 @@ awk '{ if( $1 ~ "swarm" && $3 == "alive") { split($2, arr, ":");  print arr[1]} 
 
 
 echo foo.bar.bbaz.com | awk 'BEGIN{FS="."}{print substr($3,2),$1}'
-```
 
-## ip 
-```sh
+
+# usage of arrays
+awk '{array[$5] += $4}END{ for(var in array){ printf("%s: %s GB\n",var, array[var]/1024/1024/1024) } }'
+
+awk '{ node[1]+=$3; node[2]+=$4; node[3]+=$5; node[4]+=$6; }END{ 
+    for(i in node){ printf("elastic-monitor-1-data-%s %s GB\n",i, node[i]/1024) } }'
+
+
+# matching ipv4 pattern
 awk 'BEGIN{ ORS="\n" }{ if ($3 ~ /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/) { print $1} }'
 
 awk 'BEGIN{ NF=NF RS= OFS=+ }{ \
   if ($3 ~ /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/) { \
     gsub(/^[[:space:]]+|[[:space:]]+$/,"",$1); print $1} \
   }'
-```
 
-### csv
-```sh
+
+# reading csv
 awk 'BEGIN {FS=","} ($15 != "") && ($19 == "10mbps SDSL" || $20 == "40mbps SDSL") { print .. }'
 
-awk 'BEGIN{FS=";"; TOTAL=0.00}{ if(NR!=1) {
+awk 'BEGIN{FS=";"; TOTAL=0.00}{ if(NR != 1) {
       gsub(/\./,"");  # remove dot from numbers like 4.000,00
       gsub(/,/,".");  # replace , with . due to locale problems -.-
       TOTAL +=sprintf("%f",$4);
@@ -66,18 +73,14 @@ awk 'BEGIN{FS=";"; TOTAL=0.00}{ if(NR!=1) {
     }
   }END{ printf "%.2f\n",TOTAL }'
 
-awk '{ split($1,swm,"."); split($2,svs,"_"); tmp = svs[1]" "services[swm[1]]; services[swm[1]]=tmp; }END{ 
-    for (i in services) { 
-      n=split(services[i], foo, " ");
-      print i, n, services[i] 
-    }
+awk '{ 
+  split($1,swm,"."); split($2,svs,"_"); tmp = svs[1]" "services[swm[1]]; services[swm[1]]=tmp; }END{ 
+    for (i in services) { n=split(services[i], foo, " "); print i, n, services[i] }
   }'
-```
-## cursor bounce around the terminal
-```sh
+
+# cursor bounce around the terminal
 # Make your cursor bounce around the terminal. The 400000 in the for loop is just a busy delay. Adjust as needed.
-yes $COLUMNS $LINES \
-  |awk 'BEGIN{x=y=e=f=1}{if(x==$1||!x){e*=-1};if(y==$2||!y){f*=-1};x+=e;y+=f;printf "\033[%s;%sH",y,x;for (a=0;a<400000;a++){}}'
+yes $COLUMNS $LINES | awk 'BEGIN{x=y=e=f=1}{if(x==$1||!x){e*=-1};if(y==$2||!y){f*=-1};x+=e;y+=f;printf "\033[%s;%sH",y,x;for (a=0;a<400000;a++){}}'
 ```
 
 ## see also

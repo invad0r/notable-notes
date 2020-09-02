@@ -1,8 +1,8 @@
 ---
-tags: [linux, macos]
+tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2020-07-21T08:01:09.245Z'
+modified: '2020-09-02T07:26:22.488Z'
 ---
 
 # date
@@ -30,12 +30,10 @@ date +"%m-%d-%y_%H-%M"            # formatting
 date +%s                          # get unix timestamp
 
 date +%F_%H-%M                    # 2020-01-30_13-16
-```
 
-```sh
-man strftime
-  # %F    is equivalent to ``%Y-%m-%d''.
-  # %k    is replaced by the hour (24-hour clock) as a decimal number (0-23); single digits are preceded by a blank.
+man strftime                      # get string format
+#   %F    is equivalent to ``%Y-%m-%d''.
+#   %k    is replaced by the hour (24-hour clock) as a decimal number (0-23); single digits are preceded by a blank.
 ```
 
 ## see also

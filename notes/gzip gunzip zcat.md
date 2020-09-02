@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: gzip gunzip zcat
 created: '2019-10-08T06:01:59.458Z'
-modified: '2020-02-04T12:26:45.489Z'
+modified: '2020-09-01T07:18:22.409Z'
 ---
 
 # gzip gunzip zcat
@@ -17,6 +17,7 @@ zcat
 ```
 
 ## see also
+- [[zrun]]
 - [[tar]]
 - [[zip unzip]]
 - [[pigz unpigz]]

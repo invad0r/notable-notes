@@ -2,7 +2,7 @@
 tags: [linux]
 title: man
 created: '2019-07-30T06:19:49.175Z'
-modified: '2020-03-23T12:22:14.251Z'
+modified: '2020-08-25T14:20:12.394Z'
 ---
 
 # man
@@ -77,3 +77,4 @@ man ./nuseradd
 - [Colorized man pages](http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized)
 - [[apropos]]
 - [[whatis]]
+- [[bash help]]

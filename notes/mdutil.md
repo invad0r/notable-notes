@@ -2,12 +2,12 @@
 tags: [macos]
 title: mdutil
 created: '2020-02-04T12:20:33.596Z'
-modified: '2020-02-04T12:31:26.520Z'
+modified: '2020-08-12T12:11:32.077Z'
 ---
 
 # mdutil
 
-> utility to manage macOS Spotlight indexes
+> utility to manage macos spotlight indices
 
 ## usage
 ```sh

@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash arguments
 created: '2019-07-30T06:19:48.991Z'
-modified: '2020-03-16T18:00:09.695Z'
+modified: '2020-08-25T13:56:40.097Z'
 ---
 
 # bash arguments
@@ -67,3 +67,6 @@ echo ${CMD[*]} ${ARGS[*]}
 - [Passing named arguments to shell scripts](https://unix.stackexchange.com/a/204927)
 - [What is the meaning of "${1#*-}"](https://stackoverflow.com/a/41806827)
 - [Parameter expansion [Bash Hackers Wiki]](http://wiki.bash-hackers.org/syntax/pe#substring_removal)
+- [[bash for]]
+- [[bash case]]
+- [[bash shift]]

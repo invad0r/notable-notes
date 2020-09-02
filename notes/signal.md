@@ -1,7 +1,7 @@
 ---
 title: signal
 created: '2020-01-21T09:37:12.241Z'
-modified: '2020-01-21T09:47:26.025Z'
+modified: '2020-09-01T12:49:04.537Z'
 ---
 
 # signal
@@ -11,7 +11,7 @@ modified: '2020-01-21T09:47:26.025Z'
 
 ## usage
 ```sh
-kill -l     # lista signals
+kill -l     # list signals
 ```
 
 ## standard signals
@@ -47,6 +47,8 @@ The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
 
 ## see also
 - [[kill]]
+- [[errno]]
 - [[bash trap]]
+- [[nohup]]
 - [[c stackoverflow segfault]]
-- https://linux.die.net/man/7/signal
+- [linux.die.net/man/7/signal](https://linux.die.net/man/7/signal)

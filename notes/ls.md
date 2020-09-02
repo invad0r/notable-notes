@@ -1,8 +1,8 @@
 ---
-tags: [filesystem, linux, macos]
+tags: [coreutils]
 title: ls
 created: '2019-07-30T06:19:49.165Z'
-modified: '2020-03-16T16:35:20.676Z'
+modified: '2020-09-01T13:04:31.350Z'
 ---
 
 # ls
@@ -49,6 +49,8 @@ ls -l                             # prints file-mode, which consists of entry-ty
 #    s     Socket link
 #    p     FIFO
 #    -     Regular file
+
+ls -lisa
 ```
 
 ## see also

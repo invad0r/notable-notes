@@ -2,13 +2,14 @@
 tags: [linux]
 title: firewall-cmd
 created: '2019-08-23T13:34:33.074Z'
-modified: '2020-01-30T12:20:41.283Z'
+modified: '2020-08-13T13:53:06.264Z'
 ---
 
 # firewall-cmd
 
 > `firewalld` command line client
 
+## usage
 - `firewall-cmd` commands apply to runtime configuration by default 
 - using the `--permanent` flag will establish a persistent configuration.
 
@@ -23,9 +24,6 @@ firewall-cmd --zone=public --add-service=http
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --reload
 ```
-
-## usage
-
 ```sh
 firewall-cmd --state
 
@@ -33,50 +31,38 @@ systemctl status firewalld
 
 
 firewall-cmd --list-all               # print the whole firewalld configuration
-
 firewall-cmd --list-services
-
 firewall-cmd --runtime-to-permanent   # copy the running configuration to the permanent configuration
-```
 
-## zones
-```sh
+# zones
 firewall-cmd --list-all-zones
-
 firewall-cmd --get-default-zone
-
 firewall-cmd --get-zones
-
 firewall-cmd --get-active-zone
-
 firewall-cmd --get-zone-of-interface=docker0
-```
 
-## services
-```sh
+
+# services
 firewall-cmd --set-default-zone=dmz
 firewall-cmd --zone=dmz --add-interface=eth0
-
 firewall-cmd --zone=dmz --add-service=http --permanent
 firewall-cmd --zone=dmz --add-service=https --permanent
-
 firewall-cmd --reload
-```
 
-## add port
-```sh
+
+# add port
 firewall-cmd --zone=public --add-port=9002/tcp --permanent
-
 firewall-cmd --reload
-```
+firewall-cmd --list-porst   # list regular ports
 
-## rich rules
 
-```sh
+# list ports per service
+for s in $(firewall-cmd --list-services); do firewall-cmd --permanent --service "$s" --get-ports; done
+
+
+# rich rules
 firewall-cmd --add-rich-rule
-
 firewall-cmd --list-rich-rules
-
 firewall-cmd --remove-rich-rule
 
 
@@ -99,21 +85,12 @@ firewall-cmd --zone=public --add-rich-rule \
 # To list your current Rich Rules in the public zone:
 firewall-cmd --zone=public --list-rich-rules
 
+firewall-cmd --permanent --zone=public --add-rich-rule='rule family=ipv4 source address=10.32.254.1/24 accept' && firewall-cmd --reload
+firewall-cmd --permanent --zone=public --add-rich-rule='rule family=ipv4 source address=10.10.1.1/24 accept' && firewall-cmd --reload
 
 
-firewall-cmd --permanent --zone=public \
-  --add-rich-rule='rule family=ipv4 source address=10.32.254.1/24 accept' \
-  && firewall-cmd --reload
-
-firewall-cmd --permanent --zone=public \
-  --add-rich-rule='rule family=ipv4 source address=10.10.1.1/24 accept' \
-  && firewall-cmd --reload
-```
-
-## iptables Direct InterfacePermalink
-```sh
+# iptables Direct InterfacePermalink
 firewall-cmd --direct --get-all-chains
-
 firewall-cmd --direct --get-all-rules
 ```
 

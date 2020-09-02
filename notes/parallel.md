@@ -1,13 +1,16 @@
 ---
-tags: [linux]
+tags: [linux, moreutils]
 title: parallel
 created: '2019-07-30T06:19:49.203Z'
-modified: '2020-07-28T12:49:33.355Z'
+modified: '2020-09-01T12:48:23.855Z'
 ---
 
 # parallel
 
-> GNU Parallel is a replacement for xargs and for loops. It can also split a file or a stream into blocks and pass those to commands running in parallel
+> gnu parallel is a replacement for xargs and for loops. It can also split a file or a stream into blocks and pass those to commands running in parallel
+
+## install
+`brew install parallel`
 
 ## usage
 ```sh
@@ -44,6 +47,7 @@ parallel echo :::: INPUT_FILE ::: CMD
 ```
 
 ## see also
+- [[moreutils]]
 - [[xargs]]
 - [gnu.org/software/parallel/parallel_cheat.pdf](https://www.gnu.org/software/parallel/parallel_cheat.pdf)
 - [shakthimaan.com/.../gnu-parallel/news.html](http://www.shakthimaan.com/posts/2014/11/27/gnu-parallel/news.html)

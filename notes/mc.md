@@ -1,7 +1,7 @@
 ---
 title: mc
 created: '2019-09-19T12:03:17.162Z'
-modified: '2020-08-05T07:21:43.205Z'
+modified: '2020-08-05T07:27:46.134Z'
 ---
 
 # mc
@@ -27,3 +27,4 @@ mc mirror PATH BUCKET
 
 ## see also
 - [[aws]]
+- [[rsync]]

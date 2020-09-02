@@ -2,7 +2,7 @@
 tags: [git, heredoc]
 title: git config
 created: '2019-08-01T07:03:58.247Z'
-modified: '2019-11-29T11:39:16.590Z'
+modified: '2020-08-26T06:27:53.752Z'
 ---
 
 # git config
@@ -16,10 +16,9 @@ git config --global user.email "you@example.com"  # Set the e-mail address that 
 git config --global color.ui auto                 # Enable some colorization of Git output. 
 
 git config --list [--local|--global]              # list local/global configuration
-```
 
-## seperate configs per remote
-```sh
+
+# seperate configs per remote
 cat <<EOF > ~/.gitconfig
 [core]
   editor = vim
@@ -30,7 +29,6 @@ cat <<EOF > ~/.gitconfig
 [includeIf "gitdir:~/github.com/"]
   path = ~/.gitconfig-github
 EOF
-
 
 cat <<EOF > ~/.gitconfig-github
 [user]
