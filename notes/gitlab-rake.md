@@ -1,7 +1,8 @@
 ---
+tags: [ruby]
 title: gitlab-rake
 created: '2020-01-03T14:25:36.220Z'
-modified: '2020-01-03T14:28:58.473Z'
+modified: '2020-09-02T17:48:42.752Z'
 ---
 
 # gitlab-rake

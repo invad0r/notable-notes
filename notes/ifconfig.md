@@ -1,7 +1,8 @@
 ---
+tags: [net-tools, network]
 title: ifconfig
 created: '2020-01-16T07:17:37.287Z'
-modified: '2020-01-16T07:22:58.849Z'
+modified: '2020-09-03T06:47:04.727Z'
 ---
 
 # ifconfig

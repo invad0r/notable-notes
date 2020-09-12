@@ -1,11 +1,11 @@
 ---
 tags: [bash/built-in]
-title: 'bash test ['
+title: bash test
 created: '2019-07-30T06:19:49.021Z'
-modified: '2020-09-01T12:54:46.898Z'
+modified: '2020-09-02T13:22:58.281Z'
 ---
 
-# bash test [
+# bash test
 
 > evaluate conditional expression
 
@@ -52,7 +52,8 @@ arg1 -ne arg2             # not equal
 ```
 
 ## see also
-- [[bash arithmetic]]
+- [[bash []]
 - [[bash if]]
+- [[bash arithmetic]]
 - [[which]]
 - [How to check if a variable is set in Bash?](https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash)

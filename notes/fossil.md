@@ -1,7 +1,8 @@
 ---
+tags: [vcs]
 title: fossil
 created: '2020-07-02T06:23:57.933Z'
-modified: '2020-07-02T06:32:31.760Z'
+modified: '2020-09-02T17:47:04.497Z'
 ---
 
 # fossil

@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: baudot
 created: '2020-04-16T08:49:57.649Z'
-modified: '2020-04-16T09:05:05.196Z'
+modified: '2020-09-02T17:49:18.634Z'
 ---
 
 # baudot

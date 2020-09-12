@@ -2,7 +2,7 @@
 tags: [linux]
 title: xxd
 created: '2019-09-04T06:14:01.648Z'
-modified: '2020-01-03T08:39:45.594Z'
+modified: '2020-09-03T09:08:10.650Z'
 ---
 
 # xxd
@@ -23,3 +23,4 @@ xxd -r <<<'0 4a'           # decimal
 - [[url encoding]]
 - [[ascii]]
 - [[od]]
+- [[hexdump]]

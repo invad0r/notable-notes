@@ -1,7 +1,8 @@
 ---
+tags: [tool]
 title: gitlab-backup
 created: '2020-01-03T14:20:17.882Z'
-modified: '2020-01-08T14:33:25.057Z'
+modified: '2020-09-02T18:10:46.482Z'
 ---
 
 # gitlab-backup
@@ -24,3 +25,4 @@ gitlab-rake gitlab:backup:restore BACKUP=TIMESTAMP_NUMBER
 
 ## see also
 - [[gitlab-rake]]
+- [[gitlab-ctl]]

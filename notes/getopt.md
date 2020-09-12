@@ -1,7 +1,8 @@
 ---
+tags: [bash]
 title: getopt
 created: '2020-03-16T18:01:43.018Z'
-modified: '2020-03-16T18:05:21.736Z'
+modified: '2020-09-02T17:27:06.638Z'
 ---
 
 # getopt

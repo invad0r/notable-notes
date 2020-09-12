@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: readlink
 created: '2020-01-14T06:52:48.775Z'
-modified: '2020-01-14T07:01:48.899Z'
+modified: '2020-09-02T17:53:06.452Z'
 ---
 
 # readlink

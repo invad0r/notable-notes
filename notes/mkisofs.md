@@ -1,7 +1,8 @@
 ---
+tags: [filesystem]
 title: mkisofs
 created: '2020-01-03T14:04:32.903Z'
-modified: '2020-01-03T14:04:54.249Z'
+modified: '2020-09-02T17:38:23.684Z'
 ---
 
 # mkisofs

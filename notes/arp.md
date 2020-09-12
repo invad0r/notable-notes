@@ -1,8 +1,8 @@
 ---
-tags: [linux, network]
+tags: [linux, net-tools, network]
 title: arp
 created: '2019-09-03T11:30:41.018Z'
-modified: '2020-01-16T07:46:02.662Z'
+modified: '2020-09-03T06:46:46.356Z'
 ---
 
 # arp

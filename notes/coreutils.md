@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: coreutils
 created: '2020-09-01T07:42:52.948Z'
-modified: '2020-09-01T12:47:20.488Z'
+modified: '2020-09-03T08:56:56.502Z'
 ---
 
 # coreutils
@@ -68,5 +68,7 @@ modified: '2020-09-01T12:47:20.488Z'
 - [[whoami]] - Print effective user id 
 
 ## see also
+- [[bsdmainutils]]
 - [[moreutils]]
+- [[net-tools]]
 - [wiki.debian.org/coreutils](https://wiki.debian.org/coreutils)

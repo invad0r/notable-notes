@@ -1,8 +1,8 @@
 ---
-tags: [container/docker, curl]
+tags: [api, container/docker, curl]
 title: docker registry api
 created: '2019-07-30T06:19:49.043Z'
-modified: '2020-08-26T11:21:02.521Z'
+modified: '2020-09-02T17:29:03.788Z'
 ---
 
 # docker registry api

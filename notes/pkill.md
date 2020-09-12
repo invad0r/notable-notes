@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: pkill
 created: '2020-01-02T14:25:22.992Z'
-modified: '2020-01-21T09:43:31.240Z'
+modified: '2020-09-02T17:52:01.782Z'
 ---
 
 # pkill

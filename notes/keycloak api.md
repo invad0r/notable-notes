@@ -1,7 +1,8 @@
 ---
+tags: [api]
 title: keycloak api
 created: '2020-01-20T19:49:21.872Z'
-modified: '2020-02-03T10:35:10.066Z'
+modified: '2020-09-02T17:29:03.878Z'
 ---
 
 # keycloak api

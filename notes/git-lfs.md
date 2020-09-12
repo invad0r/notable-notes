@@ -1,7 +1,8 @@
 ---
+tags: [vcs]
 title: git-lfs
 created: '2020-02-25T14:57:00.028Z'
-modified: '2020-02-26T08:00:09.282Z'
+modified: '2020-09-02T17:46:56.741Z'
 ---
 
 # git-lfs

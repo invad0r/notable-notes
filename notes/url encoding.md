@@ -1,7 +1,7 @@
 ---
 title: url encoding
 created: '2019-08-21T09:32:17.675Z'
-modified: '2019-09-04T06:17:39.551Z'
+modified: '2020-09-03T09:13:30.181Z'
 ---
 
 # url encoding
@@ -31,8 +31,6 @@ url_decode ()
 
 ## see also
 - [[ascii]]
-- [[ascii character set]]
-- [[curl write-out]]
 - [[xxd]]
 - [[tr]]
-- [how-to-urlencode-data-for-curl-command - stackoverflow.vom](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)
+- [how-to-urlencode-data-for-curl-command](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)

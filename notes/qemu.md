@@ -1,7 +1,8 @@
 ---
+tags: [virtualization]
 title: qemu
 created: '2020-03-13T12:51:22.771Z'
-modified: '2020-03-13T13:46:20.969Z'
+modified: '2020-09-02T18:03:54.387Z'
 ---
 
 # qemu

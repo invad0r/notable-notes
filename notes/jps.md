@@ -1,7 +1,8 @@
 ---
+tags: [java]
 title: jps
 created: '2020-08-27T08:49:45.295Z'
-modified: '2020-08-27T09:33:17.174Z'
+modified: '2020-09-02T17:36:31.688Z'
 ---
 
 # jps

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: infocmp
 created: '2020-04-15T06:27:41.210Z'
-modified: '2020-04-15T06:28:17.791Z'
+modified: '2020-09-02T17:55:35.935Z'
 ---
 
 # infocmp

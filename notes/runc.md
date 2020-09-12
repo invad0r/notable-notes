@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: runc
 created: '2020-03-12T13:59:22.450Z'
-modified: '2020-03-12T14:01:21.692Z'
+modified: '2020-09-02T17:26:09.381Z'
 ---
 
 # runc

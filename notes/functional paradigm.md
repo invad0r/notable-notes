@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: functional paradigm
 created: '2020-06-22T07:38:19.899Z'
-modified: '2020-06-23T06:20:43.236Z'
+modified: '2020-09-02T17:49:28.234Z'
 ---
 
 # functional paradigm

@@ -1,12 +1,13 @@
 ---
+tags: [filesystemd]
 title: fsck
 created: '2020-05-06T13:18:59.979Z'
-modified: '2020-05-06T13:22:54.422Z'
+modified: '2020-09-02T17:30:34.402Z'
 ---
 
 # fsck
 
-> check and repair a Linux file system 
+> check and repair a linux filesystem 
 
 ## usage
 ```sh

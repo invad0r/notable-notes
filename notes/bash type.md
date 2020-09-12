@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash type
 created: '2019-07-30T06:19:49.022Z'
-modified: '2020-07-08T06:52:53.653Z'
+modified: '2020-09-09T08:34:06.260Z'
 ---
 
 # bash type
@@ -19,6 +19,10 @@ type -t type    # single word which is one of `alias`, `keyword`, `function`, `b
 command -V ls   # same as above
 
 type -F         # list functions
+
+type -a time   # all locations containing an executable named
+# time is a shell keyword
+# time is /usr/bin/time
 ```
 
 ## see also
@@ -26,3 +30,4 @@ type -F         # list functions
 - [[bash command]]
 - [[which]]
 - [What is the difference between a builtin command and one that is not?](http://unix.stackexchange.com/a/11456)
+- [https://askubuntu.com/a/1054460/219213](https://askubuntu.com/a/1054460/219213)

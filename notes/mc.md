@@ -1,7 +1,8 @@
 ---
+tags: [tool]
 title: mc
 created: '2019-09-19T12:03:17.162Z'
-modified: '2020-08-05T07:27:46.134Z'
+modified: '2020-09-02T18:10:46.368Z'
 ---
 
 # mc

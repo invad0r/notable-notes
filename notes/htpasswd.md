@@ -1,7 +1,8 @@
 ---
+tags: [cryptography]
 title: htpasswd
 created: '2020-01-10T07:57:18.726Z'
-modified: '2020-01-10T10:13:29.518Z'
+modified: '2020-09-02T18:06:16.844Z'
 ---
 
 # htpasswd

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: pigz unpigz
 created: '2020-01-22T13:43:00.526Z'
-modified: '2020-01-22T14:02:40.455Z'
+modified: '2020-09-02T18:09:40.435Z'
 ---
 
 # pigz unpigz

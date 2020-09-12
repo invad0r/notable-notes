@@ -1,7 +1,7 @@
 ---
 title: dmidecode
 created: '2020-02-04T17:11:08.680Z'
-modified: '2020-02-04T17:14:01.685Z'
+modified: '2020-09-02T17:31:09.906Z'
 ---
 
 # dmidecode
@@ -20,4 +20,4 @@ dmidecode --type BIOS
 ```
 
 ## see also
-- https://linux.die.net/man/8/dmidecode
+- [linux.die.net/man/8/dmidecode](https://linux.die.net/man/8/dmidecode)

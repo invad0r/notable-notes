@@ -1,7 +1,8 @@
 ---
+tags: [tool]
 title: gitlab-runner
 created: '2019-11-18T13:12:49.564Z'
-modified: '2019-12-30T13:12:18.362Z'
+modified: '2020-09-02T18:10:46.447Z'
 ---
 
 # gitlab-runner
@@ -15,3 +16,4 @@ gitlab-runner verify
 
 ## see also
 - [[gitlab api]]
+- [[gitlab-ctl]]

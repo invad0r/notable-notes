@@ -1,7 +1,8 @@
 ---
+tags: [cryptography]
 title: terraform provider tls
 created: '2020-01-23T07:08:31.402Z'
-modified: '2020-01-23T07:23:09.727Z'
+modified: '2020-09-02T18:05:53.810Z'
 ---
 
 # terraform provider tls

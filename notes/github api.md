@@ -1,8 +1,8 @@
 ---
-tags: [go/pkg]
+tags: [api, go/pkg]
 title: github api
 created: '2020-03-16T10:57:25.227Z'
-modified: '2020-03-16T11:10:47.789Z'
+modified: '2020-09-02T17:29:03.816Z'
 ---
 
 # github api

@@ -2,10 +2,12 @@
 tags: [c/header]
 title: stdlib.h
 created: '2020-05-16T12:10:34.736Z'
-modified: '2020-05-16T12:26:33.022Z'
+modified: '2020-09-07T16:56:24.232Z'
 ---
 
 # stdlib.h
+
+> defines four variable types, several macros, and various functions for performing general functions
 
 ## usage
 ```c

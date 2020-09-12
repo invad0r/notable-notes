@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: duckduckgo
 created: '2020-01-23T08:27:54.958Z'
-modified: '2020-01-23T08:28:47.504Z'
+modified: '2020-09-02T18:11:15.931Z'
 ---
 
 # duckduckgo
@@ -14,5 +15,6 @@ modified: '2020-01-23T08:28:47.504Z'
 !man
 !manpage
 ```
+
 ## see also
 - [[firefox]]

@@ -1,7 +1,8 @@
 ---
+tags: [tool]
 title: zookeeper-shell
 created: '2019-09-23T09:47:31.660Z'
-modified: '2020-01-20T18:28:24.436Z'
+modified: '2020-09-02T18:10:46.418Z'
 ---
 
 # zookeeper-shell

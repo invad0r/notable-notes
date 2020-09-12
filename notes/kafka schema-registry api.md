@@ -1,7 +1,8 @@
 ---
+tags: [api]
 title: kafka schema-registry api
 created: '2019-10-02T08:00:24.539Z'
-modified: '2020-02-14T11:28:03.526Z'
+modified: '2020-09-02T17:29:03.858Z'
 ---
 
 # kafka schema-registry api

@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: sort
 created: '2019-07-30T06:19:49.240Z'
-modified: '2020-09-01T12:43:12.488Z'
+modified: '2020-09-07T16:55:54.633Z'
 ---
 
 # sort
@@ -20,10 +20,9 @@ sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4      # sort ip via gnu sort
 
 sort --key 3 -g           # sort by key:3 and general numeric sort for floating point
 
-rpm -q kenerl   | sort -V                     # order by semantic version
+rpm -q kernel   | sort -V                     # order by semantic version
 
 du -d 1 -h      | sort -h                     # order by human readable output
-
 ```
 
 ## see also

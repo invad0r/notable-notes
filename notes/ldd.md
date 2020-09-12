@@ -1,7 +1,8 @@
 ---
+tags: [c]
 title: ldd
 created: '2020-02-21T08:19:15.513Z'
-modified: '2020-04-24T08:59:00.624Z'
+modified: '2020-09-02T17:32:46.272Z'
 ---
 
 # ldd

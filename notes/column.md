@@ -1,8 +1,8 @@
 ---
-tags: [linux, macos]
+tags: [bsdmainutils]
 title: column
 created: '2020-07-27T11:16:40.585Z'
-modified: '2020-08-31T09:34:23.778Z'
+modified: '2020-09-03T08:56:13.072Z'
 ---
 
 # column

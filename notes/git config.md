@@ -1,8 +1,8 @@
 ---
-tags: [git, heredoc]
+tags: [heredoc, vcs]
 title: git config
 created: '2019-08-01T07:03:58.247Z'
-modified: '2020-08-26T06:27:53.752Z'
+modified: '2020-09-02T17:46:46.065Z'
 ---
 
 # git config

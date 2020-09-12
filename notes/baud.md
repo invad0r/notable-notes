@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: baud
 created: '2020-04-16T08:53:03.889Z'
-modified: '2020-04-16T08:55:01.517Z'
+modified: '2020-09-02T17:51:11.665Z'
 ---
 
 # baud

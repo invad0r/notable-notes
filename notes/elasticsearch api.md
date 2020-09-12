@@ -1,8 +1,8 @@
 ---
-tags: [curl, elasticsearch]
+tags: [api, curl, elasticsearch]
 title: elasticsearch api
 created: '2019-09-03T09:09:54.970Z'
-modified: '2020-02-19T13:22:32.628Z'
+modified: '2020-09-02T17:29:03.802Z'
 ---
 
 # elasticsearch api

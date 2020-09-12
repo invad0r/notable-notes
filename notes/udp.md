@@ -2,7 +2,7 @@
 tags: [network]
 title: udp
 created: '2019-07-30T06:19:49.256Z'
-modified: '2019-08-02T07:46:54.556Z'
+modified: '2020-09-03T07:03:30.191Z'
 ---
 
 # udp
@@ -22,3 +22,7 @@ server->client: offer
 client->server: request
 server->client: acknowledge
 ```
+
+## see also
+- [[ipv4]]
+- [[osi model]]

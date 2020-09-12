@@ -1,7 +1,8 @@
 ---
+tags: [api]
 title: kafka rest-proxy api
 created: '2019-10-02T08:00:18.210Z'
-modified: '2020-02-14T11:29:15.671Z'
+modified: '2020-09-02T17:29:03.845Z'
 ---
 
 # kafka rest-proxy api

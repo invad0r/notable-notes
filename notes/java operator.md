@@ -1,7 +1,8 @@
 ---
+tags: [java]
 title: java operator
 created: '2020-06-25T10:46:37.541Z'
-modified: '2020-06-25T11:01:36.939Z'
+modified: '2020-09-02T17:36:31.719Z'
 ---
 
 # java operator

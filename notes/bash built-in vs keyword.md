@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash built-in vs keyword
 created: '2019-08-02T08:47:35.961Z'
-modified: '2020-05-05T06:46:06.166Z'
+modified: '2020-09-09T08:47:03.795Z'
 ---
 
 # bash built-in vs keyword
@@ -44,10 +44,12 @@ foo = bar     # the foo might be a command.
 
 
 ## see also
-- [[bash test []]
-- [[bash compgen.md]]
+- [[bash []]
+- [[bash test]]
+- [[bash compgen]]
 - [[bash time]]
-- [whats-the-difference-between-shell-builtin-and-shell-keyword](https://askubuntu.com/a/590335/219213)
+- [[time]]
 - [[bash variables]]
-- https://twitter.com/UnixToolTip/status/1220040690203348993?s=20
+- [whats-the-difference-between-shell-builtin-and-shell-keyword](https://askubuntu.com/a/590335/219213)
+- [twitter.com/UnixToolTip/status/1220040690203348993](https://twitter.com/UnixToolTip/status/1220040690203348993)
 

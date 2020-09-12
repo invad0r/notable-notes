@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2020-05-05T07:10:13.337Z'
+modified: '2020-09-07T10:37:18.566Z'
 ---
 
 # quotes
@@ -48,15 +48,15 @@ modified: '2020-05-05T07:10:13.337Z'
 
 `Seek God with all your heart; Prayer and fasting; Reading and meditating; - Philip`
 
-`Prepare yourself for the Future that's coming, Not the Future you Wish were coming - Daniel miessler`
+`Prepare yourself for the Future that's coming, Not the Future you Wish were coming. - Daniel Miessler`
  
 `You cannot keep birds from flying over your head, but you can keep them from building a nest in your Hair. - Martin Luther`
 
 `Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy. - proverbs 28,13`
 
-`cela est bien dit, mais il faut cultiver notre jardin. - voltaire`
+`cela est bien dit, mais il faut cultiver notre jardin. - Voltaire`
 
-`Between stimulus and response, there is a space. In that space is our power to choose our response, and in our response lies our growth and our freedom. - victor fankl`
+`Between stimulus and response, there is a space. In that space is our power to choose our response, and in our response lies our growth and our freedom. - Victor Fankl`
 ```
 The vast accumulations of knowledge—or at least of information—deposited by the nineteenth century 
 have been responsible for an equally vast ignorance. When there is so much to be known,

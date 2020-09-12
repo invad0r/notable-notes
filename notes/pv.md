@@ -1,7 +1,8 @@
 ---
+tags: [bash]
 title: pv
 created: '2020-01-22T14:05:40.771Z'
-modified: '2020-08-21T09:01:28.298Z'
+modified: '2020-09-02T17:43:39.647Z'
 ---
 
 # pv

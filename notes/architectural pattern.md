@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: architectural pattern
 created: '2020-03-12T09:08:11.760Z'
-modified: '2020-03-12T09:10:00.045Z'
+modified: '2020-09-02T17:34:53.328Z'
 ---
 
 # architectural pattern
