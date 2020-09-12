@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: cgroup
 created: '2020-02-26T12:44:48.090Z'
-modified: '2020-02-26T12:57:50.390Z'
+modified: '2020-09-02T17:29:30.916Z'
 ---
 
 # cgroup

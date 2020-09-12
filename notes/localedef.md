@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: localedef
 created: '2020-03-03T07:15:49.031Z'
-modified: '2020-03-03T07:19:55.937Z'
+modified: '2020-09-02T17:53:37.263Z'
 ---
 
 # localedef

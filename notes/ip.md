@@ -1,16 +1,16 @@
 ---
-tags: [network]
+tags: [iproute, network]
 title: ip
 created: '2019-09-03T11:51:54.855Z'
-modified: '2020-01-21T23:09:23.256Z'
+modified: '2020-09-03T06:44:17.004Z'
 ---
 
 # ip
+
 > edits and displays the configuration of network interfaces, routing, and tunnels
 
 ## install
 `apt install iproute2`, `yum install iproute`
-
 
 ## usage
 ```sh
@@ -127,6 +127,8 @@ object                    | desc
 - [[netstat]]
 - [[arp]]
 - [[ipv4]]
+- [[net-tools]]
+- [[iproute]]
 - [[net-tools vs iproute]]
 - [[ethtool]]
 - [[iptables]]

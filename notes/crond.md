@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: crond
 created: '2020-01-24T08:58:21.997Z'
-modified: '2020-01-24T09:01:07.741Z'
+modified: '2020-09-02T17:51:21.611Z'
 ---
 
 # crond

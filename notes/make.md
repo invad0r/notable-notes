@@ -2,7 +2,7 @@
 tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2020-08-28T06:43:08.936Z'
+modified: '2020-09-04T12:28:51.863Z'
 ---
 
 # make
@@ -63,6 +63,7 @@ clean:
 - [[automake]]
 - [[bundle rake]]
 - [[gcc]]
+- [[install]]
 - [tutorialspoint.com/.../makefile_macros.htm](https://www.tutorialspoint.com/makefile/makefile_macros.htm)
 - [what-how-makefile](https://opensource.com/article/18/8/what-how-makefile)
 - [what-are-makefile-am-and-makefile-in](https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in)

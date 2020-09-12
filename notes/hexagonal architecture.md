@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: hexagonal architecture
 created: '2020-03-12T09:04:01.445Z'
-modified: '2020-03-12T09:08:08.070Z'
+modified: '2020-09-02T17:34:42.198Z'
 ---
 
 # hexagonal architecture

@@ -1,7 +1,8 @@
 ---
+tags: [filesystem]
 title: growpart
 created: '2020-06-11T11:52:45.675Z'
-modified: '2020-06-11T11:53:41.270Z'
+modified: '2020-09-02T17:30:16.263Z'
 ---
 
 # growpart

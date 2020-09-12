@@ -1,8 +1,8 @@
 ---
-tags: [linux, network]
+tags: [iproute, net-tools, network]
 title: net-tools vs iproute
 created: '2019-07-30T06:19:49.082Z'
-modified: '2020-01-16T07:42:35.981Z'
+modified: '2020-09-03T06:46:29.190Z'
 ---
 
 # net-tools vs iproute
@@ -35,8 +35,8 @@ route add default gw 192.168.1.1                              ip route add defau
 ```
 
 ## see also
-- [[ip]]
-- [[arp]]
+- [[net-tools]]
+- [[iproute]]
 - [[netstat]]
-- [rh_ip_command_cheatsheet_1214_jcs_print.pdf](https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf)
+- [access.redhat.com/ip_cheatsheet.pdf](https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf)
 

@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: sysctl
 created: '2019-07-30T06:19:49.249Z'
-modified: '2020-08-31T09:22:43.875Z'
+modified: '2020-09-03T11:49:48.466Z'
 ---
 
 # sysctl 
@@ -16,23 +16,25 @@ sysctl -a                             # print all
 sysctl vm.swappiness                  # get single value
 
 sysctl -n, --values                   # print only values of a variables
+
 sysctl -n machdep.cpu.brand_string    # get cpu infor on macos: "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz"
 
-sysctl –w {variable-name=value}       # Modify kernel parameter temporarily
 
+sysctl –w VAR_NAME=VALUE              # modify kernel parameter temporarily
+sysctl -w fs.file-max=500000          # increase open file limit to 500000
 sysctl -w vm.max_map_count=262144
 
-cat /proc/sys/vm/swappiness           # same single value
-```
-
-## config
-```sh
-/etc/sysctl.conf              # where sysctl values are loaded at boot time  - modify Kernel parameter for permanent change
 
 sysctl -p, --load[=<file>]    # read values from file
+# config files
+# /etc/sysctl.conf              where sysctl values are loaded at boot time - modify for permanent change
+# /proc/sys/vm/swappiness       same single value
+
+
+
 ```
 
 ## see also
-- [[ulimit]]
+- [[bash ulimit]]
 - [[dmesg]]
 - [[launchctl]]

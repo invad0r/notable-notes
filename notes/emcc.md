@@ -1,7 +1,8 @@
 ---
+tags: [compiler]
 title: emcc
 created: '2020-08-31T13:19:52.268Z'
-modified: '2020-08-31T13:26:27.570Z'
+modified: '2020-09-02T17:22:48.895Z'
 ---
 
 # emcc

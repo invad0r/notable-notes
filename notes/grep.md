@@ -1,8 +1,8 @@
 ---
-tags: [grep, linux]
+tags: [linux]
 title: grep
 created: '2019-07-30T06:19:49.077Z'
-modified: '2020-05-06T06:06:01.098Z'
+modified: '2020-09-02T17:52:01.692Z'
 ---
 
 # grep
@@ -85,6 +85,7 @@ echo "http://foo.net/path/repo.git" | grep -o -P '(?<=https:\/\/|http:\/\/|@).*?
 ```
 
 ## see also
+- [[grepcidr]]
 - [[regex]]
 - [REGEX Cheat Sheet](https://staff.washington.edu/weller/grep.html)
 - [Regular Expressions in grep](http://www.robelle.com/smugbook/regexpr.html)

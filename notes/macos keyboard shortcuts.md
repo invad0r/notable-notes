@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: macos keyboard shortcuts
 created: '2020-08-24T08:09:16.562Z'
-modified: '2020-08-24T08:24:39.390Z'
+modified: '2020-09-02T17:45:42.908Z'
 ---
 
 # macos keyboard shortcuts

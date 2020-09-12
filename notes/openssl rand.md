@@ -1,7 +1,8 @@
 ---
+tags: [cryptography]
 title: openssl rand
 created: '2019-10-11T06:36:15.557Z'
-modified: '2020-02-26T12:52:50.335Z'
+modified: '2020-09-02T18:05:53.740Z'
 ---
 
 # openssl rand

@@ -1,11 +1,13 @@
 ---
+tags: [filesystem]
 title: showmount
 created: '2020-03-03T08:44:22.304Z'
-modified: '2020-03-03T08:45:06.659Z'
+modified: '2020-09-02T18:06:42.106Z'
 ---
 
 # showmount
-> show remote NFS mounts on host
+
+> show remote nfs mounts on host
 
 ## usage
 ```sh

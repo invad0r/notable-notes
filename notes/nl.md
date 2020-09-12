@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: nl
 created: '2020-08-03T11:54:23.348Z'
-modified: '2020-08-03T12:17:46.556Z'
+modified: '2020-09-02T17:52:01.756Z'
 ---
 
 # nl

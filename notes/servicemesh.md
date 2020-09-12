@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: servicemesh
 created: '2020-05-11T06:38:47.231Z'
-modified: '2020-05-11T07:41:23.627Z'
+modified: '2020-09-02T17:44:03.078Z'
 ---
 
 # servicemesh

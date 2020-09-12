@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: dockerd
 created: '2020-01-03T13:18:17.258Z'
-modified: '2020-03-13T13:07:55.549Z'
+modified: '2020-09-02T17:26:40.522Z'
 ---
 
 # dockerd

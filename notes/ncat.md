@@ -1,7 +1,8 @@
 ---
+tags: [network]
 title: ncat
 created: '2020-01-20T07:22:38.491Z'
-modified: '2020-04-09T08:38:22.124Z'
+modified: '2020-09-03T06:23:57.633Z'
 ---
 
 # ncat
@@ -13,7 +14,7 @@ modified: '2020-04-09T08:38:22.124Z'
 ncat -C --ssl host 443    # test a host over SSL
 ```
 ## see also
-- [man7.org/.../ncat.1.html](http://man7.org/linux/man-pages/man1/ncat.1.html)
+- [man7.org/linux/man-pages/man1/ncat](http://man7.org/linux/man-pages/man1/ncat.1.html)
 - [[nmap]]
 - [[nc]]
 

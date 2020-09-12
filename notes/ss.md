@@ -1,8 +1,8 @@
 ---
-tags: [linux, network]
+tags: [iproute, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2020-01-23T12:42:53.409Z'
+modified: '2020-09-03T06:48:08.551Z'
 ---
 
 # ss
@@ -31,3 +31,4 @@ ss -tunapls       # tuna, please!
 ## see also
 - [[netstat]]
 - [[socat]]
+- [[iproute]]

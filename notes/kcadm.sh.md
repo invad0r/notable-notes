@@ -1,7 +1,7 @@
 ---
 title: kcadm.sh
 created: '2020-02-03T09:34:38.160Z'
-modified: '2020-02-03T10:48:12.218Z'
+modified: '2020-09-02T17:32:28.451Z'
 ---
 
 # kcadm.sh
@@ -67,6 +67,6 @@ kcadm.sh get clients/CLIENT_ID/installation/providers/keycloak-oidc-keycloak-jso
 ```
 
 ## see also
-- https://www.keycloak.org/docs/8.0/server_admin/#the-admin-cli
 - [[keycloak api]]
 - [[java]]
+- [keycloak.org/docs/8.0/server_admin/#the-admin-cli](https://www.keycloak.org/docs/8.0/server_admin/#the-admin-cli)

@@ -1,7 +1,8 @@
 ---
+tags: [filesystem]
 title: fstab
 created: '2020-01-07T08:18:54.224Z'
-modified: '2020-05-06T13:23:17.239Z'
+modified: '2020-09-02T17:34:28.006Z'
 ---
 
 # fstab

@@ -1,8 +1,8 @@
 ---
-tags: [linux, network]
+tags: [net-tools, network]
 title: netstat
 created: '2019-08-28T22:19:06.348Z'
-modified: '2020-04-08T09:12:47.035Z'
+modified: '2020-09-03T06:47:49.182Z'
 ---
 
 # netstat

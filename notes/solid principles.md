@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: solid principles
 created: '2020-02-01T08:30:02.163Z'
-modified: '2020-07-21T07:56:58.265Z'
+modified: '2020-09-02T17:44:36.559Z'
 ---
 
 # solid principles

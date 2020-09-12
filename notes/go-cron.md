@@ -1,7 +1,8 @@
 ---
+tags: [go]
 title: go-cron
 created: '2020-03-26T15:24:17.413Z'
-modified: '2020-03-26T15:41:27.285Z'
+modified: '2020-09-02T18:10:03.927Z'
 ---
 
 # go-cron

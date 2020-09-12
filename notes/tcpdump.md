@@ -1,7 +1,8 @@
 ---
+tags: [network]
 title: tcpdump
 created: '2020-01-27T14:43:35.111Z'
-modified: '2020-01-29T08:31:40.036Z'
+modified: '2020-09-02T17:35:17.104Z'
 ---
 
 # tcpdump

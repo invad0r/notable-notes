@@ -1,7 +1,8 @@
 ---
+tags: [ruby]
 title: irb
 created: '2020-01-02T12:47:07.521Z'
-modified: '2020-01-02T13:03:54.207Z'
+modified: '2020-09-02T17:43:08.280Z'
 ---
 
 # irb

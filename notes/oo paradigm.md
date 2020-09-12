@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: oo paradigm
 created: '2020-06-22T07:44:25.123Z'
-modified: '2020-06-24T05:42:25.179Z'
+modified: '2020-09-02T17:37:25.136Z'
 ---
 
 # oo paradigm

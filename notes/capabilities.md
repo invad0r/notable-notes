@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: capabilities
 created: '2020-01-17T07:20:37.598Z'
-modified: '2020-01-20T12:40:13.407Z'
+modified: '2020-09-02T17:34:07.171Z'
 ---
 
 # capabilities

@@ -1,7 +1,8 @@
 ---
+tags: [ocaml]
 title: ocaml
 created: '2020-02-27T18:56:46.683Z'
-modified: '2020-03-02T07:39:07.982Z'
+modified: '2020-09-02T17:45:29.958Z'
 ---
 
 # ocaml

@@ -2,7 +2,7 @@
 tags: [initsystem, linux, systemd]
 title: systemctl
 created: '2019-07-30T06:19:49.250Z'
-modified: '2020-01-17T07:59:03.883Z'
+modified: '2020-09-03T12:28:57.192Z'
 ---
 
 # systemctl
@@ -10,8 +10,11 @@ modified: '2020-01-17T07:59:03.883Z'
 > Query or send control commands to the systemd manager.
 
 ## usage
-
 ```sh
+systemctl --version
+# systemd 219
+# +PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN
+
 systemctl --failed            # list failed units
 
 systemctl --type=service      # list current services

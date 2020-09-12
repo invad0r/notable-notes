@@ -1,12 +1,13 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2020-04-16T08:49:54.212Z'
+modified: '2020-09-05T09:39:22.389Z'
 ---
 
 # ascii
 
-> `american standard code for infromation interchange` - character `encoding` standard for electronic communication
+> `american standard code for infromation interchange` 
+> character `encoding` standard for electronic communication
 
 ## usage
 ```sh
@@ -41,9 +42,8 @@ char | oct | hex |dec
 
 ## see also
 - [[url encoding]]
-- [[ascii character set]]
 - [[xxd]]
 - [[od]]
-- [Jafrog's dev blog](http://jafrog.com/2013/11/23/colors-in-terminal.html)
-- http://asciimoji.com/
 - [[baudot]]
+- [jafrog.com/2013/11/23/colors-in-terminal](http://jafrog.com/2013/11/23/colors-in-terminal.html)
+- [asciimoji.com](http://asciimoji.com/)

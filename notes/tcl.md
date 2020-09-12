@@ -1,12 +1,15 @@
 ---
+tags: [dsl]
 title: tcl
 created: '2020-02-25T07:16:45.951Z'
-modified: '2020-02-26T08:02:40.410Z'
+modified: '2020-09-02T18:15:00.598Z'
 ---
 
 # tcl
 
-> `tcl` - `Tool Command Language`, is an open-source multi-purpose c library which includes a powerful dynamic scripting language
+> `tcl` - `Tool Command Language` - multi-purpose `c` library which includes a powerful dynamic scripting language
+> pronounced "tickle" or "tee cee ell"
+> high-level, general-purpose, interpreted, dynamic programming language
 
 ## install
 `brew cask install tcl`
@@ -20,7 +23,6 @@ puts $tcl_version     # prints tcl version
 
 puts [ls -l]          # square-bracket used for command substitution
 ```
-
 ```tcl
 #!/usr/bin/tclsh
 
@@ -29,5 +31,7 @@ set {variable B} test
 puts $variableA
 puts ${variable B}
 ```
+
 ## see also
-- https://wiki.tcl-lang.org/page/What+is+Tcl
+- [wiki.tcl-lang.org/page/What+is+Tcl](https://wiki.tcl-lang.org/page/What+is+Tcl)
+- [[lua]]

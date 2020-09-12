@@ -1,7 +1,8 @@
 ---
+tags: [java]
 title: jstat
 created: '2020-08-27T09:00:19.267Z'
-modified: '2020-08-27T09:35:27.112Z'
+modified: '2020-09-02T17:36:31.668Z'
 ---
 
 # jstat

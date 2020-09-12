@@ -2,7 +2,7 @@
 tags: [linux, moreutils]
 title: moreutils
 created: '2020-09-01T07:32:18.091Z'
-modified: '2020-09-01T07:42:45.109Z'
+modified: '2020-09-08T08:52:43.706Z'
 ---
 
 # moreutils
@@ -29,4 +29,5 @@ modified: '2020-09-01T07:42:45.109Z'
 
 ## see also
 - [[coreutils]]
+- [[bsdmainutils]]
 - [joeyh.name/code/moreutils/](https://joeyh.name/code/moreutils/)

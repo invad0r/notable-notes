@@ -1,8 +1,8 @@
 ---
-tags: [git]
+tags: [vcs]
 title: git remote
 created: '2019-08-23T09:14:38.765Z'
-modified: '2020-08-26T06:27:10.879Z'
+modified: '2020-09-02T17:46:46.109Z'
 ---
 
 # git remote

@@ -1,7 +1,8 @@
 ---
+tags: [c]
 title: asm
 created: '2019-07-30T06:19:48.988Z'
-modified: '2020-08-31T12:06:51.969Z'
+modified: '2020-09-02T17:33:49.395Z'
 ---
 
 # asm

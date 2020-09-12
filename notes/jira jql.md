@@ -1,12 +1,13 @@
 ---
+tags: [dsl]
 title: jira jql
 created: '2019-09-19T06:12:55.493Z'
-modified: '2019-09-19T14:51:18.429Z'
+modified: '2020-09-02T18:13:40.118Z'
 ---
 
 # jira jql
 
-> JQL stands for JIRA Query Language (not to be confused with Java Query Language)
+> `jql` - `jira query language` (not `java query language`)
 
 ## usage
 
@@ -21,4 +22,4 @@ project = CB AND text ~ "elastic" ORDER BY id DESC
 ```
 
 ## see also
-- https://confluence.atlassian.com/jiracore/blog/2015/07/search-jira-like-a-boss-with-jql
+- [confluence.atlassian.com/blog/search-jira-like-a-boss-with-jql](https://confluence.atlassian.com/jiracore/blog/2015/07/search-jira-like-a-boss-with-jql)

@@ -1,7 +1,8 @@
 ---
+tags: [ruby]
 title: gitlab-rails
 created: '2019-12-30T13:15:51.142Z'
-modified: '2020-01-23T13:46:28.009Z'
+modified: '2020-09-02T17:48:52.203Z'
 ---
 
 # gitlab-rails

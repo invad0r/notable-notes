@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: gitops
 created: '2020-06-23T07:09:33.298Z'
-modified: '2020-06-23T07:10:42.046Z'
+modified: '2020-09-02T17:49:05.583Z'
 ---
 
 # gitops

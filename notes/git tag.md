@@ -1,8 +1,8 @@
 ---
-tags: [git]
+tags: [vcs]
 title: git tag
 created: '2019-08-19T13:40:55.748Z'
-modified: '2019-11-18T13:27:03.600Z'
+modified: '2020-09-02T17:46:46.138Z'
 ---
 
 # git tag
