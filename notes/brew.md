@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2020-08-26T11:19:02.844Z'
+modified: '2020-10-02T14:39:18.088Z'
 ---
 
 # brew
@@ -10,7 +10,7 @@ modified: '2020-08-26T11:19:02.844Z'
 > package manager for macos
 
 ## install
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
 
 ## usage
 ```sh
