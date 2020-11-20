@@ -2,7 +2,7 @@
 tags: [editor]
 title: atom
 created: '2019-07-30T06:19:48.989Z'
-modified: '2020-08-26T06:49:17.415Z'
+modified: '2020-10-14T12:06:57.238Z'
 ---
 
 # atom
@@ -17,11 +17,14 @@ modified: '2020-08-26T06:49:17.415Z'
 
 ## atom package manager
 ```sh
-apm install project-manager
+apm list                      # listinstalled packages
 
-apm install language-terraform
-
-apm install remember-session
+apm install \
+  project-manager remember-session atom-beautify \
+  docker \
+  linter \
+  language-docker \
+  language-terraform terraform-fmt linter-terraform-syntax \
 ```
 
 ## see also

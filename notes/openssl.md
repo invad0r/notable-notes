@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-05-08T06:30:16.391Z'
+modified: '2020-10-26T14:14:19.263Z'
 ---
 
 # openssl
@@ -118,6 +118,8 @@ openssl s_client -connect example.com:993 -showcerts </dev/null 2>/dev/null \
 ## see also
 - [[keytool]]
 - [[p11-kit]]
+- [[keybase]]
+- [[gpg]]
 - [mkcert: valid HTTPS certificates for localhost](https://blog.filippo.io/mkcert-valid-https-certificates-for-localhost/)
 - [OpenSSL CLI HowTo](https://www.madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands)
 - [OpenSSL command cheatsheet – freeCodeCamp.org](https://medium.freecodecamp.org/openssl-command-cheatsheet-b441be1e8c4a)

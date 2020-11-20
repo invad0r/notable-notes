@@ -2,7 +2,7 @@
 tags: [packagemanager, rust]
 title: cargo
 created: '2020-02-27T16:59:23.781Z'
-modified: '2020-09-05T09:35:15.507Z'
+modified: '2020-11-20T22:40:48.880Z'
 ---
 
 # cargo
@@ -31,6 +31,10 @@ cargo doc                     # build documentation for your project with
 cargo publish                 # publish a library to crates.io with 
 
 cargo new hello-rust          # init new project
+
+
+# fun projects
+cargo install gping
 ```
 
 ## see also

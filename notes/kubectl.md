@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2019-12-26T11:32:51.136Z'
+modified: '2020-11-05T12:49:54.136Z'
 ---
 
 # kubectl
@@ -13,58 +13,93 @@ modified: '2019-12-26T11:32:51.136Z'
 
 ## usage
 ```sh
-kubectl get
+kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl
 
-kubectl get nodes
-kubectl get node
+KUBECONFIG
 
-kubectl get all
-
-kubectl get po
-kubectl get pods
-
-kubectl get po kubia-4fm6l -o yaml
-
-kubectl get pod kubia-manual -o yaml > kubectl-get-pod_kubia-manual.yaml
+# merge config
+KUBECONFIG=$HOME/.kube/config:file2:file3 kubectl config view --merge --flatten > \
+  ~/.kube/merged_kubeconfig && mv ~/.kube/merged_kubeconfig ~/.kube/config
 
 
-kubectl cluster-info
+kubectl api-versions                              # get all supported api version
+
+kubectl api-resources --sort-by=name -o wide      # get all objects
+
+kubectl explain --api-version=apps/v1 replicaset
+kubectl explain deployment.metadata
+kubectl explain deployment.spec
+kubectl explain deployment.spec.template.spec.containers --recursive    # 🤩 recursive: get a hierarchical view of the various fields.
 
 
 kubectl config view
+kubectl config view --flatten
+kubectl config view --raw
 
-kubectl config use-context
-
+kubectl config current-context
 kubectl config get-contexts
+kubectl config use-context CONTEXT
+
+
 kubectl config get-clusters
 kubectl config get-contexts
 
 
-kubectl explain po
+kubectl api-resources   # get all resource-names, alias and kinds
+kubectl get
+kubectl get all
+kubectl get po POD_NAME -o yaml
+kubectl get pod
+kubectl get pods
+kubectl get node
+kubectl get nodes
 
+kubectl run echoserver --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+
+kubectl cluster-info
+
+kubectl explain po
 kubectl explain --help
 
 
+STDOUT | kubectl apply -f -
+kubectl apply -f https://HOST/DEPLOYMENT.yaml
+
 kubectl create -f kubia-manual.yaml
 
-
 kubectl scale --replicas=1 kubia
-
 kubectl scale replicationcontroller kubia --replicas=1
 
 
-
 kubectl logs kubia-j582f
-
 kubectl logs kubia-manual -c kubia
 
 kubectl port-forward kubia-manual 8888:8080
 
-kubectl logs kubia-manual -c kubia
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+
+kubectl expose deployment hello-minikube --type=NodePort
+
+kubectl delete deployment hello-minikube
+
+
+# krew plugins
+kubectl krew update
+
+kubectl krew search
+
+kubectl krew install oidc-login     # isntall plugin
+
+kubectl access-matrix               # use plugin to see the level of access user has on namespaces
 ```
 
 ## see also
+- [[kubectx]]
+- [[kubens]]
+- [[kubeseal]]
+- [[kustomize]]
 - [[kubernetes]]
 - [[minikube]]
 - [[gcloud]]
 - [[yml]]
+- [[jsonpath]]

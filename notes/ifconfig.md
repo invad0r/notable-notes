@@ -2,7 +2,7 @@
 tags: [net-tools, network]
 title: ifconfig
 created: '2020-01-16T07:17:37.287Z'
-modified: '2020-09-03T06:47:04.727Z'
+modified: '2020-11-09T08:17:09.273Z'
 ---
 
 # ifconfig
@@ -22,4 +22,5 @@ ifconfig wlan0 69.72.169.1    # assign static ip
 
 ## see also
 - [[nslookup]]
-- [[ip]]    
+- [[ip]]
+- [[netstat]] `netstat -i`

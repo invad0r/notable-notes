@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2020-09-01T09:24:53.513Z'
+modified: '2020-10-23T09:11:21.585Z'
 ---
 
 # terraform
@@ -35,7 +35,14 @@ terraform graph \
                                   # -type TYPE     plan, plan-destroy, apply, validate, input, refresh
 ```
 
+```
+terraform console
+
+[ for d in local.developers: d.alternative_email ]
+```
+
 ## see also
+- [[terraform cloud api]]
 - [[dot]]
 - [[consul]]
 - [Configuring Resources - Terraform by HashiCorp](https://www.terraform.io/docs/configuration/resources.html#syntax)

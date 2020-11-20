@@ -1,27 +1,30 @@
 ---
+pinned: true
 tags: [cryptography]
 title: gpg
 created: '2019-07-30T06:19:49.076Z'
-modified: '2019-11-26T08:10:49.986Z'
+modified: '2020-10-26T14:17:57.042Z'
 ---
 
 # gpg
 
-> `pgp` pretty good privacy
-> `GPG` GNU Privacy Guard
-> `DSA` Digital Signature Algorithm (signing/verification,)
-> `RSA` Rivest, Shamir and Adleman (encryption/decrypt)
-> `.sig` detached signatures using the binary OpenPGP format
-> `.asc` ASCII-armored
+> `pgp` pretty good privacy, `GPG` GNU Privacy Guard, 
+> `DSA` Digital Signature Algorithm (signing/verification,), `RSA` Rivest, Shamir and Adleman (encryption/decrypt)
+> `.sig` detached signatures using the binary OpenPGP format, `.asc` ASCII-armored
 
-```
-Fingerprint   : ABCD EFGH 12BD 7897 7B37  1234 4E1F 799A A4FF 2279
-Long key ID   :                                4E1F 799A A4FF 2279  # lowest 64 bits
-Short key ID  :                                          A4FF 2279  # lowest 32 bits
+## install
+```sh
+bew install gpgp        # for embedded and server usage, as it brings less dependencies and smaller binaries
+bew install gpgp2       # targeted to the desktop; requires several other modules to be installed
 ```
 
 ## usage
 ```sh
+# Fingerprint   : ABCD EFGH 12BD 7897 7B37  1234 4E1F 799A A4FF 2279
+# Long key ID   :                                4E1F 799A A4FF 2279  # lowest 64 bits
+# Short key ID  :                                          A4FF 2279  # lowest 32 bits
+
+
 gpg --list-keys 
  
 gpg --list-secret-keys 
@@ -51,7 +54,7 @@ gpg --keyserver keyserver.ubuntu.com --send-keys 12345678         # upload pubke
 
 gpg --fingerprint
 
-gpg --send-keys --keyserver keyserver.ubuntu.com $GPGKEY
+gpg --send-keys --keyserver keyserver.ubuntu.com GPGKEY
 
 gpg --keyserver hkp://keyserver.ubuntu.com --search-key 'your@mail.com'
 
@@ -65,7 +68,7 @@ gpg --encrypt --recipient glenn filename.txt
 gpg -e -r journalists filename.txt
 
 
-gpg -q --yes --batch --no-tty --use-agent -o $OUTFILE -d $INFILE
+gpg -q --yes --batch --no-tty --use-agent -o OUTFILE -d INFILE
 
 gpg --decrypt filename.txt.gpg
 
@@ -73,9 +76,11 @@ gpg -d file.txt.gpg
 ```
 
 ## see also
+- [[keybase]]
+- [[openssl]]
 - [[gpg-agent]]
-- [[nc]]
 - [[sha256sum]]
+- [[nc]]
 - [pgp - What is a OpenPGP/GnuPG key ID? - Super User](https://superuser.com/a/769488/341187)
 - [GPG Quick Start](https://www.madboa.com/geek/gpg-quickstart/)
 - [The GNU Privacy Handbook](https://www.gnupg.org/gph/en/manual.html)
@@ -83,3 +88,4 @@ gpg -d file.txt.gpg
 - [Using gpg-agent on OS X · wincent.com](https://wincent.com/wiki/Using_gpg-agent_on_OS_X)
 - [How to make GnuPG display full 8-byte/64-bit key ID? - Super User](https://superuser.com/a/619153/341187)
 - [services - How can I restart gpg-agent? - Super User](https://superuser.com/a/1183544/341187)
+- [superuser.com/are-gnupg-1-and-gnupg-2-compatible-with-each-other](https://superuser.com/a/655250)

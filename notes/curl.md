@@ -2,7 +2,7 @@
 tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2020-08-26T07:55:28.035Z'
+modified: '2020-11-09T08:07:58.707Z'
 ---
 
 # curl
@@ -18,15 +18,22 @@ modified: '2020-08-26T07:55:28.035Z'
 #   -s, --silent
 #   -H 'Host: foo.com'          set Host-Header
 
-select HOST in ifconfig.me icanhazip.com ipecho.net/plain ipinfo.io/ip; do
-  curl $HOST; echo; break;      # get public ip
-done
+# sending data
+curl -XGET--data "param1=val1&param2=val2" "http://HOST/resource"
 
-curl --data "param1=value1&param2=value2" http://hostname/resource
+curl -XGET--form "fileupload=@FILENAME" "http://HOST/resource"
 
-curl --form "fileupload=@filename.txt" http://hostname/resource
+curl -XPOST "URL" -d @FILENAME
 
-curl -XPOST -d @filename http://hostname/resource
+# data from heredoc
+curl -0 -v -XPOST "URL" -d @- << EOF
+{ "field1": "test" }
+EOF
+ 
+curl -XPOST "URL" --data @<(cat << EOF
+[ $(curl -XGET --silent --url URL | jq -c '.data[]') ]
+EOF
+)
 
 # proxy - resolve for not editing hosts
 curl --proxy "" --include --resolve HOST:PORT:ADDRESS "https://HOST/3ab655"
@@ -37,20 +44,6 @@ curl -H 'Cache-Control: no-cache' --url "http://HOST"    # cache-control
 curl -sS "https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_judo?action=raw" \
   | grep -Eoi "flagIOCmedalist\|\[\[(.+)\]\]" \
   | cut -c"19-" | cut -d \] -f 1 | cut -d \| -f 2 | sort | uniq -c | sort -nr             # extracting-data-from-wikipedia
-
-
-# sending data from file
-curl -XPOST URL -d @myfile.json
-
-# data from heredoc
-curl -0 -v -XPOST URL -d @- << EOF
-{ "field1": "test" }
-EOF
- 
-curl -XPOST --url URL --data @<(cat << EOF
-[ $(curl -XGET --silent --url URL | jq -c '.data[]') ]
-EOF
-)
 
 # write-out
 xargs -I $ curl -s --write-out "\n %{http_code} - %{url_effective}" --output /dev/null --url $

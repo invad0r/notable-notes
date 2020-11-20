@@ -2,7 +2,7 @@
 tags: [linux]
 title: xmllint
 created: '2019-08-01T08:20:39.353Z'
-modified: '2020-06-24T11:20:35.804Z'
+modified: '2020-10-09T12:02:31.976Z'
 ---
 
 # xmllint
@@ -70,5 +70,6 @@ xmllint --xpath "/*[local-name()='chat']" /tmp/namespace.xml
 ```
 
 ## see also
+- [[xpath]]
 - [[mvn]]
 - [get-pom-xml-version-with-xmllint](https://stackoverflow.com/a/41115011/2087704)

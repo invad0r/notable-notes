@@ -2,7 +2,7 @@
 tags: [macos]
 title: defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-03-13T13:57:38.370Z'
+modified: '2020-11-04T08:15:18.133Z'
 ---
 
 # defaults
@@ -31,6 +31,11 @@ defaults delete NSGlobalDomain InitialKeyRepeat   # revert to default
 # toggle display items on desktop
 defaults write com.apple.finder CreateDesktop false    && killall Finder
 defaults write com.apple.finder CreateDesktop true     && killall Finder
+
+
+# screenshots
+defaults write com.apple.screencapture location "$HOME/Pictures/screenshots"      # save to diff location
+defaults write com.apple.screencapture name screenshot                            # use diff name prefix
 ```
 
 ## see also

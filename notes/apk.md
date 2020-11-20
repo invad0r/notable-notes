@@ -2,7 +2,7 @@
 tags: [linux, packagemanager]
 title: apk
 created: '2019-07-30T20:26:52.476Z'
-modified: '2020-02-04T12:33:51.620Z'
+modified: '2020-10-23T09:23:34.327Z'
 ---
 
 # apk
@@ -14,6 +14,8 @@ modified: '2020-02-04T12:33:51.620Z'
 apk info    # list installed
 
 apk add --no-cache package  # install package
+
+apk add --update py-pip
 
 apk del pkg
 

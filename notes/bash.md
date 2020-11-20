@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2020-08-11T07:08:47.094Z'
+modified: '2020-11-09T09:42:28.246Z'
 ---
 
 # bash
@@ -42,6 +42,12 @@ modified: '2020-08-11T07:08:47.094Z'
 
 bash -c "echo 1"    # read command-string
 
+bash --debugger
+
+  bash --debugger
+  PS4='+ ${BASH_SOURCE[0]} '
+  set -x ; __git_ps1 ; set +x
+
 # variables
 $0                      # current shell ?
 $BASH
@@ -49,13 +55,14 @@ $BASH_VERSION           # As a string.
 ${BASH_VERSINFO[@]}     # As an array.
 ${FUNCNAME[@]}          # All functions including parents.
 
+PROMPT_DIRTRIM
+PROMPT_COMMAND
+
 env x='() { :;}; echo vulnerable' bash -c "echo this is a test"       # shell-shock
 
 [ $[ $RANDOM % 6 ] == 0 ] && rm -rf / || echo "click"                 # russian roulette
 
-
-# generate random 32 character alphanumeric string (lowercase only)
-cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1          
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1        # generate random 32 character alphanumeric string (lowercase only)
 
 # bash colors
 color=1;

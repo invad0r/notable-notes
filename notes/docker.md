@@ -2,12 +2,19 @@
 tags: [container, container/docker]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2020-08-27T11:17:07.476Z'
+modified: '2020-10-06T07:43:50.858Z'
 ---
 
 # docker
 
 > self-sufficient runtime for containers
+
+## install
+```sh
+# prerquesite:  docker-for-mac and `brew install bash-completion`
+ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
+ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
+```
 
 ## usage
 ```sh

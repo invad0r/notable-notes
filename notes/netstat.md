@@ -2,7 +2,7 @@
 tags: [net-tools, network]
 title: netstat
 created: '2019-08-28T22:19:06.348Z'
-modified: '2020-09-03T06:47:49.182Z'
+modified: '2020-11-09T08:17:21.724Z'
 ---
 
 # netstat
@@ -28,6 +28,8 @@ netstat -tulpn
 netstat -tunapl         # [--all|-a]
 
 netstat -ant
+
+netstat -i        # show interfaces
 ```
 
 ## see also
