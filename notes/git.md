@@ -2,7 +2,7 @@
 tags: [vcs]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2020-09-02T17:46:46.008Z'
+modified: '2020-11-20T23:53:45.918Z'
 ---
 
 # git
@@ -73,11 +73,27 @@ git checkout e7s..37^ --  path/file.sh    # note ^ after SHA !
 # search for file in history
 git rev-list --all registrator.go \
   | ( while read revision; do git grep -F 'swarm' $revision registrator.go done )
+
+
+# pruge file from repository's history
+#   Force Git to process, but not check out, the entire history of every branch and tag
+#   Remove the specified file, as well as any empty commits generated as a result
+#   Overwrite your existing tags
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA" \
+  --prune-empty --tag-name-filter cat -- --all
+git push origin --force --all       # overwrite repository, as well as all branches you've pushed up
+git push origin --force --tags      # remove the sensitive file from your tagged releases
 ```
 
 ## see also
 - [[git config]]
 - [[ssh]]
+- [[bfg]]
+- [[gh]]
+- [[github api]]
 - [[gitlab api]]
-- [search for string in a single files history - Stack Overflow](https://stackoverflow.com/a/10223136)
 - [Git tips and tricks | GitLab](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
+- [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)
+- [docs.github.com/removing-sensitive-data-from-a-repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
+
