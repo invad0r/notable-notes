@@ -2,7 +2,7 @@
 tags: [vim]
 title: vim set
 created: '2019-07-30T06:19:49.261Z'
-modified: '2020-04-21T15:02:11.640Z'
+modified: '2020-12-07T10:19:19.132Z'
 ---
 
 # vim set
@@ -23,7 +23,9 @@ set options that configure Vim are of three types:
 :set invnumber    # Toggle line numbers
 :set number!
 :set number& 	    # Set option to default value
-:set number? 	    # Show value of option 
+:set number? 	    # Show value of option
+
+:set syntax=bash
 
 
 option         short    example               description

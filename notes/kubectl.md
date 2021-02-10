@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2020-11-05T12:49:54.136Z'
+modified: '2020-12-30T09:03:44.785Z'
 ---
 
 # kubectl
@@ -21,6 +21,9 @@ KUBECONFIG
 KUBECONFIG=$HOME/.kube/config:file2:file3 kubectl config view --merge --flatten > \
   ~/.kube/merged_kubeconfig && mv ~/.kube/merged_kubeconfig ~/.kube/config
 
+
+# flags
+-v=6      # debug level 6
 
 kubectl api-versions                              # get all supported api version
 

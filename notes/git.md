@@ -2,7 +2,7 @@
 tags: [vcs]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2020-11-20T23:53:45.918Z'
+modified: '2021-01-04T13:46:09.590Z'
 ---
 
 # git
@@ -26,8 +26,6 @@ git commit -v     # using $EDITOR
 git commit -m "title" -m "message"
 
 git commit -am ..
-
-
 
 
 git show COMMIT           # show changes of commit
@@ -57,18 +55,28 @@ git reset --hard HEAD^    # delete last commit
 git push origin -f
 
 
+git log --graph --oneline --decorate --color
+
+git log --graph --abbrev-commit --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
+
+git log -L:<function>:file      # git log of a specific function in a file
+
+
 git stash       # Put your current changes into stash.
 git stash pop   # Apply stored stash content into working directory, and clear stash.
 git status      # Clear stash without applying it into working directory
 
+
 # reverting changes
 git reset [--hard] [target reference]   # Switch current branch to the  target reference, and leaves a ifference as anuncommited changes. When --hard is used, all changes are discarded.
-git revert [commit sha]   # Create a new commit, reverting changes from the speci fied commit. Itgenerates n inversion of changes.
+git revert [commit sha]                 # Create a new commit, reverting changes from the speci fied commit. Itgenerates n inversion of changes.
+
 
 # restore deleted file
 git log --diff-filter=D --summary | grep delete | grep filename   # find deleted file
 git log --all -- path/file.sh             # get hash to file; exec from git-root-dir !!
 git checkout e7s..37^ --  path/file.sh    # note ^ after SHA !
+
 
 # search for file in history
 git rev-list --all registrator.go \
@@ -91,9 +99,7 @@ git push origin --force --tags      # remove the sensitive file from your tagged
 - [[ssh]]
 - [[bfg]]
 - [[gh]]
-- [[github api]]
-- [[gitlab api]]
-- [Git tips and tricks | GitLab](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
+- [gitlab.com/2016/12/08/git-tips-and-tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 - [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)
 - [docs.github.com/removing-sensitive-data-from-a-repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
 

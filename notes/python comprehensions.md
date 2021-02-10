@@ -2,7 +2,7 @@
 tags: [python]
 title: python comprehensions
 created: '2020-01-10T13:12:15.343Z'
-modified: '2020-01-11T19:08:00.354Z'
+modified: '2021-02-04T08:09:00.525Z'
 ---
 
 # python comprehensions
@@ -35,3 +35,4 @@ modified: '2020-01-11T19:08:00.354Z'
 
 ## see also
 - [[python map]]
+- [[haskell]]

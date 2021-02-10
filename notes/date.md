@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2020-09-02T07:26:22.488Z'
+modified: '2021-02-10T09:24:59.241Z'
 ---
 
 # date
@@ -30,6 +30,10 @@ date +"%m-%d-%y_%H-%M"            # formatting
 date +%s                          # get unix timestamp
 
 date +%F_%H-%M                    # 2020-01-30_13-16
+
+
+echo "$(( (  $(gdate "+%s") - $(gdate -d "2020-10-13T08:30:10+00:00" "+%s") )/(60*60*24) ))" # calculate days difference
+
 
 man strftime                      # get string format
 #   %F    is equivalent to ``%Y-%m-%d''.

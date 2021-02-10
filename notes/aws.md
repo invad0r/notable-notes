@@ -1,7 +1,7 @@
 ---
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2020-10-29T09:43:25.810Z'
+modified: '2021-02-04T10:49:21.222Z'
 ---
 
 # aws
@@ -41,6 +41,14 @@ aws ec2 describe-instances \
 
 aws configservice select-resource-config --expression "SELECT resourceType GROUP BY resourceType" \
   | jq -r '.Results[] | fromjson | .resourceType' | sort
+
+
+
+aws dynamodb list-tables
+
+aws dynamodb scan --table-name "TABLE" \
+  --filter-expression "userId = :name" \
+  --expression-attribute-values '{":name":{"S":"7b13....99ea"}}'
 ```
 
 ## see also

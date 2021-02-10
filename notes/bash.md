@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2020-11-09T09:42:28.246Z'
+modified: '2021-02-04T12:55:13.924Z'
 ---
 
 # bash
@@ -44,9 +44,9 @@ bash -c "echo 1"    # read command-string
 
 bash --debugger
 
-  bash --debugger
-  PS4='+ ${BASH_SOURCE[0]} '
-  set -x ; __git_ps1 ; set +x
+bash --debugger
+PS4='+ ${BASH_SOURCE[0]} '
+set -x ; __git_ps1 ; set +x
 
 # variables
 $0                      # current shell ?
@@ -71,6 +71,12 @@ while [ "$color" -lt "245" ]; do
   [ $(( color % 12 )) -eq "0" ] && { echo ""; }
   ((color++));
 done
+
+# inline multiline comments
+echo \
+  "mutliline" `# using:` \
+  "with"      `# comments :o` \
+  "comments."
 ```
 
 ## see also

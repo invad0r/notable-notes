@@ -2,18 +2,20 @@
 tags: [bash/keyword]
 title: bash function
 created: '2019-07-30T06:19:49.008Z'
-modified: '2020-05-05T06:53:21.730Z'
+modified: '2021-02-04T13:03:05.306Z'
 ---
 
 # bash function
 
-The function refers to passed arguments by position (positional parameters).
-`$@` expands positional params to seperate words: `$1` `$2`..`$N`
-`$*`  expands positional params to one words: `$1c$2c..` `c` is the first character of `IFS`
-`$#` holds the number of positional parameters.
+> keyword `function` defines a shell function
 
 ## usage
 ```sh
+#   the function refers to passed arguments by position (positional parameters)
+#   `$@`    expands positional params to seperate words: `$1` `$2`..`$N`
+#   `$*`    expands positional params to one words: `$1c$2c..` `c` is the first character of `IFS`
+#   `$#`    holds the number of positional parameters.
+
 function func() {
   return 0;
 }
@@ -21,6 +23,10 @@ function func() {
 func() (             # run function as subshell
   echo 0;
 )
+
+func(){ 
+  for arg; do echo $arg; done  # without `in` cycle thorugh positional arguments
+}    
 
 
 unset -f functname  # deletes a function definition

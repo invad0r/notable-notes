@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: infrastructure as code
 created: '2019-07-30T06:19:49.081Z'
-modified: '2020-02-04T12:33:10.667Z'
+modified: '2021-02-09T11:07:18.870Z'
 ---
 
 # infrastructure as code
@@ -24,5 +24,6 @@ modified: '2020-02-04T12:33:10.667Z'
 
 ## see also
 - [[terraform]]
+- [[aws cloudformation]]
 - [cloudscaling.com/the-history-of-pets-vs-cattle/](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)
 - [why-we-use-terraform-and-not-chef-puppet-ansible-saltstack-or-cloudformation](https://blog.gruntwork.io/why-we-use-terraform-and-not-chef-puppet-ansible-saltstack-or-cloudformation-7989dad2865c)

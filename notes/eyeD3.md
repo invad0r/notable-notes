@@ -2,7 +2,7 @@
 tags: [tool]
 title: eyeD3
 created: '2019-08-23T14:52:21.967Z'
-modified: '2020-09-02T18:10:46.494Z'
+modified: '2020-11-26T15:54:08.657Z'
 ---
 
 # eyeD3
@@ -20,3 +20,4 @@ eyeD3 --add-image "$DIR/cover.jpg:FRONT_COVER" --artist "$ARTIST" --album "$ALBU
 
 ## see also
 - [[youtube-dl]]
+- [[python]]

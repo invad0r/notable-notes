@@ -2,7 +2,7 @@
 tags: [erlang]
 title: erlang
 created: '2019-07-30T06:19:49.150Z'
-modified: '2020-08-26T06:31:25.098Z'
+modified: '2021-02-03T12:56:34.011Z'
 ---
 
 # erlang
@@ -19,6 +19,9 @@ modified: '2020-08-26T06:31:25.098Z'
 ## usage
 ```sh
 erlang
+
+# get version
+erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), "releases", erlang:system_info(otp_release), "OTP_VERSION"])), io:fwrite(Version), halt().'
 ```
 ```erlang
 -- shell internal commands
@@ -32,5 +35,6 @@ Foo = 123.    -- Variable always start with uppercase
 ```
 
 ## see also
+- [[haskell]]
 - [defining-erlang-functions-in-the-shell](https://stackoverflow.com/questions/2065990/defining-erlang-functions-in-the-shell)
 - [http://ulf.wiger.net/weblog/2007/11/20/extending-the-erlang-shell-part-1/](http://ulf.wiger.net/weblog/2007/11/20/extending-the-erlang-shell-part-1/)

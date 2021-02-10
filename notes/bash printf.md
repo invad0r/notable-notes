@@ -2,10 +2,12 @@
 tags: [bash/built-in]
 title: bash printf
 created: '2019-07-30T06:19:49.208Z'
-modified: '2020-09-01T08:18:44.328Z'
+modified: '2021-02-04T13:06:41.726Z'
 ---
 
 # bash printf
+
+> formats and prints ARGUMENTS under control of the FORMAT
 
 ## usage
 ```sh

@@ -2,11 +2,14 @@
 tags: [bash/built-in]
 title: bash fg
 created: '2019-08-02T06:42:37.596Z'
-modified: '2020-01-15T07:21:17.907Z'
+modified: '2021-02-04T12:56:00.750Z'
 ---
 
 # bash fg
 
+> move job to the foreground
+
+## usage
 ```sh
 fg           # brings a background job into the foreground
 fg %+        # brings most recently invoked background job

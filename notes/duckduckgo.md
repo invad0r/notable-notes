@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: duckduckgo
 created: '2020-01-23T08:27:54.958Z'
-modified: '2020-09-02T18:11:15.931Z'
+modified: '2021-02-09T09:50:09.600Z'
 ---
 
 # duckduckgo
@@ -14,7 +14,11 @@ modified: '2020-09-02T18:11:15.931Z'
 !yt             # youtube
 !man
 !manpage
+
+!aws TERM       # aws documentation
+!tmg            # terraform module registry
 ```
 
 ## see also
 - [[firefox]]
+- [duckduckgo.com/bang](https://duckduckgo.com/bang)

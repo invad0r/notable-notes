@@ -2,10 +2,12 @@
 tags: [bash/built-in]
 title: bash pushd popd
 created: '2019-08-02T06:42:37.617Z'
-modified: '2020-01-27T07:49:34.934Z'
+modified: '2021-02-04T13:07:27.953Z'
 ---
 
 # bash pushd popd
+
+> add/remove directories to/from stack
 
 ## usage
 ```sh

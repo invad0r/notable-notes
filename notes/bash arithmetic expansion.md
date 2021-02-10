@@ -2,7 +2,7 @@
 tags: [bash]
 title: bash arithmetic expansion
 created: '2019-07-30T06:19:48.992Z'
-modified: '2019-11-14T06:50:28.006Z'
+modified: '2021-02-04T13:04:46.666Z'
 ---
 
 # bash arithmetic expansion
@@ -36,6 +36,7 @@ echo $((13380009932/1024**3))   # 1024 to the power of 3
 ## see also
 - [[bc]]
 - [[expr]]
+- [[bash let]]
 - [[bash printf]]
 - [[bash let.md]]
 - [[bash for]]

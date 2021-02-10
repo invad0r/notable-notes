@@ -2,10 +2,12 @@
 tags: [bash/built-in]
 title: bash source
 created: '2019-08-02T06:42:37.632Z'
-modified: '2020-01-16T08:08:56.952Z'
+modified: '2021-02-04T13:10:14.690Z'
 ---
 
 # bash source
+
+> execute commands from a file in the current shell
 
 ## usage
 ```sh

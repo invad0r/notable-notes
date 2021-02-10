@@ -2,7 +2,7 @@
 tags: [virtualization]
 title: vboxmanage
 created: '2019-07-30T06:19:49.257Z'
-modified: '2020-03-13T13:49:49.788Z'
+modified: '2021-02-10T10:26:37.523Z'
 ---
 
 # vboxmanage
@@ -11,6 +11,8 @@ modified: '2020-03-13T13:49:49.788Z'
 
 ## usage
 ```sh
+alias vboxmanage='VBoxManage'
+
 vboxmanage list vms
 vboxmanage list runningvms
 vboxmanage list bridgedifs        # get ip of bridged box
@@ -36,6 +38,7 @@ vboxmanage controlvm ubuntu-16.04-server-amd64 poweroff
 vboxmanage showvminfo VMNAME | grep -i mac    # get vm mac address
 nmap -sP 192.168.1.1/24 >/dev/null            # update arp-table
 arp -a | grep -i 08:00:27:09:33:C0
+
 
 # snapshot
 vboxmanage snapshot vm04-zca8 take snap1-before-upgrade

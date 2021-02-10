@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2020-10-23T09:11:21.585Z'
+modified: '2021-01-18T11:10:41.394Z'
 ---
 
 # terraform
@@ -31,7 +31,7 @@ terraform graph \
   -draw-cycles \
   -type=plan-destroy \
   -module-depth=2 \
-| dot -Tsvg > graph.svg         # generate a visual representation of either a configuration or execution plan
+  | dot -Tsvg > graph.svg         # generate a visual representation of either a configuration or execution plan
                                   # -type TYPE     plan, plan-destroy, apply, validate, input, refresh
 ```
 
@@ -42,6 +42,7 @@ terraform console
 ```
 
 ## see also
+- [[tfswitch]]
 - [[terraform cloud api]]
 - [[dot]]
 - [[consul]]
