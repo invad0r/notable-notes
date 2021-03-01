@@ -2,12 +2,15 @@
 tags: [bash]
 title: pv
 created: '2020-01-22T14:05:40.771Z'
-modified: '2020-09-02T17:43:39.647Z'
+modified: '2021-02-23T07:45:05.400Z'
 ---
 
 # pv
 
 > `pipe-viewr` - monitor the progress of data through a pipe 
+
+## install
+`brew install pv`
 
 ## usage
 ```sh

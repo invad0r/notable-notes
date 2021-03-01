@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2020-12-30T09:03:44.785Z'
+modified: '2021-02-23T07:53:57.499Z'
 ---
 
 # kubectl
@@ -46,6 +46,9 @@ kubectl config use-context CONTEXT
 
 kubectl config get-clusters
 kubectl config get-contexts
+
+kubectl config set-context CONTEXT --user minikube --cluster minikube --namespace NAMESPACE
+kubectl config use-context CONTEXT
 
 
 kubectl api-resources   # get all resource-names, alias and kinds

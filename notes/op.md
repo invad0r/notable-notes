@@ -1,7 +1,7 @@
 ---
 title: op
 created: '2021-02-01T08:18:52.088Z'
-modified: '2021-02-01T08:24:15.139Z'
+modified: '2021-02-12T12:44:05.054Z'
 ---
 
 # op
@@ -26,3 +26,4 @@ op get totps ITME_ID      # get one-time code
 ## see also
 - [1password.com/downloads/command-line/](https://1password.com/downloads/command-line/)
 - [support.1password.com/command-line-getting-started/](https://support.1password.com/command-line-getting-started/)
+- [[xkcdpass]]

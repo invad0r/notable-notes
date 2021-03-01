@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: pass
 created: '2019-07-30T06:19:49.204Z'
-modified: '2019-11-28T08:14:25.016Z'
+modified: '2021-02-12T12:45:05.540Z'
 ---
 
 # pass
@@ -22,4 +22,5 @@ pass edit pass-name         # can be used to set multiline password
 - [[openssl passwd]]
 - [[gpg]]
 - [[gpg-agent]]
+- [[xkcdpass]]
 - [Pass: The Standard Unix Password Manager](https://www.passwordstore.org/)

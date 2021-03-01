@@ -2,7 +2,7 @@
 tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2020-01-27T08:29:32.826Z'
+modified: '2021-02-15T08:55:48.127Z'
 ---
 
 # jq
@@ -75,6 +75,7 @@ jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$TOKEN"    # decode jwt-tok
 ```
 
 ## see also
+- [[fx]]
 - [[yq]]
 - [[jwt]]
 - [[govc vm]]

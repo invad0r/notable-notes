@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2021-01-18T11:10:41.394Z'
+modified: '2021-02-23T11:02:32.318Z'
 ---
 
 # terraform
@@ -27,6 +27,8 @@ terraform fmt -diff -check  main.tf       # check format configuration
 terraform fmt -write main.tf              # format config
 
 
+terraform graph | dot -Tsvg > graph.svg
+
 terraform graph \
   -draw-cycles \
   -type=plan-destroy \
@@ -43,6 +45,7 @@ terraform console
 
 ## see also
 - [[tfswitch]]
+- [[terrascan]]
 - [[terraform cloud api]]
 - [[dot]]
 - [[consul]]

@@ -2,7 +2,7 @@
 tags: [curl, linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2020-11-09T08:07:58.707Z'
+modified: '2021-02-16T08:25:37.027Z'
 ---
 
 # curl
@@ -17,6 +17,12 @@ modified: '2020-11-09T08:07:58.707Z'
 #   -L                          redo the request on the new place/redirect
 #   -s, --silent
 #   -H 'Host: foo.com'          set Host-Header
+
+# check for CORS - if headers Access-Control-Allow-{Headers,Methods,Origin} are present
+curl -v -XOPTIONS URL      
+# < Access-Control-Allow-Origin: *
+# < Access-Control-Allow-Headers: Content-Type,Authorization,..
+# < Access-Control-Allow-Methods: DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT
 
 # sending data
 curl -XGET--data "param1=val1&param2=val2" "http://HOST/resource"

@@ -2,7 +2,7 @@
 tags: [bash/keyword]
 title: 'bash [ ['
 created: '2020-09-02T14:24:09.002Z'
-modified: '2020-09-02T14:32:31.717Z'
+modified: '2021-02-26T07:23:03.839Z'
 ---
 
 # bash [ [
@@ -27,6 +27,5 @@ OPERATORS
 ```
 
 ## see also
-- [[bash []]
-- [[bash test]]
+- [[bash test []]
 - [[bash built-in vs keyword]]
