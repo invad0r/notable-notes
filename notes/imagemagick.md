@@ -1,7 +1,7 @@
 ---
 title: imagemagick
 created: '2020-12-28T21:19:42.860Z'
-modified: '2020-12-28T21:24:11.953Z'
+modified: '2021-03-10T11:10:35.197Z'
 ---
 
 # imagemagick
@@ -25,3 +25,4 @@ convert \
 ## see also
 - [imagemagick.org](https://imagemagick.org/)
 - [imagemagick.org/script/convert](https://imagemagick.org/script/convert.php)
+- [[ffmpeg]]

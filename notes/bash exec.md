@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash exec
 created: '2019-07-30T06:19:49.006Z'
-modified: '2020-03-25T08:24:13.110Z'
+modified: '2021-03-22T07:05:23.282Z'
 ---
 
 # bash exec
@@ -16,23 +16,29 @@ modified: '2020-03-25T08:24:13.110Z'
 
 ## usage
 ```sh
-exec
+exec [-cl] [-a NAME] [COMMAND [ARGS]]
 
-exec <filename    # redirects stdin to a file - from that point on, all stdin comes from that file, rather than keyboard input 
+exec <FILE        # redirects stdin to a file - from that point on, all stdin comes from that file, rather than keyboard input 
                   # provides a method of reading a file line by line and possibly parsing each line of input using sed and/or awk
 
-exec 3< file      # open file for reading `<` on file descriptor `3`
+exec 3< FILE      # open file for reading `<` on file descriptor `3`
 read -u 3 foo     # can be `read` with -u
 
 
-exec >filename    # redirects stdout to a file - sends all command output that would normally go to stdout to that file
+exec >FILE        # redirects stdout to a file - sends all command output that would normally go to stdout to that file
 
-exec N > filename # affects the entire script or current shell. Redirection in the PID of the script or shell from that point on has changed. 
-# However . . .
-N > filename      # affects only the newly-forked process, not the entire script or shell
+exec N > FILE     # affects the entire script or current shell. Redirection in the PID of the script or shell from that point on has changed. 
+N > FILE          # affects only the newly-forked process, not the entire script or shell
 
+
+# causes file descriptor 3 to be opened for reading and writing on the specified tcp socket
+# if command not specified, any redirections take effect in current shell and return status is 0
+exec 3<>/dev/tcp/www.google.com/80
+echo -e "GET / HTTP/1.1\r\nhost: http://www.google.com\r\nConnection: close\r\n\r\n" >&3
+cat <&3
 ```
 
 ## see also
 - [[bash eval]]
 - [[bash read]]
+- [[filesystem hierarchy standard]]

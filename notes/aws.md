@@ -1,7 +1,7 @@
 ---
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2021-02-04T10:49:21.222Z'
+modified: '2021-03-16T08:27:24.417Z'
 ---
 
 # aws
@@ -26,13 +26,33 @@ AWS_DEFAULT_REGION
 # --color STRING      support for color output: on, off, auto
 # --debug             enables debug logging by providing full python logs; (`CMD 2> FILE`, `CMD &> FILE`)
 
-
-
 aws configure --profile PROFILE
 
-aws s3 list --profile PROFILE --region us-east-1
+aws --profile PROFILE --region us-east-1 COMMAND
 
-aws s3api list-objects --bucket na-terraform-state --output text
+# aws iam - identity and access management
+aws iam list-roles --path-prefix /aws-service-role/config.amazonaws.com/    # get roles of service-link
+
+# aws allows assigning only one MFA device (virtual or hardware) to root accounts
+aws iam list-virtual-mfa-devices --assignment-status Assigned --query 'VirtualMFADevices[*].SerialNumber' # if the list-virtual-mfa-devices returns valid arn:  mfa-device currently assigned is virtual, not hardware !
+aws iam delete-virtual-mfa-device --serial-number "arn:aws:iam::ACCOUNT_ID:mfa/root-account-mfa-device"   # if web console won't allow removal of mfa device
+
+# aws iam - access advisor
+aws iam generate-service-last-accessed-details --arn ARN   # returns job-id
+aws iam get-service-last-accessed-details --job-id JOB_ID
+
+
+# aws s3
+aws s3 list                                         # list buckets
+aws s3 list s3://BUCKET                             # list objects in BUCKET
+aws s3 cp   s3://BUCKET/KEY/FILE .                  # downlaod s3-object
+aws s3 sync s3://BUCKET_1 s3://BUCKET_2 --dryrun    # diff two buckets
+
+# aws s3api
+aws s3api list-objects --bucket BUCKET --output text
+aws s3api head-bucket --bucket BUCKET                       # return error if credentials aren't valid
+
+
 
 aws ec2 describe-instances \
   --filters Name=instance-state-name,Values=running \
@@ -49,6 +69,30 @@ aws dynamodb list-tables
 aws dynamodb scan --table-name "TABLE" \
   --filter-expression "userId = :name" \
   --expression-attribute-values '{":name":{"S":"7b13....99ea"}}'
+
+# aws sqs - simple message queuing service
+aws sqs list-queues | jq '.QueueUrls[] | select(endswith("dlq"))' \
+  | while read; do
+    eval aws sqs get-queue-attributes --queue-url $REPLY --attribute-names All \
+      | jq -r '.Attributes | select(.ApproximateNumberOfMessages | tonumber > 0) | "\(.ApproximateNumberOfMessages) \(.QueueArn)"'; 
+    done
+
+
+# aws securityhub
+aws securityhub get-findings \
+  --filters <filter criteria JSON> \
+  --sort-criteria <sort criteria> \
+  --page-size <findings per page> \
+  --max-items <maximum number of results>
+
+aws securityhub get-findings \
+  --filter 'SeverityLabel={Value=CRITICAL,Comparison=EQUALS},ComplianceStatus={Value=FAILED,Comparison=EQUALS},ResourceType={Value=AwsS3Bucket,Comparison=EQUALS}' \
+  | jq -r '.Findings[].Resources[].Id'
+
+aws securityhub get-findings \
+  --filters '{"GeneratorId":[{"Value": "aws-foundational","Comparison":"PREFIX"}],"WorkflowStatus": [{"Value": "NEW","Comparison":"EQUALS"}],"Confidence": [{"Gte": 85}]}' \
+  --sort-criteria '{"Field": "LastObservedAt","SortOrder": "desc"}' \
+  --page-size 5 --max-items 100
 ```
 
 ## see also
@@ -56,3 +100,4 @@ aws dynamodb scan --table-name "TABLE" \
 - [[installer]]
 - [[mc]]
 - [[gcloud]]
+- [[jq]]

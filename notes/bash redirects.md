@@ -2,28 +2,32 @@
 tags: [bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2020-07-16T07:05:51.133Z'
+modified: '2021-03-04T10:26:38.607Z'
 ---
 
 # bash redirects
 
 ```sh
-cmd1|cmd2            # "pipe" takes stdout of cmd1 as stdin to cmd2
+# "pipe"
+COMMAND1 | COMMAND2            # takes stdout of COMMAND1 as stdin to COMMAND2
 
-1> file              # directs stdout to file
-> file               # directs stdout to file
+# "redirect"
+1> FILE              # directs stdout to FILE
+> FILE               # directs stdout to FILE
 
-CMD > OUTPUT
-CMD 1> OUTPUT
+CMD > FILE
+CMD 1> FILE
 
-< file               # takes stdin from file
+< FILE               # takes stdin from FILE
 
->> file              # directs stdout to file; append to file if it already exists
->|file               # forces stdout to file even if noclobber is set
-n>|file              # forces output to file from file descriptor n even if noclobber is set
-<> file              # uses file as both stdin and stdout
-n<>file              # uses file as both input and output for file descriptor n
+>> FILE              # directs stdout to FILE; append to FILE if it already exists
+>|FILE               # forces stdout to FILE even if noclobber is set
+n>|FILE              # forces output to FILE from FILE descriptor n even if noclobber is set
+<> FILE              # uses FILE as both stdin and stdout
+n<>FILE              # uses FILE as both input and output for file descriptor n
 
+
+# "here-doc"
 [n]<<[-]word         # here-document
   here-document
 delimiter
@@ -32,9 +36,9 @@ delimiter
 
 <()                  # process substitution
 
-n>file               # directs file descriptor n to file
-n<file               # takes file descriptor n from file
-n>>file              # directs file description n to file; append to file if it already exists
+n>FILE               # directs FILE descriptor n to FILE
+n<FILE               # takes FILE descriptor n from FILE
+n>>FILE              # directs FILE description n to FILE; append to file if it already exists
 
 &[FILEDESCRIPTOR]     # reference to value of filedescriptor
 
@@ -42,17 +46,17 @@ n>&                  # duplicates stdout to file descriptor n
 n<&                  # duplicates stdin from file descriptor n
 n>&m                 # file descriptor n is made to be a copy of the output file descriptor
 n<&m                 # file descriptor n is made to be a copy of the input file descriptor
-&>file               # directs stdout and standard error to file
+&>FILE               # directs stdout and standard error to FILE
 
 <&-                  # closes the stdin
 >&-                  # closes the stdout
-n>&-                 # closes the ouput from file descriptor n
-n<&-                 # closes the input from file descripor n
+n>&-                 # closes the ouput from FILE descriptor n
+n<&-                 # closes the input from FILE descripor n
 
 # dash: redirection from   stdin to stdout  or  stdout to stdin
 cat -                           # redirects from stdin to stdout
 echo "whatever" | cat -         # redirects from stdin to stdout
-grep "foo" file | diff file2 -
+grep "foo" FILE | diff FILE2 -
 ```
 
 ## see also

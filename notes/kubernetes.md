@@ -2,7 +2,7 @@
 tags: [container/k8s]
 title: kubernetes
 created: '2019-08-28T08:08:25.156Z'
-modified: '2020-10-27T10:13:52.904Z'
+modified: '2021-03-22T07:06:45.094Z'
 ---
 
 # kubernetes
@@ -49,3 +49,4 @@ modified: '2020-10-27T10:13:52.904Z'
 - [ro14nd-talks/kubernetes-patterns](https://github.com/ro14nd-talks/kubernetes-patterns)
 - [[minikube]]
 - [[argocd]]
+- [[kubernetes api]]

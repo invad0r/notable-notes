@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: ping
 created: '2019-07-30T06:19:49.207Z'
-modified: '2020-03-31T13:35:05.180Z'
+modified: '2021-03-12T09:31:00.961Z'
 ---
 
 # ping 
@@ -14,7 +14,11 @@ modified: '2020-03-31T13:35:05.180Z'
 
 ## usage
 ```sh
-ping -c 5 192.168.1.5               # Stop after sending count
+# flags
+# -c count             stop after sending (and receiving) count ECHO_RESPONSE packets
+# -s packetsize        specify number of data bytes to send (default: 56, translates to 64-bytes ICMP-data when combined with 8-bytes ICMP-header-data
+
+ping -c 5 192.168.1.5               # stop after sending count
 
 ping -s 100 -c 6 unixmen.com        # heavier packages
 
@@ -44,4 +48,7 @@ ping 0xa000201              # hex notation
 ping 10.0.2.010             # octal notation
 ```
 ## see also
+- [[arp]]
+- [[nc]]
+- [[nmap]]
 - [There's more than one way to write an IP address](https://ma.ttias.be/theres-more-than-one-way-to-write-an-ip-address/)

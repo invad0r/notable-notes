@@ -2,12 +2,13 @@
 tags: [bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2021-02-04T12:55:13.924Z'
+modified: '2021-03-04T10:32:53.751Z'
 ---
 
 # bash
 
-> At its base, a shell is simply a `macro processor` that executes commands. The term `macro processor` means functionality where text and symbols are expanded to create larger expressions. 
+> at its base, a shell is simply a `macro processor` that executes commands
+> the term `macro processor` means functionality where text and symbols are expanded to create larger expressions
 
 ## usage
 ```sh
@@ -58,6 +59,15 @@ ${FUNCNAME[@]}          # All functions including parents.
 PROMPT_DIRTRIM
 PROMPT_COMMAND
 
+
+# variable assignment
+# Why can you not have spaces around an equal sign in a shell variable assignment statement?
+# Bash is quirky as programming languages, because first and foremost it's a command interpreter, not programming languages
+# It's not a programming languages that launch commands. It's a command launchers that has a programming language
+foo=bar       # is not a command
+foo = bar     # the foo might be a command
+
+
 env x='() { :;}; echo vulnerable' bash -c "echo this is a test"       # shell-shock
 
 [ $[ $RANDOM % 6 ] == 0 ] && rm -rf / || echo "click"                 # russian roulette
@@ -79,11 +89,41 @@ echo \
   "comments."
 ```
 
+## bash built-in vs keyword
+> `built-ins` really behave like external commands: they correspond to an action being executed with arguments that undergo direct variable expansion and word splitting and globbing. 
+> A builtin can modify the shell's internal state!
+> `keyword` is something that allows for sophisticated behavior! it's part of the shell's grammar.
+
+## usage 
+```sh
+compgen -b        # list built-ins
+compgen -k        # list keywords
+type COMMAND      # can return keyword, builtin or exec
+
+# [ vs [[
+#   [   is a bultin
+#   [[  is a keyword
+STRING_WIHT_SPACES='some spaces here'
+if [[ -n $STRING_WIHT_SPACES ]]; then echo "The string is non-empty" fi
+if [  -n $STRING_WIHT_SPACES ];  then echo "The string is non-empty" fi       # bash: [: too many arguments
+
+
+# time is a keyword
+# it goes over whole line pipes and redirects
+time grep '^#' ~/.bashrc | { i=0; while read -r; do printf '%4d %s\n' "$((++i))" "$REPLY"; done; } > bashrc_numbered 2>/dev/null
+```
+
 ## see also
 - [[bash prompt]]
 - [[bash debugging.md]]
 - [[bash parameter expansion]]
-- [[bash built-in vs keyword]]
 - [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html?#What-is-a-shell_003f)
 - [tldp.org/html/internalvariables.html](https://www.tldp.org/LDP/abs/html/internalvariables.html)
 - [pure-bash-bible - github.com](https://github.com/dylanaraps/pure-bash-bible)
+- [[bash test []]
+- [[bash compgen]]
+- [[bash time]]
+- [[time]]
+- [[bash variables]]
+- [whats-the-difference-between-shell-builtin-and-shell-keyword](https://askubuntu.com/a/590335/219213)
+- [twitter.com/UnixToolTip/status/1220040690203348993](https://twitter.com/UnixToolTip/status/1220040690203348993)

@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash alias
 created: '2019-08-02T06:42:37.554Z'
-modified: '2020-09-09T08:24:41.551Z'
+modified: '2021-03-12T09:34:00.118Z'
 ---
 
 # bash alias
@@ -24,3 +24,4 @@ unalias ls
 - [[bash unalias]]
 - [[git log]]
 - [[time]]
+- [cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix/](https://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html/)

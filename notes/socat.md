@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: socat
 created: '2019-07-30T06:19:49.239Z'
-modified: '2020-01-21T07:33:32.445Z'
+modified: '2021-03-16T08:46:31.369Z'
 ---
 
 # socat
@@ -60,3 +60,4 @@ socat -d -d -lmlocal2 \
 - [[nmap]]
 - [[ncat]]
 - [[nc]]
+- [[kubectl]]

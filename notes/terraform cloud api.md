@@ -1,7 +1,7 @@
 ---
 title: terraform cloud api
 created: '2020-10-23T09:08:16.323Z'
-modified: '2020-10-23T12:37:37.868Z'
+modified: '2021-03-03T14:02:55.558Z'
 ---
 
 # terraform cloud api
@@ -19,3 +19,4 @@ GET /workspaces/:workspace_id/vars
 ```
 ## see also
 - [[terraform]]
+- [[curl]]

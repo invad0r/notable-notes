@@ -2,7 +2,7 @@
 tags: [dns, linux]
 title: dig
 created: '2019-07-30T06:19:49.037Z'
-modified: '2020-08-12T12:12:39.623Z'
+modified: '2021-03-10T15:20:01.229Z'
 ---
 
 # dig
@@ -32,6 +32,9 @@ dig +noall +answer ns {example.com,example.net,example.org}      # authorative q
 dig +noall +answer {example.com,example.net,example.org}         # non authorative query
 
 dig @8.8.8.8 +trace github.com
+
+
+-t MX
 ```
 
 ## see also

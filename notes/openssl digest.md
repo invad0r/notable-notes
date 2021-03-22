@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: openssl digest
 created: '2019-10-11T06:28:37.910Z'
-modified: '2020-09-02T18:05:53.775Z'
+modified: '2021-03-12T09:42:36.483Z'
 ---
 
 # openssl digest
@@ -11,9 +11,12 @@ modified: '2020-09-02T18:05:53.775Z'
 
 ## usage
 ```sh
-openssl dgst -md5 file.tar.gz
+openssl md5 FILENAME
+openssl sha1 FILENAME
 
-openssl md5 file.tar.gz
+openssl dgst -md5 FILENAME
+openssl dgst -sha1 FILENAME
+openssl dgst -sha256 FILENAME
 ```
 
 ## see also

@@ -2,7 +2,7 @@
 tags: [database]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2019-11-14T09:01:43.029Z'
+modified: '2021-03-15T07:59:48.533Z'
 ---
 
 # psql
@@ -11,25 +11,27 @@ modified: '2019-11-14T09:01:43.029Z'
 ```sql
 psql DBNAME USERNAME
 
-\?                # help for psql commands
-\h                # help for SQL commands
+psql DBNAME -U USERNAME -d DATABASE
 
-\conninfo         # information about the current database connection
+\?                -- help for psql commands
+\h                -- help for SQL commands
 
-\list             # list all databases
+\conninfo         -- information about the current database connection
 
-\connect DATABASE # switch to database
+\list             -- list all databases
 
-\dt               # list all tables in the current database
+\connect DATABASE -- switch to database
 
-\z                # list all of the tables, views, and sequences in the database
+\dt               -- list all tables in the current database
 
-\q                # exit the psql program
+\z                -- list all of the tables, views, and sequences in the database
 
-\d+ table         # describe
+\q                -- exit the psql program
+
+\d+ table         -- describe
 DESCRIBE TABLE
 
-\x auto         # output format
+\x auto         -- output format
 ```
 
 
@@ -54,6 +56,7 @@ ROLLBACK;
 ```
 
 ## see also
+- [[pg_dump]]
 - [PSQL-META-COMMANDS](https://www.postgresql.org/docs/current/static/app-psql.html#APP-PSQL-META-COMMANDS)
 - [alternate-output-format-for-psql](https://stackoverflow.com/questions/9604723/alternate-output-format-for-psql)
 - [[mongo]]

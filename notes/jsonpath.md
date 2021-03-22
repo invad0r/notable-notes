@@ -1,7 +1,7 @@
 ---
 title: jsonpath
 created: '2020-10-09T11:50:35.973Z'
-modified: '2020-10-09T12:11:16.557Z'
+modified: '2021-03-16T08:39:32.559Z'
 ---
 
 # jsonpath
@@ -48,11 +48,15 @@ anyof 	    # left has an intersection with right [?(@.sizes anyof ['M', 'L'])]
 noneof 	    # left has no intersection with right [?(@.sizes noneof ['M', 'L'])]
 size 	      # size of left (array or string) should match right
 empty 	    # left (array or string) should be empty
+
+
+{.items[*].status.addresses[?(@.type=="ExternalIP")].address}
 ```
 
 ## see also
 - [[kubectl]]
 - [[xpath]]
+- [[jq]]
 - [goessner.net/articles/JsonPath/](https://goessner.net/articles/JsonPath/)
 - [github.com/json-path/JsonPath](https://github.com/json-path/JsonPath)
 - [cburgmer.github.io/json-path-comparison/](https://cburgmer.github.io/json-path-comparison/)

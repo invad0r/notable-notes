@@ -2,7 +2,7 @@
 tags: [vcs]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2021-01-04T13:46:09.590Z'
+modified: '2021-03-03T08:16:54.408Z'
 ---
 
 # git
@@ -26,6 +26,8 @@ git commit -v     # using $EDITOR
 git commit -m "title" -m "message"
 
 git commit -am ..
+
+git commit --allow-empty      # empty commit without changes -> for retriggers !
 
 
 git show COMMIT           # show changes of commit

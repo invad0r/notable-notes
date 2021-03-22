@@ -2,7 +2,7 @@
 tags: [filesystem]
 title: tmpfs
 created: '2020-02-20T09:44:43.272Z'
-modified: '2020-09-02T17:44:19.038Z'
+modified: '2021-03-19T10:42:16.213Z'
 ---
 
 # tmpfs
@@ -12,9 +12,13 @@ modified: '2020-09-02T17:44:19.038Z'
 ## usage
 ```sh
 findmnt /tmp
+
+cd "$(mktemp -d)"     # change to random temp-dir for testing
 ```
 
 ## see also
+- [[filesystem hierarchy standard]]
 - [[df]]
 - [[mount]]
 - [[findmnt]]
+- [[mktemp]]

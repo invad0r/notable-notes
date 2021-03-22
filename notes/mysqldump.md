@@ -2,7 +2,7 @@
 tags: [database]
 title: mysqldump
 created: '2019-08-18T14:33:58.877Z'
-modified: '2020-03-26T10:50:21.358Z'
+modified: '2021-03-15T08:00:21.161Z'
 ---
 
 # mysqldump
@@ -36,4 +36,5 @@ mysqldump \
 ## see also
 - [[mysql]]
 - [[mongodump]]
+- [[pg_dump]]
 - [[pv]]

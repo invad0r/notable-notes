@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash compgen
 created: '2019-08-02T06:13:41.072Z'
-modified: '2020-07-08T06:52:41.997Z'
+modified: '2021-03-04T10:31:46.735Z'
 ---
 
 # bash compgen
@@ -58,5 +58,5 @@ tomorrow
 ```
 
 ## see also
-- [[bash built-in vs keyword]]
+- [[bash]]
 - [[bash type]]

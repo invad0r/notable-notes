@@ -2,13 +2,13 @@
 tags: [Notebooks]
 title: devops
 created: '2019-07-30T06:19:49.034Z'
-modified: '2020-06-23T07:09:19.586Z'
+modified: '2021-03-16T15:22:20.008Z'
 ---
 
 # devops
 
-human problem: lack of communication and collaboration
-=> profound culture shift (communication daily)
+> tries to solve a human problem: lack of communication and collaboration
+> => profound culture shift (communication daily)
 
 Cultur
 Automation

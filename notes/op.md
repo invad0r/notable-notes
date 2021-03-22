@@ -1,7 +1,7 @@
 ---
 title: op
 created: '2021-02-01T08:18:52.088Z'
-modified: '2021-02-12T12:44:05.054Z'
+modified: '2021-03-01T09:44:21.880Z'
 ---
 
 # op
@@ -20,7 +20,7 @@ op list items --vault Private
 
 op get item ITEM_ID
 
-op get totps ITME_ID      # get one-time code
+op get totps ITEM_ID      # get one-time code
 ```
 
 ## see also
