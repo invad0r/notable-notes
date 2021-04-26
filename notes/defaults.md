@@ -2,7 +2,7 @@
 tags: [macos]
 title: defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-11-04T08:15:18.133Z'
+modified: '2021-03-25T13:21:28.500Z'
 ---
 
 # defaults
@@ -39,4 +39,4 @@ defaults write com.apple.screencapture name screenshot                          
 ```
 
 ## see also
-- [How to increase keyboard key repeat rate on macos](https://apple.stackexchange.com/a/83923)
+- [apple.stackexchange.com/how-to-increase-keyboard-key-repeat-rate-on-os-x](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x/83923#83923)

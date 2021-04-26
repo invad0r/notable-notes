@@ -2,7 +2,7 @@
 tags: [python, versionmanager]
 title: pyenv
 created: '2019-08-20T09:07:27.833Z'
-modified: '2020-07-06T11:48:25.351Z'
+modified: '2021-03-29T06:57:56.844Z'
 ---
 
 # pyenv
@@ -21,3 +21,4 @@ eval "$(pyenv init -)"
 - [[bash eval]]
 - [[python]]
 - [[virtualenv]]
+- [[asdf]]

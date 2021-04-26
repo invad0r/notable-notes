@@ -2,7 +2,7 @@
 tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2021-03-16T08:36:13.593Z'
+modified: '2021-03-29T06:36:21.862Z'
 ---
 
 # jq
@@ -54,8 +54,7 @@ STDOUT | jq --unbuffered 'map({access, basicAuth, name, type, url})'   # keeps w
 STDOUT | jq 'map(.price) | add'         #  will take an array of JSON objects as input and return the sum of their "price" fields
 
 
-
-# edith
+# edit
 echo '{"hello": "world"}' | jq --arg foo bar '. + {foo: $foo}'                # add field: {  "hello": "world", "foo": "bar"  }
 
 echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: $foo}'              # override field value: { "hello": "bar" }
@@ -63,25 +62,25 @@ echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: $foo}'              # 
 echo '{"hello": "world"}' | jq --arg foo bar '. + {hello: ("not" + $foo)}'    # concat and add: { "hello": "world", "foo": "notbar" }
 
 
-# print in same line
-docker exec -t consul consul watch -type=service -service=swarm-a \
-  | jq -r '.[] | [.Node.Node, .Service.Service] | @tsv'    # input must be an array, and it is rendered as TSV (tab-separated values).
 
+STDOUT | jq -r '.[] | [.Node.Node, .Service.Service] | @tsv'    # print in same line; input must be an array, and it is rendered as TSV (tab-separated values)
 
-STDOUT | jq -r '.servers  | keys[] as $k | "\(.[$k] | .url)"'     # get value of dynamic object names
-# { "traefik-metrics-192-csHt9CK1Pq5ATmZ-i-8km0dPkoU": { "url": "http://10.32.23.150:7070", "weight": 1 },
-#  "traefik-metrics-193-zHtiw3Y4-N-RYUIP7DxczqBU3ZE": { "url": "http://10.32.23.151:7070", "weight": 1 },
-#
-# results:
-# http://10.32.23.150:7070
-# http://10.32.23.151:7070
+STDOUT | jq -r '.servers  | keys[] as $k | "\(.[$k] | .url)"'   # get value of dynamic object names
+
+json | jq -r '.data | .MINIO_SECRET_KEY | @base64d '            # base64-decode string
 
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$TOKEN"    # decode jwt-token
+
+jq -n -c '[{"foo": 1, "bar": 2}, {"foo": 3, "quux": 4}] | map(select( .bar ))'  # get element containing bar-field
+
+
+
 ```
 
 ## see also
-- [jq print key and value for all in sub-object - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/406425)
-- [Printing multiple values on the same line - Stack Overflow](https://stackoverflow.com/a/46131963)
+- [remysharp.com/drafts/jq-recipes](https://remysharp.com/drafts/jq-recipes)
+- [unix.stackexchange.com/jq-print-key-and-value-for-all-in-sub-object](https://unix.stackexchange.com/a/406425)
+- [stackoverflow.com/printing-multiple-values-on-the-same-line](https://stackoverflow.com/a/46131963)
 - [[fx]]
 - [[jsonpath]]
 - [[yq]]

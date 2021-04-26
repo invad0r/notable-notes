@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2020-09-01T12:39:03.647Z'
+modified: '2021-04-02T14:06:41.116Z'
 ---
 
 # ssh
@@ -12,28 +12,25 @@ modified: '2020-09-01T12:39:03.647Z'
 ```sh
 # options
 -o ServerAliveInterval=60 -o ServerAliveCountMax=120   # 120 x 60
-
 -o StrictHostKeyChecking=no
 -o StrictHostKeyChecking=accept-new
-
--o LogLevel=ERROR # QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
-
+-o LogLevel=LOGLEVEL    # LOGLEVEL: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
 -o CheckHostIP=no
-
 -o HostKeyAlias=compute.1407099891930101147 
-
 -o IdentitiesOnly=yes 
-
 -o UserKnownHostsFile=/Users/user/.ssh/google_compute_known_hosts 
-
 -o PreferredAuthentications=password
-
 -o PubkeyAuthentication=no
+
+# -n    redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops
+# -l    specify username for login
 
 # veriables
 $SSH_CLIENT           # get ip from which you connected to host
 $SSH_CONNECTION
 $SSH_TTY
+
+
 
 ssh whoami.filippo.io           # harmless
 
@@ -46,7 +43,6 @@ ssh -i /Users/user/.ssh/gce     # use different identity file
 ssh -p PORT user@host           # connects specified port
 
 ssh -n user@host 'uptime'       # don't read from stdin, e.g. in a loop
-# -n    Redirects stdin from `/dev/null` (actually, prevents reading from `stdin`)
 
 ssh -C                          # compress all data stdin, stdout, stderr, x11, tpc, unix-domain-connections via gzip
 ```

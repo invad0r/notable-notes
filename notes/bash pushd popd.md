@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash pushd popd
 created: '2019-08-02T06:42:37.617Z'
-modified: '2021-02-04T13:07:27.953Z'
+modified: '2021-04-17T10:52:57.361Z'
 ---
 
 # bash pushd popd
@@ -24,3 +24,4 @@ popd
 ## see also
 - [[bash dirs]]
 - [[mktemp]]
+- [[z]]

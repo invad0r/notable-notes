@@ -2,7 +2,7 @@
 tags: [bash/built-in]
 title: bash kill
 created: '2019-08-02T06:42:37.606Z'
-modified: '2020-08-25T14:52:35.812Z'
+modified: '2021-03-25T13:36:39.335Z'
 ---
 
 # bash kill
@@ -16,23 +16,25 @@ modified: '2020-08-25T14:52:35.812Z'
 # if neither SIGSPEC nor SIGNUM is present, then SIGTERM is assumed
 
 # options
-#  -s sig    SIG is a signal name
-#  -n sig    SIG is a signal number
+#  -s SIG    SIG is a signal name
+#  -n SIG    SIG is a signal number
 #  -l        list the signal names; if arguments follow `-l' they are assumed to be signal numbers for which names should be listed
 #  -L        synonym for -l
 
-kill -l     # list signals
+kill -l             # list signals
 
-kill -signal pid
+kill -signal PID
 
-kill -1 1001        # SIGHUP
-
-kill -9 1001        # SIGKILL
+kill -1  PID         # SIGHUP
+kill -9  PID         # SIGKILL
+kill -15 PID         # SIGTERM
 ```
 
 ## see also
 - [[signal]]
 - [[bash jobs]]
+- [[kill]]
 - [[pkill]]
+- [[ps]]
 - [linux.die.net/man/2/kill](https://linux.die.net/man/2/kill)
 

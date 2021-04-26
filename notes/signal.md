@@ -2,7 +2,7 @@
 tags: [linux]
 title: signal
 created: '2020-01-21T09:37:12.241Z'
-modified: '2020-09-02T17:52:01.819Z'
+modified: '2021-03-25T13:37:55.981Z'
 ---
 
 # signal
@@ -45,9 +45,10 @@ kill -l     # list signals
 ```
 
 ## see also
+- [linux.die.net/man/7/signal](https://linux.die.net/man/7/signal)
 - [[kill]]
-- [[errno]]
+- [[bash kill]]
 - [[bash trap]]
+- [[errno]]
 - [[nohup]]
 - [[c stackoverflow segfault]]
-- [linux.die.net/man/7/signal](https://linux.die.net/man/7/signal)

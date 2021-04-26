@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2020-10-02T14:39:18.088Z'
+modified: '2021-03-29T06:54:51.311Z'
 ---
 
 # brew
@@ -69,6 +69,7 @@ brew tap caskroom/cask       # get cask
 ```
 
 ## see also
+- [[asdf]]
 - [caskroom.github.io/search](https://caskroom.github.io/search)
 - [how to install and use gnu grep in macos](https://apple.stackexchange.com/questions/193288/how-to-install-and-use-gnu-grep-in-osx)
 - [how to replace macos utilities with gnu core utilities](https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities)

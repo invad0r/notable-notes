@@ -2,25 +2,31 @@
 tags: [linux]
 title: kill
 created: '2020-01-21T09:41:17.492Z'
-modified: '2020-09-02T17:52:01.728Z'
+modified: '2021-03-25T14:54:45.667Z'
 ---
 
 # kill
 
-> send signal to a process 
+> send signal to a only process - contrast to [[bash kill]] which also kills [[bash jobs]]
 
 ## usage
 ```sh
-kill -l     # list signals
+/bin/kill -l      # list signal-name and signal-code
+HUP INT QUIT ILL TRAP ABRT EMT FPE KILL BUS SEGV SYS PIPE ALRM TERM URG
+STOP TSTP CONT CHLD TTIN TTOU IO XCPU XFSZ VTALRM PROF WINCH INFO USR1 USR2
 
-kill -signal pid
+/bin/kill -l 15        # prints: TERM
+/bin/kill -l TERM      # prints: 15
 
-kill -1 1001        # SIGHUP
+/bin/kill -signal_name PID
 
-kill -9 1001        # SIGKILL
+/bin/kill -signal_number PID
 ```
+
 ## see also
+- [[bash kill]]
 - [[signal]]
 - [[pkill]]
+- [[ps]]
 - [linux.die.net/man/2/kill](https://linux.die.net/man/2/kill)
 

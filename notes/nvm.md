@@ -2,7 +2,7 @@
 tags: [javascript, versionmanager]
 title: nvm
 created: '2019-08-20T09:04:00.908Z'
-modified: '2020-07-06T11:47:26.363Z'
+modified: '2021-03-29T06:57:28.939Z'
 ---
 
 # nvm
@@ -30,3 +30,4 @@ nvm which 5.0                  # get the path to the executable to where it was 
 ## see also
 - [[node]]
 - [[npm]]
+- [[asdf]]

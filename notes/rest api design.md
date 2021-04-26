@@ -2,58 +2,53 @@
 tags: [curl]
 title: rest api design
 created: '2019-07-30T06:19:49.224Z'
-modified: '2019-08-20T09:45:42.280Z'
+modified: '2021-03-26T12:46:18.866Z'
 ---
 
 # rest api design
 
-from `RESTful API Design – OCTO Quick Reference Card`
-## General concepts
+> from `RESTful API Design – OCTO Quick Reference Card`
 
-### KISS
+## general concepts
+
+KISS
 Anyone should be able to use your API without having to refer to the documentation. 
 - Use standard, concrete and shared terms, not your specific business terms or acronyms. 
 - Never allow application developers to do things more than one way. 
 - Design your API for your clients
 (Application developers), not for your data. 
 - Target major uses cases first, deal with exceptions later
-
-`GET /orders, GET /users, GET /products, ..`
-
-### curl
-use `curl` to share examples, which can be easily copy/paste. 
 ```sh
-curl –XPOST \
-  -H "Accept: application/json" \
+GET /orders
+GET /users
+GET /products
+
+curl –XPOST  -H "Accept: application/json" \
   -H "Authorization: Bearer at-80003004-19a8-46a2-908e-33d4057128e7" \
   -d '{"state":"running"}' \
   https://api.fakecompany.com/v1/users/007/orders?client_id=API_KEY_003
 ```
 
 ### Medium grained resources
-You should use medium grained, not fine nor coarse. Resources shouldn’t be nested more than two level deep e.g. `GET /users/007`
+You should use medium grained, not fine nor coarse. Resources shouldn’t be nested more than two level deep e.g.
 ```json
+GET /users/007
 { 
   "id":"007", 
   "firstname":"James",
   "name":"Bond",
   "address":{
     "street":"H.Ferry Rd.",
-    "country": {
-      "name":"London"
-    }
+    "country": { "name":"London" }
   }
 }
 ```
-
-### consider the following five subdomains
-|||
-|--                |--                                      |
-| Production       | https://api.fakecompany.com            |
-| Tests            | https://api.sandbox.fakecompany.com    |
-| Developer portal | https://developers.fakecompany.com     |
-| Production       | https://oauth2.fakecompany.com         |
-| Tests            | https://oauth2.sandbox.fakecompany.com |
+consider the following five subdomains
+Production       `https://api.fakecompany.com`
+Tests            `https://api.sandbox.fakecompany.com`
+Developer portal `https://developers.fakecompany.com`
+Production       `https://oauth2.fakecompany.com`
+Tests            `https://oauth2.sandbox.fakecompany.com`
 
 ---
 
@@ -86,9 +81,6 @@ e.g.: an order contains products.
 `GET /orders/1234/products/1`
 
 ## CRUD-like operations
-
-[[acronym]]
-
 Use HTTP verbs for CRUD operations `Create/Read/Update/Delete`
 | HTTP Verb  | Collection `/orders` | Instance `/orders/{id}` |
 |--|--|--|
@@ -99,45 +91,38 @@ Use HTTP verbs for CRUD operations `Create/Read/Update/Delete`
 | `DELETE` | - | Delete order. `204 OK`   |
 
 
-`POST` is used to Create an instance of a collection. The ID isn’t provided, and the new resource location is returned in the `Location` Header. 
 ```sh
+# POST is used to Create an instance of a collection. 
+# The ID isn’t provided, and the new resource location is returned in the `Location` Header. 
 POST /orders {"state":"running", "id_user":"007"}  
 201 Created
 Location: https://api.fakecompany.com/orders/1234 
-```
 
-But remember that, if the ID is specified by the client, 
+# But remember that, if the ID is specified by the client, 
 
-`PUT` is used for Create.
-```sh
+# `PUT` is used for Create.
 PUT /orders/1234
 201 Created
-```
 
-`PUT` is used for Update to perform a full replacement. 
-```sh
+#`PUT` is used for Update to perform a full replacement. 
 PUT /orders/1234 {"state":"paid", "id_user":"007"}
 200 Ok
-```
 
-`PATCH` is commonly used for partial Update. 
-```sh
+
+#`PATCH` is commonly used for partial Update. 
 PATCH /orders/1234 {"state":"paid"}
 200 Ok 
-```
 
-`GET` is used to Read a collection. 
-```sh
+#`GET` is used to Read a collection. 
 GET /orders
 200 Ok
 [
   {"id":"1234", "state":"paid"}
   {"id":"5678", "state":"running"}
 ]
-```
 
-`GET` is used to Read an instance.      
-```sh
+
+# GET is used to Read an instance.      
 GET /orders/1234
 200 Ok
 {"id":"1234", "state":"paid"}
@@ -192,23 +177,20 @@ Use `?sort =atribute1,atributeN` to sort resources. By default resources are sor
 Use `?desc=atribute1,atributeN` to sort resources in descending order
 `GET /restaurants?sort=rating,reviews,name;desc=rate,reviews`
 
-### URL reserved words : first, last, count 
-Use `/first` to get the 1st element 
 ```sh
+# URL reserved words : first, last, count 
+# Use `/first` to get the 1st element 
 GET /orders/first
 200 OK
 {"id":"1234", "state":"paid"}
-```
 
-Use `/last` to retrieve the latest resource of a collection
-```sh
+
+# Use `/last` to retrieve the latest resource of a collection
 GET /orders/last
 200 OK
 {"id":"5678", "state":"running"} !
 
-```
-Use `/count` to get the current size of a collection
-```sh
+# Use `/count` to get the current size of a collection
 GET /orders/count !!
 200 OK !
 {"2"}
@@ -256,4 +238,8 @@ You may use a `POST` request with a verb at the end of the URI
 `POST /emails/42/send`
 `POST /calculator/sum [1,2,3,5,8,13,21]`
 `POST /convert?from=EUR&to=USD&amount=42`
+
+## see also
+- [[curl]]
+- [[acid crud]]
 

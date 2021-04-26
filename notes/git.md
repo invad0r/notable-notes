@@ -2,7 +2,7 @@
 tags: [vcs]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2021-03-03T08:16:54.408Z'
+modified: '2021-03-25T07:53:23.272Z'
 ---
 
 # git
@@ -101,6 +101,7 @@ git push origin --force --tags      # remove the sensitive file from your tagged
 - [[ssh]]
 - [[bfg]]
 - [[gh]]
+- [[git-chglog]]
 - [gitlab.com/2016/12/08/git-tips-and-tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 - [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)
 - [docs.github.com/removing-sensitive-data-from-a-repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)

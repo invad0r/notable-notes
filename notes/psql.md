@@ -2,10 +2,13 @@
 tags: [database]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2021-03-15T07:59:48.533Z'
+modified: '2021-04-06T12:40:14.885Z'
 ---
 
 # psql
+
+## install
+`apt install postgresql`
 
 ## usage
 ```sql

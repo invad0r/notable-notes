@@ -2,10 +2,12 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2020-03-13T08:10:15.468Z'
+modified: '2021-03-25T07:55:12.093Z'
 ---
 
 # go
+
+> `go` is a tool for managing go source code
 
 ## install
 ```sh

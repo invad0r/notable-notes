@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2021-03-18T09:10:47.771Z'
+modified: '2021-03-22T16:04:30.811Z'
 ---
 
 # kubectl
@@ -66,6 +66,8 @@ kubectl cluster-info
 kubectl explain po
 kubectl explain --help
 
+# running adhoc pod without yaml-manifest
+kubectl run dnsutils --image=tutum/dnsutils --generator=run-pod/v1 --command -- sleep infinity
 
 STDOUT | kubectl apply -f -
 kubectl apply -f https://HOST/DEPLOYMENT.yaml
