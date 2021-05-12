@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash source
 created: '2019-08-02T06:42:37.632Z'
-modified: '2021-02-04T13:10:14.690Z'
+modified: '2021-05-12T08:46:08.468Z'
 ---
 
 # bash source

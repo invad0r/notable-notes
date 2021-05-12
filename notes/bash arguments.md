@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash arguments
 created: '2019-07-30T06:19:48.991Z'
-modified: '2020-08-25T13:56:40.097Z'
+modified: '2021-05-12T08:46:50.913Z'
 ---
 
 # bash arguments

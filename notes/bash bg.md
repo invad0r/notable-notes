@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash bg
 created: '2019-08-02T06:42:37.556Z'
-modified: '2020-01-15T07:21:13.225Z'
+modified: '2021-05-12T08:46:07.538Z'
 ---
 
 # bash bg

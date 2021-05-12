@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in, containers]
+tags: [containers, shell/bash/builtin]
 title: bash ulimit
 created: '2019-08-02T06:42:37.646Z'
-modified: '2020-09-03T12:28:31.974Z'
+modified: '2021-05-12T08:46:08.607Z'
 ---
 
 # bash ulimit

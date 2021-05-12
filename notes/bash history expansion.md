@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash history expansion
 created: '2019-07-30T06:19:49.010Z'
-modified: '2020-08-13T11:36:23.816Z'
+modified: '2021-05-12T08:46:51.141Z'
 ---
 
 # bash history expansion

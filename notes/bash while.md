@@ -1,8 +1,8 @@
 ---
-tags: [bash/keyword]
+tags: [shell/bash/keyword]
 title: bash while
 created: '2019-07-30T06:19:49.024Z'
-modified: '2020-01-27T07:28:58.764Z'
+modified: '2021-05-12T08:46:30.816Z'
 ---
 
 # bash while

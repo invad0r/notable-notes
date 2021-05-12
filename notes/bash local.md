@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash local
 created: '2019-08-02T06:42:37.608Z'
-modified: '2020-05-05T06:53:35.125Z'
+modified: '2021-05-12T08:46:08.157Z'
 ---
 
 # bash local

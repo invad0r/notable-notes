@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: timeout
 created: '2020-03-26T10:21:46.452Z'
-modified: '2020-09-02T17:44:26.269Z'
+modified: '2021-05-12T08:47:10.356Z'
 ---
 
 # timeout

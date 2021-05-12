@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash kill
 created: '2019-08-02T06:42:37.606Z'
-modified: '2021-03-25T13:36:39.335Z'
+modified: '2021-05-12T08:46:08.112Z'
 ---
 
 # bash kill

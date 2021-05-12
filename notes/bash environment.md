@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash environment
 created: '2019-07-30T06:19:48.998Z'
-modified: '2020-01-17T07:50:43.073Z'
+modified: '2021-05-12T08:46:51.072Z'
 ---
 
 # bash environment

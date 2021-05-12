@@ -1,8 +1,8 @@
 ---
-tags: [bash/keyword]
+tags: [shell/bash/keyword]
 title: bash time
 created: '2019-08-02T08:39:11.840Z'
-modified: '2021-03-04T10:06:33.915Z'
+modified: '2021-05-12T08:46:30.786Z'
 ---
 
 # bash time

@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash pushd popd
 created: '2019-08-02T06:42:37.617Z'
-modified: '2021-04-17T10:52:57.361Z'
+modified: '2021-05-12T08:46:08.261Z'
 ---
 
 # bash pushd popd

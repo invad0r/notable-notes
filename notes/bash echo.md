@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash echo
 created: '2019-08-02T06:42:37.582Z'
-modified: '2020-01-10T10:17:09.263Z'
+modified: '2021-05-12T08:46:07.816Z'
 ---
 
 # bash echo

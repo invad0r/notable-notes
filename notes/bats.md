@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2020-03-16T17:35:16.830Z'
+modified: '2021-05-12T08:47:10.117Z'
 ---
 
 # bats

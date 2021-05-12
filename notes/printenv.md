@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: printenv
 created: '2020-01-17T07:50:06.349Z'
-modified: '2020-01-17T07:50:29.939Z'
+modified: '2021-05-12T08:47:10.282Z'
 ---
 
 # printenv

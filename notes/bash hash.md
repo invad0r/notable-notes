@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in, linux, macos]
+tags: [linux, macos, shell/bash/builtin]
 title: bash hash
 created: '2019-08-02T06:42:37.599Z'
-modified: '2020-02-04T12:21:27.177Z'
+modified: '2021-05-12T08:46:08.023Z'
 ---
 
 # bash hash

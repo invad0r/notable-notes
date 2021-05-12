@@ -1,8 +1,8 @@
 ---
-tags: [bash/keyword]
+tags: [shell/bash/keyword]
 title: bash if
 created: '2019-07-30T06:19:49.011Z'
-modified: '2021-02-04T13:03:50.494Z'
+modified: '2021-05-12T08:46:30.740Z'
 ---
 
 # bash if

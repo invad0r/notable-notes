@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash break
 created: '2019-08-02T06:42:37.559Z'
-modified: '2020-03-16T17:51:32.464Z'
+modified: '2021-05-12T08:46:07.583Z'
 ---
 
 # bash break

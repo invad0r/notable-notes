@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash exit
 created: '2019-08-02T06:42:37.588Z'
-modified: '2020-05-05T06:49:01.608Z'
+modified: '2021-05-12T08:46:07.927Z'
 ---
 
 # bash exit

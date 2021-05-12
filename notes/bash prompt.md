@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash prompt
 created: '2019-07-30T06:19:49.017Z'
-modified: '2020-03-16T17:28:55.160Z'
+modified: '2021-05-12T08:46:51.283Z'
 ---
 
 # bash prompt
@@ -66,6 +66,33 @@ prompt_command () {
 #  \\               a backslash
 #  \[               begin  a sequence of non-printing characters, which could be used to embed a terminal  control  sequence  into  the prompt
 #  \]               end a sequence of non-printing characters
+
+
+#   d         date in "Weekday Month Date" format (e.g., "Tue May 26")
+#   e         an ASCII escape character (033)
+#   h         hostname up to the first .
+#   H         full hostname
+#   j         number of jobs currently run in background
+#   l         basename of the shells terminal device name
+#   n         newline
+#   r         carriage return
+#   s         name of the shell, the basename of $0 (the portion following the final slash)
+#   t         current time in 24-hour HH:MM:SS format
+#   T         current time in 12-hour HH:MM:SS format
+#   @         current time in 12-hour am/pm format
+#   A         current time in 24-hour HH:MM format
+#   u         username of the current user
+#   v         version of bash (e.g., 4.00)
+#   V         release of bash, version + patch level (e.g., 4.00.0)
+#   w         Complete path of current working directory
+#   W         basename of the current working directory
+#   !         history number of this command
+#   #         the command number of this command
+#   $         if the effective UID is 0, a #, otherwise a $
+#   nnn       character corresponding to the octal number nnn
+#   \         a backslash
+#   [         begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
+#   ]         end a sequence of non-printing characters
 ```
 
 ## see also

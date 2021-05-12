@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash braces
 created: '2019-09-24T06:43:14.231Z'
-modified: '2020-05-04T10:03:49.552Z'
+modified: '2021-05-12T08:46:50.982Z'
 ---
 
 # bash braces

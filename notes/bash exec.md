@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash exec
 created: '2019-07-30T06:19:49.006Z'
-modified: '2021-03-22T07:05:23.282Z'
+modified: '2021-05-12T08:46:07.887Z'
 ---
 
 # bash exec

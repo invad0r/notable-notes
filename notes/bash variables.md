@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash variables
 created: '2019-07-30T06:19:49.023Z'
-modified: '2020-04-29T07:18:05.455Z'
+modified: '2021-05-12T08:46:51.354Z'
 ---
 
 # bash variables

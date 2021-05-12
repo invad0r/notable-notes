@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash shopt
 created: '2019-07-30T06:19:49.237Z'
-modified: '2020-10-12T07:29:53.886Z'
+modified: '2021-05-12T08:46:08.446Z'
 ---
 
 # bash shopt

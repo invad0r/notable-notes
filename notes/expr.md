@@ -1,8 +1,8 @@
 ---
-tags: [bash, linux]
+tags: [linux, shell]
 title: expr
 created: '2019-09-24T06:30:09.956Z'
-modified: '2019-09-24T09:22:02.631Z'
+modified: '2021-05-12T08:47:10.190Z'
 ---
 
 # expr

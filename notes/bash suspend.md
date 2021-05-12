@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash suspend
 created: '2019-08-02T06:42:37.633Z'
-modified: '2021-02-04T13:11:05.106Z'
+modified: '2021-05-12T08:46:08.490Z'
 ---
 
 # bash suspend

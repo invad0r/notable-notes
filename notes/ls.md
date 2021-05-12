@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: ls
 created: '2019-07-30T06:19:49.165Z'
-modified: '2020-09-01T13:04:31.350Z'
+modified: '2021-05-12T16:04:59.553Z'
 ---
 
 # ls
@@ -54,6 +54,7 @@ ls -lisa
 ```
 
 ## see also
+- [[exa]]
 - [[lsattr]]
 - [[chmod]]
 - [[df]]

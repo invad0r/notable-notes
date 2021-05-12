@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: bc
 created: '2019-09-24T06:25:36.082Z'
-modified: '2021-03-12T08:57:45.942Z'
+modified: '2021-05-12T08:47:10.143Z'
 ---
 
 # bc

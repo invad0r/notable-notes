@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash wait
 created: '2019-08-02T06:42:37.652Z'
-modified: '2020-08-25T14:58:39.206Z'
+modified: '2021-05-12T08:46:08.678Z'
 ---
 
 # bash wait

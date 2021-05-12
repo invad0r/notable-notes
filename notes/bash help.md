@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash help
 created: '2019-08-02T06:42:37.601Z'
-modified: '2020-08-25T14:22:06.103Z'
+modified: '2021-05-12T08:46:08.046Z'
 ---
 
 # bash help

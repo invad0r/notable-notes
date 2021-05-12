@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: gnu readline
 created: '2019-07-30T06:19:49.019Z'
-modified: '2019-10-17T12:00:20.402Z'
+modified: '2021-05-12T08:47:10.236Z'
 ---
 
 # gnu readline

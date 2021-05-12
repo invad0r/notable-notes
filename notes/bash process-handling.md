@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash process-handling
 created: '2019-07-30T06:19:49.016Z'
-modified: '2020-08-06T09:47:43.910Z'
+modified: '2021-05-12T08:46:51.235Z'
 ---
 
 # bash process-handling

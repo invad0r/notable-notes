@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash jobs
 created: '2019-08-02T06:42:37.604Z'
-modified: '2020-08-25T14:56:23.479Z'
+modified: '2021-05-12T08:46:08.090Z'
 ---
 
 # bash jobs

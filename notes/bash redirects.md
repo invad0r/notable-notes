@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2021-03-04T10:26:38.607Z'
+modified: '2021-05-12T08:46:51.306Z'
 ---
 
 # bash redirects

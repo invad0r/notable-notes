@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash debugging
 created: '2019-07-30T06:19:49.021Z'
-modified: '2020-03-25T08:35:08.381Z'
+modified: '2021-05-12T08:46:51.027Z'
 ---
 
 # bash debugging

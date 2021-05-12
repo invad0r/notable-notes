@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash arithmetic expansion
 created: '2019-07-30T06:19:48.992Z'
-modified: '2021-02-04T13:04:46.666Z'
+modified: '2021-05-12T08:46:50.936Z'
 ---
 
 # bash arithmetic expansion

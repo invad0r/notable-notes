@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash getopts
 created: '2019-07-30T06:19:49.009Z'
-modified: '2020-08-25T13:57:42.701Z'
+modified: '2021-05-12T08:46:51.095Z'
 ---
 
 # bash getopts

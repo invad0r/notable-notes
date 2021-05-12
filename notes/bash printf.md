@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash printf
 created: '2019-07-30T06:19:49.208Z'
-modified: '2021-02-04T13:06:41.726Z'
+modified: '2021-05-12T08:46:08.237Z'
 ---
 
 # bash printf

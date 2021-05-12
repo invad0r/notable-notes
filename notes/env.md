@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: env
 created: '2020-01-17T07:48:51.293Z'
-modified: '2020-01-17T07:52:03.417Z'
+modified: '2021-05-12T08:47:10.166Z'
 ---
 
 # env

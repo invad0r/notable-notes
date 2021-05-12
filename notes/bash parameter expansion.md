@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash parameter expansion
 created: '2019-07-30T06:19:49.015Z'
-modified: '2020-05-06T07:02:59.900Z'
+modified: '2021-05-12T08:46:51.189Z'
 ---
 
 # bash parameter expansion 

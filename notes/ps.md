@@ -2,7 +2,7 @@
 tags: [linux]
 title: ps
 created: '2019-07-30T06:19:49.218Z'
-modified: '2021-03-25T13:36:26.931Z'
+modified: '2021-05-12T17:10:57.620Z'
 ---
 
 # ps
@@ -56,6 +56,7 @@ ps aux | grep "[f]nord"                                 # don't show grep in res
 
 ## see also
 - [ps man page](http://linuxcommand.org/lc3_man_pages/ps1.html)
+- [[procs]]
 - [[pgrep]]
 - [[pkill]]
 - [[bash kill]]

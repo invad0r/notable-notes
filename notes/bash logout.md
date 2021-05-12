@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash logout
 created: '2019-08-02T06:42:37.610Z'
-modified: '2021-02-04T13:06:15.957Z'
+modified: '2021-05-12T08:46:08.179Z'
 ---
 
 # bash logout

@@ -1,8 +1,8 @@
 ---
-tags: [bash/keyword]
+tags: [shell/bash/keyword]
 title: 'bash [ ['
 created: '2020-09-02T14:24:09.002Z'
-modified: '2021-02-26T07:23:03.839Z'
+modified: '2021-05-12T08:46:30.644Z'
 ---
 
 # bash [ [

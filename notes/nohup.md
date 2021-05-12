@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell]
 title: nohup
 created: '2020-08-06T09:39:22.369Z'
-modified: '2020-09-02T17:43:54.347Z'
+modified: '2021-05-12T08:47:10.258Z'
 ---
 
 # nohup

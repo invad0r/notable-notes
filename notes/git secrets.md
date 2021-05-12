@@ -1,7 +1,7 @@
 ---
 title: git secrets
 created: '2020-11-27T08:03:15.064Z'
-modified: '2020-11-27T08:04:15.314Z'
+modified: '2021-04-29T19:34:36.500Z'
 ---
 
 # git secrets
@@ -15,6 +15,7 @@ modified: '2020-11-27T08:04:15.314Z'
 ```sh
 
 ```
+
 ## see also
 - [[git]]
 - [[git extrs]]

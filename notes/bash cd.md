@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash cd
 created: '2019-08-02T06:42:37.564Z'
-modified: '2020-03-25T08:47:11.845Z'
+modified: '2021-05-12T08:46:07.630Z'
 ---
 
 # bash cd

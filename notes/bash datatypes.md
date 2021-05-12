@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash datatypes
 created: '2019-08-19T07:28:23.142Z'
-modified: '2019-08-29T12:18:38.721Z'
+modified: '2021-05-12T08:46:51.004Z'
 ---
 
 # bash datatypes

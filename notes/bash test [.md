@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: 'bash test ['
 created: '2019-07-30T06:19:49.021Z'
-modified: '2021-02-26T07:31:53.143Z'
+modified: '2021-05-12T08:46:08.513Z'
 ---
 
 # bash test [

@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash ifs
 created: '2019-07-30T06:19:49.012Z'
-modified: '2020-01-16T20:29:59.463Z'
+modified: '2021-05-12T08:46:51.164Z'
 ---
 
 # bash ifs

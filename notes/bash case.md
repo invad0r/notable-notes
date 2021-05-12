@@ -1,8 +1,8 @@
 ---
-tags: [bash/keyword]
+tags: [shell/bash/keyword]
 title: bash case
 created: '2019-07-30T06:19:48.993Z'
-modified: '2019-11-28T08:09:44.473Z'
+modified: '2021-05-12T08:46:30.670Z'
 ---
 
 # bash case

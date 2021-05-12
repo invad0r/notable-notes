@@ -2,7 +2,7 @@
 tags: [coreutils, macos]
 title: cat
 created: '2019-09-04T06:20:06.676Z'
-modified: '2021-02-23T08:23:29.609Z'
+modified: '2021-04-28T08:27:42.863Z'
 ---
 
 # cat
@@ -33,3 +33,4 @@ EOF
 - [plan9 source code](https://9p.io/sources/plan9/sys/src/cmd/cat.c)
 - [linux source code](https://git.savannah.gnu.org/cgit/coreutils.git/plain/src/cat.c)
 - [[kubectl]]
+- [Useless Use of Cat Award](http://porkmail.org/era/unix/award.html)

@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash array
 created: '2019-08-01T07:14:55.242Z'
-modified: '2020-01-29T07:18:39.143Z'
+modified: '2021-05-12T08:46:50.959Z'
 ---
 
 # bash array

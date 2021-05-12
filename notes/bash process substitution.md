@@ -1,8 +1,8 @@
 ---
-tags: [bash]
+tags: [shell/bash]
 title: bash process substitution
 created: '2019-09-05T09:17:23.395Z'
-modified: '2020-01-26T17:06:22.957Z'
+modified: '2021-05-12T08:46:51.212Z'
 ---
 
 # bash process substitution

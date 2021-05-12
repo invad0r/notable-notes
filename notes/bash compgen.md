@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash compgen
 created: '2019-08-02T06:13:41.072Z'
-modified: '2021-03-04T10:31:46.735Z'
+modified: '2021-05-12T08:46:07.674Z'
 ---
 
 # bash compgen

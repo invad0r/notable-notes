@@ -1,8 +1,8 @@
 ---
-tags: [bash/built-in]
+tags: [shell/bash/builtin]
 title: bash mapfile
 created: '2019-07-30T06:19:49.014Z'
-modified: '2020-03-16T17:14:59.155Z'
+modified: '2021-05-12T08:46:08.212Z'
 ---
 
 # bash mapfile
