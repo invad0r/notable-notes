@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2021-05-12T08:46:50.884Z'
+modified: '2021-06-04T12:12:20.339Z'
 ---
 
 # bash
@@ -13,35 +13,47 @@ modified: '2021-05-12T08:46:50.884Z'
 
 ## usage
 ```sh
-# option  name	            effect
-#  -B,+B  brace expansion	  enable/disable brace expansion
-#  -C	    noclobber	        Prevent overwriting of files by redirection. overridden by `>|`
-#  -D	          	          List double-quoted strings prefixed by $, but do not execute commands in script
-#  -a	    allexport	        Export all defined variables
-#  -b	    notify	          Notify when jobs running in background terminate (not of much use in a script)
-#  -c ..	      	          Read commands from `..`
-#
-#  checkjobs: Informs user of any open jobs upon shell exit
-#  -e	    errexit	          abort script at first error, when a command exits with non-zero status 
-#                           (except in `until` or `while` loops, if-tests, list constructs)
-#  -f	    noglob	          filename expansion (globbing) disabled
-#
-#  globstar:	globbing star-match	Enables the ** globbing operator. Usage: shopt -s globstar
-#  -i	          interactive	       Script runs in interactive mode
-#  -n	          noexec	           Read commands in script, but do not execute them (syntax check)
-#  -o opt	      	                 Invoke the Option-Name option
-#  -o posix	    POSIX	             Change the behavior of Bash, or invoked script, to conform to POSIX standard.
-#  -o pipefail	pipefailure	       Causes a pipeline to return the exit status of the last command in the pipe that returned a non-zero return value.
-#  -p	          privileged	        Script runs as "suid" (caution!)
-#  -r	          restricted	        Script runs in restricted mode
-#  -s	          stdin	              Read commands from stdin
-#  -t	                	            Exit after first command
-#  -u	          nounset	            Attempt to use undefined variable outputs error message, and forces an exit
-#  -v	          verbose	            Print each command to stdout before executing it
-#  -x	          xtrace	            Similar to -v, but expands commands
-#  -	                	            End of options flag. All other arguments are positional parameters.
-#  --	                	            Unset positional parameters. If arguments given (-- arg1 arg2), positional parameters set to arguments.
+# option    name	                effect
+-B,+B       brace expansion	    # enable/disable brace expansion
+-C	        noclobber	          # Prevent overwriting of files by redirection. overridden by `>|`
+-D	          	                # List double-quoted strings prefixed by $, but do not execute commands in script
+-a	        allexport	          # Export all defined variables
+-b	        notify	            # Notify when jobs running in background terminate (not of much use in a script)
+-c ..	      	                  # Read commands from `..`
 
+#  checkjobs: Informs user of any open jobs upon shell exit
+-e	    errexit	                # abort script at first error, when a command exits with non-zero status 
+                                # (except in `until` or `while` loops, if-tests, list constructs)
+-f	    noglob	                # filename expansion (globbing) disabled
+
+#  globstar:	globbing star-match	Enables the ** globbing operator. Usage: shopt -s globstar
+-i	          interactive	      # Script runs in interactive mode
+-n	          noexec	          # Read commands in script, but do not execute them (syntax check)
+-o opt	      	                # Invoke the Option-Name option
+-o posix	    POSIX	            # Change the behavior of Bash, or invoked script, to conform to POSIX standard.
+-o pipefail	pipefailure	        # Causes a pipeline to return the exit status of the last command in the pipe that returned a non-zero return value.
+-p	          privileged	      # Script runs as "suid" (caution!)
+-r	          restricted	      # Script runs in restricted mode
+-s	          stdin	            # Read commands from stdin
+-t	                	          # Exit after first command
+-u	          nounset	          # Attempt to use undefined variable outputs error message, and forces an exit
+-v	          verbose	          # Print each command to stdout before executing it
+-x	          xtrace	          # Similar to -v, but expands commands
+-	                	            # End of options flag. All other arguments are positional parameters.
+--	                	          # Unset positional parameters. If arguments given (-- arg1 arg2), positional parameters set to arguments.
+```
+```sh
+# variables
+0                       # current shell e.g. $0 => "-bash"
+BASH
+BASH_VERSION            # as string
+${BASH_VERSINFO[@]}     # as array
+${FUNCNAME[@]}          # all functions including parents
+
+PROMPT_DIRTRIM
+PROMPT_COMMAND
+```
+```sh
 bash -c "echo 1"    # read command-string
 
 bash --debugger
@@ -49,17 +61,6 @@ bash --debugger
 bash --debugger
 PS4='+ ${BASH_SOURCE[0]} '
 set -x ; __git_ps1 ; set +x
-
-# variables
-$0                      # current shell ?
-$BASH
-$BASH_VERSION           # As a string.
-${BASH_VERSINFO[@]}     # As an array.
-${FUNCNAME[@]}          # All functions including parents.
-
-PROMPT_DIRTRIM
-PROMPT_COMMAND
-
 
 # variable assignment
 # Why can you not have spaces around an equal sign in a shell variable assignment statement?

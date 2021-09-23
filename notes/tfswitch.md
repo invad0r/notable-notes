@@ -1,7 +1,7 @@
 ---
 title: tfswitch
 created: '2021-01-18T10:13:21.713Z'
-modified: '2021-01-18T10:14:39.348Z'
+modified: '2021-05-10T13:36:55.835Z'
 ---
 
 # tfswitch
@@ -17,6 +17,8 @@ tfswitch --list
 
 
 tfswitch 0.14.4
+
+tfswitch --latest-stable=0.14
 ```
 
 ## see also

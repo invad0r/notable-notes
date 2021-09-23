@@ -2,18 +2,20 @@
 tags: [editor]
 title: atom
 created: '2019-07-30T06:19:48.989Z'
-modified: '2020-10-14T12:06:57.238Z'
+modified: '2021-06-07T06:51:51.908Z'
 ---
 
 # atom
 
-> based on electron
+> editor based on electron
 
 ## usage
-<kbd>cmd + shift + p </kbd>  # command palette will pop up
-<kbd>cmd + ;</kbd>           # open setting view
-<kbd>cmd + o</kbd>           # open project
-<kbd>ctl + shift + p</kbd> `Window:Reload`
+```sh
+cmd + shift + p                   # command palette will pop up
+cmd + ;                           # open setting view
+cmd + o                           # open project
+ctl + shift + p `Window:Reload`   # command palette
+```
 
 ## atom package manager
 ```sh

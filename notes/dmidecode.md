@@ -1,7 +1,7 @@
 ---
 title: dmidecode
 created: '2020-02-04T17:11:08.680Z'
-modified: '2020-09-02T17:31:09.906Z'
+modified: '2021-06-08T05:44:04.971Z'
 ---
 
 # dmidecode
@@ -10,11 +10,13 @@ modified: '2020-09-02T17:31:09.906Z'
 
 
 ## usage
-```sh
-# options:
-# -t, --type TYPE 
 
-dmidecode -t 1  # 1 = System 
+```sh
+-t, --type TYPE         #
+```
+
+```sh
+dmidecode -t 1          # 1 = System 
 
 dmidecode --type BIOS
 ```

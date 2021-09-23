@@ -1,7 +1,7 @@
 ---
 title: haskell
 created: '2021-02-03T12:56:01.739Z'
-modified: '2021-02-04T08:09:27.611Z'
+modified: '2021-06-16T16:18:16.610Z'
 ---
 
 # haskell
@@ -59,3 +59,4 @@ ghci                    # starts haskell repl
 - [learnyouahaskell.com](http://learnyouahaskell.com)
 - [[erlang]]
 - [[python comprehensions]]
+- [[shellcheck]]

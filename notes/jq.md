@@ -2,7 +2,7 @@
 tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2021-03-29T06:36:21.862Z'
+modified: '2021-06-04T08:55:39.160Z'
 ---
 
 # jq
@@ -11,18 +11,16 @@ modified: '2021-03-29T06:36:21.862Z'
 
 ## usage
 ```sh
-# flags
-# --compact-output, -c    compact to single line,1 no pretty print
-# --raw-output, -r        output no quotes
-# --raw-input, -R         don't parse the input as json. Instead, each line of text is passed to the filter as a string
-# --unbuffered            if you're piping a slow data source into jq and piping jq's output elsewhere
-# --null-input, -n        Don't read any input at all! useful when using jq as a simple calculator or to construct json data from scratch
-# --sort-keys, -S         Output the fields of each object with the keys in sorted order
-#                         diff <(jq -S . fileA.json) <(jq -S . fileA.json)
-
-
-# `tojson` `fromjson`
-echo '[1, "foo", ["foo"]]' | jq '. | tostring'
+--compact-output, -c    # compact to single line,1 no pretty print
+--raw-output, -r        # output no quotes
+--raw-input, -R         # don't parse the input as json. Instead, each line of text is passed to the filter as a string
+--unbuffered            # if you're piping a slow data source into jq and piping jq's output elsewhere
+--null-input, -n        # Don't read any input at all! useful when using jq as a simple calculator or to construct json data from scratch
+--sort-keys, -S         # Output the fields of each object with the keys in sorted order
+                        # diff <(jq -S . fileA.json) <(jq -S . fileA.json)
+```
+```sh
+echo '[1, "foo", ["foo"]]' | jq '. | tostring'      # `tojson` `fromjson`
 
 echo '[1, "foo", ["foo"]]' | jq '. | tojson'
 
@@ -85,6 +83,6 @@ jq -n -c '[{"foo": 1, "bar": 2}, {"foo": 3, "quux": 4}] | map(select( .bar ))'  
 - [[jsonpath]]
 - [[yq]]
 - [[jwt]]
-- [[govc vm]]
+- [[govc]]
 - [[aws]]
 - [[kubectl]]

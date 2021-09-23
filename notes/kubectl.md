@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2021-03-22T16:04:30.811Z'
+modified: '2021-07-27T12:40:35.562Z'
 ---
 
 # kubectl
@@ -14,15 +14,14 @@ modified: '2021-03-22T16:04:30.811Z'
 
 ## usage
 ```sh
-# environment variables
-#   KUBECONFIG
-#   KUBE_EDITOR
-
-# flags
-#   -v=6      debug level 6
-#   -o        output format [json|yaml|wide] 
-
-
+KUBECONFIG          # -
+KUBE_EDITOR         # -
+```
+```sh
+-v=6                # debug level 6
+-o                  # output format [json|yaml|wide] 
+```
+```sh
 # merge config
 KUBECONFIG=$HOME/.kube/config:file2:file3 kubectl config view --merge --flatten > ~/.kube/merged_kubeconfig && mv ~/.kube/merged_kubeconfig ~/.kube/config
 
@@ -31,6 +30,10 @@ kubectl api-versions                              # get all supported api versio
 
 kubectl api-resources --sort-by=name -o wide      # get all objects
 
+kubectl cluster-info
+
+kubectl explain po
+kubectl explain --help
 kubectl explain --api-version=apps/v1 replicaset
 kubectl explain deployment.metadata
 kubectl explain deployment.spec
@@ -59,15 +62,31 @@ kubectl get pods --show-labels | awk '{print $6}' | column -s, -t
 kubectl get pods -L 
 
 
+# running adhoc pod without yaml-manifest
+
 kubectl run echoserver --image=gcr.io/google_containers/echoserver:1.4 --port=8080
 
-kubectl cluster-info
-
-kubectl explain po
-kubectl explain --help
-
-# running adhoc pod without yaml-manifest
 kubectl run dnsutils --image=tutum/dnsutils --generator=run-pod/v1 --command -- sleep infinity
+
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+
+kubectl run POD_NAME \
+  --image=mongo:4.0  \
+  --overrides='{"apiVersion": "v1", "spec": {
+    "affinity": {
+      "nodeAffinity": {
+        "requiredDuringSchedulingIgnoredDuringExecution": {
+          "nodeSelectorTerms": [{
+              "matchFields": [{
+                  "key": "metadata.name",
+                  "operator": "In",
+                  "values": ["NODE_NAME"]
+                }]
+            }]
+        }}}}}' \                                  `# run pod on specific node `
+  --command -- sleep infinity
+
+
 
 STDOUT | kubectl apply -f -
 kubectl apply -f https://HOST/DEPLOYMENT.yaml
@@ -87,10 +106,6 @@ kubectl edit deployment/mydeployment -o yaml --save-config   # edit the deployme
 
 kubectl logs kubia-j582f
 kubectl logs kubia-manual -c kubia
-
-
-kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
-
 
 kubectl expose deployment DEPLOYMENT --type=NodePort
 
@@ -124,6 +139,7 @@ kubectl access-matrix               # use plugin to see the level of access user
 ```
 
 ## see also
+- [[helm]]
 - [[kubectx]]
 - [[kubens]]
 - [[kubeseal]]

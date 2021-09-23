@@ -1,7 +1,7 @@
 ---
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2021-04-16T08:18:02.798Z'
+modified: '2021-06-04T08:52:34.351Z'
 ---
 
 # aws
@@ -13,7 +13,6 @@ modified: '2021-04-16T08:18:02.798Z'
 
 ## usage
 ```sh
-# https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 AWS_PROFILE                   # use profile from config
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
@@ -21,10 +20,14 @@ AWS_CONFIG_FILE               # default: "~/.aws/config"
 AWS_SHARED_CREDENTIALS_FILE   # default:  ~/.aws/credentials
 AWS_DEFAULT_OUTPUT            # json, yaml, yaml-stream, text, table
 AWS_DEFAULT_REGION
-
-# https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html
-# --color STRING      support for color output: on, off, auto
-# --debug             enables debug logging by providing full python logs; (`CMD 2> FILE`, `CMD &> FILE`)
+```
+[docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+```sh
+--color STRING              # support for color output: on, off, auto
+--debug                     # enables debug logging by providing full python logs; (`CMD 2> FILE`, `CMD &> FILE`)
+```
+[docs.aws.amazon.com/cli/latest/userguide/cli-configure-options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html)
+```sh
 
 aws configure --profile PROFILE
 
@@ -49,8 +52,11 @@ aws s3 cp   s3://BUCKET/KEY/FILE .                  # downlaod s3-object
 aws s3 sync s3://BUCKET_1 s3://BUCKET_2 --dryrun    # diff two buckets
 
 # aws s3api
+aws s3api list-buckets --query 'Buckets[*].Name'
 aws s3api list-objects --bucket BUCKET --output text
 aws s3api head-bucket --bucket BUCKET                       # return error if credentials aren't valid
+
+aws s3api get-object-lock-configuration --bucket BUCKET	--query 'ObjectLockConfiguration.ObjectLockEnabled'   # check if lock config enables
 
 
 # ec2 describe-instances
@@ -147,3 +153,4 @@ aws securityhub get-findings \
 - [[mc]]
 - [[gcloud]]
 - [[jq]]
+- [[localstack]]

@@ -2,7 +2,7 @@
 tags: [java, versionmanager]
 title: sdk
 created: '2019-08-20T08:05:04.309Z'
-modified: '2020-04-28T08:46:39.775Z'
+modified: '2021-06-08T05:27:38.608Z'
 ---
 
 # sdk
@@ -13,6 +13,15 @@ modified: '2020-04-28T08:46:39.775Z'
 `curl -s "https://get.sdkman.io" | bash`
 
 ## change java
+
+```sh
+SDKMAN_CANDIDATES_API       # https://api.sdkman.io/2
+SDKMAN_CANDIDATES_DIR       # $HOME/.sdkman/candidates
+SDKMAN_DIR                  # $HOME/.sdkman
+SDKMAN_PLATFORM             # darwinx64
+SDKMAN_VERSION              # 5.9.1+575
+```
+
 ```sh
 sdk install java 12.0.2.hs-adpt
 sdk use java 12.0.2.hs-adpt

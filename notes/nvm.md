@@ -2,12 +2,24 @@
 tags: [javascript, versionmanager]
 title: nvm
 created: '2019-08-20T09:04:00.908Z'
-modified: '2021-03-29T06:57:28.939Z'
+modified: '2021-06-11T11:53:58.349Z'
 ---
 
 # nvm
 
 > `node version manager` - POSIX-compliant bash script to manage multiple active node.js versions 
+
+## install
+```sh
+cd ~ && git clone https://github.com/nvm-sh/nvm.git .nvm
+cd ~/.nvm && git checkout v0.38.0
+
+cat <<EOT >> ~/.bashrc    
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                      # loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"    # loads nvm bash_completion
+EOT
+```
 
 ## usage
 ```sh
@@ -30,4 +42,7 @@ nvm which 5.0                  # get the path to the executable to where it was 
 ## see also
 - [[node]]
 - [[npm]]
+- [[nxm]]
 - [[asdf]]
+- [[sdk]]
+- [[rvm]]

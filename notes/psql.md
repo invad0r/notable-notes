@@ -2,7 +2,7 @@
 tags: [database]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2021-04-06T12:40:14.885Z'
+modified: '2021-05-11T07:29:12.785Z'
 ---
 
 # psql
@@ -11,11 +11,15 @@ modified: '2021-04-06T12:40:14.885Z'
 `apt install postgresql`
 
 ## usage
+```sh
+psql DBNAME USER
+
+psql DBNAME -U USER -d DATABASE
+
+psql -U USER -d DATABASE -c "SELECT * FROM some_table"
+```
+
 ```sql
-psql DBNAME USERNAME
-
-psql DBNAME -U USERNAME -d DATABASE
-
 \?                -- help for psql commands
 \h                -- help for SQL commands
 
@@ -35,27 +39,21 @@ psql DBNAME -U USERNAME -d DATABASE
 DESCRIBE TABLE
 
 \x auto         -- output format
-```
 
-
-### init
-```sql
+-- init
 CREATE DATABASE bookstore;
 CREATE USER bookstore_user WITH ENCRYPTED PASSWORD 'secret';
 GRANT ALL PRIVILEGES ON DATABASE bookstore TO bookstore_user;
 GRANT ALL PRIVILEGES ON TABLE books TO bookstore_user;
 
 psql "dbname=bookstore host=localhost user=bookstore_user password=secret port=5432"
-
 sslmode=require
-```
 
-### dryrun
-```sql
-BEGIN;
-UPDATE users SET admin = 't' WHERE id = '38';
-select admin from users where id = '38';
-ROLLBACK;
+
+BEGIN; UPDATE users SET admin = 't' WHERE id = '38'; select admin from users where id = '38'; ROLLBACK; -- dryrun
+
+
+SELECT pg_size_pretty( pg_database_size('DATABASE') );    -- get db size
 ```
 
 ## see also

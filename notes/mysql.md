@@ -2,7 +2,7 @@
 tags: [database]
 title: mysql
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-08-24T12:24:43.224Z'
+modified: '2021-05-14T06:33:59.327Z'
 ---
 
 # mysql
@@ -15,8 +15,10 @@ modified: '2020-08-24T12:24:43.224Z'
 ## usage
 ```sh
 mysql -uUSER -pPASS -hHOST -PPORT
+
 mysql -uUSER -pPASS -hHOST -e "show databases;"
-mysql -uUSER -pPASS -e "SELECT id, name FROM person WHERE name like '%smith%'" database > smiths.txt
+
+mysql -uUSER -pPASS -hHOST -e "SELECT id, name FROM person WHERE name like '%smith%'" database > smiths.txt
 ```
 ```sql
 \g        -- go  Send command to mysql server. 

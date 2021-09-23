@@ -2,7 +2,7 @@
 tags: [python]
 title: python
 created: '2019-07-30T06:19:49.222Z'
-modified: '2021-02-10T08:15:50.042Z'
+modified: '2021-06-10T06:35:14.925Z'
 ---
 
 # python
@@ -10,19 +10,20 @@ modified: '2021-02-10T08:15:50.042Z'
 > interpreted, interactive, object-oriented programming language
 
 ## usage
+
 ```sh
 python                  # start repl
-
 python -q               # start repl without version info
 
 
-python -m MODULE                                            # run library module as a script
 
-python3 -m http.server                                      # start web server
+python -m MODULE                                              # run library module as a script
 
-python -m json.tool < <(echo '{"foo":"bar", "val": 1}')     # pretty print json
+python3 -m http.server                                        # start web server
 
-echo STRING | python -m base64       # encode STRING
+python  -m json.tool < <(echo '{"foo":"bar", "val": 1}')      # pretty print json
+
+echo STRING | python -m base64                                # encode STRING
 
 
 # command strings - program passed in as string

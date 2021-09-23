@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: bash for
 created: '2019-07-30T06:19:49.007Z'
-modified: '2021-05-12T08:46:30.693Z'
+modified: '2021-08-03T15:32:27.180Z'
 ---
 
 # bash for
@@ -61,6 +61,8 @@ done
 ```
 
 ## see also
+
+- [[xargs]]
 - [[seq]]
 - [[bash arithmetic expansion]]
 - [[bash function]]

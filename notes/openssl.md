@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2020-10-26T14:14:19.263Z'
+modified: '2021-07-05T19:49:47.460Z'
 ---
 
 # openssl
@@ -44,7 +44,7 @@ openssl req  -noout -modulus -in example.csr | openssl sha256
 openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem
 openssl req -x509 -nodes -days 365         -newkey rsa:2048 -keyout key.pem -out cert.pem
 
-# auto-fill generate a self-signed certificate 
+# auto-fill generate a self-signed certificate
 openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem
   -subj '/C=US/ST=Oregon/L=Portland/CN=www.foo.bar'
 
@@ -87,7 +87,7 @@ openssl pkcs12 -nocerts -info -in file.p12 -passin pass:1234             # show 
 openssl pkcs12 -export -in clientprivcert.pem -out clientprivcert.pfx     # convert PEM to PKCS12
 
 openssl pkcs12 -in path.p12 -out newfile.crt.pem -nokeys  -clcerts    # extract certificate
-openssl pkcs12 -in path.p12 -out newfile.key.pem -nocerts -nodes      # extract key 
+openssl pkcs12 -in path.p12 -out newfile.key.pem -nocerts -nodes      # extract key
 
 
 
@@ -102,6 +102,13 @@ openssl s_client -connect example.com:143 -starttls imap -showcerts </dev/null 2
 
 openssl s_client -connect example.com:993 -showcerts </dev/null 2>/dev/null \
   | openssl x509 -text -noout | grep -A 1 Serial\ Number | tr -d :
+
+
+
+echo | openssl s_client -connect google.test:443 2>&1 1>/dev/null
+getaddrinfo: nodename nor servname provided, or not known
+connect:errno=0
+echo | openssl s_client -connect google.test:443 1>/dev/null 2>&1
 ```
 
 ## determin certificate type
@@ -128,4 +135,3 @@ openssl s_client -connect example.com:993 -showcerts </dev/null 2>/dev/null \
 - [How to determine certificate type from file - Stack Overflow](http://stackoverflow.com/questions/1722181/how-to-determine-certificate-type-from-file)
 - [openssl -connect returns wrong certificate - Stack Overflow](http://stackoverflow.com/a/24615393)
 - [Check SSL Certificate Expiration Date and More - ShellHacks](http://www.shellhacks.com/en/HowTo-Check-SSL-Certificate-Expiration-Date-from-the-Linux-Shell)
-

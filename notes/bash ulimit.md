@@ -2,7 +2,7 @@
 tags: [containers, shell/bash/builtin]
 title: bash ulimit
 created: '2019-08-02T06:42:37.646Z'
-modified: '2021-05-12T08:46:08.607Z'
+modified: '2021-06-07T07:03:08.591Z'
 ---
 
 # bash ulimit
@@ -10,32 +10,32 @@ modified: '2021-05-12T08:46:08.607Z'
 > provides control over the resources available to the shell and processes it creates, on systems that allow such control
 
 ## usage
+
 ```sh
-# options
-#
-# -S        use the `soft` resource limit
-# -H        use the `hard` resource limit
-#
-# -a        all current limits are reported
-# -b        socket buffer size
-# -c        maximum size of core files created
-# -d        maximum size of a process's data segment
-# -e        maximum scheduling priority (`nice')
-# -f        maximum size of files written by the shell and its children
-# -i        maximum number of pending signals
-# -l        maximum size a process may lock into memory
-# -m        maximum resident set size
-# -n        maximum number of open file descriptors
-# -p        pipe buffer size
-# -q        maximum number of bytes in POSIX message queues
-# -r        maximum real-time scheduling priority
-# -s        maximum stack size
-# -t        maximum amount of cpu time in seconds
-# -u        maximum number of user processes
-# -v        size of virtual memory
-# -x        maximum number of file locks
+-S        # use the `soft` resource limit
+-H        # use the `hard` resource limit
 
+-a        # all current limits are reported
+-b        # socket buffer size
+-c        # maximum size of core files created
+-d        # maximum size of a process's data segment
+-e        # maximum scheduling priority (`nice')
+-f        # maximum size of files written by the shell and its children
+-i        # maximum number of pending signals
+-l        # maximum size a process may lock into memory
+-m        # maximum resident set size
+-n        # maximum number of open file descriptors
+-p        # pipe buffer size
+-q        # maximum number of bytes in POSIX message queues
+-r        # maximum real-time scheduling priority
+-s        # maximum stack size
+-t        # maximum amount of cpu time in seconds
+-u        # maximum number of user processes
+-v        # size of virtual memory
+-x        # maximum number of file locks
+```
 
+```sh
 ulimit -a       # show all ulimits
 
 ulimit -nH      # check hard limit for filedescriptors

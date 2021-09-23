@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: sort
 created: '2019-07-30T06:19:49.240Z'
-modified: '2020-09-07T16:55:54.633Z'
+modified: '2021-06-07T06:50:03.576Z'
 ---
 
 # sort
@@ -10,15 +10,17 @@ modified: '2020-09-07T16:55:54.633Z'
 > sort or merge records (lines) of text and binary files
 
 ## usage
-```sh
-# flags
-# --key, -k
-# --numeric-sort, -n
-# --general-numeric-sort, -g
 
+```sh
+--key, -k                       #
+--numeric-sort, -n              #
+--general-numeric-sort, -g      #
+```
+
+```sh
 sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4      # sort ip via gnu sort
 
-sort --key 3 -g           # sort by key:3 and general numeric sort for floating point
+sort --key 3 -g                               # sort by key:3 and general numeric sort for floating point
 
 rpm -q kernel   | sort -V                     # order by semantic version
 

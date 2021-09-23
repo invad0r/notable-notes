@@ -2,7 +2,7 @@
 tags: [coreutils, filesystem]
 title: du
 created: '2019-07-30T06:19:49.046Z'
-modified: '2020-09-01T12:43:12.345Z'
+modified: '2021-06-08T05:49:28.854Z'
 ---
 
 # du
@@ -10,18 +10,21 @@ modified: '2020-09-01T12:43:12.345Z'
 > `disk usage` estimates and displays the disk space used by files.
 
 ## usage
-```sh
-# options:
-#    -c      Display a grand total
-#    -h      "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.
-#    -k      Sizes in kilobytes (default)
-#    -s      Display only a total for each argument
-#    -s      Display an entry for each specified file.  (Equivalent to -d 0)
-#
-# If the environment variable BLOCKSIZE is set, and the -k option is not specified,
-# the block counts will be displayed in units of that size block.
-# If BLOCKSIZE is not set, and the -k option is not specified, the block counts will be displayed in 512-byte blocks.
 
+```sh
+BLOCKSIZE         # if set,     and -k is not specified, the block counts will be displayed in units of that size block
+                  # if not set, and -k is not specified, the block counts will be displayed in 512-byte blocks
+```
+
+```sh
+-c                # display a grand total
+-h                # "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte
+-k                # sizes in kilobytes (default)
+-s                # display only a total for each argument
+-s                # display an entry for each specified file.  (Equivalent to -d 0)
+```
+
+```sh
 du -sk ./* | sort -nr       # total in kb
 
 du -chsh ./*
@@ -39,7 +42,7 @@ tar cf - /folder-with-big-files -P | pv -s $(du -sb /folder-with-big-files | awk
 
 # measure-disk-space-of-certain-file-types-in-aggregate
 for i in $(find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u); do \
-  cho "$i"": ""$(du -hac **/*."$i" | tail -n1 | awk '{print $1;}')";
+  echo "$i"": ""$(du -hac **/*."$i" | tail -n1 | awk '{print $1;}')";
 done | sort -h -k 2 -r
 ```
 

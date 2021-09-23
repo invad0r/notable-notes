@@ -2,7 +2,7 @@
 tags: [linux]
 title: od
 created: '2019-09-04T06:17:03.101Z'
-modified: '2020-09-03T09:12:51.246Z'
+modified: '2021-06-28T07:24:11.856Z'
 ---
 
 # od
@@ -28,9 +28,14 @@ echo '"' | tr -d "\n" | od -An -t uC
 #    remove "newline" char                     -t     select a type
 #                                                  u  type is unsigned decimal.
 #                                                  C  of size (one) char
+
+
+od -A n -t d -N 1 /dev/urandom      # -t d   specifies output format as signed decimal
+                                    # -N 1   read one byte from /dev/urandom
 ```
 
 ## see also
 - [[ascii]]
 - [[xxd]]
 - [[hexdump]]
+- [[rl]]

@@ -2,7 +2,7 @@
 tags: [network]
 title: tcpdump
 created: '2020-01-27T14:43:35.111Z'
-modified: '2020-09-02T17:35:17.104Z'
+modified: '2021-05-28T07:04:10.984Z'
 ---
 
 # tcpdump
@@ -81,7 +81,7 @@ tcpdump port http or port ftp or port smtp or port imap or port pop3 or port tel
 
 
 
-tcpdump -w - |pv -bert >/dev/null               # show network throughput like `iftop` or `jnettop`
+tcpdump -w - | pv -bert >/dev/null               # show network throughput like `iftop` or `jnettop`
 
 tcpdump -nni ens192 -e icmp[icmptype] == 8      # check ping - capture only ping echo requests with tcpdump 
 

@@ -2,7 +2,7 @@
 tags: [dns, linux, macos]
 title: dnstop
 created: '2019-09-17T05:04:56.977Z'
-modified: '2020-08-12T12:12:28.419Z'
+modified: '2021-06-08T05:44:18.790Z'
 ---
 
 # dnstop
@@ -10,7 +10,7 @@ modified: '2020-08-12T12:12:28.419Z'
 > displays various tables of dns traffic on your network
 
 ## install
-`berw install dnstop`
+`brew install dnstop`
 
 ## usage
 ```sh

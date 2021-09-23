@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2021-03-29T06:54:51.311Z'
+modified: '2021-06-30T07:15:03.150Z'
 ---
 
 # brew
@@ -16,8 +16,10 @@ modified: '2021-03-29T06:54:51.311Z'
 ```sh
 brew list
 
-brew search PACKAGE
+brew bundle --help
+brew bundle dump      # write all installed casks/formulae/images/taps into Brewfile in current directory
 
+brew search PACKAGE
 brew search gnu       # list possible installed gnu utils
 
 brew update           # update brew itself
@@ -25,7 +27,7 @@ brew up               # alias for update
 
 brew upgrade PACKAGE
 
-brew cleanup -s       # Scrub the cache, including downloads 
+brew cleanup -s       # Scrub the cache, including downloads
                       # -n, --dry-run  
                       # -v, --verbose
 
@@ -78,4 +80,3 @@ brew tap caskroom/cask       # get cask
 - [how to update bash on macos](https://superuser.com/questions/857250/how-to-update-bash-on-mac-os-x-yosemite)
 - [[nix]]
 - [[ruby]]
-

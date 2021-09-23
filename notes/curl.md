@@ -1,38 +1,39 @@
 ---
-tags: [curl, linux, network]
+tags: [linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2021-02-16T08:25:37.027Z'
+modified: '2021-07-08T12:57:28.350Z'
 ---
 
 # curl
 
-> transfer a url
+> `c - url` - transfer a url
 
 ## usage
 ```sh
-# options
-#   -O                          write output to a file named like original
-#   -o filename                 write output to a file named filename
-#   -L                          redo the request on the new place/redirect
-#   -s, --silent
-#   -H 'Host: foo.com'          set Host-Header
+-O                         # write output to a file named like original
+-o filename                # write output to a file named filename
+-L                         # redo the request on the new place/redirect
+-s, --silent               # -
+-H 'Host: foo.com'         # set Host-Header
+-v, -vv, -vvv              # verbose level
+--write-out
+```
+```sh
+curl -vv telnet://127.0.0.1:7878    # send data via telnet
 
-# check for CORS - if headers Access-Control-Allow-{Headers,Methods,Origin} are present
-curl -v -XOPTIONS URL      
-# < Access-Control-Allow-Origin: *
-# < Access-Control-Allow-Headers: Content-Type,Authorization,..
-# < Access-Control-Allow-Methods: DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT
+curl -v -XOPTIONS URL               # check for CORS - if headers Access-Control-Allow-{Headers,Methods,Origin} are present 
+curl -s -H "Origin: http://localhost" -v HOST 2>&1 | grep access    # check access-* headers
 
-# sending data
-curl -XGET--data "param1=val1&param2=val2" "http://HOST/resource"
+curl -XGET --data "param1=val1&param2=val2" "http://HOST/resource"   # sending data via GET
 
-curl -XGET--form "fileupload=@FILENAME" "http://HOST/resource"
+curl -XGET --form "fileupload=@FILENAME" "http://HOST/resource"      # sending data via GET
 
-curl -XPOST "URL" -d @FILENAME
+curl -XPOST "URL" -d @FILENAME                                      # sending data via POST and filenamedescriptor
+
 
 # data from heredoc
-curl -0 -v -XPOST "URL" -d @- << EOF
+curl -0 -v -XPOST "URL" -d @- << EOF  
 { "field1": "test" }
 EOF
  
@@ -96,6 +97,7 @@ curl dict://dict.org/show:strat
 ```
 
 ## see also
+- [[telnet]]
 - [[wget]]
 - [[xargs]]
 - [[url encoding]]

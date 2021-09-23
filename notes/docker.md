@@ -2,7 +2,7 @@
 tags: [container, container/docker]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2020-10-06T07:43:50.858Z'
+modified: '2021-06-08T05:45:13.525Z'
 ---
 
 # docker
@@ -17,40 +17,40 @@ ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-comple
 ```
 
 ## usage
+
 ```sh
-# environment variables
-# DOCKER_API_VERSION                API version to use
-# DOCKER_CONFIG                     location of your client configuration
-# DOCKER_CERT_PATH                  location of your authentication keys
-# DOCKER_CLI_EXPERIMENTAL           enable experimental features for the cli (e.g. enabled or disabled)
-# DOCKER_DRIVER                     graph driver to use
-# DOCKER_HOST                       daemon socket to connect to
-# DOCKER_NOWARN_KERNEL_VERSION      prevent warnings that your Linux kernel is unsuitable for Docker
-# DOCKER_RAMDISK                    if set will disable ‘pivot_root’
-# DOCKER_STACK_ORCHESTRATOR         Configure the default orchestrator to use when using docker stack management commands
-# DOCKER_TLS                        when set docker uses TLS
-# DOCKER_TLS_VERIFY                 when set docker uses TLS and verifies the remote
-# DOCKER_CONTENT_TRUST              when set docker uses notary to sign and verify images. equates to --disable-content-trust=false for build, create, pull, push, run
-# DOCKER_CONTENT_TRUST_SERVER       url of notary server to use. defaults to same URL as the registry
-# DOCKER_HIDE_LEGACY_COMMANDS       when set docker hides legacy top-level commands (`docker rm`, `docker pull`, ..)
-# DOCKER_TMPDIR                     location for temporary Docker files
+DOCKER_API_VERSION                # API version to use
+DOCKER_CONFIG                     # location of your client configuration
+DOCKER_CERT_PATH                  # location of your authentication keys
+DOCKER_CLI_EXPERIMENTAL           # enable experimental features for the cli (e.g. enabled or disabled)
+DOCKER_DRIVER                     # graph driver to use
+DOCKER_HOST                       # daemon socket to connect to
+DOCKER_NOWARN_KERNEL_VERSION      # prevent warnings that your Linux kernel is unsuitable for Docker
+DOCKER_RAMDISK                    # if set will disable ‘pivot_root’
+DOCKER_STACK_ORCHESTRATOR         # Configure the default orchestrator to use when using docker stack management commands
+DOCKER_TLS                        # when set docker uses TLS
+DOCKER_TLS_VERIFY                 # when set docker uses TLS and verifies the remote
+DOCKER_CONTENT_TRUST              # when set docker uses notary to sign and verify images. equates to --disable-content-trust=false for build, create, pull, push, run
+DOCKER_CONTENT_TRUST_SERVER       # url of notary server to use. defaults to same URL as the registry
+DOCKER_HIDE_LEGACY_COMMANDS       # when set docker hides legacy top-level commands (`docker rm`, `docker pull`, ..)
+DOCKER_TMPDIR                     # location for temporary Docker files
 
 # connect to docker host
 export DOCKER_API_VERSION=1.38 DOCKER_TLS_VERIFY=1 DOCKER_CERT_PATH=/path/to/certs DOCKER_HOST=tcp://10.32.23.187:2376
-  
+```
 
-# setting prompt for interactive use
-docker exec -it --env 'PS1=[CMD]\w \$ ' IMGAE CMD
+```sh
+docker system prune --all --volumes --force
+
+docker exec -it --env 'PS1=[CMD]\w \$ ' IMGAE CMD             # setting prompt for interactive use
 docker exec -it --env 'PS1=['$ENV'] \s-\v\$ ' IMAGE CMD
 
-# run CMD and place result in working dir
-docker run --rm -v $(pwd):$(pwd) -w $(pwd) IMAGE CMD
+docker run --rm -v $(pwd):$(pwd) -w $(pwd) IMAGE CMD                              # run CMD and place result in working dir
 
-# generate password and exit
-docker run --rm httpd:2.4-alpine htpasswd -nbB admin PASSWORD | cut -d ":" -f 2
+docker run --rm httpd:2.4-alpine htpasswd -nbB admin PASSWORD | cut -d ":" -f 2   # generate password and exit
 
-# run docker from inside container
-docker run -it -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest sh -c "apt-get update ; apt-get install docker.io -y ; bash"
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock ubuntu:latest \       `# run docker from inside container`
+  sh -c "apt-get update ; apt-get install docker.io -y ; bash"
 
 
 # filter

@@ -2,10 +2,14 @@
 tags: [linux, network]
 title: telnet
 created: '2019-07-30T06:19:49.252Z'
-modified: '2020-09-01T09:47:38.500Z'
+modified: '2021-05-28T06:26:40.116Z'
 ---
 
 # telnet
+
+> user interface to the TELNET protocol
+> a protocol of `internet protocol suite`/[[tcp-ip]] 
+> used to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection
 
 ## usage
 ```sh
@@ -21,7 +25,8 @@ telnet smtp.mydomain.com 25
     this is test number 1
     sent from linux box
     .
-
+```
+```sh
 telnet github.com 80
 
 Trying 192.30.253.113...
@@ -40,4 +45,6 @@ Connection closed by foreign host.
 ```
 ## see also
 - [[nc]]
-- [check-if-smtp-is-working-from-commandline - stackoverflow](https://stackoverflow.com/a/11988455)
+- [[curl]]
+- [[tcp-ip]]
+- [stackoverflow.com/check-if-smtp-is-working-from-commandline](https://stackoverflow.com/a/11988455)

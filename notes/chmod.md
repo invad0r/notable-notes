@@ -2,7 +2,7 @@
 tags: [coreutils, macos]
 title: chmod
 created: '2019-10-04T09:17:53.956Z'
-modified: '2020-09-01T12:43:12.239Z'
+modified: '2021-06-07T07:04:16.697Z'
 ---
 
 # chmod
@@ -11,12 +11,6 @@ modified: '2020-09-01T12:43:12.239Z'
 
 ## usage
 ```sh
-chmod 755 file
-
-chmod 644 dir
-
-chmod -R 644 ./dir
-
 #  chmod [u|g][+|-][r|w|x]
 #        |       |     ^
 #        |       |     |
@@ -35,7 +29,16 @@ chmod -R 644 ./dir
 #      l   file or dir as symlink
 #      s   setuid/set guid => run executable as owner with owner permissions
 #      t   sticky bit
-#  
+```
+```sh
+chmod 755 FILE
+
+chmod 644 DIR
+
+chmod -R 644 DIR
+
+chmod g-w FILE      # remove write from group
+chmod u+rw FILE     # give permission read, write to user
 ```
 
 ## see also
@@ -44,3 +47,4 @@ chmod -R 644 ./dir
 - [[lsattr]]
 - [[chattr]]
 - [[filesystem]]
+- [[bash umask]]

@@ -2,24 +2,29 @@
 tags: [shell/bash/builtin]
 title: bash kill
 created: '2019-08-02T06:42:37.606Z'
-modified: '2021-05-12T08:46:08.112Z'
+modified: '2021-06-07T07:01:06.335Z'
 ---
 
 # bash kill
 
 > send a signal to a job
-> is a shell builtin for two reasons:  it allows job IDs to be used instead of process IDs, and allows processes to be killed if the limit on processes that you can create is reached
+> is a shell builtin for two reasons:  
+>     it allows job IDs to be used instead of process IDs
+>     it allows processes to be killed if the limit on processes that you can create is reached
+>
+> send processes-identified by PID or JOBSPEC the signal named by SIGSPEC or SIGNUM
+> if neither SIGSPEC nor SIGNUM is present, then SIGTERM is assumed
 
 ## usage
-```sh
-# send processes-identified by PID or JOBSPEC the signal named by SIGSPEC or SIGNUM
-# if neither SIGSPEC nor SIGNUM is present, then SIGTERM is assumed
 
-# options
-#  -s SIG    SIG is a signal name
-#  -n SIG    SIG is a signal number
-#  -l        list the signal names; if arguments follow `-l' they are assumed to be signal numbers for which names should be listed
-#  -L        synonym for -l
+```sh
+-s SIG    # SIG is a signal name
+-n SIG    # SIG is a signal number
+-l        # list the signal names; if arguments follow `-l' they are assumed to be signal numbers for which names should be listed
+-L        # synonym for -l
+```
+
+```sh
 
 kill -l             # list signals
 

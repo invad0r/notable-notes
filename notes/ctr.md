@@ -2,7 +2,7 @@
 tags: [container]
 title: ctr
 created: '2020-03-12T13:48:00.174Z'
-modified: '2020-08-31T09:33:26.523Z'
+modified: '2021-05-27T09:57:42.854Z'
 ---
 
 # ctr
@@ -21,7 +21,8 @@ ctr events                # get events
 ```
 
 ## see also
+- [github.com/projectatomic/containerd/cli](https://github.com/projectatomic/containerd/blob/master/docs/cli.md)
 - [[containerd]]
 - [[linuxkit]]
 - [[docker]]
-- [github.com/projectatomic/containerd/cli](https://github.com/projectatomic/containerd/blob/master/docs/cli.md)
+- [[crictl]]

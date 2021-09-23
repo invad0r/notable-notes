@@ -2,7 +2,7 @@
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2020-02-24T08:03:00.614Z'
+modified: '2021-05-27T08:55:43.841Z'
 ---
 
 # docker-compose
@@ -18,8 +18,9 @@ docker-compose ps
 docker-compose up -d service_name
 ```
 
-## compose file version 2 reference
+## docker-compose.yml
 ```yml
+# compose file version 2 reference
 ulimits:        # this is docker-compose only !
   memlock:
     soft: -1
@@ -32,18 +33,17 @@ cap_drop:
   - NET_ADMIN
   - SYS_ADMIN
 ```
-
-## compose file version 3 reference
 ```yml
+# compose file version 3 reference
 cap_add:
   - ALL
 cap_drop:
   - NET_ADMIN
   - SYS_ADMIN
 ```
-
-## terraform dev compose
+[[capabilities]], [[ulimit]]
 ```yml
+# terrafrom dev setup
 version: '2.4'
 
 services:
@@ -66,7 +66,5 @@ services:
 
 ## see also
 - [[yaml]]
-- [[yq]]
-- [[capabilities]]
-- [[ulimit]]
+- [[localstack]]
 

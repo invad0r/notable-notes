@@ -2,7 +2,7 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2021-03-25T07:55:12.093Z'
+modified: '2021-06-04T12:16:55.265Z'
 ---
 
 # go
@@ -12,15 +12,32 @@ modified: '2021-03-25T07:55:12.093Z'
 ## install
 ```sh
 curl -O https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
-tar xvzf go1.13.7.linux-amd64.tar.gz
-mv go /usr/local/
+tar xvzf go1.13.7.linux-amd64.tar.gz && mv go /usr/local/
 
-# add to ~/.bashrc
 export GOPATH=$(go env GOPATH)
-#export GO11MODULE=on
 export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 ```
 ## usage
+```sh
+GOROOT             # /usr/local/opt/go/libexec
+GOTOOLDIR          # /usr/local/opt/go/libexec/pkg/tool/darwin_amd64
+GOPATH             # go-workspace and places to look for code/packages; must be set to `go get`, `go build` and `go install`
+GOBIN              # -
+PKG_CONFIG         # pkg-config
+GOCACHE            # /path/Caches/go-build
+GOTMPDIR           # -
+GOARCH             # amd64
+GOOS               # darwin
+GOHOSTARCH         # amd64
+GOHOSTOS           # darwin
+GCCGO              # gccgo
+CC                 # clang
+CXX                # clang++
+CGO_ENABLED        # -
+GOMOD              # -
+GO11MODULE
+```
+
 ```sh
 go help env     # more information about a command
 
@@ -57,24 +74,6 @@ go test -json           # Convert test output to JSON suitable for automated pro
 go env            # show current env vars go uses
 go env GOCACHE    # print specific value
 go env -json      # print in json format
-
-# envoronment variables
-#    GOROOT             "/usr/local/opt/go/libexec"
-#    GOTOOLDIR          /usr/local/opt/go/libexec/pkg/tool/darwin_amd64"
-#    GOPATH             go-workspace and places to look for code/packages; must be set to `go get`, `go build` and `go install`
-#    GOBIN
-#    PKG_CONFIG         pkg-config
-#    GOCACHE            /path/Caches/go-build"
-#    GOTMPDIR           
-#    GOARCH             amd64
-#    GOOS               darwin
-#    GOHOSTARCH         amd64
-#    GOHOSTOS           darwin
-#    GCCGO              gccgo"
-#    CC                 clang"
-#    CXX                clang++"
-#    CGO_ENABLED    
-#    GOMOD
 ```
 
 ## see also

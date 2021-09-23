@@ -2,7 +2,7 @@
 tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2020-09-04T12:28:51.863Z'
+modified: '2021-05-27T09:44:44.914Z'
 ---
 
 # make
@@ -14,6 +14,9 @@ modified: '2020-09-04T12:28:51.863Z'
 
 - `.am` stands for `automake`
 - `.in` input for `configure` think of template
+
+## install
+`brew install make`
 
 ## usage
 
@@ -57,6 +60,25 @@ clean:
   @echo "Cleaning up..."    # suppress echoing the actual command place `@` before command
   rm *.txt
 ```
+```make
+# use script to create file via heredoc
+
+define _script
+cat <<EOF > localstack.auto.tfvars
+aws_region             = "eu-central-1"
+aws_access_key_id      = "mock_access_key"
+aws_secret_access_key  = "mock_secret_key"
+# aws_account_id         = "00000000000"
+# environment            = "local"
+# logging_active         = true
+EOF
+endef
+export script = $(value _script)
+
+
+setup:; @ eval "$$script"
+```
+[unix.stackexchange.com/a/516476/440548](https://unix.stackexchange.com/a/516476/440548)
 
 ## see also
 - [[cmake]]

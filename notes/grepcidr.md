@@ -2,7 +2,7 @@
 tags: [linux]
 title: grepcidr
 created: '2020-09-02T17:09:18.874Z'
-modified: '2020-09-02T18:08:51.176Z'
+modified: '2021-06-08T05:59:31.024Z'
 ---
 
 # grepcidr
@@ -12,23 +12,24 @@ modified: '2020-09-02T18:08:51.176Z'
 ## install
 ```sh
 curl -LO http://www.pc-tools.net/files/unix/grepcidr-2.0.tar.gz 
-tar xvzf grepcidr-2.0.tar.gz
-grepcidr-2.0
-make
-make install
+tar xvzf grepcidr-2.0.tar.gz && cd grepcidr-2.0
+make && make install
 ```
-## usage
-```sh
-# options
-#   -V        show version
-#   -c        show count of matching lines, instead lines
-#   -i        inverse match, include lines without an IP, implies -v
-#   -s        enforce strict alignment of CIDR mask; host portion must be all zero
-#   -v        invert the sense of matching, output lines with IPs that don't match
-#   -x        strict matching, only look at start of line
-#   -e        specify individual IP or CIDR pattern(s) on command-line
-#   -f        load individual IP or CIDR pattern(s) from file
 
+## usage
+
+```sh
+-V          #  show version
+-c          #  show count of matching lines, instead lines
+-i          #  inverse match, include lines without an IP, implies -v
+-s          #  enforce strict alignment of CIDR mask; host portion must be all zero
+-v          #  invert the sense of matching, output lines with IPs that don't match
+-x          #  strict matching, only look at start of line
+-e          #  specify individual IP or CIDR pattern(s) on command-line
+-f          #  load individual IP or CIDR pattern(s) from file
+```
+
+```sh
 grepcidr -f FILE LOG > abuse.log                # find cidr-anges from FILE that appear in LOG
 
 grepcidr 2001:db8::/32 LOG_1 LOG_2              # Search for this IPv6 network inside two files

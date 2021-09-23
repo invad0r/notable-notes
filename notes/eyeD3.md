@@ -2,12 +2,14 @@
 tags: [tool]
 title: eyeD3
 created: '2019-08-23T14:52:21.967Z'
-modified: '2020-11-26T15:54:08.657Z'
+modified: '2021-06-08T05:52:17.477Z'
 ---
 
 # eyeD3
 
 > tagging mp3
+
+## usage
 
 ```sh
 eyeD3 track01.mp3                     # list meta info
@@ -19,5 +21,6 @@ eyeD3 --add-image "$DIR/cover.jpg:FRONT_COVER" --artist "$ARTIST" --album "$ALBU
 ```
 
 ## see also
+
 - [[youtube-dl]]
 - [[python]]

@@ -2,49 +2,51 @@
 tags: [database]
 title: sqlite
 created: '2019-07-30T06:19:49.240Z'
-modified: '2020-07-02T06:35:07.614Z'
+modified: '2021-05-14T06:33:07.894Z'
 ---
 
 # sqlite
 
-> c library that implements small, fast, self-contained, high-reliability, full-featured, sql-database engine
+> c lib that implements small, fast, self-contained, high-reliability, full-featured, sql-database engine
 
 ## usage
 ```sh
 sqlite3 DATABASE.db    # create or us database
+
+cat <<EOT > ~/.sqliterc
+.mode column
+.headers on
+.separator ROW "\n"
+.nullvalue NULL
+EOT
 ```
     
 ```sql
-.open ./var/lib/grafana/grafana.db
+.open ./PATH/TO/DB      -- open from sqlite-shell
 
-.databases
+.databases              -- list dbs
 
-.tables
+.tables                 -- list tables
 
-.schema
+.schema TABLE           -- describe table
 
-.mode column
-
+.mode column            -- change output format
 .headers on
+.mode tabs      
 
 
 drop table import;
--- The VACUUM command rebuilds the database file, repacking it into a minimal amount of disk space
-vacuum;
 
--- import csv
-.mode csv
--- table_name is `import`
-.import shakespeare_data.csv import
+vacuum;                 -- rebuilds database file, repacking into a minimal amount of disk space
 
 
--- inline text search - FTS5
--- FTS5 is an SQLite virtual table module that provides full-text search functionality
-CREATE VIRTUAL TABLE playsearch USING fts5(playsrowid, text);
+.mode csv                             -- import csv
+.import shakespeare_data.csv import   -- table_name is `import`
+
+
+CREATE VIRTUAL TABLE playsearch USING fts5(playsrowid, text);   -- inline text search - FTS5, a virtual table module
 INSERT INTO playsearch SELECT rowid, text FROM plays;
-
--- Now we can search for our soliloquy:
-SELECT rowid, text FROM playsearch WHERE text MATCH "whether tis nobler";
+SELECT rowid, text FROM playsearch WHERE text MATCH "whether tis nobler"; -- Now we can search for our soliloquy
 ```
 
 ## see also

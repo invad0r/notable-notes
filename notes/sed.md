@@ -2,7 +2,7 @@
 tags: [linux]
 title: sed
 created: '2019-07-30T06:19:49.228Z'
-modified: '2020-01-06T08:16:39.142Z'
+modified: '2021-09-13T09:30:01.443Z'
 ---
 
 # sed
@@ -11,18 +11,23 @@ modified: '2020-01-06T08:16:39.142Z'
 
 ## usage
 ```sh
-sed "${NUM}q;d" file                          # print line from file
-stoud | sed -n "2p"                           # print second line only
-sed -n '2{p;q}' somefile.txt                  # in case there will be no more line 2 after line 2, spare pointless processing by `q`uiting after `p`rinting
+sed "${NUM}q;d" FILE                          # print line from file
 
-sed -i '/2018-01-30/!d' file.log              # delete all lines except ones matching pattern
+sed -n "2p"                                   # print second line only
 
-sed -i '4d' vector-out-of-bounds.cpp          # delete line 4
+sed -n '2{p;q}' FILE                          # in case there will be no more line 2 after line 2, spare pointless processing by `q`uiting after `p`rinting
+
+sed -i '/2018-01-30/!d' FILE                  # delete all lines except ones matching pattern
+
+sed -i '4d' FILE                              # delete line 4
 
 sed '/INCLUDE/ r foo.h'                       #  insert foo.h after 'INCLUDE'
 
 
 # substitution
+
+sed -r "s/[[:cntrl:]]\[[0-9]{1,3}m//g"        # remove colors from output
+
 sed 's/[^a-zA-Z0-9]//g'                       # remove non-alphanumeric characters
 
 sed -i.tmp 's/^/\t/' *.txt                    # keep copy with extension .tmp   .. osx must provide an extension !

@@ -2,7 +2,7 @@
 tags: [coreutils, macos]
 title: cat
 created: '2019-09-04T06:20:06.676Z'
-modified: '2021-04-28T08:27:42.863Z'
+modified: '2021-06-16T16:07:03.643Z'
 ---
 
 # cat
@@ -10,6 +10,7 @@ modified: '2021-04-28T08:27:42.863Z'
 > concatenate and print files
 
 ## usage
+
 ```sh
 cat > FILE          # then start typing and SIGINT to save
 
@@ -28,6 +29,8 @@ EOF
 ```
 
 ## see also
+
+- [[mkfifo]]
 - [[heredoc]]
 - [[signal]]
 - [plan9 source code](https://9p.io/sources/plan9/sys/src/cmd/cat.c)

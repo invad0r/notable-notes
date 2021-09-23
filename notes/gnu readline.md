@@ -2,50 +2,48 @@
 tags: [shell]
 title: gnu readline
 created: '2019-07-30T06:19:49.019Z'
-modified: '2021-05-12T08:47:10.236Z'
+modified: '2021-06-08T05:30:13.673Z'
 ---
 
 # gnu readline
 
-`bash emacs shortcuts`
-## movement
-| | |
-|--|--|
-| <kbd>CTRL+A</kbd>	| move to beginning of line |
-| <kbd>CTRL+B</kbd>	| moves backward one character |
-| <kbd>CTRL+E</kbd>	| moves to end of line |
-| <kbd>CTRL+F</kbd>	| moves forward one character |
+> `bash emacs shortcuts`
 
-
-| | |
-|--|--|
-| <kbd>CTRL+C</kbd>	| halts the current command |
-| <kbd>CTRL+G</kbd>	| aborts the current editing command and ring the terminal bell |
-| <kbd>CTRL+D</kbd>	| deletes one character backward or logs out of current session, similar to exit |
-| <kbd>CTRL+U</kbd>	| kills backward from point to the beginning of line |
-| <kbd>CTRL+W</kbd>	| kills the word behind the cursor |
-| <kbd>CTRL+Y</kbd>	| retrieves (yank) last item killed |
-| <kbd>CTRL+J</kbd>	| same as RETURN |
-| <kbd>CTRL+K</kbd>	| deletes forward to end of line |
-| <kbd>CTRL+L</kbd>	| clears screen and redisplay the line |
-| <kbd>CTRL+M</kbd>	| same as RETURN |
-| <kbd>CTRL+O</kbd>	| same as RETURN, then displays next line in history file |
-| <kbd>CTRL+T</kbd>	| transposes two characters |
-| <kbd>CTRL+V</kbd>	| makes the next character typed verbatim |
-| <kbd>CTRL+X</kbd>	| lists the possible filename completefions of the current word |
-| <kbd>CTRL+Z</kbd>	| stops the current command, resume with fg in the foreground or bg in the background |
-| <kbd>CTRL+N</kbd>	| next line in command history |
-| <kbd>CTRL+P</kbd>	| previous line in command history |
-| <kbd>CTRL+R</kbd>	| searches backward |
-| <kbd>CTRL+S</kbd>	| searches forward |
-
-## `~/.inputrc`
-> create canned macros by mapping key sequences to input strings
+## usage
 
 ```sh
+CTRL + A      # move to beginning of line |
+CTRL + B      # moves backward one character |
+CTRL + E      # moves to end of line |
+CTRL + F      # moves forward one character |
+
+CTRL + C      # halts the current command |
+CTRL + G      # aborts the current editing command and ring the terminal bell |
+CTRL + D      # deletes one character backward or logs out of current session, similar to exit |
+CTRL + U      # kills backward from point to the beginning of line |
+CTRL + W      # kills the word behind the cursor |
+CTRL + Y      # retrieves (yank) last item killed |
+CTRL + J      # same as RETURN |
+CTRL + K      # deletes forward to end of line |
+CTRL + L      # clears screen and redisplay the line |
+CTRL + M      # same as RETURN |
+CTRL + O      # same as RETURN, then displays next line in history file |
+CTRL + T      # transposes two characters |
+CTRL + V      # makes the next character typed verbatim |
+CTRL + X      # lists the possible filename completefions of the current word |
+CTRL + Z      # stops the current command, resume with fg in the foreground or bg in the background |
+CTRL + N      # next line in command history |
+CTRL + P      # previous line in command history |
+CTRL + R      # searches backward |
+CTRL + S      # searches forward |
+
+
+# create canned macros by mapping key sequences to input strings
+cat <<EOT > ~/.inputrc
 Control-o: "> output.txt"
 Control-j: "\C-a$(\C-e)"    # macro moves to the beginning of the line with Ctrl-A, 
                             # adds `$(` then moves to the end of the line with Ctrl-E and adds `)`
+EOT
 ```
 
 ## see also

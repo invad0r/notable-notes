@@ -2,7 +2,7 @@
 tags: [javascript, packagemanager]
 title: npm
 created: '2019-07-30T06:19:49.182Z'
-modified: '2021-02-15T09:03:54.135Z'
+modified: '2021-06-11T11:54:06.793Z'
 ---
 
 # npm
@@ -38,6 +38,7 @@ strict-ssl=false
 ## see also
 - [[javascript]]
 - [[node]]
+- [[nxm]]
 - [[yarn]]
 - [[http-server]], [[fx]]
 - [[nexus api]]

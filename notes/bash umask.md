@@ -2,15 +2,16 @@
 tags: [linux, shell/bash/builtin]
 title: bash umask
 created: '2019-07-30T06:19:49.162Z'
-modified: '2021-05-12T08:46:08.632Z'
+modified: '2021-06-07T07:04:00.000Z'
 ---
 
 # bash umask
 
-* [[bash builtin]] that controls file creation mode mask and determins initial file-permission values
-* doesnt enforce rights it forbids them !
-* filter strips away permissions
+> is a builtin, that controls file creation mode mask and determins initial file-permission values
+> doesnt enforce rights it forbids them !
+> filter strips away permissions
 
+## usage
 
 ```sh
 OCTAL   BIN   NEG-BIN   rwx
@@ -49,3 +50,6 @@ OCTAL   BIN   NEG-BIN   rwx
   000 010 111
   rwx r-x ---
 ```
+
+## see also
+- [[chmod]]

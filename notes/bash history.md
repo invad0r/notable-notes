@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash history
 created: '2019-08-02T06:42:37.603Z'
-modified: '2021-05-12T08:46:08.067Z'
+modified: '2021-09-06T14:39:00.473Z'
 ---
 
 # bash history
@@ -11,17 +11,17 @@ modified: '2021-05-12T08:46:08.067Z'
 
 ## usage
 ```sh
-# options
-#  -c           clear the history list by deleting all of the entries
-#  -d offset    delete the history entry at position OFFSET. Negative offsets count back from the end of the history list
-#  -a           append history lines from this session to the history file
-#  -n           read all history lines not already read from the history file and append them to the history list
-#  -r           read the history file and append the contents to the history list
-#  -w           write the current history to the history file
-#  -p           perform history expansion on each ARG and display the result without storing it in the history list
-#  -s           append the ARGs to the history list as a single entry
+-c           # clear the history list by deleting all of the entries
+-d offset    # delete the history entry at position OFFSET. Negative offsets count back from the end of the history list
+-a           # append history lines from this session to the history file
+-n           # read all history lines not already read from the history file and append them to the history list
+-r           # read the history file and append the contents to the history list
+-w           # write the current history to the history file
+-p           # perform history expansion on each ARG and display the result without storing it in the history list
+-s           # append the ARGs to the history list as a single entry
+```
 
-# variables
+```sh
 HISTTIMEFORMAT                    # format-string strftime(3) to print the time stamp for each displayed history entry
 HISTTIMEFORMAT='%F %T '
 
@@ -32,10 +32,12 @@ HISTFILESIZE=1000000
 HISTSIZE=1000000
 
 HISTCONTROL
-HISTCONTROL=ignorespace    # start command with space to not get saved
-HISTCONTROL=ignoredups     # ignore duplicate liens
-HISTCONTROL=ignoreboth     # ignore both above
+HISTCONTROL=ignorespace          # start command with space to not get saved
+HISTCONTROL=ignoredups           # ignore duplicate liens
+HISTCONTROL=ignoreboth           # ignore both above
+```
 
+```sh
 shopt -s histappend      # don't overwrite history file after each session
 shopt -s cmdhist         # force commands entered on more than one line to be adjusted to fit on only one for parsing
 

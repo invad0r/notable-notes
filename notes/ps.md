@@ -2,7 +2,7 @@
 tags: [linux]
 title: ps
 created: '2019-07-30T06:19:49.218Z'
-modified: '2021-05-12T17:10:57.620Z'
+modified: '2021-08-03T08:00:03.495Z'
 ---
 
 # ps
@@ -10,7 +10,7 @@ modified: '2021-05-12T17:10:57.620Z'
 > prints a line of information about the current running login shell and any processes running under it
 
 ## install
-`apt install procps`
+`apt install procps`, `dnf install procps`, `yum install procps`
 
 ## usage
 ```sh

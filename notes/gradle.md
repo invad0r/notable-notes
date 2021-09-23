@@ -2,7 +2,7 @@
 tags: [buildsystem, java]
 title: gradle
 created: '2019-08-20T07:46:19.821Z'
-modified: '2020-08-28T06:43:08.919Z'
+modified: '2021-06-08T05:26:17.259Z'
 ---
 
 # gradle
@@ -21,20 +21,26 @@ sdk install gradle 3.0    # install a spefic gradle version
 ```
 
 ## usage
-```sh
-gradle -v, --version
 
-gradle wrapper                          # create wrapper script: ./gradlew
+```sh
+-v, --version       # display version
+```
+
+```sh
+gradle
+
+gradle wrapper                                # create wrapper script: ./gradlew
 gradle wrapper --gradle-version 4.9
 
 
-gradle dependencies                     # show dependencies of project
+gradle dependencies                           # show dependencies of project
 ./gradlew dependencies > dependencies.txt
+
+
+installDist
+
+./gradlw tasks
 ```
-
-## tasks
-
-## dependencies
 
 ## see also
 - [[sdkman]]

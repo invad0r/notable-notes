@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2021-04-02T14:06:41.116Z'
+modified: '2021-06-04T12:20:12.892Z'
 ---
 
 # ssh
@@ -10,29 +10,29 @@ modified: '2021-04-02T14:06:41.116Z'
 
 ## usage
 ```sh
-# options
+SSH_ASKPASS               # set by ssh user   - path to askpass program
+SSH_AUTH_SOCK             # set by ssh-agent  - path to socket
+SSH_CLIENT                # set by sshd       - client socket info like ip from which you connected to host
+SSH_CONNECTION            # set by sshd       - client and server socket info
+SSH_ORIGINAL_COMMAND      # set by sshd       - client’s remote command string
+SSH_TTY                   # set by sshd       - name of allocated tty
+```
+```sh
+-n    #  redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops
+-l    #  specify username for login
 -o ServerAliveInterval=60 -o ServerAliveCountMax=120   # 120 x 60
 -o StrictHostKeyChecking=no
 -o StrictHostKeyChecking=accept-new
--o LogLevel=LOGLEVEL    # LOGLEVEL: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
+-o LogLevel=LOGLEVEL                    # loglevels: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
 -o CheckHostIP=no
--o HostKeyAlias=compute.1407099891930101147 
+-o HostKeyAlias=ALIAS
 -o IdentitiesOnly=yes 
--o UserKnownHostsFile=/Users/user/.ssh/google_compute_known_hosts 
+-o UserKnownHostsFile=/PATH/TO/.ssh/known_hosts 
 -o PreferredAuthentications=password
 -o PubkeyAuthentication=no
-
-# -n    redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops
-# -l    specify username for login
-
-# veriables
-$SSH_CLIENT           # get ip from which you connected to host
-$SSH_CONNECTION
-$SSH_TTY
-
-
-
-ssh whoami.filippo.io           # harmless
+```
+```sh
+ssh whoami.filippo.io           # prints _o/ Hello! and closes
 
 ssh -T git@github.com           # test ssh-connection
 
@@ -47,22 +47,9 @@ ssh -n user@host 'uptime'       # don't read from stdin, e.g. in a loop
 ssh -C                          # compress all data stdin, stdout, stderr, x11, tpc, unix-domain-connections via gzip
 ```
 
-## session recon/system info
-```sh
-uptime                   # shows current uptime
-w                        # displays whois online
-id
-uname -a                 # shows kernel information
-passwd                   # lets you change your password
-quota -v                 # shows what your disk quota is
-date                     # shows the current date and time
-cal                      # shows the month's calendar
-finger USER              # displays information about user
-last USER                # lists your last logins
-history
-```
-
 ## see also
+- for session recon/system info use: [[uptime]], [[id]], [[w]], [[uname]], [[passwd]], [[quota]], [[date]], [[cal]], [[finger]], [[last]], [[bash history]]
+- [[git]]
 - [[sshpass]]
 - [[last]]
 - [[tty]]

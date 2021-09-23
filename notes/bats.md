@@ -2,7 +2,7 @@
 tags: [shell]
 title: bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2021-05-12T08:47:10.117Z'
+modified: '2021-06-04T12:07:33.539Z'
 ---
 
 # bats
@@ -11,20 +11,19 @@ modified: '2021-05-12T08:47:10.117Z'
 
 ## usage
 ```sh
+BATS_TEST_FILENAME        # fully expanded path to the Bats test file
+BATS_TEST_DIRNAME         # directory in which the Bats test file  # is located
+BATS_TEST_NAMES           # array of function names for each test case
+BATS_TEST_NAME            # name of the function containing the current test case
+BATS_TEST_DESCRIPTION     # description of the current test case
+BATS_TEST_NUMBER          # (1-based) index of the current test case in the test file
+BATS_TMPDIR               # location to a directory that may be used to store temporary files
+```
+```sh
 bats TEST.bats    # running tests
 
-# variables
-#  BATS_TEST_FILENAME        is the fully expanded path to the Bats test file.
-#  BATS_TEST_DIRNAME         is the directory in which the Bats test file  # is located.
-#  BATS_TEST_NAMES           is an array of function names for each test case.
-#  BATS_TEST_NAME            is the name of the function containing the current test case.
-#  BATS_TEST_DESCRIPTION     is the description of the current test case.
-#  BATS_TEST_NUMBER          is the (1-based) index of the current test case in the test file.
-#  BATS_TMPDIR               is the location to a directory that may be used to store temporary files.
-```
 
-## debug bats output
-```sh
+#debug bats output
 @test 'test-a' {
   run bash -c 'echo ERROR; false'
   echo "status = ${status}"
@@ -32,7 +31,7 @@ bats TEST.bats    # running tests
   [ "$status" -eq 0 ]
 }
 
-# needs space betweetn string and {
+# ! needs space between string and {
 # closing } must be on new line
 @test "Check that ls is available" {
     command -v ls
@@ -72,6 +71,6 @@ setup() {
 ```
 
 ## see also
-- https://github.com/sstephenson/bats
+- [github.com/sstephenson/bats](https://github.com/sstephenson/bats)
 - [govmomi/test_helper.bash · GitHub](https://github.com/vmware/govmomi/blob/master/govc/test/test_helper.bash)
 - [engineyard.com/bats-test-command-line-tools](https://www.engineyard.com/blog/bats-test-command-line-tools)
