@@ -1,11 +1,11 @@
 ---
 tags: [linux, macos]
-title: instal
+title: install
 created: '2019-09-25T07:09:47.701Z'
-modified: '2020-09-05T09:27:28.865Z'
+modified: '2021-09-23T06:30:12.461Z'
 ---
 
-# instal
+# install
 
 > copy files and set attributes, but also change ownership/permissions and remove debugging symbols from executables
 
