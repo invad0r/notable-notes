@@ -2,7 +2,7 @@
 tags: [shell]
 title: bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2021-06-04T12:07:33.539Z'
+modified: '2021-10-06T12:16:42.025Z'
 ---
 
 # bats
@@ -10,6 +10,7 @@ modified: '2021-06-04T12:07:33.539Z'
 > `bats` is a `TAP-compliant` testing framework for bash, which provides a simple way to verify that the UNIX programs behave as expected
 
 ## usage
+
 ```sh
 BATS_TEST_FILENAME        # fully expanded path to the Bats test file
 BATS_TEST_DIRNAME         # directory in which the Bats test file  # is located
@@ -19,6 +20,7 @@ BATS_TEST_DESCRIPTION     # description of the current test case
 BATS_TEST_NUMBER          # (1-based) index of the current test case in the test file
 BATS_TMPDIR               # location to a directory that may be used to store temporary files
 ```
+
 ```sh
 bats TEST.bats    # running tests
 
@@ -71,6 +73,7 @@ setup() {
 ```
 
 ## see also
+
 - [github.com/sstephenson/bats](https://github.com/sstephenson/bats)
 - [govmomi/test_helper.bash · GitHub](https://github.com/vmware/govmomi/blob/master/govc/test/test_helper.bash)
 - [engineyard.com/bats-test-command-line-tools](https://www.engineyard.com/blog/bats-test-command-line-tools)

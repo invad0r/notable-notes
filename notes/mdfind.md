@@ -2,7 +2,7 @@
 tags: [macos]
 title: mdfind
 created: '2020-12-24T15:03:39.240Z'
-modified: '2020-12-24T15:07:02.560Z'
+modified: '2021-10-01T11:42:23.989Z'
 ---
 
 # mdfind
@@ -10,6 +10,7 @@ modified: '2020-12-24T15:07:02.560Z'
 > anything spotlight finds, mdfind can find,  includes ability to search inside files and metadata
 
 ## usage
+
 ```sh
 # -onlyin     restrict the search to a single dir
 
@@ -21,5 +22,7 @@ mdutil -i off       # turn off indexing entirely with
 ```
 
 ## see also
+
 - [[mdutil]]
 - [[locate]]
+- [[macos keyboard shortuts]]

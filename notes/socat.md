@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: socat
 created: '2019-07-30T06:19:49.239Z'
-modified: '2021-03-16T08:46:31.369Z'
+modified: '2021-10-13T09:30:12.068Z'
 ---
 
 # socat
@@ -10,9 +10,11 @@ modified: '2021-03-16T08:46:31.369Z'
 >  multipurpose relay - `SOcket CAT`
 
 ## install
+
 `brew install socat`, `apt install socat`, `yum install socat`
 
 ## usage
+
 ```sh
 socat INPUT_TYPE(OPTIONS) OUTPUT_TYPE(OPTIONS)
 
@@ -55,6 +57,7 @@ socat -d -d -lmlocal2 \
 ```
 
 ## see also
+
 - [socat – Cindy Sridharan – Medium](https://medium.com/@copyconstruct/socat-29453e9fc8a6)
 - [[unix socket]]
 - [[nmap]]

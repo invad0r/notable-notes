@@ -1,7 +1,7 @@
 ---
 title: helm
 created: '2021-06-04T08:40:48.010Z'
-modified: '2021-06-04T14:42:54.215Z'
+modified: '2021-10-13T09:30:31.341Z'
 ---
 
 # helm
@@ -9,9 +9,11 @@ modified: '2021-06-04T14:42:54.215Z'
 > package manager for `k8s`
 
 ## install
+
 `brew install helm`
 
 ## usage
+
 ```sh
 HELM_CACHE_HOME                     # alt location for storing cached files
 HELM_CONFIG_HOME                    # alt location for storing Helm configuration
@@ -34,6 +36,7 @@ HELM_KUBEASUSER                     # Username to impersonate for the operation
 HELM_KUBECONTEXT                    # name of the kubeconfig context
 HELM_KUBETOKEN                      # bearer kube-token used for auth
 ```
+
 ```sh
 helm help       # learn more about the available Helm commands
 helm get -h     # or type a command followed by -h flag
@@ -72,6 +75,7 @@ helm uninstall mysql-1612624192   # uninstall release
 ```
 
 ## see also
+
 - [[kubectl]]
 - [[kustomize]]
 - [helm.sh/docs/intro/quickstart](https://helm.sh/docs/intro/quickstart/)

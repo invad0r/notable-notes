@@ -2,25 +2,34 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2021-07-27T12:40:35.562Z'
+modified: '2021-10-13T09:26:29.469Z'
 ---
 
 # kubectl
+
 > kubectl controls the Kubernetes cluster manager
 
 ## installation
+
 - `brew install kubectl`
 - `kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl`
 
 ## usage
+
 ```sh
 KUBECONFIG          # -
 KUBE_EDITOR         # -
 ```
+
 ```sh
--v=6                # debug level 6
--o                  # output format [json|yaml|wide] 
+-v=6                      # debug level 6
+-o                        # output format [json|yaml|wide]
+
+--kubeconfig CONFIG
+--namespace NAMESPACE
+--context CONTEXT
 ```
+
 ```sh
 # merge config
 KUBECONFIG=$HOME/.kube/config:file2:file3 kubectl config view --merge --flatten > ~/.kube/merged_kubeconfig && mv ~/.kube/merged_kubeconfig ~/.kube/config
@@ -127,7 +136,9 @@ kubectl port-forward --address localhost,10.19.21.23 pod/mypod 8888:5000    # li
 
 kubectl exec -it POD -- curl -s http://10.1.0.3  # double dash `--` signals end of command options, if not set -s would be interpreted as kubectl flag
 ```
+
 ## krew plugins
+
 ```sh
 kubectl krew update
 
@@ -139,6 +150,7 @@ kubectl access-matrix               # use plugin to see the level of access user
 ```
 
 ## see also
+
 - [[helm]]
 - [[kubectx]]
 - [[kubens]]

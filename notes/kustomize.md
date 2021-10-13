@@ -1,7 +1,7 @@
 ---
 title: kustomize
 created: '2020-10-12T10:34:55.454Z'
-modified: '2020-11-07T12:48:56.765Z'
+modified: '2021-10-13T09:28:31.410Z'
 ---
 
 # kustomize
@@ -10,15 +10,17 @@ modified: '2020-11-07T12:48:56.765Z'
 > tool supporting template-free, structured customization of declarative configuration targeted to k8s-style objects.
 
 ## install
+
 `brew install kustomize`
 
 ## usage
+
 ```sh
-kustomize install-completion        # shell completion.
+kustomize install-completion                  # shell completion.
 
 kustomize build PATH                          # print configuration per contents of kustomization.yaml
 
-kustomize build . | kubectl apply -f -     # apply config zu k8s, same as `kubectl apply -k`
+kustomize build . | kubectl apply -f -        # apply config zu k8s, same as `kubectl apply -k`
 
 
 
@@ -33,7 +35,8 @@ kustomize fn                        # Commands for running functions against con
 ```
 
 ## api reference
-```
+
+```sh
 kustomization.yaml
     bases                   # deprecated
     commonAnnotations
@@ -62,6 +65,7 @@ kustomization.yaml
 ```
 
 ## see also
+
 - [[kubectl]]
 - [[kubectx]]
 - [[kubens]]

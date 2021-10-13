@@ -2,7 +2,7 @@
 tags: [linux, moreutils]
 title: parallel
 created: '2019-07-30T06:19:49.203Z'
-modified: '2020-09-01T12:48:23.855Z'
+modified: '2021-10-06T12:15:00.569Z'
 ---
 
 # parallel
@@ -10,9 +10,11 @@ modified: '2020-09-01T12:48:23.855Z'
 > gnu parallel is a replacement for xargs and for loops. It can also split a file or a stream into blocks and pass those to commands running in parallel
 
 ## install
+
 `brew install parallel`
 
 ## usage
+
 ```sh
 parallel --jobs 200% gzip ::: *.html        # Compress all *.html files in parallel – 2 jobs per CPU thread in parallel
 
@@ -47,6 +49,7 @@ parallel echo :::: INPUT_FILE ::: CMD
 ```
 
 ## see also
+
 - [[moreutils]]
 - [[xargs]]
 - [gnu.org/software/parallel/parallel_cheat.pdf](https://www.gnu.org/software/parallel/parallel_cheat.pdf)

@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: firefox
 created: '2019-07-30T06:19:49.054Z'
-modified: '2020-01-29T16:26:20.663Z'
+modified: '2021-10-01T11:36:33.539Z'
 ---
 
 # firefox
@@ -43,4 +43,5 @@ If you are looking for a specific type of result, like a bookmark or tag, you ca
 
 ## see also
 - [[duckduckgo]]
-- [Awesome Bar - Search your Firefox bookmarks, history and tabs from the address bar | Firefox Help](https://support.mozilla.org/en-US/kb/awesome-bar-search-firefox-bookmarks-history-tabs#w_changing-results-on-the-fly)
+- [[macos keyboard shortcuts]]
+- [Awesome Bar - Search your Firefox bookmarks, history and tabs from the address bar](https://support.mozilla.org/en-US/kb/awesome-bar-search-firefox-bookmarks-history-tabs#w_changing-results-on-the-fly)

@@ -1,7 +1,7 @@
 ---
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2021-06-04T08:52:34.351Z'
+modified: '2021-10-04T14:57:16.082Z'
 ---
 
 # aws
@@ -12,6 +12,7 @@ modified: '2021-06-04T08:52:34.351Z'
 `curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg" && installer -pkg ./AWSCLIV2.pkg -target /`
 
 ## usage
+
 ```sh
 AWS_PROFILE                   # use profile from config
 AWS_ACCESS_KEY_ID
@@ -21,14 +22,22 @@ AWS_SHARED_CREDENTIALS_FILE   # default:  ~/.aws/credentials
 AWS_DEFAULT_OUTPUT            # json, yaml, yaml-stream, text, table
 AWS_DEFAULT_REGION
 ```
+
 [docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
 ```sh
 --color STRING              # support for color output: on, off, auto
 --debug                     # enables debug logging by providing full python logs; (`CMD 2> FILE`, `CMD &> FILE`)
-```
-[docs.aws.amazon.com/cli/latest/userguide/cli-configure-options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html)
-```sh
+--regeion REGION            # override region
 
+--dry-run
+--output text
+--owners amazon 
+```
+
+[docs.aws.amazon.com/cli/latest/userguide/cli-configure-options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html)
+
+```sh
 aws configure --profile PROFILE
 
 aws --profile PROFILE --region us-east-1 COMMAND
@@ -43,7 +52,6 @@ aws iam delete-virtual-mfa-device --serial-number "arn:aws:iam::ACCOUNT_ID:mfa/r
 # aws iam - access advisor
 aws iam generate-service-last-accessed-details --arn ARN   # returns job-id
 aws iam get-service-last-accessed-details --job-id JOB_ID
-
 
 # aws s3
 aws s3 list                                         # list buckets
@@ -60,11 +68,6 @@ aws s3api get-object-lock-configuration --bucket BUCKET	--query 'ObjectLockConfi
 
 
 # ec2 describe-instances
-
---dry-run
---output text
---owners amazon 
---region eu-central-1
 
 aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query "Reservations[*].Instances[*].InstanceId"
  
@@ -148,6 +151,7 @@ aws securityhub get-findings \
 ```
 
 ## see also
+
 - [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)
 - [[installer]]
 - [[mc]]

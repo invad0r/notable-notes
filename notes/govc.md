@@ -2,7 +2,7 @@
 tags: [vmware]
 title: govc
 created: '2019-07-30T06:19:49.075Z'
-modified: '2021-06-04T08:56:28.119Z'
+modified: '2021-10-06T12:16:29.018Z'
 ---
 
 # govc
@@ -10,6 +10,7 @@ modified: '2021-06-04T08:56:28.119Z'
 > govc is an vSphere CLI built on govmomi, the vSphere Go SDK. It has a robust inventory browser command.
 
 ## usage
+
 ```sh
 # ls
 govc ls -h
@@ -151,10 +152,11 @@ govc find . -type m -runtime.powerState poweredOn -guest.guestId '*[ubuntu][Linu
 
 govc vm.info -json ./vm/foo | jq '.VirtualMachines[].Guest.Net[] | .IpAddress[0]'   # find vm and its ip
 ```
+
 - [find with -guest.ipAddress argument returns more than one result](https://github.com/vmware/govmomi/issues/1089)
 
 ## see also
-- [[govc find]]
+
 - [[jq]]
 - [velenux.wordpress.com/automate-your-vcenter-interactions-from-the-linux-commandline-with-govmomi-and-govc](https://velenux.wordpress.com/2016/09/19/automate-your-vcenter-interactions-from-the-linux-commandline-with-govmomi-and-govc/)
 - [Network info · Issue #742 · vmware/govmomi · GitHub](https://github.com/vmware/govmomi/issues/742)

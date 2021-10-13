@@ -2,7 +2,7 @@
 tags: [container, container/docker]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2021-06-08T05:45:13.525Z'
+modified: '2021-10-01T11:12:04.877Z'
 ---
 
 # docker
@@ -10,6 +10,7 @@ modified: '2021-06-08T05:45:13.525Z'
 > self-sufficient runtime for containers
 
 ## install
+
 ```sh
 # prerquesite:  docker-for-mac and `brew install bash-completion`
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
@@ -92,6 +93,7 @@ docker network disconnect -f $network_name $container_name
 ```
 
 ## see also
+
 - [linux - How to clear Docker task history - Stack Overflow](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)
 - [Starting container failed: Address already in use · GitHub](https://github.com/moby/moby/issues/31698#issuecomment-320294893)
 - [Use the Docker command line \| Docker Documentation](https://docs.docker.com/engine/reference/commandline/cli/#environment-vairables)

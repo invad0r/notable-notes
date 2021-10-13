@@ -1,7 +1,7 @@
 ---
 title: jsonpath
 created: '2020-10-09T11:50:35.973Z'
-modified: '2021-03-16T08:39:32.559Z'
+modified: '2021-10-01T11:11:36.676Z'
 ---
 
 # jsonpath
@@ -9,6 +9,7 @@ modified: '2021-03-16T08:39:32.559Z'
 > defines expressions to traverse through a json
 
 ## usage
+
 ```sh
 $ 	                # root object/element
 @ 	                # current object/element
@@ -54,6 +55,7 @@ empty 	    # left (array or string) should be empty
 ```
 
 ## see also
+
 - [[kubectl]]
 - [[xpath]]
 - [[jq]]

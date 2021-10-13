@@ -2,14 +2,19 @@
 tags: [container, container/k8s]
 title: gcloud
 created: '2019-07-30T06:19:49.144Z'
-modified: '2020-10-29T09:43:13.043Z'
+modified: '2021-10-13T09:32:07.828Z'
 ---
 
 # gcloud
 
 > manage google cloud platform resources and developer workflow
 
+## install
+
+`brew ?`
+
 ## usage
+
 ```sh
 gcloud init
 
@@ -39,13 +44,17 @@ gcloud container clusters list
 gcloud container clusters get-credentials [kubia]
 
 ssh -t -i /Users/user/.ssh/google_compute_engine \
-  -o CheckHostIP=no -o HostKeyAlias=compute.1407099891930101147 \
-  -o IdentitiesOnly=yes -o StrictHostKeyChecking=no \
+  -o CheckHostIP=no \
+  -o HostKeyAlias=compute.140709..0101147 \
+  -o IdentitiesOnly=yes \
+  -o StrictHostKeyChecking=no \
   -o UserKnownHostsFile=/Users/user/.ssh/google_compute_known_hosts \
-  user@35.205.96.131
+  USER@HOST
 ```
 
 ## see also
-- [[ssh]]
+
 - [[kubectl]]
+- [[eksctl]]
 - [[aws]]
+- [[ssh]]

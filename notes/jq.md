@@ -2,7 +2,7 @@
 tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2021-06-04T08:55:39.160Z'
+modified: '2021-10-01T11:11:29.011Z'
 ---
 
 # jq
@@ -10,15 +10,17 @@ modified: '2021-06-04T08:55:39.160Z'
 > cli json processor - transforms json, by selecting, iterating, reducing and otherwise mangling json documents
 
 ## usage
+
 ```sh
---compact-output, -c    # compact to single line,1 no pretty print
---raw-output, -r        # output no quotes
---raw-input, -R         # don't parse the input as json. Instead, each line of text is passed to the filter as a string
+-c, --compact-output    # compact to single line,1 no pretty print
+-r, --raw-output        # output no quotes
+-R, --raw-input         # don't parse the input as json. Instead, each line of text is passed to the filter as a string
 --unbuffered            # if you're piping a slow data source into jq and piping jq's output elsewhere
---null-input, -n        # Don't read any input at all! useful when using jq as a simple calculator or to construct json data from scratch
---sort-keys, -S         # Output the fields of each object with the keys in sorted order
+-n, --null-input        # Don't read any input at all! useful when using jq as a simple calculator or to construct json data from scratch
+-S, --sort-keys         # Output the fields of each object with the keys in sorted order
                         # diff <(jq -S . fileA.json) <(jq -S . fileA.json)
 ```
+
 ```sh
 echo '[1, "foo", ["foo"]]' | jq '. | tostring'      # `tojson` `fromjson`
 
@@ -70,12 +72,10 @@ json | jq -r '.data | .MINIO_SECRET_KEY | @base64d '            # base64-decode 
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$TOKEN"    # decode jwt-token
 
 jq -n -c '[{"foo": 1, "bar": 2}, {"foo": 3, "quux": 4}] | map(select( .bar ))'  # get element containing bar-field
-
-
-
 ```
 
 ## see also
+
 - [remysharp.com/drafts/jq-recipes](https://remysharp.com/drafts/jq-recipes)
 - [unix.stackexchange.com/jq-print-key-and-value-for-all-in-sub-object](https://unix.stackexchange.com/a/406425)
 - [stackoverflow.com/printing-multiple-values-on-the-same-line](https://stackoverflow.com/a/46131963)

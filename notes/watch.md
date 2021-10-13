@@ -2,16 +2,23 @@
 tags: [linux]
 title: watch
 created: '2019-07-30T06:19:49.265Z'
-modified: '2020-09-01T12:46:49.557Z'
+modified: '2021-09-26T15:57:32.929Z'
 ---
 
 # watch
+
 > execute a program periodically, showing output fullscreen
 
 ## usage
+
+```sh
+WATCH_INTERVAL            # persistently set a non-default interval
+
+-n, --interval SECONDS    # update interval,  will not allow quicker than 0.1 second interval, in which the smaller values are converted 
+```
+
 ```sh
 watch -d "ps -ef | awk -F' ' '{print \$2}'"   # use double quotes and escape $
-  # -n .5  --interval
 
 watch -d 'docker service ps --filter desired-state=running --format "{{.Node}} {{.Name}}" $(docker service ls --filter mode=replicated -q)'
 
@@ -19,6 +26,7 @@ watch 'for pid in `jps` ; do echo -n "$pid " && ps huH p $pid | wc -l ; done'   
 ```
 
 ## watch alternative
+
 ```sh
 while sleep 5; do   # every 5 seconds
   printf "\033c";   # clear screen
@@ -30,6 +38,7 @@ done
 ```
 
 ## see also
+
 - [[consul]]
 - [[bash while]]
 - [[bash printf]]

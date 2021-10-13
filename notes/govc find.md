@@ -1,13 +1,14 @@
 ---
+deleted: true
 tags: [vmware]
 title: govc find
 created: '2019-08-26T08:32:59.799Z'
-modified: '2019-12-28T15:55:05.978Z'
+modified: '2021-10-06T12:16:15.721Z'
 ---
 
 # govc find
 
-## usage
+## find
 ```sh
 govc find --help
 
@@ -50,7 +51,7 @@ govc find . -type m -runtime.powerState poweredOn -guest.guestId '*[ubuntu][Linu
 
 govc vm.info -json ./vm/foo | jq '.VirtualMachines[].Guest.Net[] | .IpAddress[0]'   # find vm and its ip
 ```
+- [find with -guest.ipAddress argument returns more than one result](https://github.com/vmware/govmomi/issues/1089)
 
 ## see also
 - [[jq]]
-- [find with -guest.ipAddress argument returns more than one result](https://github.com/vmware/govmomi/issues/1089)

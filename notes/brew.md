@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2021-06-30T07:15:03.150Z'
+modified: '2021-10-06T12:07:25.860Z'
 ---
 
 # brew
@@ -24,6 +24,8 @@ brew search gnu       # list possible installed gnu utils
 
 brew update           # update brew itself
 brew up               # alias for update
+
+brew outdated         # list outdated formulae installed
 
 brew upgrade PACKAGE
 
