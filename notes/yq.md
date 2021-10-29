@@ -1,8 +1,7 @@
 ---
-tags: [yml]
 title: yq
 created: '2019-08-20T12:05:18.926Z'
-modified: '2021-10-25T11:48:06.947Z'
+modified: '2021-10-29T12:31:28.576Z'
 ---
 
 # yq

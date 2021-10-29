@@ -2,14 +2,15 @@
 tags: [vcs]
 title: git bulk
 created: '2019-08-19T13:35:33.103Z'
-modified: '2020-09-02T17:46:46.052Z'
+modified: '2021-10-29T12:18:55.718Z'
 ---
 
 # git bulk
 
 > part of git extras
 
-## usage
+## bulk
+
 ```sh
 git bulk --addcurrent $(pwd)
 

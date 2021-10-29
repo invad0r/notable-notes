@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: podman
 created: '2021-09-06T12:17:24.319Z'
-modified: '2021-10-19T11:27:19.405Z'
+modified: '2021-10-29T12:38:12.982Z'
 ---
 
 # podman

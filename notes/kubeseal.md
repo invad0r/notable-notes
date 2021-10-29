@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kubeseal
 created: '2020-11-05T12:49:58.867Z'
-modified: '2021-10-15T07:41:34.593Z'
+modified: '2021-10-29T12:39:49.027Z'
 ---
 
 # kubeseal

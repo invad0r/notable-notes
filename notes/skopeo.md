@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: skopeo
 created: '2021-10-19T11:25:30.764Z'
-modified: '2021-10-19T11:44:39.486Z'
+modified: '2021-10-29T12:38:22.977Z'
 ---
 
 # skopeo

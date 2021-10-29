@@ -1,7 +1,8 @@
 ---
+tags: [serverless]
 title: sam
 created: '2021-02-08T12:46:40.753Z'
-modified: '2021-02-09T11:18:10.679Z'
+modified: '2021-10-29T12:47:13.703Z'
 ---
 
 # sam

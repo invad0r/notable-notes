@@ -1,8 +1,8 @@
 ---
-tags: [bash, linux]
+tags: [linux, shell/bash]
 title: sleep
 created: '2020-03-26T10:22:21.098Z'
-modified: '2020-09-01T09:31:16.671Z'
+modified: '2021-10-29T12:34:48.681Z'
 ---
 
 # sleep

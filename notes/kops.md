@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kops
 created: '2021-10-15T07:28:44.092Z'
-modified: '2021-10-15T07:33:55.806Z'
+modified: '2021-10-29T12:39:49.096Z'
 ---
 
 # kops

@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: k3s
 created: '2021-10-15T07:36:40.840Z'
-modified: '2021-10-15T07:40:09.342Z'
+modified: '2021-10-29T12:39:49.141Z'
 ---
 
 # k3s

@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: tfswitch
 created: '2021-01-18T10:13:21.713Z'
-modified: '2021-05-10T13:36:55.835Z'
+modified: '2021-10-29T12:45:45.993Z'
 ---
 
 # tfswitch

@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: localstack
 created: '2021-05-27T08:52:44.663Z'
-modified: '2021-05-27T09:00:12.528Z'
+modified: '2021-10-29T12:39:57.044Z'
 ---
 
 # localstack

@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: vagrantfile
 created: '2019-12-25T10:59:18.542Z'
-modified: '2020-01-02T12:34:22.290Z'
+modified: '2021-10-29T12:45:45.912Z'
 ---
 
 # vagrantfile

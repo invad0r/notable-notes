@@ -2,7 +2,7 @@
 tags: [vcs]
 title: git svn
 created: '2019-07-30T06:19:49.249Z'
-modified: '2020-09-02T17:46:46.124Z'
+modified: '2021-10-29T11:54:52.788Z'
 ---
 
 # git svn
@@ -10,6 +10,7 @@ modified: '2020-09-02T17:46:46.124Z'
 `subversion`
 
 ## get author names
+
 ```sh
 svn log --xml https://repo/svn/general | grep author | sort -u | perl -pe 's/.*>(.*?)<.*/$1 = /' > users.txt
 
@@ -17,6 +18,7 @@ svn log --xml https://repo/svn/general/joomla_portalv3/com_portal | grep author 
 ```
 
 ## svn to git migraiton
+
 ```sh
 git svn clone \
   --stdlayout \
@@ -36,4 +38,5 @@ git svn clone \
 ```
 
 ## see also
+
 - [how-to-migrate-svn-repository](http://stackoverflow.com/questions/79165/how-to-migrate-svn-repository-with-history-to-a-new-git-repository)

@@ -1,7 +1,7 @@
 ---
 title: asdf
 created: '2021-03-29T06:54:55.237Z'
-modified: '2021-03-29T06:58:11.854Z'
+modified: '2021-10-29T12:41:48.649Z'
 ---
 
 # asdf
@@ -10,7 +10,15 @@ modified: '2021-03-29T06:58:11.854Z'
 
 ## install
 
+``
+
 ## usage
 
+```sh
+asdf
+```
+
+
 ## see also
+
 - [github.com/asdf-vm/asdf](https://github.com/asdf-vm/asdf)

@@ -2,7 +2,7 @@
 tags: [tool]
 title: mc
 created: '2019-09-19T12:03:17.162Z'
-modified: '2020-09-02T18:10:46.368Z'
+modified: '2021-10-29T12:31:48.782Z'
 ---
 
 # mc
@@ -10,6 +10,7 @@ modified: '2020-09-02T18:10:46.368Z'
 > MinIO Client for cloud storage and filesystems
 
 ## install
+
 `GO111MODULE=on go get github.com/minio/mc` or `curl -O https://dl.min.io/client/mc/release/linux-amd64/mc`
 
 ## usage
@@ -27,5 +28,6 @@ mc mirror PATH BUCKET
 ```
 
 ## see also
+
 - [[aws]]
 - [[rsync]]

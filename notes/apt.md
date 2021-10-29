@@ -2,13 +2,16 @@
 tags: [linux, packagemanager]
 title: apt
 created: '2019-07-30T20:20:43.614Z'
-modified: '2020-08-26T07:57:38.962Z'
+modified: '2021-10-29T12:42:34.890Z'
 ---
 
 # apt
+
 > high-level commandline interface for the package management system
+> frontend to [[apt-get]]
 
 ## usage
+
 ```sh
 apt update
 
@@ -23,6 +26,7 @@ apt list --installed
 ```
 
 ### repository commands
+
 ```sh
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DF7DD7A50B746DD4
 
@@ -34,6 +38,8 @@ add-apt-repository -r ppa:ian-berke/ppa-drawers
 ```
 
 ## see also
+
+- [[apt-get]]
 - [[apt-file]]
 - [[apt-cache]]
 - [[brew]]

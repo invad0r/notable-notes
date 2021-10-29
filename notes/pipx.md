@@ -1,8 +1,8 @@
 ---
-favorited: true
+tags: [python]
 title: pipx
 created: '2020-11-05T12:54:51.421Z'
-modified: '2021-05-13T08:48:11.883Z'
+modified: '2021-10-29T12:41:27.869Z'
 ---
 
 # pipx

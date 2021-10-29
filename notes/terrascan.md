@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: terrascan
 created: '2021-02-23T11:03:09.050Z'
-modified: '2021-02-23T11:04:18.220Z'
+modified: '2021-10-29T12:45:45.967Z'
 ---
 
 # terrascan

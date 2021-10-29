@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: argocd
 created: '2020-10-26T12:29:59.372Z'
-modified: '2021-10-15T07:40:38.882Z'
+modified: '2021-10-29T12:41:18.395Z'
 ---
 
 # argocd

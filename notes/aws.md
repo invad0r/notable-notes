@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2021-10-04T14:57:16.082Z'
+modified: '2021-10-29T12:47:37.244Z'
 ---
 
 # aws

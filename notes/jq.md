@@ -1,8 +1,8 @@
 ---
-tags: [json, linux]
+tags: [linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2021-10-01T11:11:29.011Z'
+modified: '2021-10-29T12:32:53.904Z'
 ---
 
 # jq

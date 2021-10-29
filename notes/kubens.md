@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kubens
 created: '2020-10-12T10:37:20.976Z'
-modified: '2021-10-15T07:41:24.405Z'
+modified: '2021-10-29T12:39:02.187Z'
 ---
 
 # kubens

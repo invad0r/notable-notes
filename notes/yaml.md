@@ -1,8 +1,7 @@
 ---
-tags: [yml]
 title: yaml
 created: '2019-07-30T06:19:49.267Z'
-modified: '2021-10-19T07:29:19.413Z'
+modified: '2021-10-29T12:31:23.951Z'
 ---
 
 # yaml

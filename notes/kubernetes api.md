@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kubernetes api
 created: '2021-03-22T07:06:50.405Z'
-modified: '2021-10-19T07:30:04.060Z'
+modified: '2021-10-29T12:39:49.050Z'
 ---
 
 # kubernetes api

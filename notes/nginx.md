@@ -1,7 +1,8 @@
 ---
+tags: [lua, webserver]
 title: nginx
 created: '2021-08-31T08:55:05.976Z'
-modified: '2021-09-06T09:43:51.616Z'
+modified: '2021-10-29T12:40:32.469Z'
 ---
 
 # nginx

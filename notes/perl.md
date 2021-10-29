@@ -1,8 +1,8 @@
 ---
-tags: [perl, webserver]
+tags: [webserver]
 title: perl
 created: '2019-07-30T06:19:49.150Z'
-modified: '2020-08-12T13:35:15.729Z'
+modified: '2021-10-29T12:33:03.657Z'
 ---
 
 # perl

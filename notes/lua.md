@@ -1,8 +1,8 @@
 ---
-tags: [dsl]
+tags: [dsl, lua]
 title: lua
 created: '2020-09-02T12:55:03.179Z'
-modified: '2020-09-02T13:19:31.132Z'
+modified: '2021-10-29T12:45:16.020Z'
 ---
 
 # lua
@@ -11,6 +11,7 @@ modified: '2020-09-02T13:19:31.132Z'
 > was designed, to be integrated with software written in `c` and other conventional languages
 
 ## install
+
 ```sh
 apt install build-essential libreadline-dev
 
@@ -20,6 +21,7 @@ make linux test && make install
 ```
 
 ## usage
+
 ```sh
 lua               # standalone interpreter and interactive shell
 
@@ -27,10 +29,12 @@ lua hello.lua     # run script
 ```
 
 ## see also
+
 - [[luac]]
 - [[luarocks]]
+- [[nginx]]
 - [[tcl]]
 - [[awk]]
 - [[groovy]]
 - [lua.org/pil/contents.html](https://www.lua.org/pil/contents.html)
-- [[nginx]]
+

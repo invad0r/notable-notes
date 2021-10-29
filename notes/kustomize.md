@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kustomize
 created: '2020-10-12T10:34:55.454Z'
-modified: '2021-10-13T09:28:31.410Z'
+modified: '2021-10-29T12:39:48.971Z'
 ---
 
 # kustomize

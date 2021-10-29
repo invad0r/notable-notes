@@ -1,7 +1,8 @@
 ---
+tags: [buildsystem, container]
 title: buildah
 created: '2021-10-19T11:40:08.335Z'
-modified: '2021-10-19T11:44:22.549Z'
+modified: '2021-10-29T12:37:57.561Z'
 ---
 
 # buildah
