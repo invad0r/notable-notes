@@ -1,7 +1,7 @@
 ---
 title: kubeseal
 created: '2020-11-05T12:49:58.867Z'
-modified: '2020-11-10T11:02:44.319Z'
+modified: '2021-10-15T07:41:34.593Z'
 ---
 
 # kubeseal
@@ -11,13 +11,17 @@ modified: '2020-11-10T11:02:44.319Z'
 
 
 ## install
+
 `brew install kuebseal`
 
 ## usage
+
 ```sh
 kubeseal
 ```
+
 ## see also
+
 - [[kubectl]]
 - [[kustomize]]
 - [github.com/bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)

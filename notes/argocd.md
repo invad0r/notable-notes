@@ -1,7 +1,7 @@
 ---
 title: argocd
 created: '2020-10-26T12:29:59.372Z'
-modified: '2020-10-27T10:15:54.748Z'
+modified: '2021-10-15T07:40:38.882Z'
 ---
 
 # argocd
@@ -9,6 +9,7 @@ modified: '2020-10-27T10:15:54.748Z'
 > declarative, gitops continuous delivery tool for k8s
 
 ## usage
+
 ```sh
 argocd login HOST
 
@@ -20,5 +21,6 @@ argocd app create guestbook \
 ```
 
 ## see also
+
 - [[kubectl]]
 - [[minikube]]

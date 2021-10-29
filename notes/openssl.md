@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2021-10-11T09:23:58.940Z'
+modified: '2021-10-28T11:52:58.407Z'
 ---
 
 # openssl
@@ -10,6 +10,7 @@ modified: '2021-10-11T09:23:58.940Z'
 > `openssl` is a cryptography toolkit implementing the `ssl` and `tls` network protocols and related cryptography standards
 
 ## usage
+
 ```sh
 openssl version -help     # get version options
 openssl version -a        # show all version data
@@ -133,7 +134,8 @@ connect:errno=0
 echo | openssl s_client -connect google.test:443 1>/dev/null 2>&1
 ```
 
-## determin certificate type
+### determin certificate type
+
 - `X509` standard defines certificates
 - `RSA` and `DSA` are two of the `public key algorithms` that can be used in those certificates
 - certificates are used to hold public keys, and never private keys.
@@ -143,17 +145,59 @@ echo | openssl s_client -connect google.test:443 1>/dev/null 2>&1
   - contains at least one `X509` client certificate (which contains a public key) and the corresponding private keys
   - All you don't know is whether those certificate & private key are `RSA` or `DSA`. You can check by extracting the certificate(s) and then examine them
 
+## digest
+
+> dgst - Message Digest Calculation
+
+```sh
+openssl md5 FILENAME
+openssl sha1 FILENAME
+
+openssl dgst -md5 FILENAME
+openssl dgst -sha1 FILENAME
+openssl dgst -sha256 FILENAME
+```
+
+[[md5sum]], [[sha256sum]]
+
+## passwd
+
+> generation of hashed passwords
+
+```sh
+openssl passwd MySecret      # generate hash: 8E4vqBR4UOYF.
+
+openssl passwd -1 MySecret   # generate shadow-style-hash: $1$sXiKzkus$haDZ9JpVrRHBznY5OxB82.
+
+# -crypt             standard Unix password algorithm (default)
+```
+
+[[pass]], [[openssl rand]]
+
+
+## rand
+
+> generate pseudo-random bytes and password
+
+```sh
+openssl rand -base64 32      # generate random numner
+```
+
+[[shuf]]
+
 
 ## see also
+
+- [[gpg]]
 - [[keytool]]
 - [[p11-kit]]
 - [[keybase]]
-- [[gpg]]
-- [mkcert: valid HTTPS certificates for localhost](https://blog.filippo.io/mkcert-valid-https-certificates-for-localhost/)
-- [OpenSSL CLI HowTo](https://www.madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands)
-- [OpenSSL command cheatsheet – freeCodeCamp.org](https://medium.freecodecamp.org/openssl-command-cheatsheet-b441be1e8c4a)
-- [OpenSSL — Dan's Cheat Sheets 1 documentation](https://cheat.readthedocs.io/en/latest/openssl.html)
-- [The Most Common OpenSSL Commands](https://www.sslshopper.com/article-most-common-openssl-commands.html)
+- [megamorf.gitlab.io/cheat-sheets/openss/](https://megamorf.gitlab.io/cheat-sheets/openssl/)
+- [blog.filippo.io/mkcert-valid-https-certificates-for-localhost](https://blog.filippo.io/mkcert-valid-https-certificates-for-localhost/)
+- [madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands](https://www.madboa.com/geek/openssl/#how-do-i-get-a-list-of-the-available-commands)
+- [medium.freecodecamp.org/openssl-command-cheatsheet](https://medium.freecodecamp.org/openssl-command-cheatsheet-b441be1e8c4a)
+- [cheat.readthedocs.io/en/latest/openssl](https://cheat.readthedocs.io/en/latest/openssl.html)
+- [sslshopper.com/article-most-common-openssl-commands](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 - [How to determine certificate type from file - Stack Overflow](http://stackoverflow.com/questions/1722181/how-to-determine-certificate-type-from-file)
 - [openssl -connect returns wrong certificate - Stack Overflow](http://stackoverflow.com/a/24615393)
 - [Check SSL Certificate Expiration Date and More - ShellHacks](http://www.shellhacks.com/en/HowTo-Check-SSL-Certificate-Expiration-Date-from-the-Linux-Shell)

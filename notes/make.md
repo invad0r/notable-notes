@@ -2,7 +2,7 @@
 tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2021-05-27T09:44:44.914Z'
+modified: '2021-10-19T12:14:51.450Z'
 ---
 
 # make
@@ -16,6 +16,7 @@ modified: '2021-05-27T09:44:44.914Z'
 - `.in` input for `configure` think of template
 
 ## install
+
 `brew install make`
 
 ## usage
@@ -30,7 +31,9 @@ make -f MyOtherMakefile       # specify other file
 
 make -B venv                  # always run target
 ```
+
 ## Makefile
+
 ```make
 # macros / variables
 # macros that are names of programs (such as CC)
@@ -60,6 +63,7 @@ clean:
   @echo "Cleaning up..."    # suppress echoing the actual command place `@` before command
   rm *.txt
 ```
+
 ```make
 # use script to create file via heredoc
 
@@ -79,6 +83,13 @@ export script = $(value _script)
 setup:; @ eval "$$script"
 ```
 [unix.stackexchange.com/a/516476/440548](https://unix.stackexchange.com/a/516476/440548)
+
+
+```make
+$(call variable,param,param)    # call function is unique in that it can be used to create new parameterized functions
+                                # You can write a complex expression as the value of a variable, then use call to expand it with different values
+```
+[gnu.org/software/make/manual/Call-Function.html](https://www.gnu.org/software/make/manual/html_node/Call-Function.html)
 
 ## see also
 - [[cmake]]

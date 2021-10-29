@@ -2,16 +2,18 @@
 tags: [container, container/docker]
 title: docker network
 created: '2019-07-30T06:19:49.041Z'
-modified: '2020-05-11T08:10:34.103Z'
+modified: '2021-10-19T07:34:46.470Z'
 ---
 
 # docker network
 
 ## docker overlay network
+
 - network namepsace
 - XVLAN
 - Netlink
 - distributed KV-Store (consul)
+
 ```
 ┌─────────────┐              (VXLAN Tunnel Endpoint)
 │ container ┌─┴────┐   ┌─────┐     ┌──────┐     ┌───────────────┐
@@ -25,10 +27,12 @@ VTEP encapsulates Frames by adding VXLAN-Header
   └────────────────┴──┬───────────┘
                       └─ VNID
 ```
+
 `L3` segement routing IP (`network`)
 `L2` broadcast MAC (`Datalink`)
 
 ## usage
+
 ```sh
 ## debugging inside container
 docker exec container ip addr show
@@ -54,6 +58,7 @@ docker run -itd --name c1-1 --network host busybox sh
 ```
 
 ## see also
+
 - [[brctl]]
 - [[nat]]
 - [[servicemesh]]

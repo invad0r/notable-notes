@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: macos keyboard shortcuts
 created: '2020-08-24T08:09:16.562Z'
-modified: '2021-10-01T11:44:14.116Z'
+modified: '2021-10-14T12:05:09.260Z'
 ---
 
 # macos keyboard shortcuts
@@ -29,6 +29,7 @@ modified: '2021-10-01T11:44:14.116Z'
 ⌘ + m         # minimize window
 ⌘ + 
 
+⌘ + ⇧ + 2               # custom ! read qr-code see `zbar`
 ⌘ + ⇧ + 3               # take a snapshot of your entire screen
 ⌘ + ⇧ + 4               # turn your cursor into a set of crosshairs and select a specific area of screen
 ⌘ + ⇧ + 4 + Spacebar    # screenshot only your current window without altering its dimensions
@@ -46,3 +47,4 @@ modified: '2021-10-01T11:44:14.116Z'
 - [[firefox]]
 - [[mdfind]]
 - [[mdutil]]
+- [[zbar]]

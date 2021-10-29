@@ -1,7 +1,7 @@
 ---
 title: kubeval
 created: '2021-03-18T09:10:51.860Z'
-modified: '2021-10-13T09:27:52.179Z'
+modified: '2021-10-29T11:38:13.119Z'
 ---
 
 # kubeval
@@ -32,3 +32,4 @@ kubeval --strict FILE.yaml                        # simulates kubectl throwing e
 ## see also
 
 - [[kubectl]]
+- [[kustomize]]

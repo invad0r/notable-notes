@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: jwt
 created: '2020-01-27T08:04:24.079Z'
-modified: '2020-09-02T18:09:23.469Z'
+modified: '2021-10-28T11:54:39.168Z'
 ---
 
 # jwt
@@ -10,6 +10,7 @@ modified: '2020-09-02T18:09:23.469Z'
 > `json web tokens` - standard `RFC 7519` method for representing claims securely between two parties
 
 ## usage
+
 ```sh
 # jwt's consist of three parts separated by dots `.`, which are:
 #    Header
@@ -20,7 +21,9 @@ xxxxx.yyyyy.zzzzz
 
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$TOKEN"    # decode to json
 ```
+
 ## see also
+
 - [[jq]]
 - [jwt.io/introduction](https://jwt.io/introduction/)
 - [github.com/emcrisostomo/jwt-cli](https://github.com/emcrisostomo/jwt-cli)

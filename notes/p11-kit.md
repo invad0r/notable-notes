@@ -2,13 +2,15 @@
 tags: [cryptography]
 title: p11-kit
 created: '2020-03-09T12:25:18.791Z'
-modified: '2020-09-02T18:05:53.793Z'
+modified: '2021-10-28T11:53:14.248Z'
 ---
 
 # p11-kit
+
 > Provides a way to load and enumerate PKCS#11 modules
 
 ## usage
+
 ```sh
 p11-kit list-modules
 
@@ -17,5 +19,6 @@ trust extract --format=x509-directory --filter=ca-anchors /path/to/dir    # extr
 ```
 
 ## see also
+
 - [[keytool]]
 - [[openssl]]

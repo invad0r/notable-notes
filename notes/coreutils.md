@@ -2,12 +2,15 @@
 tags: [coreutils]
 title: coreutils
 created: '2020-09-01T07:42:52.948Z'
-modified: '2020-09-03T08:56:56.502Z'
+modified: '2021-10-19T11:52:30.934Z'
 ---
 
 # coreutils
 
 >  basic file, shell, and text manipulation utilities of the gnu operating system
+
+[[numfmt]] - see [[crane]]
+
 
 ## commonly used tools provided by this package include
 - [[chmod]] - changes file modes/permissions

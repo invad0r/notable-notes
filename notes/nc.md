@@ -2,7 +2,7 @@
 tags: [linux, network, webserver]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2020-08-12T13:36:27.270Z'
+modified: '2021-10-18T12:18:20.734Z'
 ---
 
 # nc
@@ -10,22 +10,24 @@ modified: '2020-08-12T13:36:27.270Z'
 > `netcat`- arbitrary tcp/udp connections and listens
 
 ## install
+
 `brew install netcat`, `apt install netcat`, `yum install netcat`
 
 ## usage
+
 ```sh
-# options: 
-# -h, --help                 display this help and exit
-# -z                         scan for listening daemons, without sendin any data
-# -v                         verbose output
-# -i interval                delay time interval between lines of text sent and received
-# -l                         listen for an incoming connection
-# -p source_port             not used with -l
-# -w timeout                 if connection/stdin are idle for more than timeout sec, then the connection is silently closed
-# -e, --exec=PROGRAM         program to exec after connect
-# -k                          
+-h, --help                 # display this help and exit
+-z                         # scan for listening daemons, without sendin any data
+-v                         # verbose output
+-i interval                # delay time interval between lines of text sent and received
+-l                         # listen for an incoming connection
+-p source_port             # not used with -l
+-w timeout                 # if connection/stdin are idle for more than timeout sec, then the connection is silently closed
+-e, --exec=PROGRAM         # program to exec after connect
+-k                         #  
+```
 
-
+```sh
 /usr/bin/nc -k -l 4444          # osx default
 /usr/local/bin/nc -l -p 4444    # osx brew uses gnu-netcat; needs -p PORT !
 
@@ -71,10 +73,15 @@ while [ 1 ]; do
     cat index.md | ./wcgow; 
   } | nc -w 1 -l -N -p 8080; 
 done
+
+
+echo 'Hello, Seashells!' | nc seashells.io 1337     # "pipe output from command-line programs to the web in real-time"
 ```
 
 
 ## see also
+
+- [seashells.io](seashells.io)
 - [[ncat]]
 - [[socat]]
 - [[tar]]

@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2021-10-06T12:07:25.860Z'
+modified: '2021-10-19T10:11:00.392Z'
 ---
 
 # brew
@@ -50,7 +50,14 @@ brew install
   mkcert
   bash-completion
 
-# cask - extension to brew allowing management of gui apps
+
+brew unlink PACKAGE       # switch between mutliple version of package
+brew link PACKAGE@10
+```
+
+## cask - extension to brew allowing management of gui apps
+
+```sh
 brew cask
 
 brew cask install CASK
@@ -61,8 +68,11 @@ brew cask install insomnia
 brew cask create my-cask           # create-cask
 
 ls /usr/local/Caskroom             # ls installed caskes
+```
 
-# tap - adds more repos to the list of formulae that brew tracks, updates, and installs from
+## tap - adds more repos to the list of formulae that brew tracks, updates, and installs from
+
+```sh
 brew tap                     # list tapped repositories
 
 brew tap tapname             # add tap

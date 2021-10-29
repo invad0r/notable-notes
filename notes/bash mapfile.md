@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash mapfile
 created: '2019-07-30T06:19:49.014Z'
-modified: '2021-06-07T07:02:07.719Z'
+modified: '2021-10-25T09:49:01.598Z'
 ---
 
 # bash mapfile
@@ -22,7 +22,7 @@ modified: '2021-06-07T07:02:07.719Z'
 ```
 
 ```sh
-readarray  # synonym for `mapfile'
+readarray
 
 mapfile
 
@@ -35,6 +35,9 @@ echo ${FOORAY[@]}
 ```
 
 ## see also
+
 - [wiki-dev.bash-hackers.org/commands/builtin/mapfile](https://wiki-dev.bash-hackers.org/commands/builtin/mapfile)
 - [[bash read]]
 - [[bash array]]
+- [[bash readarray]]
+- [[yq]]

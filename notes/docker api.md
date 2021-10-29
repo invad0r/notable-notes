@@ -2,7 +2,7 @@
 tags: [api, container/docker, curl]
 title: docker api
 created: '2019-08-20T09:42:39.909Z'
-modified: '2021-03-22T07:07:27.605Z'
+modified: '2021-10-19T07:34:32.085Z'
 ---
 
 # docker api
@@ -60,8 +60,9 @@ curl -XGET --unix-socket /run/docker/plugins/nfs.sock \
 ```
 
 ## see also
-- [[kubernetes api]]
+
 - [[curl]]
 - [[unix socket]]
+- [[kubernetes api]]
 - [docs.docker.com/engine/api](https://docs.docker.com/engine/api/v1.24/)
-- https://github.com/docker/go-plugins-helpers/
+- [github.com/docker/go-plugins-helpers/](https://github.com/docker/go-plugins-helpers/)

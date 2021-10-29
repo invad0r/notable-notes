@@ -1,7 +1,7 @@
 ---
 title: opa
 created: '2021-03-16T15:13:29.336Z'
-modified: '2021-03-16T15:20:43.232Z'
+modified: '2021-10-19T07:29:02.110Z'
 ---
 
 # opa
@@ -11,14 +11,17 @@ modified: '2021-03-16T15:20:43.232Z'
 > can be used to enforce policies in microservices, k8s, cicd pipelines, api-gateways, etc.
 
 ## install
+
 `brew install opa`
 
 ## usage
+
 ```sh
 
 ```
 
 ## see also
+
 - [[rego]]
 - [[kubectl]]
 

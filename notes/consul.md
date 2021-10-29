@@ -2,7 +2,7 @@
 tags: [iac]
 title: consul
 created: '2019-08-28T09:45:08.570Z'
-modified: '2020-04-30T14:58:11.555Z'
+modified: '2021-10-20T08:58:05.652Z'
 ---
 
 # consul
@@ -50,6 +50,8 @@ EOF
 ```
 
 ## see also
+
+- [[raft consesus algorithm]]
 - [[consul api]]
 - [[watch]]
 - [[awk]]

@@ -2,7 +2,7 @@
 tags: [container/docker, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2020-03-02T10:34:32.709Z'
+modified: '2021-10-19T07:35:07.869Z'
 ---
 
 # unix socket
@@ -16,7 +16,6 @@ modified: '2020-03-02T10:34:32.709Z'
   - It looks and behaves much like a low-level file descriptor. 
   - This happens because the commands like read () and write () works with the same way they do with the files and pipes.
 
-
 ### socket
 - combination of IP-Address and Port-Number
 - 2 types:
@@ -24,6 +23,7 @@ modified: '2020-03-02T10:34:32.709Z'
   - datagram
 
 ## see also
+
 - [what-socket - linux.com](https://www.linux.com/news/what-socket)
 - [[socat]]
 - [[ss]]

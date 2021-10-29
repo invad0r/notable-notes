@@ -1,7 +1,7 @@
 ---
 title: helm
 created: '2021-06-04T08:40:48.010Z'
-modified: '2021-10-13T09:30:31.341Z'
+modified: '2021-10-18T13:52:28.357Z'
 ---
 
 # helm
@@ -42,36 +42,42 @@ helm help       # learn more about the available Helm commands
 helm get -h     # or type a command followed by -h flag
 
 
-helm env
-
-helm search     # search for charts
-
-helm pull       # download chart to local dir
-
-helm install    # upload chart to k8s
-
-helm list       # list releases of charts
-
-helm repo add datadog https://helm.datadoghq.com
-helm repo add stable https://charts.helm.sh/stable
-
-helm repo update
-
-helm show all CHART
-
-helm show chart datadog --repo https://helm.datadoghq.com --version 2.6.11
-
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm search repo bitnami
-helm repo update
-helm install bitnami/mysql --generate-name
-helm show chart bitnami/mysql
-helm show all bitnami/mysql
 
 helm list # show list of all deployed releases
 helm ls
 
+helm env
+
+helm search                   # search for charts
+helm search repo REPONAME
+
+helm pull       # download chart to local dir
+
+helm install    # upload chart to k8s
+helm install bitnami/mysql --generate-name
+helm install --debug --dry-run CHART ./PATH     # test the template rendering, but not actually install anything
+
+helm list       # list releases of charts
+
+
+helm repo add datadog https://helm.datadoghq.com
+helm repo add stable https://charts.helm.sh/stable
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+helm repo update
+
+
+helm show all CHART
+helm show chart datadog --repo https://helm.datadoghq.com --version 2.6.11
+helm show chart bitnami/mysql
+helm show all bitnami/mysql
+
+
 helm uninstall mysql-1612624192   # uninstall release
+
+
+helm template CHART                                   # render chart templates locally and display the output
+helm template CHART -x templates/deployment.yaml      # render just one template in a chart
 ```
 
 ## see also

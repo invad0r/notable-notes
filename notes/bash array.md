@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash array
 created: '2019-08-01T07:14:55.242Z'
-modified: '2021-05-12T08:46:50.959Z'
+modified: '2021-10-25T09:41:19.353Z'
 ---
 
 # bash array
@@ -59,4 +59,5 @@ declare | grep Colors   # Colors=([0]="purple" [1]="reddish-orange" [2]="light g
 ## see also
 - [[bash declare]]
 - [[bash mapfile]]
+- [[bash readarray]]
 - [Bash associative array examples – Andy Balaam's Blog](https://www.artificialworlds.net/blog/2012/10/17/bash-associative-array-examples/)

@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2021-10-13T09:29:55.252Z'
+modified: '2021-10-25T08:40:57.842Z'
 ---
 
 # minikube
@@ -56,8 +56,8 @@ minikube ssh
 minikube ip
 
 minikube service list
-minikube service SERVICE_NAME                   # open exposed endpoint in browser
-minikube service SERVICE_NAME --url --namespace=NAMESPACE
+minikube service SERVICE_NAME                               # open exposed endpoint in browser
+minikube service SERVICE_NAME --url --namespace=NAMESPACE # get service url:port
 ```
 
 ## addons
@@ -75,3 +75,4 @@ minikube addons enable ingress            # provisions: configMap, ingress-contr
 - [[kubernetes]]
 - [[argocd]]
 - [[docker-machine]]
+- [[k3s]]

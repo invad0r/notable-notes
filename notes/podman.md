@@ -1,7 +1,7 @@
 ---
 title: podman
 created: '2021-09-06T12:17:24.319Z'
-modified: '2021-09-06T13:53:21.951Z'
+modified: '2021-10-19T11:27:19.405Z'
 ---
 
 # podman
@@ -30,3 +30,4 @@ podman run -ti --rm IMAGE
 ## see also
 
 - [[docker]]
+- [[skopeo]]

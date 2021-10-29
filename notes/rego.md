@@ -1,7 +1,7 @@
 ---
 title: rego
 created: '2021-03-16T15:14:14.515Z'
-modified: '2021-03-16T15:18:02.784Z'
+modified: '2021-10-19T07:29:09.255Z'
 ---
 
 # rego
@@ -11,11 +11,13 @@ modified: '2021-03-16T15:18:02.784Z'
 > rego queries are assertions on data
 
 ## usage
+
 ```rego
 
 ```
 
 ## see also
+
 - [[opa]]
 - [[kubectl]]
 - [[jq]]

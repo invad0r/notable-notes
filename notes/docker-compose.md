@@ -2,14 +2,15 @@
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2021-05-27T08:55:43.841Z'
+modified: '2021-10-15T07:28:08.095Z'
 ---
 
 # docker-compose
 
-> docker-compose is a tool for defining and running multi-container docker applications
+> `docker-compose` for defining and running multi-container `docker` applications
 
 ## usage
+
 ```sh
 docker-compose -f docker-compose.yml config   # render final yaml
 
@@ -18,7 +19,8 @@ docker-compose ps
 docker-compose up -d service_name
 ```
 
-## docker-compose.yml
+## `docker-compose.yml`
+
 ```yml
 # compose file version 2 reference
 ulimits:        # this is docker-compose only !
@@ -33,6 +35,7 @@ cap_drop:
   - NET_ADMIN
   - SYS_ADMIN
 ```
+
 ```yml
 # compose file version 3 reference
 cap_add:
@@ -42,6 +45,7 @@ cap_drop:
   - SYS_ADMIN
 ```
 [[capabilities]], [[ulimit]]
+
 ```yml
 # terrafrom dev setup
 version: '2.4'
@@ -65,6 +69,9 @@ services:
 ```
 
 ## see also
+
+- [[docker]]
 - [[yaml]]
 - [[localstack]]
+- [[minikube]]
 
