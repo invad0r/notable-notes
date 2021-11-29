@@ -2,7 +2,7 @@
 tags: [container]
 title: kustomize
 created: '2020-10-12T10:34:55.454Z'
-modified: '2021-10-29T12:39:48.971Z'
+modified: '2021-11-13T09:42:52.925Z'
 ---
 
 # kustomize
@@ -68,7 +68,6 @@ kustomization.yaml
 ## see also
 
 - [[kubectl]]
-- [[kubectx]]
-- [[kubens]]
+- [[jsonnet]]
 - [kubernetes-sigs.github.io/kustomize/](https://kubernetes-sigs.github.io/kustomize/)
 

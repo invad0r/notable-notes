@@ -2,7 +2,7 @@
 tags: [linux, network, webserver]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2021-10-18T12:18:20.734Z'
+modified: '2021-11-11T08:34:27.591Z'
 ---
 
 # nc
@@ -36,6 +36,8 @@ nc -zv serverhost 27017                                             # check if p
 
 nc -u -zv 192.168.100.1 80-200                                      # scan udb prots 80 to 200
 
+
+echo "PING" | nc 127.0.0.1 3310                       # sends ping
 
 nc -l 5566 -e /bin/bash                                             # create a backdoor-shell
 nc 192.168.100.1 5566                                               # use shell
@@ -81,10 +83,11 @@ echo 'Hello, Seashells!' | nc seashells.io 1337     # "pipe output from command-
 
 ## see also
 
-- [seashells.io](seashells.io)
 - [[ncat]]
 - [[socat]]
+- [[netstat]]
 - [[tar]]
 - [[gpg]]
 - [[lzcat]]
-- [Ship It with Netcat - The Blog of Tom Webster](https://samurailink3.com/blog/2013/12/31/ship-it-with-netcat/)
+- [seashells.io](seashells.io)
+- [samurailink3.com/blog/2013/12/31/ship-it-with-netcat](https://samurailink3.com/blog/2013/12/31/ship-it-with-netcat/)

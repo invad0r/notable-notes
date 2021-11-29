@@ -2,7 +2,7 @@
 tags: [linux]
 title: tmux
 created: '2019-07-30T06:19:49.253Z'
-modified: '2020-04-07T06:21:16.223Z'
+modified: '2021-11-04T10:47:53.783Z'
 ---
 
 # tmux
@@ -10,10 +10,24 @@ modified: '2020-04-07T06:21:16.223Z'
 > `terminal multiplexer` enables a number of terminals to be created, accessed, and controlled from a single screen
 
 ## usage
+
 ```sh
+-2CDlNuvV
+-c SHELL_COMMAND
+-f FILE
+-L SOCKET_NAME
+-S SOCKET_PATH 
+-T features command FLAGS
+```
+
+```sh
+tmux ls                         # list sessions
+tmux list-sessions
+
+tmux list-sessions | awk 'BEGIN{FS=":"}{print $1}' | xargs -n 1 tmux kill-session -t
+
 tmux list-commands
 tmux new -s myname              # start new session
-tmux ls                         # list sessions
 
 tmux a -t 0                     # attach to target 0
 tmux -2 attach -t $SESSION
@@ -44,30 +58,44 @@ tmux send-keys -t ${window}.2 'docker service ls --filter name=mb-api-' Enter
 
 tmux set-window-option -t $SESSION:0 automatic-rename off
 
+```
+
+## commands
+
+```sh
 :movew                      # move window to the next unused number
 :swap-window -s 1 -t 0      # swap -source SOURCE to -target TARGET
 :swap-window -t -1          # swap current window with next
 ```
 
-shortcut           | desc
---                 |--
-<kbd>C-b + :</kbd> | prompt for command
-<kbd>C-b + ?</kbd> | show keybindings
-<kbd>C-b + &</kbd> | kill window
-<kbd>C-b + x</kbd> | kill pane
-<kbd>C-b + c</kbd> | new window
-<kbd>C-b + ,</kbd> | name window
-<kbd>C-b + w</kbd> | list windows
-<kbd>C-b + f</kbd> | find window
-<kbd>C-b + &</kbd> | kill window
-<kbd>C-b + .</kbd> | move window - prompted for a new number
-<kbd>C-b + %</kbd> | horizontal split
-<kbd>C-b + "</kbd> | vertical split
-<kbd>C-b + o</kbd> | swap panes
-<kbd>C-b + q</kbd> | show pane numbers
-<kbd>C-b + x</kbd> | kill pane
-<kbd>C-b + ⍽</kbd> | space - toggle between layouts
+## shortcuts
+
+```sh
+⌃-b + :         # prompt for command
+⌃-b + ?         # show keybindings
+
+⌃-b + &         # kill window
+⌃-b + x         # kill pane
+
+⌃-b + c         # new window
+⌃-b + ,         # name window
+⌃-b + w         # list windows
+⌃-b + f         # find window
+⌃-b + &         # kill window
+⌃-b + .         # move window - prompted for a new number
+
+⌃-b + %         # horizontal split
+⌃-b + "         #"# vertical split
+⌃-b + o         # swap panes
+⌃-b + q         # show pane numbers
+⌃-b + x         # kill pane
+⌃-b + ⍽         # space - toggle between layouts
+```
 
 ## see also
-- [tmux cheatsheet](https://devhints.io/tmux) 
-- [Moving tmux pane to window - unix.stackexchange.com](https://unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window)
+
+- [[fzf]]
+- [devhints.io/tmux](https://devhints.io/tmux) 
+- [unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window](https://unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window)
+- [[macos keyboard shortcuts]]
+

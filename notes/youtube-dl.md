@@ -1,8 +1,7 @@
 ---
-tags: [tool]
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2020-11-26T15:54:14.044Z'
+modified: '2021-10-31T14:56:47.640Z'
 ---
 
 # youtube-dl

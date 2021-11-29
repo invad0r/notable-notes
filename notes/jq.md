@@ -2,7 +2,7 @@
 tags: [linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2021-10-29T12:32:53.904Z'
+modified: '2021-11-08T15:09:00.065Z'
 ---
 
 # jq
@@ -17,8 +17,7 @@ modified: '2021-10-29T12:32:53.904Z'
 -R, --raw-input         # don't parse the input as json. Instead, each line of text is passed to the filter as a string
 --unbuffered            # if you're piping a slow data source into jq and piping jq's output elsewhere
 -n, --null-input        # Don't read any input at all! useful when using jq as a simple calculator or to construct json data from scratch
--S, --sort-keys         # Output the fields of each object with the keys in sorted order
-                        # diff <(jq -S . fileA.json) <(jq -S . fileA.json)
+-S, --sort-keys         # output fields of each object with the keys in sorted order
 ```
 
 ```sh
@@ -28,6 +27,7 @@ echo '[1, "foo", ["foo"]]' | jq '. | tojson'
 
 echo '"[1,\"foo\",[\"foo\"]]"' | jq '. | fromjson'
 
+diff <(jq -S . FILE_A.json) <(jq -S . FILE_A.json)    # diff by sorting first
 
 # string interpolation
 STDOUT | jq '.[]| "\(.id) \(.name)"'  # print in one line
@@ -41,9 +41,9 @@ STDOUT | jq -r '.auths | keys[]'   # get only keys from auths{} object
 # select - get a object based on object's value
 jq '.VirtualMachines[].Config.Hardware.Device[] | select(.Key== 2000) | .CapacityInBytes'
 
-jq '.QueueUrls[] | select(endswith("SOMESTRING"))'      # get array-elemnts ending with "SOMESTRIN"
+jq '.QueueUrls[] | select(endswith("STRING"))'              # get array-elemnts ending with "STRING"
 
-jq '.fields | select(.some | tonumber > 0) | .some)'    # convert .some-string tonumber then get if greater zero
+jq '.fields | select(.some | tonumber > 0) | .some)'        # convert string from .some `tonumber` then get if greater zero
 
 
 # filter values

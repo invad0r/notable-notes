@@ -2,7 +2,7 @@
 tags: [coreutils, filesystem]
 title: du
 created: '2019-07-30T06:19:49.046Z'
-modified: '2021-06-08T05:49:28.854Z'
+modified: '2021-10-31T14:38:47.826Z'
 ---
 
 # du
@@ -47,6 +47,7 @@ done | sort -h -k 2 -r
 ```
 
 ## see also
+
 - [[df]]
 - [[sort]]
 - [[tar]]

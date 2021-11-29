@@ -2,12 +2,14 @@
 tags: [macos, network]
 title: networksetup
 created: '2019-09-06T06:34:44.756Z'
-modified: '2020-02-04T12:21:27.487Z'
+modified: '2021-10-31T14:49:12.470Z'
 ---
 
 # networksetup
 
 > configuration tool for network settings in System Preferences
+
+## usage
 
 ```sh
 networksetup -listallhardwareports
@@ -24,4 +26,7 @@ networksetup -setairportnetwork devicename network [password]
 ```
 
 ## see also
+
 - [[airport]]
+- [[nmap]]
+- [[wireshartk]]

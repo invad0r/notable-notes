@@ -2,7 +2,7 @@
 tags: [dsl]
 title: awk
 created: '2019-07-30T06:19:48.989Z'
-modified: '2020-09-02T12:52:42.736Z'
+modified: '2021-10-31T15:06:43.809Z'
 ---
 
 # awk
@@ -12,18 +12,20 @@ modified: '2020-09-02T12:52:42.736Z'
 > name derived from authors surnames: Alfred Aho, Peter Weinberger, and Brian Kernighan
 
 ### implementation
-- `nawk`   : `new awk` (evolution of `oawk`), the original unix implementation
-- `mawk`   : a fast implementation that mostly sticks to standard features
-- `gawk`   : the gnu implementation, with many extensions
-- `busybox`: small, intended for embedded systems, not many features
+- [[nawk]]: `new awk` (evolution of `oawk`), the original unix implementation
+- [[mawk]]: a fast implementation that mostly sticks to standard features
+- [[gawk]]: the gnu implementation, with many extensions
+- [[busybox]]: small, intended for embedded systems, not many features
 
 ## usage
+
 ```sh
-awk -f        # Read the AWK program source from file
+-f SCRIPT      # read awk program from file
 
-awk -F        # Field Seperator
+-F ";"         # field seperator
+```
 
-
+```sh
 awk '{if (NR!=1) {print} }'     # skip first line
 
 awk '{print $NF}'               # prints last field
@@ -83,7 +85,56 @@ awk '{
 yes $COLUMNS $LINES | awk 'BEGIN{x=y=e=f=1}{if(x==$1||!x){e*=-1};if(y==$2||!y){f*=-1};x+=e;y+=f;printf "\033[%s;%sH",y,x;for (a=0;a<400000;a++){}}'
 ```
 
+## variables
+
+2 types
+- Variable which defines values which can be changed such as field separator `FS` and record separator `RS`
+- Variable which can be used for processing and reports such as Number of records, number of fields
+
+```sh
+CONVFMT       # conversion format used when converting numbers (default %.6g)
+FS            # input field separator; regular expression used to separate fields; also settable by option -Ffs.
+NF            # number of fields in the current record
+NR            # ordinal number of the current record
+FNR           # ordinal number of the current record in the current file
+              # Number of Records relative to the current input file / hen using two input files => seperate RecordNumbers
+
+FILENAME      # the name of the current input file
+RS            # input record separator (default newline)
+OFS           # output field separator (default blank)
+ORS           # output record separator (default newline)
+OFMT          # output format for numbers (default %.6g)
+SUBSEP        # separates multiple subscripts (default 034)
+ARGC          # argument count, assignable
+ARGV          # argument array, assignable; non-null members are taken as filenames
+ENVIRON       # array of environment variables; subscripts are names.
+```
+
+## functions
+
+```sh
+printf "%10.0f\n" 1.28071e+09                     # print scientific notation as float to stdout
+
+var = fprintf("%s %d %.2f\n", "Testing", 1, 3) }  # assigns its output to a variable, not stdout
+
+split($1,swm,".");                                # split $1 into array swm[] with optional seperator "."
+
+substr("foobar", 2, 3)                            # => "oob"
+
+substr("foobar", 4)                               # => "bar"
+
+length("foo")                                     # => 3
+
+tolower("FOO")                                    # => "foo"
+
+toupper("foo")                                    # => "FOO"
+
+gsub(/"/, "")                #"                   # remove quotes globally
+```
+
 ## see also
-- [[awk variable]]
-- [[awk function]]
-- [awk - learnxinyminutes.com](https://learnxinyminutes.com/docs/awk/)
+
+- [learnxinyminutes.com/docs/awk](https://learnxinyminutes.com/docs/awk/)
+- [[sed]]
+- [[grep]]
+- [[column]]

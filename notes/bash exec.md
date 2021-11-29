@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash exec
 created: '2019-07-30T06:19:49.006Z'
-modified: '2021-05-12T08:46:07.887Z'
+modified: '2021-10-31T14:38:30.706Z'
 ---
 
 # bash exec
@@ -15,6 +15,7 @@ modified: '2021-05-12T08:46:07.887Z'
 - spawns new proc
 
 ## usage
+
 ```sh
 exec [-cl] [-a NAME] [COMMAND [ARGS]]
 
@@ -39,6 +40,7 @@ cat <&3
 ```
 
 ## see also
+
 - [[bash eval]]
 - [[bash read]]
 - [[filesystem hierarchy standard]]

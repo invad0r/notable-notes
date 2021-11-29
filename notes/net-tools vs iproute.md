@@ -2,7 +2,7 @@
 tags: [iproute, net-tools, network]
 title: net-tools vs iproute
 created: '2019-07-30T06:19:49.082Z'
-modified: '2020-09-03T06:46:29.190Z'
+modified: '2021-11-11T08:29:43.186Z'
 ---
 
 # net-tools vs iproute
@@ -10,6 +10,7 @@ modified: '2020-09-03T06:46:29.190Z'
 > comparing both toolsets
 
 ## usage
+
 ```sh
 # net-tools                                                   ip-route commands
 arp -a                                                        ip neigh
@@ -35,6 +36,7 @@ route add default gw 192.168.1.1                              ip route add defau
 ```
 
 ## see also
+
 - [[net-tools]]
 - [[iproute]]
 - [[netstat]]

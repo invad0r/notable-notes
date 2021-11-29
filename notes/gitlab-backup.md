@@ -1,8 +1,7 @@
 ---
-tags: [tool]
 title: gitlab-backup
 created: '2020-01-03T14:20:17.882Z'
-modified: '2020-09-02T18:10:46.482Z'
+modified: '2021-10-31T14:56:47.417Z'
 ---
 
 # gitlab-backup

@@ -2,7 +2,7 @@
 tags: [linux]
 title: grep
 created: '2019-07-30T06:19:49.077Z'
-modified: '2021-06-08T05:58:43.936Z'
+modified: '2021-11-01T10:18:41.907Z'
 ---
 
 # grep
@@ -92,7 +92,9 @@ echo "http://foo.net/path/repo.git" | grep -o -P '(?<=https:\/\/|http:\/\/|@).*?
 ```
 
 ## see also
+
 - [[grepcidr]]
+- [[pkill]]
 - [[regex]]
 - [REGEX Cheat Sheet](https://staff.washington.edu/weller/grep.html)
 - [Regular Expressions in grep](http://www.robelle.com/smugbook/regexpr.html)

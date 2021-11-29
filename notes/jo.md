@@ -1,7 +1,7 @@
 ---
 title: jo
 created: '2019-07-30T06:19:49.120Z'
-modified: '2021-10-29T12:36:06.424Z'
+modified: '2021-11-13T09:43:29.815Z'
 ---
 
 # jo
@@ -27,5 +27,6 @@ jo -p -a ${array[@]}
 ## see also
 
 - [[jq]]
+- [[jsonnet]]
 - [[yq]]
 - [github.com/jpmens/jo](https://github.com/jpmens/jo)

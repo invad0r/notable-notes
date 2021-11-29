@@ -1,8 +1,7 @@
 ---
-tags: [tool]
 title: kafka
 created: '2019-07-30T06:19:49.147Z'
-modified: '2020-09-02T18:10:46.432Z'
+modified: '2021-10-31T14:56:47.545Z'
 ---
 
 # kafka

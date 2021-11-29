@@ -2,13 +2,14 @@
 tags: [container/docker, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2021-10-19T07:35:07.869Z'
+modified: '2021-11-11T08:33:52.574Z'
 ---
 
 # unix socket
 
 > allows communication between two different processes `IPC`
 > on either the same machine or different machines in client-server application frameworks
+
 
 - Every UNIX systems Input/Output action is executed by writing or reading the descriptor file
 - Descriptor file is an open file, which is associated with an integer
@@ -17,14 +18,18 @@ modified: '2021-10-19T07:35:07.869Z'
   - This happens because the commands like read () and write () works with the same way they do with the files and pipes.
 
 ### socket
+
 - combination of IP-Address and Port-Number
 - 2 types:
   - stream - reliable two-way connected communication streams
   - datagram
 
+
 ## see also
 
-- [what-socket - linux.com](https://www.linux.com/news/what-socket)
-- [[socat]]
+- [[nc]]
 - [[ss]]
+- [[socat]]
+- [[netstat]]
 - [[docker api]]
+- [linux.com/news/what-socket](https://www.linux.com/news/what-socket)

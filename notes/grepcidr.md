@@ -2,7 +2,7 @@
 tags: [linux]
 title: grepcidr
 created: '2020-09-02T17:09:18.874Z'
-modified: '2021-06-08T05:59:31.024Z'
+modified: '2021-11-05T08:57:52.451Z'
 ---
 
 # grepcidr
@@ -10,6 +10,7 @@ modified: '2021-06-08T05:59:31.024Z'
 > filter IPv4 and IPv6 addresses matching CIDR patterns
 
 ## install
+
 ```sh
 curl -LO http://www.pc-tools.net/files/unix/grepcidr-2.0.tar.gz 
 tar xvzf grepcidr-2.0.tar.gz && cd grepcidr-2.0
@@ -44,6 +45,7 @@ grepcidr -f list1 list2                         # Cross-reference two lists, out
 ```
 
 ## see also
+
 - [[grep]]
 - [pc-tools.net/unix/grepcidr/](http://www.pc-tools.net/unix/grepcidr/)
 - [manpages.ubuntu.com/manpages/xenial/man1/grepcidr](http://manpages.ubuntu.com/manpages/xenial/man1/grepcidr.1.html)

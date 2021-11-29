@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2021-10-28T12:01:42.518Z'
+modified: '2021-11-13T09:45:40.378Z'
 ---
 
 # kubectl
@@ -69,40 +69,20 @@ kubectl api-resources   # get all resource-names, alias and kinds
 kubectl get
 kubectl get all
 
-kubectl get node
+kubectl get nodes
 kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="InternalDNS")].address}'
+
+kubectl get nodes \
+  --selector='!node-role.kubernetes.io/master' \
+  --no-headers \
+  -o custom-columns=":metadata.name"
+
+kubectl get node NODE -ojson | jq -r '.status.capacity.memory' | numfmt --from=iec-i --to=iec     # get avail memory
 
 kubectl get po POD_NAME -o yaml
 kubectl get pod
 kubectl get pods --show-labels | awk '{print $6}' | column -s, -t
 kubectl get pods -L 
-
-
-# running adhoc pod without yaml-manifest
-
-kubectl run     # same as `kubectl create deployment`
-
-kubectl run echoserver --image=gcr.io/google_containers/echoserver:1.4 --port=8080
-
-kubectl run dnsutils --image=tutum/dnsutils --generator=run-pod/v1 --command -- sleep infinity
-
-kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
-
-kubectl run POD_NAME \
-  --image=mongo:4.0  \
-  --overrides='{"apiVersion": "v1", "spec": {
-    "affinity": {
-      "nodeAffinity": {
-        "requiredDuringSchedulingIgnoredDuringExecution": {
-          "nodeSelectorTerms": [{
-              "matchFields": [{
-                  "key": "metadata.name",
-                  "operator": "In",
-                  "values": ["NODE_NAME"]
-                }]
-            }]
-        }}}}}' \                                  `# run pod on specific node `
-  --command -- sleep infinity
 
 
 kubectl apply   # makes incremental changes to an existing object
@@ -127,13 +107,50 @@ kubectl edit svc/SERVICE                                     # edit the service 
 kubectl edit job.v1.batch/myjob -o json                      # edit the job 'myjob' in JSON using the v1 API format
 kubectl edit deployment/mydeployment -o yaml --save-config   # edit the deployment 'mydeployment' in YAML and save the modified config in its annotation
 
-
-kubectl logs kubia-j582f
-kubectl logs kubia-manual -c kubia
-
 kubectl expose deployment DEPLOYMENT --type=NodePort
 
 kubectl exec -it POD -- curl -s http://10.1.0.3  # double dash `--` signals end of command options, if not set -s would be interpreted as kubectl flag
+```
+
+## run
+
+> running adhoc pod without yaml-manifest
+
+```sh
+
+kubectl run     # same as `kubectl create deployment`
+
+kubectl run echoserver --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+
+kubectl run dnsutils --image=tutum/dnsutils --generator=run-pod/v1 --command -- sleep infinity
+
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+
+kubectl run POD_NAME \
+  --image=mongo:4.0  \
+  --overrides='{"apiVersion": "v1", "spec": {
+    "affinity": {
+      "nodeAffinity": {
+        "requiredDuringSchedulingIgnoredDuringExecution": {
+          "nodeSelectorTerms": [{
+              "matchFields": [{
+                  "key": "metadata.name",
+                  "operator": "In",
+                  "values": ["NODE_NAME"]
+                }]
+            }]
+        }}}}}' \                                  `# run pod on specific node `
+  --command -- sleep infinity
+```
+
+## logs
+
+```sh
+kubectl logs POD
+
+kubectl logs POD -c CONTAINER
+
+kubectl logs INGRESS_CONTROLLER -c controller | jq -r '. | select(.nginx.status != "200") | .nginx | "\(.status): \(.remote_addr) \(.request) \(.proxy_upstream_name)"'
 ```
 
 ## port-forward 
@@ -179,11 +196,12 @@ kubectl access-matrix               # use plugin to see the level of access user
 
 - [[oc]]
 - [[helm]]
+- [[kustomize]]
+- [[bazel]]
 - [[kubectx]]
 - [[kubens]]
 - [[kubeseal]]
 - [[kubeval]]
-- [[kustomize]]
 - [[kubernetes]]
 - [[kim]]
 - [[kops]]

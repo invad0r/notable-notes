@@ -2,7 +2,7 @@
 tags: [network]
 title: tcpdump
 created: '2020-01-27T14:43:35.111Z'
-modified: '2021-05-28T07:04:10.984Z'
+modified: '2021-10-31T14:48:28.192Z'
 ---
 
 # tcpdump
@@ -10,6 +10,23 @@ modified: '2021-05-28T07:04:10.984Z'
 > dump traffic on a network 
 
 ## usage
+
+```sh
+-t        # don't print timestamp on each dump line
+-tt       # print timestamp, as seconds since January 1, 1970, 00:00:00, UTC, and fractions of a second since that time, on each dump line
+-ttt      # print a delta (micro-/nanosecond resolution depending on the --time-stamp-precision option) 
+          #   between current and previous line on each dump line. The default is microsecond resolution
+-tttt     # print a timestamp, as hours, minutes, seconds, and fractions of a second since midnight, preceded by the date, on each dump line
+-ttttt    # print a delta (micro-/nanosecond resolution depending on the --time-stamp-precision option) 
+          #   between current and first line on each dump line. The default is microsecond resolution
+
+-l                                         #  see the traffic as it's capturing
+-A                                         #  print each packet (minus its link level header) in ASCII
+-s SNAPLEN, --snapshot-length=SNAPLEN      #  0 sets it to the default of 262144
+
+ --time-stamp-precision                    # 
+```
+
 ```sh
 tcpdump -i eth1                     # capture packets from a particular interface
 
@@ -51,15 +68,6 @@ tcpdump -i eth1 less 32             # filter on packet size
 tcpdump -i eth1 greater 64 
 tcpdump -i eth1 <= 128
 
-
-# -t        Don't print a timestamp on each dump line. 
-# -tt       Print the timestamp, as seconds since January 1, 1970, 00:00:00, UTC, and fractions of a second since that time, on each dump line. 
-# -ttt      Print a delta (microsecond or nanosecond resolution depending on the --time-stamp-precision option) between current and previous line on each dump line. The default is microsecond resolution. 
-# -tttt     Print a timestamp, as hours, minutes, seconds, and fractions of a second since midnight, preceded by the date, on each dump line. 
-# -ttttt    Print a delta (microsecond or nanosecond resolution depending on the --time-stamp-precision option) between current and first line on each dump line. The default is microsecond resolution. 
-# -l                                          see the traffic as it's capturing
-# -A                                          print each packet (minus its link level header) in ASCII
-# -s snaplen, --snapshot-length=snaplen       0 sets it to the default of 262144
 
 tcpdump -vvAls0 | grep 'User-Agent:'                # Find HTTP User Agents
 tcpdump -vvAls0 | grep 'GET'                        # Cleartext GET Requests

@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2021-02-23T16:28:36.890Z'
+modified: '2021-11-16T08:54:58.104Z'
 ---
 
 # date
@@ -10,18 +10,25 @@ modified: '2021-02-23T16:28:36.890Z'
 > print or set the system date and time
 
 ## install
+
 `brew install coreutils`
 
 ## usage
+
 ```sh
-# get string format
-man strftime                      
-#   %F    is equivalent to "%Y-%m-%d"
-#   %k    is replaced by the 24-hour as decimal number (0-23); single digits are preceded by a blank
+-u, --utc, --universal    #  print or set UTC (=Coordinated Universal Time)
+```
 
-# flags
-# -u, --utc, --universal    print or set UTC (=Coordinated Universal Time)
+## string format
 
+```sh
+man strftime
+
+%F          # is equivalent to "%Y-%m-%d"
+%k          # is replaced by the 24-hour as decimal number (0-23); single digits are preceded by a blank
+```
+
+```sh
 date "+%s"                        # get unix timestamp
 date "+%F_%T"                     # 2020-01-30_13:16:52
 date "+%F_%H-%M"                  # 2020-01-30_13-16
@@ -36,12 +43,17 @@ date -d "$(date -u -d "10am")"    # convert UTC time to local
 
 date -v -11d                      # subtract 11 days from current date on bsd/macos
 
+gdate -I -d "$d + 1 day"          # add 1 day to date
+
+gdate -d "$d" +%A                 # get short weekday from date
+
 # calculate days difference
 echo "$(( (  $(gdate "+%s") - $(gdate -d "2020-10-13T08:30:10+00:00" "+%s") )/(60*60*24) ))" 
 ```
 
 ## see also
+
+- [[cal]]
+- [[strftime]]
 - [[hwclock]]
 - [[timedatectl]]
-- [[strftime]]
-- [[cal]]

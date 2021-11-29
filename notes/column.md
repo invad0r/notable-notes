@@ -2,7 +2,7 @@
 tags: [bsdmainutils]
 title: column
 created: '2020-07-27T11:16:40.585Z'
-modified: '2021-06-08T05:31:43.739Z'
+modified: '2021-10-31T15:11:47.111Z'
 ---
 
 # column
@@ -27,6 +27,8 @@ CMD | column -t
 ```
 
 ## see also
+
 - [[mount]]
 - [[tput]]
 - [[sort]]
+- [[awk]]

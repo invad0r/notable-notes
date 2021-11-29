@@ -1,8 +1,7 @@
 ---
-tags: [tool]
 title: gitlab-ctl
 created: '2019-12-30T14:01:10.332Z'
-modified: '2020-09-02T18:10:46.464Z'
+modified: '2021-10-31T14:56:47.447Z'
 ---
 
 # gitlab-ctl

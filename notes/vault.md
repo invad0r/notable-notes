@@ -1,8 +1,7 @@
 ---
-tags: [tool]
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2020-09-02T18:10:46.386Z'
+modified: '2021-10-31T14:56:47.616Z'
 ---
 
 # vault

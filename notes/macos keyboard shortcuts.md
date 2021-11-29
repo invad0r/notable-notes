@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: macos keyboard shortcuts
 created: '2020-08-24T08:09:16.562Z'
-modified: '2021-10-14T12:05:09.260Z'
+modified: '2021-11-04T10:58:12.208Z'
 ---
 
 # macos keyboard shortcuts
@@ -44,6 +44,8 @@ modified: '2021-10-14T12:05:09.260Z'
 
 ## see also
 
+- [[tmux]]
+- [[fzf]]
 - [[firefox]]
 - [[mdfind]]
 - [[mdutil]]

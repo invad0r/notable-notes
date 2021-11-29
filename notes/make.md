@@ -2,7 +2,7 @@
 tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2021-10-19T12:14:51.450Z'
+modified: '2021-11-13T09:48:06.764Z'
 ---
 
 # make
@@ -92,11 +92,13 @@ $(call variable,param,param)    # call function is unique in that it can be used
 [gnu.org/software/make/manual/Call-Function.html](https://www.gnu.org/software/make/manual/html_node/Call-Function.html)
 
 ## see also
+
+- [[gcc]]
 - [[cmake]]
 - [[automake]]
 - [[bundle rake]]
-- [[gcc]]
 - [[install]]
+- [[brazel]]
 - [tutorialspoint.com/.../makefile_macros.htm](https://www.tutorialspoint.com/makefile/makefile_macros.htm)
 - [what-how-makefile](https://opensource.com/article/18/8/what-how-makefile)
 - [what-are-makefile-am-and-makefile-in](https://stackoverflow.com/questions/2531827/what-are-makefile-am-and-makefile-in)

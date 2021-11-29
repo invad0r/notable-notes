@@ -1,8 +1,7 @@
 ---
-tags: [tool]
 title: osd
 created: '2019-10-18T09:40:37.238Z'
-modified: '2020-09-02T18:10:46.345Z'
+modified: '2021-10-31T14:56:47.594Z'
 ---
 
 # osd

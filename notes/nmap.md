@@ -2,33 +2,38 @@
 tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2020-02-24T09:03:14.391Z'
+modified: '2021-10-31T14:45:45.277Z'
 ---
 
 # nmap
+
 > `network mapper`
 
 ## install
+
 `brew install nmap`, `apt install nmap`, `yum install nmap`
 
 ## usage
+
 ```sh
-# scanning options:
-# -sR             if RPC-Service found send additional RPC-Pakets to find out more of services
-# -sV             additional tests contains -sR; option enables version detection
-# -O              OS-Destection
-# -A              short for -sV -O
-# -P0             before portscan nmap check via PING and TCP-PORT-80 scan if host is available
-#                 used for hosts without webserver and block ping;  option allows you to switch off ICMP pings.
-# -oN FILE        write scan to file
-# -v              verbose
+# scanning options
+-sR             # if RPC-Service found send additional RPC-Pakets to find out more of services
+-sV             # additional tests contains -sR; option enables version detection
+-O              # OS-Destection
+-A              # short for -sV -O
+-P0             # before portscan nmap check via PING and TCP-PORT-80 scan if host is available
+                # used for hosts without webserver and block ping;  option allows you to switch off ICMP pings
+-oN FILE        # write scan to file
+-v              # verbose
 
 # port scanning methods
-# -sT              Connect Scan: TCP-Connection per scanned port, no root required
-# -sS              "SYN-Stealth-Scan" like -sT but without full TCP-Connection aka "half-open"/"stealth scanning"
-# -sU              scan UDP-Port
-# -sP              ping-scan
+-sT               # Connect Scan: TCP-Connection per scanned port, no root required
+-sS               # "SYN-Stealth-Scan" like -sT but without full TCP-Connection aka "half-open"/"stealth scanning"
+-sU               # scan UDP-Port
+-sP               # ping-scan
+```
 
+```sh
 nmap localhost                    # list own open ports
 
 nmap -p 2376 10.32.23.30          # check if port open
@@ -84,7 +89,10 @@ nmap --script ssl-enum-ciphers -p PORT HOST   # get availables ssl/tls versions
 ```
 
 ## see also
+
 - [[ncat]]
 - [[socat]]
 - [[ss]]
 - [[openssl]]
+- [[wireshart]]
+- [[tcpdump]]

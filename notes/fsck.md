@@ -1,8 +1,7 @@
 ---
-tags: [filesystemd]
 title: fsck
 created: '2020-05-06T13:18:59.979Z'
-modified: '2020-09-02T17:30:34.402Z'
+modified: '2021-10-31T14:56:05.878Z'
 ---
 
 # fsck

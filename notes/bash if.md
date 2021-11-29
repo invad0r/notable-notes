@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: bash if
 created: '2019-07-30T06:19:49.011Z'
-modified: '2021-05-12T08:46:30.740Z'
+modified: '2021-11-16T08:24:54.964Z'
 ---
 
 # bash if
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:30.740Z'
 > execute commands based on conditional
 
 ## usage
+
 ```sh
 statement1 && statement2  # and operator
 
@@ -26,4 +27,6 @@ fi
 ```
 
 ## see also
+
+- [[bash case]]
 - [[bash test []]

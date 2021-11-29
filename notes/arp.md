@@ -2,16 +2,19 @@
 tags: [linux, net-tools, network]
 title: arp
 created: '2019-09-03T11:30:41.018Z'
-modified: '2020-09-03T06:46:46.356Z'
+modified: '2021-10-31T15:05:38.541Z'
 ---
 
 # arp
+
 > manipulates or displays the kernel's ipv4 network neighbour cache. It can add entries to the table, delete one, or display the current content.
 
 ## install
+
 `apt install net-tools`
 
 ## usage
+
 ```sh
 arp -a    # display (all) hosts in alternative (BSD) style
 
@@ -31,9 +34,10 @@ cat /proc/net/arp
 ```
 
 ## see also
+
 - [[arping]]
 - [[procfs]]
 - [[ip]]
 - [[net-tools vs iproute]]
-- [unix/arp.htm](https://www.computerhope.com/unix/arp.htm)
-- https://superuser.com/questions/1272010/where-is-the-arp-cache-on-linux
+- [omputerhope.com/unix/arp](https://www.computerhope.com/unix/arp.htm)
+- [superuser.com/questions/1272010/where-is-the-arp-cache-on-linux](https://superuser.com/questions/1272010/where-is-the-arp-cache-on-linux)

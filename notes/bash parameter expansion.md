@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash parameter expansion
 created: '2019-07-30T06:19:49.015Z'
-modified: '2021-05-12T08:46:51.189Z'
+modified: '2021-11-08T16:04:06.116Z'
 ---
 
 # bash parameter expansion 
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:51.189Z'
 > `${parameter}` the value of parameter is substituted
 
 ## positional parameter
+
 ```sh
 ${0}      # ($0) expands to the name of the shell or shell script. This is set at shell initialization. 
           # If Bash is invoked with a file of commands (see Shell Scripts), $0 is set to the name of that file. 
@@ -19,6 +20,7 @@ ${1}
 ```
 
 ## special parameter
+
 ```sh
 ${@}      # expands positional params to seperate words: `$1`, `$2`, ..`$N`
 ${*}      # expands positional params to one words: `$1c$2c..` `c` is the first character of `IFS`
@@ -44,6 +46,7 @@ ${_}      # `$_` At shell startup, set to the absolute pathname used to invoke t
 ```
 
 ## indirect expansion
+
 ```sh
 NAME="VARIABLE"
 VARIABLE=42
@@ -55,6 +58,7 @@ ${!name[@]}
 ```
 
 ## substring
+
 ```sh
 ${PARAMETER#PATTERN}      # match from beginning/left to end/right
 #        --->
@@ -74,6 +78,7 @@ for i in $(ls -d docker-*); do mv $i ${i#docker-}; done         # remove prefix 
 ```
 
 ## substring expansion
+
 ```sh
 ${string:offset}           # Extracts substring from $string at $offset
                            # If the $string parameter is "*" or "@", then this extracts the positional parameters, 
@@ -88,6 +93,7 @@ echo ${FOO:14};    # go_design_patterns.pdf
 ```
 
 ## string replacement
+
 ```sh
 ${var/Pattern/Replacement}      # First match of Pattern, within var replaced with Replacement
 ${var//Pattern/Replacement}     # All matches of Pattern, within var replaced with Replacement
@@ -98,9 +104,11 @@ echo -e "${_//%/\\x}"
 ```
 
 ##  modifie alphabetic characters
+
 - if pattern is omitted, it is treated like a `?`, which matches every character. 
 - if parameter is `@` or `*`, the case modification operation is applied to each positional parameter in turn, and the expansion is the resultant list
 - if parameter is an array variable subscripted with `@` or `*`, the case modification operation is applied to each member of the array in turn, and the expansion is the resultant list.
+
 ```sh
 ${parameter^pattern}
 ${parameter^^pattern}
@@ -115,6 +123,7 @@ echo ${foo^^}   # all to upercase
 ```
 
 ## pattern matching
+
 ```sh
 *         # matches any string including null string
 ?         # matches any single character
@@ -136,13 +145,14 @@ echo ${foo^^}   # all to upercase
 ```
 
 ## see also
+
+- [[tr]]
 - [[bash]]
 - [[bash braces]]
 - [[bash globbing]]
 - [[bash set unset]]
-- [[tr]]
 - [[bash source vs execute]]
-- [bash.html#Shell-Parameter-Expansion - gnu.org](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion)
+- [gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion)
+- [gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameters](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameters)
+- [gnu.org/software/bash/manual/html_node/Pattern-Matching](https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html)
 - [Remove \\r from echoing out in bash script - Super User](https://superuser.com/a/1215968)
-- [pattern-Matching.html](https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html)
-- https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameters
