@@ -2,12 +2,21 @@
 tags: [container]
 title: argocd
 created: '2020-10-26T12:29:59.372Z'
-modified: '2021-10-29T12:41:18.395Z'
+modified: '2022-01-17T13:55:14.545Z'
 ---
 
 # argocd
 
 > declarative, gitops continuous delivery tool for k8s
+
+## install
+
+```sh
+brew install argocd                   # install cli
+
+kubectl create namespace argocd       # install argocd on cluster
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml
+```
 
 ## usage
 
@@ -23,5 +32,7 @@ argocd app create guestbook \
 
 ## see also
 
+- [[flux]]
+- [[gitops]]
 - [[kubectl]]
 - [[minikube]]

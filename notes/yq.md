@@ -1,7 +1,7 @@
 ---
 title: yq
 created: '2019-08-20T12:05:18.926Z'
-modified: '2021-10-29T12:31:28.576Z'
+modified: '2021-12-16T15:25:07.249Z'
 ---
 
 # yq
@@ -80,6 +80,12 @@ diff <(yq e -P FILE1.yaml) <(yq e -P FILE2.yaml)    # using pretty print -P to n
 
 
 yq e '. | select(.kind == "Service") ' FILE.yaml    # print only document of kind: Service
+
+
+# https://stackoverflow.com/a/68291270/14523221
+yq -y 'del(.. | select(objects and length == 0))'   # Remove empty objects
+yq -y 'del(.. | select(arrays and length == 0))'    # Remove empty arrays
+yq -y 'del(.. | select(length == 0))'               # Remove empty objects, arrays and strings
 ```
 
 ## see also

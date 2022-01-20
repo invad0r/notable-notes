@@ -2,7 +2,7 @@
 tags: [container]
 title: helm
 created: '2021-06-04T08:40:48.010Z'
-modified: '2021-10-29T12:40:40.918Z'
+modified: '2022-01-17T13:00:42.102Z'
 ---
 
 # helm
@@ -11,7 +11,7 @@ modified: '2021-10-29T12:40:40.918Z'
 
 ## install
 
-`brew install helm`
+`brew install helm`, `curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash`
 
 ## usage
 
@@ -42,15 +42,17 @@ HELM_KUBETOKEN                      # bearer kube-token used for auth
 helm help       # learn more about the available Helm commands
 helm get -h     # or type a command followed by -h flag
 
-
-
-helm list # show list of all deployed releases
+helm list                      # lists all of the releases for a specified namespace
 helm ls
+
+helm status   RELEASE_NAME
+helm history  RELEASE_NAME
+helm rollback RELEASE_NAME [REVISION]
 
 helm env
 
 helm search                   # search for charts
-helm search repo REPONAME
+helm search repo [REPONAME]
 
 helm pull       # download chart to local dir
 
@@ -58,15 +60,11 @@ helm install    # upload chart to k8s
 helm install bitnami/mysql --generate-name
 helm install --debug --dry-run CHART ./PATH     # test the template rendering, but not actually install anything
 
-helm list       # list releases of charts
-
-
+helm repo add stable  https://charts.helm.sh/stable      # add as "stable" -> prepends "stable/REPO"
 helm repo add datadog https://helm.datadoghq.com
-helm repo add stable https://charts.helm.sh/stable
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 helm repo update
-
 
 helm show all CHART
 helm show chart datadog --repo https://helm.datadoghq.com --version 2.6.11

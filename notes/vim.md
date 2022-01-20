@@ -2,7 +2,7 @@
 tags: [vim]
 title: vim
 created: '2019-07-30T06:19:49.263Z'
-modified: '2020-08-26T06:32:28.342Z'
+modified: '2022-01-07T11:31:43.139Z'
 ---
 
 # vim
@@ -23,6 +23,8 @@ vim $(!!)		                # open file from last output
 ```
 
 ## see also
+
+- [[code]]
 - [[atom]]
 - [[vim command]]
 - [tpope/vim-pathogen: pathogen.vim: manage your runtimepath](https://github.com/tpope/vim-pathogen)

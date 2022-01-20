@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash read
 created: '2019-07-30T06:19:49.017Z'
-modified: '2021-05-12T08:46:08.307Z'
+modified: '2022-01-05T09:16:52.048Z'
 ---
 
 # bash read
@@ -58,11 +58,14 @@ done < <(find . -print0)
 ```
 
 ## see also
+
+- [[bash redirects]]
 - [[bash exec]]
-- [[bash mapfile]]
+- [[bash mapfile]] [[bash readarray]]
 - [[bash while]]
 - [[bash process substitution]]
-- [Bash read builtin command help and examples](https://www.computerhope.com/unix/bash/read.htm)
+- [computerhope.com/unix/bash/read](https://www.computerhope.com/unix/bash/read.htm)
 - [why-piping-input-to-read-only-works-when-fed-into-while-read-construct](https://stackoverflow.com/questions/13763942/why-piping-input-to-read-only-works-when-fed-into-while-read-construct)
-- https://stackoverflow.com/questions/6883363/read-input-in-bash-inside-a-while-loop
-- http://compgroups.net/comp.unix.shell/fixing-stdin-inside-a-redirected-loop/400460
+- [stackoverflow.com/read-input-in-bash-inside-a-while-loop](https://stackoverflow.com/questions/6883363/read-input-in-bash-inside-a-while-loop)
+- [compgroups.net/comp.unix.shell/fixing-stdin-inside-a-redirected-loop](http://compgroups.net/comp.unix.shell/fixing-stdin-inside-a-redirected-loop/400460)
+

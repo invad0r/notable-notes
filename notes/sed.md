@@ -2,7 +2,7 @@
 tags: [linux]
 title: sed
 created: '2019-07-30T06:19:49.228Z'
-modified: '2021-09-13T09:30:01.443Z'
+modified: '2021-12-23T08:58:58.352Z'
 ---
 
 # sed
@@ -10,6 +10,7 @@ modified: '2021-09-13T09:30:01.443Z'
 > `Stream EDitor`
 
 ## usage
+
 ```sh
 sed "${NUM}q;d" FILE                          # print line from file
 
@@ -20,6 +21,7 @@ sed -n '2{p;q}' FILE                          # in case there will be no more li
 sed -i '/2018-01-30/!d' FILE                  # delete all lines except ones matching pattern
 
 sed -i '4d' FILE                              # delete line 4
+sed    '/STRING/d' d                          # delete line containing STRING
 
 sed '/INCLUDE/ r foo.h'                       #  insert foo.h after 'INCLUDE'
 
@@ -41,22 +43,20 @@ sed -i 's/\(^ExecStart=\).*/ExecStart=\/usr\/bin\/dockerd -H tcp:\/\/0.0.0.0:237
 sed -i 's/\(^#DOCKER_OPTS=\).*/DOCKER_OPTS="-H tcp:\/\/0.0.0.0:2375"/' /etc/default/docker
 
 
-# using different delimiter
-sed -i "s%\$$1%${val}%g" $CONF_PATH   #  %-delimiter to avoid escaping slashes in URLs
 
-sed -n -e 's,.*/bin/sh -c #(nop) \(MAINTAINER .*[^ ]\) *0 B,\1,p'    # ,-delimiter
+sed -i "s%\$$1%${val}%g" $CONF_PATH   # % as delimiter to avoid escaping slashes in URLs
+
+sed -n -e 's,.*/bin/sh -c #(nop) \(MAINTAINER .*[^ ]\) *0 B,\1,p'    # , as delimiter
 
 
-# greedy
-% echo "<b>foo</b>bar" | sed 's/<.*>//g'
-bar
 
-Non greedy matching:
-
-% echo "<b>foo</b>bar" | sed 's/<[^>]*>//g'
-foobar
+echo "<b>foo</b>bar" | sed 's/<.*>//g'      #     greedy matching: "bar"
+echo "<b>foo</b>bar" | sed 's/<[^>]*>//g'   # non greedy matching: "foobar"
 ```
+
 ## see also
+
 - [[awk]]
-- [Sed - An Introduction and Tutorial](http://www.grymoire.com/Unix/Sed.html)
-- [0x2a.at - sed - non greedy matching](https://0x2a.at/blog/2008/07/sed--non-greedy-matching/)
+- [grymoire.com/Unix/Sed](http://www.grymoire.com/Unix/Sed.html)
+- [0x2a.at/blog/2008/07/sed--non-greedy-matching](https://0x2a.at/blog/2008/07/sed--non-greedy-matching/)
+- [github.com/adrianscheff/useful-sed](https://github.com/adrianscheff/useful-sed)

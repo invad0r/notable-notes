@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2021-10-25T08:40:57.842Z'
+modified: '2021-11-29T12:57:30.856Z'
 ---
 
 # minikube
@@ -70,9 +70,9 @@ minikube addons enable ingress            # provisions: configMap, ingress-contr
 
 ## see also
 
-- [minikube.sigs.k8s.io/docs/](https://minikube.sigs.k8s.io/docs/)
+- [[k3s]]
+- [[kind]]
 - [[kubectl]]
 - [[kubernetes]]
-- [[argocd]]
 - [[docker-machine]]
-- [[k3s]]
+- [minikube.sigs.k8s.io/docs/](https://minikube.sigs.k8s.io/docs/)

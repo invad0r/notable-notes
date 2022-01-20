@@ -2,14 +2,19 @@
 tags: [virtualization]
 title: vboxmanage
 created: '2019-07-30T06:19:49.257Z'
-modified: '2021-02-10T10:26:37.523Z'
+modified: '2022-01-13T13:15:08.461Z'
 ---
 
 # vboxmanage
 
 > oracle virtualbox cli management interface
 
+## install
+
+download platform package at [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+
 ## usage
+
 ```sh
 alias vboxmanage='VBoxManage'
 

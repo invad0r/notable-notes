@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2021-05-12T08:46:51.306Z'
+modified: '2022-01-05T09:15:24.711Z'
 ---
 
 # bash redirects
@@ -60,6 +60,10 @@ grep "foo" FILE | diff FILE2 -
 ```
 
 ## see also
+
+- [[heredoc]]
+- [[bash read]]
+- [[bash readarray]]
 - [[bash exec]]
 - [[tee]]
 - [[tar]]

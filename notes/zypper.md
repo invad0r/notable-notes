@@ -1,0 +1,26 @@
+---
+tags: [packagemanager]
+title: zypper
+created: '2022-01-13T13:56:52.606Z'
+modified: '2022-01-18T08:49:50.716Z'
+---
+
+# zypper
+
+> cli interface to ZYpp system management library (`libzypp`)
+
+## usage
+
+```sh
+zypper help COMMAND
+
+zypper update
+
+zypper --non-interactive install curl command-not-found vim netcat-openbsd hostname
+```
+
+## see also
+
+- [[apt-get]]
+- [[k3s]]
+- [[command-not-found]]

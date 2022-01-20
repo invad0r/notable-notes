@@ -1,0 +1,38 @@
+---
+title: cap theorem
+created: '2021-12-26T14:43:50.251Z'
+modified: '2021-12-26T14:46:00.471Z'
+---
+
+# cap theorem
+
+> aka `Brewer's theorem`
+
+```
+C A P
+| | └─ consistency
+| └─── availability
+└───── partition
+```
+
+@startuml
+(consistency) -- (availability)
+(partition) - (availability)
+(consistency) - (partition)
+@enduml
+
+## used by:
+
+- `rabbitmq` Clustering: CP
+- Federation/shovel: AP
+
+
+`A.C.I.D.` vs `B.A.S.E.`
+
+CA-DataBase: postgres -> single node
+
+AP-DataBase: avail. + part. tol. -> cassandra, couchbase, (nosql eventual consistency)
+
+CP-DataBase: spanner, cockroach
+
+mvcc mutliversionconcurencycontrol

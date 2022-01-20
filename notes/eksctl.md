@@ -1,7 +1,7 @@
 ---
 title: eksctl
 created: '2021-10-13T09:32:12.878Z'
-modified: '2021-10-15T07:40:46.881Z'
+modified: '2022-01-17T15:43:18.535Z'
 ---
 
 # eksctl
@@ -17,11 +17,34 @@ modified: '2021-10-15T07:40:46.881Z'
 ```sh
 eksctl get cluster --name=NAME --region=REGION
 
-eksctl create cluster --name=CLUSTER-1 --nodes=4
+eksctl create cluster --name=CLUSTER --nodes=4
+
+# create the identity mapping within the cluster
+eksctl create iamidentitymapping \
+  --cluster CLUSTER --arn ROLE_ARN \
+  --group system:masters --username admin
+
+
+# completely scaling down nodes to zero use this (max=0 threw errors)
+eksctl scale nodegroup \
+  --cluster CLUSTERNAME \
+  --name NODEGROUPNAME \
+  --nodes 0 \
+  --nodes-max 1 \
+  --nodes-min 0
+
+
+aws eks get-token --cluster-name CLUSTERNAME | jq -r '.status.token'
+
+
+eksctl utils associate-iam-oidc-provider --cluster CLUSTER --approve
 ```
 
 ## see also
 
-- [eksctl.io](https://eksctl.io/)
+- [[aws]]
 - [[kubectl]]
+- [[helm]]
+- [[nerdctl]]
 - [[gcloud]]
+- [eksctl.io](https://eksctl.io/)

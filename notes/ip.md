@@ -2,7 +2,7 @@
 tags: [iproute, network]
 title: ip
 created: '2019-09-03T11:51:54.855Z'
-modified: '2020-09-03T06:44:17.004Z'
+modified: '2022-01-13T14:16:08.910Z'
 ---
 
 # ip
@@ -13,24 +13,50 @@ modified: '2020-09-03T06:44:17.004Z'
 `apt install iproute2`, `yum install iproute`
 
 ## usage
+
 ```sh
-ip [options] object {command|help}
+-s, -stats, -statistics       # Output more information. -s -s => more verbose
+-f, -family                   # inet, inet6, bridge, ipx, dnet, link
+-4                            # shortcut for -family inet.
+-6                            # shortcut for -family inet6.
+-B                            # shortcut for -family bridge.
+-0                            # shortcut for -family link.
+-o, -oneline                  # output each record on a single line, replacing line feeds with the '\' character
+```
 
-# options
-#  -s, -stats, -statistics       Output more information. -s -s => more verbose
-#  -f, -family                   inet, inet6, bridge, ipx, dnet, link
-#  -4                            shortcut for -family inet.
-#  -6                            shortcut for -family inet6.
-#  -B                            shortcut for -family bridge.
-#  -0                            shortcut for -family link.
-#  -o, -oneline                  output each record on a single line, replacing line feeds with the '\' character
+### objects
 
+```sh
+address                   # protocol (IP or IPv6) address on a device.
+addrlabel                 # label configuration for protocol address selection.
+l2tp                      # tunnel Ethernet over IP (L2TPv3).
+link                      # network device.
+maddress                  # multicast address.
+monitor                   # watch for netlink messages.
+mroute                    # multicast routing cache entry.
+mrule                     # rule in multicast routing policy database.
+neighbour                 # manage ARP or NDISC cache entries.
+netns                     # manage network namespaces.
+ntable                    # manage the neighbor cache's operation.
+route                     # routing table entry.
+rule                      # rule in routing policy database.
+tcp_metrics, tcpmetrics   # manage TCP Metrics.
+tunnel                    # tunnel over IP.
+tuntap                    # manage TUN/TAP devices.
+xfrm                      # manage IPSec policies.
+```
+
+```sh
+ip [OPTS] OBJECT {CMD|HELP}
 
 # show queries
 addr                            # display IP Addresses and property information (abbreviation of address)
 
 ip addr                         # Show information for all addresses
 ip addr show en0                # show info to interface en0
+
+ip -4 addr show eth0 | grep -oP "(?<=inet ).*(?=/)"
+
 ip addr show dev em1            # display information only for device em1
 ip -brief -color address show
 ip -br -c a s
@@ -102,29 +128,10 @@ neigh replace                                             # Replace, or adds if 
 ip neigh replace 192.168.1.1 lladdr 1:2:3:4:5:6 dev em1   # Replace the entry for address 192.168.1.1 to use MAC 1:2:3:4:5:6 on em1
 ```
 
-## object
-object                    | desc
---                        | --
-`address`                 | protocol (IP or IPv6) address on a device.
-`addrlabel`               | label configuration for protocol address selection.
-`l2tp`                    | tunnel Ethernet over IP (L2TPv3).
-`link`                    | network device.
-`maddress`                | multicast address.
-`monitor`                 | watch for netlink messages.
-`mroute`                  | multicast routing cache entry.
-`mrule`                   | rule in multicast routing policy database.
-`neighbour`               | manage ARP or NDISC cache entries.
-`netns`                   | manage network namespaces.
-`ntable`                  | manage the neighbor cache's operation.
-`route`                   | routing table entry.
-`rule`                    | rule in routing policy database.
-`tcp_metrics, tcpmetrics` | manage TCP Metrics.
-`tunnel`                  | tunnel over IP.
-`tuntap`                  | manage TUN/TAP devices.
-`xfrm`                    | manage IPSec policies.
-
 ## see also
+
 - [[netstat]]
+- [[vagrant]]
 - [[arp]]
 - [[ipv4]]
 - [[net-tools]]

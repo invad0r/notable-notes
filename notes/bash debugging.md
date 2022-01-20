@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash debugging
 created: '2019-07-30T06:19:49.021Z'
-modified: '2021-05-12T08:46:51.027Z'
+modified: '2022-01-17T08:08:20.555Z'
 ---
 
 # bash debugging
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:51.027Z'
 > some ways to debug shell-scripts
 
 ## usage
+
 ```sh
 # variables
 ${BASH_SOURCE}
@@ -28,6 +29,7 @@ set -o xtrace         # alternative option set inside script
 ````
 
 ## redirect xtrace to file
+
 ```sh
 #!/usr/bin/env bash
 exec 2>>debug.log
@@ -44,6 +46,7 @@ $ dbg> someVariable
 ```
 
 ## debugger
+
 ```sh
 echo "LINENO: $LINENO"
 trap 'echo "VARIABLE-TRACE> \$variable = \"$variable\""' DEBUG  # prints value of $variable after every command
@@ -75,6 +78,7 @@ exit 0
 ```
 
 ## see also
+
 - [[bash trap]]
 - [[bash prompt]]
 - [tldp.org/LDP/abs/html/debugging](http://tldp.org/LDP/abs/html/debugging.html)

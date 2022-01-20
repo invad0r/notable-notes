@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: tar
 created: '2019-07-30T06:19:49.251Z'
-modified: '2020-02-04T12:21:27.611Z'
+modified: '2022-01-06T08:46:57.913Z'
 ---
 
 # tar
@@ -12,41 +12,39 @@ modified: '2020-02-04T12:21:27.611Z'
 `.tgz` is same as `.tar.gz`/`.tar.gzip`
 
 ## usage
+
 ```sh
+-c          # create archive
+-C DIR      # changes working directory in the middle of a command line
+
+-v          # verbose
+-z          # filter the archive through gzip
+-f          # archive filename
+-x          # extract files from archive
+-t          # list archive contents to stdout
+
+-j          # filter the archive through bzip2
+```
+
+```sh
+tar tvf archive.tar                     # listing
+
 tar cvzf archive.tar.gzip dirname/      # create
 
-  #   -c     create archive
-  #   -v     verbose
-  #   -z     filter the archive through gzip
-  #   -f     archive filename
-
-tar cvfj archive-name.tar.bz2 dirname/
-  #   -j    filter the archive through bzip2
-
+tar cvfj archive-name.tar.bz2 dirname/  # # filter archive
 
 tar xvf archive.tar                     # extract / untar
-  # -x      extract files from archive
 
+docker export tempconsul | tar -C ./rootfs -xf -  # change working directory and -f stdin
 
-docker export tempconsul | tar -C ./rootfs -xf -
-  # -C dir    Changes the working directory in the middle of a command line
-  # -f stdin  `-` ist stdin
-
-
-tar tvf archive.tar                     # listing
-  # -t      List archive contents to stdout.
+curl https://nodejs.org/dist/latest-../node-..-linux-x64.tar.gz | tar xz --strip-components=1
 
 tar ztvf archive.tar.gz    # gzipped file
 
 tar tvf archive.tar.gz 'search-pattern'
 tar tvf archive.tar.gz 'path/*/file'
 
-
-
-tar -czf - archive | wc -c       # estimating
-
-tar -cjf - archive | wc -c        # estimating
-
+tar -czf - archive | wc -c        # estimating
 
 # progress
 tar cf - erl_crash.dump -P \
@@ -58,10 +56,11 @@ tar cf - "$1" -P | pv -s $(( $(du -sk "$1" | cut -f1) * 1024 )) \
 ```
 
 ## see also
-- [[zip unzip]]
-- [[gzip gunzip zcat]]
-- [[pigz unpigz]]
+
 - [[nc]]
+- [[zip unzip]]
+- [[pigz unpigz]]
+- [[gzip gunzip zcat]]
 - [[bash redirects]]
-- [manual/tar.html - gnu.org](https://www.gnu.org/software/tar/manual/tar.html)
-- [why-would-i-tar-a-single-file - unix.stackexchange.com](https://unix.stackexchange.com/a/277799/193945)
+- [gnu.org/software/tar/manual/tar](https://www.gnu.org/software/tar/manual/tar.html)
+- [unix.stackexchange.com/why-would-i-tar-a-single-file ](https://unix.stackexchange.com/a/277799/193945)

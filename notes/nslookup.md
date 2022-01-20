@@ -2,16 +2,19 @@
 tags: [dns]
 title: nslookup
 created: '2020-01-16T07:23:01.811Z'
-modified: '2020-01-23T12:15:24.052Z'
+modified: '2021-12-23T09:13:48.422Z'
 ---
 
 # nslookup
+
 > for querying `DNS` to obtain domain names or IP addresses, mapping or for any other specific DNS Records
 
 ## install
+
 `apt install net-tools`  
 
 ## usage
+
 ```sh
 nslookup example.com
 
@@ -25,10 +28,11 @@ nslookup -type=soa example.com              # query the SOA record of a domain
 
 nslookup -query=mx example.com              # find the MX records responsible for the email exchange
 
-
 nslookup 10.32.23.139
 ```
 
 ## see also
+
 - [[dig]]
 - [[ifconfig]]
+- [[whois]]

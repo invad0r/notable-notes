@@ -2,14 +2,33 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2021-06-04T12:16:55.265Z'
+modified: '2022-01-17T13:30:05.257Z'
 ---
 
 # go
 
 > `go` is a tool for managing go source code
 
+
+```
+  has                             doesn't have
+
++ package system                - implicit numeric conversion
++ first-class-functions         - constructors/destructors
++ lexical-scope                 - operator overloading
++ system call interface         - default parameter values
++ immutable string in utf-8     - inheritance (type-based inheritance → subclasses)
++ struct ~ class                - generics    `parametrics polimorphism` ≈ `generics`
++ concurrency support (CSP)     - exceptions
+                                - macros
++ `garbage collected`           - function annotations
++ it's `staticallly typed`      - thread local storage
+                                - inheritance but composition of type
+                                - explicit declaration, interface-implementation required
+```
+
 ## install
+
 ```sh
 curl -O https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
 tar xvzf go1.13.7.linux-amd64.tar.gz && mv go /usr/local/
@@ -17,7 +36,9 @@ tar xvzf go1.13.7.linux-amd64.tar.gz && mv go /usr/local/
 export GOPATH=$(go env GOPATH)
 export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 ```
+
 ## usage
+
 ```sh
 GOROOT             # /usr/local/opt/go/libexec
 GOTOOLDIR          # /usr/local/opt/go/libexec/pkg/tool/darwin_amd64
@@ -76,7 +97,20 @@ go env GOCACHE    # print specific value
 go env -json      # print in json format
 ```
 
+## semicolon rule
+
+> `;` terminates statements
+
+if last token before new line:
+- is an `identifiere`   -> `int`, `float64`
+- is an `basic literal` -> `number`, `string`
+- is a `token`          -> `break`, `continues`, `fallthrough`, `return`, `++`, `--`, `)`, `}`
+
+if the new line comes after a `token` that could end the statement => insert `;`
+
 ## see also
+
+- [[go-template]]
 - [[go lang]]
 - [go-install-vs-go-build/](https://pocketgophers.com/go-install-vs-go-build/)
 - [Does go get command do cache?](https://stackoverflow.com/a/52813009/2087704)

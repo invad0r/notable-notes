@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2021-11-13T09:45:40.378Z'
+modified: '2022-01-17T15:32:55.802Z'
 ---
 
 # kubectl
@@ -10,7 +10,7 @@ modified: '2021-11-13T09:45:40.378Z'
 > kubectl controls the Kubernetes cluster manager
 
 
-the `kubectl` tool supports three kinds of object management:
+`kubectl` supports three kinds of object management:
 
 - imperative commands
 - imperative object configuration -> `apply`, `diff`
@@ -19,8 +19,10 @@ the `kubectl` tool supports three kinds of object management:
 
 ## installation
 
-- `brew install kubectl`
-- `kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl`
+```sh
+brew install kubectl
+kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl`
+```
 
 ## usage
 
@@ -33,9 +35,9 @@ KUBE_EDITOR         # -
 -v=6                      # debug level 6
 -o                        # output format [json|yaml|wide]
 
---kubeconfig CONFIG
---namespace NAMESPACE
---context CONTEXT
+--kubeconfig CONFIG       # ..
+--namespace  NAMESPACE    # ..
+--context    CONTEXT      # ..
 ```
 
 ```sh
@@ -70,7 +72,6 @@ kubectl get
 kubectl get all
 
 kubectl get nodes
-kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="InternalDNS")].address}'
 
 kubectl get nodes \
   --selector='!node-role.kubernetes.io/master' \
@@ -83,6 +84,8 @@ kubectl get po POD_NAME -o yaml
 kubectl get pod
 kubectl get pods --show-labels | awk '{print $6}' | column -s, -t
 kubectl get pods -L 
+
+kubectl get svc SERVICE -o jsonpath="{.status.loadBalancer.ingress[*].hostname}"
 
 
 kubectl apply   # makes incremental changes to an existing object
@@ -141,6 +144,18 @@ kubectl run POD_NAME \
             }]
         }}}}}' \                                  `# run pod on specific node `
   --command -- sleep infinity
+
+
+kubectl get events --sort-by='.lastTimestamp'
+kubectl get events --sort-by=.metadata.creationTimestamp
+kubectl get events --sort-by='.metadata.creationTimestamp' \
+ -o 'go-template={{range .items}}{{.involvedObject.name}}{{"\t"}}{{.involvedObject.kind}}{{"\t"}}{{.message}}{{"\t"}}{{.reason}}{{"\t"}}{{.type}}{{"\t"}}{{.firstTimestamp}}{{"\n"}}{{end}}'
+
+
+kubectl autoscale deployment DEPLOYMENT \
+  --cpu-percent=50 `# target average CPU utilization` \
+  --min=1          `# lower limit for the number of pods that can be set by the autoscaler` \
+  --max=10         `# upper limit for the number of pods that can be set by the autoscaler`
 ```
 
 ## logs
@@ -150,7 +165,8 @@ kubectl logs POD
 
 kubectl logs POD -c CONTAINER
 
-kubectl logs INGRESS_CONTROLLER -c controller | jq -r '. | select(.nginx.status != "200") | .nginx | "\(.status): \(.remote_addr) \(.request) \(.proxy_upstream_name)"'
+kubectl logs INGRESS_CONTROLLER -c controller \
+  | jq -r '. | select(.nginx.status != "200") | .nginx | "\(.status): \(.remote_addr) \(.request) \(.proxy_upstream_name)"'
 ```
 
 ## port-forward 
@@ -169,8 +185,6 @@ kubectl port-forward pod/mypod :5000                                        # li
 kubectl port-forward --address 0.0.0.0 pod/mypod 8888:5000                  # listen on port 8888 on all addresses, forwarding to 5000 in the pod
 kubectl port-forward --address localhost,10.19.21.23 pod/mypod 8888:5000    # listen on port 8888 on localhost and selected IP, forwarding to 5000 in the pod
 ```
-
-
 
 ## secrets
 
@@ -194,20 +208,15 @@ kubectl access-matrix               # use plugin to see the level of access user
 
 ## see also
 
-- [[oc]]
-- [[helm]]
-- [[kustomize]]
+- [[kubernetes]], [[oc]]
+- [[helm]], [[kustomize]]
 - [[bazel]]
-- [[kubectx]]
-- [[kubens]]
+- [[kubectx]], [[kubens]]
 - [[kubeseal]]
 - [[kubeval]]
-- [[kubernetes]]
-- [[kim]]
-- [[kops]]
-- [[minikube]]
-- [[opa]]
-- [[yml]]
-- [[jsonpath]]
+- [[kim]], [[opa]]
+- [[aws]], [[eksctl]], [[kops]]
+- [[minikube]], [[k3s]]
+- [[yml]], [[jsonpath]], [[go-template]]
 - [[socat]]
 - [stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create](https://stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create)

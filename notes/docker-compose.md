@@ -2,7 +2,7 @@
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2021-10-15T07:28:08.095Z'
+modified: '2022-01-17T13:28:29.654Z'
 ---
 
 # docker-compose
@@ -71,7 +71,7 @@ services:
 ## see also
 
 - [[docker]]
+- [[kubectl]]
 - [[yaml]]
-- [[localstack]]
-- [[minikube]]
+- [[localstack]], [[minikube]]
 

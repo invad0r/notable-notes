@@ -2,13 +2,15 @@
 tags: [dns, linux]
 title: dig
 created: '2019-07-30T06:19:49.037Z'
-modified: '2021-06-08T05:35:44.065Z'
+modified: '2021-12-23T09:13:14.415Z'
 ---
 
 # dig
+
 > `domain information groper`
 
 ## install
+
 `apt install dnsutils`, `yum install bind-utils`, `apk add --no-cache bind-tools`
 
 ## usage
@@ -42,6 +44,8 @@ dig @8.8.8.8 +trace github.com
 ```
 
 ## see also
+
+- [[whois]]
 - [[host]]
 - [[nslookup]]
 - [[rndc]]

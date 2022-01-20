@@ -2,7 +2,7 @@
 tags: [java]
 title: jar
 created: '2020-03-24T12:53:00.287Z'
-modified: '2020-09-02T17:35:58.581Z'
+modified: '2022-01-06T08:51:34.032Z'
 ---
 
 # jar
@@ -11,11 +11,13 @@ modified: '2020-09-02T17:35:58.581Z'
 > built on the `zip` format
 
 ## usage
+
 ```sh
 jar tvf file.jar     # viewing the contents of a JAR-file; see also `unzip -l jar`
 ```
 
 ## see also
+
 - [[java]]
 - [[javac]]
 - [[zip unzip]]

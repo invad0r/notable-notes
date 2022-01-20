@@ -2,7 +2,7 @@
 tags: [heredoc, linux]
 title: heredoc
 created: '2019-07-30T06:19:49.079Z'
-modified: '2020-03-16T17:46:20.746Z'
+modified: '2022-01-05T09:14:36.146Z'
 ---
 
 # heredoc
@@ -10,6 +10,7 @@ modified: '2020-03-16T17:46:20.746Z'
 > here-document is a special-purpose code block. It uses a form of I/O redirection to feed a command list to an interactive program or a command
 
 ## usage
+
 ```sh
 # ignore the leading tab characters
 # hyphen just after the << is enough to tell bash to ignore the leading tab characters
@@ -106,6 +107,8 @@ cat <<EOF |
 ```
 
 ## see also
+
+- [[bash redirects]]
 - [[cat]]
 - [[yml]]
 - [HereDocument - Greg's Wiki](https://mywiki.wooledge.org/HereDocument)

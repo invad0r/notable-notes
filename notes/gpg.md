@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: gpg
 created: '2019-07-30T06:19:49.076Z'
-modified: '2021-08-30T06:26:28.508Z'
+modified: '2022-01-17T13:45:31.077Z'
 ---
 
 # gpg
@@ -92,22 +92,21 @@ modified: '2021-08-30T06:26:28.508Z'
 ```
 
 ```sh
-# Fingerprint   : ABCD EFGH 12BD 7897 7B37  1234 4E1F 799A A4FF 2279
-# Long key ID   :                                4E1F 799A A4FF 2279    # lowest 64 bits
-# Short key ID  :                                          A4FF 2279    # lowest 32 bits
+ABCD EFGH 12BD 7897 7B37  1234 4E1F 799A A4FF 2279    # Fingerprint 
+                               4E1F 799A A4FF 2279    # Long  key ID: lowest 64 bits
+                                         A4FF 2279    # Short key ID: lowest 32 bits
+          # abbreviation:
+pub       # public primary key
+sub       # public sub-key
+sec       # secret primary key
+ssb       # secret sub-key
 
-# abbrev:
-#   pub     public primary key
-#   sub     public sub-key
-#   sec     secret primary key
-#   ssb     secret sub-key
+pgp       # pretty good privacy
+dsa       # Digital Signature Algorithm (signing/verification)
+rsa       # Rivest Shamir and Adleman (encryption/decrypt)
 
-#   pgp     pretty good privacy
-#   dsa     Digital Signature Algorithm (signing/verification)
-#   rsa     Rivest Shamir and Adleman (encryption/decrypt)
-
-#   .sig    detached signatures using the binary OpenPGP format
-#   .asc    ASCII-armored
+.sig      # detached signatures using the binary OpenPGP format
+.asc      # ASCII-armored
 ```
 
 ```sh

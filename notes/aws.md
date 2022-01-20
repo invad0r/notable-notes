@@ -2,7 +2,7 @@
 tags: [iac]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2021-10-29T12:47:37.244Z'
+modified: '2022-01-18T19:33:46.132Z'
 ---
 
 # aws
@@ -42,34 +42,79 @@ AWS_DEFAULT_REGION
 aws configure --profile PROFILE
 
 aws --profile PROFILE --region us-east-1 COMMAND
+```
 
-# aws iam - identity and access management
+## security token service
+
+```sh
+aws sts get-caller-identity --query Account --output text     # get current account id
+```
+
+## identity and access management
+
+```sh
 aws iam list-roles --path-prefix /aws-service-role/config.amazonaws.com/    # get roles of service-link
 
 # aws allows assigning only one MFA device (virtual or hardware) to root accounts
-aws iam list-virtual-mfa-devices --assignment-status Assigned --query 'VirtualMFADevices[*].SerialNumber' # if the list-virtual-mfa-devices returns valid arn:  mfa-device currently assigned is virtual, not hardware !
-aws iam delete-virtual-mfa-device --serial-number "arn:aws:iam::ACCOUNT_ID:mfa/root-account-mfa-device"   # if web console won't allow removal of mfa device
+# if the list-virtual-mfa-devices returns valid 
+aws iam list-virtual-mfa-devices \
+  --assignment-status Assigned \
+  --query 'VirtualMFADevices[*].SerialNumber' arn:  mfa-device currently assigned is virtual, not hardware !
+# if web console won't allow removal of mfa device
+aws iam delete-virtual-mfa-device --serial-number "arn:aws:iam::ACCOUNT_ID:mfa/root-account-mfa-device"  
 
 # aws iam - access advisor
 aws iam generate-service-last-accessed-details --arn ARN   # returns job-id
+
 aws iam get-service-last-accessed-details --job-id JOB_ID
 
-# aws s3
+aws iam create-policy \
+  --policy-name POLICY_NAME \
+  --policy-document file://~/PATH/TO/POLICY.json
+```
+
+## simple storage service
+
+```sh
 aws s3 list                                         # list buckets
 aws s3 list s3://BUCKET                             # list objects in BUCKET
+aws s3 ls s3://BUCKET --recursive
+aws s3 rm s3://BUCKET --recursive
+
 aws s3 cp   s3://BUCKET/KEY/FILE .                  # downlaod s3-object
 aws s3 sync s3://BUCKET_1 s3://BUCKET_2 --dryrun    # diff two buckets
 
 # aws s3api
+aws s3api list-buckets | jq -r '.Buckets[].Name'
 aws s3api list-buckets --query 'Buckets[*].Name'
+
+aws s3api list-objects --bucket BUCKET | jq -r '.Contents[].Key'
 aws s3api list-objects --bucket BUCKET --output text
+
 aws s3api head-bucket --bucket BUCKET                       # return error if credentials aren't valid
 
 aws s3api get-object-lock-configuration --bucket BUCKET	--query 'ObjectLockConfiguration.ObjectLockEnabled'   # check if lock config enables
 
+aws s3api delete-objects --bucket BUCKET \
+  --delete "$(aws s3api list-object-versions --bucket BUCKET | jq '{Objects: [.Versions[] | {Key:.Key, VersionId : .VersionId}], Quiet: false}')"
 
-# ec2 describe-instances
 
+aws s3api delete-objects --bucket BUCKET \
+  --delete "$( aws s3api list-object-versions --bucket BUCKET | jq -M '{Objects: [.["Versions","DeleteMarkers"][]|select(.Key == "key-value")| {Key:.Key,VersionId : .VersionId}], Quiet: false}' )"
+
+aws s3api delete-objects --bucket BUCKET \
+  --delete "$(aws s3api list-object-versions --bucket BUCKET | jq '{Objects: [.Versions[] | {Key:.Key, VersionId : .VersionId}], Quiet: false}')"
+
+aws s3api delete-objects --bucket BUCKET \
+  --delete "$(aws s3api list-object-versions --bucket BUCKET --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+
+aws s3api delete-objects --bucket BUCKET \
+  --delete "$(aws s3api list-object-versions --bucket BUCKET --query='{Objects: DeleteMarkers[].{Key:Key,VersionId:VersionId}}')"
+```
+
+## elastic cloud compute
+
+```sh
 aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query "Reservations[*].Instances[*].InstanceId"
  
 --query 'Images[?CreationDate>=`2016-04-01`][]'
@@ -92,49 +137,59 @@ aws ec2 describe-route-tables             --filters 'Name=vpc-id,Values='$VPC   
 aws ec2 describe-network-acls             --filters 'Name=vpc-id,Values='$VPC                     | grep NetworkAclId
 aws ec2 describe-vpc-peering-connections  --filters 'Name=requester-vpc-info.vpc-id,Values='$VPC  | grep VpcPeeringConnectionId
 aws ec2 describe-vpc-endpoints            --filters 'Name=vpc-id,Values='$VPC                     | grep VpcEndpointId
-aws ec2 describe-nat-gateways             --filter 'Name=vpc-id,Values='$VPC                      | grep NatGatewayId
+aws ec2 describe-nat-gateways             --filters 'Name=vpc-id,Values='$VPC                     | grep NatGatewayId
 aws ec2 describe-security-groups          --filters 'Name=vpc-id,Values='$VPC                     | grep GroupId
 aws ec2 describe-instances                --filters 'Name=vpc-id,Values='$VPC                     | grep InstanceId
 aws ec2 describe-vpn-connections          --filters 'Name=vpc-id,Values='$VPC                     | grep VpnConnectionId
 aws ec2 describe-vpn-gateways             --filters 'Name=attachment.vpc-id,Values='$VPC          | grep VpnGatewayId
 aws ec2 describe-network-interfaces       --filters 'Name=vpc-id,Values='$VPC                     | grep NetworkInterfaceId
 
+aws autoscaling describe-auto-scaling-groups \
+  --query "AutoScalingGroups[? Tags[? (Key=='eks:cluster-name') && Value=='CLUSTER_NAME']].[AutoScalingGroupName, MinSize, MaxSize,DesiredCapacity]" \
+  --output table
 
-aws configservice select-resource-config --expression "SELECT resourceType GROUP BY resourceType" \
-  | jq -r '.Results[] | fromjson | .resourceType' | sort
+aws autoscaling describe-auto-scaling-groups `# get auto scaling group name` \
+  --query "AutoScalingGroups[? Tags[? (Key=='eks:cluster-name') && Value=='CLUSTER_NAME']].AutoScalingGroupName" \
+  --output text
 
+aws autoscaling update-auto-scaling-group \
+  --auto-scaling-group-name ASG_NAME \
+  --min-size 3 --desired-capacity 3 --max-size 4 # increase/decrease capacities
+```
 
+## dynamodb
+
+```sh
 
 aws dynamodb list-tables
 
 aws dynamodb scan --table-name "TABLE" \
   --filter-expression "userId = :name" \
   --expression-attribute-values '{":name":{"S":"7b13....99ea"}}'
+```
 
-# aws sqs - simple message queuing service
+## simple message queuing service
+
+```sh
 aws sqs list-queues | jq '.QueueUrls[] | select(endswith("dlq"))' \
   | while read; do
     eval aws sqs get-queue-attributes --queue-url $REPLY --attribute-names All \
       | jq -r '.Attributes | select(.ApproximateNumberOfMessages | tonumber > 0) | "\(.ApproximateNumberOfMessages) \(.QueueArn)"'; 
     done
+```
 
-# cloudtrail
+## cloudtrail
+
+```sh
 aws cloudtrail lookup-events --max-results 1
 
-# AccessKeyId
-# EventId
-# EventName
-# EventSource
-# ReadOnly
-# ResourceName
-# ResourceType
-# Username
 aws cloudtrail lookup-events --lookup-attributes AttributeKey=EventName,AttributeValue=DescribeVpcs
+#   AttributeKeys: AccessKeyId, EventId, EventName, EventSource, ReadOnly, ResourceName, ResourceType, Username
 
 
+aws configservice select-resource-config \
+  --expression "SELECT resourceType GROUP BY resourceType" | jq -r '.Results[] | fromjson | .resourceType' | sort
 
-
-# aws securityhub
 aws securityhub get-findings \
   --filters <filter criteria JSON> \
   --sort-criteria <sort criteria> \
@@ -153,9 +208,11 @@ aws securityhub get-findings \
 
 ## see also
 
-- [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)
-- [[installer]]
+- [[ec2-instance-selector]]
 - [[mc]]
-- [[gcloud]]
-- [[jq]]
-- [[localstack]]
+- [[kubectl]]
+- [[gcloud]], [[eksctl]]
+- [[jq]], [[yq]]
+- [[installer]]
+- [[localstack]], [[minikube]]
+- [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)

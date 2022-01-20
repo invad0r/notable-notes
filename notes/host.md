@@ -2,12 +2,12 @@
 tags: [dns]
 title: host
 created: '2019-07-30T06:19:49.080Z'
-modified: '2020-03-11T07:23:52.103Z'
+modified: '2021-12-23T09:14:06.905Z'
 ---
 
 # host
 
->lookup utility
+> lookup utility
 
 ```sh
 # options:
@@ -19,6 +19,8 @@ host -t ns twitter.com      # verify NS
 ```
 
 ## see also
+
 - [[dig]]
+- [[whois]]
 - [[hostnamectl]]
 - [[hostname]]

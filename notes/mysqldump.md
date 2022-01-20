@@ -2,12 +2,13 @@
 tags: [database]
 title: mysqldump
 created: '2019-08-18T14:33:58.877Z'
-modified: '2021-03-15T08:00:21.161Z'
+modified: '2022-01-06T08:53:40.870Z'
 ---
 
 # mysqldump
 
 ## usage
+
 ```sh
 mysqldump -uUSER -pPASSWORD DBNAME > BACKUP.sql        # export
 
@@ -34,6 +35,7 @@ mysqldump \
 ```
 
 ## see also
+
 - [[mysql]]
 - [[mongodump]]
 - [[pg_dump]]

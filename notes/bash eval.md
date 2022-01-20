@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash eval
 created: '2019-07-30T06:19:49.005Z'
-modified: '2021-05-12T08:46:07.864Z'
+modified: '2022-01-17T08:08:05.670Z'
 ---
 
 # bash eval
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:07.864Z'
 >`eval` - construct command by concatenating arguments
 
 ## usage
+
 ```sh
 foo='ls -lah'
 eval $foo
@@ -45,8 +46,8 @@ eval "${cmd[@]}"
 eval $( cut -d ' ' -f 6- /etc/cron.d/repeatme)
 ```
 
-
 ## see also
+
 - [[cut]]
 - [[crontab]]
 - [[bash exec]]

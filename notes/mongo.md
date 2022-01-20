@@ -2,7 +2,7 @@
 tags: [database, javascript]
 title: mongo
 created: '2019-07-30T06:19:49.178Z'
-modified: '2021-09-08T07:44:30.888Z'
+modified: '2022-01-18T14:00:53.015Z'
 ---
 
 # mongo
@@ -68,22 +68,28 @@ db.repairDatabase()                       // free up space on `mmapv1`
 db.runCommand({repairDatabase: 1})
 
 db.stats
-
 db.stats(1024).storageSize
 
 
 db.test.count();
 
+
 db.getCollection('COLLECTION').find({})
 
-db.getCollection('executions').update(    // edit multiple fields
-  {"state":"ERROR"}, {"$set": {"state":"NO_ERROR"} }, {multi: true})                                 
+// edit multiple fields
+db.getCollection('executions').update({"state":"ERROR"}, {"$set": {"state":"NO_ERROR"} }, {multi: true})                                 
 
-db.getCollection('executions').find(  {'state': 'ERROR'},  {state: 1, _id: 0} ).toArray()
+db.getCollection('executions').find({'state': 'ERROR'}, {state: 1, _id: 0}).toArray()
 
-db.getCollection('COLLECTION').count({state: "EXECUTING"})    // count
+db.getCollection('COLLECTION').count({state: "EXECUTING"})          // count
 
 db.getCollection('COLLECTION').find({}).sort({_id: -1}).limit(1);   // get last item of collection
+
+
+db.getCollection('COLLECTION').find({email: /^foo/})    // finde where email starts with foo
+db.getCollection('COLLECTION').find({email: /^ma.*l$/})   
+// .* means to match 0 or more of any character
+//  matches string that starts with "ma" and ends with "l", ignoring whatever is between.
 ```
 
 ```js

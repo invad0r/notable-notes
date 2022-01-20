@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [coreutils]
 title: echo
 created: '2020-09-01T08:18:16.652Z'
-modified: '2021-06-08T05:49:51.104Z'
+modified: '2022-01-17T08:06:25.725Z'
 ---
 
 # echo

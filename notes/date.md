@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2021-11-16T08:54:58.104Z'
+modified: '2022-01-05T08:51:38.881Z'
 ---
 
 # date
@@ -16,7 +16,7 @@ modified: '2021-11-16T08:54:58.104Z'
 ## usage
 
 ```sh
--u, --utc, --universal    #  print or set UTC (=Coordinated Universal Time)
+-u, --utc, --universal      #  print or set UTC (=Coordinated Universal Time)
 ```
 
 ## string format
@@ -24,15 +24,20 @@ modified: '2021-11-16T08:54:58.104Z'
 ```sh
 man strftime
 
+%a          # weekday Mon
+%A          # weekday Monday
+
 %F          # is equivalent to "%Y-%m-%d"
 %k          # is replaced by the 24-hour as decimal number (0-23); single digits are preceded by a blank
+
+%s          # unix timestamp
 ```
 
 ```sh
 date "+%s"                        # get unix timestamp
 date "+%F_%T"                     # 2020-01-30_13:16:52
 date "+%F_%H-%M"                  # 2020-01-30_13-16
-date +"%m-%d-%y_%H-%M"            # mont day year, hour minute
+date +"%m-%d-%y_%H-%M"            # month day year, hour minute
 
 date -r "1563533492792"           # convert unix timestamp on bsd/macos
 gdate -d "@1563533492792"         # convert unix timestamp on linux

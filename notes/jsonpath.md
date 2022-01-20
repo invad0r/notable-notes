@@ -1,7 +1,7 @@
 ---
 title: jsonpath
 created: '2020-10-09T11:50:35.973Z'
-modified: '2021-10-01T11:11:36.676Z'
+modified: '2022-01-05T09:51:33.323Z'
 ---
 
 # jsonpath
@@ -49,9 +49,25 @@ anyof 	    # left has an intersection with right [?(@.sizes anyof ['M', 'L'])]
 noneof 	    # left has no intersection with right [?(@.sizes noneof ['M', 'L'])]
 size 	      # size of left (array or string) should match right
 empty 	    # left (array or string) should be empty
+```
 
-
+```sh
 {.items[*].status.addresses[?(@.type=="ExternalIP")].address}
+
+
+kubectl get deployments -o jsonpath='{range .items[*]}
+{"---"}
+{"name: "}{@.metadata.name}
+{"env.secretKeyRef: "}
+  {range @.spec.template.spec.containers[*].env[*]}{"- "}{@.valueFrom.secretKeyRef.name}
+  {end}
+{"envFrom.configMapRef: "}
+  {range @.spec.template.spec.containers[*].envFrom[*]}{"- "}{@.configMapRef.name}
+  {end}
+{"envFrom.secretRef: "}
+  {range @.spec.template.spec.containers[*].envFrom[*]}{"- "}{@.secretRef.name}
+  {end}
+{end}' | yq e -P 'del(.. | select(length == 0))' - | yq e -P 'del(.. | select(length == 0))'
 ```
 
 ## see also
@@ -59,6 +75,7 @@ empty 	    # left (array or string) should be empty
 - [[kubectl]]
 - [[xpath]]
 - [[jq]]
+- [[yq]]
 - [goessner.net/articles/JsonPath/](https://goessner.net/articles/JsonPath/)
 - [github.com/json-path/JsonPath](https://github.com/json-path/JsonPath)
 - [cburgmer.github.io/json-path-comparison/](https://cburgmer.github.io/json-path-comparison/)

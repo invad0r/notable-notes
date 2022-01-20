@@ -2,7 +2,7 @@
 tags: [editor]
 title: code
 created: '2020-08-26T06:37:28.787Z'
-modified: '2021-06-07T07:05:32.312Z'
+modified: '2022-01-07T11:31:32.708Z'
 ---
 
 # code
@@ -50,6 +50,17 @@ code DIR
 ps aux | grep code | code -             # read from stdin
 ```
 
+## command palette
+
+```sh
+⌘ + ⇧ + p     # open command palette
+
+workbench.action.reloadWindow   # usefull to restart lang server etc.
+```
+
 ## see also
+
+- [[vim]]
 - [[idea]]
 - [[atom]]
+- [[macos keyboard shortcuts]]
