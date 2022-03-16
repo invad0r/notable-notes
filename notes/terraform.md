@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2021-05-27T08:58:16.620Z'
+modified: '2022-02-01T14:50:43.432Z'
 ---
 
 # terraform
@@ -10,16 +10,17 @@ modified: '2021-05-27T08:58:16.620Z'
 > tool for building, changing, and versioning infrastructure safely and efficiently
 
 ## usage
+
 ```sh
-# environment variables
-#   TF_LOG_PATH   
-#   TF_INPUT
-#   TF_LOG            TRACE, DEBUG, INFO, WARN or ERROR
-#   TF_VAR_name       e.g. "TF_VAR_region=us-west-1"
+TF_LOG_PATH       #
+TF_INPUT          #
+TF_LOG            # TRACE, DEBUG, INFO, WARN or ERROR
+TF_VAR_name       # e.g. "TF_VAR_region=us-west-1"
 
 TF_LOG=DEBUG terraform apply &> log
+```
 
-
+```sh
 terraform state -json | fx                                              # print whole state as json
 terraform state list                                                    # check state
 terraform state show 'module.path.data["name"] '                        # show state of resource
@@ -46,7 +47,11 @@ terraform graph -draw-cycles -module-depth=2
 
 terraform console     # startes repl-like console                               
 ```
+
 ## terraform console
+
+> interactive repl for debuggin
+
 ```
 > [ for d in local.developers: d.alternative_email ]      // iterate example
 
@@ -99,6 +104,7 @@ resource "aws_route53_record" "example" {
 ```
 
 ## see also
+
 - [[tfswitch]]
 - [[terrascan]]
 - [[terraform cloud api]]

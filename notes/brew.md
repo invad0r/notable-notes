@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2021-10-19T10:11:00.392Z'
+modified: '2022-02-01T10:17:45.053Z'
 ---
 
 # brew
@@ -10,9 +10,15 @@ modified: '2021-10-19T10:11:00.392Z'
 > package manager for macos
 
 ## install
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
+```sh
+export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
+export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 
 ## usage
+
 ```sh
 brew list
 
@@ -83,6 +89,9 @@ brew tap caskroom/cask       # get cask
 ```
 
 ## see also
+
+- [[softwareupdate]]
+- [[xcode-select]]
 - [[asdf]]
 - [caskroom.github.io/search](https://caskroom.github.io/search)
 - [how to install and use gnu grep in macos](https://apple.stackexchange.com/questions/193288/how-to-install-and-use-gnu-grep-in-osx)

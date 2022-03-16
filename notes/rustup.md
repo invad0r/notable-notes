@@ -2,7 +2,7 @@
 tags: [rust, versionmanager]
 title: rustup
 created: '2020-02-27T17:03:43.319Z'
-modified: '2020-11-28T13:07:30.783Z'
+modified: '2022-02-02T10:06:36.469Z'
 ---
 
 # rustup
@@ -10,6 +10,7 @@ modified: '2020-11-28T13:07:30.783Z'
 > rust toolchain installer
 
 ## usage
+
 ```sh
 rustup show               # show active and installed toolchains or profiles
 
@@ -18,12 +19,12 @@ rustup doc --book         # open the documentation for the current toolchain
 rustup self uninstall     # uninstall rust tooling und remove changes to .bashrc etc
 
 rustup update
-
+rustup update stable
 
 rustup override set stable
-rustup update stable
 ```
 
 ## see also
+
 - [[rust]]
 - [[cargo]]

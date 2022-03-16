@@ -2,7 +2,7 @@
 tags: [python]
 title: python
 created: '2019-07-30T06:19:49.222Z'
-modified: '2021-06-10T06:35:14.925Z'
+modified: '2022-02-01T14:56:33.548Z'
 ---
 
 # python
@@ -38,6 +38,7 @@ python -c 'import sys,yaml,json; yaml.safe_dump(json.load(sys.stdin), sys.stdout
 ```
 
 ## see also
+
 - [[irb]]
 - [[pip]]
 - [[pyenv]]

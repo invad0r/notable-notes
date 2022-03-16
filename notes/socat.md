@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: socat
 created: '2019-07-30T06:19:49.239Z'
-modified: '2021-10-13T09:30:12.068Z'
+modified: '2022-02-15T10:29:15.819Z'
 ---
 
 # socat
@@ -64,3 +64,6 @@ socat -d -d -lmlocal2 \
 - [[ncat]]
 - [[nc]]
 - [[kubectl]]
+- [[ssh proxy]]
+- [[tcp-ip model]]
+- [[12 factor app]]

@@ -1,7 +1,7 @@
 ---
 title: xpath
 created: '2020-10-09T12:01:24.801Z'
-modified: '2020-10-09T12:03:19.051Z'
+modified: '2022-02-02T09:39:37.003Z'
 ---
 
 # xpath
@@ -9,10 +9,13 @@ modified: '2020-10-09T12:03:19.051Z'
 > query language for selecting nodes from an XML document
 
 ## usage
+
 ```sh
 /store/book[1]/title
 ```
 
 ## see also
+
 - [[xmllint]]
 - [[jsonpath]]
+- [[jq]]

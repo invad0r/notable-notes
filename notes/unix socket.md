@@ -2,7 +2,7 @@
 tags: [container/docker, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2021-11-11T08:33:52.574Z'
+modified: '2022-02-15T10:29:37.043Z'
 ---
 
 # unix socket
@@ -33,3 +33,4 @@ modified: '2021-11-11T08:33:52.574Z'
 - [[netstat]]
 - [[docker api]]
 - [linux.com/news/what-socket](https://www.linux.com/news/what-socket)
+- [[tcp-ip model]]

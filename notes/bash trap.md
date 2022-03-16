@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash trap
 created: '2019-08-02T06:42:37.638Z'
-modified: '2021-05-12T08:46:08.541Z'
+modified: '2022-02-10T10:09:42.974Z'
 ---
 
 # bash trap
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:08.541Z'
 > Defines and activates handlers to be run when the shell receives signals or other conditions
 
 ## usage
+
 ```sh
 trap -l       # print a list of signal names and their corresponding numbers
 
@@ -25,17 +26,19 @@ trap - sig1 sig2    # resets the action taken when the signal is received to the
 ```
 
 ## signals
-SIGNAME   | SIGVAL          | Effect                  | shortcut
---        | --              | --                      | --
-`SIGHUP`  | `1`             | Hangup                  | 
-`SIGINT`  | `2`             | Interrupt from keyboard | <kbd>ctrl + c</kbd>
-`SIGKILL` | `9`             | Kill-Signal             |
-`SIGTERM` | `15`            | Terminate-Signal        |
-`SIGSTOP` | `17`,`19`,`23`  | Stop proc               | <kbd>ctl + z </kbd>
 
-`SIGKILL` and `SIGSTOP` cannot be caught, blocked or ignored !
+```sh
+name       value            effect                    shortcut
+--         --               --                        --
+SIGHUP     1                Hangup                   
+SIGINT     2                Interrupt from keyboard   ctrl + c
+SIGKILL    9                Kill-Signal                             cannot be caught, blocked or ignored !
+SIGTERM    15               Terminate-Signal        
+SIGSTOP    17, 19, 23       Stop proc                 ctl + z       cannot be caught, blocked or ignored !
+```
 
 ## go defer
+
 ```sh
 # golang like defer
 # https://twitter.com/TheNikhita/status/1061973769470795776
@@ -45,7 +48,6 @@ function finish {
 }
 trap finish EXIT
 ```
-
 
 ```sh
 trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
@@ -73,5 +75,7 @@ trap returntrap RETURN  # is executed each time a shell function or a script exe
 ```
 
 ## see also
+
+- [[signal]]
 - [[bash debugging]]
 - [[mktemp]]

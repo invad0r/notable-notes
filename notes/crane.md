@@ -2,7 +2,7 @@
 tags: [container]
 title: crane
 created: '2021-10-19T11:44:42.215Z'
-modified: '2021-10-29T12:38:36.492Z'
+modified: '2022-02-10T11:18:57.942Z'
 ---
 
 # crane
@@ -42,10 +42,6 @@ crane manifest gcr.io/buildpacks/builder:v1 | jq '.config.size + ([.layers[].siz
 
 crane digest IMAGE
 ```
-
-
-
-
 
 ## see also
 

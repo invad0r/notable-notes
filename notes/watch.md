@@ -2,7 +2,7 @@
 tags: [linux]
 title: watch
 created: '2019-07-30T06:19:49.265Z'
-modified: '2021-09-26T15:57:32.929Z'
+modified: '2022-01-31T18:58:02.309Z'
 ---
 
 # watch
@@ -13,7 +13,9 @@ modified: '2021-09-26T15:57:32.929Z'
 
 ```sh
 WATCH_INTERVAL            # persistently set a non-default interval
+```
 
+```sh
 -n, --interval SECONDS    # update interval,  will not allow quicker than 0.1 second interval, in which the smaller values are converted 
 ```
 

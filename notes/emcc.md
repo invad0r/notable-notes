@@ -2,7 +2,7 @@
 tags: [compiler]
 title: emcc
 created: '2020-08-31T13:19:52.268Z'
-modified: '2021-06-08T05:51:44.794Z'
+modified: '2022-02-02T10:14:11.064Z'
 ---
 
 # emcc
@@ -10,6 +10,7 @@ modified: '2021-06-08T05:51:44.794Z'
 > emscripten
 
 ## usage
+
 ```sh
 -Os                                   # optimize for size: both for wasm and js
 -s EXPORTED_FUNCTIONS='[..]'          #
@@ -28,6 +29,7 @@ emcc FILE.c -Os -o FILE.js \
 ```
 
 ## see also
+
 - [[wasm]]
 - [[rust]]
 - [[clang]]

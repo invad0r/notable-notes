@@ -2,7 +2,7 @@
 tags: [iproute, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2021-06-06T08:32:41.634Z'
+modified: '2022-03-04T07:45:15.974Z'
 ---
 
 # ss
@@ -10,9 +10,10 @@ modified: '2021-06-06T08:32:41.634Z'
 > display `socket statistics`
 
 ## install
+
 `yum install iproute`, `apt install iproute`, `brew install ss`
 
-## usage
+## flags
 
 ```sh
 -a      # Show all sockets (listening and non-listening)
@@ -28,11 +29,14 @@ modified: '2021-06-06T08:32:41.634Z'
 -x      # protocol: unix domain sockets
 ```
 
+## usage
+
 ```sh
 ss -tunapls       # tuna, please! 
 ```
 
 ## see also
+
 - [[netstat]]
 - [[socat]]
 - [[iproute]]

@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash help
 created: '2019-08-02T06:42:37.601Z'
-modified: '2021-05-12T08:46:08.046Z'
+modified: '2022-02-01T15:18:48.033Z'
 ---
 
 # bash help
@@ -12,15 +12,18 @@ modified: '2021-05-12T08:46:08.046Z'
 ## usage
 
 ```sh
-# options
-# -d        output short description
-# -m        display usage in pseudo-manpage format
-# -s        output only a short usage synopsis for each topic matching PATTERN
+-d              # output short description
+-m              # display usage in pseudo-manpage format
+-s              # output only a short usage synopsis for each topic matching PATTERN
+```
 
+```sh
 help            # displays brief summaries of builtin commands
 
 help CMD
 ```
 
 ## see also
+
 - [[man]]
+- [[command-not-found]]

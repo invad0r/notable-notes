@@ -1,12 +1,15 @@
 ---
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2021-10-31T14:56:47.640Z'
+modified: '2022-02-09T16:24:42.497Z'
 ---
 
 # youtube-dl
 
+> download videos from youtube.com or other video platforms
+
 ## usage
+
 ```sh
 youtube-dl --continue --extract-audio --audio-format mp3 --embed-thumbnail h3Q12OkBTHk
 
@@ -19,8 +22,7 @@ youtube-dl \
   YOUTUBE_ID
   --metadata-from-title "%(artist)s - %(title)s" 2>&1
 
-# extract audio from playlist starting at playlist-index: 17
-youtube-dl \
+youtube-dl `# extract audio from playlist starting at playlist-index: 17` \
   --no-overwrites \
   --continue \
   --extract-audio \
@@ -32,5 +34,8 @@ youtube-dl --skip-download --write-thumbnail knGYTLTHV_E    # Download just the 
 ```
 
 ## see also
+
+- [[imagemagick]]
+- [[ffmpeg]]
 - [[eyeD3]]
 - [[python]]

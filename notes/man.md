@@ -2,7 +2,7 @@
 tags: [linux]
 title: man
 created: '2019-07-30T06:19:49.175Z'
-modified: '2020-08-25T14:20:12.394Z'
+modified: '2022-02-02T13:31:30.115Z'
 ---
 
 # man
@@ -10,19 +10,24 @@ modified: '2020-08-25T14:20:12.394Z'
 > format and display the on-line manual pages
 
 ## install
+
 `apt-get install man-db`
 
 ## usage
+
 ```sh
 MANPAGER=less
+MANPAGER=vim -M +MANPAGER --not-a-term -
+
 # manpage locations
 MANPATH /usr/man
 MANPATH /usr/share/man
 MANPATH /usr/local/man
 MANPATH /usr/local/share/man
 MANPATH /usr/X11R6/man
+````
 
-
+```sh
 man -k intro      # equivalent to apropos
 
 man -f intro      # equivalent to whatis; lookup pages and print short description
@@ -47,6 +52,7 @@ man man           # show sections
 ```
 
 ## custom manpage
+
 ```sh
 # creating custom man page and open with man
 cat <<EOF > ./nuseradd
@@ -73,8 +79,10 @@ man ./nuseradd
 ```
 
 ## see also
+
 - [The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
 - [Colorized man pages](http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized)
 - [[apropos]]
 - [[whatis]]
+- [[command-not-found]]
 - [[bash help]]

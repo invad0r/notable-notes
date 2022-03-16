@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh proxy
 created: '2019-07-30T06:19:49.242Z'
-modified: '2019-08-22T11:02:29.796Z'
+modified: '2022-01-31T19:00:58.542Z'
 ---
 
 # ssh proxy
@@ -35,6 +35,7 @@ ssh root@localhost -p 2222
 ```
 
 ## Jump Host
+
 ```sh
 ssh -J <jump-host> <target-host>
 
@@ -46,6 +47,7 @@ curl http://127.0.0.1:8080
 ```
 
 ## dynamic port forward
+
 ```sh
 ssh -D <proxy port> <pivot-host>
 
@@ -54,6 +56,8 @@ curl -x SOCKS5://localhost:8080 http://jump3
 ```
 
 ## see also
+
+- [[socat]]
 - [[ssh config]]
 - [KringleCon - Derek Rook, Pivoting: SSH - YouTube](https://www.youtube.com/watch?v=f5uaxLjCkK0)
 - [SSH Tunneling Magic – Reznok](https://reznok.com/ssh-tunneling-magic/)

@@ -2,20 +2,12 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2022-01-17T15:32:55.802Z'
+modified: '2022-02-17T07:53:51.257Z'
 ---
 
 # kubectl
 
 > kubectl controls the Kubernetes cluster manager
-
-
-`kubectl` supports three kinds of object management:
-
-- imperative commands
-- imperative object configuration -> `apply`, `diff`
-- declarative object configuration -> `create`, `replace` and `delete`
-
 
 ## installation
 
@@ -24,25 +16,48 @@ brew install kubectl
 kubectl completion bash >$(brew --prefix)/etc/bash_completion.d/kubectl`
 ```
 
-## usage
+## environment
 
 ```sh
-KUBECONFIG          # -
+KUBECONFIG          # alternative kube config
 KUBE_EDITOR         # -
 ```
+
+## flags
 
 ```sh
 -v=6                      # debug level 6
 -o                        # output format [json|yaml|wide]
-
+-A                        # all namespaces
 --kubeconfig CONFIG       # ..
 --namespace  NAMESPACE    # ..
 --context    CONTEXT      # ..
 ```
 
+
+### imperative commands / object configuration
+
+```sh
+kubectl diff      # object configuration
+kubectl apply     # object configuration
+``````
+
+### declarative commands / object configuration
+
+```sh
+kubectl create      # object configuration
+kubectl replace     # object configuration
+kubectl delete      # object configuration
+kubectl edit
+kubectl scale
+```
+
+## usage
+
 ```sh
 # merge config
-KUBECONFIG="$HOME/.kube/config:file2:file3" kubectl config view --merge --flatten > ~/.kube/merged_kubeconfig && mv ~/.kube/merged_kubeconfig ~/.kube/config
+KUBECONFIG="$HOME/.kube/config:file2:file3" kubectl config view --merge --flatten > ~/.kube/merged_kubeconfig \
+  && mv ~/.kube/merged_kubeconfig ~/.kube/config
 
 kubectl version -o yaml | yq e                                        # get client and server version
 kubectl cluster-info                                                  # get addresses of the control plane and services
@@ -68,23 +83,60 @@ kubectl config use-context CONTEXT
 
 
 kubectl api-resources   # get all resource-names, alias and kinds
-kubectl get
-kubectl get all
 
+kubectl get all     # get alle resoruce of current namespace
+```
+
+## node
+
+```sh
 kubectl get nodes
 
-kubectl get nodes \
-  --selector='!node-role.kubernetes.io/master' \
-  --no-headers \
-  -o custom-columns=":metadata.name"
+kubectl get node NODE_NAME -o name
 
-kubectl get node NODE -ojson | jq -r '.status.capacity.memory' | numfmt --from=iec-i --to=iec     # get avail memory
+kubectl get node NODE_NAME -o json | jq -r '.status.capacity.memory' | numfmt --from=iec-i --to=iec     # get avail memory
 
+
+kubectl get nodes --selector='!node-role.kubernetes.io/master' --no-headers -o custom-columns=":metadata.name"
+
+kubectl label node --all 'vpc.amazonaws.com/has-trunk-attached'-                # remove all labels 'vpc.ama..'
+
+
+kubectl get node NODE_NAME -o yaml | yq -C e '.metadata.finalizers' -           # check for finalizers
+kubectl patch NODE_NAME -p '{"metadata":{"finalizers":[]}}' --type=merge        # remove finalizers
+
+kubectl drain NODE_NAME --force --ignore-daemonsets  --delete-local-data
+kubectl cordon NODE_NAME
+kubectl delete node NODE_NAME
+```
+
+## daemonset
+
+```sh
+kubectl rollout restart daemonset/DAEMONSET
+
+kubectl -n kube-system patch daemonset aws-node \
+  -p '{"spec": {"template": {"spec": {"nodeSelector": {"non-existing": "true"}}}}}'               # "scale down" daemonset
+kubectl -n kube-system patch daemonset aws-node \
+  --type json -p='[{"op": "remove", "path": "/spec/template/spec/nodeSelector/non-existing"}]'    # "scale up" daemonset
+```
+
+## pod
+
+```sh
 kubectl get po POD_NAME -o yaml
 kubectl get pod
 kubectl get pods --show-labels | awk '{print $6}' | column -s, -t
 kubectl get pods -L 
 
+kubectl exec -it POD -- curl -s http://10.1.0.3  # double dash `--` signals end of command options, if not set -s would be interpreted as kubectl flag
+```
+
+## service
+
+> routes internal traffic
+
+```sh
 kubectl get svc SERVICE -o jsonpath="{.status.loadBalancer.ingress[*].hostname}"
 
 
@@ -103,34 +155,57 @@ kubectl delete deployment DEPLOYMENT
 kubectl scale --replicas=1 kubia
 kubectl scale replicationcontroller kubia --replicas=1
 
+kubectl patch svc SERVICE -p '{"spec": {"type": "LoadBalancer"}}'
+
 
 # edit a resource from the default editor
 KUBE_EDITOR="nano" kubectl edit svc/SERVICE                  # use alternative editor
 kubectl edit svc/SERVICE                                     # edit the service named 'docker-registry'
 kubectl edit job.v1.batch/myjob -o json                      # edit the job 'myjob' in JSON using the v1 API format
 kubectl edit deployment/mydeployment -o yaml --save-config   # edit the deployment 'mydeployment' in YAML and save the modified config in its annotation
+```
 
+## ingress
+
+> manages external access to services, may provide load balancing, SSL termination and name-based virtual hosting
+
+```sh
+kubectl patch ingress INGRESS_NAME -p '{"metadata":{"finalizers":[]}}' --type=merge
+```
+
+## deployment
+
+```sh
 kubectl expose deployment DEPLOYMENT --type=NodePort
 
-kubectl exec -it POD -- curl -s http://10.1.0.3  # double dash `--` signals end of command options, if not set -s would be interpreted as kubectl flag
+kubectl rollout restart deployment/nginx
+
+kubectl rollout status deployment aws-load-balancer-controller
+
+kubectl autoscale deployment DEPLOYMENT \
+  --cpu-percent=50    `# target average CPU utilization` \
+  --min=1             `# lower limit for the number of pods that can be set by the autoscaler` \
+  --max=10            `# upper limit for the number of pods that can be set by the autoscaler`
+
+kubectl patch deployment NAME --type=json -p='[{"op": "add", "path": "/spec/template/metadata/labels/this", "value": "that"}]'
 ```
 
 ## run
 
-> running adhoc pod without yaml-manifest
+> running adhoc pod without yaml-manifest / create and run a particular image in a pod
 
 ```sh
-
 kubectl run     # same as `kubectl create deployment`
 
-kubectl run echoserver --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+kubectl run curl            --image=radial/busyboxplus:curl -i --tty   # then run: nslookup my-nginx
 
-kubectl run dnsutils --image=tutum/dnsutils --generator=run-pod/v1 --command -- sleep infinity
+kubectl run echoserver      --image=gcr.io/google_containers/echoserver:1.4 --port=8080
 
-kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+kubectl run dnsutils        --image=tutum/dnsutils --generator=run-pod/v1 --command -- sleep infinity
 
-kubectl run POD_NAME \
-  --image=mongo:4.0  \
+kubectl run hello-minikube  --image=k8s.gcr.io/echoserver:1.4 --port=8080
+
+kubectl run POD_NAME        --image=mongo:4.0 `# run pod on specific node `\
   --overrides='{"apiVersion": "v1", "spec": {
     "affinity": {
       "nodeAffinity": {
@@ -142,20 +217,17 @@ kubectl run POD_NAME \
                   "values": ["NODE_NAME"]
                 }]
             }]
-        }}}}}' \                                  `# run pod on specific node `
+        }}}}}' \ 
   --command -- sleep infinity
+```
 
+## events
 
+```sh
 kubectl get events --sort-by='.lastTimestamp'
 kubectl get events --sort-by=.metadata.creationTimestamp
 kubectl get events --sort-by='.metadata.creationTimestamp' \
  -o 'go-template={{range .items}}{{.involvedObject.name}}{{"\t"}}{{.involvedObject.kind}}{{"\t"}}{{.message}}{{"\t"}}{{.reason}}{{"\t"}}{{.type}}{{"\t"}}{{.firstTimestamp}}{{"\n"}}{{end}}'
-
-
-kubectl autoscale deployment DEPLOYMENT \
-  --cpu-percent=50 `# target average CPU utilization` \
-  --min=1          `# lower limit for the number of pods that can be set by the autoscaler` \
-  --max=10         `# upper limit for the number of pods that can be set by the autoscaler`
 ```
 
 ## logs
@@ -208,6 +280,7 @@ kubectl access-matrix               # use plugin to see the level of access user
 
 ## see also
 
+- [kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [[kubernetes]], [[oc]]
 - [[helm]], [[kustomize]]
 - [[bazel]]
@@ -216,7 +289,8 @@ kubectl access-matrix               # use plugin to see the level of access user
 - [[kubeval]]
 - [[kim]], [[opa]]
 - [[aws]], [[eksctl]], [[kops]]
-- [[minikube]], [[k3s]]
+- [[minikube]], [[k3s]], [[k3d]], [[k0s]], [[k9s]]
+- [[nerdctl]]
 - [[yml]], [[jsonpath]], [[go-template]]
 - [[socat]]
 - [stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create](https://stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create)

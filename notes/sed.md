@@ -2,7 +2,7 @@
 tags: [linux]
 title: sed
 created: '2019-07-30T06:19:49.228Z'
-modified: '2021-12-23T08:58:58.352Z'
+modified: '2022-01-31T14:00:17.343Z'
 ---
 
 # sed
@@ -43,11 +43,9 @@ sed -i 's/\(^ExecStart=\).*/ExecStart=\/usr\/bin\/dockerd -H tcp:\/\/0.0.0.0:237
 sed -i 's/\(^#DOCKER_OPTS=\).*/DOCKER_OPTS="-H tcp:\/\/0.0.0.0:2375"/' /etc/default/docker
 
 
-
 sed -i "s%\$$1%${val}%g" $CONF_PATH   # % as delimiter to avoid escaping slashes in URLs
 
 sed -n -e 's,.*/bin/sh -c #(nop) \(MAINTAINER .*[^ ]\) *0 B,\1,p'    # , as delimiter
-
 
 
 echo "<b>foo</b>bar" | sed 's/<.*>//g'      #     greedy matching: "bar"
@@ -56,6 +54,8 @@ echo "<b>foo</b>bar" | sed 's/<[^>]*>//g'   # non greedy matching: "foobar"
 
 ## see also
 
+- [[tr]]
+- [[cut]]
 - [[awk]]
 - [grymoire.com/Unix/Sed](http://www.grymoire.com/Unix/Sed.html)
 - [0x2a.at/blog/2008/07/sed--non-greedy-matching](https://0x2a.at/blog/2008/07/sed--non-greedy-matching/)

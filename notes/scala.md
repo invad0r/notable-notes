@@ -2,15 +2,19 @@
 tags: [scala]
 title: scala
 created: '2019-08-20T07:27:47.862Z'
-modified: '2020-03-02T07:03:42.582Z'
+modified: '2022-02-01T14:36:57.154Z'
 ---
 
 # scala
 
+> high-level [[jvm]] language which combines object-oriented and functional programming
+
 ## usage
+
 ```sh
 scala     # start repl
 ```
+
 ```scala
 :help    // help command
 
@@ -27,7 +31,9 @@ println(s"${hannah.name} has a score of ${hannah.score}")   // use curly braces 
 ```
 
 ## see also
+
 - [[sbt]]
 - [String interpolation/substitution - alvinalexander.com](https://alvinalexander.com/scala/string-interpolation-scala-2.10-embed-variables-in-strings)
 - [[ocaml]]
 - [[python]]
+- [[java]]

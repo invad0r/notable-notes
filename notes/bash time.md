@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: bash time
 created: '2019-08-02T08:39:11.840Z'
-modified: '2021-05-12T08:46:30.786Z'
+modified: '2022-01-31T19:04:33.291Z'
 ---
 
 # bash time
@@ -10,17 +10,19 @@ modified: '2021-05-12T08:46:30.786Z'
 > report time consumed by pipeline's execution
 
 ## usage
+
 ```sh
 -p     # print the timing summary in the portable Posix format
+```
 
-
+```sh
 time cat      # quick stop watch
-
 
 # time goes over whole line pipes and redirects !
 time grep '^#' ~/.bashrc | { i=0; while read -r; do printf '%4d %s\n' "$((++i))" "$REPLY"; done; } > bashrc_numbered 2>/dev/null
 ```
 
 ## see also
+
 - [[time]]
 - [[timeout]]

@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: tar
 created: '2019-07-30T06:19:49.251Z'
-modified: '2022-01-06T08:46:57.913Z'
+modified: '2022-02-02T09:31:45.443Z'
 ---
 
 # tar
@@ -58,7 +58,7 @@ tar cf - "$1" -P | pv -s $(( $(du -sk "$1" | cut -f1) * 1024 )) \
 ## see also
 
 - [[nc]]
-- [[zip unzip]]
+- [[zip]]
 - [[pigz unpigz]]
 - [[gzip gunzip zcat]]
 - [[bash redirects]]

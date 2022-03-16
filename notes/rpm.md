@@ -2,7 +2,7 @@
 tags: [linux, packagemanager]
 title: rpm
 created: '2019-07-30T20:39:42.276Z'
-modified: '2020-02-03T12:27:31.975Z'
+modified: '2022-02-01T14:35:24.734Z'
 ---
 
 # rpm
@@ -10,6 +10,7 @@ modified: '2020-02-03T12:27:31.975Z'
 > `redhat package manager`
 
 ## usage
+
 ```sh
 rpm -qa		              # list installed packages
 
@@ -30,6 +31,7 @@ rpm -qpR yum-3.2.29-81.el6.centos.noarch.rpm    # get dependency list
 ```
 
 ## see also
-- http://mirror.centos.org/centos/7/os/x86_64/Packages/
+
 - [[yum]]
-- https://www.thegeekdiary.com/how-to-find-which-rpm-package-provides-a-specific-file-or-library-in-rhel-centos/
+- [mirror.centos.org/centos/7/os/x86_64/Packages/](http://mirror.centos.org/centos/7/os/x86_64/Packages/)
+- [thegeekdiary.com/how-to-find-which-rpm-package-provides-a-specific-file-or-library-in-rhel-centos/](https://www.thegeekdiary.com/how-to-find-which-rpm-package-provides-a-specific-file-or-library-in-rhel-centos/)

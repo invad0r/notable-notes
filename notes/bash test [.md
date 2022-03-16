@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: 'bash test ['
 created: '2019-07-30T06:19:49.021Z'
-modified: '2021-05-12T08:46:08.513Z'
+modified: '2022-02-10T10:05:09.129Z'
 ---
 
 # bash test [
@@ -11,6 +11,7 @@ modified: '2021-05-12T08:46:08.513Z'
 > `[` synonym for `test` - last argument of opening `[` must be a literal `]`
 
 ## usage
+
 ```sh
 help test
 help [
@@ -70,6 +71,7 @@ test 3 == "$(kustomize build $OVERLAYS/staging | grep 5276h4th55 | wc -l)"; echo
 ```
 
 ## see also
+
 - [[bash [ []]
 - [[bash built-in vs keyword]]
 - [[bash if]]

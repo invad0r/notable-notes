@@ -2,7 +2,7 @@
 tags: [container]
 title: helm
 created: '2021-06-04T08:40:48.010Z'
-modified: '2022-01-17T13:00:42.102Z'
+modified: '2022-03-07T20:23:56.483Z'
 ---
 
 # helm
@@ -11,9 +11,13 @@ modified: '2022-01-17T13:00:42.102Z'
 
 ## install
 
-`brew install helm`, `curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash`
+```sh
+brew install helm
 
-## usage
+curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+```
+
+## environment vairables
 
 ```sh
 HELM_CACHE_HOME                     # alt location for storing cached files
@@ -38,6 +42,8 @@ HELM_KUBECONTEXT                    # name of the kubeconfig context
 HELM_KUBETOKEN                      # bearer kube-token used for auth
 ```
 
+## usage
+
 ```sh
 helm help       # learn more about the available Helm commands
 helm get -h     # or type a command followed by -h flag
@@ -54,13 +60,14 @@ helm env
 helm search                   # search for charts
 helm search repo [REPONAME]
 
-helm pull       # download chart to local dir
+helm pull                       # download chart to local dir
+helm pull stable/CHART --untar  # optionally untar chart
 
-helm install    # upload chart to k8s
+helm install                                              # upload chart to k8s
 helm install bitnami/mysql --generate-name
-helm install --debug --dry-run CHART ./PATH     # test the template rendering, but not actually install anything
+helm install --debug --dry-run CHART ./PATH               # test the template rendering, but not actually install anything
 
-helm repo add stable  https://charts.helm.sh/stable      # add as "stable" -> prepends "stable/REPO"
+helm repo add stable  https://charts.helm.sh/stable       # add as "stable" -> prepends "stable/REPO"
 helm repo add datadog https://helm.datadoghq.com
 helm repo add bitnami https://charts.bitnami.com/bitnami
 

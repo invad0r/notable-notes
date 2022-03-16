@@ -1,7 +1,7 @@
 ---
 title: pg_dump
 created: '2021-03-15T07:59:51.829Z'
-modified: '2021-03-22T07:23:02.141Z'
+modified: '2022-02-02T09:14:30.901Z'
 ---
 
 # pg_dump
@@ -9,21 +9,23 @@ modified: '2021-03-22T07:23:02.141Z'
 > extract a postgresql database into a script file or other archive file
 
 ## usage
-```sh
-# environment variables
-# PGDATABASE        -
-# PGHOST            -
-# PGOPTIONS         -
-# PGPORT            -
-# PGUSER            -
-# PGSSLMODE         determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the server. There are six modes:
-#   disable 	    only try a non-SSL connection
-#   allow 	      first try a non-SSL connection; if that fails, try an SSL connection
-#   prefer        (default) 	first try an SSL connection; if that fails, try a non-SSL connection
-#   require 	    only try an SSL connection. If a root CA file is present, verify the certificate in the same way as if verify-ca was specified
-#   verify-ca 	  only try an SSL connection, and verify that the server certificate is issued by a trusted CA
-#   verify-full 	only try an SSL connection, verify that the server certificate is issued by a trusted CA and that the server host name matches that in the certificate
 
+```sh
+PGDATABASE        # -
+PGHOST            # -
+PGOPTIONS         # -
+PGPORT            # -
+PGUSER            # -
+PGSSLMODE         # determines whether or with what priority a secure SSL TCP/IP connection will be negotiated with the server. There are six modes:
+                  #   disable 	    only try a non-SSL connection
+                  #   allow 	      first try a non-SSL connection; if that fails, try an SSL connection
+                  #   prefer        (default) 	first try an SSL connection; if that fails, try a non-SSL connection
+                  #   require 	    only try an SSL connection. If a root CA file is present, verify the certificate in the same way as if verify-ca was specified
+                  #   verify-ca 	  only try an SSL connection, and verify that the server certificate is issued by a trusted CA
+                  #   verify-full 	only try an SSL connection, verify that the server certificate is issued by a trusted CA and that the server host name matches that in the certificate
+```
+
+```sh
 pg_dump -h HOST -p PORT -U USER -d DATABASE > FILE.dump
 
 pg_dump DATABASE > db.sql                               # dump database called DATABASE into sql-script file
@@ -43,10 +45,10 @@ pg_dump -t 'detroit.emp*' -T detroit.employee_log DATABASE > db.sql   # dump all
 pg_dump -n 'east*gsm' -n 'west*gsm' -N '*test*' DATABASE > db.sql     # dump all schemas whose names start with east or west and end in gsm, excluding schemas whose names contain word test
 pg_dump -n '(east|west)*gsm' -N '*test*' DATABASE > db.sql            # same as above, using regular expression notation to consolidate the switches
 pg_dump -T 'ts_*' DATABASE > db.sql                                   # dump all database objects except for tables whose names begin with ts_
-
 ```
 
 ## see also
+
 - [[psql]]
 - [[mysqldump]]
 - [[mongodump]]

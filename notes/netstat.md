@@ -2,7 +2,7 @@
 tags: [net-tools, network]
 title: netstat
 created: '2019-08-28T22:19:06.348Z'
-modified: '2021-11-11T08:32:57.129Z'
+modified: '2022-03-04T07:45:50.245Z'
 ---
 
 # netstat
@@ -13,7 +13,7 @@ modified: '2021-11-11T08:32:57.129Z'
 
 `yum install net-tools`, `apt install net-tools`, `zypper install net-tools`, `pacman -S netstat-nat`
 
-## usage
+## flags
 
 ```sh
 -l, --listening     # show only listening sockets.  (These are omitted by default.)
@@ -25,6 +25,8 @@ modified: '2021-11-11T08:32:57.129Z'
 -n, --numeric       # show numerical addresses instead of trying to determine symbolic host, port or user names
 -a, --all           # 
 ```
+
+## usage
 
 ```sh
 netstat -c              # continuasly

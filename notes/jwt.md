@@ -2,23 +2,18 @@
 tags: [cryptography]
 title: jwt
 created: '2020-01-27T08:04:24.079Z'
-modified: '2021-10-28T11:54:39.168Z'
+modified: '2022-02-01T14:58:49.263Z'
 ---
 
 # jwt
 
 > `json web tokens` - standard `RFC 7519` method for representing claims securely between two parties
 
+`jwt`'s consist of three parts separated by dots: `HEADER.PAYLOAD.SIGNATURE`
+
 ## usage
 
 ```sh
-# jwt's consist of three parts separated by dots `.`, which are:
-#    Header
-#    Payload
-#    Signature
-
-xxxxx.yyyyy.zzzzz
-
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$TOKEN"    # decode to json
 ```
 

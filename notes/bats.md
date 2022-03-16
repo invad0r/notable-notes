@@ -2,14 +2,14 @@
 tags: [shell]
 title: bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2021-10-06T12:16:42.025Z'
+modified: '2022-03-03T15:45:54.412Z'
 ---
 
 # bats
 
 > `bats` is a `TAP-compliant` testing framework for bash, which provides a simple way to verify that the UNIX programs behave as expected
 
-## usage
+## environment variables
 
 ```sh
 BATS_TEST_FILENAME        # fully expanded path to the Bats test file
@@ -20,6 +20,8 @@ BATS_TEST_DESCRIPTION     # description of the current test case
 BATS_TEST_NUMBER          # (1-based) index of the current test case in the test file
 BATS_TMPDIR               # location to a directory that may be used to store temporary files
 ```
+
+## usage
 
 ```sh
 bats TEST.bats    # running tests

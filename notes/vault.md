@@ -1,7 +1,7 @@
 ---
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2021-10-31T14:56:47.616Z'
+modified: '2022-02-01T14:47:17.982Z'
 ---
 
 # vault
@@ -9,6 +9,7 @@ modified: '2021-10-31T14:56:47.616Z'
 > tool for securely accessing secrets
 
 ## usage
+
 ```sh
 vault -autocomplete-install     # setup
 
@@ -56,6 +57,7 @@ vault write transit/path/decrypt/foo ciphertext=vault:v1:3kd1XR2w1lk..8KIWy2VVBA
 ```
 
 ## see also
+
 - [[consul]]
 - [[terraform]]
 - [[tee]]

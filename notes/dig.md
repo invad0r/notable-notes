@@ -2,7 +2,7 @@
 tags: [dns, linux]
 title: dig
 created: '2019-07-30T06:19:49.037Z'
-modified: '2021-12-23T09:13:14.415Z'
+modified: '2022-01-26T08:32:14.154Z'
 ---
 
 # dig
@@ -45,6 +45,8 @@ dig @8.8.8.8 +trace github.com
 
 ## see also
 
+
+- [[dns]]
 - [[whois]]
 - [[host]]
 - [[nslookup]]

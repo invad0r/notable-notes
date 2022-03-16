@@ -2,7 +2,7 @@
 tags: [serverless]
 title: sam
 created: '2021-02-08T12:46:40.753Z'
-modified: '2021-10-29T12:47:13.703Z'
+modified: '2022-02-01T15:01:27.024Z'
 ---
 
 # sam
@@ -10,14 +10,17 @@ modified: '2021-10-29T12:47:13.703Z'
 > `aws serverless application model` extends [[aws cloudformation]] to provider simplified way of defining resources needed to run lambda functions in aws
 
 ## install
+
 `brew tap aws/tap && brew install aws-sam-cli`
+
 ## usage
+
 ```sh
-# environment variables
-# SAM_CLI_TELEMETRY         0 
+SAM_CLI_TELEMETRY         # 0
+```
 
+```sh
 sam --version
-
 
 sam init                # download a sample application, interactively
        
@@ -32,9 +35,10 @@ sam local invoke "HelloWorldFunction" -e events/event.json
 ```
 
 ## see also
+
+- [[aws]]
 - [[serverless]]
 - [[terraform]]
-- [[aws cloudformation]]
 - [[tcl]]
 - [[virtualenv]]
 - [docs.aws.amazon.com/serverless-application-model/../serverless-getting-started-hello-world.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html)

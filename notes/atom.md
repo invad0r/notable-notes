@@ -2,7 +2,7 @@
 tags: [editor]
 title: atom
 created: '2019-07-30T06:19:48.989Z'
-modified: '2021-06-07T06:51:51.908Z'
+modified: '2022-03-04T07:42:47.142Z'
 ---
 
 # atom
@@ -10,6 +10,7 @@ modified: '2021-06-07T06:51:51.908Z'
 > editor based on electron
 
 ## usage
+
 ```sh
 cmd + shift + p                   # command palette will pop up
 cmd + ;                           # open setting view
@@ -18,8 +19,9 @@ ctl + shift + p `Window:Reload`   # command palette
 ```
 
 ## atom package manager
+
 ```sh
-apm list                      # listinstalled packages
+apm list                          # list installed packages
 
 apm install \
   project-manager remember-session atom-beautify \
@@ -30,6 +32,7 @@ apm install \
 ```
 
 ## see also
+
 - [[vim]]
 - [[code]]
 - [[idea]]

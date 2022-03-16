@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: gpg
 created: '2019-07-30T06:19:49.076Z'
-modified: '2022-01-17T13:45:31.077Z'
+modified: '2022-02-02T08:54:51.346Z'
 ---
 
 # gpg
@@ -166,6 +166,8 @@ gpg --verify FILE_SHA256SUMS.sig FILE_SHA256SUMS                    # verify fil
 ```
 
 ## see also
+
+- [[apt-key]]
 - [[paperkey]]
 - [[gpgconf]]
 - [[keybase]]

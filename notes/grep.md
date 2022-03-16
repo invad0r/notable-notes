@@ -2,12 +2,12 @@
 tags: [linux]
 title: grep
 created: '2019-07-30T06:19:49.077Z'
-modified: '2021-11-01T10:18:41.907Z'
+modified: '2022-02-15T10:47:45.404Z'
 ---
 
 # grep
 
-> file pattern searcher
+> file pattern searcher - derived from [[ed]] operation `g/re/p`
 
 ## usage
 
@@ -93,6 +93,7 @@ echo "http://foo.net/path/repo.git" | grep -o -P '(?<=https:\/\/|http:\/\/|@).*?
 
 ## see also
 
+- [zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)
 - [[grepcidr]]
 - [[pkill]]
 - [[regex]]

@@ -2,23 +2,33 @@
 tags: [linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2021-07-08T12:57:28.350Z'
+modified: '2022-03-07T20:31:16.628Z'
 ---
 
 # curl
 
-> `c - url` - transfer a url
+> `"c"-url` - transfer a url
 
 ## usage
+
 ```sh
 -O                         # write output to a file named like original
 -o filename                # write output to a file named filename
+--remote-name-all
+--compressed               # automatically decompress the content
+
 -L                         # redo the request on the new place/redirect
--s, --silent               # -
+-s, --silent               # silent
+
 -H 'Host: foo.com'         # set Host-Header
--v, -vv, -vvv              # verbose level
 --write-out
+
+-v, -vv, -vvv              # verbose level
+--trace-ascii FILE         # enables full trace dump of all incoming and outgoing data
+                           # overrides --trace and -v, --verbose.
+--trace FILE               # full trace dump of all incoming and outgoing data
 ```
+
 ```sh
 curl -vv telnet://127.0.0.1:7878    # send data via telnet
 
@@ -74,34 +84,43 @@ curl -s
   -w "$(date +%FT%T)    dns %{time_namelookup}    connect %{time_connect}   firstbyte %{time_starttransfer}   total %{time_total}   HTTP %{http_code}\n" \
   --keepalive -K <(printf 'url="https://example.com/"\n%.0s' {1..10000}) 2>/dev/null 
 
-# mesure-time
+# mesure time
 for i in {1..20}; do curl -s -w "%{time_total}\n" -o /dev/null URL; done  
 curl -o /dev/null -s -w "%{time_connect}:%{time_starttransfer}:%{time_total}" URL
-#  timmelookup:        %{time_namelookup}\n
-#  time_connect:       %{time_connect}\n
-#  time_appconnect:    %{time_appconnect}\n
-#  time_pretransfer:   %{time_pretransfer}\n
-#  time_redirect:      %{time_redirect}\n
-#  time_starttransfer: %{time_starttransfer}\n
-#  -----------------------------------------\n
-#  time_total:         %{time_total}\n
 
 
-# dict protocol - aliases:
+# "poor-mans-keep-alive"
+nc -l 8080                  # seperate sessions
+curl HOST localhost:8080    #  "trick" curl to keep the first connection open 
+```
+
+## dict protocol - aliases
+
+```sh
 curl dict://dict.org/m:curl                 # m  match and find
 curl dict://dict.org/d:heisenbug:jargon     # d  define and lookup
 curl dict://dict.org/find:curl
+
 # Commands that break the URL description of the RFC (but not the DICT protocol) are
 curl dict://dict.org/show:db
 curl dict://dict.org/show:strat
 ```
 
+## gopher
+
+```sh
+curl gopher://gopherddit.com
+```
+
 ## see also
-- [[telnet]]
+
 - [[wget]]
+- [[nc]]
+- [[bash exec]]
+- [[telnet]]
 - [[xargs]]
 - [[url encoding]]
 - [curl and HTTP 1.1 keepalive test traffic](http://lzone.de/blog/curl+and+HTTP+1.1+keepalive+test+traffic)
 - [loige.co/extracting-data-from-wikipedia](http://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands)
-- [curl command without using cache](https://stackoverflow.com/questions/31653271/curl-command-without-using-cache)
-- [Book - Everything curl](https://ec.haxx.se/)
+- [stackoverflow.com/curl-command-without-using-cache](https://stackoverflow.com/questions/31653271/curl-command-without-using-cache)
+- [ec.haxx.se - Everything curl](https://ec.haxx.se/)

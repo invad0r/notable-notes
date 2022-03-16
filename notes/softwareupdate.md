@@ -2,7 +2,7 @@
 tags: [macos]
 title: softwareupdate
 created: '2021-09-30T06:53:42.930Z'
-modified: '2021-09-30T07:05:58.649Z'
+modified: '2022-02-01T10:15:42.582Z'
 ---
 
 # softwareupdate
@@ -35,3 +35,4 @@ softwareupdate --all --install --force
 ## see also
 
 - [[xcode-select]]
+- [[brew]]

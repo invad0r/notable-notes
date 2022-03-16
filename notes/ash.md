@@ -2,7 +2,7 @@
 tags: [shell/ash]
 title: ash
 created: '2021-05-12T08:58:17.934Z'
-modified: '2021-10-31T15:07:32.805Z'
+modified: '2022-03-03T15:40:01.741Z'
 ---
 
 # ash
@@ -12,11 +12,11 @@ modified: '2021-10-31T15:07:32.805Z'
 ## usage
 
 ```sh
-
+zsh
 ```
 
 ## see also
 
 - [[busybox]]
-- [[dash]]
+- [[bash]], [[dash]]
 - [rosettacode.org/wiki/Almquist_Shell](https://rosettacode.org/wiki/Almquist_Shell)

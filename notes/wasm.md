@@ -1,7 +1,7 @@
 ---
 title: wasm
 created: '2020-08-19T07:23:59.679Z'
-modified: '2020-08-31T13:19:39.354Z'
+modified: '2022-02-02T10:03:31.300Z'
 ---
 
 # wasm
@@ -16,10 +16,13 @@ modified: '2020-08-31T13:19:39.354Z'
 - uses structured control flow (`if` `else` `loop`) and avoids `GOTO` jumps, which allows parsing source in one pass
 - `wasm` uses `linear memory model` as memory addressing technique in which memory is organized in a single contagious address space. (aka flat memory model)
 - `wasm` is compiled and executed on the fly, as the bytes stream in
+
 ## usage
+
 ```c
 int sign(int x) { return (x % 2) * (2 - (x % 4)); }
 ```
+
 ```wasm
 (func (;1;) (type 0) (param i32) (result i32)
 
@@ -39,6 +42,7 @@ int sign(int x) { return (x % 2) * (2 - (x % 4)); }
 ```
 
 ## see also
+
 - [[asm]]
 - [[rust]]
 - [[clang]]

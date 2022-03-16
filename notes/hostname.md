@@ -2,7 +2,7 @@
 tags: [coreutils, net-tools]
 title: hostname
 created: '2019-09-26T09:09:44.806Z'
-modified: '2020-09-03T06:39:15.457Z'
+modified: '2022-03-04T07:46:42.329Z'
 ---
 
 # hostname
@@ -10,6 +10,7 @@ modified: '2020-09-03T06:39:15.457Z'
 > show or set the system's host name
 
 ## usage
+
 ```sh
 hostname NEW_HOSTNAME   # change server hostname without a system restart
 
@@ -18,6 +19,7 @@ hostname NEW_HOSTNAME   # change server hostname without a system restart
 ```
 
 ## see also
+
 - [[hostnamectl]]
 - [[host]]
 

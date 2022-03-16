@@ -1,7 +1,7 @@
 ---
 title: jsonpath
 created: '2020-10-09T11:50:35.973Z'
-modified: '2022-01-05T09:51:33.323Z'
+modified: '2022-01-25T11:02:10.138Z'
 ---
 
 # jsonpath
@@ -24,17 +24,22 @@ $ 	                # root object/element
 
 $.store.book[0].title             # expressions can use the dot–notation
 $['store']['book'][0]['title']    # or the bracket–notation
+```
 
+## functions
 
-# functions
+```sh
 min() 	    # (double)  provides min value of an array of numbers 	
 max() 	    # (double)  provides max value of an array of numbers 	
 avg() 	    # (double)  provides average value of an array of numbers 	
 stddev() 	  # (double)  provides standard deviation value of an array of numbers 	
 length() 	  # (integer) provides length of an array
 sum() 	    # (double)  provides sum value of an array of numbers 	
+```
 
-# filters
+## filters
+
+```sh
 == 	        # left is equal to right (note that 1 is not equal to '1')
 != 	        # left is not equal to right
 < 	        # left is less than right
@@ -51,10 +56,9 @@ size 	      # size of left (array or string) should match right
 empty 	    # left (array or string) should be empty
 ```
 
+## usage
+
 ```sh
-{.items[*].status.addresses[?(@.type=="ExternalIP")].address}
-
-
 kubectl get deployments -o jsonpath='{range .items[*]}
 {"---"}
 {"name: "}{@.metadata.name}
@@ -68,10 +72,17 @@ kubectl get deployments -o jsonpath='{range .items[*]}
   {range @.spec.template.spec.containers[*].envFrom[*]}{"- "}{@.secretRef.name}
   {end}
 {end}' | yq e -P 'del(.. | select(length == 0))' - | yq e -P 'del(.. | select(length == 0))'
+
+kubectl get svc SERVICE          -o jsonpath='{.spec.clusterIP}'
+                                              {.items[*].status.addresses[?(@.type=="ExternalIP")].address}
+kubectl get nodes                -o jsonpath='{.items[*].status.addresses[?(@.type=="InternalDNS")].address}'
+kubectl get pods -l run=my-nginx -o jsonpath='{.items[0].metadata.name}'
+kubectl get pods                 -o jsonpath='{range .items[*]}{@.metadata.name}{" "}{@.spec.containers[*].image}{"\n"}{end}'
 ```
 
 ## see also
 
+- [[go-template]]
 - [[kubectl]]
 - [[xpath]]
 - [[jq]]

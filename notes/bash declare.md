@@ -2,12 +2,12 @@
 tags: [shell/bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2022-01-05T09:12:52.906Z'
+modified: '2022-02-10T09:13:33.034Z'
 ---
 
 # bash declare
 
-> `declare` and `typeset` are synonym
+> set variable values and attributes
 
 ## usage
 
@@ -43,6 +43,8 @@ declare | grep Colors   # Colors=([0]="purple" [1]="reddish-orange" [2]="light g
 ## see also
 
 - [[bash export]]
+- [[bash set]]
+- [[bash unset]]
 - [[bash typeset]]
 - [[bash array]]
 - [[bash readarray]]

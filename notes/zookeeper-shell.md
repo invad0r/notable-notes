@@ -1,12 +1,13 @@
 ---
 title: zookeeper-shell
 created: '2019-09-23T09:47:31.660Z'
-modified: '2021-10-31T14:56:47.665Z'
+modified: '2022-01-31T18:59:20.696Z'
 ---
 
 # zookeeper-shell
 
 ## usage
+
 ```sh
 zookeeper-shell zookeeper-1:2181                # starts interactive shell
 
@@ -23,6 +24,7 @@ ls / true                     # Watch can be set on any znode while using read o
 ```
 
 ## see also
+
 - [[consul]]
 - [[etcdctl]]
 - [[kafka]]

@@ -2,7 +2,7 @@
 tags: [python]
 title: virtualenv
 created: '2019-07-30T06:19:49.221Z'
-modified: '2021-02-08T15:02:13.482Z'
+modified: '2022-02-01T14:56:11.483Z'
 ---
 
 # virtualenv
@@ -10,9 +10,11 @@ modified: '2021-02-08T15:02:13.482Z'
 > tool to create isolated python environments
 
 ## install
+
 `pip install virtualenv --verbose`, `pip3 install virtualenv`
 
 ## usage
+
 ```sh
 virtualenv VIRTUALENV_NAME
 
@@ -23,9 +25,16 @@ pip install pre-commit                  # install to virtualenv
 pip3 install virtualenv
 virtualenv venv --python=python3.8
 source venv/bin/activate
+
+
+python3 -m venv ./venv
+source ./venv/bin/activate      # activate virtual env
+type python pip python3 pip3    # show different paths
 ```
 
 ## see also
+
+- [[python]]
 - [[pip]]
 - [Stack Overflow - Virtualenv Command Not Found](https://stackoverflow.com/a/36577160)
 - [virtualenv.pypa.io/en/latest/](https://virtualenv.pypa.io/en/latest/)

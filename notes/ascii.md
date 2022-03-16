@@ -1,23 +1,21 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2020-09-05T09:39:22.389Z'
+modified: '2022-02-04T10:55:01.286Z'
 ---
 
 # ascii
 
-> `american standard code for infromation interchange` 
-> character `encoding` standard for electronic communication
+> `american standard code for infromation interchange` - character `encoding` standard
 
 ## usage
+
 ```sh
 man ascii   # table hexadecimal
 
 for ((i=32;i<127;i++)) do printf "\\$(printf %03o "$i")"; done printf "\n"    # print all avail. characters
 
-
-# get decimal-set
-echo '"' | tr -d "\n" | od -An -t uC
+echo '"' | tr -d "\n" | od -An -t uC   # get decimal-set
 #          |            └────────────────  Use od (octal dump) to print:
 #          |                                   -An    means Address none
 #    remove "newline" char                     -t     select a type
@@ -35,12 +33,15 @@ printf "\\$(printf %o 74)" # or
 xxd -r <<<'0 4a'           # decimal
 ```
 
-char | oct | hex |dec
-:--  | :-- | :-- |:--
-`"`  | 042 | 22  | 34
-`J`  | 112 | 4a  | 74
+```
+char | oct | hex | dec
+"    | 042 | 22  | 34
+J    | 112 | 4a  | 74
+```
 
 ## see also
+
+- [[http]]
 - [[url encoding]]
 - [[xxd]]
 - [[od]]

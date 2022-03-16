@@ -2,10 +2,12 @@
 tags: [javascript]
 title: node
 created: '2020-02-28T21:20:20.353Z'
-modified: '2021-09-14T09:57:49.309Z'
+modified: '2022-02-01T14:59:56.299Z'
 ---
 
 # node
+
+> server-side [[javascript]] runtime
 
 ## install
 

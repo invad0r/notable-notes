@@ -2,13 +2,14 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2021-06-04T12:20:12.892Z'
+modified: '2022-01-31T19:02:24.480Z'
 ---
 
 # ssh
 > `secure shell`
 
 ## usage
+
 ```sh
 SSH_ASKPASS               # set by ssh user   - path to askpass program
 SSH_AUTH_SOCK             # set by ssh-agent  - path to socket
@@ -17,10 +18,14 @@ SSH_CONNECTION            # set by sshd       - client and server socket info
 SSH_ORIGINAL_COMMAND      # set by sshd       - client’s remote command string
 SSH_TTY                   # set by sshd       - name of allocated tty
 ```
+
 ```sh
--n    #  redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops
--l    #  specify username for login
--o ServerAliveInterval=60 -o ServerAliveCountMax=120   # 120 x 60
+-n                                         # redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops
+-l                                         # specify username for login
+
+-o ServerAliveInterval=60 
+-o ServerAliveCountMax=120    # 120 x 60
+
 -o StrictHostKeyChecking=no
 -o StrictHostKeyChecking=accept-new
 -o LogLevel=LOGLEVEL                    # loglevels: QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG, DEBUG1, DEBUG2, and DEBUG3
@@ -31,6 +36,7 @@ SSH_TTY                   # set by sshd       - name of allocated tty
 -o PreferredAuthentications=password
 -o PubkeyAuthentication=no
 ```
+
 ```sh
 ssh whoami.filippo.io           # prints _o/ Hello! and closes
 
@@ -48,6 +54,7 @@ ssh -C                          # compress all data stdin, stdout, stderr, x11, 
 ```
 
 ## see also
+
 - for session recon/system info use: [[uptime]], [[id]], [[w]], [[uname]], [[passwd]], [[quota]], [[date]], [[cal]], [[finger]], [[last]], [[bash history]]
 - [[git]]
 - [[sshpass]]

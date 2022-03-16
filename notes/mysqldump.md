@@ -2,10 +2,12 @@
 tags: [database]
 title: mysqldump
 created: '2019-08-18T14:33:58.877Z'
-modified: '2022-01-06T08:53:40.870Z'
+modified: '2022-02-02T09:34:01.761Z'
 ---
 
 # mysqldump
+
+> dump [[mysql]] database
 
 ## usage
 
@@ -19,10 +21,9 @@ mysqldump -uUSER -pPASSWORD DBNAME | gzip > BACKUP.sql.gz				# for encrypted exp
 
 gunzip < BACKUP.sql.gz | mysql -uUSER -pPASSWORD DBNAME     		# for encrypted import
 
-# ignore tables
 mysqldump \
   --no-data \
-  --ignore-table=DATABASE.jos_mpm \
+  --ignore-table=DATABASE.jos_mpm `# ignore tables` \
   -h$HOST -u$USR -p$PWD \
   $DB > $(date +%Y-%m-%d)_SCHEME_$DB.sql
 
@@ -40,3 +41,7 @@ mysqldump \
 - [[mongodump]]
 - [[pg_dump]]
 - [[pv]]
+- [[zip]]
+- [[gzip]]
+- [[pigz]]
+- [[date]]

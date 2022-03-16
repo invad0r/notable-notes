@@ -2,7 +2,7 @@
 tags: [container/docker, go]
 title: go-template
 created: '2019-07-30T06:19:49.074Z'
-modified: '2022-01-17T13:24:46.266Z'
+modified: '2022-01-25T10:58:18.109Z'
 ---
 
 # go-template 
@@ -92,10 +92,11 @@ kubectl get events --sort-by='.metadata.creationTimestamp' \
 
 ## see also
 
+- [[go]]
 - [[kubectl]]
+- [[jsonpath]]
 - [[docker]]
 - [container-solutions.com/docker-inspect-template-magic](http://container-solutions.com/docker-inspect-template-magic/)
 - [docker.com/article/how-do-i-change-the-docker-gwbridge-address](https://success.docker.com/article/how-do-i-change-the-docker-gwbridge-address)
-- [[go]]
 - [golang.org/pkg/text/template](https://golang.org/pkg/text/template/)
 - [golang.org/pkg/text/template/#example_Template_share](https://golang.org/pkg/text/template/#example_Template_share)

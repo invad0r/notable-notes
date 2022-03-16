@@ -2,12 +2,13 @@
 tags: [Notebooks]
 title: acid crud
 created: '2019-08-18T16:14:42.254Z'
-modified: '2020-08-24T12:24:59.821Z'
+modified: '2022-02-02T08:49:37.072Z'
 ---
 
 # acid crud
 
 ## acid
+
 > set of properties that guarante reliable database transactions
 ```
 A C I D
@@ -37,6 +38,7 @@ On POSIX systems, durability is achieved through `sync` operations: `fsync`, `fd
 `fdatasync()` does not necessarily update the meta-data associated with a file – such as the `last modified` date – but only the file data
 
 ## crud
+
 > 4 basic functions of persistent storage
 ```
 C R U D
@@ -54,6 +56,7 @@ C R U D
 | Delete (Destroy) |  `DELETE`  | `DELETE`         |                                       
 
 ## see also
+
 - [[rest api design]]
 - [blog.httrack.com/../everything-you-always-wanted-to-know-about-fsync](http://blog.httrack.com/blog/2013/11/15/everything-you-always-wanted-to-know-about-fsync/)
 - [lwn.net/postgresqls-fsync-surprise](https://lwn.net/Articles/752063/)

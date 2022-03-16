@@ -2,14 +2,14 @@
 tags: [linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2021-11-08T15:09:00.065Z'
+modified: '2022-03-04T07:41:47.540Z'
 ---
 
 # jq
 
 > cli json processor - transforms json, by selecting, iterating, reducing and otherwise mangling json documents
 
-## usage
+## flags
 
 ```sh
 -c, --compact-output    # compact to single line,1 no pretty print
@@ -19,6 +19,8 @@ modified: '2021-11-08T15:09:00.065Z'
 -n, --null-input        # Don't read any input at all! useful when using jq as a simple calculator or to construct json data from scratch
 -S, --sort-keys         # output fields of each object with the keys in sorted order
 ```
+
+## usage
 
 ```sh
 echo '[1, "foo", ["foo"]]' | jq '. | tostring'      # `tojson` `fromjson`
@@ -76,9 +78,6 @@ jq -n -c '[{"foo": 1, "bar": 2}, {"foo": 3, "quux": 4}] | map(select( .bar ))'  
 
 ## see also
 
-- [remysharp.com/drafts/jq-recipes](https://remysharp.com/drafts/jq-recipes)
-- [unix.stackexchange.com/jq-print-key-and-value-for-all-in-sub-object](https://unix.stackexchange.com/a/406425)
-- [stackoverflow.com/printing-multiple-values-on-the-same-line](https://stackoverflow.com/a/46131963)
 - [[fx]]
 - [[jsonpath]]
 - [[yq]]
@@ -86,3 +85,6 @@ jq -n -c '[{"foo": 1, "bar": 2}, {"foo": 3, "quux": 4}] | map(select( .bar ))'  
 - [[govc]]
 - [[aws]]
 - [[kubectl]]
+- [remysharp.com/drafts/jq-recipes](https://remysharp.com/drafts/jq-recipes)
+- [unix.stackexchange.com/jq-print-key-and-value-for-all-in-sub-object](https://unix.stackexchange.com/a/406425)
+- [stackoverflow.com/printing-multiple-values-on-the-same-line](https://stackoverflow.com/a/46131963)

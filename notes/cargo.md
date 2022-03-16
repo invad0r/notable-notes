@@ -2,7 +2,7 @@
 tags: [packagemanager, rust]
 title: cargo
 created: '2020-02-27T16:59:23.781Z'
-modified: '2020-11-20T22:40:48.880Z'
+modified: '2022-02-01T14:34:30.796Z'
 ---
 
 # cargo
@@ -10,9 +10,11 @@ modified: '2020-11-20T22:40:48.880Z'
 > package manager for rust
 
 ## install
+
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` will add the [[cargo]], [[rustc]] and [[rustup]]
 
 ## usage
+
 ```sh
 cargo install mdcat
 
@@ -38,6 +40,7 @@ cargo install gping
 ```
 
 ## see also
+
 - [[rust]]
 - [[rustup]]
 - [doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/index.html)

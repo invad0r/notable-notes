@@ -2,7 +2,7 @@
 tags: [shell/dash]
 title: dash
 created: '2021-05-12T08:47:27.799Z'
-modified: '2021-05-12T08:57:58.912Z'
+modified: '2022-03-03T15:40:19.633Z'
 ---
 
 # dash
@@ -20,7 +20,7 @@ echo $0     # print current shell
 ```
 
 ## see also
-- [[bash]]
+- [[bash]], [[ash]], [[zsh]]
 - [wiki.archlinux.org/Dash](https://wiki.archlinux.org/title/Dash)
 - [wiki.ubuntu.com/DashAsBinSh](https://wiki.ubuntu.com/DashAsBinSh)
 - [man7.org/linux/man-pages/man1/dash](https://man7.org/linux/man-pages/man1/dash.1.html)

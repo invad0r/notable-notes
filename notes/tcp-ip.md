@@ -2,7 +2,7 @@
 tags: [network]
 title: tcp-ip
 created: '2021-05-28T06:16:51.067Z'
-modified: '2021-05-28T06:36:41.415Z'
+modified: '2022-02-10T12:55:47.494Z'
 ---
 
 # tcp-ip
@@ -37,9 +37,10 @@ Datalink      | Frames                  | ethernet, ppp, switch, bridge
 Physical      | Physical Structure      | coax, fiber, wireless, hubs, repeaters
 ```
 
-
-
 ## see also
+
+- [[osi model]]
+- [[https]]
 - [[telnet]]
 - [[dns]]
 - [[udp]]

@@ -2,7 +2,7 @@
 tags: [container]
 title: ctr
 created: '2020-03-12T13:48:00.174Z'
-modified: '2021-05-27T09:57:42.854Z'
+modified: '2022-01-27T09:45:28.586Z'
 ---
 
 # ctr
@@ -10,6 +10,7 @@ modified: '2021-05-27T09:57:42.854Z'
 > default cli named ctr based on the GRPC api - create and manage containers run with containerd
 
 ## usage
+
 ```sh
 ctr --help                # very helpful
 
@@ -21,6 +22,7 @@ ctr events                # get events
 ```
 
 ## see also
+
 - [github.com/projectatomic/containerd/cli](https://github.com/projectatomic/containerd/blob/master/docs/cli.md)
 - [[containerd]]
 - [[linuxkit]]

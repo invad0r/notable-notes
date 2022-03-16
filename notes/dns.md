@@ -2,10 +2,12 @@
 tags: [dns]
 title: dns
 created: '2019-07-30T06:19:49.040Z'
-modified: '2020-08-12T12:15:08.928Z'
+modified: '2022-01-26T08:32:31.576Z'
 ---
 
 # dns
+
+> domain name system
 
 - port 53 UDP/TCP
 - `RFC 882` -> `RFC 1034`
@@ -15,6 +17,7 @@ modified: '2020-08-12T12:15:08.928Z'
 - ZoneFile: SOA (=Start of Authority), NAS, A, AAAA, CNAME, MX, PTR, TXT
 
 ## resolve.conf config-directives
+
 ```sh
 man resolv.conf
 
@@ -31,4 +34,8 @@ search SEARCH_LIST
 ```
 
 ## see also
+
+- [[spf]]
 - [No domain defined in /etc/resolv.conf](https://unix.stackexchange.com/a/128096/193945)
+- [[dig]]
+- [[nslookup]]

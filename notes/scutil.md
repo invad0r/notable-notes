@@ -2,7 +2,7 @@
 tags: [dns, macos]
 title: scutil
 created: '2019-07-30T06:19:49.202Z'
-modified: '2020-08-12T12:10:52.959Z'
+modified: '2022-02-02T10:11:07.858Z'
 ---
 
 # scutil
@@ -30,4 +30,5 @@ sudo killall -INFO mDNSResponder
 ```
 
 ## see also
+
 - [how-to-view-dns-cache-in-osx](https://stackoverflow.com/a/38882447/2087704)

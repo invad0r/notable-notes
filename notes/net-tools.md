@@ -2,7 +2,7 @@
 tags: [net-tools, network]
 title: net-tools
 created: '2020-09-03T06:24:46.842Z'
-modified: '2020-09-03T06:44:53.068Z'
+modified: '2022-03-04T07:46:19.712Z'
 ---
 
 # net-tools
@@ -24,5 +24,6 @@ modified: '2020-09-03T06:44:53.068Z'
 - [[ypdomainname]] - does the same as domainname
 
 ## see also
+
 - [[coreutils]]
 - [[net-tools vs iproute]]

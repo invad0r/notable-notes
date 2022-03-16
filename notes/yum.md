@@ -2,7 +2,7 @@
 tags: [linux, packagemanager]
 title: yum
 created: '2019-07-30T20:38:53.233Z'
-modified: '2020-02-03T12:28:39.380Z'
+modified: '2022-01-24T10:58:23.886Z'
 ---
 
 # yum
@@ -10,6 +10,7 @@ modified: '2020-02-03T12:28:39.380Z'
 > `yellowdog updater, modified`
 
 ## usage
+
 ```sh
 yum install -y package
 
@@ -28,11 +29,16 @@ yum makecache fast  # Download yum repository data to cache
 yum list installed
 
 yum list available
+
+yum repolist
 ```
 
 ## see also
+
 - [[rpm]]
 - [[tdnf]]
-- [readhat.com/yum-cheat-sheet](https://access.redhat.com/articles/yum-cheat-sheet)
-- https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf
+- [redhat.com/yum-cheat-sheet](https://access.redhat.com/articles/yum-cheat-sheet)
+- [[apt-get]]
+- [[aws]]
+- [[amazon-linux-extras]]
 

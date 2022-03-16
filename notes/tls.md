@@ -2,7 +2,7 @@
 tags: [cryptography, network]
 title: tls
 created: '2019-07-30T06:19:49.253Z'
-modified: '2020-09-03T07:03:54.536Z'
+modified: '2022-02-10T12:54:03.792Z'
 ---
 
 # tls
@@ -24,4 +24,7 @@ modified: '2020-09-03T07:03:54.536Z'
 > `X.509` is a standard that defines the format of public key `certificates`. X.509 certificates are used in many Internet protocols, including TLS/SSL
 
 ## see also
+
+- [[ip]]
+- [[http]]
 - [[osi model]]

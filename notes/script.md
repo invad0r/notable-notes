@@ -1,7 +1,7 @@
 ---
 title: script
 created: '2021-06-16T15:51:41.553Z'
-modified: '2021-06-16T15:59:32.528Z'
+modified: '2022-02-02T10:11:00.992Z'
 ---
 
 # script
@@ -23,7 +23,6 @@ modified: '2021-06-16T15:59:32.528Z'
 ```
 
 ```sh
-
 script RECORDING_NAME       # start recording
 
 script -a RECORDING_NAME    # don't overwrite previous recording

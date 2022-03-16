@@ -1,7 +1,7 @@
 ---
 title: git flow
 created: '2021-03-25T08:00:57.686Z'
-modified: '2021-03-25T08:05:02.837Z'
+modified: '2022-02-02T10:11:43.239Z'
 ---
 
 # git flow
@@ -9,9 +9,11 @@ modified: '2021-03-25T08:05:02.837Z'
 > collection of git extensions providing high-level repository operations for Vincent Driessen's branching model
 
 ## isntall
+
 `brew install git-flow`
 
 ## usage
+
 ```sh
 git flow init -d  # accept all defaults
 
@@ -36,6 +38,7 @@ git flow support start RELEASE BASE
 ```
 
 ## see also
+
 - [[git]]
 - [[git-chglog]]
 - [[semtag]]

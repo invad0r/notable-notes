@@ -2,10 +2,12 @@
 tags: [shell/bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2022-01-05T09:15:24.711Z'
+modified: '2022-03-11T08:40:24.641Z'
 ---
 
 # bash redirects
+
+## usage
 
 ```sh
 # "pipe"
@@ -25,16 +27,29 @@ CMD 1> FILE
 n>|FILE              # forces output to FILE from FILE descriptor n even if noclobber is set
 <> FILE              # uses FILE as both stdin and stdout
 n<>FILE              # uses FILE as both input and output for file descriptor n
+```
 
+## here-doc
 
-# "here-doc"
+```sh
 [n]<<[-]word         # here-document
   here-document
 delimiter
 
-[n]<<< word          # here-string
+echo <<EOF> FILE
+Hello World
+EOF
+```
 
+## here-string
+
+```sh
+[n]<<< word          # here-string
+```
+
+```sh
 <()                  # process substitution
+< <()                  # process substitution
 
 n>FILE               # directs FILE descriptor n to FILE
 n<FILE               # takes FILE descriptor n from FILE
@@ -52,8 +67,13 @@ n<&m                 # file descriptor n is made to be a copy of the input file 
 >&-                  # closes the stdout
 n>&-                 # closes the ouput from FILE descriptor n
 n<&-                 # closes the input from FILE descripor n
+```
 
-# dash: redirection from   stdin to stdout  or  stdout to stdin
+## dash
+
+> redirection from  stdin to stdout  or  stdout to stdin
+
+```sh
 cat -                           # redirects from stdin to stdout
 echo "whatever" | cat -         # redirects from stdin to stdout
 grep "foo" FILE | diff FILE2 -

@@ -2,7 +2,7 @@
 tags: [iac]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2022-01-18T19:33:46.132Z'
+modified: '2022-03-04T07:31:25.433Z'
 ---
 
 # aws
@@ -10,9 +10,10 @@ modified: '2022-01-18T19:33:46.132Z'
 > aws cli - unified tool to manage your aws services
 
 ## install
+
 `curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg" && installer -pkg ./AWSCLIV2.pkg -target /`
 
-## usage
+## environment variables
 
 ```sh
 AWS_PROFILE                   # use profile from config
@@ -26,6 +27,8 @@ AWS_DEFAULT_REGION
 
 [docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
 
+## flags
+
 ```sh
 --color STRING              # support for color output: on, off, auto
 --debug                     # enables debug logging by providing full python logs; (`CMD 2> FILE`, `CMD &> FILE`)
@@ -38,11 +41,21 @@ AWS_DEFAULT_REGION
 
 [docs.aws.amazon.com/cli/latest/userguide/cli-configure-options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html)
 
+## usage
+
+## configure
+
 ```sh
 aws configure --profile PROFILE
 
 aws --profile PROFILE --region us-east-1 COMMAND
 ```
+
+```sh
+[default]
+credential_source=Ec2InstanceMetadata
+```
+[stackoverflow.com/replace-aws-keys-with-iam-role-in-aws-credentials](https://stackoverflow.com/a/50382297/14523221)
 
 ## security token service
 
@@ -54,6 +67,9 @@ aws sts get-caller-identity --query Account --output text     # get current acco
 
 ```sh
 aws iam list-roles --path-prefix /aws-service-role/config.amazonaws.com/    # get roles of service-link
+
+aws iam list-policies --query 'Policies[PolicyName==`AmazonS3ReadOnlyAccess`].Arn'
+
 
 # aws allows assigning only one MFA device (virtual or hardware) to root accounts
 # if the list-virtual-mfa-devices returns valid 
@@ -71,6 +87,20 @@ aws iam get-service-last-accessed-details --job-id JOB_ID
 aws iam create-policy \
   --policy-name POLICY_NAME \
   --policy-document file://~/PATH/TO/POLICY.json
+
+
+aws iam put-group-policy \
+  --group-name GROUPE_NAME \
+  --policy-name POLICY_NAME \
+  --policy-document POLICY_DOCUMENT
+
+aws iam create-user --user-name USER_NAME
+
+aws iam add-user-to-group --group-name GROUPE_NAME --user-name USER_NAME
+
+aws iam get-group --group-name GROUP_NAME
+
+aws iam create-access-key --user-name USER_NAME
 ```
 
 ## simple storage service
@@ -112,37 +142,68 @@ aws s3api delete-objects --bucket BUCKET \
   --delete "$(aws s3api list-object-versions --bucket BUCKET --query='{Objects: DeleteMarkers[].{Key:Key,VersionId:VersionId}}')"
 ```
 
+## cloudfront
+
+```sh
+aws cloudfront list-cloud-front-origin-access-identities --output json
+```
+
 ## elastic cloud compute
 
 ```sh
-aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query "Reservations[*].Instances[*].InstanceId"
+aws ec2 describe-instances \
+  --filters "Name=tag-key,Values=eks:cluster-name" "Name=tag-value,Values=eksworkshop*" \
+  --query 'Reservations[*].Instances[*].[PrivateDnsName,Tags[?Key==`eks:nodegroup-name`].Value|[0],Placement.AvailabilityZone,PrivateIpAddress,PublicIpAddress]' \
+  --output table   
+
+aws ec2 describe-instances \
+  --filters Name=instance-state-name,Values=running \
+  --query "Reservations[*].Instances[*].InstanceId"
  
---query 'Images[?CreationDate>=`2016-04-01`][]'
---filters "Name=name,Values=ubuntu*"                                                  --query "sort_by(Images, &CreationDate)[].Name"
---filters "Name=name,Values=ubuntu/images/*" --query "sort_by(Images, &CreationDate)[].[Name, ImageId]"
---filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64*"         --query 'Images[*].[ImageId,CreationDate]' 
---filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*" --query 'sort_by(Images,&CreationDate)[-1].ImageId'
---filters "Name=name,Values=amazon-eks-node-1.11*"                                    --query 'reverse(sort_by(Images, &CreationDate))[0]'
---filters 'Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-*-amd64-server-*' 'Name=state,Values=available' --query 'Images[*].[ImageId,CreationDate,Architecture]' \
-  | jq -r ‘.Images | sort_by(.CreationDate) | last(.[]).ImageId’
+  --query 'Images[?CreationDate>=`2016-04-01`][]'
+  --query "sort_by(Images, &CreationDate)[].Name"
+  --query "sort_by(Images, &CreationDate)[].[Name, ImageId]"
+  --query 'Images[*].[ImageId,CreationDate]' 
+  --query 'sort_by(Images,&CreationDate)[-1].ImageId'
+  --query 'reverse(sort_by(Images, &CreationDate))[0]'
+  --query 'Images[*].[ImageId,CreationDate,Architecture]'
+                            
+--filters 'Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-*-amd64-server-*' 'Name=state,Values=available'
+
 # latest ubuntu 20 server arm64 image  => [-1:] returns the last element of the array
---filters "Name=name,Values=ubuntu*20.04-arm64-server*"                               --query "sort_by(Images, &CreationDate)[-1:].[Name, ImageId]"
---filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-xenial-16.04*"               --query 'sort_by(Images, &CreationDate)[-1].[CreationDate,Name,ImageId]'
+--filters "Name=name,Values=ubuntu*20.04-arm64-server*" \
+  --query "sort_by(Images, &CreationDate)[-1:].[Name, ImageId]"
+
+--filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-xenial-16.04*" \
+  --query 'sort_by(Images, &CreationDate)[-1].[CreationDate,Name,ImageId]'
 
 # find vpc dependencies when 'DependencyViolation' occure
 VPC="vpc-ID"
-aws ec2 describe-internet-gateways        --filters "Name=attachment.vpc-id,Values=$VPC"          | jq -r '.InternetGateways[].InternetGatewayId'
-aws ec2 describe-subnets                  --filters 'Name=vpc-id,Values='$VPC                     | grep SubnetId
-aws ec2 describe-route-tables             --filters 'Name=vpc-id,Values='$VPC                     | grep RouteTableId
-aws ec2 describe-network-acls             --filters 'Name=vpc-id,Values='$VPC                     | grep NetworkAclId
-aws ec2 describe-vpc-peering-connections  --filters 'Name=requester-vpc-info.vpc-id,Values='$VPC  | grep VpcPeeringConnectionId
-aws ec2 describe-vpc-endpoints            --filters 'Name=vpc-id,Values='$VPC                     | grep VpcEndpointId
-aws ec2 describe-nat-gateways             --filters 'Name=vpc-id,Values='$VPC                     | grep NatGatewayId
-aws ec2 describe-security-groups          --filters 'Name=vpc-id,Values='$VPC                     | grep GroupId
-aws ec2 describe-instances                --filters 'Name=vpc-id,Values='$VPC                     | grep InstanceId
-aws ec2 describe-vpn-connections          --filters 'Name=vpc-id,Values='$VPC                     | grep VpnConnectionId
-aws ec2 describe-vpn-gateways             --filters 'Name=attachment.vpc-id,Values='$VPC          | grep VpnGatewayId
-aws ec2 describe-network-interfaces       --filters 'Name=vpc-id,Values='$VPC                     | grep NetworkInterfaceId
+aws ec2 describe-internet-gateways
+  --filters "Name=attachment.vpc-id,Values=$VPC" | jq -r '.InternetGateways[].InternetGatewayId'
+aws ec2 describe-subnets
+  --filters 'Name=vpc-id,Values='$VPC | grep SubnetId
+aws ec2 describe-route-tables
+  --filters 'Name=vpc-id,Values='$VPC | grep RouteTableId
+aws ec2 describe-network-acls
+  --filters 'Name=vpc-id,Values='$VPC | grep NetworkAclId
+aws ec2 describe-vpc-peering-connections
+  --filters 'Name=requester-vpc-info.vpc-id,Values='$VPC  | grep VpcPeeringConnectionId
+aws ec2 describe-vpc-endpoints
+  --filters 'Name=vpc-id,Values='$VPC | grep VpcEndpointId
+aws ec2 describe-nat-gateways
+  --filters 'Name=vpc-id,Values='$VPC | grep NatGatewayId
+aws ec2 describe-security-groups
+  --filters 'Name=vpc-id,Values='$VPC | grep GroupId
+aws ec2 describe-instances
+  --filters 'Name=vpc-id,Values='$VPC | grep InstanceId
+aws ec2 describe-vpn-connections
+  --filters 'Name=vpc-id,Values='$VPC | grep VpnConnectionId
+aws ec2 describe-vpn-gateways
+  --filters 'Name=attachment.vpc-id,Values='$VPC  | grep VpnGatewayId
+aws ec2 describe-network-interfaces
+  --filters 'Name=vpc-id,Values='$VPC | grep NetworkInterfaceId
+
 
 aws autoscaling describe-auto-scaling-groups \
   --query "AutoScalingGroups[? Tags[? (Key=='eks:cluster-name') && Value=='CLUSTER_NAME']].[AutoScalingGroupName, MinSize, MaxSize,DesiredCapacity]" \
@@ -155,12 +216,72 @@ aws autoscaling describe-auto-scaling-groups `# get auto scaling group name` \
 aws autoscaling update-auto-scaling-group \
   --auto-scaling-group-name ASG_NAME \
   --min-size 3 --desired-capacity 3 --max-size 4 # increase/decrease capacities
+
+
+aws ec2 create-security-group \
+	--description 'RDS SG' \
+	--group-name 'RDS_SG' \
+	--vpc-id VPC_ID
+
+aws ec2 describe-subnets `# get public subnet id's used by eks clsuter`\
+  --filters "Name=vpc-id,Values=VPC_ID" "Name=tag:Name,Values=EKS_CLUSTER_NAME/SubnetPublic*" \
+  --query 'Subnets[*].SubnetId' \
+  --output json | jq -c .
+```
+
+## elastic kubernetes service
+
+```sh
+aws eks list-clusters
+
+aws eks describe-cluster --name CLUSTER_NAME
+
+aws eks describe-cluster `# get vpc id`\
+	--name CLUSTER_NAME \
+	--query "cluster.resourcesVpcConfig.vpcId" \
+	--output text
+
+aws eks get-token --cluster-name CLUSTER_NAME | jq -r '.status.token'
+
+aws eks update-kubeconfig --region REGION --name CLUSTER_NAME
+```
+
+## relational database service
+
+```sh
+# create RDS Postgresql instance
+aws rds create-db-instance \
+  --db-instance-identifier RDS_NAME \
+  --db-name DB_NAME \
+  --db-instance-class db.t3.micro \
+  --engine postgres \
+  --db-subnet-group-name SEC_GROUP_NAME \
+  --vpc-security-group-ids $RDS_SG \
+  --master-username NAME \
+  --publicly-accessible \
+  --master-user-password RDS_PASSWORD \
+  --backup-retention-period 0 \
+  --allocated-storage 20
+
+aws rds describe-db-instances `# get current status of rds e.g. creating, available,..` \
+  --db-instance-identifier RDS_NAME \
+  --query "DBInstances[].DBInstanceStatus" \
+  --output text
+
+aws rds describe-db-instances `# get database endpoint` \
+  --db-instance-identifier RDS_NAME \
+  --query 'DBInstances[0].Endpoint.Address' \
+  --output text
+
+aws rds delete-db-instance \
+  --db-instance-identifier RDS_NAME \
+  --delete-automated-backups \
+  --skip-final-snapshot
 ```
 
 ## dynamodb
 
 ```sh
-
 aws dynamodb list-tables
 
 aws dynamodb scan --table-name "TABLE" \
@@ -186,7 +307,11 @@ aws cloudtrail lookup-events --max-results 1
 aws cloudtrail lookup-events --lookup-attributes AttributeKey=EventName,AttributeValue=DescribeVpcs
 #   AttributeKeys: AccessKeyId, EventId, EventName, EventSource, ReadOnly, ResourceName, ResourceType, Username
 
+```
 
+## configservice
+
+```sh
 aws configservice select-resource-config \
   --expression "SELECT resourceType GROUP BY resourceType" | jq -r '.Results[] | fromjson | .resourceType' | sort
 
@@ -195,7 +320,11 @@ aws securityhub get-findings \
   --sort-criteria <sort criteria> \
   --page-size <findings per page> \
   --max-items <maximum number of results>
+```
 
+## securityhub
+
+```sh
 aws securityhub get-findings \
   --filter 'SeverityLabel={Value=CRITICAL,Comparison=EQUALS},ComplianceStatus={Value=FAILED,Comparison=EQUALS},ResourceType={Value=AwsS3Bucket,Comparison=EQUALS}' \
   | jq -r '.Findings[].Resources[].Id'
@@ -208,10 +337,13 @@ aws securityhub get-findings \
 
 ## see also
 
+- [[aws-nuke]]
+- [[eksctl]]
+- [[amazon-linux-extras]]
 - [[ec2-instance-selector]]
 - [[mc]]
 - [[kubectl]]
-- [[gcloud]], [[eksctl]]
+- [[gcloud]]
 - [[jq]], [[yq]]
 - [[installer]]
 - [[localstack]], [[minikube]]

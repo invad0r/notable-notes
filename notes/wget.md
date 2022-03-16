@@ -2,22 +2,33 @@
 tags: [linux, network]
 title: wget
 created: '2019-07-30T06:19:49.266Z'
-modified: '2019-12-10T14:46:19.397Z'
+modified: '2022-02-17T15:11:15.546Z'
 ---
 
 # wget
 
 > non-interactive network downloader
 
+## install
+
+`apt-get install wget`, `yum install wget`
+
 ## usage
+
 ```sh
-wget -qO- URL | PROGRAMM
-  # -q    - no stdout
-  # -O    - redirect output to file 
-  # -     - dash is the stdoutput
+-q        # no stdout
+-O        # redirect output to file 
+-         # 'dash' -> stdout
+```
+
+```sh
+wget -qO- URL | CMD
 
 wget --quiet --tries=1 --spider http://localhost/
 ```
 
 ## see also
+
 - [[curl]]
+- [[nc]]
+- [daniel.haxx.se/docs/curl-vs-wget](https://daniel.haxx.se/docs/curl-vs-wget.html)

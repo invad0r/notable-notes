@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: tee
 created: '2019-07-30T06:19:49.251Z'
-modified: '2021-10-25T08:56:36.546Z'
+modified: '2022-02-01T15:14:56.131Z'
 ---
 
 # tee
@@ -30,6 +30,6 @@ echo 'IP HOST' | sudo tee -a /etc/hosts     # append with sudo
 
 - [[pee]]
 - [[jq]]
-- [[vault]]
+- [[sponge]]
 - [[bash redirects]]
 - [[bash process substitution]]

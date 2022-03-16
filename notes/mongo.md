@@ -2,7 +2,7 @@
 tags: [database, javascript]
 title: mongo
 created: '2019-07-30T06:19:49.178Z'
-modified: '2022-01-18T14:00:53.015Z'
+modified: '2022-02-04T08:24:53.228Z'
 ---
 
 # mongo
@@ -86,7 +86,7 @@ db.getCollection('COLLECTION').count({state: "EXECUTING"})          // count
 db.getCollection('COLLECTION').find({}).sort({_id: -1}).limit(1);   // get last item of collection
 
 
-db.getCollection('COLLECTION').find({email: /^foo/})    // finde where email starts with foo
+db.getCollection('COLLECTION').find({email: /^foo/})          // find where email starts with foo
 db.getCollection('COLLECTION').find({email: /^ma.*l$/})   
 // .* means to match 0 or more of any character
 //  matches string that starts with "ma" and ends with "l", ignoring whatever is between.
@@ -106,7 +106,7 @@ for (var i=0; i<states.length; i++) {
 ## see also
 - [[mongosh]]
 - [[mongod]]
-- [[mongodump mongorestore]]
+- [[mongodump]]
 - [[mysql]]
 - [[psql]]
 - [docs.mongodb.com/manual/reference/mongo-shell/#command-helpers](https://docs.mongodb.com/manual/reference/mongo-shell/#command-helpers)

@@ -2,7 +2,7 @@
 tags: [iac]
 title: ansible-playbook
 created: '2019-11-28T11:53:47.807Z'
-modified: '2019-12-25T20:04:08.815Z'
+modified: '2022-02-02T08:50:15.733Z'
 ---
 
 # ansible-playbook
@@ -10,6 +10,7 @@ modified: '2019-12-25T20:04:08.815Z'
 > runs ansible playbooks, executing the defined tasks on the targeted hosts.
 
 ## usage
+
 ```sh
 ansible-playbook --syntax-check playbook.yml
 
@@ -21,4 +22,5 @@ ansible-playbook -i hosts ansible-bootstrap-ubuntu-16.04.yml    # bootstraps mac
 ```
 
 ## see also
+
 - [[ansible]]

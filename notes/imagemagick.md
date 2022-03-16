@@ -1,7 +1,7 @@
 ---
 title: imagemagick
 created: '2020-12-28T21:19:42.860Z'
-modified: '2021-04-14T14:18:21.663Z'
+modified: '2022-01-26T15:41:36.131Z'
 ---
 
 # imagemagick
@@ -9,10 +9,14 @@ modified: '2021-04-14T14:18:21.663Z'
 > create, edit, compose, or convert bitmap images, can read and write images in a variety of formats
 
 ## install
+
 `brew install imagemagick`
 
-## usage
+## convert
+
 ```sh
+convert IMAGE.png -resize 128x128 IMAGE_resized.png       # resize image
+
 # generate pdf file
 convert xc:none -page Letter  FILE.pdf
 convert xc:none -page A4      FILE.pdf
@@ -33,7 +37,9 @@ convert \
 ```
 
 ## see also
-- [imagemagick.org](https://imagemagick.org/)
+
 - [imagemagick.org/script/convert](https://imagemagick.org/script/convert.php)
+- [legacy.imagemagick.org/Usage/resize](https://legacy.imagemagick.org/Usage/resize/)
 - [[ffmpeg]]
-- [[gs]] ghostscript
+- [[gs]]
+- [[youtube-dl]]

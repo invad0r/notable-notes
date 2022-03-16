@@ -2,7 +2,7 @@
 tags: [python]
 title: pip
 created: '2019-08-02T07:21:18.995Z'
-modified: '2020-03-13T14:00:01.819Z'
+modified: '2022-02-01T14:53:34.759Z'
 ---
 
 # pip
@@ -10,9 +10,11 @@ modified: '2020-03-13T14:00:01.819Z'
 > package-management system used to install and manage software packages written in python
 
 ## install
+
 `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py --force-reinstall`
 
 ## usage
+
 ```sh
 pip list
 
@@ -22,6 +24,7 @@ pip install PACKAGE --user          # avoid "Operation not permitted" and using 
 ```
 
 ## see also
+
 - [[virtualenv]]
 - [[gem]]
 - [[curl]]

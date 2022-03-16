@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: telnet
 created: '2019-07-30T06:19:49.252Z'
-modified: '2021-05-28T06:26:40.116Z'
+modified: '2022-02-01T14:42:21.375Z'
 ---
 
 # telnet
@@ -12,6 +12,7 @@ modified: '2021-05-28T06:26:40.116Z'
 > used to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection
 
 ## usage
+
 ```sh
 ## test email
 telnet smtp.mydomain.com 25
@@ -26,6 +27,7 @@ telnet smtp.mydomain.com 25
     sent from linux box
     .
 ```
+
 ```sh
 telnet github.com 80
 
@@ -43,7 +45,9 @@ Connection: close
 
 Connection closed by foreign host.
 ```
+
 ## see also
+
 - [[nc]]
 - [[curl]]
 - [[tcp-ip]]

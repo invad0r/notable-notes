@@ -1,7 +1,7 @@
 ---
 title: mongoexport mongoimport
 created: '2021-09-07T07:14:32.779Z'
-modified: '2021-09-07T07:25:40.527Z'
+modified: '2022-02-04T08:24:38.525Z'
 ---
 
 # mongoexport mongoimport
@@ -22,5 +22,5 @@ mongoimport
 
 ## see also
 
-- [[mongodump mongorestore]]
+- [[mongodump]]
 - [[mongo]]

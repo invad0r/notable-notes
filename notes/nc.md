@@ -2,7 +2,7 @@
 tags: [linux, network, webserver]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2021-11-11T08:34:27.591Z'
+modified: '2022-02-01T14:29:50.305Z'
 ---
 
 # nc
@@ -45,9 +45,6 @@ nc 192.168.100.1 5566                                               # use shell
 nc -q1 -lvp 1234 < file.txt                                         # poor man's file server
 nc serverhost 1234 > output.txt                                     # to retrieve file from remote host. NAT bugs this.
 
-
-
-
 nc -l 1234 > out.file                                               # wait for receiving file
 nc -w 30 serverhost 1234 < out.file                                 # send file over network, timeout after 30 sec
 
@@ -80,9 +77,9 @@ done
 echo 'Hello, Seashells!' | nc seashells.io 1337     # "pipe output from command-line programs to the web in real-time"
 ```
 
-
 ## see also
 
+- [[curl]]
 - [[ncat]]
 - [[socat]]
 - [[netstat]]

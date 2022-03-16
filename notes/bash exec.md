@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash exec
 created: '2019-07-30T06:19:49.006Z'
-modified: '2021-10-31T14:38:30.706Z'
+modified: '2022-01-25T10:22:24.770Z'
 ---
 
 # bash exec
@@ -17,8 +17,11 @@ modified: '2021-10-31T14:38:30.706Z'
 ## usage
 
 ```sh
-exec [-cl] [-a NAME] [COMMAND [ARGS]]
+-cl
+-a NAME
+```
 
+```sh
 exec <FILE        # redirects stdin to a file - from that point on, all stdin comes from that file, rather than keyboard input 
                   # provides a method of reading a file line by line and possibly parsing each line of input using sed and/or awk
 
@@ -37,7 +40,26 @@ N > FILE          # affects only the newly-forked process, not the entire script
 exec 3<>/dev/tcp/www.google.com/80
 echo -e "GET / HTTP/1.1\r\nhost: http://www.google.com\r\nConnection: close\r\n\r\n" >&3
 cat <&3
+
 ```
+
+```sh
+cat <<EOF> FILE
+POST /some/pathh HTTP/1.0
+User-Agent: curl/7.37.0
+Host: localhost
+Accept: */*
+Content-Length: 7
+Content-Type: application/x-www-form-urlencoded
+
+var=val
+EOF
+
+exec 5<>/dev/tcp/www.google.com/80
+cat FILE >&5
+cat <&5 # reply
+```
+[unix.stackexchange.com/how-to-run-the-http-request-without-using-curl](https://unix.stackexchange.com/a/234089/440548)
 
 ## see also
 

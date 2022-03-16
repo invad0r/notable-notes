@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: cut
 created: '2020-01-26T16:58:23.384Z'
-modified: '2021-06-08T05:32:54.641Z'
+modified: '2022-01-31T14:00:39.838Z'
 ---
 
 # cut
@@ -24,4 +24,8 @@ cut -d ' ' -f 6-
 ```
 
 ## see also
+
+- [[tr]]
+- [[cut]]
+- [[awk]]
 - [[bash eval]]

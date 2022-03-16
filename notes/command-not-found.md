@@ -1,7 +1,7 @@
 ---
 title: command-not-found
 created: '2022-01-13T13:54:36.496Z'
-modified: '2022-01-13T13:58:15.905Z'
+modified: '2022-02-01T15:18:17.193Z'
 ---
 
 # command-not-found
@@ -16,9 +16,15 @@ modified: '2022-01-13T13:58:15.905Z'
 
 ```sh
 command-not-found COMMAND
+
+cnf COMMAND
 ```
 
 ## see also
 
 - [[zypper]]
-- [command-not-found.com/](https://command-not-found.com/)
+- [[apropos]]
+- [[man]]
+- [[whatis]]
+- [[bash help]]
+- [command-not-found.com](https://command-not-found.com/)

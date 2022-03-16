@@ -2,18 +2,22 @@
 tags: [shell]
 title: bc
 created: '2019-09-24T06:25:36.082Z'
-modified: '2021-05-12T08:47:10.143Z'
+modified: '2022-03-03T09:11:13.829Z'
 ---
 
 # bc
 
 > `basic calculator` is an `arbitrary-precision calculator language`
 
-## usage
-```sh
-# flags
-#   -l, --mathlib     uses the predefined math routines
+## flags
 
+```sh
+-l, --mathlib       # uses the predefined math routines
+```
+
+## usage
+
+```sh
 echo "(2/3)+(7/8)"         | bc -l  # 1.54166666666666666666
 echo "(2/3)+(7/8)"         | bc     # 0
 
@@ -32,6 +36,7 @@ echo "scale=6;(2/3)+(7/8)" | bc     # 1.541666
 ```
 
 ## see also
+
 - [[bash arithmetic expansion]]
 - [[expr]]
 - [[bash printf]]

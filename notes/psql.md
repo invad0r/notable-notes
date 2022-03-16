@@ -2,15 +2,17 @@
 tags: [database]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2021-05-11T07:29:12.785Z'
+modified: '2022-02-04T08:25:24.070Z'
 ---
 
 # psql
 
 ## install
+
 `apt install postgresql`
 
 ## usage
+
 ```sh
 psql DBNAME USER
 
@@ -57,6 +59,7 @@ SELECT pg_size_pretty( pg_database_size('DATABASE') );    -- get db size
 ```
 
 ## see also
+
 - [[pg_dump]]
 - [PSQL-META-COMMANDS](https://www.postgresql.org/docs/current/static/app-psql.html#APP-PSQL-META-COMMANDS)
 - [alternate-output-format-for-psql](https://stackoverflow.com/questions/9604723/alternate-output-format-for-psql)

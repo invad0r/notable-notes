@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash suspend
 created: '2019-08-02T06:42:37.633Z'
-modified: '2021-05-12T08:46:08.490Z'
+modified: '2022-02-10T10:13:52.778Z'
 ---
 
 # bash suspend
@@ -11,6 +11,11 @@ modified: '2021-05-12T08:46:08.490Z'
 
 ## usage
 
+```sh
+suspend
+```
+
 ## see also
+
 - [[bash logout]]
 - [[bash exit]]

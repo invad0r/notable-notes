@@ -2,7 +2,7 @@
 tags: [container]
 title: k3s
 created: '2021-10-15T07:36:40.840Z'
-modified: '2022-01-17T13:26:23.649Z'
+modified: '2022-02-02T10:46:35.058Z'
 ---
 
 # k3s
@@ -12,14 +12,28 @@ modified: '2022-01-17T13:26:23.649Z'
 ## usage
 
 ```sh
+k3s server \
+  --cluster-reset \
+  --cluster-reset-restore-path=/var/lib/rancher/k3s/server/db/snapshots/etcd-snapshot-k3s-server-1-1643738640 \
+  --node-external-ip 192.168.56.11 \
+  --node-ip 192.168.56.11
 
+```
+
+```sh
+systemctl start k3s
+systemctl stop k3s
+
+systemctl daemon-reload && systemctl restart k3s
 ```
 
 ## see also
 
+- [[k3sup]]
 - [[kubectl]]
 - [[k3d]]
-- [[k3sup]]
+- [[k0s]]
+- [[k9s]]
 - [[kind]]
 - [[vagrant]]
 - [[microk8s]]

@@ -2,7 +2,7 @@
 tags: [iproute, network]
 title: ip
 created: '2019-09-03T11:51:54.855Z'
-modified: '2022-01-13T14:16:08.910Z'
+modified: '2022-03-04T07:44:42.167Z'
 ---
 
 # ip
@@ -12,7 +12,7 @@ modified: '2022-01-13T14:16:08.910Z'
 ## install
 `apt install iproute2`, `yum install iproute`
 
-## usage
+## flags
 
 ```sh
 -s, -stats, -statistics       # Output more information. -s -s => more verbose
@@ -45,6 +45,8 @@ tunnel                    # tunnel over IP.
 tuntap                    # manage TUN/TAP devices.
 xfrm                      # manage IPSec policies.
 ```
+
+## usage
 
 ```sh
 ip [OPTS] OBJECT {CMD|HELP}

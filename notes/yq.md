@@ -1,7 +1,7 @@
 ---
 title: yq
 created: '2019-08-20T12:05:18.926Z'
-modified: '2021-12-16T15:25:07.249Z'
+modified: '2022-01-25T13:48:28.370Z'
 ---
 
 # yq
@@ -10,7 +10,13 @@ modified: '2021-12-16T15:25:07.249Z'
 
 ## install
 
-`brew install yq`, `GO111MODULE=on go get github.com/mikefarah/yq/v4`
+```sh
+brew install yq
+
+GO111MODULE=on go get github.com/mikefarah/yq/v4        # from source
+
+yq shell-completion bash > /etc/bash_completion.d/yq    # install bach_completion
+```
 
 ## flags
 
@@ -54,9 +60,6 @@ strenv      # inject the contents from an environment variable
 ## usage
 
 ```sh
-yq shell-completion bash > /etc/bash_completion.d/yq    # install bach_completion
-
-
 yq r file.yml services.application.image                # read file and print ..image
 
 yq w -i -s ../update.yml file.yml                       # write/update file

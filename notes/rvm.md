@@ -2,7 +2,7 @@
 tags: [ruby, versionmanager]
 title: rvm
 created: '2019-08-02T07:23:19.957Z'
-modified: '2021-06-01T13:41:46.909Z'
+modified: '2022-02-02T10:06:50.776Z'
 ---
 
 # rvm
@@ -14,9 +14,11 @@ USE [[rbenv]] INSTEAD !
 [duseev.com/articles/rbenv-vs-rvm/](https://duseev.com/articles/rbenv-vs-rvm/)
 
 ## install
+
 [rvm.io/rvm/install](https://rvm.io/rvm/install)
 
 ## usage
+
 ```sh
 rvm implode                     # removes all ruby installations it manages, everything in ~/.rvm
 
@@ -32,6 +34,7 @@ rvm install 2.0.0
 ```
 
 ## see also
+
 - [[rbenv]]
 - [[nvm]]
 - [[gpg]]

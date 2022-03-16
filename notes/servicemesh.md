@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: servicemesh
 created: '2020-05-11T06:38:47.231Z'
-modified: '2020-09-02T17:44:03.078Z'
+modified: '2022-02-10T11:19:26.271Z'
 ---
 
 # servicemesh
@@ -18,5 +18,7 @@ modified: '2020-09-02T17:44:03.078Z'
 - servicemesh-endpoints can be placed anywhere that has `layer 3` connectivity with the other mesh endpoints (on premise, cloud, etc)
 
 ## see also
+
+- [[kubectl]]
 - [[microservice]]
 - [[docker network]]

@@ -2,14 +2,21 @@
 tags: [database]
 title: sqlite
 created: '2019-07-30T06:19:49.240Z'
-modified: '2021-05-14T06:33:07.894Z'
+modified: '2022-01-31T18:03:49.262Z'
 ---
 
 # sqlite
 
 > c lib that implements small, fast, self-contained, high-reliability, full-featured, sql-database engine
 
+## install
+
+```sh
+zypper install sqlite3
+```
+
 ## usage
+
 ```sh
 sqlite3 DATABASE.db    # create or us database
 
@@ -50,6 +57,7 @@ SELECT rowid, text FROM playsearch WHERE text MATCH "whether tis nobler"; -- Now
 ```
 
 ## see also
+
 - [[mysql]]
 - [[psql]]
 - [[mongo]]

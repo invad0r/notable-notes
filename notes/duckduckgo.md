@@ -2,12 +2,15 @@
 tags: [Notebooks]
 title: duckduckgo
 created: '2020-01-23T08:27:54.958Z'
-modified: '2021-02-09T09:50:09.600Z'
+modified: '2022-03-04T07:39:14.922Z'
 ---
 
 # duckduckgo
 
+>
+
 ## usage
+
 ```sh
 !die  find      # foreward search to die.net for man pages
 !m              # google maps
@@ -20,5 +23,6 @@ modified: '2021-02-09T09:50:09.600Z'
 ```
 
 ## see also
+
 - [[firefox]]
 - [duckduckgo.com/bang](https://duckduckgo.com/bang)

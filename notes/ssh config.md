@@ -2,7 +2,7 @@
 tags: [ssh]
 title: ssh config
 created: '2019-08-22T08:32:53.895Z'
-modified: '2020-01-03T13:14:54.915Z'
+modified: '2022-01-31T19:01:34.628Z'
 ---
 
 # ssh config
@@ -84,6 +84,8 @@ Host foo
 ```
 
 ## see also
+
+- [[ssh]]
 - [[sshd]]
 - [create-ssh-config-file-on-linux-unix - cyberciti.biz](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
 - [what does h mean in sshd configuration - askubuntu.com](https://askubuntu.com/questions/605479/what-does-h-mean-in-sshd-configuration)

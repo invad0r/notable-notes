@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: macos keyboard shortcuts
 created: '2020-08-24T08:09:16.562Z'
-modified: '2021-11-04T10:58:12.208Z'
+modified: '2022-03-08T07:56:06.576Z'
 ---
 
 # macos keyboard shortcuts
@@ -40,6 +40,13 @@ modified: '2021-11-04T10:58:12.208Z'
 ⌘ + ⇧ + [ or ]          # cycle through tabs in Safari by pressing [ when moving right or ] when moving left
 ⌘ + ⇧                   # See all your open tabs in an active browser
 ⌘ + ⇧ + T               # Opens the last closed tab in the active browser
+```
+
+
+## finder
+
+```sh
+⌘ + ⇧ + g "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/"   # go to this location in finder
 ```
 
 ## see also
