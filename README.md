@@ -2,11 +2,12 @@
 
 > collection of markdown notes about tools used on the cli
 
-## prerquesites
+## prerequesites
 
 - [github.com/notable/notable](https://github.com/notable/notable)
 
 ## usage
 
-- clone this repo
+- clone repo
 - open repo dir using `notable`
+- start taking notes
