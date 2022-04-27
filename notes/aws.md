@@ -2,7 +2,7 @@
 tags: [iac]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2022-03-04T07:31:25.433Z'
+modified: '2022-04-11T09:21:01.116Z'
 ---
 
 # aws
@@ -11,18 +11,86 @@ modified: '2022-03-04T07:31:25.433Z'
 
 ## install
 
-`curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg" && installer -pkg ./AWSCLIV2.pkg -target /`
+```sh
+curl -LO "https://awscli.amazonaws.com/AWSCLIV2.pkg" && installer -pkg ./AWSCLIV2.pkg -target /
+```
 
 ## environment variables
 
 ```sh
-AWS_PROFILE                   # use profile from config
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
-AWS_CONFIG_FILE               # default: "~/.aws/config"
-AWS_SHARED_CREDENTIALS_FILE   # default:  ~/.aws/credentials
-AWS_DEFAULT_OUTPUT            # json, yaml, yaml-stream, text, table
-AWS_DEFAULT_REGION
+AWS_ACCESS_KEY_ID                   # access key associated with an IAM user or role
+                                    # overrides profile setting: aws_access_key_id
+AWS_CA_BUNDLE                       # path to a certificate bundle to use for HTTPS certificate validation.
+                                    # overrides profile setting: ca_bundle
+                                    # can override by --ca-bundle
+AWS_CLI_AUTO_PROMPT                 # enables auto-prompt, two settings can be used:
+                                    # `on`         uses full auto-prompt mode each time you attempt to run an aws command. This includes pressing ENTER after both a complete command or incomplete command.
+                                    # `on-partial` uses partial auto-prompt mode. If a command is incomplete or cannot be run due to client-side validation errors, auto-prompt is used. This mode is particular useful if you have pre-existing scripts, runbooks, or you only want to be auto-prompted for commands you are unfamiliar with rather than prompted on every command.
+                                    # aws_cli_auto_prompt=on      
+                                    # aws_cli_auto_prompt=on-partial
+                                    # overrides profile setting: cli_auto_prompt 
+                                    # You can override this environment variable by using the --cli-auto-prompt and --no-cli-auto-prompt cli parameters
+
+AWS_CLI_FILE_ENCODING               # encoding used for text files. By default encoding matches your locale
+                                    # to set encoding different from the locale, use the aws_cli_file_encoding environment variable. For example, if you use Windows with default encoding CP1252, setting aws_cli_file_encoding=UTF-8 sets the CLI to open text files using UTF-8
+AWS_CONFIG_FILE                     # location of the file that the AWS CLI uses to store configuration profiles. default: ~/.aws/config
+
+AWS_DATA_PATH                       # list of additional directories to check outside of the built-in search path of ~/.aws/models when loading AWS CLI data
+                                    # Setting this environment variable indicates additional directories to check first before falling back to the built-in search path. Multiple entries should be separated with the os.pathsep character, which is : on Linux or macOS and ; on Windows.
+AWS_DEFAULT_OUTPUT                  # output format: json, yaml, yaml-stream, text, table
+                                    # overrides profile setting: output
+                                    # You can override this environment variable by using the --output cli parameter
+AWS_DEFAULT_REGION                  # AWS Region to send the request to.
+                                    # overrides profile setting: region
+                                    # override by --region
+AWS_EC2_METADATA_DISABLED           # Disables use of the Amazon EC2 instance metadata service (IMDS)
+                                    # If set to true, user credentials or configuration (like the region) are not requested from IMDS
+AWS_MAX_ATTEMPTS                    # Specifies a value of maximum retry attempts the AWS CLI retry handler uses, where the initial call counts toward the value that you provide. For more information on retries, see AWS CLI retries.
+                                    # overrides profiles settin:g max_attempts
+AWS_METADATA_SERVICE_NUM_ATTEMPTS   # attempts to retrieve credentials once from the instance metadata service before stopping
+AWS_METADATA_SERVICE_TIMEOUT        # seconds before connection to instance metadata service should time out
+
+AWS_PAGER                           # pager program used for output. By default, AWS CLI version 2 returns all output through your operating system’s default pager program.
+                                    # unset to disable all use external paging program
+                                    # overrides profile setting: cli_pager
+AWS_PROFILE                         # name of profile with credentials and options
+                                    # If defined, overrides the behavior of using the profile named [default] in the configuration file
+                                    # You can override this environment variable by using the --profile cli parameter.
+AWS_REGION                          # The AWS SDK compatible environment variable that specifies the AWS Region to send the request to.
+                                    # If defined, overrides the values in the environment variable AWS_DEFAULT_REGION and the profile setting region
+                                    # You can override this environment variable by using the --region cli parameter.
+AWS_RETRY_MODE                      # Specifies which retry mode AWS CLI uses. There are three retry modes available: legacy (default), standard, and adaptive. For more information on retries, see AWS CLI retries.
+                                    # overrides profiles settin:g retry_mode
+
+AWS_ROLE_ARN                        # ARN of an IAM role with a web identity provider that you want to use to run the AWS CLI commands
+                                    # Used with the AWS_WEB_IDENTITY_TOKEN_FILE and AWS_ROLE_SESSION_NAME environment variables
+                                    # overrides profile setting: role_arn. You can't specify a role session name as a cli parameter
+                                    # Note: this environment variable only applies to an assumed role with web identity provider it does not apply to the general assume role provider configuration.
+                                    # For more information on using web identities, see Assume role with web identity.
+AWS_ROLE_SESSION_NAME               # name to attach to the role session. value provided to the RoleSessionName parameter when the AWS CLI calls the AssumeRole operation, and becomes part of the assumed role user ARN: arn:aws:sts::123456789012:assumed-role/role_name/role_session_name
+                                    # This is an optional parameter. If you do not provide this value, a session name is generated automatically. This name appears in AWS CloudTrail logs for entries associated with this session.
+                                    # overrides profile setting: role_session_name
+                                    # Used with the AWS_ROLE_ARN and AWS_WEB_IDENTITY_TOKEN_FILE environment variables.
+                                    # For more information on using web identities, see Assume role with web identity.
+                                    # Note: This environment variable only applies to an assumed role with web identity provider it does not apply to the general assume role provider configuration.
+AWS_SECRET_ACCESS_KEY               # secret key associated with the access key. This is essentially the "password" for the access key.
+                                    # overrides profile setting: aws_secret_access_key. You can't specify the secret access key ID as a cli option
+AWS_SESSION_TOKEN                   # session token value that is required if you are using temporary security credentials that you retrieved directly from AWS STS operations
+                                    # For more information, see the Output section of the assume-role command in the AWS CLI Command Reference
+                                    # overrides profile setting: aws_session_token
+AWS_SHARED_CREDENTIALS_FILE         # location of the file that the AWS CLI uses to store access keys. default path ~/.aws/credentials
+                                    # You can't specify this value in a named profile setting or by using a cli parameter
+
+AWS_STS_REGIONAL_ENDPOINTS          # how CLI determines AWS service endpoint that the AWS CLI client uses to talk to the AWS Security Token Service (AWS STS).
+                                    # default value for version 1: "legacy"
+                                    # – Uses global STS endpoint, sts.amazonaws.com, for the following AWS Regions: ap-northeast-1, ap-south-1, ap-southeast-1, ap-southeast-2, aws-global, ca-central-1, eu-central-1, eu-north-1, eu-west-1, eu-west-2, eu-west-3, sa-east-1, us-east-1, us-east-2, us-west-1, and us-west-2. All other Regions automatically use their respective regional endpoint
+                                    # default value for version 2: "regional"
+                                    # – The AWS CLI always uses the AWS STS endpoint for the currently configured Region. For example, if the client is configured to use us-west-2, all calls to AWS STS are made to the regional endpoint sts.us-west-2.amazonaws.com instead of the global sts.amazonaws.com endpoint. To send a request to the global endpoint while this setting is enabled, you can set the Region to aws-global.
+
+AWS_WEB_IDENTITY_TOKEN_FILE         # path to a file that contains an OAuth 2.0 access token or OpenID Connect ID token that is provided by an identity provider
+                                    # The AWS CLI loads the contents of this file and passes it as the WebIdentityToken argument to the AssumeRoleWithWebIdentity operation
+                                    # Used with the AWS_ROLE_ARN and AWS_ROLE_SESSION_NAME environment variables
+                                    # overrides profile setting: web_identity_token_file
 ```
 
 [docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
@@ -32,11 +100,16 @@ AWS_DEFAULT_REGION
 ```sh
 --color STRING              # support for color output: on, off, auto
 --debug                     # enables debug logging by providing full python logs; (`CMD 2> FILE`, `CMD &> FILE`)
---regeion REGION            # override region
+--region REGION             # override region
 
 --dry-run
 --output text
---owners amazon 
+--owners amazon
+
+--profile PROFILE
+
+--cli-auto-prompt
+--no-cli-auto-prompt 
 ```
 
 [docs.aws.amazon.com/cli/latest/userguide/cli-configure-options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html)
@@ -61,6 +134,13 @@ credential_source=Ec2InstanceMetadata
 
 ```sh
 aws sts get-caller-identity --query Account --output text     # get current account id
+
+aws sts get-access-key-info --access-key-id ASIA...4B5S       # returns account id for specified access key id
+
+aws --profile PROFILE sts get-session-token \
+  --duration-seconds 900 `# 15min`\
+  --serial-number arn:aws:iam::ACCOUNT:mfa/USER \
+  --token-code ONETIMECODE
 ```
 
 ## identity and access management
@@ -101,6 +181,9 @@ aws iam add-user-to-group --group-name GROUPE_NAME --user-name USER_NAME
 aws iam get-group --group-name GROUP_NAME
 
 aws iam create-access-key --user-name USER_NAME
+
+aws iam list-users | jq '.Users[].UserName' \
+  | xargs -I{} aws iam list-access-keys --user-name {} | jq -r '.AccessKeyMetadata[] | "\(.UserName) \(.AccessKeyId)"'
 ```
 
 ## simple storage service
@@ -227,6 +310,45 @@ aws ec2 describe-subnets `# get public subnet id's used by eks clsuter`\
   --filters "Name=vpc-id,Values=VPC_ID" "Name=tag:Name,Values=EKS_CLUSTER_NAME/SubnetPublic*" \
   --query 'Subnets[*].SubnetId' \
   --output json | jq -c .
+
+
+aws ec2 describe-instance-types --instance-types m6i.large | jq
+```
+
+### instance types
+
+```sh
+General Purpose       # most popular; used for web servers, development environments
+Compute Optimized     # compute-intensive apps such as some scientific modeling or high-performance web servers
+Memory Optimized      # memory-intensive apps, such as real-time big data analytics, or running Hadoop or Spark
+Accelerated Computing # additional hardware (GPUs, FPGAs) to provide massive amounts of parallel processing for tasks such as graphics processing
+Storage Optimized     # tasks that require huge amounts of storage, specifically with sequential read-writes, such as log processing
+```
+
+- [[ec2-instance-selector]]
+- [[max-pods-calculator]]
+
+## pricing
+
+```sh
+aws pricing describe-services --region us-east-1 | jq -r '.Services[] | .ServiceCode'
+```
+
+```sh
+curl 'https://ec2.shop?region=us-west-2'
+curl 'https://ec2.shop?region=us-west-2&filter=m4,m5,ssd'
+curl 'https://ec2.shop' -H 'accept: json'
+```
+
+- [[ec2-instance-selector]]
+- [ec2.shop](https://ec2.shop)
+- [docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)
+
+
+## elastic load balancers
+
+```sh
+aws elb describe-load-balancers | jq '.LoadBalancerDescriptions[].LoadBalancerName'
 ```
 
 ## elastic kubernetes service
@@ -236,14 +358,14 @@ aws eks list-clusters
 
 aws eks describe-cluster --name CLUSTER_NAME
 
-aws eks describe-cluster `# get vpc id`\
-	--name CLUSTER_NAME \
+aws eks describe-cluster --output text --name CLUSTER_NAME `# get vpc id` \
 	--query "cluster.resourcesVpcConfig.vpcId" \
-	--output text
 
 aws eks get-token --cluster-name CLUSTER_NAME | jq -r '.status.token'
 
 aws eks update-kubeconfig --region REGION --name CLUSTER_NAME
+
+aws eks describe-nodegroup --nodegroup-name NODE_GROUP-202200000012 --cluster-name CLUSTER_NAME
 ```
 
 ## relational database service
@@ -347,4 +469,5 @@ aws securityhub get-findings \
 - [[jq]], [[yq]]
 - [[installer]]
 - [[localstack]], [[minikube]]
+- [[installer]]
 - [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)

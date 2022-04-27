@@ -2,14 +2,14 @@
 tags: [linux]
 title: grep
 created: '2019-07-30T06:19:49.077Z'
-modified: '2022-02-15T10:47:45.404Z'
+modified: '2022-04-08T14:58:03.264Z'
 ---
 
 # grep
 
 > file pattern searcher - derived from [[ed]] operation `g/re/p`
 
-## usage
+## flags
 
 ```sh
 -s, --no-messages              # suppress error messages
@@ -69,6 +69,8 @@ $        (Question)           # match expression at the end of a line, as in `A$
 \{x\}                         # match exactly x occurrences of the preceding.
 \{x,\}                        # match x or more occurrences of the preceding.
 ```
+
+## usage
 
 ```sh
 find | grep 'pattern' file /dev/null       # show filename with find !

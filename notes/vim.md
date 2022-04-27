@@ -10,9 +10,9 @@ modified: '2022-02-15T10:43:27.323Z'
 ## usage
 
 ```sh
-vim -p file1 file2 file3	  # open files in tabs
+vim -p file1 file2 file3    # open files in tabs
 
-vim $(!!)		                # open file from last output
+vim $(!!)                   # open file from last output
 
 vim -y                      # easy mode, beavese like click-and-type editore, ctrl+o -> :q to quit
 ```
@@ -165,9 +165,9 @@ mi            ; mark current position with i
 :bw                   ; buffer wipe / delete all buffers
 
 
-:tabnew filename		  ; load file in new tab
+:tabnew filename      ; load file in new tab
 :tabm n
-:tabm 2		            ; move current tab to position 2
+:tabm 2                ; move current tab to position 2
 :Sexplore
 :Sex                  ; SplitExplore
 :Vex                  ; VerticalExplore
@@ -184,8 +184,8 @@ mi            ; mark current position with i
 
 :r
 :read
-		name		"insert file content below curser
-		!cmd		"insert cmd content below curser
+    name   "insert file content below curser
+    !cmd   "insert cmd content below curser
 
 :r!date     # insert date
 
@@ -197,16 +197,17 @@ mi            ; mark current position with i
 
 :pu
 :put
-:[line]pu[t] [x]	" put text from register x
-:[line]pu[t]! [x]	" put text from register x
+:[line]pu[t] [x]   " put text from register x
+:[line]pu[t]! [x]  " put text from register x
 ```
 
 ## set
 
 set options that configure Vim are of three types:
+
 - `boolean`: on or off (`:help 'autochdir'`)
 - `number`: an integer value (`:help 'textwidth'`)
-- `string`: a string value (`:help 'backspace'`) 
+- `string`: a string value (`:help 'backspace'`)
 
 ```sh
 :help set
@@ -259,7 +260,7 @@ listchars=tab:»\ ,trail:·,nbsp:·,extends:›,precedes:‹,space:.
 :tabnew filename		  # load file in new tab
 
 :tabm n
-:tabm 2		            # move current tab to position 2
+:tabm 2               # move current tab to position 2
 
 gt                    # pext tab
 gT                    # prev tab
@@ -279,29 +280,26 @@ gT                    # prev tab
 ```sh
 :vsp    # vertical split
 :sp     # horizontal split
+
+C-w j -  navigate down
+C-w k -  navigate up
+C-w l -  navigate right
+C-w h -  navigate left
+C-w _ -  Max out the height of the current split
+C-w | -  Max out the width of the current split
+C-w = -  Normalize all split sizes, which is very handy when resizing terminal
 ```
 
-<kbd>C-w j</kbd> -  navigate down
-<kbd>C-w k</kbd> -  navigate up
-<kbd>C-w l</kbd> -  navigate right
-<kbd>C-w h</kbd> -  navigate left
-<kbd>C-w _</kbd> -  Max out the height of the current split
-<kbd>C-w |</kbd> -  Max out the width of the current split
-<kbd>C-w =</kbd> -  Normalize all split sizes, which is very handy when resizing terminal
-
-
 ## resize
+
 ```sh
 :res
-:resize 60		" resize splits e.g. :help
-:resize +5 
+:resize 60    " resize splits e.g. :help
+:resize +5
 
 :vertical resize 80
 :vertical resize +4
 ```
-
-
-## vim script
 
 ```sh
 :for i in range(2016,2020)

@@ -2,7 +2,7 @@
 tags: [c]
 title: asm
 created: '2019-07-30T06:19:48.988Z'
-modified: '2020-09-02T17:33:49.395Z'
+modified: '2022-04-06T11:36:41.806Z'
 ---
 
 # asm
@@ -15,6 +15,7 @@ modified: '2020-09-02T17:33:49.395Z'
 - `VLIW` Very Long Instruction Word
 
 ## usage
+
 ```asm
 ; opcode operands
 add R1, R2, 3
@@ -59,6 +60,7 @@ void junk( void ) {
 ```
 
 ## see also
+
 - [[wasm]]
 - [[c]]
 - [[rust]]

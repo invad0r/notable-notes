@@ -14,6 +14,7 @@ modified: '2022-01-13T14:13:06.781Z'
 `brew install vagrant`
 
 ## usage
+
 ```sh
 vagrant init --minimal centos/7                   # create minimal Vagrantfile
 
@@ -84,7 +85,6 @@ Vagrant.configure("2") do |config|
    SHELL
 end
 ```
-
 
 ```ruby
 BOX_IMAGE = "bento/ubuntu-16.04"

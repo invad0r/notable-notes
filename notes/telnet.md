@@ -8,7 +8,7 @@ modified: '2022-02-01T14:42:21.375Z'
 # telnet
 
 > user interface to the TELNET protocol
-> a protocol of `internet protocol suite`/[[tcp-ip]] 
+> a protocol of `internet protocol suite`/[[tcp-ip]]
 > used to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection
 
 ## usage

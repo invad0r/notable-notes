@@ -2,7 +2,7 @@
 tags: [container]
 title: argocd
 created: '2020-10-26T12:29:59.372Z'
-modified: '2022-01-17T13:55:14.545Z'
+modified: '2022-03-16T07:10:31.142Z'
 ---
 
 # argocd
@@ -28,6 +28,8 @@ argocd app create guestbook \
   --path guestbook \
   --dest-server https://kubernetes.default.svc \
   --dest-namespace default
+
+argocd app list
 ```
 
 ## see also

@@ -63,4 +63,4 @@ tar cf - "$1" -P | pv -s $(( $(du -sk "$1" | cut -f1) * 1024 )) \
 - [[gzip gunzip zcat]]
 - [[bash redirects]]
 - [gnu.org/software/tar/manual/tar](https://www.gnu.org/software/tar/manual/tar.html)
-- [unix.stackexchange.com/why-would-i-tar-a-single-file ](https://unix.stackexchange.com/a/277799/193945)
+- [unix.stackexchange.com/why-would-i-tar-a-single-file](https://unix.stackexchange.com/a/277799/193945)

@@ -2,12 +2,13 @@
 tags: [shell/bash/builtin]
 title: bash alias
 created: '2019-08-02T06:42:37.554Z'
-modified: '2021-05-12T08:46:07.511Z'
+modified: '2022-04-06T11:38:03.695Z'
 ---
 
 # bash alias
 
 ## usage
+
 ```sh
 alias l='ls -l'   # define alias
 
@@ -21,6 +22,7 @@ ls
 unalias ls
 ```
 ## see also
+
 - [[bash unalias]]
 - [[git log]]
 - [[time]]

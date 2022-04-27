@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash arithmetic expansion
 created: '2019-07-30T06:19:48.992Z'
-modified: '2021-05-12T08:46:50.936Z'
+modified: '2022-04-06T11:38:20.902Z'
 ---
 
 # bash arithmetic expansion
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:50.936Z'
 >  most (if not all) GNU/Linux shells only perform `integer` operations.
 
 ## usage
+
 ```sh
 $((EXPRESSION))       # is arithmetic expansion; return result
 
@@ -34,6 +35,7 @@ echo $((13380009932/1024**3))   # 1024 to the power of 3
 ```
 
 ## see also
+
 - [[bc]]
 - [[expr]]
 - [[bash let]]

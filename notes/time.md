@@ -8,7 +8,6 @@ modified: '2021-10-29T12:46:41.772Z'
 
 > time utility executes and times utility.  After the utility finishes, time writes the total time elapsed, the time consumed by system overhead, and the time used to execute utility to the standard error stream.  Times are reported in seconds.
 
-
 ## usage
 
 ```sh

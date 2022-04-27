@@ -9,9 +9,11 @@ modified: '2021-05-12T19:36:29.575Z'
 > `tig` - text-mode interface for Git
 
 ## install
+
 `brew install tig`
 
 ## usage
+
 ```sh
 tig
 
@@ -30,6 +32,7 @@ tig -C /repo/path       # run in dir /repo/path like `git -C`
 ```
 
 ## shortcuts
+
 ```sh
 m         # switch to main view
 d         # switch to diff view
@@ -76,6 +79,7 @@ M         # Merge
 ```
 
 ## see also
+
 - [[git]]
 - [devhints.io/tig](https://devhints.io/tig)
 - [jonas.github.io/tig/doc/manual](https://jonas.github.io/tig/doc/manual.html)

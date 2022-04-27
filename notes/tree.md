@@ -8,10 +8,12 @@ modified: '2020-02-04T12:21:27.633Z'
 # tree
 
 ## usage
+
 ```sh
 tree -d -L 3 .      # show only directory to level 3
 ```
 
 ## see also
+
 - [[ls]]
 - [[find]]

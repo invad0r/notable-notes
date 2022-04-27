@@ -45,6 +45,7 @@ setab VALUE 	  # set background color
 ```
 
 ## usage
+
 ```sh
 tput cup 0 0      # send sequence to move the cursor to row 0, column 0 (upper left corner of the screen, aka "home" cursor position)
 tput cup 5 20     # move the cursor to the position 20 characters to the right and 5 rows down

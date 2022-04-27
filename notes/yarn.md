@@ -10,9 +10,11 @@ modified: '2021-06-11T11:54:22.147Z'
 > provides a rich set of cli commands to help you with various aspects of your yarn package, including installation, administration, publishing
 
 ## install
+
 `npm install --global yarn`
 
 ## usage
+
 ```sh
 yarn --version
 
@@ -28,6 +30,7 @@ yarn remove       # removes an unused package from your current package
 ```
 
 ## see also
+
 - [[node]]
 - [[npm]]
 - [[npx]]

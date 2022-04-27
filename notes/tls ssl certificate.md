@@ -9,19 +9,21 @@ modified: '2020-09-02T18:05:53.830Z'
 
 `certificate` = `valication Level` + `type`
 
+## Valication Level
 
-### Valication Level
 - `EV` Extended Validation Certificates
 - `OV` Organization Validated Certificates
 - `DV` Domain Validated Certificates
 
-### Type
+## Type
+
 - Single Domain Certificates
 - Wildcard SSL Certificate
 - `MDC` Multi Domain SSL Certificate used with SAN-Extension
 - `UCC` Unified Communications Certificate used with SAN-Extension
 
 ## see also
+
 - [[openssl]]
 - [The Difference between Wildcard & Multi Domain (SAN) SSL Certificate](https://cheapsslsecurity.com/blog/the-difference-between-wildcard-and-multi-domain-san-ssl-certificate/)
 - [Types of SSL Certificate from InstantSSL | Comodo CA](https://www.instantssl.com/ssl-faqs/types-of-ssl-certificate.html)

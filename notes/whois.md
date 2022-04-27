@@ -7,7 +7,7 @@ modified: '2022-02-02T10:04:55.998Z'
 # whois
 
 > utility to look up records in databases maintained by several `NICs` (=Network Information Centers)
->   default first querying the `IANA` (=Internet Assigned Numbers Authority) whois server
+> default first querying the `IANA` (=Internet Assigned Numbers Authority) whois serve
 
 ## usage
 

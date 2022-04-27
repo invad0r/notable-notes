@@ -7,9 +7,10 @@ modified: '2020-03-23T12:18:39.408Z'
 
 # usermod
 
-> modify a user account 
+> modify a user account
 
 ## usage
+
 ```sh
 usermod -aG docker
 
@@ -22,6 +23,7 @@ usermod -d /home/fooadmin -m -g fooadmin -l fooadmin admin  # after renaming use
 ```
 
 ## see also
+
 - [[useradd]]
 - [[adduser]]
 - [[groupadd]]

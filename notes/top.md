@@ -8,10 +8,12 @@ modified: '2020-08-31T09:31:33.582Z'
 # top
 
 ## usage
+
 ```sh
 top
 ```
 
 ## see also
+
 - [[free]]
 - [[procfs]]

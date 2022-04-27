@@ -2,7 +2,7 @@
 tags: [container/docker, go]
 title: go-template
 created: '2019-07-30T06:19:49.074Z'
-modified: '2022-01-25T10:58:18.109Z'
+modified: '2022-04-04T13:39:40.823Z'
 ---
 
 # go-template 
@@ -34,14 +34,17 @@ println       # prints each value on a new line
 index         # function: can lookup arbitrary strings in the map
 ```
 
-## [[kubectl]]
+## kubectl
 
 ```sh
 kubectl get events --sort-by='.metadata.creationTimestamp' \
   -o 'go-template={{range .items}}{{.involvedObject.name}}{{"\t"}}{{.involvedObject.kind}}{{"\t"}}{{.message}}{{"\t"}}{{.reason}}{{"\t"}}{{.type}}{{"\t"}}{{.firstTimestamp}}{{"\n"}}{{end}}'
+
+kubectl get nodes `# get taints of nodes` \
+  -o go-template='{{printf "%-50s %-12s\n" "Node" "Taint"}}{{- range .items}}{{- if $taint := (index .spec "taints") }}{{- .metadata.name }}{{ "\t" }}{{- range $taint }}{{- .key }}={{ .value }}:{{ .effect }}{{ "\t" }}{{- end }}{{- "\n" }}{{- end}}{{- end}}'
 ```
 
-## [[docker]]
+## docker
 
 ```sh
 # docker ps 

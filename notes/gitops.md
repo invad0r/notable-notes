@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: gitops
 created: '2020-06-23T07:09:33.298Z'
-modified: '2022-01-17T13:51:36.625Z'
+modified: '2022-04-06T11:34:52.228Z'
 ---
 
 # gitops
@@ -19,4 +19,5 @@ update in repo leads to update in infra
 - [[argocd]]
 - [[flux]]
 - [[kubectl]]
+- [[infrastructure as code]]
 

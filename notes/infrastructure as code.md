@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: infrastructure as code
 created: '2019-07-30T06:19:49.081Z'
-modified: '2021-02-09T11:07:18.870Z'
+modified: '2022-04-06T11:34:41.761Z'
 ---
 
 # infrastructure as code
@@ -14,6 +14,7 @@ modified: '2021-02-09T11:07:18.870Z'
 
 
 ## providers
+
 |       | chef          | puppet        | ansible       | saltstack     | cloudformation  | terraform   | 
 |:--    |:--            |:--            |:--            |:--            |:--              |:--          | 
 | code  | opensource    | opensource    | opensource    | opensource    | opensource      | opensource  |
@@ -23,6 +24,8 @@ modified: '2021-02-09T11:07:18.870Z'
 | arch  | Client/Server | Client/Server | Client/Server | Client/Server |  Client-Only    | Client-Only |
 
 ## see also
+
+- [[gitops]]
 - [[terraform]]
 - [[aws cloudformation]]
 - [cloudscaling.com/the-history-of-pets-vs-cattle/](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)

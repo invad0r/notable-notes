@@ -10,6 +10,7 @@ modified: '2022-02-02T08:49:37.072Z'
 ## acid
 
 > set of properties that guarante reliable database transactions
+
 ```
 A C I D
 | | | └─ Durability
@@ -23,12 +24,15 @@ A C I D
 > Transactions are composed of multiple statements. Atomicity guarantees that each transaction is treated as a single "unit", which either succeeds completely, or fails completely: if any of the statements constituting a transaction fails to complete, the entire transaction fails and the database is left unchanged.
 
 #### consistency
+
 > ensures that a transaction can only bring the database from one valid state to another - any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof. This prevents database corruption by an illegal transaction, but does not guarantee that a transaction is correct.
 
 #### isolation
+
 > Transactions are often executed concurrently (e.g., multiple transactions reading and writing to a table at the same time). Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially. 
 
 #### durability
+
 > guarantees that once a transaction has been committed, it will remain committed even in the case of a system failure (power outage or crash). This usually means that completed transactions are recorded in non-volatile memory
 
 > ensure that the data is actually written on disk physically, preventing any loss of data in case of a sudden power outage
@@ -40,6 +44,7 @@ On POSIX systems, durability is achieved through `sync` operations: `fsync`, `fd
 ## crud
 
 > 4 basic functions of persistent storage
+
 ```
 C R U D
 | | | └─ Delete
@@ -47,6 +52,7 @@ C R U D
 | └───── Read
 └─────── Ceate
 ```
+
                       
 | CRUD-Operation   | SQL-92     | HTTP/REST        |
 |--                |--          |--                |

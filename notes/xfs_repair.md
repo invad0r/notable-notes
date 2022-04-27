@@ -10,6 +10,7 @@ modified: '2020-06-11T11:52:42.560Z'
 > repair corrupt or damaged xfs filesystem
 
 ## usage
+
 ```sh
 xfs_repair -V
 
@@ -17,10 +18,12 @@ umount /dev/sda2
 
 xfs_repair /dev/sda2
 ```
+
 ## see also
+
 - [[xfs]]
 - [[xfs_info]]
 - [[xfs_growfs]]
 - [[growpart]]
-- http://nerdbynature.de/s9y/2016/05/06/XFS-Corruption-warning-Metadata-has-LSN-ahead-of-current-LSN
+- [nerdbynature.de/sXFS-Corruption-warning-Metadata-has-LSN-ahead-of-current-LSN](http://nerdbynature.de/s9y/2016/05/06/XFS-Corruption-warning-Metadata-has-LSN-ahead-of-current-LSN)
 - [Corruption warning: Metadata has LSN (6:49052) ahead of current LSN](https://microdevsys.com/wp/corruption-warning-metadata-has-lsn-649052-ahead-of-current-lsn-649006-please-unmount-and-run-xfs_repair-v4-3-to-resolve/)

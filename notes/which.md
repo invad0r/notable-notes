@@ -24,6 +24,7 @@ which -a CMD   # print all matching pathnames of each argument
 ```
 
 ## see also
+
 - [[file]]
 - [[bash type]]
 - [[bash command]]

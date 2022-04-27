@@ -1,15 +1,14 @@
 ---
 title: 12 factor app
 created: '2022-02-15T10:15:31.700Z'
-modified: '2022-02-15T10:36:03.327Z'
+modified: '2022-04-04T13:17:34.056Z'
 ---
 
 # 12 factor app
 
->  methodology for building software-as-a-service apps
+> methodology for building software-as-a-service apps
 
 ## 12 factors
-
 
 ## I. Codebase
 
@@ -17,7 +16,7 @@ modified: '2022-02-15T10:36:03.327Z'
 
 ## II. Dependencies
 
-> explicitly declare and isolat dependencies 
+> explicitly declare and isolat dependencies
 
 ?!
 
@@ -27,7 +26,7 @@ modified: '2022-02-15T10:36:03.327Z'
 
 ## IV. Backing Services
 
-> treat backing services as attached resources 
+> treat backing services as attached resources
 
 ??
 
@@ -67,10 +66,8 @@ what is a run stage ?
 
 > rund admin/management tasks as one-off processes
 
-
-
 ## see also
 
 - [[devops]]
-- [12factor.net](https://12factor.net/)
 - [[unix socket]]
+- [12factor.net](https://12factor.net/)

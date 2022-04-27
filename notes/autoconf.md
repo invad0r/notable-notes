@@ -1,14 +1,14 @@
 ---
 title: autoconf
 created: '2022-02-02T13:35:55.731Z'
-modified: '2022-02-02T13:40:39.001Z'
+modified: '2022-04-06T11:36:53.143Z'
 ---
 
 # autoconf
 
 > generate configuration scripts
 
-## usage
+## flags
 
 ```sh
 # operation modes
@@ -28,6 +28,8 @@ modified: '2022-02-02T13:40:39.001Z'
 -t, --trace=MACRO[:FORMAT]      # report the list of calls to MACRO
 -i, --initialization            # also trace autoconf's initialization process
 ```
+
+## usage
 
 ```sh
 autoreconf -fi    # generate config script

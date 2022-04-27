@@ -10,10 +10,12 @@ modified: '2019-12-30T07:57:07.569Z'
 > delete a user account and related files
 
 ## usage
+
 ```sh
 userdel -r foo   # removes user and home + email spool
 ```
 
 ## see also
+
 - [[useradd]]
 - [[groupadd]]

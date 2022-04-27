@@ -1,7 +1,7 @@
 ---
 title: yq
 created: '2019-08-20T12:05:18.926Z'
-modified: '2022-01-25T13:48:28.370Z'
+modified: '2022-04-23T10:01:09.407Z'
 ---
 
 # yq
@@ -21,7 +21,6 @@ yq shell-completion bash > /etc/bash_completion.d/yq    # install bach_completio
 ## flags
 
 ```sh
-# Global Flags
 -C, --colors                  # force print with colors
 -M, --no-colors               # force print with no colors
 -e, --exit-status             # set exit status if there are no matches or null or false is returned
@@ -89,6 +88,13 @@ yq e '. | select(.kind == "Service") ' FILE.yaml    # print only document of kin
 yq -y 'del(.. | select(objects and length == 0))'   # Remove empty objects
 yq -y 'del(.. | select(arrays and length == 0))'    # Remove empty arrays
 yq -y 'del(.. | select(length == 0))'               # Remove empty objects, arrays and strings
+
+
+# concat two strings
+kubectl get node -o yaml | yq e '.items[].metadata.labels | ."kubernetes.io/role" + " " + ."node.kubernetes.io/instance-type" ' -
+
+# select two values via `(.val, .foo)`
+kubectl get node -o yaml | yq e '.items[].metadata.labels | (."kubernetes.io/role", ."node.kubernetes.io/instance-type") ' -
 ```
 
 ## see also

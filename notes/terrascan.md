@@ -10,13 +10,16 @@ modified: '2021-10-29T12:45:45.967Z'
 > detects security vulnerabilities and compliance violations across in iac
 
 ## install
+
 `brew install terrascan`
 
 ## usage
+
 ```sh
 terrascan scan
 ```
 
 ## see also
+
 - [github.com/accurics/terrascan](https://github.com/accurics/terrascan)
 - [[terraform]]

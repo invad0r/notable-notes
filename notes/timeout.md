@@ -10,6 +10,7 @@ modified: '2021-05-12T08:47:10.356Z'
 > run a command with a time limit
 
 ## usage
+
 ```sh
 timeout 2 sleep 1
 
@@ -17,6 +18,7 @@ timeout 12h bash -c 'until ssh root@mynewvm; do sleep 10; done'
 ```
 
 ## see also
+
 - [[sleep]]
 - [[bash time]]
 - [[bash wait]]

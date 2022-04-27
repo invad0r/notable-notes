@@ -2,12 +2,13 @@
 tags: [shell/bash]
 title: bash array
 created: '2019-08-01T07:14:55.242Z'
-modified: '2021-10-25T09:41:19.353Z'
+modified: '2022-04-06T11:38:27.710Z'
 ---
 
 # bash array
 
 ## usage
+
 ```sh
 array[0] = val               # several ways to define an array
 array[1] = val
@@ -57,6 +58,7 @@ declare | grep Colors   # Colors=([0]="purple" [1]="reddish-orange" [2]="light g
 ```
 
 ## see also
+
 - [[bash declare]]
 - [[bash mapfile]]
 - [[bash readarray]]

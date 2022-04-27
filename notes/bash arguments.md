@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash arguments
 created: '2019-07-30T06:19:48.991Z'
-modified: '2021-05-12T08:46:50.913Z'
+modified: '2022-04-06T11:38:10.410Z'
 ---
 
 # bash arguments
@@ -12,6 +12,7 @@ modified: '2021-05-12T08:46:50.913Z'
 - `parameter`  argument that provides information to either the command or one  of its options e.g. in `-o file`, `file` is the parameter of the `-o` option 
 
 ## parsing flags
+
 ```sh
 for i in "$@"; do
   case $i in
@@ -62,6 +63,7 @@ echo ${CMD[*]} ${ARGS[*]}
 ```
 
 ## see also
+
 - [Difference between terms: "option", "argument", and "parameter"?](http://stackoverflow.com/questions/36495669/difference-between-terms-option-argument-and-parameter)
 - [How do I parse command line arguments in Bash?](http://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
 - [Passing named arguments to shell scripts](https://unix.stackexchange.com/a/204927)

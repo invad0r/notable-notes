@@ -7,7 +7,7 @@ modified: '2020-09-03T09:08:10.650Z'
 
 # xxd
 
->  make a hexdump or do the reverse
+> make a hexdump or do the reverse
 
 ## usage
 
@@ -20,6 +20,7 @@ xxd -r <<<'0 4a'           # decimal
 ```
 
 ## see also
+
 - [[url encoding]]
 - [[ascii]]
 - [[od]]

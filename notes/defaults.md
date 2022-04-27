@@ -2,7 +2,7 @@
 tags: [macos]
 title: defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2021-03-25T13:21:28.500Z'
+modified: '2022-04-19T04:55:35.284Z'
 ---
 
 # defaults
@@ -10,12 +10,14 @@ modified: '2021-03-25T13:21:28.500Z'
 > access the mac macos user defaults system
 
 ## usage
+
 ```sh
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true    # disable .DS_Store creation
 
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true           # display file-extensions
 
 defaults write com.apple.finder AppleShowAllFiles TRUE                    # display dot-files
+defaults write com.apple.Finder AppleShowAllFiles true
 
 killall Finder          # restart finder need to take effect
 
@@ -39,4 +41,5 @@ defaults write com.apple.screencapture name screenshot                          
 ```
 
 ## see also
+
 - [apple.stackexchange.com/how-to-increase-keyboard-key-repeat-rate-on-os-x](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x/83923#83923)

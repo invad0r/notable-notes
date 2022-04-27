@@ -28,4 +28,4 @@ ls / true                     # Watch can be set on any znode while using read o
 - [[consul]]
 - [[etcdctl]]
 - [[kafka]]
-- https://serverfault.com/questions/801251/get-zookeeper-cluster-status
+- [serverfault.com/get-zookeeper-cluster-status](https://serverfault.com/questions/801251/get-zookeeper-cluster-status)

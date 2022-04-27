@@ -7,7 +7,7 @@ modified: '2021-10-31T14:48:28.192Z'
 
 # tcpdump
 
-> dump traffic on a network 
+> dump traffic on a network
 
 ## usage
 
@@ -99,6 +99,7 @@ ssh user@host \
 ```
 
 ## see also
+
 - [tcpdump.org/manpages/tcpdump](https://www.tcpdump.org/manpages/tcpdump.1.html)
 - [danielmiessler.com/tcpdump](https://danielmiessler.com/study/tcpdump/)
 - [andreafortuna.org/tcpdump-a-simple-cheatsheet](https://www.andreafortuna.org/2018/07/18/tcpdump-a-simple-cheatsheet/)

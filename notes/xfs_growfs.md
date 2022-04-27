@@ -7,15 +7,18 @@ modified: '2020-06-12T07:01:24.050Z'
 
 # xfs_growfs
 
-> 
+> increae fs size
 
 ## usage
+
 ```sh
 growpart /dev/sda 1       # !!!!
 
 xfs_growfs -d /mnt
 ```
+
 ## see also
+
 - [[growpart]]
 - [[resize2fs]]
 - [[xfs]]

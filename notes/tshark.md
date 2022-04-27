@@ -15,7 +15,7 @@ modified: '2021-10-31T15:04:42.657Z'
 
 ## usage
 
-```sh 
+```sh
 -i, --interface CAPTURE_INTERFACE       # -
 -f CAPTURE_FILTER                       # set capture filter expression, can occur multiple times
                                         #   if used before the first occurrence of the -i option, it sets the default capture filter expression

@@ -2,10 +2,12 @@
 tags: [network]
 title: osi model
 created: '2020-09-03T05:22:30.643Z'
-modified: '2022-02-15T10:25:04.019Z'
+modified: '2022-03-18T15:56:51.637Z'
 ---
 
 # osi model
+
+> `Open Systems Interconnection`
 
 - `Please Do Not Touch Steve's Pet Aligator`
 - `Please Do Not Throw Sausage Pizza Away`

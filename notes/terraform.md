@@ -2,14 +2,14 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2022-02-01T14:50:43.432Z'
+modified: '2022-04-19T08:16:19.095Z'
 ---
 
 # terraform
 
 > tool for building, changing, and versioning infrastructure safely and efficiently
 
-## usage
+## environment variables
 
 ```sh
 TF_LOG_PATH       #
@@ -20,22 +20,33 @@ TF_VAR_name       # e.g. "TF_VAR_region=us-west-1"
 TF_LOG=DEBUG terraform apply &> log
 ```
 
+## usage
+
 ```sh
 terraform state -json | fx                                              # print whole state as json
+
 terraform state list                                                    # check state
+
 terraform state show 'module.path.data["name"] '                        # show state of resource
+
 terraform state rm 'module.NAME'                                        # removes all associatd with module.Name
+
 terraform state mv 'aws_vpc.ds-vpc' 'aws_vpc.ds_vpc'                    # rename resource
 terraform state mv 'some_resource' 'module.app.some_resource'           # moves resource into module
 terraform state mv 'module.app' 'module.parent.module.app'              # move module insid other module
 terraform state mv -state-out=other.tfstate 'module.app' 'module.app'   # move module to other state
 
-terraform 0.13upgrade .
 terraform state replace-provider 'registry.terraform.io/-/happycloud' 'terraform.example.com/awesomecorp/happycloud'  # after upgrade to 0.13
+
+terraform state list | grep PROVIDER_RESOURCE | sed 's/"/\\"/g' | xargs -I {} terraform state rm '{}'
+
+
+terraform 0.13upgrade .
 
 terraform validate -json                  # json-flag for showing all warnings, and where
 
 terraform fmt -diff -check  main.tf       # check format configuration
+
 terraform fmt -write main.tf              # format config
 
 
@@ -50,9 +61,9 @@ terraform console     # startes repl-like console
 
 ## terraform console
 
-> interactive repl for debuggin
+> interactive repl for debugging
 
-```
+```tf
 > [ for d in local.developers: d.alternative_email ]      // iterate example
 
 > data.aws_availability_zones.available                   // get value of data resource
@@ -65,11 +76,20 @@ terraform console     # startes repl-like console
 ]
 
 element(["a", "b", "c"], length(["a", "b", "c"])-1)       // get last element
+```
 
+```tf
+module "vpc" {
+  ...
+  private_subnets      = slice(cidrsubnets(var.vpc_cidr, 6, 6, 6, 6),0,2)
+  public_subnets       = slice(cidrsubnets(var.vpc_cidr, 6, 6, 6, 6),2,4)
+  ...
+}
 ```
 
 ## complex objects
-```sh
+
+```tf
 resource "aws_route53_record" "example" {
   for_each = {
     for dvo in aws_acm_certificate.example.domain_validation_options : dvo.domain_name => {
@@ -88,23 +108,23 @@ resource "aws_route53_record" "example" {
   zone_id         = each.value.zone_id
 }
 
-# variable "topic_subscriptions" {
-#   description = "Map of topics for which the module should generate input queues including DLQ and subscriptions"
-#   type = map(object({
-#     topic_arn                  = string
-#     name                       = optional(string)
-#     queue_policy               = optional(string)
-#     dlq_max_receive_count      = optional(number)
-#     raw_message_delivery       = optional(bool)
-#     visibility_timeout_seconds = optional(number)
-#   }))
-#   default = {}
-# }
-
+variable "topic_subscriptions" {
+  description = "Map of topics for which the module should generate input queues including DLQ and subscriptions"
+  type = map(object({
+    topic_arn                  = string
+    name                       = optional(string)
+    queue_policy               = optional(string)
+    dlq_max_receive_count      = optional(number)
+    raw_message_delivery       = optional(bool)
+    visibility_timeout_seconds = optional(number)
+  }))
+  default = {}
+}
 ```
 
 ## see also
 
+- [[atlantis]]
 - [[tfswitch]]
 - [[terrascan]]
 - [[terraform cloud api]]
@@ -113,3 +133,5 @@ resource "aws_route53_record" "example" {
 - [terraform.io/docs/commands/environment-variables](https://www.terraform.io/docs/commands/environment-variables.html)
 - [terraform.io/docs/cli/commands/state/mv](https://www.terraform.io/docs/cli/commands/state/mv.html)
 - [[localstack]]
+- [[kbst]]
+- [[tfk8s]]

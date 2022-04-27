@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2022-02-17T07:53:51.257Z'
+modified: '2022-04-04T13:39:03.891Z'
 ---
 
 # kubectl
@@ -26,12 +26,57 @@ KUBE_EDITOR         # -
 ## flags
 
 ```sh
--v=6                      # debug level 6
--o                        # output format [json|yaml|wide]
+-v
+--v=0 	# generally useful for this to always be visible to a cluster operator
+--v=1 	# reasonable default log level if you don't want verbosity
+--v=2 	# useful steady state information about the service and important log messages that may correlate to significant changes in the system. recommended default log level for most systems
+--v=3 	# extended information about changes
+--v=4 	# debug level verbosity
+--v=5 	# trace level verbosity
+--v=6 	# display requested resources
+--v=7 	# display HTTP request headers
+--v=8 	# display HTTP request contents
+--v=9 	# display HTTP request contents without truncation of contents
+
+-o=json 	                    # output a JSON formatted API object
+-o=yaml 	                    # output a YAML formatted API object
+-o=name 	                    # print only the resource name and nothing else
+-o=wide 	                    # output in the plain-text format with any additional information, and for pods, the node name is included
+-o=custom-columns=SPEC 	      # Print a table using a comma separated list of custom columns
+-o=custom-columns-file=FILE   # print a table using the custom columns template in the FILE file
+-o=jsonpath=TEMPLATE  	      # print the fields defined in a jsonpath expression
+-o=jsonpath-file=FILE 	      # print the fields defined by the jsonpath expression in the FILE file
+
 -A                        # all namespaces
---kubeconfig CONFIG       # ..
---namespace  NAMESPACE    # ..
---context    CONTEXT      # ..
+-n, --namespace NS        # namespace scope for cli equest
+
+--as=""         # Username to impersonate for the operation. User could be a regular user or a service account in a namespace.
+--as-group=[]   # Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
+--as-uid=""     # UID to impersonate for the operation.
+
+--certificate-authority=""    # path to a cert file for the certificate authority
+--client-certificate=""       # path to a client certificate file for TLS
+--client-key=""               # path to a client key file for TLS
+
+--cluster CLUSTER     # name of the kubeconfig cluster to use
+--context CONTEXT     # name of the kubeconfig context to use
+--kubeconfig CONFIG   # path to the kubeconfig file to use for CLI requests.
+-s, --server SERVER   # address and port of the Kubernetes API server
+--token TOKEN         # bearer token for authentication to the API server
+--user USER           # name of the kubeconfig user to use
+--username USER       # Username for basic authentication to the API server
+--password PASS       # password for basic authentication to the API server
+
+--insecure-skip-tls-verify=false    # true: don't check server's certificate for validity, makes https connections insecure
+--match-server-version=false        # Require server version to match client version
+
+--profile="none"                   # name of profile to capture. One of (none|cpu|heap|goroutine|threadcreate|block|mutex)
+--profile-output="profile.pprof"   # name of the file to write the profile to
+
+--request-timeout="0"         # time to wait before giving up on a single request; time unit (1s, 2m, 3h); zero means don't timeout requests
+--tls-server-name=""          # server name to use for server certificate validation. If it is not provided, the hostname used to contact the server is used
+--warnings-as-errors=false    # treat warnings received from the server as errors and exit with a non-zero exit code
+--version=false               # print version information and quit
 ```
 
 
@@ -62,8 +107,16 @@ KUBECONFIG="$HOME/.kube/config:file2:file3" kubectl config view --merge --flatte
 kubectl version -o yaml | yq e                                        # get client and server version
 kubectl cluster-info                                                  # get addresses of the control plane and services
 kubectl api-versions                                                  # get all supported api version
+
 kubectl api-resources --sort-by=name -o wide                          # get all objects
 kubectl api-resources | awk '{if ( $2 ~ /^[a-z]{2,7}$/) {print $0}}'  # get only aliased objects
+kubectl api-resources --namespaced=true                               # all namespaced resources
+kubectl api-resources --namespaced=false                              # all non-namespaced resources
+kubectl api-resources -o name                                         # all resources with simple output (only the resource name)
+kubectl api-resources -o wide                                         # all resources with expanded (aka "wide") output
+kubectl api-resources --verbs=list,get                                # all resources that support the "list" and "get" request verbs
+kubectl api-resources --verbs=list --namespaced -o name
+kubectl api-resources --api-group=extensions                          # all resources in the "extensions" API group
 
 kubectl explain po
 kubectl explain --help
@@ -108,6 +161,9 @@ kubectl patch NODE_NAME -p '{"metadata":{"finalizers":[]}}' --type=merge        
 kubectl drain NODE_NAME --force --ignore-daemonsets  --delete-local-data
 kubectl cordon NODE_NAME
 kubectl delete node NODE_NAME
+
+
+kubectl get nodes -o go-template='{{printf "%-50s %-12s\n" "Node" "Taint"}}{{- range .items}}{{- if $taint := (index .spec "taints") }}{{- .metadata.name }}{{ "\t" }}{{- range $taint }}{{- .key }}={{ .value }}:{{ .effect }}{{ "\t" }}{{- end }}{{- "\n" }}{{- end}}{{- end}}'
 ```
 
 ## daemonset
@@ -225,9 +281,11 @@ kubectl run POD_NAME        --image=mongo:4.0 `# run pod on specific node `\
 
 ```sh
 kubectl get events --sort-by='.lastTimestamp'
+
 kubectl get events --sort-by=.metadata.creationTimestamp
+
 kubectl get events --sort-by='.metadata.creationTimestamp' \
- -o 'go-template={{range .items}}{{.involvedObject.name}}{{"\t"}}{{.involvedObject.kind}}{{"\t"}}{{.message}}{{"\t"}}{{.reason}}{{"\t"}}{{.type}}{{"\t"}}{{.firstTimestamp}}{{"\n"}}{{end}}'
+  -o 'go-template={{range .items}}{{.involvedObject.name}}{{"\t"}}{{.involvedObject.kind}}{{"\t"}}{{.message}}{{"\t"}}{{.reason}}{{"\t"}}{{.type}}{{"\t"}}{{.firstTimestamp}}{{"\n"}}{{end}}'
 ```
 
 ## logs
@@ -278,11 +336,18 @@ kubectl krew install oidc-login     # install plugin
 kubectl access-matrix               # use plugin to see the level of access user has on namespaces
 ```
 
+```sh
+failed to retrieve plugin indexes: failed to list the remote URL for index default
+unset GIT_CONFIG
+```
+
 ## see also
 
 - [kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [[kubernetes]], [[oc]]
 - [[helm]], [[kustomize]]
+- [[cmctl]]
+- [[nerdctl]]
 - [[bazel]]
 - [[kubectx]], [[kubens]]
 - [[kubeseal]]
@@ -290,7 +355,6 @@ kubectl access-matrix               # use plugin to see the level of access user
 - [[kim]], [[opa]]
 - [[aws]], [[eksctl]], [[kops]]
 - [[minikube]], [[k3s]], [[k3d]], [[k0s]], [[k9s]]
-- [[nerdctl]]
 - [[yml]], [[jsonpath]], [[go-template]]
 - [[socat]]
 - [stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create](https://stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create)

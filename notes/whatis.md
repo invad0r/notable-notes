@@ -10,10 +10,12 @@ modified: '2020-02-04T12:29:40.143Z'
 > search the whatis database for complete words
 
 ## usage
+
 ```sh
 whatis
 ```
 
 ## see also
+
 - [[man]]
 - [[apropos]]

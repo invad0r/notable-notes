@@ -7,9 +7,10 @@ modified: '2020-09-02T18:05:53.810Z'
 
 # terraform provider tls
 
->  allow private keys, certificates and certficate requests to be created as part of a terraform deployment
+> allow private keys, certificates and certficate requests to be created as part of a terraform deployment
 
 ## usage
+
 ```sh
 resource "tls_private_key" "vault" {
   algorithm = "ECDSA"
@@ -57,5 +58,6 @@ resource "null_resource" "provision_certs" {
 ```
 
 ## see also
+
 - [[terraform]]
-- https://www.terraform.io/docs/providers/tls/index.html
+- [terraform.io/docs/providers/tls](https://www.terraform.io/docs/providers/tls/index.html)

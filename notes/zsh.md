@@ -7,7 +7,7 @@ modified: '2022-03-03T15:41:07.261Z'
 
 # zsh
 
-> `z shell` - unix shell, extended bourne shell `sh` with many improvements, including some features of [[bash]], [[ksh]], and [[tcsh]]
+> `z shell` - unix shell, extended bourne shell `sh` with many improvements
 
 ## usage
 

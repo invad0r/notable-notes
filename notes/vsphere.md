@@ -9,10 +9,10 @@ modified: '2022-02-02T10:03:19.271Z'
 
 > vmware vSphere is a cloud computing virtualization platform
 
-> `VID`  `vSphere Installation Bundle`
-> `VUM`  `vSphere Update Manager`
-> `VDVS` `vSphere`
-> `VMCI` `Virtual Machine Communication Interface`
+- `VID`  `vSphere Installation Bundle`
+- `VUM`  `vSphere Update Manager`
+- `VDVS` `vSphere`
+- `VMCI` `Virtual Machine Communication Interface`
 
 ## vm bootorder via .vmx
 
@@ -33,7 +33,8 @@ RetrieveProductComponents -> Invoke Method
   -> 
 ```
 
-photon-template: 
+photon-template:
+
 - `https://vcenter1.domain.net/mob/?moid=vm%2d97645`
 - `https://vcenter1.domain.net/mob/?moid=vm%2d97645&doPath=summary%2econfig` # UUID
 

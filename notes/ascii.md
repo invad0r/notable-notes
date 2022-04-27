@@ -1,7 +1,7 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2022-02-04T10:55:01.286Z'
+modified: '2022-04-08T20:47:57.207Z'
 ---
 
 # ascii
@@ -39,12 +39,19 @@ char | oct | hex | dec
 J    | 112 | 4a  | 74
 ```
 
+
+```sh
+
+
+```
+
 ## see also
 
+- [asciiflow.com/](https://asciiflow.com/#/)
+- [asciimoji.com](http://asciimoji.com/)
 - [[http]]
 - [[url encoding]]
 - [[xxd]]
 - [[od]]
 - [[baudot]]
 - [jafrog.com/2013/11/23/colors-in-terminal](http://jafrog.com/2013/11/23/colors-in-terminal.html)
-- [asciimoji.com](http://asciimoji.com/)

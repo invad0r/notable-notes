@@ -2,7 +2,7 @@
 tags: [container/k8s]
 title: kubernetes
 created: '2019-08-28T08:08:25.156Z'
-modified: '2021-11-29T12:58:21.303Z'
+modified: '2022-03-23T21:26:10.566Z'
 ---
 
 # kubernetes
@@ -46,6 +46,7 @@ modified: '2021-11-29T12:58:21.303Z'
 
 ## see also
 
+- [[kubernetes rbac]]
 - [[devops]]
 - [[minikube]]
 - [ro14nd-talks/kubernetes-patterns](https://github.com/ro14nd-talks/kubernetes-patterns)

@@ -1,28 +1,25 @@
 name: GitHub Actions Demo
+
 on: [push]
+
 jobs:
-  lint-changelog:
-    name: Lint changelog file
+
+#  node-docker:
+#    runs-on: ubuntu-latest
+#    container:
+#      image: node:14.15.0-alpine3.12
+#    steps:
+#    - name: Log the node version
+#      run: |
+#        node -v
+#        cat /etc/os-release  
+
+  lint-markdown:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out code
-      uses: actions/checkout@v2
-    - name: lint files
-      uses: avto-dev/markdown-lint@v1
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: debug output
+      uses: docker://ghcr.io/igorshubovych/markdownlint-cli:latest
       with:
-        args: 'README.md'
-
-#    - name: Lint changelog file
-#      uses: docker://avtodev/markdown-lint:v1 # fastest way
-#      with:
-#        rules: '/lint/rules/changelog.js'
-#        config: '/lint/config/changelog.yml'
-#        args: './CHANGELOG.md'
-#        ignore: './one_file.md ./another_file.md' # multiple files must be separated with single space
-
-#    - name: Lint changelog file
-#      uses: avto-dev/markdown-lint@v1
-#      with:
-#        rules: '/lint/rules/changelog.js'
-#        config: '/lint/config/changelog.yml'
-#        args: './CHANGELOG.md'
+        args: ./notes/t*.md --disable MD013 MD025 MD013 MD040 MD010

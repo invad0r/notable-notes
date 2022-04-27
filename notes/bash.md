@@ -2,13 +2,14 @@
 tags: [shell/bash]
 title: bash
 created: '2019-07-30T06:19:49.025Z'
-modified: '2022-03-03T16:01:45.227Z'
+modified: '2022-04-06T11:37:34.390Z'
 ---
 
 # bash
 
 > at its base, a shell is simply a `macro processor` that executes commands
 > the term `macro processor` means functionality where text and symbols are expanded to create larger expressions
+
 [gnu.org/what-is-a-shell](https://www.gnu.org/software/bash/manual/html_node/What-is-a-shell_003f.html)
 
 ## flags

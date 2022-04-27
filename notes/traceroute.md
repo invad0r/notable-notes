@@ -6,7 +6,7 @@ modified: '2022-03-09T07:31:00.296Z'
 
 # traceroute
 
-> print the route packets trace to network host 
+> print the route packets trace to network host
 
 ## install
 

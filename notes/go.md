@@ -2,30 +2,12 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2022-01-17T13:30:05.257Z'
+modified: '2022-04-07T07:19:54.056Z'
 ---
 
 # go
 
-> `go` is a tool for managing go source code
-
-
-```
-  has                             doesn't have
-
-+ package system                - implicit numeric conversion
-+ first-class-functions         - constructors/destructors
-+ lexical-scope                 - operator overloading
-+ system call interface         - default parameter values
-+ immutable string in utf-8     - inheritance (type-based inheritance → subclasses)
-+ struct ~ class                - generics    `parametrics polimorphism` ≈ `generics`
-+ concurrency support (CSP)     - exceptions
-                                - macros
-+ `garbage collected`           - function annotations
-+ it's `staticallly typed`      - thread local storage
-                                - inheritance but composition of type
-                                - explicit declaration, interface-implementation required
-```
+> tool for managing `go` source code
 
 ## install
 
@@ -37,7 +19,7 @@ export GOPATH=$(go env GOPATH)
 export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 ```
 
-## usage
+## environment variables
 
 ```sh
 GOROOT             # /usr/local/opt/go/libexec
@@ -57,7 +39,15 @@ CXX                # clang++
 CGO_ENABLED        # -
 GOMOD              # -
 GO11MODULE
+
+go env            # show current env vars go uses
+go env GOCACHE    # print specific value
+go env -json      # print in json format
+
+go env -w GO111MODULE=auto
 ```
+
+## usage
 
 ```sh
 go help env     # more information about a command
@@ -70,18 +60,6 @@ go list -m all                        # lists the current module and all its dep
 go list -m -versions rsc.io/sampler   # list available tagged versions of module
 go list -m rsc.io/...                 # list current versions
 
-go get                            # downloads packages named by the import paths, along dependencies, 
-                                  # then installs the package, using `go install`, 
-                                  # which uses `go build` and go build caches recent build results in `$GOPATH/pkg`
-                                  # flags
-                                  #   -v    enables verbose progress and debug output
-                                  #   -u    update the named packages and their dependencies
-                                  #   -d    stop after downloading the packages; don't install the packages
-go get -v github.com/user/repo    # install specific package
-go get rsc.io/sampler@v1.3.1      # install with specific version, defaults to `@latest`
-go get ./...                      # install all dependencies of project recursively
-
-
 go doc -all rsc.io/quote/v3       # get documentation
 
 go clean -cache -modcache -i -r   # clear cache
@@ -91,10 +69,50 @@ go run
 
 go test -json           # Convert test output to JSON suitable for automated processing
 
+go clean -i github.com/motemen/gore...    # remove installed package
+```
 
-go env            # show current env vars go uses
-go env GOCACHE    # print specific value
-go env -json      # print in json format
+### get
+
+> downloads the packages named by import paths, along with dependencies. Then installs named packages like `go install`
+> ⚠️ has been deprecated for installing binaries since `1.17`
+
+#### flags
+
+```sh
+-d      # stop after downloading the packages; that is, to not install packages
+-fix    # run fix tool on the downloaded packages before resolving dependencies or building the code
+-t      # also download packages required to build the tests for the specified packages
+-u      # use network to update named packages and dependencies
+-f      # forces -u not to verify that each package has been checked out from the source control repository implied by its import path. useful if source is local fork
+-v      # enables verbose progress and debug output
+```
+
+```sh
+go get -v github.com/user/repo    # install specific package
+
+go get rsc.io/sampler@v1.3.1      # install with specific version, defaults to `@latest`
+
+go get ./...                      # install all dependencies of project recursively
+```
+
+## language
+
+```
+  has                             doesn't have
+
++ package system                - implicit numeric conversion
++ first-class-functions         - constructors/destructors
++ lexical-scope                 - operator overloading
++ system call interface         - default parameter values
++ immutable string in utf-8     - inheritance (type-based inheritance → subclasses)
++ struct ~ class                - generics    `parametrics polimorphism` ≈ `generics`
++ concurrency support (CSP)     - exceptions
+                                - macros
++ `garbage collected`           - function annotations
++ it's `staticallly typed`      - thread local storage
+                                - inheritance but composition of type
+                                - explicit declaration, interface-implementation required
 ```
 
 ## semicolon rule
@@ -116,3 +134,4 @@ if the new line comes after a `token` that could end the statement => insert `;`
 - [Does go get command do cache?](https://stackoverflow.com/a/52813009/2087704)
 - [lecstor.com/go-clear-cache](https://lecstor.com/go-clear-cache/)
 - [[gcc]]
+- [[wasm]]

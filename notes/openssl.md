@@ -2,7 +2,7 @@
 tags: [cryptography, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2021-10-28T11:52:58.407Z'
+modified: '2022-03-18T13:22:14.931Z'
 ---
 
 # openssl
@@ -24,9 +24,11 @@ openssl crl2pkcs7 -nocrl -certfile CHAIN.pem | openssl pkcs7 -print_certs -text 
 
 
 openssl verify -CAfile foo.cain.crt foo.crt   # verify certificate against CAfile => foo.crt: OK
+```
 
+## rsa - rsa key management
 
-# rsa - RSA key management
+```sh
 openssl rsa -in privateKey.key -check
 
 openssl rsa -in private_key_noenc.pem -out private_key_noenc.pem          # remove passphrase
@@ -76,8 +78,11 @@ openssl x509 -in git.domain.net.crt -noout -dates
 
 openssl x509 -in git.domain.net.crt -noout -fingerprint
 
+```
 
-# pkcs12 - public key cryptograpy standarts
+## pkcs12 - public key cryptograpy standarts
+
+```sh
 openssl pkcs12 -export -inkey local.key      -in local.crt  -out local.pfx          # generate pkcs12
 openssl pkcs12 -export -inkey privateKey.key -in bundle.crt -out certificate.pfx
 

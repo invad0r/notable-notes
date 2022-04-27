@@ -12,8 +12,8 @@ modified: '2020-09-03T09:13:30.181Z'
 - url encoding replaces unsafe `ascii` characters with a `%` followed by two hexadecimal digits
 - urls cannot contain spaces - encoding normally replaces a space with a `+` sign or with `%20`
 
-
 ## encode
+
 ```sh
 echo -ne 'some random\nbytes' | xxd -plain | tr -d '\n' | sed 's/\(..\)/%\1/g'
 
@@ -21,6 +21,7 @@ curl -s -o /dev/null -w "%{url_effective}\n" --get --data-urlencode "some random
 ```
 
 ## decode
+
 ```sh
 url_decode ()
 {
@@ -30,6 +31,7 @@ url_decode ()
 ```
 
 ## see also
+
 - [[ascii]]
 - [[xxd]]
 - [[tr]]

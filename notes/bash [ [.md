@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: 'bash [ ['
 created: '2020-09-02T14:24:09.002Z'
-modified: '2021-05-12T08:46:30.644Z'
+modified: '2022-04-06T11:37:45.711Z'
 ---
 
 # bash [ [
@@ -11,6 +11,7 @@ modified: '2021-05-12T08:46:30.644Z'
 > expressions are composed of same primaries used by `test`
 
 ## usage
+
 ```sh
 [[ EXPRESSION ]]
 
@@ -27,5 +28,6 @@ OPERATORS
 ```
 
 ## see also
+
 - [[bash test []]
 - [[bash built-in vs keyword]]

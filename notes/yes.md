@@ -10,6 +10,7 @@ modified: '2020-09-01T12:43:12.188Z'
 > output a string repeatedly until killed
 
 ## usage
+
 ```sh
 # --help    display this help and exit 
 # --version output version information and exit
@@ -24,7 +25,9 @@ yes | fsck /dev/foo
 
 yes | keytool -import -trustcacerts -alias "ALIAS" -file "CERT.pem" -cacerts -storepass "PASS"
 ```
+
 ## see also
+
 - [[openssl]]
 - [[fsck]]
 - [endler.dev/yes](https://endler.dev/2017/yes/)

@@ -47,5 +47,3 @@ xkcdpass \
 - [[mkpasswd]]
 - [pypi.org/project/xkcdpass/](https://pypi.org/project/xkcdpass/)
 - [[pip]]
-
-

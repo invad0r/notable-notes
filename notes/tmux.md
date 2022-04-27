@@ -95,7 +95,6 @@ tmux set-window-option -t $SESSION:0 automatic-rename off
 ## see also
 
 - [[fzf]]
-- [devhints.io/tmux](https://devhints.io/tmux) 
+- [devhints.io/tmux](https://devhints.io/tmux)
 - [unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window](https://unix.stackexchange.com/questions/14300/moving-tmux-pane-to-window)
 - [[macos keyboard shortcuts]]
-

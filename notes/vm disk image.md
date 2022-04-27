@@ -8,6 +8,7 @@ modified: '2019-08-29T12:39:50.311Z'
 # vm disk image
 
 ## file formats for virtual machines
+
 ```
 OVF   - Open Virtualization Format XML based, 
         describes single vm or virtual appliance,
@@ -17,7 +18,8 @@ OVF   - Open Virtualization Format XML based,
 OVA   - Open Virtualization Applicance OVF + supporing file (disk-images, ..) 
 ```
 
-## formats for disk images 
+## formats for disk images
+
 ```
 .vid   - VirtualBox
 .vmdk  - VMWare (many different versions!)
@@ -30,6 +32,7 @@ raw    - (.IMG,.ISO,..)
 rename `.ova` to `.tar` and extract `.vmdk`
 
 ## see also
+
 - [OVF? OVA? VMDK? – File Formats and Tools for Virtualization](https://spin.atomicobject.com/2013/06/03/ovf-virtual-machine/)
 - [How to convert an OVA virtual machine to VHD](https://www.rootusers.com/how-to-convert-an-ova-virtual-machine-to-vhd/)
 - [How to convert RAW image to VDI and otherwise](https://blog.sleeplessbeastie.eu/2012/04/29/virtualbox-convert-raw-image-to-vdi-and-otherwise/)

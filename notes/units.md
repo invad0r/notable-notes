@@ -37,8 +37,8 @@ Value 	  Metric            Value 	     IEC 	         EDEC
 1000^7 	ZB 	zettabyte       1024^7 	ZiB 	zebibyte 	–
 1000^8 	YB 	yottabyte       1024^8 	YiB 	yobibyte 	– 
 ```
-[Gigabyte - Wikipedia](https://en.wikipedia.org/wiki/Gigabyte)
 
+[Gigabyte - Wikipedia](https://en.wikipedia.org/wiki/Gigabyte)
 
 ### "500 GigaByte"
 

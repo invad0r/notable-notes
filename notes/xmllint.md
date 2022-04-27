@@ -8,19 +8,23 @@ modified: '2020-10-09T12:02:31.976Z'
 # xmllint
 
 ## install
+
 `apk add --no-ache libxml2-utils`
 
 ## usage
+
 ```sh
 # pom.xml
 xmllint --shell pom.xml <<< 'setns ns=http://maven.apache.org/POM/4.0.0
 cat /ns:project/ns:version/text()'
 ```
+
 ```sh
 xmllint --xpath '/*[local-name()="project"]/*[local-name()="version"]/text()' pom.xml   # get version
 ```
 
 ## xpath
+
 ```sh
 cat <<EOF > /tmp/sourcefile.xml
 <?xml version="1.0"?>
@@ -58,18 +62,23 @@ EOF
 /tmp/namespace.xml
 
 ```
+
 ### shell mode and declare the namespace with a prefix
+
 ```sh
 xmllint --shell /tmp/namespace.xml
     / > setns x=http://purl.org/net/ulf/ns/0.4-02
     / > xpath /x:chat
 ```
+
 ### local-name() to match element names
+
 ```sh
 xmllint --xpath "/*[local-name()='chat']" /tmp/namespace.xml
 ```
 
 ## see also
+
 - [[xpath]]
 - [[mvn]]
 - [get-pom-xml-version-with-xmllint](https://stackoverflow.com/a/41115011/2087704)

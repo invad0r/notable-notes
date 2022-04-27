@@ -2,12 +2,12 @@
 tags: [linux, packagemanager, shell/ash]
 title: apk
 created: '2019-07-30T20:26:52.476Z'
-modified: '2021-10-29T12:34:30.798Z'
+modified: '2022-04-27T06:58:49.004Z'
 ---
 
 # apk
 
-> Software packages for `Alpine Linux` are digitally signed `tar.gz` archives containing programs, configuration files, and dependency metadata. They have the extension `.apk`, and are often called `"a-packs"`
+> packages for `Alpine Linux` are digitally signed `tar.gz` archives containing programs, configuration files, and dependency metadata. They have the extension `.apk`, and are often called `"a-packs"`
 
 ## usage
 

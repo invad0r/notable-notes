@@ -9,7 +9,7 @@ modified: '2021-10-31T14:42:35.275Z'
 ## usage
 
 ```sh
--1 	      # instead continuously updated display print to stdout
+-1       # instead continuously updated display print to stdout
 ```
 
 ```sh

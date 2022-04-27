@@ -10,6 +10,7 @@ modified: '2020-03-23T12:25:05.189Z'
 > create a new user or update default new user information - lowlevel !
 
 ## usage
+
 ```sh
 useradd -d /home/admin -G sudo,admin -m -s /bin/bash admin
 
@@ -42,6 +43,7 @@ gpasswd -d user group         # remove user from group
 ```
 
 ## see also
+
 - [[adduser]]
 - [[usermod]]
 - [add-a-user-to-a-group-or-second-group-on-linux](http://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/)

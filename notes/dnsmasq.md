@@ -2,7 +2,7 @@
 tags: [dns]
 title: dnsmasq
 created: '2020-08-05T09:18:05.574Z'
-modified: '2020-09-02T17:30:43.100Z'
+modified: '2022-04-19T08:31:48.411Z'
 ---
 
 # dnsmasq
@@ -10,9 +10,11 @@ modified: '2020-09-02T17:30:43.100Z'
 > lightweight dhcp- and caching dns-server
 
 ## install
+
 `yum install dnsmasq`, `apt-get install dnsmasq`
 
 ## usage
+
 ```sh
 /etc/init.d/dnsmasq restart
 
@@ -24,6 +26,8 @@ dnsmasq --test    # check config syntax for errors
 ```
 
 ## see also
+
+- [[dns]]
 - [[dig]]
 - [[BIND]]
 - [[dhcp]]

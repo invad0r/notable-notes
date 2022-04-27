@@ -1,7 +1,7 @@
 ---
 title: wasm
 created: '2020-08-19T07:23:59.679Z'
-modified: '2022-02-02T10:03:31.300Z'
+modified: '2022-04-07T07:02:20.355Z'
 ---
 
 # wasm
@@ -11,7 +11,7 @@ modified: '2022-02-02T10:03:31.300Z'
 > designed as portable target for compiliation of high-level langs like c, c++, rust
 
 - brackets are called `s-expressions` (`lisp`) and used to represent tree-like structures
-  -  root of the tree is a `module` (like `javascript` modules)
+  - root of the tree is a `module` (like `javascript` modules)
 - basic building blocks of `wasm` are instructions that operate on the stack
 - uses structured control flow (`if` `else` `loop`) and avoids `GOTO` jumps, which allows parsing source in one pass
 - `wasm` uses `linear memory model` as memory addressing technique in which memory is organized in a single contagious address space. (aka flat memory model)
@@ -45,6 +45,7 @@ int sign(int x) { return (x % 2) * (2 - (x % 4)); }
 
 - [[asm]]
 - [[rust]]
+- [[go]]
 - [[clang]]
 - [[emcc]]
 - [evilmartians.com/chronicles/hands-on-webassembly-try-the-basics](https://evilmartians.com/chronicles/hands-on-webassembly-try-the-basics)

@@ -8,6 +8,7 @@ modified: '2020-01-16T08:07:18.431Z'
 # timedatectl
 
 ## usage
+
 ```sh
 timedatectl | grep "Time zone"
 
@@ -17,5 +18,6 @@ timedatectl set-timezone Europe/Kiev
 ```
 
 ## see also
+
 - [[chronyd]]
 - [[date]]

@@ -2,12 +2,12 @@
 tags: [dns]
 title: nslookup
 created: '2020-01-16T07:23:01.811Z'
-modified: '2021-12-23T09:13:48.422Z'
+modified: '2022-04-19T07:18:16.203Z'
 ---
 
 # nslookup
 
-> for querying `DNS` to obtain domain names or IP addresses, mapping or for any other specific DNS Records
+> for querying [[dns]] to obtain domain names or IP addresses, mapping or for any other specific DNS Records
 
 ## install
 
@@ -33,6 +33,7 @@ nslookup 10.32.23.139
 
 ## see also
 
+- [[dns]]
 - [[dig]]
 - [[ifconfig]]
 - [[whois]]

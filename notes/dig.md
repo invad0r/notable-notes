@@ -2,7 +2,7 @@
 tags: [dns, linux]
 title: dig
 created: '2019-07-30T06:19:49.037Z'
-modified: '2022-01-26T08:32:14.154Z'
+modified: '2022-04-19T08:46:25.014Z'
 ---
 
 # dig
@@ -13,14 +13,15 @@ modified: '2022-01-26T08:32:14.154Z'
 
 `apt install dnsutils`, `yum install bind-utils`, `apk add --no-cache bind-tools`
 
-## usage
+## flags
 
 ```sh
 -t TYPE       # any valid query type which is supported in BIND 9, default: A
 ```
 
+## query options
+
 ```sh
-# query options
 +short        #
 +[no]all      # set or clear all display flags.
 +[no]qr       # print [don't print] the query as it is sent. By default, the query is not printed.
@@ -28,6 +29,8 @@ modified: '2022-01-26T08:32:14.154Z'
 +answer       #
 +ttlid        
 ```
+
+## usage
 
 ```sh
 dig +short example.com
