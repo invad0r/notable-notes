@@ -2,7 +2,7 @@
 tags: [iac]
 title: aws
 created: '2019-07-30T06:19:48.990Z'
-modified: '2022-04-11T09:21:01.116Z'
+modified: '2022-05-10T13:35:45.461Z'
 ---
 
 # aws
@@ -135,7 +135,7 @@ credential_source=Ec2InstanceMetadata
 ```sh
 aws sts get-caller-identity --query Account --output text     # get current account id
 
-aws sts get-access-key-info --access-key-id ASIA...4B5S       # returns account id for specified access key id
+aws sts get-access-key-info --access-key-id ACCESS_KEY_ID     # returns account id for specified access key id
 
 aws --profile PROFILE sts get-session-token \
   --duration-seconds 900 `# 15min`\
@@ -455,6 +455,20 @@ aws securityhub get-findings \
   --filters '{"GeneratorId":[{"Value": "aws-foundational","Comparison":"PREFIX"}],"WorkflowStatus": [{"Value": "NEW","Comparison":"EQUALS"}],"Confidence": [{"Gte": 85}]}' \
   --sort-criteria '{"Field": "LastObservedAt","SortOrder": "desc"}' \
   --page-size 5 --max-items 100
+```
+
+## route53
+
+```
+aws route53 list-hosted-zones | jq -r '.HostedZones[] | .Id, .Name'
+```
+
+## route53domains
+
+```sh
+aws --region us-east-1 route53domains list-domains # route53domains api has no global endpoint; only works at region us-east-1
+
+aws --region us-east-1 route53domains get-domain-detail --domain-name DOMAIN | jq -r '.Nameservers[].Name'
 ```
 
 ## see also

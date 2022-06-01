@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2022-01-05T08:51:38.881Z'
+modified: '2022-05-17T06:31:28.418Z'
 ---
 
 # date
@@ -13,7 +13,7 @@ modified: '2022-01-05T08:51:38.881Z'
 
 `brew install coreutils`
 
-## usage
+## flags
 
 ```sh
 -u, --utc, --universal      #  print or set UTC (=Coordinated Universal Time)
@@ -33,6 +33,8 @@ man strftime
 %s          # unix timestamp
 ```
 
+## usage
+
 ```sh
 date "+%s"                        # get unix timestamp
 date "+%F_%T"                     # 2020-01-30_13:16:52
@@ -48,9 +50,11 @@ date -d "$(date -u -d "10am")"    # convert UTC time to local
 
 date -v -11d                      # subtract 11 days from current date on bsd/macos
 
-gdate -I -d "$d + 1 day"          # add 1 day to date
+gdate -I -d "2019-01-01 + 1 day"          # add 1 day to date
+gdate -d "$(gdate +%F) + 1 day" +%F       # add 1 day
+for i in {1..5}; do mkdir $(gdate -d "$(gdate +%F) + $i day" +%F_%a); done
 
-gdate -d "$d" +%A                 # get short weekday from date
+gdate -d "2019-01-01" +%A                 # get short weekday from date
 
 # calculate days difference
 echo "$(( (  $(gdate "+%s") - $(gdate -d "2020-10-13T08:30:10+00:00" "+%s") )/(60*60*24) ))" 

@@ -2,21 +2,24 @@
 tags: [coreutils, macos]
 title: cat
 created: '2019-09-04T06:20:06.676Z'
-modified: '2022-01-18T11:18:07.642Z'
+modified: '2022-05-17T19:20:50.994Z'
 ---
 
 # cat
 
 > concatenate and print files
 
+## flags
+
+```sh
+-e   # display non printin characters
+-s   # Squeeze multiple adjacent empty lines, causing the output to be single spaced
+```
+
 ## usage
 
 ```sh
 cat > FILE          # then start typing and SIGINT to save
-
-cat -e FILE         # display non printin characters
-
-cat -s FILE         # Squeeze multiple adjacent empty lines, causing the output to be single spaced
 
 # cat heredoc to file
 cat <<EOF > FILE    
@@ -30,6 +33,7 @@ EOF
 
 ## see also
 
+- [[less]]
 - [[bat]]
 - [[mkfifo]]
 - [[heredoc]]

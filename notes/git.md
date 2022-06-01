@@ -2,30 +2,249 @@
 tags: [vcs]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2021-10-29T12:30:23.993Z'
+modified: '2022-06-01T09:26:22.420Z'
 ---
 
 # git
 
 > distributed version-control system for tracking changes in source code during software development.
 
+## environment
+
+```sh
+EDITOR      # see commit
+```
+
+## add
+
+```sh
+git add FILE              # add FILE to the staging area
+
+git add .                 # add all changes files from current directory down into directory tree
+
+git add --patch FILE      # add specific lines to commit
+
+git add --all "$(git diff --diff-filter=D --name-only)"     # add deleted files, ! watchout for spaces !
+```
+
+## alias
+
+```sh
+git alias       # list aliases
+```
+
+## branch
+
+```sh
+-a, --all         # list all branches, local and remote   
+-d                # remove selected branch
+-D                # forces deletion
+-l, --list        # list local branches
+-r, --remotes     # list remote 
+
+-v                # verbose
+-vv               # more verbose e.g. show gone branches `[origin/refactoring: gone]`
+
+
+git branch BRANCH_NAME      # create new branch, referencing the current HEAD
+
+git branch -d NAME          # remove selected branch, if it is already merged into any other
+
+git branch --no-merged | xargs git branch -d
+```
+
+## checkout
+
+```sh
+-b NAME         # will create specified branch if it does not exist
+
+git checkout -- FILE      # discard changes in working directory. Operation is unrecoverable !
+
+git checkout -            # checkout prevous branch
+
+git checkout .            # reset all current changes
+```
+
+## commit
+
+```sh
+git commit -v     # using $EDITOR
+git commit -m "title" -m "message"
+git commit -am ..
+git commit --allow-empty      # empty commit without changes -> for retriggers !
+
+# amend to already pushed commit
+git add FILE-A FILE-B        # !!! only if nobody has pulled in the mean time !!!
+git commit --amend
+git push --force-with-lease
+```
+
 ## config
 
 ```sh
-git config --global user.name "Your Name"         # Set the name that will be attached to your commits and tags.
+--local             # list local configuration
+--global            # list global configuration
 
-git config --global user.email "you@example.com"  # Set the e-mail address that will be attached to your commits and tags.
+git config --global user.name "Your Name"         # set the name that will be attached to your commits and tags
 
-git config --global color.ui auto                 # Enable some colorization of Git output. 
+git config --global user.email "you@example.com"  # set the e-mail address that will be attached to your commits and tags
 
-git config --list [--local|--global]              # list local/global configuration
+git config --global color.ui auto                 # enable some colorization output
+
+git config  --global pull.ff only                 # always override individual pull invocation with "git pull --rebase" or "git pull --no-ff", making it a conscious choice when a fast-forward pull is not possible
 ```
 
-[[.gitconfig]]
+to perist config use `~/.gitconfig`
+
+```sh
+[alias]
+  cpl = !git checkout - && git pull
+  cbd = !git checkout -b "update-$(date +%F_%H%M)"
+
+[core]
+  editor = vim
+  hooksPath = .husky
+
+[init]
+  defaultBranch = main
+
+[user]
+  name = Some Name
+  email = name@mail.com
+
+[remote "origin"]
+  gh-resolved = base
+
+[pull]
+  ff = only   
+
+[bulkworkspaces]
+  WORKSPACE_NAME = PATH
+```
+
+```sh
+# seperate configs per remote
+
+cat <<EOF > ~/.gitconfig
+[includeIf "gitdir:~/gitlab.com/"]
+  path = ~/.gitconfig-gitlab
+
+[includeIf "gitdir:~/github.com/"]
+  path = ~/.gitconfig-github
+EOF
+
+cat <<EOF > ~/.gitconfig-github
+[user]
+  name  = user
+  email = user@mail.com
+
+[push]
+  default = simple
+EOF
+```
+
+## column
+
+```sh
+seq 1 100 | git column --mode=column
+```
+
+[[column]]
+
+
+## diff
+
+```sh
+git diff FILE             # diff between working directory and staging area
+git diff *.txt
+
+git diff --staged FILE    # diff files in the staging area that haven't been commited
+
+git diff HEAD~2 HEAD~1    # diff between the previous commit and the second ancestor commit
+git diff HEAD@{1} .env    # diff wir previouse version
+
+git diff --name-only --diff-filter=D | sed 's| |\\ |g' | xargs git add      # add only deleted file to workspace
+```
+
+## help
+
+```sh
+git help CMD
+git help -g       # guides
+git help GUIDE
+```
+
+## log
+
+```sh
+-n COUNT            # limits list to last n commits
+
+
+git log ref..                 # list commits that are present on current branch and not merged into ref.A ref can be e.g. a branch name or a tag name.
+
+git log ..ref                 # list commit, that are present on ref and not merged into current branch.
+
+git reflog                    # list operations (like checkouts, commits etc.) made on local repository.
+
+git log --follow -p -- file   # follow file history
+
+
+git log HEAD..origin/master   # see where origin/master branch has diverged
+                              # "git and have 1 and 1 different commits each, respectively"
+
+git log --oneline --author="John Smith" 
+
+git log --format="%Cgreen%h%Creset %an"
+
+git log --graph --oneline --decorate --color  # overview with references labels and history graph. One commit er line
+
+git log --graph --abbrev-commit --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
+
+git log -L:<function>:file      # git log of a specific function in a file
+
+# pretty format
+alias glg='git log --graph --pretty=format:"%Cred%h%Creset \
+  -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" \
+  --abbrev-commit'
+```
+
+[[bash alias]]
+
+## ls-files
+
+```sh
+git ls-files -o --exclude-standard    # show new files
+
+git ls-files --deleted | xargs -d "\n" git add --all    # add deleted files
+git ls-files -z --deleted | xargs -0 git add            # add deleted files
+```
+
+## merge
+
+```sh
+git merge --abort           # cancel merge conflict
+
+git merge FROM_NAME         # join specified FROM_NAME branch into your current branch
+```
+
+## notes
+
+```sh
+git notes add -m "this is a test note.."
+
+git notes list
+
+git notes show
+
+git push origin refs/notes/*                    # push notes
+git fetch origin refs/notes/*:refs/notes/*      # fetch all notes
+```
 
 ## remote
 
 ```sh
+ssh -Tv git@example.com       # test-ssh-connection
+
 git remote -v
 
 git remote show origin
@@ -50,182 +269,79 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git    # change
 git remote set-url origin git@github.com:USERNAME/REPOSITORY.git        # change remote url https -> ssh
 ```
 
-### git setup repository
+## reset
 
 ```sh
-# setup from empty repository
-git clone git@git.domain.net:user/foo.git
-git add README.md
-git commit -m "add README"
-git push -u origin master
+git reset FILE            # Get file back from staging area to working directory
 
-# setup existing folder
-git init
-git remote add origin git@git.domain.net:user/foo.git
-git add --all
-git commit
-git push -u origin master
-
-# setup existing Git repository
-git remote add origin git@git.domain.net:user/foo.git
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git    # switch remote url fomr ssh to https
-git push -u origin --all
-git push -u origin --tags
-``` 
-
-[Git-Basics-Working-with-Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-
-## usage
-```sh
-ssh -Tv git@example.com       # test-ssh-connection
-
-git help CMD
-git help -g       # guides
-git help GUIDE
-
-git status                # See the status of your work. New, staged, modified files. Current branch.
-git status -s             # show short-format output
-git status -s | grep -Z "^ D" | awk '{ $1=""; print $0}' | xargs -0 -I% git add -u %    # add deleted files to stage
-
-git ls-files -o --exclude-standard    # show new files
-
-
-git commit -v     # using $EDITOR
-git commit -m "title" -m "message"
-git commit -am ..
-git commit --allow-empty      # empty commit without changes -> for retriggers !
-
-
-git show COMMIT           # show changes of commit
-
-git diff FILE             # diff between working directory and staging area
-git diff --staged FILE    # diff files in the staging area that haven't been commited
-git diff HEAD@{1} .env    # diff wir previouse version
-
-git checkout -- FILE      # discard changes in working directory. This operation is unrecoverable !
-git checkout -            # checkout prevous branch
-git checkout .            # reset all current changes
-
-git add FILE              # add FILE to the staging area. 
-                          # Use `.` instead of full file path, to add all changes files from current directory down into directory tree
-git add --patch FILE      # add specific lines to commit
-
-
-git reset FILE            # Get file back from staging area to working directory.
 git reset HEAD -- FILE    # undo git add FILE
+
 git reset --hard HEAD^    # delete last commit
+```
 
-git merge --abort         # cancel merge conflict
+## rev-list
 
+```sh
+# search for file in history
+git rev-list --all registrator.go | ( while read revision; do git grep -F 'swarm' $revision registrator.go done )
+```
+
+## push
+
+```sh
 git push origin -f
 
-
-git log --graph --oneline --decorate --color
-git log --graph --abbrev-commit --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
-git log -L:<function>:file      # git log of a specific function in a file
-
-
-git stash       # Put your current changes into stash.
-git stash pop   # Apply stored stash content into working directory, and clear stash.
-git status      # Clear stash without applying it into working directory
+git push --set-upstream origin BRANCH_NAME
 ```
 
-## amend
+## pull
 
-> ammend to already pushed commit
+> fetch from and integrate with another repository or local branch
 
 ```sh
-git add FILE-A FILE-B        # !!! only if nobody has pulled in the mean time !!!
+git pull
 
-git commit --amend
-
-git push --force-with-lease
+git fetch && git merge # or git rebase
 ```
 
-### reverting changes
+## shortlog
+
+> `git-shortlog` - summarize `git log` output
 
 ```sh
-git reset --hard TARGET_REF   # switch current branch to the target reference, and leaves a ifference as anuncommited changes
-                              # when --hard is used, all changes are discarded
-git revert COMMIT_SHA         # create new commit, reverting changes from the speci fied commit. Itgenerates n inversion of changes
+-n, --numbered    # sort output according to the number of commits per author instead of author alphabetic order
+-s, --summary     # suppress commit description and provide a commit count summary only
+-e, --email       # show email address of each author
+
+git shortlog -sn                              # rank contributors
+git shortlog -sn --grep="^fix" --no-merges    # filter commit message and don't count merge commits
 ```
 
-### restore deleted file
+## show
 
 ```sh
-git log --diff-filter=D --summary | grep delete | grep filename   # find deleted file
-git log --all -- path/file.sh                                     # get hash to file; exec from git-root-dir !!
-git checkout e7s..37^ --  path/file.sh                            # note ^ after SHA !
+git show COMMIT           # show changes of commit
 ```
 
-
-### search for file in history
+## stash
 
 ```sh
-git rev-list --all registrator.go \
-  | ( while read revision; do git grep -F 'swarm' $revision registrator.go done )
+git stash       # put current changes into stash
+
+git stash pop   # apply stored stash content into working directory, and clear stash
+
+git status      # clear stash without applying it into working directory
 ```
 
-### pruge file from repository's history
+## status
 
 ```sh
-#   Force Git to process, but not check out, the entire history of every branch and tag
-#   Remove the specified file, as well as any empty commits generated as a result
-#   Overwrite your existing tags
-git filter-branch --force --index-filter \
-  "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA" \
-  --prune-empty --tag-name-filter cat -- --all
-git push origin --force --all       # overwrite repository, as well as all branches you've pushed up
-git push origin --force --tags      # remove the sensitive file from your tagged releases
+git status                # See the status of your work. New, staged, modified files. Current branch
+
+git status -s             # show short-format output
+
+git status -s | grep -Z "^ D" | awk '{ $1=""; print $0}' | xargs -0 -I% git add -u %    # add deleted files to stage
 ```
-
-## branch
-
-```sh
-git branch -l    # list local branches
-git branch -r    # list remote 
-git branch -a    # list all: local and remote   
-
-git branch -v     # verbose
-git branch -vv    # more verbose e.g. show gone branches `[origin/refactoring: gone]`
-
-
-git branch branchName       # Create new branch, referencing the current HEAD
-
-git checkout -b NAME        # switch working directory to specified branch. 
-                            # -b:git will create he specified branch if it does not exist
-
-git merge FROM_NAME         # Join specified [from name] branch into your current branch (the one you are on currenlty).
-
-git branch -d NAME          # Remove selected branch, if it is already merged into any other. -D  instead of -d  forces deletion.
-```
-
-## log
-
-```sh
-git log [-n count]            # List commit history of current branch. -n count limits list to last n commits.
-
-git log ref..                 # List commits that are present on current branch and not merged into ref.A ref can be e.g. a branch name or a tag name.
-
-git log ..ref                 # List commit, that are present on ref and not merged into current branch.
-
-git reflog                    # List operations (like checkouts, commits etc.) made on local repository.
-
-git log --follow -p -- file   # follow file history
-
-
-git log HEAD..origin/master   # see where origin/master branch has diverged
-                              # "git and have 1 and 1 different commits each, respectively"
-
-git log --oneline --graph --decorate    # An overview with references labels and history graph. One commit er line.
-
-# pretty format
-alias glg='git log --graph --pretty=format:"%Cred%h%Creset \
-  -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" \
-  --abbrev-commit'
-```
-
-[[bash alias]]
 
 ## tag
 
@@ -254,6 +370,63 @@ git push --tags
 ```
 
 [stackoverflow.com/how-can-i-tell-if-a-given-git-tag-is-annotated-or-lightweight](https://stackoverflow.com/a/40499437/14523221)
+
+---
+
+### git setup repository
+
+```sh
+# setup from empty repository
+git clone git@git.domain.net:user/foo.git
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+# setup existing folder
+git init
+git remote add origin git@git.domain.net:user/foo.git
+git add --all
+git commit
+git push -u origin master
+
+# setup existing Git repository
+git remote add origin git@git.domain.net:user/foo.git
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git    # switch remote url fomr ssh to https
+git push -u origin --all
+git push -u origin --tags
+``` 
+
+[Git-Basics-Working-with-Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+
+
+### reverting changes
+
+```sh
+git reset --hard TARGET_REF   # switch current branch to the target reference, and leaves a ifference as anuncommited changes
+                              # when --hard is used, all changes are discarded
+git revert COMMIT_SHA         # create new commit, reverting changes from the speci fied commit. Itgenerates n inversion of changes
+```
+
+### restore deleted file
+
+```sh
+git log --diff-filter=D --summary | grep delete | grep filename   # find deleted file
+git log --all -- path/file.sh                                     # get hash to file; exec from git-root-dir !!
+git checkout e7s..37^ --  path/file.sh                            # note ^ after SHA !
+```
+
+### pruge file from repository's history
+
+```sh
+#   Force Git to process, but not check out, the entire history of every branch and tag
+#   Remove the specified file, as well as any empty commits generated as a result
+#   Overwrite your existing tags
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA" \
+  --prune-empty --tag-name-filter cat -- --all
+git push origin --force --all       # overwrite repository, as well as all branches you've pushed up
+git push origin --force --tags      # remove the sensitive file from your tagged releases
+```
 
 ## see also
 
