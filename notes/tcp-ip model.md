@@ -1,11 +1,11 @@
 ---
 tags: [network]
-title: tcp-ip
+title: tcp-ip model
 created: '2021-05-28T06:16:51.067Z'
-modified: '2022-02-10T12:55:47.494Z'
+modified: '2022-11-16T12:36:05.015Z'
 ---
 
-# tcp-ip
+# tcp-ip model
 
 > aka `internet protocol suite`, a conceptual model and set of communications protocols used in internet and networks
 > foundational protocols in the suite are the [[tcp]] and [[ipv4]]

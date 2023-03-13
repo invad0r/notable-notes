@@ -1,11 +1,13 @@
 ---
 tags: [Notebooks]
-title: infrastructure as code
+title: iac
 created: '2019-07-30T06:19:49.081Z'
-modified: '2022-04-06T11:34:41.761Z'
+modified: '2022-10-17T10:55:16.675Z'
 ---
 
-# infrastructure as code
+# iac
+
+> infrastructure as code
 
 ## pets vs cattle
 
@@ -25,6 +27,7 @@ modified: '2022-04-06T11:34:41.761Z'
 
 ## see also
 
+- [[12 factor app]]
 - [[gitops]]
 - [[terraform]]
 - [[aws cloudformation]]
