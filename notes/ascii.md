@@ -1,7 +1,7 @@
 ---
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2022-04-08T20:47:57.207Z'
+modified: '2022-11-25T11:10:43.626Z'
 ---
 
 # ascii
@@ -37,12 +37,6 @@ xxd -r <<<'0 4a'           # decimal
 char | oct | hex | dec
 "    | 042 | 22  | 34
 J    | 112 | 4a  | 74
-```
-
-
-```sh
-
-
 ```
 
 ## see also

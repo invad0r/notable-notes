@@ -8,10 +8,12 @@ modified: '2019-11-15T07:00:30.654Z'
 # systemd-escape
 
 ## usage
+
 ```sh
 systemd-escape \'{{ GetInterfaceIP \"ens192\" }}\'
 ```
 
 ## see also
+
 - [[systemd]]
 - [[systemd unit]]

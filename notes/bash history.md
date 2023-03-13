@@ -2,14 +2,15 @@
 tags: [shell/bash/builtin]
 title: bash history
 created: '2019-08-02T06:42:37.603Z'
-modified: '2021-09-06T14:39:00.473Z'
+modified: '2022-04-27T14:24:08.446Z'
 ---
 
 # bash history
 
 > display or manipulate the history list
 
-## usage
+## flags
+
 ```sh
 -c           # clear the history list by deleting all of the entries
 -d offset    # delete the history entry at position OFFSET. Negative offsets count back from the end of the history list
@@ -20,6 +21,8 @@ modified: '2021-09-06T14:39:00.473Z'
 -p           # perform history expansion on each ARG and display the result without storing it in the history list
 -s           # append the ARGs to the history list as a single entry
 ```
+
+## environment variables
 
 ```sh
 HISTTIMEFORMAT                    # format-string strftime(3) to print the time stamp for each displayed history entry
@@ -37,6 +40,8 @@ HISTCONTROL=ignoredups           # ignore duplicate liens
 HISTCONTROL=ignoreboth           # ignore both above
 ```
 
+## usage
+
 ```sh
 shopt -s histappend      # don't overwrite history file after each session
 shopt -s cmdhist         # force commands entered on more than one line to be adjusted to fit on only one for parsing
@@ -51,6 +56,7 @@ history | awk '{print $2}' | sort | uniq -c | sort -rn | head -30 | \
 ```
 
 ## see also
+
 - [[bash history expansion]]
 - [[bash fc]]
 - [[bash shopt]]

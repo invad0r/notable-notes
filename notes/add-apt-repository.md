@@ -1,12 +1,14 @@
 ---
 title: add-apt-repository
 created: '2022-02-02T09:05:29.982Z'
-modified: '2022-02-02T09:11:07.728Z'
+modified: '2022-10-11T06:31:39.910Z'
 ---
 
 # add-apt-repository
 
->  script which adds an external [[apt]] repository to either `/etc/apt/sources.list` or a file in `/etc/apt/sources.list.d/` or removes an already existing repository
+> script which adds an external [[apt]] repository to either `/etc/apt/sources.list` 
+> or a file in `/etc/apt/sources.list.d/` 
+> or removes an already existing repository
 
 ## flags
 

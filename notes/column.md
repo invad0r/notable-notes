@@ -2,14 +2,14 @@
 tags: [bsdmainutils]
 title: column
 created: '2020-07-27T11:16:40.585Z'
-modified: '2021-10-31T15:11:47.111Z'
+modified: '2022-05-30T06:34:02.410Z'
 ---
 
 # column
 
 > columnate lists
 
-## usage
+## flags
 
 ```sh
 -s        # characters to be used to delimit columns for the -t option (default: delimited with whitespace)
@@ -17,6 +17,8 @@ modified: '2021-10-31T15:11:47.111Z'
 -c        # output is formatted for a display columns wide
 -x        # fill columns before filling rows
 ```
+
+## usage
 
 ```sh
 column FILE  -t -s "|"      # file containers lines like "foo|bar|baz"

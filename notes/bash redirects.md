@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2022-03-11T08:40:24.641Z'
+modified: '2022-06-16T11:00:39.820Z'
 ---
 
 # bash redirects
@@ -67,6 +67,13 @@ n<&m                 # file descriptor n is made to be a copy of the input file 
 >&-                  # closes the stdout
 n>&-                 # closes the ouput from FILE descriptor n
 n<&-                 # closes the input from FILE descripor n
+
+
+&>/dev/null         # shorthand for `1> /dev/null 2> /dev/null`
+
+command 1>&- 2>&-           # http://www.cyberciti.biz/faq/how-to-redirect-output-and-errors-to-devnull/#comment-40252
+job 1>&- 2>&-  &            # additional & at end of job to put it in backgrounds
+command 1>&- 2>&-  &        # additional & at end of command to put it in backgrounds
 ```
 
 ## dash

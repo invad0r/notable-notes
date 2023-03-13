@@ -2,19 +2,22 @@
 tags: [shell/bash]
 title: bash variables
 created: '2019-07-30T06:19:49.023Z'
-modified: '2021-05-12T08:46:51.354Z'
+modified: '2022-06-02T12:13:10.661Z'
 ---
 
 # bash variables
 
 ## usage
+
 ```sh
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
+
 echo $varname                # checks a variable's value
 echo $$                      # prints process ID of the current shell
 echo $!                      # prints process ID of the most recently invoked background job
 echo $?                      # displays the exit status of the last command
+
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
 
@@ -45,6 +48,8 @@ ${#varname}                  # returns the length of the value of the variable a
 ```
 
 ## see also
+
 - [[bash export]]
+- [[bash echo]]
 - [[bash parameter expansion ]]
 - [[env]]

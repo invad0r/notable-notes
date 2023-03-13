@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash let
 created: '2019-08-02T06:42:37.607Z'
-modified: '2021-05-12T08:46:08.135Z'
+modified: '2022-04-27T14:29:25.433Z'
 ---
 
 # bash let
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:08.135Z'
 > evaluate arithmetic expressions
 
 ## usage
+
 ```sh
 myvar=6
 
@@ -19,5 +20,6 @@ echo $myvar
 ```
 
 ## see also
+
 - [[bc]]
 - [[bash arithmetic expansion]]

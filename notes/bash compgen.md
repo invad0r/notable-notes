@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash compgen
 created: '2019-08-02T06:13:41.072Z'
-modified: '2021-06-04T12:13:51.079Z'
+modified: '2022-04-27T14:20:30.288Z'
 ---
 
 # bash compgen
@@ -10,6 +10,7 @@ modified: '2021-06-04T12:13:51.079Z'
 > display possible completions depending on the options
 
 ## usage
+
 ```sh
 COMPREPLY     # array variable used to store the completions
 COMP_WORDS    # array of all words typed after the name of the program the compspec belongs to
@@ -27,6 +28,7 @@ COMP_LINE     # the current command line
 -u            # names of userAlias names
 -v            # names of shell variables
 ```
+
 ```sh
 compgen -c                     # list all the commands you could run
 compgen -c x                   # names of all commands starting with x
@@ -59,5 +61,6 @@ tomorrow
 ```
 
 ## see also
+
 - [[bash]]
 - [[bash type]]

@@ -6,16 +6,18 @@ modified: '2021-06-04T12:25:49.726Z'
 
 # kcadm.sh
 
->  admin cli works by making http requests to admin REST endpoints - access to them is protected and requires auth
+> admin cli works by making http requests to admin REST endpoints - access to them is protected and requires auth
 
 ## install
+
 ```sh
 curl -O https://downloads.jboss.org/keycloak/8.0.1/keycloak-8.0.1.tar.gz
 tar xzf keycloak-8.0.1.tar.gz && mv keycloak-8.0.1 ~/bin
 export PATH="$PATH:$HOME/bin/keycloak-8.0.1/bin"
 ```
 
-## usage
+## flags
+
 ```sh
 -r, --target-realm REALM        # Target realm to issue requests against if not the one authenticated against
 -q, --query NAME=VALUE          # Add to request URI a NAME query parameter with value VALUE
@@ -29,6 +31,9 @@ export PATH="$PATH:$HOME/bin/keycloak-8.0.1/bin"
 --noquotes                      # Don't quote strings when output format is 'csv'
 -a, --admin-root URL            # URL of Admin REST endpoint root if not default - e.g. http://localhost:8080/auth/admin
 ```
+
+## usage
+
 ```sh
 kcadm.sh config credentials --server http://keycloak/auth --realm master --user admin   # .keycloak/kcadm.config
 
@@ -66,6 +71,7 @@ kcadm.sh get clients/CLIENT_ID/installation/providers/keycloak-oidc-keycloak-jso
 ```
 
 ## see also
+
 - [[keycloak api]]
 - [[java]]
 - [keycloak.org/docs/8.0/server_admin/#the-admin-cli](https://www.keycloak.org/docs/8.0/server_admin/#the-admin-cli)

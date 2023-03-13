@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash command
 created: '2019-08-02T06:42:37.566Z'
-modified: '2021-06-07T06:52:52.077Z'
+modified: '2022-04-27T14:20:12.206Z'
 ---
 
 # bash command
@@ -23,6 +23,7 @@ command -v CMD    # posix way of checking if CMD is available
 ```
 
 ## see also
+
 - [[which]]
 - [[bash type]]
 - [[bash hash]]

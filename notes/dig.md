@@ -2,7 +2,7 @@
 tags: [dns, linux]
 title: dig
 created: '2019-07-30T06:19:49.037Z'
-modified: '2022-04-19T08:46:25.014Z'
+modified: '2022-09-20T08:12:40.048Z'
 ---
 
 # dig
@@ -11,7 +11,11 @@ modified: '2022-04-19T08:46:25.014Z'
 
 ## install
 
-`apt install dnsutils`, `yum install bind-utils`, `apk add --no-cache bind-tools`
+```
+apt-get install dnsutils
+yum install bind-utils
+apk add --no-cache bind-tools
+```
 
 ## flags
 

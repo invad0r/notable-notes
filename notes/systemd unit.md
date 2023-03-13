@@ -6,9 +6,11 @@ modified: '2019-08-27T07:14:56.501Z'
 ---
 
 # systemd unit
+
 > `Units` are the objects that `systemd` knows how to manage. A standardized representation of system resources that can be managed.
 
 ## paths
+
 ```sh
 /usr/lib/systemd/systemd-logind
 
@@ -20,6 +22,7 @@ modified: '2019-08-27T07:14:56.501Z'
 ```
 
 ## unit types
+
 | type          | description |
 |--             |--           |
 | `.service`    | service on the system, including instructions for starting, restarting, and stopping the service |
@@ -36,4 +39,5 @@ modified: '2019-08-27T07:14:56.501Z'
 | `.scope`      | Information from systemd bus interfaces. Usually used to manage external system processes |
 
 ## see also
+
 - [understanding-systemd-units-and-unit-files - digitalocean](https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files)

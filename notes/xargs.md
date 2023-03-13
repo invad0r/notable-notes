@@ -2,7 +2,7 @@
 tags: [brew]
 title: xargs
 created: '2019-07-30T06:19:49.266Z'
-modified: '2021-10-06T12:14:49.361Z'
+modified: '2022-11-29T08:10:49.453Z'
 ---
 
 # xargs
@@ -11,9 +11,11 @@ modified: '2021-10-06T12:14:49.361Z'
 
 ## install
 
-`brew install findutils` as `gxargs`
+```sh
+brew install findutils # as gxargs
+```
 
-## usage
+## flags
 
 ```sh
 -I REPL_STR         # Execute utility for each input line, replacing one or more occurrences of replstr in up to replacements
@@ -24,6 +26,8 @@ modified: '2021-10-06T12:14:49.361Z'
 -p                  # echo each command to be executed and ask the user whether it should be executed
 -x                  # force xargs to terminate immediately if a command line containing number arguments will not fit in the specified cli  length
 ```
+
+## usage
 
 ```sh
 echo 'one two three' | xargs mkdir
@@ -45,6 +49,7 @@ ls | xargs -I% echo "% rugal"
 
 ## see also
 
+- [[grep]]
 - [[curl]]
 - [[parallel]]
 - [Replacement for xargs -d in osx](https://superuser.com/questions/467176/replacement-for-xargs-d-in-osx)

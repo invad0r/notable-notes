@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash globbing
 created: '2019-07-30T06:19:49.009Z'
-modified: '2021-05-12T08:46:51.119Z'
+modified: '2022-04-27T14:23:05.524Z'
 ---
 
 # bash globbing
@@ -11,6 +11,7 @@ modified: '2021-05-12T08:46:51.119Z'
 > pathname-expansion expands: `*`, `?`, `.`, `[..]`
 
 ## usage
+
 ```sh
 man bash           # some globbing explained
 
@@ -53,6 +54,7 @@ ls !(+(ab|def)*+(.jpg|.gif))            # list all the files that aren't jpg or 
 ```
 
 ## see also
+
 - [[bash shopt]]
 - [[bash parameter expansion]]
 - [linuxjournal.com/content/bash-extended-globbing](https://www.linuxjournal.com/content/bash-extended-globbing)

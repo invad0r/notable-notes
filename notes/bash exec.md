@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash exec
 created: '2019-07-30T06:19:49.006Z'
-modified: '2022-01-25T10:22:24.770Z'
+modified: '2022-04-27T14:22:02.698Z'
 ---
 
 # bash exec
@@ -59,6 +59,7 @@ exec 5<>/dev/tcp/www.google.com/80
 cat FILE >&5
 cat <&5 # reply
 ```
+
 [unix.stackexchange.com/how-to-run-the-http-request-without-using-curl](https://unix.stackexchange.com/a/234089/440548)
 
 ## see also

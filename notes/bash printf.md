@@ -2,24 +2,28 @@
 tags: [shell/bash/builtin]
 title: bash printf
 created: '2019-07-30T06:19:49.208Z'
-modified: '2022-01-31T19:03:43.550Z'
+modified: '2023-01-23T13:02:00.560Z'
 ---
 
 # bash printf
 
 > formats and prints ARGUMENTS under control of the FORMAT
 
-## usage
+## flag
 
 ```sh
 -v VAR   # assign the output to shell variable VAR rather than display it on the standard output
 ```
+
+## format
 
 ```sh
 %b        # expand backslash escape sequences in the corresponding argument
 %q        # quote the argument in a way that can be reused as shell input
 %(fmt)T   # output the date-time string resulting from using FMT as a format string for strftime(3)
 ```
+
+## usage
 
 ```sh
 printf '%x\n' 12        # print hex: C
@@ -45,7 +49,10 @@ i=1; sp="/-\|"; echo -n ' '; while :; do printf "\b${sp:i++%${#sp}:1}"; done
 ```
 
 ## see also
+
 - [[watch]]
 - [[bash arithmetic expansion]]
 - [[bc]]
 - [[echo]]
+- [[od]]
+- [[seq]]

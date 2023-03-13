@@ -2,7 +2,7 @@
 tags: [vcs]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2022-06-01T09:26:22.420Z'
+modified: '2022-06-02T09:33:11.794Z'
 ---
 
 # git
@@ -13,6 +13,14 @@ modified: '2022-06-01T09:26:22.420Z'
 
 ```sh
 EDITOR      # see commit
+
+GIT_AUTHOR_NAME
+GIT_AUTHOR_EMAIL
+GIT_AUTHOR_DATE
+
+GIT_COMMITTER_NAME
+GIT_COMMITTER_EMAIL
+GIT_COMMITTER_DATE
 ```
 
 ## add
@@ -46,6 +54,8 @@ git alias       # list aliases
 -vv               # more verbose e.g. show gone branches `[origin/refactoring: gone]`
 
 
+git branch -lvv             # list local branches and tracking branch via verbose
+
 git branch BRANCH_NAME      # create new branch, referencing the current HEAD
 
 git branch -d NAME          # remove selected branch, if it is already merged into any other
@@ -54,6 +64,8 @@ git branch --no-merged | xargs git branch -d
 ```
 
 ## checkout
+
+> changes the branch name stored in `HEAD`
 
 ```sh
 -b NAME         # will create specified branch if it does not exist
@@ -67,10 +79,31 @@ git checkout .            # reset all current changes
 
 ## commit
 
+> stores new commit-ID in the current branch, read from `HEAD`
+
 ```sh
+-a,        --all                    # stage all files modified and deleted, but new files are not affected
+-p,        --patch                  # interactive patch selection interface to choose which changes to commit
+-C COMMIT, --reuse-message=COMMIT   # reuse log message, authorship information and timestamp when creating commit
+-c COMMIT, --reedit-message=COMMIT  # like -C, but invoke $EDITOR
+
+           --branch                 # show branch and tracking info even in short-format
+           --dry-run                # don't create commit, but show a list of paths that are to be committed
+           --short                  # give output in short-format.            Implies --dry-run
+           --long                   # give output in the long-format.         Implies --dry-run
+           --porcelain              # give output in porcelain-ready format.  Implies --dry-run
+
+-v,        --verbose                # invoke $EDITOR and show unified diff between HEAD commit and what would be committed at the bottom of commit message template 
+                                    # If specified twice, show in addition the unified diff between what would be committed and the worktree files
+-q,        --quiet                  # suppress commit summary message
+
+
 git commit -v     # using $EDITOR
+
 git commit -m "title" -m "message"
+
 git commit -am ..
+
 git commit --allow-empty      # empty commit without changes -> for retriggers !
 
 # amend to already pushed commit
@@ -158,7 +191,7 @@ seq 1 100 | git column --mode=column
 git diff FILE             # diff between working directory and staging area
 git diff *.txt
 
-git diff --staged FILE    # diff files in the staging area that haven't been commited
+git diff --staged FILE    # diff files in staging area that haven't been commited
 
 git diff HEAD~2 HEAD~1    # diff between the previous commit and the second ancestor commit
 git diff HEAD@{1} .env    # diff wir previouse version
@@ -222,6 +255,16 @@ git ls-files -z --deleted | xargs -0 git add            # add deleted files
 ## merge
 
 ```sh
+            # how a merge is handled when the merged-in history is already a descendant of the current history
+
+--ff        # fast-forward = "slide the branch label forward", is the default unless merging an annotated then --no-ff is assumed
+            # when possible resolve the merge as a fast-forward (only update the branch pointer to match the merged branch; do not create a merge commit).
+            # when not possible (when the merged-in history is not a descendant of the current history), create a merge commit
+
+--no-ff     # create a merge commit in all cases, even when the merge could instead be resolved as a fast-forward
+
+--ff-only   # resolve the merge as a fast-forward when possible. When not possible, refuse to merge and exit with a non-zero status
+
 git merge --abort           # cancel merge conflict
 
 git merge FROM_NAME         # join specified FROM_NAME branch into your current branch
@@ -296,7 +339,7 @@ git push --set-upstream origin BRANCH_NAME
 
 ## pull
 
-> fetch from and integrate with another repository or local branch
+> `git fetch` from and `git merge` or `git rebase` with another repository or local branch
 
 ```sh
 git pull
@@ -314,6 +357,7 @@ git fetch && git merge # or git rebase
 -e, --email       # show email address of each author
 
 git shortlog -sn                              # rank contributors
+
 git shortlog -sn --grep="^fix" --no-merges    # filter commit message and don't count merge commits
 ```
 
@@ -321,6 +365,8 @@ git shortlog -sn --grep="^fix" --no-merges    # filter commit message and don't 
 
 ```sh
 git show COMMIT           # show changes of commit
+
+git show HEAD~3           # get the third ancestor commit’s details
 ```
 
 ## stash
@@ -430,12 +476,12 @@ git push origin --force --tags      # remove the sensitive file from your tagged
 
 ## see also
 
-- [[git config]]
 - [[ssh]]
 - [[bfg]]
 - [[gh]]
 - [[git-chglog]]
 - [gitlab.com/2016/12/08/git-tips-and-tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 - [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)
+- [stackoverflow.com/git-shortcut-for-checkout-pull-checkout-merge-rebase](https://stackoverflow.com/a/39462995/14523221)
 - [docs.github.com/removing-sensitive-data-from-a-repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
 

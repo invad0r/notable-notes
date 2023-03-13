@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: bash function
 created: '2019-07-30T06:19:49.008Z'
-modified: '2021-05-12T08:46:30.716Z'
+modified: '2022-04-27T14:22:49.998Z'
 ---
 
 # bash function
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:30.716Z'
 > keyword `function` defines a shell function
 
 ## usage
+
 ```sh
 #   the function refers to passed arguments by position (positional parameters)
 #   `$@`    expands positional params to seperate words: `$1` `$2`..`$N`
@@ -40,6 +41,7 @@ db_get() { grep "^$1," database | sed -e "s/^$1,//" | tail -n 1; }
 ```
 
 ## variables
+
 ```sh
 ${FUNCNAME[0]}    # Current function
 
@@ -51,6 +53,7 @@ ${FUNCNAME[@]}    # All functions including parents
 ```
 
 ## see also
+
 - [[bash]]
 - [[bash return]]
 - [[bash local]]

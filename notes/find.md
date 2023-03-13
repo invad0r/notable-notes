@@ -2,14 +2,22 @@
 tags: [linux, regex]
 title: find
 created: '2019-07-30T06:19:49.054Z'
-modified: '2021-05-25T06:45:44.644Z'
+modified: '2022-06-16T10:54:58.295Z'
 ---
 
 # find
 
 > walk a file hierarchy
 
+## flags
+
+```sh
+-type
+-exec
+```
+
 ## usage
+
 ```sh
 find . \( -name '*.txt' -o -name '*.md' \) \! -empty                        # .txt or .md files under the current directory that are not empty (> 0 bytes).
 

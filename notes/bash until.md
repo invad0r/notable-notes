@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: bash until
 created: '2019-07-30T06:19:49.023Z'
-modified: '2021-05-12T08:46:30.793Z'
+modified: '2022-06-02T12:13:45.739Z'
 ---
 
 # bash until
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:30.793Z'
 > execute commands as long as a test does not succeed
 
 ## usage
+
 ```sh
 until condition; do
   statements
@@ -34,6 +35,7 @@ done
 ```
 
 ## see also
+
 - [[bash break]]
 - [[bash test []]]
 - [[nc]]

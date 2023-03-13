@@ -2,16 +2,18 @@
 tags: [javascript]
 title: yarn
 created: '2021-01-25T12:13:20.192Z'
-modified: '2021-06-11T11:54:22.147Z'
+modified: '2022-12-02T14:06:24.664Z'
 ---
 
 # yarn
 
-> provides a rich set of cli commands to help you with various aspects of your yarn package, including installation, administration, publishing
+> provides cli commands to help with yarn package, including installation, administration, publishing
 
 ## install
 
-`npm install --global yarn`
+```sh
+npm install --global yarn
+```
 
 ## usage
 

@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2022-04-19T08:16:19.095Z'
+modified: '2022-10-17T10:55:53.891Z'
 ---
 
 # terraform
@@ -43,7 +43,14 @@ terraform state list | grep PROVIDER_RESOURCE | sed 's/"/\\"/g' | xargs -I {} te
 
 terraform 0.13upgrade .
 
+
 terraform validate -json                  # json-flag for showing all warnings, and where
+terraform validate -json | jq '.diagnostics[] | {detail: .detail, filename: .range.filename, start_line: .range.start.line}'
+terraform validate -json | jq -r '.diagnostics[] | "\(.address): \(.detail)"'
+terraform validate -json \
+  | jq -r '[ del( .diagnostics[] | select( .detail | startswith( "Experimental features" ) ) ) | .diagnostics[] | { Detail:.detail, Address:.address, Filename:.range.filename, Line:.range.start.line } ] | ( .[0] | keys_unsorted | ( . , map( length*"-" ) ) ), .[] | map(.) | @tsv' \
+  | column -ts $'\t'
+
 
 terraform fmt -diff -check  main.tf       # check format configuration
 
@@ -56,7 +63,8 @@ terraform graph -draw-cycles -module-depth=2
   -type=plan-destroy        `# -type=[plan|plan-destroy|apply|validate|input|refresh]` \
   | dot -Tsvg > graph.svg    # generate a visual representation of either a configuration or execution plan
 
-terraform console     # startes repl-like console                               
+terraform console     # startes repl-like console       
+
 ```
 
 ## terraform console
@@ -135,3 +143,5 @@ variable "topic_subscriptions" {
 - [[localstack]]
 - [[kbst]]
 - [[tfk8s]]
+- [[cdk]]
+- [[iac]]

@@ -2,7 +2,7 @@
 tags: [coreutils, macos]
 title: cat
 created: '2019-09-04T06:20:06.676Z'
-modified: '2022-05-17T19:20:50.994Z'
+modified: '2022-06-17T09:24:39.620Z'
 ---
 
 # cat
@@ -33,6 +33,7 @@ EOF
 
 ## see also
 
+- [[tac]]
 - [[less]]
 - [[bat]]
 - [[mkfifo]]

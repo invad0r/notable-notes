@@ -12,6 +12,7 @@ modified: '2019-08-22T07:23:20.639Z'
 ```
 
 ## service related commands
+
 | comments          | SysVinit                | Systemd   |
 |--                 |--                       |--         |
 | start a service   | `service dummy start`   | `systemctl start dummy.service`   |
@@ -26,6 +27,7 @@ modified: '2019-08-22T07:23:20.639Z'
 | added service or modify configuration   | `chkconfig dummy --add`       | `systemctl daemon-reload`             |
 
 ## misc commands
+
 | comments | SysVinit | Systemd |
 |--|--|--|
 | System halt       | `halt`            | `systemctl halt`      |
@@ -36,5 +38,6 @@ modified: '2019-08-22T07:23:20.639Z'
 | follow log file   | `tail -f /var/log/message or /var/log/syslog`   | `journalctl -f`   |
 
 ## see also
+
 - [[upstart]]
 - [SysVinit to Systemd Cheatsheet - Fedora Project Wiki](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet)

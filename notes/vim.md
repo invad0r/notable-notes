@@ -2,7 +2,7 @@
 tags: [vim]
 title: vim
 created: '2019-07-30T06:19:49.263Z'
-modified: '2022-02-15T10:43:27.323Z'
+modified: '2022-05-17T19:18:53.489Z'
 ---
 
 # vim
@@ -321,6 +321,7 @@ C-w = -  Normalize all split sizes, which is very handy when resizing terminal
 
 ## see also
 
+- [[less]]
 - [[code]]
 - [[atom]]
 - [[vim command]]

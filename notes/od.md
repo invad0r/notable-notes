@@ -2,40 +2,47 @@
 tags: [linux]
 title: od
 created: '2019-09-04T06:17:03.101Z'
-modified: '2021-06-28T07:24:11.856Z'
+modified: '2022-11-25T11:28:24.762Z'
 ---
 
 # od
 
-> octal, decimal, hex, ASCII dump
+> `octal dump` - decimal, hex, [[ascii]] dump
+
+## flags
+
+```sh
+-b FILE     # displays contents of input in octal format
+-c FILE     # displays contents of input in character format
+
+-N 1        # read one byte from /dev/urandom
+-An         # means Address none
+-t T        # select a type
+            #  d - signed decimal
+            #  u - unsigned decimal
+            #  C - of size (one) char
+```
 
 ## usage
+
 ```sh
-od -b input.txt     # displays the contents of input in octal format
+od -An -c FILE        # displays the contents of input in character format but with no offset information
 
-od -c input.txt     # displays the contents of input in character format.
+od -c -               # accept input from STDIN
 
-od -An -c input.txt # displays the contents of input in character format but with no offset information
+echo '"' | tr -d "\n" | od -An -t uC  # print/get decimal-set
 
+od -An -td -N1 /dev/urandom      # dump random character
 
-od -c -             # Accept input from command line. 
-
-
-# get decimal-set
-echo '"' | tr -d "\n" | od -An -t uC
-#          |            └────────────────  Use od (octal dump) to print:
-#          |                                   -An    means Address none
-#    remove "newline" char                     -t     select a type
-#                                                  u  type is unsigned decimal.
-#                                                  C  of size (one) char
-
-
-od -A n -t d -N 1 /dev/urandom      # -t d   specifies output format as signed decimal
-                                    # -N 1   read one byte from /dev/urandom
+var="$(echo -n '☠' | od -An -tx1)"; printf '\\x%s' ${var^^}; echo
 ```
 
 ## see also
+
 - [[ascii]]
 - [[xxd]]
 - [[hexdump]]
 - [[rl]]
+- [[tr]]
+- [[bash echo]]
+- [[bash printf]]

@@ -2,7 +2,7 @@
 tags: [container, container/docker]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2022-01-17T13:28:08.619Z'
+modified: '2022-06-16T10:55:20.907Z'
 ---
 
 # docker
@@ -17,7 +17,7 @@ ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(b
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
 ```
 
-## usage
+## env
 
 ```sh
 DOCKER_API_VERSION                # API version to use
@@ -39,6 +39,8 @@ DOCKER_TMPDIR                     # location for temporary Docker files
 # connect to docker host
 export DOCKER_API_VERSION=1.38 DOCKER_TLS_VERIFY=1 DOCKER_CERT_PATH=/path/to/certs DOCKER_HOST=tcp://10.32.23.187:2376
 ```
+
+## usage
 
 ```sh
 docker system prune --all --volumes --force

@@ -1,7 +1,7 @@
 ---
 title: 12 factor app
 created: '2022-02-15T10:15:31.700Z'
-modified: '2022-04-04T13:17:34.056Z'
+modified: '2022-10-17T10:55:06.305Z'
 ---
 
 # 12 factor app
@@ -71,3 +71,4 @@ what is a run stage ?
 - [[devops]]
 - [[unix socket]]
 - [12factor.net](https://12factor.net/)
+- [[iac]]

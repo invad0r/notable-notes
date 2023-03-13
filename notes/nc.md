@@ -2,7 +2,7 @@
 tags: [linux, network, webserver]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2022-02-01T14:29:50.305Z'
+modified: '2022-11-23T08:26:13.077Z'
 ---
 
 # nc
@@ -88,3 +88,4 @@ echo 'Hello, Seashells!' | nc seashells.io 1337     # "pipe output from command-
 - [[lzcat]]
 - [seashells.io](seashells.io)
 - [samurailink3.com/blog/2013/12/31/ship-it-with-netcat](https://samurailink3.com/blog/2013/12/31/ship-it-with-netcat/)
+- [[redis-cli]]

@@ -2,7 +2,7 @@
 tags: [python]
 title: pip
 created: '2019-08-02T07:21:18.995Z'
-modified: '2022-02-01T14:53:34.759Z'
+modified: '2022-11-23T11:23:49.644Z'
 ---
 
 # pip
@@ -11,7 +11,10 @@ modified: '2022-02-01T14:53:34.759Z'
 
 ## install
 
-`curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py --force-reinstall`
+```sh
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
+python get-pip.py --force-reinstall
+```
 
 ## usage
 

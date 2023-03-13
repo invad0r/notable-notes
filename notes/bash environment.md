@@ -2,12 +2,13 @@
 tags: [shell/bash]
 title: bash environment
 created: '2019-07-30T06:19:48.998Z'
-modified: '2021-05-12T08:46:51.072Z'
+modified: '2022-04-27T14:21:42.580Z'
 ---
 
 # bash environment
 
 ## usage
+
 ```sh
 shopt -p                # show alle options
 

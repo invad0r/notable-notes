@@ -1,0 +1,10 @@
+---
+title: 'bash ∖[∖['
+created: '2022-11-25T10:57:39.016Z'
+modified: '2023-03-13T09:24:25.373Z'
+---
+
+# bash ∖[∖[
+# bash \[\[
+
+> interesting filname -> research

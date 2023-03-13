@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [vcs]
 title: git bulk
 created: '2019-08-19T13:35:33.103Z'
-modified: '2021-10-29T12:18:55.718Z'
+modified: '2022-06-02T06:33:13.101Z'
 ---
 
 # git bulk

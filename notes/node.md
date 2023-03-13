@@ -2,7 +2,7 @@
 tags: [javascript]
 title: node
 created: '2020-02-28T21:20:20.353Z'
-modified: '2022-02-01T14:59:56.299Z'
+modified: '2022-12-02T14:04:57.662Z'
 ---
 
 # node
@@ -11,22 +11,31 @@ modified: '2022-02-01T14:59:56.299Z'
 
 ## install
 
-`brew install node`
+```sh
+brew install node
+```
+
+# environment
+
+```sh
+NODE_OPTIONS=--max-old-space-size=32768
+```
+
+## flags
+
+```sh
+-c, --check   # check syntax without executing, exits with error code if script is invalid
+-e, --eval    # string Evaluate string as JavaScript.
+```
 
 ## usage
 
 ```sh
-# environment variables
-NODE_OPTIONS=--max-old-space-size=32768
+node                        # start repl
 
-# flags
-# -c, --check   check syntax without executing, exits with error code if script is invalid
-# -e, --eval    string Evaluate string as JavaScript.
-
+node .                      # exec in current dir ?!
 
 node --version              # get version
-
-node                        # starts repl
 
 node -e "console.log(1)"    # evaluate string
 
@@ -36,15 +45,15 @@ node -e "var data = require('./FILE'); console.log(JSON.stringify(data, null, 2)
 ## repl
 
 ```js
+.break    // when in the process of inputting a multi-line expression, enter the .break command (or press Ctrl+C) 
+          // to abort further input or processing of that expression
 
-.break    // when in the process of inputting a multi-line expression, enter the .break command (or press Ctrl+C) to abort further input or processing of that expression.
 .clear    // resets the REPL context to an empty object and clears any multi-line expression being input.
 .exit     // close the I/O stream, causing the REPL to exit.
 .help     // show this list of special commands.
 .save     // save the current REPL session to a file: > .save ./file/to/save.js
 .load     // load a file into the current REPL session. > .load ./file/to/load.js
 .editor   // enter editor mode (Ctrl+D to finish, Ctrl+C to cancel)
-
 
 
 process.cwd()       // current working directory of the nodejs process
@@ -56,12 +65,12 @@ process.version     // current nodejs version
 
 var data = require('./FILE')   // load a FILE
 ```
+
 ## see also
+
 - [[javascript]]
-- [[npm]]
-- [[yarn]]
-- [[npx]]
+- [[npm]], [[npx]]
 - [[nvm]]
-- [[mongosh]]
+- [[yarn]]
 - [nodejs.org/api/process.html](https://nodejs.org/api/process.html)
 - [nodejs.org/api/repl.html#repl_commands_and_special_keys](https://nodejs.org/api/repl.html#repl_commands_and_special_keys)

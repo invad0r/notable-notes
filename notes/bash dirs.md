@@ -2,15 +2,15 @@
 tags: [shell/bash/builtin]
 title: bash dirs
 created: '2019-08-02T06:42:37.579Z'
-modified: '2021-05-12T08:46:07.770Z'
+modified: '2022-04-27T14:21:14.049Z'
 ---
 
 # bash dirs
 
-> Display directory stack.
-
+> display directory stack
 
 ## usage
+
 ```sh
 dirs [-clpv] [+N] [-N]
 
@@ -29,10 +29,12 @@ dirs [-clpv] [+N] [-N]
                 shown by dirs when invoked without options, starting with zero.
 
 ## vairable
+
 ```sh
 $DIRSTACK
 ```
 
 ## see also
+
 - [[bash popd]]
 - [[bash pushd]]

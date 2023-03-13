@@ -2,14 +2,14 @@
 tags: [network]
 title: tcpdump
 created: '2020-01-27T14:43:35.111Z'
-modified: '2021-10-31T14:48:28.192Z'
+modified: '2022-06-16T10:54:24.329Z'
 ---
 
 # tcpdump
 
 > dump traffic on a network
 
-## usage
+## flags
 
 ```sh
 -t        # don't print timestamp on each dump line
@@ -26,6 +26,8 @@ modified: '2021-10-31T14:48:28.192Z'
 
  --time-stamp-precision                    # 
 ```
+
+## usage
 
 ```sh
 tcpdump -i eth1                     # capture packets from a particular interface

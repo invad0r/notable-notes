@@ -7,7 +7,7 @@ modified: '2020-09-01T12:56:04.468Z'
 
 # crontab
 
->  maintains crontab files for individual users
+> maintains crontab files for individual users
 
 ## usage
 ```sh
@@ -48,6 +48,7 @@ crontab -l | tee >(head -n1) | grep "^[^#;]"      # show only active jobs
 ```
 
 ## see also
+
 - [[crond]]
 - [[tree]]
 - [[bash process substitution]]

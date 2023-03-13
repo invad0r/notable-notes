@@ -2,14 +2,14 @@
 tags: [linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2022-03-07T20:31:16.628Z'
+modified: '2022-12-02T11:08:24.453Z'
 ---
 
 # curl
 
 > `"c"-url` - transfer a url
 
-## usage
+## flags
 
 ```sh
 -O                         # write output to a file named like original
@@ -19,6 +19,7 @@ modified: '2022-03-07T20:31:16.628Z'
 
 -L                         # redo the request on the new place/redirect
 -s, --silent               # silent
+-i, --include              # include HTTP response headers in the output
 
 -H 'Host: foo.com'         # set Host-Header
 --write-out
@@ -28,6 +29,8 @@ modified: '2022-03-07T20:31:16.628Z'
                            # overrides --trace and -v, --verbose.
 --trace FILE               # full trace dump of all incoming and outgoing data
 ```
+
+## usage
 
 ```sh
 curl -vv telnet://127.0.0.1:7878    # send data via telnet

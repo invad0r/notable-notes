@@ -7,7 +7,7 @@ modified: '2022-02-02T09:04:53.032Z'
 
 # apt-get
 
->  apt package handling utility
+> apt package handling utility
 
 ## usage
 

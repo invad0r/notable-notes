@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash jobs
 created: '2019-08-02T06:42:37.604Z'
-modified: '2021-06-07T06:59:17.615Z'
+modified: '2022-04-27T14:28:16.927Z'
 ---
 
 # bash jobs
@@ -26,6 +26,7 @@ jobs         # lists all jobs (use with -l to see associated PID)
 ```
 
 ## see also
+
 - [[bash kill]]
 - [[bash process-handling]]
 - [[bash fg]]

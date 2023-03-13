@@ -7,9 +7,10 @@ modified: '2020-03-13T12:52:16.889Z'
 
 # docker-machine
 
->  tool that lets you install Docker Engine on virtual hosts, and manage the hosts
+> tool that lets you install Docker Engine on virtual hosts, and manage the hosts
 
 ## usage
+
 ```sh
 # create on virtualbox
 docker-machine create \
@@ -45,6 +46,7 @@ docker-machine \
 ```
 
 ## see also
+
+- [[minikube]]
 - [[docker]]
-- [[bash eval]]
 - [[vboxmanage]]

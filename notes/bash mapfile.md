@@ -2,14 +2,14 @@
 tags: [shell/bash/builtin]
 title: bash mapfile
 created: '2019-07-30T06:19:49.014Z'
-modified: '2021-10-25T09:49:01.598Z'
+modified: '2022-04-27T14:29:48.400Z'
 ---
 
 # bash mapfile
 
 > read lines from stdin into an indexed array variable
 
-## usage
+## flag
 
 ```sh
 -c QUANTUM 	        # Specifies the number of lines that have to be read between every call to the callback specified with -C - default QUANTUM is 5000
@@ -20,6 +20,8 @@ modified: '2021-10-25T09:49:01.598Z'
 -t 	                # Remove any trailing newline from a line read, before it is assigned to an array element
 -u FD 	            # Read from filedescriptor FD rather than standard input
 ```
+
+## usage
 
 ```sh
 readarray

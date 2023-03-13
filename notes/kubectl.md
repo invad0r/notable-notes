@@ -2,7 +2,7 @@
 tags: [container, container/k8s]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2022-04-04T13:39:03.891Z'
+modified: '2022-06-27T06:44:26.163Z'
 ---
 
 # kubectl
@@ -324,25 +324,9 @@ kubectl get secrets --field-selector type=kubernetes.io/tls     # list only cert
 kubectl get secrets SECRET -o json | jq -r '.data | to_entries[] | "\(.key): \(.value | @base64d)"';    # print secrets base64-decoded
 ```
 
-## krew plugins
-
-```sh
-kubectl krew update
-
-kubectl krew search
-
-kubectl krew install oidc-login     # install plugin
-
-kubectl access-matrix               # use plugin to see the level of access user has on namespaces
-```
-
-```sh
-failed to retrieve plugin indexes: failed to list the remote URL for index default
-unset GIT_CONFIG
-```
-
 ## see also
 
+- [[kubectl krew]]
 - [kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [[kubernetes]], [[oc]]
 - [[helm]], [[kustomize]]

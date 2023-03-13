@@ -2,10 +2,12 @@
 tags: [database]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2022-02-04T08:25:24.070Z'
+modified: '2022-08-22T12:14:42.159Z'
 ---
 
 # psql
+
+> 
 
 ## install
 
@@ -19,7 +21,11 @@ psql DBNAME USER
 psql DBNAME -U USER -d DATABASE
 
 psql -U USER -d DATABASE -c "SELECT * FROM some_table"
+
+psql -h HOST -p 5432 -U postgres
 ```
+
+## console
 
 ```sql
 \?                -- help for psql commands

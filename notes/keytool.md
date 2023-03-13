@@ -2,17 +2,23 @@
 tags: [java]
 title: keytool
 created: '2019-10-23T08:27:46.438Z'
-modified: '2020-03-02T15:34:41.582Z'
+modified: '2022-08-25T14:29:40.342Z'
 ---
 
 # keytool
 
 > manages keystore (database) of cryptographic keys, X.509 certificate chains, and trusted certificates
 
-## installs
+## install
+
 `part of the standard java distribution`
 
+```sh
+apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+```
+
 ## usage
+
 ```sh
 keytool -list -v -keystore keystore.jks       # list contents of store
 
@@ -80,6 +86,7 @@ openssl s_client -connect host:9094 -CAfile rootCA.PEM.crt -cert cert.pem -key k
 ```
 
 ## see also
+
 - [[openssl]]
-- https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html
-- https://dzone.com/articles/understand-java-keytool-keystore-commands
+- [docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)
+- [dzone.com/articles/understand-java-keytool-keystore-commands](https://dzone.com/articles/understand-java-keytool-keystore-commands)

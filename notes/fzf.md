@@ -2,7 +2,7 @@
 tags: [brew]
 title: fzf
 created: '2019-07-30T06:19:49.058Z'
-modified: '2021-11-04T10:58:59.287Z'
+modified: '2022-06-20T06:42:31.580Z'
 ---
 
 # fzf
@@ -13,7 +13,7 @@ modified: '2021-11-04T10:58:59.287Z'
 
 `brew install fzf`
 
-## usage
+## env
 
 ```sh
 FZF_DEFAULT_COMMAND       # default command to use when input is tty
@@ -27,7 +27,6 @@ FZF_DEFAULT_COMMAND='fd --type f'
 FZF_DEFAULT_OPTS    # default options
 FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
 ```
-
 
 ## key bindings
 

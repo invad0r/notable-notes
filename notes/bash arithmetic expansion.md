@@ -7,7 +7,7 @@ modified: '2022-04-06T11:38:20.902Z'
 
 # bash arithmetic expansion
 
->  most (if not all) GNU/Linux shells only perform `integer` operations.
+> most (if not all) GNU/Linux shells only perform `integer` operations.
 
 ## usage
 

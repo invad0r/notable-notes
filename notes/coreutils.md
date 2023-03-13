@@ -7,12 +7,13 @@ modified: '2021-10-19T11:52:30.934Z'
 
 # coreutils
 
->  basic file, shell, and text manipulation utilities of the gnu operating system
+> basic file, shell, and text manipulation utilities of the gnu operating system
 
 [[numfmt]] - see [[crane]]
 
 
 ## commonly used tools provided by this package include
+
 - [[chmod]] - changes file modes/permissions
 - [[chown]] - change file owner and group ownership
 - [[chroot]] - Changes the root directory
@@ -29,6 +30,7 @@ modified: '2021-10-19T11:52:30.934Z'
 - [[touch]] - changes file timestamps or create empty files 
 
 ## text/shell utilities
+
 - [[\[\[]] or [[test]] - Check file types and compare values
 - [[basename]] - strip directory and suffix from filenames
 - [[cat]] - print (and concatenate) files to the standard output
@@ -58,6 +60,7 @@ modified: '2021-10-19T11:52:30.934Z'
 - [[yes]] - Print a string repeatedly 
 
 ## system utilities
+
 - [[date]] - Prints/sets the system date and time
 - [[env]] - Displays/modifies the environment
 - [[groups]] - Print the groups that the user is a member of
@@ -71,6 +74,7 @@ modified: '2021-10-19T11:52:30.934Z'
 - [[whoami]] - Print effective user id 
 
 ## see also
+
 - [[bsdmainutils]]
 - [[moreutils]]
 - [[net-tools]]

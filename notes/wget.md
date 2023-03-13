@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: wget
 created: '2019-07-30T06:19:49.266Z'
-modified: '2022-02-17T15:11:15.546Z'
+modified: '2022-11-23T10:13:22.767Z'
 ---
 
 # wget
@@ -11,15 +11,20 @@ modified: '2022-02-17T15:11:15.546Z'
 
 ## install
 
-`apt-get install wget`, `yum install wget`
+```
+apt-get install wget
+yum install wget
+```
 
-## usage
+## flags
 
 ```sh
 -q        # no stdout
 -O        # redirect output to file 
 -         # 'dash' -> stdout
 ```
+
+## usage
 
 ```sh
 wget -qO- URL | CMD

@@ -2,12 +2,12 @@
 tags: [linux]
 title: grepcidr
 created: '2020-09-02T17:09:18.874Z'
-modified: '2021-11-05T08:57:52.451Z'
+modified: '2022-11-29T08:07:04.572Z'
 ---
 
 # grepcidr
 
-> filter IPv4 and IPv6 addresses matching CIDR patterns
+> filter ipv4 and ipv6 addresses matching cidr patterns
 
 ## install
 
@@ -17,7 +17,7 @@ tar xvzf grepcidr-2.0.tar.gz && cd grepcidr-2.0
 make && make install
 ```
 
-## usage
+## flags
 
 ```sh
 -V          #  show version
@@ -29,6 +29,8 @@ make && make install
 -e          #  specify individual IP or CIDR pattern(s) on command-line
 -f          #  load individual IP or CIDR pattern(s) from file
 ```
+
+## usage
 
 ```sh
 grepcidr -f FILE LOG > abuse.log                # find cidr-anges from FILE that appear in LOG

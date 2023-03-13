@@ -2,7 +2,7 @@
 tags: [elasticsearch]
 title: curator
 created: '2019-09-19T08:01:33.456Z'
-modified: '2020-02-19T13:22:21.369Z'
+modified: '2022-11-23T11:23:24.017Z'
 ---
 
 # curator
@@ -10,9 +10,13 @@ modified: '2020-02-19T13:22:21.369Z'
 > `curator`,`curator_cli` and `es_repo_mgr`
 
 ## install
-`pip install elasticsearch-curator`
+
+```sh
+pip install elasticsearch-curator
+```
 
 ## usage
+
 ```sh
 ~/.curator/.curator.yml     # config
 
@@ -20,12 +24,15 @@ curator [--config CONFIG.YML] [--dry-run] ACTION_FILE.YML
 ```
 
 ## curator_cli
+
 ```sh
 curator_cli show_indices --filter_list '{"filtertype":"pattern","kind":"prefix","value":"myindex"}'
 ```
 
 ## es_repo_mgr
+
 > snapshot repository manager for Elasticsearch curator
+
 ```sh
 es_repo_mgr show
 
@@ -37,5 +44,7 @@ es_repo_mgr delete
 ```
 
 ## see also
+
+- [[pip]]
 - [[elasticsearch api]]
 

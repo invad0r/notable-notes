@@ -17,6 +17,7 @@ modified: '2020-01-17T08:03:48.435Z'
 - systemd manages `units`, which are representations of system resources and services `systemd unit`
 
 ## usage
+
 ```sh
 systemd-analyze         # get the boot process duration with the following
 
@@ -26,6 +27,7 @@ systemd-analyze blame   # list of all running units, ordered by the time taken t
 ```
 
 ## see also
+
 - [[systemctl]]
 - [[unix socket]]
 - [[d-bus]]

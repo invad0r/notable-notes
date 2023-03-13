@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash debugging
 created: '2019-07-30T06:19:49.021Z'
-modified: '2022-01-17T08:08:20.555Z'
+modified: '2022-04-27T14:20:55.331Z'
 ---
 
 # bash debugging
@@ -37,6 +37,7 @@ set -x
 ```
 
 ## simple debugger
+
 ```sh
 read var    # set simple breakpoint
 echo -e "dbg> \c"; read cmd; eval $cmd

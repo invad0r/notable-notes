@@ -2,13 +2,14 @@
 tags: [ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2022-01-31T19:02:24.480Z'
+modified: '2022-06-16T10:54:04.656Z'
 ---
 
 # ssh
+
 > `secure shell`
 
-## usage
+## env
 
 ```sh
 SSH_ASKPASS               # set by ssh user   - path to askpass program
@@ -18,6 +19,8 @@ SSH_CONNECTION            # set by sshd       - client and server socket info
 SSH_ORIGINAL_COMMAND      # set by sshd       - client’s remote command string
 SSH_TTY                   # set by sshd       - name of allocated tty
 ```
+
+## flags
 
 ```sh
 -n                                         # redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops
@@ -36,6 +39,8 @@ SSH_TTY                   # set by sshd       - name of allocated tty
 -o PreferredAuthentications=password
 -o PubkeyAuthentication=no
 ```
+
+## usage
 
 ```sh
 ssh whoami.filippo.io           # prints _o/ Hello! and closes

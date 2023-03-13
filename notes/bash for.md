@@ -2,7 +2,7 @@
 tags: [shell/bash/keyword]
 title: bash for
 created: '2019-07-30T06:19:49.007Z'
-modified: '2021-08-03T15:32:27.180Z'
+modified: '2022-04-27T14:22:34.833Z'
 ---
 
 # bash for
@@ -10,6 +10,7 @@ modified: '2021-08-03T15:32:27.180Z'
 > execute commands for each member in a list
 
 ## usage
+
 ```sh
 for name [in words]; do
   command $name;

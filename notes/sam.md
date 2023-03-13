@@ -2,7 +2,7 @@
 tags: [serverless]
 title: sam
 created: '2021-02-08T12:46:40.753Z'
-modified: '2022-02-01T15:01:27.024Z'
+modified: '2022-11-28T10:27:12.285Z'
 ---
 
 # sam
@@ -13,11 +13,13 @@ modified: '2022-02-01T15:01:27.024Z'
 
 `brew tap aws/tap && brew install aws-sam-cli`
 
-## usage
+## environment
 
 ```sh
 SAM_CLI_TELEMETRY         # 0
 ```
+
+## usage
 
 ```sh
 sam --version

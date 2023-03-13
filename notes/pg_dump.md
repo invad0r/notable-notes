@@ -1,14 +1,14 @@
 ---
 title: pg_dump
 created: '2021-03-15T07:59:51.829Z'
-modified: '2022-02-02T09:14:30.901Z'
+modified: '2022-08-22T11:50:21.341Z'
 ---
 
 # pg_dump
 
 > extract a postgresql database into a script file or other archive file
 
-## usage
+## environment
 
 ```sh
 PGDATABASE        # -
@@ -24,6 +24,8 @@ PGSSLMODE         # determines whether or with what priority a secure SSL TCP/IP
                   #   verify-ca 	  only try an SSL connection, and verify that the server certificate is issued by a trusted CA
                   #   verify-full 	only try an SSL connection, verify that the server certificate is issued by a trusted CA and that the server host name matches that in the certificate
 ```
+
+## usage
 
 ```sh
 pg_dump -h HOST -p PORT -U USER -d DATABASE > FILE.dump

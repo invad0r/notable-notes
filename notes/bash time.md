@@ -2,18 +2,20 @@
 tags: [shell/bash/keyword]
 title: bash time
 created: '2019-08-02T08:39:11.840Z'
-modified: '2022-01-31T19:04:33.291Z'
+modified: '2022-06-16T10:55:57.225Z'
 ---
 
 # bash time
 
 > report time consumed by pipeline's execution
 
-## usage
+## flags
 
 ```sh
 -p     # print the timing summary in the portable Posix format
 ```
+
+## usage
 
 ```sh
 time cat      # quick stop watch

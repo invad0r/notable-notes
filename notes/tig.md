@@ -1,7 +1,7 @@
 ---
 title: tig
 created: '2021-05-12T19:12:35.991Z'
-modified: '2021-05-12T19:36:29.575Z'
+modified: '2022-06-20T06:37:26.076Z'
 ---
 
 # tig
@@ -81,5 +81,6 @@ M         # Merge
 ## see also
 
 - [[git]]
+- [[tac]]
 - [devhints.io/tig](https://devhints.io/tig)
 - [jonas.github.io/tig/doc/manual](https://jonas.github.io/tig/doc/manual.html)

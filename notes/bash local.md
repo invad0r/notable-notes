@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash local
 created: '2019-08-02T06:42:37.608Z'
-modified: '2021-05-12T08:46:08.157Z'
+modified: '2022-04-27T14:29:32.238Z'
 ---
 
 # bash local
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:08.157Z'
 > Local variables can only be used within a function; they are visible only to the function where they are defined and its children
 
 ## usage
+
 ```sh
 foo(){
 
@@ -21,5 +22,6 @@ echo "foo: $foo"
 ```
 
 ## see also
+
 - [[bash function]]
 - [[bash return]]

@@ -1,12 +1,12 @@
 ---
 title: cfn
 created: '2022-09-27T06:56:03.247Z'
-modified: '2022-09-27T07:09:26.798Z'
+modified: '2022-11-29T07:53:00.479Z'
 ---
 
 # cfn
 
-> `cloudFormation cli` allows you to author your own resource providers, hooks, and modules that can be used by cloudformation
+> `cloud formation cli` to author own resource providers, hooks, and modules
 
 ## install
 

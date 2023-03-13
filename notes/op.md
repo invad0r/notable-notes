@@ -1,7 +1,7 @@
 ---
 title: op
 created: '2021-02-01T08:18:52.088Z'
-modified: '2021-11-08T16:20:40.533Z'
+modified: '2022-12-05T14:44:32.723Z'
 ---
 
 # op
@@ -53,3 +53,4 @@ op create item CATEGORIE --template FILE
 - [support.1password.com/command-line-getting-started/](https://support.1password.com/command-line-getting-started/)
 - [[xkcdpass]]
 - [[jq]]
+- [[aws]]

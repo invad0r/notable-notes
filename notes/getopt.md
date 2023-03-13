@@ -2,13 +2,15 @@
 tags: [shell]
 title: getopt
 created: '2020-03-16T18:01:43.018Z'
-modified: '2021-05-12T08:47:10.213Z'
+modified: '2022-11-29T08:22:11.256Z'
 ---
 
 # getopt
-> parse option arguments - is not a bash builtin !
+
+> parse option arguments - is not a [[bash]] builtin !
 
 ## usage
+
 ```sh
 set -o errexit -o noclobber -o nounset -o pipefail
 params="$(getopt -o ab:c -l alpha,bravo:,charlie --name "$0" -- "$@")"
@@ -42,6 +44,7 @@ done
 ```
 
 ## see also
+
 - [[bash getopts]]
 - [[bash while]]
 - [[bash case]]

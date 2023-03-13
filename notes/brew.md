@@ -2,7 +2,7 @@
 tags: [brew, macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2022-02-01T10:17:45.053Z'
+modified: '2022-11-29T08:25:22.804Z'
 ---
 
 # brew
@@ -21,6 +21,7 @@ export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebre
 
 ```sh
 brew list
+brew list --formulae FORMULAE
 
 brew bundle --help
 brew bundle dump      # write all installed casks/formulae/images/taps into Brewfile in current directory
@@ -45,21 +46,24 @@ brew missing          # check the given formula kegs for missing dependencies
 
 brew man              # generate brew man-pages
 
+
+brew install FORMULAE
 brew install grep --with-default-names     # used with-default-names to avoid prefixing with "g"
-
-brew install
-  inetutils
-  gnu-getopt
-  findutils
-  pstree
-  rmtrash
-  mkcert
-  bash-completion
-
 
 brew unlink PACKAGE       # switch between mutliple version of package
 brew link PACKAGE@10
 ```
+
+### common install formulae
+
+- `bash-completion`
+- `findutils` - [[find]], [[xargs]], [[locate]]
+- `gnu-getopt` - [[getopt]]
+- `inetutils` - [[dnsdomainname]], [[ftp]], [[rcp]], [[rexec]], [[rlogin]], [[rsh]], [[telnet]]
+- `mkcert` - [[mkcert]]
+- `pstree` - [[pstree]]
+- `rmtrash`
+
 
 ## cask - extension to brew allowing management of gui apps
 

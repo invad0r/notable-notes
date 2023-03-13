@@ -2,7 +2,7 @@
 tags: [linux]
 title: grep
 created: '2019-07-30T06:19:49.077Z'
-modified: '2022-04-08T14:58:03.264Z'
+modified: '2022-11-29T08:07:27.584Z'
 ---
 
 # grep
@@ -14,8 +14,10 @@ modified: '2022-04-08T14:58:03.264Z'
 ```sh
 -s, --no-messages              # suppress error messages
 -v, --invert-match             # select non-matching lines
+```
+###  output control
 
-#  output control
+```sh
 -m, --max-count=NUM           # stop after NUM selected lines
 -n, --line-number             # print line number with output lines
     --line-buffered           # flush output on every line
@@ -42,8 +44,9 @@ modified: '2022-04-08T14:58:03.264Z'
 -Z, --null                    # print 0 byte after FILE name
 ```
 
+### Pattern selection and interpretation
+
 ```sh
-# Pattern selection and interpretation
 -E, --extended-regexp         # PATTERNS are extended regular expressions
 -F, --fixed-strings           # PATTERNS are strings
 -G, --basic-regexp            # PATTERNS are basic regular expressions
@@ -56,8 +59,9 @@ modified: '2022-04-08T14:58:03.264Z'
 -z, --null-data               # a data line ends in 0 byte, not newline
 ```
 
+### basic regex
+
 ```sh
-# basic regex
 ^        (Caret)              # match expression at the start of a line, as in `^A`
 $        (Question)           # match expression at the end of a line, as in `A$`  
 \        (Back Slash)         # turn off the special meaning of the next character, as in `\^`.
@@ -73,32 +77,38 @@ $        (Question)           # match expression at the end of a line, as in `A$
 ## usage
 
 ```sh
-find | grep 'pattern' file /dev/null       # show filename with find !
+find | grep 'pattern' FILE /dev/null      # show filename with find !
 
-grep -l 'pattern' file             # show only matching filename
+grep -l 'pattern' FILE                    # show only matching filename
 
-grep "^[^#;]" smb.conf              # filter-out-comments - http://unix.stackexchange.com/a/60995
+grep "^[^#;]" smb.conf                    # filter-out-comments - http://unix.stackexchange.com/a/60995
 
-ls -l | grep "^d"                   # list directories
+ls -l | grep "^d"                         # list directories
 
-ps aux | grep "[d]ockerd"           # avoid grep in output via regex: find character 'd' followed by 'ockerd'
+ps aux | grep "[d]ockerd"                 # avoid grep in output via regex: find character 'd' followed by 'ockerd'
 
-grep -E '192.168.(230.0|231.128)'   # regular expression
+grep -E '192.168.(230.0|231.128)'         # regular expression
 
-grep -E "^[[:alpha:]]*:" Makefile   # get tasks frome makefile
+grep -E "^[[:alpha:]]*:" Makefile         # get tasks frome makefile
 
-env | grep -E "VAULT_.+=.+"         # get set env variables
+env | grep -E "VAULT_.+=.+"               # get set env variables
 
-# pcre
-echo "http://foo.net/path/repo.git" | grep -o -P '(?<=https:\/\/|http:\/\/|@).*?(?=(\/|:))'
+
+echo "http://foo.net/path/repo.git" | \
+  grep -o -P '(?<=https:\/\/|http:\/\/|@).*?(?=(\/|:))'   # pcre
+
+
+echo "${CF_STACKS[*]}" | \
+  grep -f <(printf '%s\n' "${CDK_STACKS[@]}") -c          # check array against pattern from file and return count
 ```
 
 ## see also
 
-- [zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)
 - [[grepcidr]]
+- [[wc]]
 - [[pkill]]
 - [[regex]]
 - [REGEX Cheat Sheet](https://staff.washington.edu/weller/grep.html)
 - [Regular Expressions in grep](http://www.robelle.com/smugbook/regexpr.html)
 - [ntu.edu.sg/home/ehchua/programming/howto/Regexe](https://www.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html)
+- [zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/](https://zwischenzugs.com/2022/02/02/grep-flags-the-good-stuff/)

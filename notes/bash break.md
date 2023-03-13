@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash break
 created: '2019-08-02T06:42:37.559Z'
-modified: '2021-05-12T08:46:07.583Z'
+modified: '2022-04-27T14:19:26.096Z'
 ---
 
 # bash break
@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:07.583Z'
 > Exit for, while, or until loops.
 
 ## usage
+
 ```sh
 break n   # If N is specified, break N enclosing loops
 
@@ -29,6 +30,7 @@ done
 ```
 
 ## see also
+
 - [[bash while]]
 - [[bash for]]
 - [[bash until]]

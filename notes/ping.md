@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: ping
 created: '2019-07-30T06:19:49.207Z'
-modified: '2022-03-09T07:27:32.390Z'
+modified: '2022-11-04T10:53:17.986Z'
 ---
 
 # ping 
@@ -12,7 +12,10 @@ modified: '2022-03-09T07:27:32.390Z'
 
 ## install
 
-`apt install iputils-ping` `yum install iputils`
+```sh
+apt install iputils-ping
+yum install iputils
+```
 
 
 ## flags

@@ -10,6 +10,7 @@ modified: '2021-05-12T08:46:08.261Z'
 > add/remove directories to/from stack
 
 ## usage
+
 ```sh
 pushd /opt/path/logs    # switch to path and put on the stack
 
@@ -22,6 +23,7 @@ popd
 ```
 
 ## see also
+
 - [[bash dirs]]
 - [[mktemp]]
 - [[z]]

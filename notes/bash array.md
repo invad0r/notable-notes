@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash array
 created: '2019-08-01T07:14:55.242Z'
-modified: '2022-04-06T11:38:27.710Z'
+modified: '2022-11-29T07:59:05.267Z'
 ---
 
 # bash array
@@ -55,6 +55,23 @@ function foo() {
 Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
 echo ${Colors[@]}       # purple reddish-orange light green
 declare | grep Colors   # Colors=([0]="purple" [1]="reddish-orange" [2]="light green")
+````
+
+### save line seperate output to array
+
+```sh
+IFS_BAK="$IFS"; IFS=$'\n';                     # backup $IFS for restore later
+CDK_STACKS=($(npm run --silent cdk -- list))   # save output in string array, don't wrap subsheln quotes
+```
+
+### check array for multiple values
+
+```sh
+echo "${CF_STACKS[*]}" | grep -f <(printf '%s\n' "${CDK_STACKS[@]}") | wc -l | xargs)
+
+CF_STACKS=("A" "B" "C")
+CDK_STACKS=("A")
+echo "${CF_STACKS[*]}" | grep -f <(printf '%s\n' "${CDK_STACKS[@]}") -c
 ```
 
 ## see also

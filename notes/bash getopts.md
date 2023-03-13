@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash getopts
 created: '2019-07-30T06:19:49.009Z'
-modified: '2021-09-23T06:09:01.739Z'
+modified: '2022-04-27T14:22:56.680Z'
 ---
 
 # bash getopts
@@ -31,6 +31,7 @@ done
 ```
 
 ## see also
+
 - [[bash while]]
 - [[bash case]]
 - [[bash arguments]]

@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2021-10-31T14:45:45.277Z'
+modified: '2022-06-20T06:38:20.500Z'
 ---
 
 # nmap
@@ -13,7 +13,7 @@ modified: '2021-10-31T14:45:45.277Z'
 
 `brew install nmap`, `apt install nmap`, `yum install nmap`
 
-## usage
+## flags
 
 ```sh
 # scanning options
@@ -32,6 +32,8 @@ modified: '2021-10-31T14:45:45.277Z'
 -sU               # scan UDP-Port
 -sP               # ping-scan
 ```
+
+## usage
 
 ```sh
 nmap localhost                    # list own open ports

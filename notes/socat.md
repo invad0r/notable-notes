@@ -7,7 +7,7 @@ modified: '2022-02-15T10:29:15.819Z'
 
 # socat
 
->  multipurpose relay - `SOcket CAT`
+> multipurpose relay - `SOcket CAT`
 
 ## install
 

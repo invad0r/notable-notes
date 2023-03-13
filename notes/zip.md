@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: zip
 created: '2019-09-26T06:55:59.693Z'
-modified: '2022-02-02T09:37:20.958Z'
+modified: '2023-01-27T09:03:02.033Z'
 ---
 
 # zip
@@ -64,6 +64,7 @@ unzip -p FILE.jar META-INF/MANIFEST.MF       # get current versions
 
 ## see also
 
+- [[rar]]
 - [[gzip]]
 - [[zcat]]
 - [[tar]]

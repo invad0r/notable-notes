@@ -1,7 +1,7 @@
 ---
 title: zookeeper-shell
 created: '2019-09-23T09:47:31.660Z'
-modified: '2022-01-31T18:59:20.696Z'
+modified: '2022-10-05T12:58:22.896Z'
 ---
 
 # zookeeper-shell
@@ -25,6 +25,7 @@ ls / true                     # Watch can be set on any znode while using read o
 
 ## see also
 
+- [[redis-cli]]
 - [[consul]]
 - [[etcdctl]]
 - [[kafka]]

@@ -6,9 +6,11 @@ modified: '2020-08-31T09:34:13.641Z'
 ---
 
 # capsh
->  capability shell wrapper
+
+> capability shell wrapper
 
 ## usage
+
 ```sh
 capsh --print
 
@@ -30,5 +32,6 @@ capsh \
 ```
 
 ## see also
+
 - [[capabilities]]
 - [[getcap]]

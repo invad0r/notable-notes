@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: tar
 created: '2019-07-30T06:19:49.251Z'
-modified: '2022-02-02T09:31:45.443Z'
+modified: '2023-01-27T09:08:33.675Z'
 ---
 
 # tar
@@ -11,7 +11,7 @@ modified: '2022-02-02T09:31:45.443Z'
 
 `.tgz` is same as `.tar.gz`/`.tar.gzip`
 
-## usage
+## flags
 
 ```sh
 -c          # create archive
@@ -25,6 +25,8 @@ modified: '2022-02-02T09:31:45.443Z'
 
 -j          # filter the archive through bzip2
 ```
+
+## usage
 
 ```sh
 tar tvf archive.tar                     # listing
@@ -57,6 +59,7 @@ tar cf - "$1" -P | pv -s $(( $(du -sk "$1" | cut -f1) * 1024 )) \
 
 ## see also
 
+- [[rar]]
 - [[nc]]
 - [[zip]]
 - [[pigz unpigz]]
