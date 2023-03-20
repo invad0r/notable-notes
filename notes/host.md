@@ -2,12 +2,18 @@
 tags: [dns]
 title: host
 created: '2019-07-30T06:19:49.080Z'
-modified: '2022-04-19T07:17:53.366Z'
+modified: '2023-03-20T08:52:12.648Z'
 ---
 
 # host
 
 > lookup utility
+
+## install
+
+```sh
+brew install bind
+```
 
 ## flags
 

@@ -2,7 +2,7 @@
 tags: [linux, network, webserver]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2022-11-23T08:26:13.077Z'
+modified: '2023-03-20T09:00:40.132Z'
 ---
 
 # nc
@@ -11,9 +11,13 @@ modified: '2022-11-23T08:26:13.077Z'
 
 ## install
 
-`brew install netcat`, `apt install netcat`, `yum install netcat`
+```sh
+brew install netcat
+apt  install netcat
+yum  install netcat
+```
 
-## usage
+## flag
 
 ```sh
 -h, --help                 # display this help and exit
@@ -26,6 +30,8 @@ modified: '2022-11-23T08:26:13.077Z'
 -e, --exec=PROGRAM         # program to exec after connect
 -k                         #  
 ```
+
+## usage
 
 ```sh
 /usr/bin/nc -k -l 4444          # osx default

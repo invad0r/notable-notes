@@ -2,7 +2,7 @@
 tags: [brew, vcs]
 title: git extras
 created: '2019-07-30T06:19:49.062Z'
-modified: '2021-10-29T12:19:21.541Z'
+modified: '2023-03-20T09:08:30.625Z'
 ---
 
 # git extras
@@ -11,9 +11,12 @@ modified: '2021-10-29T12:19:21.541Z'
 
 ## install
 
-`brew install git-extras`
+```sh
+brew install git-extras
+```
 
 ## usage
+
 ```sh
 git info        # show information about the repository
 

@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: numfmt
 created: '2021-10-19T11:54:38.435Z'
-modified: '2021-11-03T12:24:51.747Z'
+modified: '2023-03-20T08:55:35.434Z'
 ---
 
 # numfmt
@@ -11,7 +11,10 @@ modified: '2021-11-03T12:24:51.747Z'
 
 ## install
 
-## usage
+```sh
+```
+
+## flag
 
 ```sh
 -d, --delimiter=DELIM     # use DELIM instead of whitespace for field delimiter
@@ -34,7 +37,9 @@ modified: '2021-11-03T12:24:51.747Z'
 --help                    # display help and exit
 --version                 # output version information and exit
 ```
+
 ### units
+
 ```sh
 none    # no auto-scaling is done; suffixes will trigger an error
 
@@ -50,6 +55,8 @@ iec     # accept optional single letter suffix:
 iec-i   # accept optional two-letter suffix:
         # 1Ki = 1024, 1Mi = 1048576, ...
 ```
+
+### usage
 
 ```sh
 numfmt --to=si 1000               # "1.0K"

@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: terraform provider tls
 created: '2020-01-23T07:08:31.402Z'
-modified: '2020-09-02T18:05:53.810Z'
+modified: '2023-03-20T08:58:15.803Z'
 ---
 
 # terraform provider tls
@@ -11,7 +11,7 @@ modified: '2020-09-02T18:05:53.810Z'
 
 ## usage
 
-```sh
+```hcl
 resource "tls_private_key" "vault" {
   algorithm = "ECDSA"
 }

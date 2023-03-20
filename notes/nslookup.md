@@ -2,7 +2,7 @@
 tags: [dns]
 title: nslookup
 created: '2020-01-16T07:23:01.811Z'
-modified: '2022-04-19T07:18:16.203Z'
+modified: '2023-03-20T08:52:24.134Z'
 ---
 
 # nslookup
@@ -11,7 +11,10 @@ modified: '2022-04-19T07:18:16.203Z'
 
 ## install
 
-`apt install net-tools`  
+```sh
+brew install bind
+apt install net-tools
+```
 
 ## usage
 

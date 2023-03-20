@@ -2,7 +2,7 @@
 tags: [dns]
 title: BIND
 created: '2019-07-30T06:19:49.027Z'
-modified: '2022-02-15T10:31:57.872Z'
+modified: '2023-03-20T08:58:45.389Z'
 ---
 
 # BIND
@@ -19,7 +19,9 @@ modified: '2022-02-15T10:31:57.872Z'
 
 ## install
 
-`yum install bind bind-utils`
+```sh
+yum install bind bind-utils
+```
 
 ## usage
 

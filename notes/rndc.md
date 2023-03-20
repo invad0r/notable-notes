@@ -2,7 +2,7 @@
 tags: [dns]
 title: rndc
 created: '2020-07-22T08:47:45.145Z'
-modified: '2020-09-02T17:45:02.286Z'
+modified: '2023-03-20T08:55:56.348Z'
 ---
 
 # rndc
@@ -10,6 +10,7 @@ modified: '2020-09-02T17:45:02.286Z'
 > administer the named service
 
 ## usage
+
 ```sh
 rndc status
 
@@ -23,6 +24,7 @@ rndc thaw 10.168.192.in-addr.arpa
 ```
 
 ## see also
+
 - [[named]]
 - [[BIND]]
 - [[dig]]
