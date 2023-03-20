@@ -2,12 +2,18 @@
 tags: [linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2022-12-02T11:08:24.453Z'
+modified: '2023-03-15T08:24:53.787Z'
 ---
 
 # curl
 
 > `"c"-url` - transfer a url
+
+## install
+
+```sh
+brew install curl
+```
 
 ## flags
 
@@ -19,15 +25,29 @@ modified: '2022-12-02T11:08:24.453Z'
 
 -L                         # redo the request on the new place/redirect
 -s, --silent               # silent
--i, --include              # include HTTP response headers in the output
 
 -H 'Host: foo.com'         # set Host-Header
---write-out
+-w, --write-out            # 
 
 -v, -vv, -vvv              # verbose level
 --trace-ascii FILE         # enables full trace dump of all incoming and outgoing data
                            # overrides --trace and -v, --verbose.
 --trace FILE               # full trace dump of all incoming and outgoing data
+```
+
+## env
+
+```sh
+CURL_HOME
+```
+
+## config
+
+```sh
+cat <<EOF > ~/.curlrc 
+progress-bar
+-w "\n"
+EOF
 ```
 
 ## usage
@@ -117,13 +137,13 @@ curl gopher://gopherddit.com
 
 ## see also
 
-- [[wget]]
 - [[nc]]
-- [[bash exec]]
+- [[wget]]
 - [[telnet]]
 - [[xargs]]
+- [[bash exec]]
 - [[url encoding]]
+- [everything.curl.dev](https://everything.curl.dev/)
 - [curl and HTTP 1.1 keepalive test traffic](http://lzone.de/blog/curl+and+HTTP+1.1+keepalive+test+traffic)
 - [loige.co/extracting-data-from-wikipedia](http://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands)
 - [stackoverflow.com/curl-command-without-using-cache](https://stackoverflow.com/questions/31653271/curl-command-without-using-cache)
-- [ec.haxx.se - Everything curl](https://ec.haxx.se/)

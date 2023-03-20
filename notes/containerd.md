@@ -2,7 +2,7 @@
 tags: [container]
 title: containerd
 created: '2020-03-12T13:44:44.636Z'
-modified: '2022-02-02T09:35:44.972Z'
+modified: '2023-03-15T09:49:34.996Z'
 ---
 
 # containerd
@@ -11,7 +11,9 @@ modified: '2022-02-02T09:35:44.972Z'
 
 ## install
 
-`wget https://github.com/containerd/containerd/archive/v1.3.2.zip && unzip v1.3.2.zip`
+```sh
+wget https://github.com/containerd/containerd/archive/v1.3.2.zip && unzip v1.3.2.zip
+```
 
 ## usage
 

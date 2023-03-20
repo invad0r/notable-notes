@@ -1,7 +1,7 @@
 ---
 title: microdnf
 created: '2022-09-30T12:49:43.050Z'
-modified: '2022-09-30T13:14:19.747Z'
+modified: '2023-03-16T08:02:56.188Z'
 ---
 
 # microdnf
@@ -13,9 +13,16 @@ modified: '2022-09-30T13:14:19.747Z'
 ## usage
 
 ```sh
-microdnf install nc
+microdnf update
 
-microdnf update && microdnf install sudo iputils hostname findutils 
+microdnf install PAGE 
+
+microdnf install nc \
+  sudo \
+  iputils \
+  hostname \
+  findutils \
+  procps
 
 microdnf clean all
 ```
@@ -24,3 +31,5 @@ microdnf clean all
 
 - [[tdnf]]
 - [[yum]]
+- [[rpm]]
+- [[apt-get]]

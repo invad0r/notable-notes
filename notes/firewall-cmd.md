@@ -2,7 +2,7 @@
 tags: [linux]
 title: firewall-cmd
 created: '2019-08-23T13:34:33.074Z'
-modified: '2020-08-13T13:53:06.264Z'
+modified: '2023-03-17T07:19:08.417Z'
 ---
 
 # firewall-cmd
@@ -10,6 +10,7 @@ modified: '2020-08-13T13:53:06.264Z'
 > `firewalld` command line client
 
 ## usage
+
 - `firewall-cmd` commands apply to runtime configuration by default 
 - using the `--permanent` flag will establish a persistent configuration.
 
@@ -24,6 +25,7 @@ firewall-cmd --zone=public --add-service=http
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --reload
 ```
+
 ```sh
 firewall-cmd --state
 
@@ -95,6 +97,7 @@ firewall-cmd --direct --get-all-rules
 ```
 
 ## see also
+
  - [[ip]]
  - [[firewalld]]
  - [[iptables]]

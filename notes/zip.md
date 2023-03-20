@@ -2,20 +2,24 @@
 tags: [linux, macos]
 title: zip
 created: '2019-09-26T06:55:59.693Z'
-modified: '2023-01-27T09:03:02.033Z'
+modified: '2023-03-13T11:20:49.550Z'
 ---
 
 # zip
 
 > package and compress (archive) files
 
-## usage
+## zip
+
+## flag
 
 ```sh
 -r, --recurse-paths      # travel the directory structure recursively
 
 -R, --recurse-patterns   # travel the directory structure recursively starting at the current directory; for example:
 ```
+
+## usage
 
 ```sh
 zip -r foo.zip foo 
@@ -35,6 +39,8 @@ zip -d FILE.jar BOOT-INF/classes/logback/logback-spring.xml   # remove file out 
 
 ## unzip
 
+## flag
+
 > list, test and extract compressed files in a zip archive
 
 ```sh
@@ -51,6 +57,8 @@ zip -d FILE.jar BOOT-INF/classes/logback/logback-spring.xml   # remove file out 
 -f     # freshen existing files, extract only those files that already exist on disk and that are newer than the disk copies
 -u     # update existing files and create new ones if needed. same as -f option and in addition it extracts files that do not already exist on disk
 ```
+
+## usage
 
 ```sh
 unzip FILE.zip

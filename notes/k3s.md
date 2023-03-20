@@ -2,7 +2,7 @@
 tags: [container]
 title: k3s
 created: '2021-10-15T07:36:40.840Z'
-modified: '2022-02-02T10:46:35.058Z'
+modified: '2023-03-16T08:49:37.052Z'
 ---
 
 # k3s
@@ -18,9 +18,6 @@ k3s server \
   --node-external-ip 192.168.56.11 \
   --node-ip 192.168.56.11
 
-```
-
-```sh
 systemctl start k3s
 systemctl stop k3s
 

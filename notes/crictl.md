@@ -2,7 +2,7 @@
 tags: [container]
 title: crictl
 created: '2021-05-27T09:57:46.096Z'
-modified: '2021-10-19T11:44:10.286Z'
+modified: '2023-03-13T11:21:03.832Z'
 ---
 
 # crictl
@@ -10,6 +10,10 @@ modified: '2021-10-19T11:44:10.286Z'
 > `cri-o`
 
 ## install
+
+```sh
+
+```
 
 ## usage
 

@@ -2,18 +2,20 @@
 tags: [container, container/k8s]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2021-11-29T12:57:30.856Z'
+modified: '2023-03-13T11:11:35.138Z'
 ---
 
 # minikube
 
-> `minikube` uses `libmachine` see also `docker machine`
+> uses `libmachine`
 
 ## installation
 
-`brew install minikube`
+```sh
+brew install minikube
+```
 
-## usage
+## env
 
 ```sh
 MINIKUBE_HOME                         # (string) path for the .minikube dir used for state/configuration
@@ -22,6 +24,8 @@ MINIKUBE_WANTUPDATENOTIFICATION       # (bool)   sets whether the user wants an 
 MINIKUBE_REMINDERWAITPERIODINHOURS    # (int)    sets the number of hours to check for an update notification
 MINIKUBE_ENABLE_PROFILING             # (int, 1 enables it) enables trace profiling to be generated for minikube
 ```
+
+## usage
 
 ```sh
 minikube completion bash > $(brew --prefix)/etc/bash_completion.d/minikube
@@ -70,6 +74,7 @@ minikube addons enable ingress            # provisions: configMap, ingress-contr
 
 ## see also
 
+- [[crc]]
 - [[k3s]]
 - [[kind]]
 - [[kubectl]]

@@ -2,12 +2,12 @@
 tags: [ssh]
 title: ssh proxy
 created: '2019-07-30T06:19:49.242Z'
-modified: '2022-01-31T19:00:58.542Z'
+modified: '2023-03-16T09:12:47.335Z'
 ---
 
 # ssh proxy
 
-aka `pivoting`
+> aka `"pivoting"`
 
 ## local port forwarding
 

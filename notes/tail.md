@@ -2,14 +2,14 @@
 tags: [coreutils]
 title: tail
 created: '2019-08-21T06:27:52.472Z'
-modified: '2022-02-01T15:14:45.673Z'
+modified: '2023-03-16T13:39:17.500Z'
 ---
 
 # tail
 
 > print last 10 lines of FILE or `stdin` to `stdout`, with more than one FILE, precede each with a filename header
 
-## usage
+## flag
 
 ```sh
 -q                # never print headers
@@ -19,6 +19,8 @@ modified: '2022-02-01T15:14:45.673Z'
 -n N[kbm]         # print last N lines
 -n +N[kbm]        # start on Nth line and print the rest
 ```
+
+## usage
 
 ```sh
 tail -f LOG.log    # follow incoming lines

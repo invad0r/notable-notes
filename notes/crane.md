@@ -2,7 +2,7 @@
 tags: [container]
 title: crane
 created: '2021-10-19T11:44:42.215Z'
-modified: '2022-02-10T11:18:57.942Z'
+modified: '2023-03-15T09:49:47.974Z'
 ---
 
 # crane
@@ -11,7 +11,9 @@ modified: '2022-02-10T11:18:57.942Z'
 
 ## install
 
-`brew install crane`
+```sh
+brew install crane
+```
 
 ## usage
 

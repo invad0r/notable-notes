@@ -2,7 +2,7 @@
 tags: [vmware]
 title: govc
 created: '2019-07-30T06:19:49.075Z'
-modified: '2021-10-06T12:16:29.018Z'
+modified: '2023-03-17T07:19:37.691Z'
 ---
 
 # govc
@@ -109,6 +109,8 @@ govc snapshot.tree -vm ./vm/mq-1.node.dint.domain.net -D -i -d
 
 govc snapshot.create -vm ./vm/gitlab.node.dint.domain.net pre-gitlab-v12-upgrade
 ```
+
+## find
 
 ```sh
 govc find --help

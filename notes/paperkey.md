@@ -1,7 +1,7 @@
 ---
 title: paperkey
 created: '2021-06-14T13:30:55.412Z'
-modified: '2021-06-14T13:52:14.724Z'
+modified: '2023-03-13T11:19:49.719Z'
 ---
 
 # paperkey
@@ -10,9 +10,11 @@ modified: '2021-06-14T13:52:14.724Z'
 
 ## install
 
-`brew install paperkey`
+```sh
+brew install paperkey
+```
 
-## usage
+## flag
 
 ```sh
 -o, --output-type TYPE    # TYPES
@@ -31,6 +33,8 @@ modified: '2021-06-14T13:52:14.724Z'
 
 --comment                 # add comment to base64 output
 ```
+
+## usage
 
 ```sh
 # take secret key in KEY.gpg and generate a file OUTPUT.txt that contains the secret data

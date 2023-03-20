@@ -2,12 +2,18 @@
 tags: [container, container/docker]
 title: docker-machine
 created: '2019-07-30T06:19:49.044Z'
-modified: '2020-03-13T12:52:16.889Z'
+modified: '2023-03-13T11:10:44.177Z'
 ---
 
 # docker-machine
 
-> tool that lets you install Docker Engine on virtual hosts, and manage the hosts
+> tool that lets you install and manage [[docker]] on virtual hosts
+
+## flags
+
+```sh
+
+```
 
 ## usage
 
@@ -47,6 +53,7 @@ docker-machine \
 
 ## see also
 
-- [[minikube]]
+- [[k3s]]
 - [[docker]]
+- [[minikube]]
 - [[vboxmanage]]

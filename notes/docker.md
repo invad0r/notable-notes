@@ -2,7 +2,7 @@
 tags: [container, container/docker]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2022-06-16T10:55:20.907Z'
+modified: '2023-03-17T07:18:23.876Z'
 ---
 
 # docker
@@ -12,7 +12,7 @@ modified: '2022-06-16T10:55:20.907Z'
 ## install
 
 ```sh
-# prerquesite:  docker-for-mac and `brew install bash-completion`
+brew install bash-completion  # prerquesite
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
 ```
@@ -21,6 +21,7 @@ ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-comple
 
 ```sh
 DOCKER_API_VERSION                # API version to use
+DOCKER_BUILDKIT                   # enable or disable buildkit e.g. "failed to solve with frontend dockerfile.v0: failed to create LLB definition:.."
 DOCKER_CONFIG                     # location of your client configuration
 DOCKER_CERT_PATH                  # location of your authentication keys
 DOCKER_CLI_EXPERIMENTAL           # enable experimental features for the cli (e.g. enabled or disabled)
@@ -43,6 +44,8 @@ export DOCKER_API_VERSION=1.38 DOCKER_TLS_VERIFY=1 DOCKER_CERT_PATH=/path/to/cer
 ## usage
 
 ```sh
+docker ps --no-trunc                                          # wide view, full command
+
 docker system prune --all --volumes --force
 
 docker exec -it --env 'PS1=[CMD]\w \$ ' IMGAE CMD             # setting prompt for interactive use
@@ -96,9 +99,10 @@ docker network disconnect -f $network_name $container_name
 
 ## see also
 
+- [[brew]]
+- [[kubectl]]
 - [[docker-compose]]
 - [[go-template]]
-- [[kubectl]]
 - [stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)
 - [github.com/moby/moby/issues/31698#issuecomment-320294893](https://github.com/moby/moby/issues/31698#issuecomment-320294893)
 - [docs.docker.com/engine/reference/commandline/cli/#environment-vairables](https://docs.docker.com/engine/reference/commandline/cli/#environment-vairables)

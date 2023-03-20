@@ -2,12 +2,12 @@
 tags: [brew]
 title: xargs
 created: '2019-07-30T06:19:49.266Z'
-modified: '2022-11-29T08:10:49.453Z'
+modified: '2023-03-17T07:37:24.369Z'
 ---
 
 # xargs
 
-> command line utility for building an execution pipeline from standard input
+> cli utility for building an execution pipeline from STDIN
 
 ## install
 
@@ -42,9 +42,12 @@ echo 210    | xargs -I {} bash -c "if [[ "{}" =~ 2 ]]; then echo {}; fi"   # rep
 
 # when no -I => defaults to `{}`
 
-
 for FILE in "$(ls)"; do echo "$FILE rugal"; done
+
 ls | xargs -I% echo "% rugal"
+
+xargs -I % -P 5 curl -I "https://HOST" < <(printf '%s\n' {1..10})
+seq 1 10 | xargs -n1 -P 5 curl -I "https://HOST"
 ```
 
 ## see also

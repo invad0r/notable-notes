@@ -1,7 +1,7 @@
 ---
 title: kind
 created: '2021-11-29T09:47:11.585Z'
-modified: '2021-11-29T12:58:05.706Z'
+modified: '2023-03-17T07:20:16.723Z'
 ---
 
 # kind
@@ -10,7 +10,9 @@ modified: '2021-11-29T12:58:05.706Z'
 
 ## install
 
-`brew install kind`
+```sh
+brew install kind
+```
 
 ## usage
 

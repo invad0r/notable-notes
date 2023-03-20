@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2022-05-17T06:31:28.418Z'
+modified: '2023-03-15T07:52:29.916Z'
 ---
 
 # date
@@ -11,7 +11,9 @@ modified: '2022-05-17T06:31:28.418Z'
 
 ## install
 
-`brew install coreutils`
+```sh
+brew install coreutils
+```
 
 ## flags
 

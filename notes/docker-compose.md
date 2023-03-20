@@ -2,7 +2,7 @@
 tags: [container]
 title: docker-compose
 created: '2019-08-28T09:08:43.657Z'
-modified: '2022-01-17T13:28:29.654Z'
+modified: '2023-03-13T11:21:26.149Z'
 ---
 
 # docker-compose
@@ -12,7 +12,7 @@ modified: '2022-01-17T13:28:29.654Z'
 ## usage
 
 ```sh
-docker-compose -f docker-compose.yml config   # render final yaml
+docker-compose -f docker-compose.yml config     # render final yaml
 
 docker-compose ps
 

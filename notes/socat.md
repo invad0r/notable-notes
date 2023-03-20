@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: socat
 created: '2019-07-30T06:19:49.239Z'
-modified: '2022-02-15T10:29:15.819Z'
+modified: '2023-03-16T09:13:18.415Z'
 ---
 
 # socat
@@ -11,7 +11,11 @@ modified: '2022-02-15T10:29:15.819Z'
 
 ## install
 
-`brew install socat`, `apt install socat`, `yum install socat`
+```sh
+brew install socat
+apt install socat
+yum install socat
+```
 
 ## usage
 
@@ -67,3 +71,4 @@ socat -d -d -lmlocal2 \
 - [[ssh proxy]]
 - [[tcp-ip model]]
 - [[12 factor app]]
+
