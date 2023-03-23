@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: rego
 created: '2021-03-16T15:14:14.515Z'
-modified: '2021-10-19T07:29:09.255Z'
+modified: '2023-03-22T10:47:27.662Z'
 ---
 
 # rego
@@ -13,7 +14,7 @@ modified: '2021-10-19T07:29:09.255Z'
 ## usage
 
 ```rego
-
+rego
 ```
 
 ## see also

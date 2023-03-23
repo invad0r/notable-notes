@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: kbst
 created: '2022-03-23T06:54:40.598Z'
-modified: '2022-03-23T08:58:32.352Z'
+modified: '2023-03-22T10:45:11.640Z'
 ---
 
 # kbst

@@ -1,8 +1,8 @@
 ---
-tags: [brew, macos, packagemanager]
+tags: [macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2022-11-29T08:25:22.804Z'
+modified: '2023-03-22T09:28:55.930Z'
 ---
 
 # brew
@@ -12,16 +12,24 @@ modified: '2022-11-29T08:25:22.804Z'
 ## install
 
 ```sh
-export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
-export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bashrc   # for macos on m1
+```
+
+## env
+
+```sh
+HOMEBREW_BREW_GIT_REMOTE        # at install put git mirror of Homebrew/brew here
+HOMEBREW_CORE_GIT_REMOTE        # at install put git mirror of Homebrew/homebrew-core here
+HOMEBREW_NO_INSTALL_CLEANUP     # don't run brew cleanup
+HOMEBREW_NO_ENV_HINTS           # don't show hints
 ```
 
 ## usage
 
 ```sh
 brew list
-brew list --formulae FORMULAE
 
 brew bundle --help
 brew bundle dump      # write all installed casks/formulae/images/taps into Brewfile in current directory
@@ -46,24 +54,21 @@ brew missing          # check the given formula kegs for missing dependencies
 
 brew man              # generate brew man-pages
 
-
-brew install FORMULAE
 brew install grep --with-default-names     # used with-default-names to avoid prefixing with "g"
+
+brew install
+  inetutils
+  gnu-getopt
+  findutils
+  pstree
+  rmtrash
+  mkcert
+  bash-completion@2
+
 
 brew unlink PACKAGE       # switch between mutliple version of package
 brew link PACKAGE@10
 ```
-
-### common install formulae
-
-- `bash-completion`
-- `findutils` - [[find]], [[xargs]], [[locate]]
-- `gnu-getopt` - [[getopt]]
-- `inetutils` - [[dnsdomainname]], [[ftp]], [[rcp]], [[rexec]], [[rlogin]], [[rsh]], [[telnet]]
-- `mkcert` - [[mkcert]]
-- `pstree` - [[pstree]]
-- `rmtrash`
-
 
 ## cask - extension to brew allowing management of gui apps
 

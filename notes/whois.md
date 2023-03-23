@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: whois
 created: '2021-12-23T09:09:20.217Z'
-modified: '2023-03-20T08:48:26.180Z'
+modified: '2023-03-22T10:35:10.686Z'
 ---
 
 # whois

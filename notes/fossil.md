@@ -1,8 +1,7 @@
 ---
-tags: [vcs]
 title: fossil
 created: '2020-07-02T06:23:57.933Z'
-modified: '2020-09-02T17:47:04.497Z'
+modified: '2023-03-22T08:50:55.267Z'
 ---
 
 # fossil
@@ -18,6 +17,7 @@ modified: '2020-09-02T17:47:04.497Z'
 > free and Open-Source
 
 ## usage
+
 ```sh
 fossil init new-repository
 
@@ -29,6 +29,8 @@ fossil commit -m "added choices.xml"
 
 fossil ui
 ```
+
 ## see also
+
 - [[git]]
 - [[sqlite]]

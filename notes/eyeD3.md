@@ -1,7 +1,7 @@
 ---
 title: eyeD3
 created: '2019-08-23T14:52:21.967Z'
-modified: '2021-10-31T14:56:47.384Z'
+modified: '2023-03-22T10:16:55.837Z'
 ---
 
 # eyeD3
@@ -11,11 +11,12 @@ modified: '2021-10-31T14:56:47.384Z'
 ## usage
 
 ```sh
-eyeD3 track01.mp3                     # list meta info
+eyeD3 FILE.mp3                     # list meta info
 
-eyeD3 --artist "artist" track01.mp3   # add artist to meta
+eyeD3 --artist "artist" FILE.mp3   # add artist to meta
 
-eyeD3 --add-image "$DIR/cover.jpg:FRONT_COVER" --artist "$ARTIST" --album "$ALBUM" \
+eyeD3 --add-image "$DIR/cover.jpg:FRONT_COVER" \
+  --artist "$ARTIST" --album "$ALBUM" \
   --title "${f##*-}" --track "${f%%-*}" "$DIR/${f}.mp3";
 ```
 
@@ -23,3 +24,4 @@ eyeD3 --add-image "$DIR/cover.jpg:FRONT_COVER" --artist "$ARTIST" --album "$ALBU
 
 - [[youtube-dl]]
 - [[python]]
+- [[ffmpeg]]

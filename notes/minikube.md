@@ -1,8 +1,8 @@
 ---
-tags: [container, container/k8s]
+tags: [container]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2023-03-13T11:11:35.138Z'
+modified: '2023-03-22T10:09:58.434Z'
 ---
 
 # minikube

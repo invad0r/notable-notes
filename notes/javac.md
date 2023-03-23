@@ -2,7 +2,7 @@
 tags: [compiler, java]
 title: javac
 created: '2019-08-21T14:45:10.678Z'
-modified: '2020-06-04T08:25:46.029Z'
+modified: '2023-03-22T08:25:36.652Z'
 ---
 
 # javac
@@ -12,6 +12,7 @@ modified: '2020-06-04T08:25:46.029Z'
 > javac is itself written in Java. The compiler can also be invoked programmatically
 
 ## usage
+
 ```sh
 javac -d . Foo.java   # -d specify directory for package
                       # call via `java foo.Foo`

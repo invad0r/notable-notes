@@ -1,7 +1,7 @@
 ---
 title: redis-cli
 created: '2022-10-05T12:58:56.515Z'
-modified: '2022-11-23T08:26:33.091Z'
+modified: '2023-03-22T10:46:27.511Z'
 ---
 
 # redis-cli
@@ -19,6 +19,8 @@ redis-cli --scan --pattern '*-11*'
 
 redis-cli --latency
 ```
+
+## console
 
 ```
 127.0.0.1:6379> SET mykey "Hello\nWorld"

@@ -1,14 +1,15 @@
 ---
-tags: [prometheus]
 title: promql
 created: '2019-07-30T06:19:49.216Z'
-modified: '2019-11-17T17:42:31.448Z'
+modified: '2023-03-22T10:13:59.513Z'
 ---
 
 # promql
+
 > `prometheus query language`
 
 ## usage
+
 ```sh
 topk(10, count by (__name__)({__name__=~".+"}))    # top 10 metrics
 
@@ -28,6 +29,7 @@ sum by (instance) (irate(node_disk_io_time_ms{instance=~"swarm-2.node.ddev.domai
 ```
 
 ## api
+
 ```sh
 /api/v1/label/SERVICE_NAME/values  # label which use SERVICE_NAME=".."
 
@@ -36,7 +38,9 @@ sum by (instance) (irate(node_disk_io_time_ms{instance=~"swarm-2.node.ddev.domai
 /-/reload
 
 ```
+
 ## see also
+
 - [[promtool]]
 - [Querying basics | Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 - [PromQL for Humans](https://timber.io/blog/promql-for-humans/)

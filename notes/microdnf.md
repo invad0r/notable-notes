@@ -1,7 +1,8 @@
 ---
+tags: [packagemanager]
 title: microdnf
 created: '2022-09-30T12:49:43.050Z'
-modified: '2023-03-16T08:02:56.188Z'
+modified: '2023-03-22T10:34:38.017Z'
 ---
 
 # microdnf

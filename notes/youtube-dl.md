@@ -1,12 +1,18 @@
 ---
+tags: [python]
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2022-02-09T16:24:42.497Z'
+modified: '2023-03-22T11:00:04.940Z'
 ---
 
 # youtube-dl
 
 > download videos from youtube.com or other video platforms
+
+## install
+
+```sh
+```
 
 ## usage
 

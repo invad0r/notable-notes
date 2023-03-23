@@ -1,7 +1,7 @@
 ---
 title: semtag
 created: '2021-03-25T07:59:14.503Z'
-modified: '2022-02-02T10:11:29.062Z'
+modified: '2023-03-22T10:30:51.582Z'
 ---
 
 # semtag
@@ -10,7 +10,9 @@ modified: '2022-02-02T10:11:29.062Z'
 
 ## installation
 
-`brew install semtag`
+```sh
+brew install semtag
+```
 
 ## usage
 

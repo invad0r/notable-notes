@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: sysctl
 created: '2019-07-30T06:19:49.249Z'
-modified: '2020-09-03T11:49:48.466Z'
+modified: '2023-03-22T08:00:17.005Z'
 ---
 
 # sysctl 
@@ -10,6 +10,7 @@ modified: '2020-09-03T11:49:48.466Z'
 > configure kernel parameters at runtime 
 
 ## usage
+
 ```sh
 sysctl -a                             # print all
 
@@ -29,12 +30,11 @@ sysctl -p, --load[=<file>]    # read values from file
 # config files
 # /etc/sysctl.conf              where sysctl values are loaded at boot time - modify for permanent change
 # /proc/sys/vm/swappiness       same single value
-
-
-
 ```
 
 ## see also
+
+- [[procps]]
 - [[bash ulimit]]
 - [[dmesg]]
 - [[launchctl]]

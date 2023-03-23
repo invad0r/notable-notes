@@ -1,7 +1,7 @@
 ---
 title: rar
 created: '2023-01-27T09:01:58.297Z'
-modified: '2023-01-27T09:15:30.777Z'
+modified: '2023-03-22T10:31:38.264Z'
 ---
 
 # rar
@@ -9,7 +9,7 @@ modified: '2023-01-27T09:15:30.777Z'
 ## install
 
 ```sh
-brwe install rar
+brew install rar
 ```
 
 ## commands

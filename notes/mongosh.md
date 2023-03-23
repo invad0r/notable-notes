@@ -1,7 +1,8 @@
 ---
+tags: [database]
 title: mongosh
 created: '2021-09-07T07:21:44.793Z'
-modified: '2021-09-07T07:31:19.202Z'
+modified: '2023-03-22T10:37:43.316Z'
 ---
 
 # mongosh
@@ -10,7 +11,9 @@ modified: '2021-09-07T07:31:19.202Z'
 
 ## install
 
-`brew install mongosh`
+```sh
+brew install mongosh
+```
 
 ## usage
 

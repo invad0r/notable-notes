@@ -1,7 +1,7 @@
 ---
 title: fswatch
 created: '2021-10-19T10:15:19.670Z'
-modified: '2021-10-19T10:17:11.193Z'
+modified: '2023-03-22T10:32:37.809Z'
 ---
 
 # fswatch
@@ -10,7 +10,9 @@ modified: '2021-10-19T10:17:11.193Z'
 
 ## install 
 
-`brew install fswatch`
+```sh
+brew install fswatch
+```
 
 ## usage
 

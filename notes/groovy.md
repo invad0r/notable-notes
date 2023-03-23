@@ -1,8 +1,8 @@
 ---
-tags: [dsl, java]
+tags: [java]
 title: groovy
 created: '2020-09-02T12:46:29.664Z'
-modified: '2020-09-02T12:53:46.647Z'
+modified: '2023-03-22T09:29:16.602Z'
 ---
 
 # groovy
@@ -12,9 +12,13 @@ modified: '2020-09-02T12:53:46.647Z'
 > scripting capabilities, `domain specific language` authoring, runtime and compile-time meta-programming and functional programming
 
 ## install
-`brew install groovy`, `sdk install groovy`
+
+```sh
+sdk install groovy
+```
 
 ## usage
+
 ```sh
 groovysh        # create an interactive groovy shell, repl
 
@@ -24,6 +28,7 @@ groovy SCRIPT   # run a specific groovy script
 ```
 
 ## see also
+
 - [[java]]
 - [[sdk]]
 - [[awk]]

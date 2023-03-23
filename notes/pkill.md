@@ -2,14 +2,14 @@
 tags: [linux]
 title: pkill
 created: '2020-01-02T14:25:22.992Z'
-modified: '2021-11-01T10:25:06.867Z'
+modified: '2023-03-22T08:19:12.976Z'
 ---
 
 # pkill
 
-> `pgrep`, `pkill` - find or signal processes by name
+> kill signal processes by name
 
-## usage
+## flag
 
 ```sh
  -f         # match against full argument lists.  The default is to match against process names
@@ -18,9 +18,7 @@ modified: '2021-11-01T10:25:06.867Z'
             #    For pkill, display the kill command used for each process killed.
 ```
 
-```sh
-pgrep -fl PROCESS_NAME
-```
+## usage
 
 ```sh
 pkill -fl PROCESS_NAME        # match full path
@@ -30,6 +28,8 @@ pkill -HUP sshd
 
 ## see also
 
+- [[procps]]
+- [[pgrep]]
 - [[grep]]
 - [[bash kill]]
 - [[ps]]

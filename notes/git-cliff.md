@@ -1,7 +1,8 @@
 ---
+tags: [rust]
 title: git-cliff
 created: '2021-10-08T11:16:16.864Z'
-modified: '2021-10-08T11:19:29.073Z'
+modified: '2023-03-22T10:36:29.677Z'
 ---
 
 # git-cliff
@@ -10,7 +11,9 @@ modified: '2021-10-08T11:19:29.073Z'
 
 ## install
 
-`cargo install git-cliff`
+```sh
+cargo install git-cliff
+```
 
 ## usage
 

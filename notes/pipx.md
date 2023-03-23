@@ -2,7 +2,7 @@
 tags: [python]
 title: pipx
 created: '2020-11-05T12:54:51.421Z'
-modified: '2021-10-29T12:41:27.869Z'
+modified: '2023-03-22T08:33:03.434Z'
 ---
 
 # pipx
@@ -10,17 +10,23 @@ modified: '2021-10-29T12:41:27.869Z'
 > install and run [[python]] apps in isolated environments
 
 ## install
-`brew install pipx`
 
-## usage
 ```sh
-# environment
+brew install pipx
+```
+
+## env
+
+```sh
 PIPX_HOME                     # overrides default pipx location - virtual envs install to $PIPX_HOME/venvs
 PIPX_BIN_DIR                  # overrides location of app installations - apps are symlinked/copied here
 USE_EMOJI                     # overrides emoji behavior
 PIPX_DEFAULT_PYTHON           # overrides default python used for commands
+```
 
+## usage
 
+```sh
 pipx list                     # List installed packages
 
 pipx install PACKAGE
@@ -42,6 +48,7 @@ pipx completions              # print instructions on shell completions
 ```
 
 ## see also
+
 - [[pyenv]]
 - [[pip]]
 - [[python]]

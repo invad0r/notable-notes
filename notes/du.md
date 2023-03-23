@@ -2,19 +2,21 @@
 tags: [coreutils, filesystem]
 title: du
 created: '2019-07-30T06:19:49.046Z'
-modified: '2021-10-31T14:38:47.826Z'
+modified: '2023-03-22T09:13:33.358Z'
 ---
 
 # du
 
 > `disk usage` estimates and displays the disk space used by files.
 
-## usage
+## env
 
 ```sh
 BLOCKSIZE         # if set,     and -k is not specified, the block counts will be displayed in units of that size block
                   # if not set, and -k is not specified, the block counts will be displayed in 512-byte blocks
 ```
+
+## flag
 
 ```sh
 -c                # display a grand total
@@ -23,6 +25,8 @@ BLOCKSIZE         # if set,     and -k is not specified, the block counts will b
 -s                # display only a total for each argument
 -s                # display an entry for each specified file.  (Equivalent to -d 0)
 ```
+
+## usage
 
 ```sh
 du -sk ./* | sort -nr       # total in kb

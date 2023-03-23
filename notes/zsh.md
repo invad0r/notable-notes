@@ -1,8 +1,8 @@
 ---
-tags: [shell/zsh]
+tags: [shell]
 title: zsh
 created: '2021-05-12T09:00:09.604Z'
-modified: '2022-03-03T15:41:07.261Z'
+modified: '2023-03-22T09:24:02.613Z'
 ---
 
 # zsh

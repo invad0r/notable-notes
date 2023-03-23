@@ -1,8 +1,8 @@
 ---
-tags: [container/docker, linux]
+tags: [container, linux]
 title: unix socket
 created: '2019-08-20T09:22:26.742Z'
-modified: '2022-02-15T10:29:37.043Z'
+modified: '2023-03-22T10:10:46.245Z'
 ---
 
 # unix socket

@@ -1,14 +1,15 @@
 ---
+tags: [linux]
 title: ssh-keyscan
 created: '2021-06-30T12:48:52.502Z'
-modified: '2021-09-23T06:07:56.774Z'
+modified: '2023-03-22T10:40:41.594Z'
 ---
 
 # ssh-keyscan
 
 > gather ssh host public keys from servers
 
-## usage
+## flag
 
 ```sh
 -4            # Force ssh-keyscan to use IPv4 addresses only
@@ -27,10 +28,12 @@ modified: '2021-09-23T06:07:56.774Z'
 -v            # print debugging messages about progress
 ```
 
+## usage
+
 ```sh
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-ssh-keyscan -H IP >> ~/.ssh/known_hosts
 
+ssh-keyscan -H IP >> ~/.ssh/known_hosts
 
 ssh-keyscan -t rsa,dsa HOST 2>&1 | sort -u - ~/.ssh/known_hosts 
 ```

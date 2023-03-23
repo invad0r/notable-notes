@@ -1,8 +1,7 @@
 ---
-tags: [dsl]
 title: tcl
 created: '2020-02-25T07:16:45.951Z'
-modified: '2021-02-08T12:52:53.064Z'
+modified: '2023-03-22T09:29:03.988Z'
 ---
 
 # tcl
@@ -12,7 +11,9 @@ modified: '2021-02-08T12:52:53.064Z'
 
 ## install
 
-`brew cask install tcl`
+```sh
+brew cask install tcl
+```
 
 ## usage
 
@@ -20,11 +21,15 @@ modified: '2021-02-08T12:52:53.064Z'
 tclsh    # start tcl shell
 ```
 
+## tcl shell
+
 ```tcl
 puts $tcl_version     # prints tcl version
 
 puts [ls -l]          # square-bracket used for command substitution
 ```
+
+## script
 
 ```tcl
 #!/usr/bin/tclsh

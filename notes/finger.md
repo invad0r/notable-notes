@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: finger
 created: '2021-05-25T12:02:22.076Z'
-modified: '2022-02-01T15:09:46.605Z'
+modified: '2023-03-22T11:06:10.887Z'
 ---
 
 # finger

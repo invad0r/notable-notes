@@ -1,7 +1,7 @@
 ---
 title: rl
 created: '2021-06-28T07:18:18.578Z'
-modified: '2021-06-28T07:21:49.288Z'
+modified: '2023-03-22T11:01:31.862Z'
 ---
 
 # rl
@@ -10,7 +10,9 @@ modified: '2021-06-28T07:21:49.288Z'
 
 ## install
 
-`brew install randomize-lines`
+```sh
+brew install randomize-lines
+```
 
 ## usage
 
@@ -22,3 +24,4 @@ rl -c 1 /usr/share/dict/words
 
 - [[shuf]]
 - [[od]]
+- [[openssl]]

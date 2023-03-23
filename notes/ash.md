@@ -1,8 +1,8 @@
 ---
-tags: [shell/ash]
+tags: [shell]
 title: ash
 created: '2021-05-12T08:58:17.934Z'
-modified: '2022-03-03T15:40:01.741Z'
+modified: '2023-03-22T09:24:17.335Z'
 ---
 
 # ash

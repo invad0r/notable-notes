@@ -2,7 +2,7 @@
 tags: [python]
 title: virtualenv
 created: '2019-07-30T06:19:49.221Z'
-modified: '2022-02-01T14:56:11.483Z'
+modified: '2023-03-22T10:56:33.464Z'
 ---
 
 # virtualenv
@@ -11,7 +11,10 @@ modified: '2022-02-01T14:56:11.483Z'
 
 ## install
 
-`pip install virtualenv --verbose`, `pip3 install virtualenv`
+```sh
+pip install virtualenv --verbose
+pip3 install virtualenv
+```
 
 ## usage
 

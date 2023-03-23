@@ -2,14 +2,14 @@
 tags: [container, shell/bash/builtin]
 title: bash ulimit
 created: '2019-08-02T06:42:37.646Z'
-modified: '2021-10-29T12:35:17.229Z'
+modified: '2023-03-22T10:03:05.385Z'
 ---
 
 # bash ulimit
 
 > provides control over the resources available to the shell and processes it creates, on systems that allow such control
 
-## usage
+## flag
 
 ```sh
 -S        # use the `soft` resource limit
@@ -35,6 +35,8 @@ modified: '2021-10-29T12:35:17.229Z'
 -x        # maximum number of file locks
 ```
 
+## usage
+
 ```sh
 ulimit -a       # show all ulimits
 
@@ -54,6 +56,7 @@ ulimit -l       # max locked memory (kbytes)
 ```
 
 ## see alos
+
 - [[sysctl]]
 - [[systemctl]]
 - [[nproc]]

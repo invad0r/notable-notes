@@ -1,7 +1,8 @@
 ---
+tags: [javascript]
 title: tsc
 created: '2022-12-02T14:15:06.277Z'
-modified: '2022-12-02T14:23:38.112Z'
+modified: '2023-03-22T10:43:25.146Z'
 ---
 
 # tsc

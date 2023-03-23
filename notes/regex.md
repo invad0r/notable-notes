@@ -2,12 +2,13 @@
 tags: [linux, regex]
 title: regex
 created: '2019-07-30T06:19:49.223Z'
-modified: '2019-08-22T12:34:21.829Z'
+modified: '2023-03-22T08:46:22.967Z'
 ---
 
 # regex
 
 ## flavors
+
 |flavor             |        |
 |--                 |--      |
 | `PCRE`            | [[perl]] Compatible Regular Expressions (c library) |
@@ -19,11 +20,13 @@ modified: '2019-08-22T12:34:21.829Z'
 | `GNU ERE`         | GNU Extended Regular Expressions, which are POSIX ERE with GNU extensions  |
 
 ## Patterns
+
 ```
 [^="]++(?=")      # explanation
 ```
 
 ## see also
+
 - [[grep regex]]
 - [grep regex](@note/grep regex.md)
 - [[find]]

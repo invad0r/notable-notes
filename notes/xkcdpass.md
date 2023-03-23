@@ -1,7 +1,8 @@
 ---
+tags: [python]
 title: xkcdpass
 created: '2021-02-12T12:38:07.546Z'
-modified: '2022-02-01T14:53:26.123Z'
+modified: '2023-03-22T10:56:07.227Z'
 ---
 
 # xkcdpass
@@ -10,9 +11,11 @@ modified: '2022-02-01T14:53:26.123Z'
 
 ## install
 
-`pip3 install xkcdpass`
+```sh
+pip3 install xkcdpass
+```
 
-## usage
+## flag
 
 ```sh
 -h,             --help                         # show this help message and exit
@@ -28,6 +31,8 @@ modified: '2022-02-01T14:53:26.123Z'
 -s SEP,         --separator SEP                # separate generated passphrases with SEP.
 -C CASE,        --case CASE                    # choose method for setting case of each word in passphras ['alternating', 'upper','lower', 'random', 'capitalize']
 ```
+
+## usage
 
 ```sh
 xkcdpass      # could output "correct horse battery staple"
@@ -45,5 +50,6 @@ xkcdpass \
 
 - [[op]]
 - [[mkpasswd]]
+- [[openssl]] `passwd`
 - [pypi.org/project/xkcdpass/](https://pypi.org/project/xkcdpass/)
 - [[pip]]

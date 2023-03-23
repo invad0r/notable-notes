@@ -2,7 +2,7 @@
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2022-02-01T14:38:54.545Z'
+modified: '2023-03-22T08:21:22.277Z'
 ---
 
 # java
@@ -52,6 +52,8 @@ modified: '2022-02-01T14:38:54.545Z'
 -XX:+AggressiveOpts                   # enables the use of aggressive performance optimization features
 -XX:OnError="cmd args"                # Run user-defined commands on fatal error
 ```
+
+[developers.redhat.com/blog/2017/04/04/openjdk-and-containers](https://developers.redhat.com/blog/2017/04/04/openjdk-and-containers)
 
 ## usage
 

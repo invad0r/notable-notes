@@ -1,8 +1,7 @@
 ---
-tags: [api]
 title: api vault
 created: '2019-09-26T06:09:05.847Z'
-modified: '2022-03-16T05:42:35.850Z'
+modified: '2023-03-22T10:23:02.567Z'
 ---
 
 # api vault

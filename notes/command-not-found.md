@@ -1,7 +1,7 @@
 ---
 title: command-not-found
 created: '2022-01-13T13:54:36.496Z'
-modified: '2022-02-01T15:18:17.193Z'
+modified: '2023-03-22T11:08:58.765Z'
 ---
 
 # command-not-found
@@ -10,7 +10,11 @@ modified: '2022-02-01T15:18:17.193Z'
 
 ## install
 
-`zypper install command-not-found` `apt-get install command-not-found` `apk add command-not-found`
+```sh
+zypper  install command-not-found
+apt-get install command-not-found
+apk     add     command-not-found
+```
 
 ## usage
 

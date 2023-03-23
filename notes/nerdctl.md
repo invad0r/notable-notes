@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: nerdctl
 created: '2022-01-27T09:39:31.754Z'
-modified: '2022-01-27T09:46:35.540Z'
+modified: '2023-03-22T10:44:28.917Z'
 ---
 
 # nerdctl

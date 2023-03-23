@@ -2,7 +2,7 @@
 tags: [python]
 title: python comprehensions
 created: '2020-01-10T13:12:15.343Z'
-modified: '2021-02-04T08:09:00.525Z'
+modified: '2023-03-22T08:34:52.546Z'
 ---
 
 # python comprehensions
@@ -11,6 +11,7 @@ modified: '2021-02-04T08:09:00.525Z'
 > syntactic sugar for a `filter` followed by a `map`
 
 ## usage
+
 ```sh
  [ e**2 for e in a_list if type(e) == types.IntType ]   # list comprehension
 # └─┬─┘└───────┬───────┘└─────────────┬─────────────┘
@@ -34,5 +35,6 @@ modified: '2021-02-04T08:09:00.525Z'
 ```
 
 ## see also
+
 - [[python map]]
 - [[haskell]]

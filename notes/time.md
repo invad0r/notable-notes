@@ -1,19 +1,24 @@
 ---
 title: time
 created: '2020-09-09T08:34:51.671Z'
-modified: '2021-10-29T12:46:41.772Z'
+modified: '2023-03-22T10:39:07.198Z'
 ---
 
 # time
 
-> time utility executes and times utility.  After the utility finishes, time writes the total time elapsed, the time consumed by system overhead, and the time used to execute utility to the standard error stream.  Times are reported in seconds.
+> time utility executes and times utility.  
 
-## usage
+After the utility finishes, time writes the total time elapsed, the time consumed by system overhead, and the time used to execute utility to the standard error stream.  
+Times are reported in seconds.
+
+## flag
 
 ```sh
 -l      # contents of the rusage structure are printed
 -p      # output is formatted as specified by IEEE Std 1003.2-1992 (``POSIX.2'')
 ```
+
+## usage
 
 ```sh
 /usr/bin/time CMD     # use full path or built-in `time` will be used

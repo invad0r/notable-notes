@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: apt-key
 created: '2022-02-02T08:54:23.749Z'
-modified: '2022-10-11T06:31:05.799Z'
+modified: '2023-03-22T09:16:47.409Z'
 ---
 
 # apt-key

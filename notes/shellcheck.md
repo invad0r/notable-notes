@@ -1,7 +1,7 @@
 ---
 title: shellcheck
 created: '2021-06-16T16:19:38.843Z'
-modified: '2021-06-16T16:20:42.902Z'
+modified: '2023-03-22T10:31:15.799Z'
 ---
 
 # shellcheck
@@ -10,7 +10,9 @@ modified: '2021-06-16T16:20:42.902Z'
 
 ## install
 
-`brew install shellcheck`
+```sh
+brew install shellcheck
+```
 
 ## usage
 
@@ -23,3 +25,4 @@ shellcheck FILE
 - [[bash]]
 - [[haskell]]
 - [github.com/koalaman/shellcheck](https://github.com/koalaman/shellcheck)
+

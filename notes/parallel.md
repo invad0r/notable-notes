@@ -2,7 +2,7 @@
 tags: [linux, moreutils]
 title: parallel
 created: '2019-07-30T06:19:49.203Z'
-modified: '2021-10-06T12:15:00.569Z'
+modified: '2023-03-22T08:11:56.000Z'
 ---
 
 # parallel
@@ -11,7 +11,9 @@ modified: '2021-10-06T12:15:00.569Z'
 
 ## install
 
-`brew install parallel`
+```sh
+brew install parallel
+```
 
 ## usage
 
@@ -29,7 +31,6 @@ parallel -j2 ./script.sh -- $(echo 1 2 3)
 parallel --eta -j8 ./script.sh {} :::: ./foo.csv
 
 # --bar
-
 
 CMD | parallel --j 0 --eta bash compress.sh {}
 

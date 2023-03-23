@@ -1,14 +1,17 @@
 ---
+tags: [container]
 title: k3sup
 created: '2022-01-12T16:50:10.912Z'
-modified: '2022-02-02T10:47:38.732Z'
+modified: '2023-03-22T10:19:58.543Z'
 ---
 
 # k3sup
 
 ## install 
 
-`curl -sLS https://get.k3sup.dev | sh && sudo install k3sup /usr/local/bin/`
+```sh
+curl -sLS https://get.k3sup.dev | sh && sudo install k3sup /usr/local/bin/
+```
 
 ## usage
 
@@ -30,9 +33,8 @@ k3sup join \
   --user=root \
   --k3s-channel=stable \
   --k3s-extra-args="--node-external-ip 192.168.56.12 --node-ip 192.168.56.12"
-```
 
-```sh
+
 k3sup install \
   --ssh-key ~/.ssh/id_ed25519 \
   --ip=192.168.56.11 \

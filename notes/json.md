@@ -1,7 +1,8 @@
 ---
+tags: [javascript, json]
 title: json
 created: '2022-12-02T10:57:31.255Z'
-modified: '2022-12-02T11:06:47.356Z'
+modified: '2023-03-22T10:45:27.350Z'
 ---
 
 # json

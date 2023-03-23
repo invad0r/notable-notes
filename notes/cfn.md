@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: cfn
 created: '2022-09-27T06:56:03.247Z'
-modified: '2022-11-29T07:53:00.479Z'
+modified: '2023-03-22T09:16:30.280Z'
 ---
 
 # cfn

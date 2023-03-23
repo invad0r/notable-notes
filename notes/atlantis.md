@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: atlantis
 created: '2022-04-19T08:16:22.864Z'
-modified: '2022-04-19T08:23:00.405Z'
+modified: '2023-03-22T10:33:37.859Z'
 ---
 
 # atlantis

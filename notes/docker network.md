@@ -1,8 +1,8 @@
 ---
-tags: [container, container/docker]
+tags: [container]
 title: docker network
 created: '2019-07-30T06:19:49.041Z'
-modified: '2021-10-19T07:34:46.470Z'
+modified: '2023-03-22T10:10:46.206Z'
 ---
 
 # docker network

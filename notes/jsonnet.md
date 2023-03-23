@@ -1,7 +1,8 @@
 ---
+tags: [json]
 title: jsonnet
 created: '2021-11-13T09:43:01.973Z'
-modified: '2022-12-02T10:56:07.827Z'
+modified: '2023-03-22T10:34:05.233Z'
 ---
 
 # jsonnet

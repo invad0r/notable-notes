@@ -1,7 +1,7 @@
 ---
 title: gs
 created: '2021-04-14T13:59:38.784Z'
-modified: '2022-01-26T15:42:43.830Z'
+modified: '2023-03-22T10:30:08.688Z'
 ---
 
 # gs
@@ -10,7 +10,9 @@ modified: '2022-01-26T15:42:43.830Z'
 
 ## install
 
-`brew install ghostscript`
+```sh
+brew install ghostscript
+```
 
 ## usage
 

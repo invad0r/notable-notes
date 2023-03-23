@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kubectl krew
 created: '2022-06-27T06:44:31.241Z'
-modified: '2022-11-23T08:33:45.066Z'
+modified: '2023-03-22T10:19:58.605Z'
 ---
 
 # kubectl krew

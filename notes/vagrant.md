@@ -1,8 +1,8 @@
 ---
-tags: [iac]
+tags: [iac, virtualization]
 title: vagrant
 created: '2019-07-30T06:19:49.078Z'
-modified: '2022-01-13T14:13:06.781Z'
+modified: '2023-03-22T10:58:12.678Z'
 ---
 
 # vagrant
@@ -11,7 +11,9 @@ modified: '2022-01-13T14:13:06.781Z'
 
 ## install
 
-`brew install vagrant`
+```sh
+brew install vagrant
+```
 
 ## usage
 

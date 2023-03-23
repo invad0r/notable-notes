@@ -2,26 +2,32 @@
 tags: [shell/bash]
 title: bash braces
 created: '2019-09-24T06:43:14.231Z'
-modified: '2021-05-12T08:46:50.982Z'
+modified: '2023-03-22T10:02:19.307Z'
 ---
 
 # bash braces
 
 > `$` character introduces parameter expansion, command substitution, or arithmetic expansion
 
-## usage 
+## subshell
+
 ```sh
-# subshell
 $(...)        # execute the command in the parens in a subshell and return its stdout
+
 (...)         # run the commands listed in the parens in a subshell
+```
 
+## group
 
-# group
+```sh
 {...}         # execute the commands in the braces as a group
+
 COMMAND | { echo "nope"; exit 1; }
+```
 
+## arithmetic expansion
 
-# arithmetic expansion
+```sh
 $((...))          # arithmetic expansion and return the result
 $((1+1))
 $((2*2))
@@ -31,12 +37,19 @@ $((base#number))  # convert number from base to decimal
 $((2#1111))       # 15
 $((8#16))         # 14
 $((16#FF))        # 255
+```
 
+## parameter expansion
 
+```
 ${...}        # parameter expansion and return the value
+```
 
+## brace expansion 
 
-# brace expansion - used to generate stings 
+> used to generate stings 
+
+```sh
 # consists of a sequence or a comma separated list of items inside curly braces `{}`
 # sequence consists of a starting and ending-item separated by `..`
 {aa,bb,cc,dd}      # aa bb cc dd
@@ -52,6 +65,7 @@ ls -l /etc/{resolv.conf, passwd}
 ```
 
 ## see also
+
 - [[bash arithmetic expansion]]
 - [[bash parameter expansion]]
 - [double-parenthesis-with-and-without-dollar - stackoverflow](https://stackoverflow.com/a/31255942/2087704)

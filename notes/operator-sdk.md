@@ -1,8 +1,8 @@
 ---
-tags: [container/docker]
+tags: [container]
 title: operator-sdk
 created: '2021-10-19T09:43:07.128Z'
-modified: '2021-10-19T09:56:38.512Z'
+modified: '2023-03-22T10:10:46.237Z'
 ---
 
 # operator-sdk
@@ -11,7 +11,9 @@ modified: '2021-10-19T09:56:38.512Z'
 
 ## install
 
-`brew install operator-sdk`
+```sh
+brew install operator-sdk
+```
 
 ## usage
 

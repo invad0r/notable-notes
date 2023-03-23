@@ -2,7 +2,7 @@
 tags: [cryptography]
 title: gpg
 created: '2019-07-30T06:19:49.076Z'
-modified: '2022-02-02T08:54:51.346Z'
+modified: '2023-03-22T08:54:03.043Z'
 ---
 
 # gpg
@@ -14,15 +14,16 @@ modified: '2022-02-02T08:54:51.346Z'
 > or others use the `public key` to encrypt something, and you use the `private key` to decrypt it
 [wiki.debian.org/Subkeys](https://wiki.debian.org/Subkeys)
 
-
 ## install
 
-`brew install gpg2`, `apt install gpg2`
+```sh
+brew install gpg      # version 1: for embedded and server usage, as it brings less dependencies and smaller binaries
+brew install gpg2     # version 2: targeted to desktop; requires several other modules to be installed
+apt  install gpg2
+```
 
-- `version 1`: for embedded and server usage, as it brings less dependencies and smaller binaries
-- `version 2`: targeted to desktop; requires several other modules to be installed
 
-## usage
+## flags
 
 ```sh
 # not specific to the function
@@ -109,6 +110,8 @@ rsa       # Rivest Shamir and Adleman (encryption/decrypt)
 .asc      # ASCII-armored
 ```
 
+## usage
+
 ```sh
 gpg --version
 gpg --help
@@ -167,6 +170,7 @@ gpg --verify FILE_SHA256SUMS.sig FILE_SHA256SUMS                    # verify fil
 
 ## see also
 
+- [[rvm]]
 - [[apt-key]]
 - [[paperkey]]
 - [[gpgconf]]
