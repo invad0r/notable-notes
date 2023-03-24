@@ -1,7 +1,8 @@
 ---
+tags: [macos]
 title: screencapture
 created: '2020-12-24T15:08:32.912Z'
-modified: '2020-12-24T15:09:36.496Z'
+modified: '2023-03-24T09:53:45.703Z'
 ---
 
 # screencapture
@@ -13,4 +14,6 @@ modified: '2020-12-24T15:09:36.496Z'
 
 ```
 ## see also
-- [[pbcopy pbpaste]]
+
+- [[script]]
+- [[pbcopy]]

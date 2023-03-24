@@ -1,7 +1,8 @@
 ---
+tags: [linux, network]
 title: traceroute
 created: '2022-03-09T07:27:41.411Z'
-modified: '2022-03-09T07:31:00.296Z'
+modified: '2023-03-24T09:52:03.301Z'
 ---
 
 # traceroute

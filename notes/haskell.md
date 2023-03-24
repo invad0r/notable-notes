@@ -1,18 +1,26 @@
 ---
 title: haskell
 created: '2021-02-03T12:56:01.739Z'
-modified: '2021-06-16T16:18:16.610Z'
+modified: '2023-03-24T09:39:30.339Z'
 ---
 
 # haskell
 
 ## install
-`brew install ghc cabal-install`
+
+```sh
+brew install ghc cabal-install
+```
 
 ## usage
+
 ```sh
 ghci                    # starts haskell repl
+```
 
+## repl
+
+```sh
 :l functions            # loads functions.hs from same folder
 :r                      # reloads current script, same as loading file
 
@@ -56,6 +64,7 @@ ghci                    # starts haskell repl
 ```
 
 ## see also
+
 - [learnyouahaskell.com](http://learnyouahaskell.com)
 - [[erlang]]
 - [[python comprehensions]]

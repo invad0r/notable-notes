@@ -1,7 +1,8 @@
 ---
+tags: [macos]
 title: zbar
 created: '2021-10-14T11:46:06.399Z'
-modified: '2021-10-14T12:05:58.546Z'
+modified: '2023-03-24T09:54:23.120Z'
 ---
 
 # zbar
@@ -10,7 +11,9 @@ modified: '2021-10-14T12:05:58.546Z'
 
 ## install
 
-`brew install zbar`
+```sh
+brew install zbar
+```
 
 ## usage
 

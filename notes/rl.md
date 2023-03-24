@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: rl
 created: '2021-06-28T07:18:18.578Z'
-modified: '2023-03-22T11:01:31.862Z'
+modified: '2023-03-24T09:53:32.604Z'
 ---
 
 # rl

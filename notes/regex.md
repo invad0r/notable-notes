@@ -1,8 +1,8 @@
 ---
-tags: [linux, regex]
+tags: [linux, Notebooks, regex]
 title: regex
 created: '2019-07-30T06:19:49.223Z'
-modified: '2023-03-22T08:46:22.967Z'
+modified: '2023-03-24T09:57:12.967Z'
 ---
 
 # regex

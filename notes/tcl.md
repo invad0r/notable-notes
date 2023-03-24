@@ -1,7 +1,8 @@
 ---
+tags: [c]
 title: tcl
 created: '2020-02-25T07:16:45.951Z'
-modified: '2023-03-22T09:29:03.988Z'
+modified: '2023-03-24T09:51:49.499Z'
 ---
 
 # tcl
