@@ -1,8 +1,8 @@
 ---
-tags: [container, container/docker]
+tags: [container]
 title: docker-machine
 created: '2019-07-30T06:19:49.044Z'
-modified: '2023-03-13T11:10:44.177Z'
+modified: '2023-03-22T10:10:46.214Z'
 ---
 
 # docker-machine

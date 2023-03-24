@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: fsck
 created: '2020-05-06T13:18:59.979Z'
-modified: '2021-10-31T14:56:05.878Z'
+modified: '2023-03-23T10:14:58.774Z'
 ---
 
 # fsck

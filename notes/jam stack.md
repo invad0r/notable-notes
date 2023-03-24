@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: jam stack
 created: '2022-04-08T10:29:14.554Z'
-modified: '2022-04-08T21:03:39.322Z'
+modified: '2023-03-23T10:20:22.090Z'
 ---
 
 # jam stack

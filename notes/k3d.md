@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: k3d
 created: '2022-01-27T09:48:45.201Z'
-modified: '2022-01-27T09:50:14.287Z'
+modified: '2023-03-22T10:19:58.577Z'
 ---
 
 # k3d

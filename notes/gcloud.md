@@ -1,8 +1,8 @@
 ---
-tags: [container, container/k8s]
+tags: [container]
 title: gcloud
 created: '2019-07-30T06:19:49.144Z'
-modified: '2021-10-13T09:32:07.828Z'
+modified: '2023-03-22T10:09:58.402Z'
 ---
 
 # gcloud
@@ -11,7 +11,9 @@ modified: '2021-10-13T09:32:07.828Z'
 
 ## install
 
-`brew ?`
+```sh
+brew ?
+```
 
 ## usage
 

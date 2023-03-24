@@ -2,14 +2,14 @@
 tags: [shell]
 title: bats
 created: '2019-07-30T06:19:49.026Z'
-modified: '2022-03-03T15:45:54.412Z'
+modified: '2023-03-22T11:01:52.203Z'
 ---
 
 # bats
 
 > `bats` is a `TAP-compliant` testing framework for bash, which provides a simple way to verify that the UNIX programs behave as expected
 
-## environment variables
+## env
 
 ```sh
 BATS_TEST_FILENAME        # fully expanded path to the Bats test file
@@ -76,6 +76,7 @@ setup() {
 
 ## see also
 
+- [[rtf]]
 - [github.com/sstephenson/bats](https://github.com/sstephenson/bats)
 - [govmomi/test_helper.bash · GitHub](https://github.com/vmware/govmomi/blob/master/govc/test/test_helper.bash)
 - [engineyard.com/bats-test-command-line-tools](https://www.engineyard.com/blog/bats-test-command-line-tools)

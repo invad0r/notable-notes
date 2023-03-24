@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: git-chglog
 created: '2021-03-25T07:53:28.102Z'
-modified: '2021-10-08T11:22:40.775Z'
+modified: '2023-03-24T08:25:52.792Z'
 ---
 
 # git-chglog
@@ -10,7 +11,10 @@ modified: '2021-10-08T11:22:40.775Z'
 
 ## install
 
-`brew tap git-chglog/git-chglog && brew install git-chglog`
+```sh
+brew tap git-chglog/git-chglog
+brew install git-chglog
+```
 
 ## usage
 

@@ -2,7 +2,7 @@
 tags: [iac]
 title: consul
 created: '2019-08-28T09:45:08.570Z'
-modified: '2021-10-20T08:58:05.652Z'
+modified: '2023-03-23T08:43:35.067Z'
 ---
 
 # consul
@@ -10,6 +10,7 @@ modified: '2021-10-20T08:58:05.652Z'
 > consul is controlled via cli which takes a subcommand (`agent`, `members`..)
 
 ## usage
+
 ```sh
 consul catalog nodes -http-addr=host              # working against remove consul-cluster 
 
@@ -56,4 +57,6 @@ EOF
 - [[watch]]
 - [[awk]]
 - [[etcdctl]]
-- [[zookeeper]]
+- [[zookeeper-shell]]
+- [[redis-cli]]
+

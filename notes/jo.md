@@ -1,7 +1,8 @@
 ---
+tags: [json]
 title: jo
 created: '2019-07-30T06:19:49.120Z'
-modified: '2021-11-13T09:43:29.815Z'
+modified: '2023-03-22T10:41:34.223Z'
 ---
 
 # jo
@@ -11,10 +12,10 @@ modified: '2021-11-13T09:43:29.815Z'
 ## usage
 
 ```sh
-array[1]=foo
-array[2]=bar
+ARRAY[1]=foo
+ARRAY[2]=bar
 
-jo -p -a ${array[@]}
+jo -p -a ${ARRAY[@]}
 ```
 
 ```json

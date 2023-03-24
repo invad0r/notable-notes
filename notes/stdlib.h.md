@@ -1,8 +1,8 @@
 ---
-tags: [c/header]
+tags: [c]
 title: stdlib.h
 created: '2020-05-16T12:10:34.736Z'
-modified: '2020-09-07T16:56:24.232Z'
+modified: '2023-03-22T09:24:35.983Z'
 ---
 
 # stdlib.h

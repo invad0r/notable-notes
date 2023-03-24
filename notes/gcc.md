@@ -2,7 +2,7 @@
 tags: [c, compiler]
 title: gcc
 created: '2019-07-30T06:19:49.029Z'
-modified: '2020-05-16T09:42:26.362Z'
+modified: '2023-03-22T08:25:04.978Z'
 ---
 
 # gcc
@@ -16,14 +16,21 @@ output:  file.i          => file.s    => ile.o    => file
 ```
 
 ## install
-`yum -y install gcc`
+
+```sh
+yum -y install gcc
+```
+
+## flags
+
+```sh
+-o FILE     # output file
+-WTYPE      # warning
+```
 
 ## usage
-```sh
-# options
-# -o FILE     output file
-# -WTYPE      warning
 
+```sh
 gcc -o file file.c                  # creates dynamically linked binary
 
 gcc -o file file.c -static          # creates static binary
@@ -42,14 +49,13 @@ gcc -xc++ -lstdc++ -shared-libgcc   # equivalent to g++
 gcc -dM -E - < /dev/null                          # dump preprocessor defines / macros
 gcc -E -dM -include sys/socket.h - < /dev/null    # dump preprocessor defines of header file
 
-
-
 $(gcc -print-prog-name=cpp) -v </dev/null         # where gcc looks for header-files
 echo "#include <limits.h>" > t.c; gcc -v t.c; rm t.c
 LC_ALL=C gcc -v -E -xc - < /dev/null 2>&1 | LC_ALL=C sed -ne '/starts here/,/End of/p'
 ```
 
 ## see also
+
 - [[g++]]
 - [[ldd]]
 - [[go]]

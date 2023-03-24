@@ -1,8 +1,8 @@
 ---
-tags: [container/k8s]
+tags: [container]
 title: kubernetes
 created: '2019-08-28T08:08:25.156Z'
-modified: '2022-03-23T21:26:10.566Z'
+modified: '2023-03-22T10:19:58.613Z'
 ---
 
 # kubernetes

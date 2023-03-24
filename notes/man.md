@@ -2,7 +2,7 @@
 tags: [linux]
 title: man
 created: '2019-07-30T06:19:49.175Z'
-modified: '2022-02-02T13:31:30.115Z'
+modified: '2023-03-23T07:42:37.798Z'
 ---
 
 # man
@@ -11,21 +11,19 @@ modified: '2022-02-02T13:31:30.115Z'
 
 ## install
 
-`apt-get install man-db`
+```sh
+apt-get install man-db
+```
 
-## usage
+## env
 
 ```sh
+MANPATH           # manpage locations: /usr/man, /usr/share/man, /usr/local/man, /usr/local/share/man, /usr/X11R6/man
 MANPAGER=less
 MANPAGER=vim -M +MANPAGER --not-a-term -
+```
 
-# manpage locations
-MANPATH /usr/man
-MANPATH /usr/share/man
-MANPATH /usr/local/man
-MANPATH /usr/local/share/man
-MANPATH /usr/X11R6/man
-````
+## usage
 
 ```sh
 man -k intro      # equivalent to apropos
@@ -80,6 +78,7 @@ man ./nuseradd
 
 ## see also
 
+- [[asdf]]
 - [The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
 - [Colorized man pages](http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized)
 - [[apropos]]

@@ -1,16 +1,15 @@
 ---
-tags: [lua, webserver]
+tags: [lua]
 title: nginx
 created: '2021-08-31T08:55:05.976Z'
-modified: '2021-10-29T12:40:32.469Z'
+modified: '2023-03-22T10:42:51.846Z'
 ---
 
 # nginx
 
 >
 
-## usage
-
+## flags
 
 ```sh
 -?,-h             # show help
@@ -25,6 +24,8 @@ modified: '2021-10-29T12:40:32.469Z'
 -c filename       # set configuration file (default: /etc/nginx/nginx.conf)
 -g directives     # set global directives out of configuration file
 ```
+
+## module
 
 ```sh
 ngx_http_core_module
@@ -48,3 +49,4 @@ Context: 	main, http, mail, stream, server, location
 ## see also
 
 - [nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls](https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/)
+- [[]]

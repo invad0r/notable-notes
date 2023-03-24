@@ -1,8 +1,8 @@
 ---
-tags: [brew]
+tags: [linux, macos]
 title: xargs
 created: '2019-07-30T06:19:49.266Z'
-modified: '2023-03-17T07:37:24.369Z'
+modified: '2023-03-22T10:39:44.062Z'
 ---
 
 # xargs
@@ -12,7 +12,7 @@ modified: '2023-03-17T07:37:24.369Z'
 ## install
 
 ```sh
-brew install findutils # as gxargs
+brew install findutils      # as gxargs
 ```
 
 ## flags

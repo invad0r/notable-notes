@@ -1,7 +1,8 @@
 ---
+tags: [buildsystem, c]
 title: autoconf
 created: '2022-02-02T13:35:55.731Z'
-modified: '2022-04-06T11:36:53.143Z'
+modified: '2023-03-22T10:40:07.333Z'
 ---
 
 # autoconf

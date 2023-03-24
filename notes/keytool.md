@@ -1,8 +1,8 @@
 ---
-tags: [java]
+tags: [crypto, java]
 title: keytool
 created: '2019-10-23T08:27:46.438Z'
-modified: '2022-08-25T14:29:40.342Z'
+modified: '2023-03-24T08:19:14.035Z'
 ---
 
 # keytool

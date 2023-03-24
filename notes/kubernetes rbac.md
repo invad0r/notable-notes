@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: kubernetes rbac
 created: '2022-03-23T21:22:09.880Z'
-modified: '2022-03-23T21:33:43.208Z'
+modified: '2023-03-22T10:19:58.621Z'
 ---
 
 # kubernetes rbac

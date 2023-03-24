@@ -1,8 +1,7 @@
 ---
-tags: [dsl]
 title: jira jql
 created: '2019-09-19T06:12:55.493Z'
-modified: '2020-09-02T18:13:40.118Z'
+modified: '2023-03-22T09:29:11.098Z'
 ---
 
 # jira jql
@@ -22,4 +21,5 @@ project = CB AND text ~ "elastic" ORDER BY id DESC
 ```
 
 ## see also
+
 - [confluence.atlassian.com/blog/search-jira-like-a-boss-with-jql](https://confluence.atlassian.com/jiracore/blog/2015/07/search-jira-like-a-boss-with-jql)

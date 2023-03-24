@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: k0s
 created: '2022-01-27T09:47:59.070Z'
-modified: '2022-02-02T10:44:38.564Z'
+modified: '2023-03-22T10:19:58.587Z'
 ---
 
 # k0s

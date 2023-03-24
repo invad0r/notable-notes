@@ -2,7 +2,7 @@
 tags: [container]
 title: container
 created: '2019-07-30T06:19:49.031Z'
-modified: '2023-03-15T09:49:06.454Z'
+modified: '2023-03-22T08:21:07.498Z'
 ---
 
 # container
@@ -42,3 +42,5 @@ modified: '2023-03-15T09:49:06.454Z'
 - [[cgroup]]
 - [[linuxkit]]
 - [[runc]]
+- [[procps]]
+- [[java]]

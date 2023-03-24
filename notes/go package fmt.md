@@ -1,8 +1,8 @@
 ---
-tags: [go/pkg]
+tags: [go]
 title: go package fmt
 created: '2019-07-30T06:19:49.066Z'
-modified: '2020-03-12T12:19:37.968Z'
+modified: '2023-03-22T09:23:14.405Z'
 ---
 
 # go package fmt

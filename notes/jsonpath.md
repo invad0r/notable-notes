@@ -1,7 +1,8 @@
 ---
+tags: [json]
 title: jsonpath
 created: '2020-10-09T11:50:35.973Z'
-modified: '2022-01-25T11:02:10.138Z'
+modified: '2023-03-22T10:27:39.363Z'
 ---
 
 # jsonpath

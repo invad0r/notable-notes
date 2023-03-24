@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: mkfifo
 created: '2021-06-16T15:59:45.047Z'
-modified: '2021-06-16T16:06:51.465Z'
+modified: '2023-03-24T09:50:28.292Z'
 ---
 
 # mkfifo

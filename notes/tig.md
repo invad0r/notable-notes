@@ -1,16 +1,18 @@
 ---
 title: tig
 created: '2021-05-12T19:12:35.991Z'
-modified: '2022-06-20T06:37:26.076Z'
+modified: '2023-03-22T10:37:11.932Z'
 ---
 
 # tig
 
-> `tig` - text-mode interface for Git
+> text-mode interface for [[git]]
 
 ## install
 
-`brew install tig`
+```sh
+brew install tig
+```
 
 ## usage
 

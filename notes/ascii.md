@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2022-11-25T11:10:43.626Z'
+modified: '2023-03-23T10:16:40.798Z'
 ---
 
 # ascii
@@ -41,9 +42,10 @@ J    | 112 | 4a  | 74
 
 ## see also
 
+- [[markdown]]
 - [asciiflow.com/](https://asciiflow.com/#/)
 - [asciimoji.com](http://asciimoji.com/)
-- [[http]]
+- [[hyper text transfer protocol]]
 - [[url encoding]]
 - [[xxd]]
 - [[od]]

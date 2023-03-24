@@ -1,8 +1,8 @@
 ---
-tags: [brew, macos]
+tags: [macos]
 title: pbcopy
 created: '2019-07-30T06:19:49.205Z'
-modified: '2022-04-27T09:54:48.419Z'
+modified: '2023-03-22T09:28:47.588Z'
 ---
 
 # pbcopy

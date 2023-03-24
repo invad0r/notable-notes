@@ -1,7 +1,8 @@
 ---
+tags: [database]
 title: pg_dump
 created: '2021-03-15T07:59:51.829Z'
-modified: '2022-08-22T11:50:21.341Z'
+modified: '2023-03-22T10:27:08.748Z'
 ---
 
 # pg_dump

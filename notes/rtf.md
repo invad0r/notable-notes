@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: rtf
 created: '2020-03-12T13:55:07.429Z'
-modified: '2020-03-12T14:07:06.683Z'
+modified: '2023-03-24T08:25:24.778Z'
 ---
 
 # rtf

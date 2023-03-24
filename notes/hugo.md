@@ -1,7 +1,8 @@
 ---
+tags: [go]
 title: hugo
 created: '2022-04-08T21:02:53.354Z'
-modified: '2022-04-08T21:14:10.048Z'
+modified: '2023-03-22T11:06:37.375Z'
 ---
 
 # hugo

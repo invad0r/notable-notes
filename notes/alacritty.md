@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: alacritty
 created: '2023-03-07T07:58:26.959Z'
-modified: '2023-03-07T08:07:10.987Z'
+modified: '2023-03-24T08:23:34.467Z'
 ---
 
 # alacritty

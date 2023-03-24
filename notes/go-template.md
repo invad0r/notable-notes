@@ -1,8 +1,8 @@
 ---
-tags: [container/docker, go]
+tags: [container, go]
 title: go-template
 created: '2019-07-30T06:19:49.074Z'
-modified: '2022-04-04T13:39:40.823Z'
+modified: '2023-03-22T10:10:46.222Z'
 ---
 
 # go-template 

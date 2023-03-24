@@ -2,17 +2,17 @@
 tags: [container]
 title: crictl
 created: '2021-05-27T09:57:46.096Z'
-modified: '2023-03-13T11:21:03.832Z'
+modified: '2023-03-22T11:12:52.287Z'
 ---
 
 # crictl
 
-> `cri-o`
+> `cri-o`  - cli for CRI-compatible container runtimes
 
 ## install
 
 ```sh
-
+dnf install cri-tools
 ```
 
 ## usage

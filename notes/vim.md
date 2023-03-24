@@ -1,8 +1,8 @@
 ---
-tags: [vim]
+tags: [editor]
 title: vim
 created: '2019-07-30T06:19:49.263Z'
-modified: '2022-05-17T19:18:53.489Z'
+modified: '2023-03-22T09:18:04.331Z'
 ---
 
 # vim

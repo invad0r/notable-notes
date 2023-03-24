@@ -1,7 +1,8 @@
 ---
+tags: [shell]
 title: asdf
 created: '2021-03-29T06:54:55.237Z'
-modified: '2021-10-29T12:41:48.649Z'
+modified: '2023-03-23T07:42:12.313Z'
 ---
 
 # asdf
@@ -10,15 +11,27 @@ modified: '2021-10-29T12:41:48.649Z'
 
 ## install
 
-``
+```sh
+brew install asdf
+```
 
 ## usage
 
 ```sh
 asdf
+
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+asdf list all nodejs
+
+asdf list all nodejs 14
+
+asdf install nodejs latest
 ```
 
 
 ## see also
 
 - [github.com/asdf-vm/asdf](https://github.com/asdf-vm/asdf)
+- [[sdk]]
+- [[nvm]]

@@ -2,7 +2,7 @@
 tags: [macos]
 title: diskutil
 created: '2019-07-30T06:19:49.184Z'
-modified: '2020-08-24T15:53:17.216Z'
+modified: '2023-03-22T09:08:21.947Z'
 ---
 
 # diskutil
@@ -10,6 +10,7 @@ modified: '2020-08-24T15:53:17.216Z'
 > modify, verify and repair local disks
 
 ## usage
+
 ```sh
 diskutil list
 
@@ -26,4 +27,5 @@ diskutil secureErase freespace 4 /Volumes/Macintosh\ HD
 ```
 
 ## see also
+
 - [[dd]]

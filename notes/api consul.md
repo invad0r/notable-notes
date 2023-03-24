@@ -1,8 +1,8 @@
 ---
-tags: [curl, iac]
+tags: [iac]
 title: api consul
 created: '2019-07-30T06:19:49.077Z'
-modified: '2022-03-16T05:42:56.349Z'
+modified: '2023-03-22T09:58:30.041Z'
 ---
 
 # api consul

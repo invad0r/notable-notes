@@ -1,7 +1,8 @@
 ---
+tags: [buildsystem]
 title: brazel
 created: '2021-11-13T09:45:45.798Z'
-modified: '2021-11-13T09:48:24.986Z'
+modified: '2023-03-23T08:49:00.543Z'
 ---
 
 # brazel
@@ -10,12 +11,14 @@ modified: '2021-11-13T09:48:24.986Z'
 
 ## install
 
-`brew install bazel`
+```sh
+brew install bazel
+```
 
 ## usage
 
 ```sh
-
+bazel
 ```
 
 ## see also

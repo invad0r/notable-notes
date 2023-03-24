@@ -2,12 +2,15 @@
 tags: [php]
 title: php
 created: '2019-07-30T06:19:49.206Z'
-modified: '2020-03-18T15:21:45.379Z'
+modified: '2023-03-22T08:31:34.655Z'
 ---
 
 # php
 
-## usage
+> general-purpose scripting language
+
+## flags
+
 ```sh
 php -i 
 
@@ -18,28 +21,25 @@ php -r        # exec php code in oneline
 # inline
 php -r '
   echo gethostbyname("foo.bar.domain.net").PHP_EOL; 
-  echo "---".PHP_EOL;
   foreach(dns_get_record("foo.bar.domain.net", DNS_A) as $i){ echo $i["ip"].PHP_EOL; };
 '
-
-# datatypes
-# 8 primitives types:
-#   4 scalar:	    boolean, integer, float, string
-#   2 compound:   array, object
-#   2 special:	  resource, NULL
-# pseudo-types:   mixed, number, callback, array|oject, void)
 ```
 
+## usage
+
+## read from stdin
+
 ```php
-# read from stdin
 <?php
 $handle = fopen ("php://stdin","r");
 $foo = fgets($handle);
 print ($foo);
 fclose($handle);
+```
 
+## log to file
 
-# log to file
+```php
 <?php
 $fd = fopen($filename, "a");
 fwrite($fd, date("Y/m/d h:i:s", mktime())." ".$_SERVER['HTTP_X_FORWARDED_FOR'].PHP_EOL);
@@ -47,8 +47,11 @@ if(is_array($msg)) {
   foreach($msg as $key => $val) { fwrite($fd, $key.":".$val . "\n"); }
 }
 fclose($fd);
+```
 
-# simple mailer
+## simple mailer
+
+```php
 <?php
 /* composer.json: { "require": { "phpmailer/phpmailer": "^5.2" } } */
 require 'vendor/autoload.php';
@@ -74,6 +77,7 @@ if(!$mail->send()) {
 ```
 
 ## see also
+
 - [[composer]]
 - [[python]]
 - [[scala]]

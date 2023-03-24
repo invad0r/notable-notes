@@ -2,7 +2,7 @@
 tags: [systemd]
 title: etcdctl
 created: '2019-09-24T04:24:49.035Z'
-modified: '2021-10-20T09:07:49.855Z'
+modified: '2023-03-23T08:43:43.627Z'
 ---
 
 # etcdctl
@@ -11,9 +11,11 @@ modified: '2021-10-20T09:07:49.855Z'
 
 ## install
 
-`brew install etcd`
+```sh
+brew install etcd
+```
 
-## usage
+## env
 
 ```sh
 ETCDCTL_CACERT        # tmp/ca.pem
@@ -21,6 +23,8 @@ ETCDCTL_CERT          # tmp/cert.pem
 ETCDCTL_KEY           # tmp/key.pem
 ETCDCTL_ENDPOINTS     #
 ```
+
+## flag
 
 ```sh
     --cacert=""                              # verify certificates of TLS-enabled secure servers using this CA bundle
@@ -44,6 +48,8 @@ ETCDCTL_ENDPOINTS     #
 -w, --write-out="simple"                     # output format: json, protobuf, simple, table
 ```
 
+## usage
+
 ```sh
 etcdctl member list
 
@@ -57,5 +63,6 @@ etcdctl get foo
 - [github.com/etcd-io/etcd/etcdctl](https://github.com/etcd-io/etcd/tree/main/etcdctl)
 - [[kubectl]]
 - [[consul]]
-- [[zookeeper]]
+- [[zookeeper-shell]]
+- [[redis-cli]]
 - [[raft consesus algorithm]]

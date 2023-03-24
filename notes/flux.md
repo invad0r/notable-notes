@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: flux
 created: '2022-01-17T13:49:51.051Z'
-modified: '2022-01-17T13:53:00.573Z'
+modified: '2023-03-22T10:35:51.885Z'
 ---
 
 # flux
@@ -10,7 +11,9 @@ modified: '2022-01-17T13:53:00.573Z'
 
 ## install
 
-`brew install fluxcd/tap/flux`
+```sh
+brew install fluxcd/tap/flux
+```
 
 ## usage
 

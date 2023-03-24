@@ -1,8 +1,8 @@
 ---
-tags: [dsl]
+tags: [linux, macos]
 title: awk
 created: '2019-07-30T06:19:48.989Z'
-modified: '2022-04-06T11:37:07.791Z'
+modified: '2023-03-23T10:13:22.289Z'
 ---
 
 # awk

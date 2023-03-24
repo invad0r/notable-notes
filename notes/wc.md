@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: wc
 created: '2022-11-29T08:07:33.392Z'
-modified: '2022-11-29T08:10:05.861Z'
+modified: '2023-03-22T10:32:03.357Z'
 ---
 
 # wc

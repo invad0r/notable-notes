@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: units
 created: '2019-07-30T08:58:07.446Z'
-modified: '2019-08-18T14:16:44.084Z'
+modified: '2023-03-24T08:22:04.136Z'
 ---
 
 # units
@@ -46,3 +46,8 @@ Value 	  Metric            Value 	     IEC 	         EDEC
 SI    500 * 10^9 bytes = 500.000.000.000 => 500 GB
 IEC   500 * 2^30 bytes = 499.289.948.160 => 465 GiB
 ```
+
+## see also
+
+- [[math]]
+- [[numfmt]]

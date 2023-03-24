@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: aws-nuke
 created: '2022-02-03T08:04:22.692Z'
-modified: '2022-03-04T07:34:57.919Z'
+modified: '2023-03-24T08:24:48.590Z'
 ---
 
 # aws-nuke

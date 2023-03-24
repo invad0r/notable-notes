@@ -1,8 +1,8 @@
 ---
-tags: [linux, network, webserver]
+tags: [linux, network]
 title: nc
 created: '2019-07-30T06:19:49.181Z'
-modified: '2023-03-20T09:00:40.132Z'
+modified: '2023-03-22T10:42:51.836Z'
 ---
 
 # nc

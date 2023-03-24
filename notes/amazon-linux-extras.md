@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: amazon-linux-extras
 created: '2022-01-24T10:53:34.798Z'
-modified: '2022-01-24T11:00:43.633Z'
+modified: '2023-03-22T10:21:07.164Z'
 ---
 
 # amazon-linux-extras
@@ -10,7 +11,9 @@ modified: '2022-01-24T11:00:43.633Z'
 
 ## install
 
-`yum install -y amazon-linux-extras`
+```sh
+yum install -y amazon-linux-extras
+```
 
 ## usage
 

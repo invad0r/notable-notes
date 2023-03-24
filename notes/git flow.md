@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: git flow
 created: '2021-03-25T08:00:57.686Z'
-modified: '2022-02-02T10:11:43.239Z'
+modified: '2023-03-24T08:25:52.768Z'
 ---
 
 # git flow
@@ -10,7 +11,9 @@ modified: '2022-02-02T10:11:43.239Z'
 
 ## isntall
 
-`brew install git-flow`
+```sh
+brew install git-flow
+```
 
 ## usage
 

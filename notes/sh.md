@@ -1,20 +1,20 @@
 ---
-tags: [shell/sh]
+tags: [shell]
 title: sh
 created: '2021-05-12T09:02:58.515Z'
-modified: '2021-05-12T09:03:21.035Z'
+modified: '2023-03-22T09:23:54.114Z'
 ---
 
 # sh
 
-# bourne shell `sh`
-
 ## usage
-```sh
 
+```sh
+sh
 ```
 
 ## see also
+
 - [[ash]]
 - [[bash]]
 - [[dash]]

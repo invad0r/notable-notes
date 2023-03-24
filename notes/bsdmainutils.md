@@ -2,7 +2,7 @@
 tags: [bsdmainutils]
 title: bsdmainutils
 created: '2020-09-03T08:56:16.986Z'
-modified: '2020-09-08T08:52:53.803Z'
+modified: '2023-03-22T08:26:14.165Z'
 ---
 
 # bsdmainutils
@@ -28,6 +28,7 @@ modified: '2020-09-08T08:52:53.803Z'
 - used to contain [[whois]] and [[vacation]], which are now distributed in own packages. 
 
 ## see also
+
 - [[coreutils]]
 - [[moreutils]]
 - [[column]]

@@ -1,8 +1,8 @@
 ---
-tags: [python/built-in]
+tags: [python]
 title: python dict
 created: '2020-01-02T13:07:08.843Z'
-modified: '2020-01-10T10:18:43.640Z'
+modified: '2023-03-22T09:23:27.698Z'
 ---
 
 # python dict
@@ -10,10 +10,11 @@ modified: '2020-01-10T10:18:43.640Z'
 > constructor to make a new dictionary
 
 ## usage
+
 ```python
 dict(foo="bar", person="alice")       # constructor to make a new dictionary
 ```
 
-
 ## see also
+
 - [[python]]

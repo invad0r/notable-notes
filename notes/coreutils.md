@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: coreutils
 created: '2020-09-01T07:42:52.948Z'
-modified: '2021-10-19T11:52:30.934Z'
+modified: '2023-03-22T08:07:36.814Z'
 ---
 
 # coreutils
@@ -77,5 +77,6 @@ modified: '2021-10-19T11:52:30.934Z'
 
 - [[bsdmainutils]]
 - [[moreutils]]
+- [[procps]]
 - [[net-tools]]
 - [wiki.debian.org/coreutils](https://wiki.debian.org/coreutils)

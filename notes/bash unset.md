@@ -1,7 +1,8 @@
 ---
+tags: [shell/bash]
 title: bash unset
 created: '2022-02-10T09:01:46.925Z'
-modified: '2022-02-10T09:05:03.190Z'
+modified: '2023-03-22T10:26:37.755Z'
 ---
 
 # bash unset

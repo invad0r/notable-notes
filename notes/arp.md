@@ -2,7 +2,7 @@
 tags: [linux, net-tools, network]
 title: arp
 created: '2019-09-03T11:30:41.018Z'
-modified: '2021-10-31T15:05:38.541Z'
+modified: '2023-03-22T08:28:25.338Z'
 ---
 
 # arp
@@ -11,7 +11,9 @@ modified: '2021-10-31T15:05:38.541Z'
 
 ## install
 
-`apt install net-tools`
+```sh
+apt install net-tools
+```
 
 ## usage
 

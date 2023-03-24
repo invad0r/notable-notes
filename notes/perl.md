@@ -1,24 +1,29 @@
 ---
-tags: [webserver]
 title: perl
 created: '2019-07-30T06:19:49.150Z'
-modified: '2021-10-29T12:33:03.657Z'
+modified: '2023-03-22T10:42:51.856Z'
 ---
 
 # perl
 
 > perl language interpreter
 
+## flags
+
+```sh
+-v                  # print version, patchlevel and license
+```
+
 ## usage
+
 ```sh
 perl -de 42         # starts debugger in repl-mode, 42 has no meaning it's just valid
-
-# options:
-#   -v                print version, patchlevel and license
 
 perl -MHTTP::Server::Brick \
   -e '$s=HTTP::Server::Brick->new(port=>8000); $s->mount("/"=>{path=>"."}); $s->start'
 ```
+
+## script
 
 ```perl
 #!/usr/bin/perl
@@ -34,6 +39,7 @@ for my $var ( sort keys %ENV ) {
 ```
 
 ## see also
+
 - [[cpan]]
 - [[php]]
 - [[python]]

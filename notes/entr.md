@@ -1,7 +1,7 @@
 ---
 title: entr
 created: '2022-04-27T12:10:47.470Z'
-modified: '2022-04-27T12:14:20.611Z'
+modified: '2023-03-24T08:26:19.243Z'
 ---
 
 # entr 
@@ -10,7 +10,9 @@ modified: '2022-04-27T12:14:20.611Z'
 
 ## install
 
-`brew install entr`
+```sh
+brew install entr
+```
 
 ## flags
 
@@ -31,10 +33,11 @@ modified: '2022-04-27T12:14:20.611Z'
 ## usage
 
 ```sh
-
+entr
 ```
 
 ## see also
 
 - [[find]]
-- [eradman.com/entrproject/](http://eradman.com/entrproject/)
+- [[watch]]
+- [eradman.com/entrproject](http://eradman.com/entrproject/)

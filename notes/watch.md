@@ -2,7 +2,7 @@
 tags: [linux]
 title: watch
 created: '2019-07-30T06:19:49.265Z'
-modified: '2022-11-23T10:11:57.541Z'
+modified: '2023-03-22T08:07:02.520Z'
 ---
 
 # watch
@@ -45,6 +45,7 @@ done
 
 ## see also
 
+- [[procps]]
 - [[consul]]
 - [[bash while]]
 - [[bash printf]]

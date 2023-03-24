@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: ec2-instance-selector
 created: '2022-01-18T19:33:51.186Z'
-modified: '2022-03-04T07:39:00.762Z'
+modified: '2023-03-24T08:24:24.426Z'
 ---
 
 # ec2-instance-selector

@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: numfmt
 created: '2021-10-19T11:54:38.435Z'
-modified: '2023-03-20T08:55:35.434Z'
+modified: '2023-03-22T09:49:49.262Z'
 ---
 
 # numfmt
@@ -12,6 +12,7 @@ modified: '2023-03-20T08:55:35.434Z'
 ## install
 
 ```sh
+brew install coreutils
 ```
 
 ## flag
@@ -33,9 +34,9 @@ modified: '2023-03-20T08:55:35.434Z'
     --to-unit=N           # the output unit size (instead of the default 1)
 -z, --zero-terminated     # line delimiter is NUL, not newline
 
---debug                   # print warnings about invalid input
---help                    # display help and exit
---version                 # output version information and exit
+    --debug               # print warnings about invalid input
+    --help                # display help and exit
+    --version             # output version information and exit
 ```
 
 ### units
@@ -75,10 +76,17 @@ df -B1 | numfmt --header --field 2-4 --to=si
 ls -l  | numfmt --header --field 5   --to=iec
 ls -lh | numfmt --header --field 5 --from=iec --padding=10
 ls -lh | numfmt --header --field 5 --from=iec --format "%10f"
+
+
+numfmt --field=2 --from-unit=1024 --to=iec-i --suffix B < /proc/meminfo  | sed 's/ kB//' | head -n4
+numfmt --field=2 --from-unit=1024 --to=iec-i --suffix B < <(echo 'MemTotal:       263761228 kB')  |   sed 's/ kB//'
 ```
 
 ## see also
 
+- [[unit]]
 - [[coreutils]]
+- [[free]]
 - [[crane]]
 - [gnu.org/coreutils/manual/numfmt](https://www.gnu.org/software/coreutils/manual/html_node/numfmt-invocation.html)
+- [pixelbeat.org/docs/numfmt](https://www.pixelbeat.org/docs/numfmt.html)

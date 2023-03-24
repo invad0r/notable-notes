@@ -1,8 +1,8 @@
 ---
-tags: [vcs]
+tags: [linux, macos]
 title: gitignore
 created: '2019-08-19T13:48:58.623Z'
-modified: '2020-09-02T17:46:45.988Z'
+modified: '2023-03-24T08:25:52.806Z'
 ---
 
 # gitignore

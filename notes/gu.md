@@ -1,10 +1,13 @@
 ---
+tags: [java]
 title: gu
 created: '2023-03-15T09:15:23.659Z'
-modified: '2023-03-15T09:23:00.205Z'
+modified: '2023-03-22T10:20:19.928Z'
 ---
 
 # gu
+
+> graalvm updater
 
 ## install
 

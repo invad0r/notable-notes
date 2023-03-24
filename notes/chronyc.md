@@ -2,7 +2,7 @@
 tags: [linux]
 title: chronyc
 created: '2019-10-26T17:54:31.118Z'
-modified: '2019-12-05T07:04:15.602Z'
+modified: '2023-03-23T08:46:02.859Z'
 ---
 
 # chronyc
@@ -10,6 +10,7 @@ modified: '2019-12-05T07:04:15.602Z'
 > command-line interface for chrony daemon
 
 ## usage
+
 ```sh
 chronyc -a makestep   # cancel any remaining correction that was being slewed and jump the system clock by the equivalent amount, making it correct immediately => update your system clock quickly 
 
@@ -40,6 +41,7 @@ chronyc sources -v    # displays information about the current time sources that
 ```
 
 ## see also
+
 - [[chronyd]]
 - [[date]]
 - [[hwclock]]

@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: mdp
 created: '2022-04-05T09:09:21.947Z'
-modified: '2022-04-06T07:38:45.745Z'
+modified: '2023-03-24T08:21:44.717Z'
 ---
 
 # mdp

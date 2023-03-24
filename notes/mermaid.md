@@ -1,8 +1,7 @@
 ---
-tags: [Notebooks]
 title: mermaid
 created: '2019-08-01T10:42:32.003Z'
-modified: '2019-08-02T07:48:20.598Z'
+modified: '2023-03-23T10:10:51.754Z'
 ---
 
 # mermaid
@@ -95,6 +94,10 @@ commit
 merge newbranch
 ```
 
+
+## see also
+
+- [[markdown]]
 
 
 

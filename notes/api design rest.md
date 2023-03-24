@@ -1,8 +1,7 @@
 ---
-tags: [curl]
 title: api design rest
 created: '2019-07-30T06:19:49.224Z'
-modified: '2022-03-16T05:48:49.475Z'
+modified: '2023-03-22T09:58:30.058Z'
 ---
 
 # api design rest

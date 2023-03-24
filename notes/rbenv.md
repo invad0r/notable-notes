@@ -1,8 +1,8 @@
 ---
-tags: [python]
+tags: [ruby]
 title: rbenv
 created: '2021-06-01T13:18:20.553Z'
-modified: '2021-09-23T06:30:36.341Z'
+modified: '2023-03-22T10:57:31.217Z'
 ---
 
 # rbenv
@@ -16,14 +16,13 @@ modified: '2021-09-23T06:30:36.341Z'
 ```sh
 brew install rbenv
 
-rbenv init            # # setup rbenv in shell
+rbenv init            # setup rbenv in shell
 
 rbenv rehash          # after installing new gems
 
 brew upgrade rbenv ruby-build
 
-
-sudo apt install rbenv
+apt install rbenv
 ```
 
 ## usage

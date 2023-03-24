@@ -2,7 +2,7 @@
 tags: [iproute, network]
 title: ss
 created: '2019-08-18T19:35:04.208Z'
-modified: '2022-03-04T07:45:15.974Z'
+modified: '2023-03-23T08:46:51.569Z'
 ---
 
 # ss
@@ -11,9 +11,13 @@ modified: '2022-03-04T07:45:15.974Z'
 
 ## install
 
-`yum install iproute`, `apt install iproute`, `brew install ss`
+```sh
+yum   install iproute
+apt   install iproute
+brew  install ss
+```
 
-## flags
+## flag
 
 ```sh
 -a      # Show all sockets (listening and non-listening)

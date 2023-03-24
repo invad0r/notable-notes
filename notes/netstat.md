@@ -2,7 +2,7 @@
 tags: [net-tools, network]
 title: netstat
 created: '2019-08-28T22:19:06.348Z'
-modified: '2022-09-20T08:30:00.968Z'
+modified: '2023-03-23T08:47:22.378Z'
 ---
 
 # netstat
@@ -12,10 +12,10 @@ modified: '2022-09-20T08:30:00.968Z'
 ## install
 
 ```
-yum install net-tools
 apt-get install net-tools
-zypper install net-tools
-pacman -S netstat-nat
+yum     install net-tools
+zypper  install net-tools
+pacman  -S      netstat-nat
 ```
 
 ## flags

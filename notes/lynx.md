@@ -1,7 +1,7 @@
 ---
 title: lynx
 created: '2022-03-23T15:09:24.848Z'
-modified: '2022-03-23T15:10:29.615Z'
+modified: '2023-03-23T10:18:31.298Z'
 ---
 
 # lynx
@@ -24,3 +24,5 @@ lynx -dump http://www.google.com/search?q=$searchterm | less
 
 - [[w3m]]
 - [[curl]]
+- [[ascii]]
+- [[markdown]]

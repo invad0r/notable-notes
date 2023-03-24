@@ -1,8 +1,8 @@
 ---
-tags: [brew]
+tags: [linux, macos]
 title: fzf
 created: '2019-07-30T06:19:49.058Z'
-modified: '2022-06-20T06:42:31.580Z'
+modified: '2023-03-23T08:48:36.859Z'
 ---
 
 # fzf
@@ -11,7 +11,9 @@ modified: '2022-06-20T06:42:31.580Z'
 
 ## installation
 
-`brew install fzf`
+```sh
+brew install fzf
+```
 
 ## env
 

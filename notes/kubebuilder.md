@@ -1,8 +1,8 @@
 ---
-tags: [container/docker]
+tags: [container]
 title: kubebuilder
 created: '2021-10-19T09:45:28.946Z'
-modified: '2021-10-19T09:50:25.457Z'
+modified: '2023-03-22T10:10:46.231Z'
 ---
 
 # kubebuilder

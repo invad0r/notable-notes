@@ -1,14 +1,17 @@
 ---
-title: mongoexport mongoimport
+tags: [database]
+title: mongoexport
 created: '2021-09-07T07:14:32.779Z'
-modified: '2022-02-04T08:24:38.525Z'
+modified: '2023-03-22T10:44:14.352Z'
 ---
 
-# mongoexport mongoimport
+# mongoexport
 
 ## install
 
-`brew tap mongodb/brew && brew install mongodb-database-tools`
+```sh
+brew tap mongodb/brew && brew install mongodb-database-tools
+```
 
 ## usage
 

@@ -2,7 +2,7 @@
 tags: [linux, regex]
 title: find
 created: '2019-07-30T06:19:49.054Z'
-modified: '2022-06-16T10:54:58.295Z'
+modified: '2023-03-22T08:46:06.920Z'
 ---
 
 # find
@@ -52,7 +52,6 @@ find . -type f -name "*.txt"    # only .txt files
 #`-regex`
 find ...
 
-
 # -mtime
 find . -mtime +0    # find files modified greater than 24 hours ago
 find . -mtime 0     # find files modified between now and 1 day ago
@@ -62,6 +61,7 @@ find . -mtime +1    # find files modified more than 48 hours ago
 ```
 
 ## see also
+
 - [unix.stackexchange.com/manipulate-file-name-piped-from-find-command](https://unix.stackexchange.com/a/60470/193945)
 - [Exclude hidden files when searching with Unix/Linux find? - Super User](https://superuser.com/a/999448)
 - [stackoverflow.com/find-exec-with-multiple-commands](https://stackoverflow.com/questions/5119946/find-exec-with-multiple-commands)

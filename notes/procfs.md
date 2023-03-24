@@ -2,14 +2,15 @@
 tags: [filesystem, network]
 title: procfs
 created: '2019-09-03T11:42:10.908Z'
-modified: '2021-03-19T10:43:29.622Z'
+modified: '2023-03-22T07:57:21.733Z'
 ---
 
 # procfs
 
-> procfs or `/proc` is a special filesystem under Linux that is used to present process information and kernel processes
+> procfs or `/proc`, special linux filesystem used to present process information and kernel processes
 
 ## usage
+
 ```sh
 cat /proc/meminfo   # memory info see also `free`
 
@@ -21,8 +22,11 @@ cat /proc/meminfo   # memory info see also `free`
 ```
 
 ## see also
+
+- [[procps]]
 - [[filesystem hierarchy standard]]
 - [[filesystem]]
 - [[sysfs]]
 - [[free]]
 - [[top]]
+- [[container]]

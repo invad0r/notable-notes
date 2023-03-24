@@ -2,14 +2,14 @@
 tags: [compiler]
 title: emcc
 created: '2020-08-31T13:19:52.268Z'
-modified: '2022-02-02T10:14:11.064Z'
+modified: '2023-03-22T08:25:30.577Z'
 ---
 
 # emcc
 
 > emscripten
 
-## usage
+## flags
 
 ```sh
 -Os                                   # optimize for size: both for wasm and js
@@ -20,6 +20,8 @@ modified: '2022-02-02T10:14:11.064Z'
   "ccall"                             # export ccall-function that emscripten generates for us
   MODULARIZE=1                        # allows use of global module function that returns promise with an instance of wasm module
 ```
+
+## usage
 
 ```sh
 emcc FILE.c -Os -o FILE.js \

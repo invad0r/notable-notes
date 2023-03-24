@@ -2,10 +2,12 @@
 tags: [Notebooks]
 title: math
 created: '2019-07-30T06:19:49.176Z'
-modified: '2019-07-30T08:58:35.504Z'
+modified: '2023-03-22T09:48:12.137Z'
 ---
 
 # math
+
+> math haxx
 
 ```
 x % of y = y % of x
@@ -16,3 +18,7 @@ x % of y = y % of x
 
 8% of 200 = 200% of 8 => 16
 ```
+
+## see also
+
+- [[bash bc]]

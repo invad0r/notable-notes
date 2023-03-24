@@ -2,15 +2,20 @@
 tags: [linux, moreutils]
 title: moreutils
 created: '2020-09-01T07:32:18.091Z'
-modified: '2020-09-08T08:52:43.706Z'
+modified: '2023-03-22T08:11:28.746Z'
 ---
 
 # moreutils
 
 ## install
-`apt-get install moreutils`, `brew install moreutils --without-parallel && brew install parallel`
+
+```sh
+apt-get install moreutils
+brew install moreutils --without-parallel && brew install parallel
+```
 
 ## usage
+
 - [[chronic]] - runs a command quietly unless it fails
 - [[combine]] - combine the lines in two files using boolean operations
 - [[errno]] - look up errno names and descriptions
@@ -28,6 +33,9 @@ modified: '2020-09-08T08:52:43.706Z'
 - [[zrun]] - automatically uncompress arguments to command
 
 ## see also
+
+- [[parallel]]
+- [[procps]]
 - [[coreutils]]
 - [[bsdmainutils]]
-- [joeyh.name/code/moreutils/](https://joeyh.name/code/moreutils/)
+- [joeyh.name/code/moreutils](https://joeyh.name/code/moreutils/)

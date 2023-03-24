@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash set
 created: '2019-07-30T06:19:49.019Z'
-modified: '2022-03-03T09:45:47.589Z'
+modified: '2023-03-22T10:07:28.455Z'
 ---
 
 # bash set
@@ -10,16 +10,14 @@ modified: '2022-03-03T09:45:47.589Z'
 > set/unset values and attributes of shell variables and functions.
 > modify shell behavior - [[bash set]] or [[bash unset]] values of shell options and positional parameters
 
-## usage
+## flags
 
 ```sh
 # set                   # unset
 set -o OPTION           set +o OPTION
 set -x                  set +x
-```
 
-```sh
-set -o allexport        set -a              # each variable or function that is created/modified is given export-attribute and marked for export to the environment of subsequent commands. 
+set -o allexport        set -a              # each variable or function that is created/modified is given export-attribute and marked for export
 set -o braceexpand      set -B
 set -o emacs
 set -o errexit          set -e
@@ -46,6 +44,8 @@ set -o verbose          set -v
 set -o vi
 set -o xtrace           set -x
 ```
+
+## usage
 
 ```sh
 set 1 2 3 | echo $@                         # set positional params

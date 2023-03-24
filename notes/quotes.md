@@ -2,61 +2,158 @@
 tags: [Notebooks]
 title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2020-09-07T10:37:18.566Z'
+modified: '2023-03-22T09:41:42.842Z'
 ---
 
 # quotes
 
-`do you wish me a good morning, or mean that it is a good morning wether I want it or not; or that you feel good this morning; or that it is a morning to bee goot on ? - gandalf`
+```
+do you wish me a good morning, or mean that it is a good morning wether I want it or not; 
+or that you feel good this morning; or that it is a morning to bee goot on ? 
 
-`organizations which design systems .. are constrained to produce designs which are copies of the communication structures of the organization. - M. Connoway "Connoway's Law"`
+- gandalf
+```
 
-`A language that doesn't affect the way you think about programming is not worth knowing. - Alan J. Perlis`
+```
+organizations which design systems .. are constrained to produce designs which are copies of the communication structures of the organization. 
 
-`Ein Kluger bemerkt alles. Ein Dummer macht über alles eine Bemerkung. - Heinrich Heine`
+- M. Connoway "Connoway's Law"
+```
 
-`What good is the warmth of summer, without the cold of winter to give it sweetness. - John Steinbeck`
+```
+A language that doesn't affect the way you think about programming is not worth knowing. 
 
-`Not only is the Universe stranger than we think, it is stranger than we can think. - Werner Heisenberg, Across the Frontiers `
+- Alan J. Perlis
+```
 
-`Courage is not the absence of fear, but rather the judgement that something is more important than fear. - The Princess Diaries`
+```
+Ein Kluger bemerkt alles. Ein Dummer macht über alles eine Bemerkung. 
 
-`What Is Important Is Seldom Urgent and What Is Urgent Is Seldom Important - Dwight D. Eisenhower`
+- Heinrich Heine
+```
 
-`Simplicity recognizes the imports thing while ignoring the trivial things - amazon review, on the one thing`
+```
+What good is the warmth of summer, without the cold of winter to give it sweetness. 
 
-`The mass of men lead lives of quiet desperation. What is called Resignation is confirmed desperation. - Henry David Therau`
+- John Steinbeck
+```
 
-`Very often what God first helps us towards is not the virtue itself but just this power of always trying again. - C.S. Lewis`
+```
+Not only is the Universe stranger than we think, it is stranger than we can think. 
 
-`The more we let God take us over, the more truly ourselves we become - because He made us. He invented us. - C.S. Lewis`
+- Werner Heisenberg, Across the Frontiers 
+```
 
-`Living by faith includes the call to something greater than cowardly self-preservation. - Tolkien`
+```
+Courage is not the absence of fear, but rather the judgement that something is more important than fear. 
 
-`Every moment is always Present for Him. If you like to put it this way, He has all eternity in which to listen to a split second of prayer… - C.S. Lewis`
+- The Princess Diaries
+```
 
-`Hör auf Angst zu haben und kümmere dich nicht darum, das ist meine Aufgabe. Du bist so defensiv wenn du Angst hast. - Tim Jur`
-`A strong man acts within that which constrains him.`
+```
+What Is Important Is Seldom Urgent and What Is Urgent Is Seldom Important 
 
-`Beweisen und stetig und beharrlich dran bleiben. Jesus hat sich zuerst als Schreiner bewiesen. Gott erfüllte Handwerker mit Weisheit. - Michael`
+- Dwight D. Eisenhower
+```
 
-`feeding the flesh- which is never satisfied - Jack`
+```
+Simplicity recognizes the imports thing while ignoring the trivial things 
 
-`Payed from the neck down" meticulous, crafty - Jack`
+- amazon review, on the one thing
+```
 
-`A worse (woman) would've a done me rightly (=Alot less would've been good for me) - Grandad/Jack`
+```
+The mass of men lead lives of quiet desperation. What is called Resignation is confirmed desperation. 
 
-`Seek God with all your heart; Prayer and fasting; Reading and meditating; - Philip`
+- Henry David Therau
+```
 
-`Prepare yourself for the Future that's coming, Not the Future you Wish were coming. - Daniel Miessler`
- 
-`You cannot keep birds from flying over your head, but you can keep them from building a nest in your Hair. - Martin Luther`
+```
+Very often what God first helps us towards is not the virtue itself but just this power of always trying again. 
 
-`Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy. - proverbs 28,13`
+- C.S. Lewis
+```
 
-`cela est bien dit, mais il faut cultiver notre jardin. - Voltaire`
+```
+The more we let God take us over, the more truly ourselves we become 
 
-`Between stimulus and response, there is a space. In that space is our power to choose our response, and in our response lies our growth and our freedom. - Victor Fankl`
+- because He made us. He invented us. 
+
+- C.S. Lewis
+```
+
+```
+Living by faith includes the call to something greater than cowardly self-preservation. 
+
+- Tolkien
+```
+
+```
+Every moment is always Present for Him. If you like to put it this way, He has all eternity in which to listen to a split second of prayer… 
+
+- C.S. Lewis
+```
+
+```
+A strong man acts within that which constrains him.
+```
+
+
+```
+Beweisen und stetig und beharrlich dran bleiben. Jesus hat sich zuerst als Schreiner bewiesen. Gott erfüllte Handwerker mit Weisheit.
+
+- Michael
+
+
+feeding the flesh, which is never satisfied
+
+- Jack
+
+
+
+Payed from the neck down" meticulous, crafty
+
+- Jack
+
+
+A worse (woman) would've a done me rightly (=Alot less would've been good for me)
+
+- Grandad/Jack
+
+
+Seek God with all your heart; Prayer and fasting; Reading and meditating;
+
+- Philip
+```
+
+```
+Prepare yourself for the Future that's coming, Not the Future you Wish were coming.
+
+- Daniel Miessler
+```
+
+```
+You cannot keep birds from flying over your head, but you can keep them from building a nest in your Hair.
+
+- Martin Luther
+``` 
+
+```
+Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy.
+
+- proverbs 28,13
+```
+
+```
+cela est bien dit, mais il faut cultiver notre jardin.
+
+- Voltaire
+```
+
+```
+Between stimulus and response, there is a space. In that space is our power to choose our response, and in our response lies our growth and our freedom. - Victor Fankl
+```
+
 ```
 The vast accumulations of knowledge—or at least of information—deposited by the nineteenth century 
 have been responsible for an equally vast ignorance. When there is so much to be known,
@@ -68,7 +165,11 @@ And when we do not know, or when we do not know enough, we tend always to substi
 - T.S. Eliot, The Sacred Wood
 ```
 
-`He who wants to become master in his field should study its history. Without historic foundation all knowledge remains incomplete and the judgment about appearances of the present unsure and immature -  Friedrich Unger, History of Binary`
+```
+He who wants to become master in his field should study its history. Without historic foundation all knowledge remains incomplete and the judgment about appearances of the present unsure and immature
+
+- Friedrich Unger, History of Binary
+```
 
 ```
 Misconception: Juniors get mentored from Seniors
@@ -109,9 +210,6 @@ Therefore you are My witnesses,” Says the LORD, “that I am God.
 - Isaiah 43:11-12
 ```
 
-`Lingua Franka`          fränkische sprache / pidgin language
-`Jevons Paradox/Effect`  increase usage when cheaper         
-`laconic`                `IF` `With it or on it`
-
 ## see also
+
 - [Some of the Best Catchphrases Of The Ancient Spartans](https://www.warhistoryonline.com/instant-articles/best-spartan-laconic-phrases-boldest-wittiest-lines-ever-recorded.html)

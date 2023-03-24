@@ -1,8 +1,8 @@
 ---
-tags: [virtualization, vmware]
+tags: [virtualization]
 title: vsphere
 created: '2019-07-30T06:19:49.264Z'
-modified: '2022-02-02T10:03:19.271Z'
+modified: '2023-03-22T10:43:01.583Z'
 ---
 
 # vsphere

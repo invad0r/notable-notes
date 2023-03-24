@@ -2,10 +2,12 @@
 tags: [linux]
 title: top
 created: '2020-02-24T12:30:59.456Z'
-modified: '2020-08-31T09:31:33.582Z'
+modified: '2023-03-22T08:04:45.768Z'
 ---
 
 # top
+
+> dynamic real-time view of running processes
 
 ## usage
 
@@ -15,5 +17,6 @@ top
 
 ## see also
 
+- [[procps]]
 - [[free]]
 - [[procfs]]

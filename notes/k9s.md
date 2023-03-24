@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: k9s
 created: '2022-02-02T11:10:11.308Z'
-modified: '2022-02-02T11:30:29.983Z'
+modified: '2023-03-22T10:19:58.568Z'
 ---
 
 # k9s

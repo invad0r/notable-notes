@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: ecs-cli
 created: '2022-09-30T07:14:13.775Z'
-modified: '2022-11-23T08:35:21.222Z'
+modified: '2023-03-22T10:19:58.638Z'
 ---
 
 # ecs-cli

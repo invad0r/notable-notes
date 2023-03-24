@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: shuf
 created: '2020-02-26T12:51:08.820Z'
-modified: '2021-10-28T11:53:39.176Z'
+modified: '2023-03-24T08:19:14.072Z'
 ---
 
 # shuf

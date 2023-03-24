@@ -2,7 +2,7 @@
 tags: [shell]
 title: bc
 created: '2019-09-24T06:25:36.082Z'
-modified: '2022-03-03T09:11:13.829Z'
+modified: '2023-03-22T09:48:39.898Z'
 ---
 
 # bc
@@ -41,3 +41,4 @@ echo "scale=6;(2/3)+(7/8)" | bc     # 1.541666
 - [[expr]]
 - [[bash printf]]
 - [[bash let]]
+- [[math]]

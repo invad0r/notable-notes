@@ -2,7 +2,7 @@
 tags: [linux]
 title: mount
 created: '2019-07-30T06:19:49.179Z'
-modified: '2020-07-27T11:16:36.105Z'
+modified: '2023-03-22T08:24:06.653Z'
 ---
 
 # mount
@@ -10,6 +10,7 @@ modified: '2020-07-27T11:16:36.105Z'
 > mount a filesystem 
 
 ## usage
+
 ```sh
 mount | column -t
 
@@ -31,6 +32,7 @@ mount | mount | grep "^/dev" | awk '{print $1" " $5}'   # filesystem of partitio
 ```
 
 ## see also
+
 - [[fstab]]
 - [[findmnt]]
 - [[fuser]]

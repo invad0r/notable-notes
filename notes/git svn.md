@@ -1,8 +1,8 @@
 ---
-tags: [vcs]
+tags: [linux, macos]
 title: git svn
 created: '2019-07-30T06:19:49.249Z'
-modified: '2021-10-29T11:54:52.788Z'
+modified: '2023-03-24T08:25:52.785Z'
 ---
 
 # git svn

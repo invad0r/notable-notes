@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: aws-iam-authenticator
 created: '2022-03-24T07:18:31.601Z'
-modified: '2022-03-24T07:20:08.681Z'
+modified: '2023-03-24T08:24:48.571Z'
 ---
 
 # aws-iam-authenticator
@@ -10,7 +11,9 @@ modified: '2022-03-24T07:20:08.681Z'
 
 ## install
 
-`brew install aws-iam-authenticator`
+```sh
+brew install aws-iam-authenticator
+```
 
 ## usage
 

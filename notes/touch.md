@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: touch
 created: '2023-03-15T07:11:42.583Z'
-modified: '2023-03-15T07:24:38.354Z'
+modified: '2023-03-24T08:23:34.442Z'
 ---
 
 # touch

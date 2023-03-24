@@ -1,7 +1,8 @@
 ---
+tags: [go]
 title: yq
 created: '2019-08-20T12:05:18.926Z'
-modified: '2022-04-23T10:01:09.407Z'
+modified: '2023-03-22T11:00:26.459Z'
 ---
 
 # yq

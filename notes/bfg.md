@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: bfg
 created: '2020-11-20T23:52:19.801Z'
-modified: '2022-06-01T14:48:24.922Z'
+modified: '2023-03-24T09:53:13.419Z'
 ---
 
 # bfg
@@ -17,7 +18,8 @@ bfg --delete-files id_{dsa,rsa}  REPO.git        # delete all files named 'id_rs
 
 bfg --strip-blobs-bigger-than 50M  REPO.git      # remove all blobs bigger than 50 megabytes
 
-bfg --replace-text passwords.txt  REPO.git       # replace passwords listed in file (prefix lines 'regex:' or 'glob:' if required) with ***REMOVED*** wherever they occur in repository
+bfg --replace-text passwords.txt  REPO.git       # replace passwords listed in file 
+# (prefix lines 'regex:' or 'glob:' if required) with ***REMOVED*** wherever they occur in repository
 
 # remove all folders or files named '.git' - a reserved filename in Git. 
 # these often become a problem when migrating to Git from other source-control systems like Mercurial

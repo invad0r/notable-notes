@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: procs
 created: '2021-05-12T17:09:50.481Z'
-modified: '2021-05-12T17:10:44.763Z'
+modified: '2023-03-24T08:22:36.762Z'
 ---
 
 # procs
@@ -9,9 +10,14 @@ modified: '2021-05-12T17:10:44.763Z'
 > `procs` -- a modern replacement for [[ps]] writen in [[rust]]
 
 ## install
-`cargo install procs`, `brew install procs`
+
+```sh
+cargo install procs
+brew install procs`
+```
 
 ## usage
+
 ```sh
 procs USER
 
@@ -19,6 +25,8 @@ procs PROCESS_NAME
 ```
 
 ## see also
+
+- [[procps]]
 - [[ps]]
 - [[exa]]
 - [[rust]]

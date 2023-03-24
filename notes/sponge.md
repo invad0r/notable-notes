@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: sponge
 created: '2022-01-21T13:33:13.007Z'
-modified: '2022-02-02T09:38:19.145Z'
+modified: '2023-03-24T08:23:34.451Z'
 ---
 
 # sponge

@@ -2,7 +2,7 @@
 tags: [filesystem]
 title: mkisofs
 created: '2020-01-03T14:04:32.903Z'
-modified: '2020-09-02T17:38:23.684Z'
+modified: '2023-03-22T09:14:55.875Z'
 ---
 
 # mkisofs
@@ -10,6 +10,7 @@ modified: '2020-09-02T17:38:23.684Z'
 > utility that creates an ISO-9660 image from files on disk
 
 ## usage
+
 ```sh
 mkisofs -R -l -L -D -b isolinux/isolinux.bin \
   -c isolinux/boot.cat \
@@ -21,4 +22,5 @@ mkisofs -R -l -L -D -b isolinux/isolinux.bin \
 ```
 
 ## see also
+
 - [[mkfs]]

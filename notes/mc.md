@@ -1,16 +1,21 @@
 ---
+tags: [cloud, go, linux]
 title: mc
 created: '2019-09-19T12:03:17.162Z'
-modified: '2021-10-31T14:56:47.569Z'
+modified: '2023-03-23T10:20:06.558Z'
 ---
 
 # mc
 
-> MinIO Client for cloud storage and filesystems
+> minio client for cloud storage and filesystems
 
 ## install
 
-`GO111MODULE=on go get github.com/minio/mc` or `curl -O https://dl.min.io/client/mc/release/linux-amd64/mc`
+```sh
+GO111MODULE=on go get github.com/minio/mc
+
+curl -O https://dl.min.io/client/mc/release/linux-amd64/mc
+```
 
 ## usage
 

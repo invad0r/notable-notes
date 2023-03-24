@@ -2,13 +2,16 @@
 tags: [linux]
 title: free
 created: '2019-07-30T06:19:49.055Z'
-modified: '2020-02-24T12:32:34.507Z'
+modified: '2023-03-22T08:23:16.512Z'
 ---
 
 # free
 
 ## install
-`apt-get install procps`
+
+```sh
+apt-get install procps
+```
 
 ## usage
 
@@ -18,7 +21,6 @@ free -h   # human readable
 #              total        used        free      shared  buff/cache   available
 # Mem:           7.8G        4.7G        152M         19M        3.0G        2.8G
 # Swap:          2.8G        413M        2.4G
-#
 #
 # total       Total installed memory (MemTotal and SwapTotal in /proc/meminfo)
 # used        Used memory (calculated as total - free - buffers - cache)
@@ -38,7 +40,11 @@ sudo sync && sudo sh -c "echo 1 > /proc/sys/vm/drop_caches"     # clear memory c
 ```
 
 ## see also
+
+- [[procps]]
 - [[procfs]]
+- [[docker]]
+- [[numfmt]]
 - [[top]]
 - [How to Clear RAM Memory Cache, Buffer and Swap Space on Linux](https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/)
 

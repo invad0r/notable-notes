@@ -1,7 +1,8 @@
 ---
+tags: [java]
 title: jmeter
 created: '2023-03-17T06:55:48.163Z'
-modified: '2023-03-17T07:04:15.761Z'
+modified: '2023-03-22T10:22:44.545Z'
 ---
 
 # jmeter

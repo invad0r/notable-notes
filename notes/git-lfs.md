@@ -1,8 +1,8 @@
 ---
-tags: [vcs]
+tags: [linux, macos]
 title: git-lfs
 created: '2020-02-25T14:57:00.028Z'
-modified: '2021-10-29T11:54:31.610Z'
+modified: '2023-03-24T08:25:52.799Z'
 ---
 
 # git-lfs
@@ -11,7 +11,9 @@ modified: '2021-10-29T11:54:31.610Z'
 
 ## install
 
-`brew install git-lfs`
+```sh
+brew install git-lfs
+```
 
 ## usage
 

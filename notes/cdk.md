@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: cdk
 created: '2022-09-27T06:58:06.755Z'
-modified: '2022-11-23T09:56:17.329Z'
+modified: '2023-03-22T09:16:37.554Z'
 ---
 
 # cdk

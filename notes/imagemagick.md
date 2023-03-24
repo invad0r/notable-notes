@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: imagemagick
 created: '2020-12-28T21:19:42.860Z'
-modified: '2022-01-26T15:41:36.131Z'
+modified: '2023-03-24T08:26:48.898Z'
 ---
 
 # imagemagick
@@ -10,7 +11,9 @@ modified: '2022-01-26T15:41:36.131Z'
 
 ## install
 
-`brew install imagemagick`
+```sh
+brew install imagemagick
+```
 
 ## convert
 
@@ -33,7 +36,7 @@ convert \
   -fill white \
   -gravity center \
   -interline-spacing 50 \
-  -annotate 0,0 "Now with more arguments!" now-with-more-arguments.png  
+  -annotate 0,0 "Now with more arguments!" now-with-more-arguments.png
 ```
 
 ## see also

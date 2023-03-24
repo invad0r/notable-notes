@@ -1,8 +1,8 @@
 ---
-tags: [heredoc, linux]
+tags: [linux]
 title: heredoc
 created: '2019-07-30T06:19:49.079Z'
-modified: '2022-01-05T09:14:36.146Z'
+modified: '2023-03-22T09:55:35.568Z'
 ---
 
 # heredoc
@@ -41,55 +41,74 @@ echo 1
     discarded when read
     EOF
 ls
+```
 
-
+```sh
 cat <<EOF > .pre-commit-config.yaml
 - repo: git://github.com/antonbabenko/pre-commit-terraform
   rev: v1.7.3
   hooks:
     - id: terraform_fmt
 EOF
+```
 
-# sudo redirect cat
+## sudo redirect cat
+
+```sh
 sudo ash -c "cat >> /var/config.file" <<EOF
   some config
 EOF
+```
 
 # sudo redirect tee
+
+```sh
 sudo tee /etc/sysconfig/docker-volume-netshare <<-'EOF'
  some config
 EOF
+```
 
-# docker build
+## docker build
+
+```sh
 docker build -t htop - << EOF
 FROM alpine
 RUN apk --no-cache add htop
 EOF
+```
 
-# curl data
+## curl data
+
+```sh
 curl http://host -d @- <<EOF
 {
   "from" : 0,
   "size" : 40
 }
 EOF
+```
 
+## ssh commands
 
-# ssh commands
+```sh
 ssh -T docker@HOST <<EOF
 uptime
 sudo update -y
 EOF
+```
 
+## anon heredoc
 
-# anon heredoc
+```sh
 : <<TESTVARIABLES
 ${HOSTNAME?}${USER?}${MAIL?}  # Print error message if one of the variables not set.
 TESTVARIABLES
 exit $?
+```
 
+## using in loop
 
-# using in loop
+```sh
 while read line; do echo "$line"; done <<EOF
 foo
 bar

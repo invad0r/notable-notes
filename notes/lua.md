@@ -1,8 +1,8 @@
 ---
-tags: [dsl, lua]
+tags: [lua]
 title: lua
 created: '2020-09-02T12:55:03.179Z'
-modified: '2021-10-29T12:45:16.020Z'
+modified: '2023-03-22T09:29:08.443Z'
 ---
 
 # lua

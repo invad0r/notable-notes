@@ -1,13 +1,19 @@
 ---
-tags: [linux]
+tags: [json, linux]
 title: jq
 created: '2019-07-30T06:19:49.141Z'
-modified: '2022-06-09T13:35:28.589Z'
+modified: '2023-03-22T10:27:29.820Z'
 ---
 
 # jq
 
 > cli json processor - transforms json, by selecting, iterating, reducing and otherwise mangling json documents
+
+## install
+
+```sh
+brew install jq
+```
 
 ## flags
 
@@ -74,16 +80,6 @@ json | jq -r '.data | .MINIO_SECRET_KEY | @base64d '            # base64-decode 
 jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$TOKEN"    # decode jwt-token
 
 jq -n -c '[{"foo": 1, "bar": 2}, {"foo": 3, "quux": 4}] | map(select( .bar ))'  # get element containing bar-field
-```
-
-## functions
-
-```sh
-select()
-
-startwith()
-
-.[]|select(.hostname | startswith("abcd"))
 ```
 
 ## see also

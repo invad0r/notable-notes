@@ -1,16 +1,18 @@
 ---
 title: varnishstat
 created: '2019-10-09T05:55:54.665Z'
-modified: '2021-10-31T14:42:35.275Z'
+modified: '2023-03-22T11:02:49.852Z'
 ---
 
 # varnishstat
 
-## usage
+## flag
 
 ```sh
 -1       # instead continuously updated display print to stdout
 ```
+
+## usage
 
 ```sh
 varnishstat -1 | awk '$2 > 0 {print $0}'

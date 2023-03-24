@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: cryptsetup
 created: '2020-01-20T19:52:26.328Z'
-modified: '2022-03-31T08:09:03.501Z'
+modified: '2023-03-24T08:19:13.979Z'
 ---
 
 # cryptsetup
@@ -11,7 +11,10 @@ modified: '2022-03-31T08:09:03.501Z'
 
 ## install
 
-`apt-get install cryptsetup`, `yum install cryptsetup-luks`
+```sh
+apt-get install cryptsetup
+yum     install cryptsetup-luks
+```
 
 ## usage
 

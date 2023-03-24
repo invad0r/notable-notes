@@ -1,7 +1,8 @@
 ---
+tags: [dns]
 title: spf
 created: '2022-01-26T08:24:32.923Z'
-modified: '2022-01-26T08:31:30.227Z'
+modified: '2023-03-22T10:29:40.362Z'
 ---
 
 # spf

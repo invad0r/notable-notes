@@ -1,7 +1,8 @@
 ---
+tags: [container, iac]
 title: tfk8s
 created: '2022-03-29T16:03:27.046Z'
-modified: '2022-03-30T06:46:13.387Z'
+modified: '2023-03-22T10:33:23.155Z'
 ---
 
 # tfk8s

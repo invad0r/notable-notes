@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: keybase
 created: '2019-09-21T16:23:11.728Z'
-modified: '2022-02-02T09:12:11.687Z'
+modified: '2023-03-24T08:19:14.029Z'
 ---
 
 # keybase
