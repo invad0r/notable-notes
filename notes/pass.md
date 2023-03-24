@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: pass
 created: '2019-07-30T06:19:49.204Z'
-modified: '2021-10-28T11:53:28.575Z'
+modified: '2023-03-24T08:19:14.065Z'
 ---
 
 # pass

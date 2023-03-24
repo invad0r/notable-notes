@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: 12 factor app
 created: '2022-02-15T10:15:31.700Z'
-modified: '2022-10-17T10:55:06.305Z'
+modified: '2023-03-23T10:11:41.590Z'
 ---
 
 # 12 factor app

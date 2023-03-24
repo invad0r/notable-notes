@@ -1,8 +1,8 @@
 ---
-tags: [buildsystem, scala]
+tags: [buildsystem, java]
 title: sbt
 created: '2019-07-30T06:19:49.228Z'
-modified: '2022-02-02T10:10:28.523Z'
+modified: '2023-03-23T08:44:44.431Z'
 ---
 
 # sbt

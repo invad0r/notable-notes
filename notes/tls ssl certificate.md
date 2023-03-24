@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: tls ssl certificate
 created: '2019-10-11T06:25:00.833Z'
-modified: '2020-09-02T18:05:53.830Z'
+modified: '2023-03-24T08:19:14.086Z'
 ---
 
 # tls ssl certificate

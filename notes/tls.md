@@ -1,8 +1,8 @@
 ---
-tags: [cryptography, network]
+tags: [crypto, network]
 title: tls
 created: '2019-07-30T06:19:49.253Z'
-modified: '2022-02-10T12:54:03.792Z'
+modified: '2023-03-24T08:19:14.080Z'
 ---
 
 # tls

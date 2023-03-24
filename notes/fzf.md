@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: fzf
 created: '2019-07-30T06:19:49.058Z'
-modified: '2023-03-22T09:28:38.413Z'
+modified: '2023-03-23T08:48:36.859Z'
 ---
 
 # fzf

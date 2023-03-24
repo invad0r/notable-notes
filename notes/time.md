@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: time
 created: '2020-09-09T08:34:51.671Z'
-modified: '2023-03-22T10:39:07.198Z'
+modified: '2023-03-24T08:23:34.433Z'
 ---
 
 # time

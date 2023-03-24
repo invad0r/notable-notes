@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: cryptsetup
 created: '2020-01-20T19:52:26.328Z'
-modified: '2023-03-22T08:52:56.665Z'
+modified: '2023-03-24T08:19:13.979Z'
 ---
 
 # cryptsetup

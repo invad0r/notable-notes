@@ -2,34 +2,30 @@
 tags: [javascript, versionmanager]
 title: nvm
 created: '2019-08-20T09:04:00.908Z'
-modified: '2022-12-02T14:05:36.429Z'
+modified: '2023-03-23T07:42:03.664Z'
 ---
 
 # nvm
 
-> `node version manager` - POSIX-compliant bash script to manage multiple active node.js versions 
+> `node version manager` - POSIX-compliant bash script to manage multiple active [[node]] versions 
 
 ## install
 
 ```sh
-cd ~ && git clone https://github.com/nvm-sh/nvm.git .nvm
-cd ~/.nvm && git checkout v0.38.0
-
-cat <<EOT >> ~/.bashrc    
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                      # loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"    # loads nvm bash_completion
-EOT
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
 ## usage
 
 ```sh
-nvm install node # "node" is an alias for the latest version
+nvm ls-remote           # available versions
 
-nvm install 6.14.4 # or 10.10.0, 8.9.1, etc
+nvm install --lts
+nvm install node        # "node" is an alias for the latest version
+nvm install 6.14.4      # or 10.10.0, 8.9.1, etc
 
-nvm ls-remote # available versions
+nvm install-latest-npm
+
 
 nvm use node
 
@@ -48,3 +44,4 @@ nvm which 5.0                  # get the path to the executable to where it was 
 - [[asdf]]
 - [[sdk]]
 - [[rvm]]
+- [[asdf]]

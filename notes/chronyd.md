@@ -2,7 +2,7 @@
 tags: [linux, systemd]
 title: chronyd
 created: '2019-10-26T17:55:51.285Z'
-modified: '2019-11-15T06:41:42.539Z'
+modified: '2023-03-23T08:45:48.486Z'
 ---
 
 # chronyd
@@ -10,9 +10,13 @@ modified: '2019-11-15T06:41:42.539Z'
 > `chrony` background daemon
 
 ## install
-`yum install chrony`
+
+```sh
+yum install chrony
+```
 
 ## usage
+
 ```sh
 /etc/chrony.conf    # config
 
@@ -22,5 +26,6 @@ systemctl enable chronyd.service
 ```
 
 ## see also
+
 - [[chronyc]]
 - [[timedatectl]]

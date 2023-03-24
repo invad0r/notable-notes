@@ -1,14 +1,21 @@
 ---
+tags: [linux, macos]
 title: gh
 created: '2020-11-20T23:44:36.008Z'
-modified: '2021-06-16T08:46:37.769Z'
+modified: '2023-03-23T10:15:21.157Z'
 ---
 
 # gh
 
 > github cli
 
-## usage
+## install
+
+```sh
+brew install gh
+```
+
+## env
 
 ```sh
 GH_TOKEN, GITHUB_TOKEN            # an authentication token for github.com API requests. Setting this avoids being prompted to authenticate and takes precedence over previously stored credentials (in order of precedence)
@@ -30,6 +37,8 @@ GH_CONFIG_DIR, XDG_CONFIG_HOME    # directory where gh will store configuration 
 XDG_STATE_HOME                    # directory where gh will store state files
 XDG_DATA_HOME                     # directory where gh will store data files
 ```
+
+## usage
 
 ```sh
 gh help environment                       # list supported environment variables
@@ -55,6 +64,8 @@ gh api repos/{owner}/{repo}/releases --jq '.[] | .url, .tag_name'
 ```
 
 ## see also
+
+- [[glab]]
 - [[git]]
-- [[github api]]
-- [github.blog/github-actions-in-your-terminal-with-github-cli](https://github.blog/2021-04-15-work-with-github-actions-in-your-terminal-with-github-cli/)
+- [[api github]]
+- [github.com/cli/cli](https://github.com/cli/cli)

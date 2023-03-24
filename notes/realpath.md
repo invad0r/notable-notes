@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: realpath
 created: '2020-10-05T13:31:16.733Z'
-modified: '2020-10-06T07:08:12.969Z'
+modified: '2023-03-24T08:22:53.628Z'
 ---
 
 # realpath
@@ -9,11 +10,13 @@ modified: '2020-10-06T07:08:12.969Z'
 > print the resolved path
 
 ## usage
+
 ```sh
 realpath FILE
 ```
 
 ## see also
+
 - [[dirname]]
 - [[basename]]
 

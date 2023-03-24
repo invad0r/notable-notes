@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: raft consesus algorithm
 created: '2021-10-20T08:58:11.735Z'
-modified: '2021-10-20T08:59:15.707Z'
+modified: '2023-03-24T08:24:53.152Z'
 ---
 
 # raft consesus algorithm

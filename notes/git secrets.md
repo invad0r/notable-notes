@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: git secrets
 created: '2020-11-27T08:03:15.064Z'
-modified: '2023-03-23T07:29:20.436Z'
+modified: '2023-03-24T08:25:52.776Z'
 ---
 
 # git secrets

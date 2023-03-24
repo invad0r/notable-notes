@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: session-manager-plugin
 created: '2022-09-30T07:14:39.638Z'
-modified: '2022-11-23T08:31:40.836Z'
+modified: '2023-03-24T08:27:11.783Z'
 ---
 
 # session-manager-plugin

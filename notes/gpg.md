@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: gpg
 created: '2019-07-30T06:19:49.076Z'
-modified: '2023-03-22T08:54:03.043Z'
+modified: '2023-03-24T08:19:13.995Z'
 ---
 
 # gpg

@@ -1,8 +1,8 @@
 ---
-tags: [scala]
+tags: [java]
 title: scala
 created: '2019-08-20T07:27:47.862Z'
-modified: '2022-02-01T14:36:57.154Z'
+modified: '2023-03-23T08:44:35.706Z'
 ---
 
 # scala

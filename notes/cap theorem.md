@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: cap theorem
 created: '2021-12-26T14:43:50.251Z'
-modified: '2021-12-26T14:46:00.471Z'
+modified: '2023-03-23T10:13:09.711Z'
 ---
 
 # cap theorem

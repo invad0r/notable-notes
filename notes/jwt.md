@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: jwt
 created: '2020-01-27T08:04:24.079Z'
-modified: '2022-02-01T14:58:49.263Z'
+modified: '2023-03-24T08:19:14.020Z'
 ---
 
 # jwt

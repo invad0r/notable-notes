@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: git extras
 created: '2019-07-30T06:19:49.062Z'
-modified: '2023-03-22T09:28:43.472Z'
+modified: '2023-03-24T08:25:52.756Z'
 ---
 
 # git extras

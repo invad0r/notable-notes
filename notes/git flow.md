@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: git flow
 created: '2021-03-25T08:00:57.686Z'
-modified: '2023-03-23T07:29:01.725Z'
+modified: '2023-03-24T08:25:52.768Z'
 ---
 
 # git flow

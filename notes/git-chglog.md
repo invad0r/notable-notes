@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: git-chglog
 created: '2021-03-25T07:53:28.102Z'
-modified: '2023-03-22T10:36:13.074Z'
+modified: '2023-03-24T08:25:52.792Z'
 ---
 
 # git-chglog

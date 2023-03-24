@@ -1,7 +1,7 @@
 ---
 title: entr
 created: '2022-04-27T12:10:47.470Z'
-modified: '2023-03-22T10:24:35.819Z'
+modified: '2023-03-24T08:26:19.243Z'
 ---
 
 # entr 
@@ -39,4 +39,5 @@ entr
 ## see also
 
 - [[find]]
+- [[watch]]
 - [eradman.com/entrproject](http://eradman.com/entrproject/)

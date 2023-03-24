@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: procps
 created: '2023-03-22T07:58:03.748Z'
-modified: '2023-03-22T08:07:24.855Z'
+modified: '2023-03-24T08:22:36.779Z'
 ---
 
 # procps

@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: quota
 created: '2021-05-25T12:00:06.506Z'
-modified: '2021-05-25T12:01:35.191Z'
+modified: '2023-03-24T08:25:10.885Z'
 ---
 
 # quota
@@ -19,6 +20,7 @@ quota -q      # print a more terse message, containing only information on files
 ```
 
 ## see also
+
 - [[ssh]]
 - [[df]]
 - [[du]]

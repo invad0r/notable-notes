@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: paperkey
 created: '2021-06-14T13:30:55.412Z'
-modified: '2023-03-13T11:19:49.719Z'
+modified: '2023-03-24T08:22:22.393Z'
 ---
 
 # paperkey

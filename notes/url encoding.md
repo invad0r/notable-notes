@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: url encoding
 created: '2019-08-21T09:32:17.675Z'
-modified: '2020-09-03T09:13:30.181Z'
+modified: '2023-03-23T10:20:37.931Z'
 ---
 
 # url encoding

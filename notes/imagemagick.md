@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: imagemagick
 created: '2020-12-28T21:19:42.860Z'
-modified: '2023-03-21T13:27:02.292Z'
+modified: '2023-03-24T08:26:48.898Z'
 ---
 
 # imagemagick

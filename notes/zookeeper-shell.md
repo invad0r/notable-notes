@@ -1,7 +1,7 @@
 ---
 title: zookeeper-shell
 created: '2019-09-23T09:47:31.660Z'
-modified: '2022-10-05T12:58:22.896Z'
+modified: '2023-03-23T08:43:00.379Z'
 ---
 
 # zookeeper-shell
@@ -30,3 +30,4 @@ ls / true                     # Watch can be set on any znode while using read o
 - [[etcdctl]]
 - [[kafka]]
 - [serverfault.com/get-zookeeper-cluster-status](https://serverfault.com/questions/801251/get-zookeeper-cluster-status)
+

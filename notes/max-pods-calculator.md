@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: max-pods-calculator
 created: '2022-03-29T14:57:24.315Z'
-modified: '2022-03-29T15:08:41.942Z'
+modified: '2023-03-24T08:21:00.855Z'
 ---
 
 # max-pods-calculator

@@ -1,8 +1,8 @@
 ---
-tags: [cryptography]
+tags: [crypto]
 title: p11-kit
 created: '2020-03-09T12:25:18.791Z'
-modified: '2021-10-28T11:53:14.248Z'
+modified: '2023-03-24T08:19:14.058Z'
 ---
 
 # p11-kit

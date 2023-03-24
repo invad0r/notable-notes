@@ -2,7 +2,7 @@
 tags: [java]
 title: jps
 created: '2020-08-27T08:49:45.295Z'
-modified: '2020-09-02T17:36:31.688Z'
+modified: '2023-03-23T09:28:43.955Z'
 ---
 
 # jps
@@ -10,6 +10,7 @@ modified: '2020-09-02T17:36:31.688Z'
 > jvm process status tool
 
 ## usage
+
 ```sh
 jps                         # lists JVMs on localhost
 
@@ -19,6 +20,7 @@ jps -m remote.domain:2002   # lists JVMs on a remote host with a non-default por
 ```
 
 ## see also
+
 - [docs.oracle.com/javase/7/docs/.../jps.html](https://docs.oracle.com/javase/7/docs/technotes/tools/share/jps.html)
 - [[jstat]]
 - [[jstatd]]

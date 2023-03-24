@@ -2,7 +2,7 @@
 tags: [net-tools, network]
 title: ifconfig
 created: '2020-01-16T07:17:37.287Z'
-modified: '2022-03-04T07:46:36.704Z'
+modified: '2023-03-23T09:27:52.186Z'
 ---
 
 # ifconfig
@@ -11,7 +11,9 @@ modified: '2022-03-04T07:46:36.704Z'
 
 ## install
 
-`apt install net-tools`
+```sh
+apt install net-tools
+```
 
 ## usage
 

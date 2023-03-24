@@ -1,8 +1,8 @@
 ---
-tags: [cryptography, linux, network]
+tags: [crypto, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2023-03-22T10:55:41.319Z'
+modified: '2023-03-24T08:19:14.051Z'
 ---
 
 # openssl
@@ -32,7 +32,9 @@ openssl crl2pkcs7 -nocrl -certfile CHAIN.pem | openssl pkcs7 -print_certs -text 
 openssl verify -CAfile foo.cain.crt foo.crt   # verify certificate against CAfile => foo.crt: OK
 ```
 
-## rsa - rsa key management
+## rsa 
+
+> rsa key management
 
 ```sh
 openssl rsa -in privateKey.key -check
@@ -86,7 +88,9 @@ openssl x509 -in git.domain.net.crt -noout -fingerprint
 
 ```
 
-## pkcs12 - public key cryptograpy standarts
+## pkcs12
+
+> public key cryptograpy standarts
 
 ```sh
 openssl pkcs12 -export -inkey local.key      -in local.crt  -out local.pfx          # generate pkcs12
@@ -170,6 +174,17 @@ openssl dgst -sha256 FILENAME
 ```
 
 [[md5sum]], [[sha256sum]]
+
+## dhparam
+
+> generate set of diffie-hellman parameters 
+> consists of a large prime number `p` and  generator value `g` (which is always 2 for openssl)
+
+```sh
+openssl dhparam -out dhparam.pem 4096  # generates dh parameters with 4096 bit
+```
+
+[[prime number]]
 
 ## passwd
 

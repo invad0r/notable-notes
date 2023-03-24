@@ -1,7 +1,8 @@
 ---
+tags: [buildsystem]
 title: brazel
 created: '2021-11-13T09:45:45.798Z'
-modified: '2023-03-22T10:25:08.433Z'
+modified: '2023-03-23T08:49:00.543Z'
 ---
 
 # brazel

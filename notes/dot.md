@@ -1,7 +1,7 @@
 ---
 title: dot
 created: '2020-01-20T08:57:17.661Z'
-modified: '2023-03-22T10:28:41.158Z'
+modified: '2023-03-23T10:14:38.489Z'
 ---
 
 # dot
@@ -31,3 +31,4 @@ dot -Tsvg > graph.svg
 
 - [[terraform]]
 - [[open]]
+- [[markdown]]

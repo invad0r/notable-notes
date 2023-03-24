@@ -2,7 +2,7 @@
 tags: [ssh, systemd]
 title: sshd
 created: '2019-07-30T06:19:49.246Z'
-modified: '2020-07-14T12:22:32.684Z'
+modified: '2023-03-23T08:39:59.130Z'
 ---
 
 # sshd
@@ -10,6 +10,7 @@ modified: '2020-07-14T12:22:32.684Z'
 > `openssh` ssh daemon 
 
 ## usage
+
 ```sh
 systemctl [status|start|stop] sshd.service
 
@@ -19,6 +20,7 @@ sudo pkill -HUP sshd    # boot2docker restart sshd
 ```
 
 ## sshd_config
+
 ```sh
 # sshd_config locations
 /etc/ssh/sshd_config              # default

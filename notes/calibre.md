@@ -1,7 +1,7 @@
 ---
 title: calibre
 created: '2021-02-25T16:55:40.941Z'
-modified: '2023-03-22T08:48:37.383Z'
+modified: '2023-03-23T10:13:01.700Z'
 ---
 
 # calibre
@@ -25,4 +25,5 @@ for book in *.epub; do echo "converting: $book"; ebook-convert "$book" "$(basena
 
 ## see also
 
-- 
+- [[markdown]]
+- [[gc]]

@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: wasm
 created: '2020-08-19T07:23:59.679Z'
-modified: '2022-04-07T07:02:20.355Z'
+modified: '2023-03-23T10:11:30.764Z'
 ---
 
 # wasm

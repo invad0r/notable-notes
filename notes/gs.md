@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: gs
 created: '2021-04-14T13:59:38.784Z'
-modified: '2023-03-22T10:30:08.688Z'
+modified: '2023-03-24T08:21:15.715Z'
 ---
 
 # gs

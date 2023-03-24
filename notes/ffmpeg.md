@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: ffmpeg
 created: '2021-03-10T11:11:18.975Z'
-modified: '2023-03-21T13:41:45.694Z'
+modified: '2023-03-23T10:15:21.149Z'
 ---
 
 # ffmpeg

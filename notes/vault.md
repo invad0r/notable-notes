@@ -1,7 +1,8 @@
 ---
+tags: [iac]
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2022-02-01T14:47:17.982Z'
+modified: '2023-03-24T08:24:12.546Z'
 ---
 
 # vault

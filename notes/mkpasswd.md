@@ -1,8 +1,8 @@
 ---
-tags: [cryptography, linux]
+tags: [crypto, linux]
 title: mkpasswd
 created: '2019-09-17T09:56:18.545Z'
-modified: '2023-03-22T08:55:23.002Z'
+modified: '2023-03-24T08:19:14.044Z'
 ---
 
 # mkpasswd
