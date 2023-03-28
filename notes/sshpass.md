@@ -1,8 +1,8 @@
 ---
-tags: [ssh]
+tags: [crypto, ssh]
 title: sshpass
 created: '2019-07-30T06:19:49.247Z'
-modified: '2020-01-24T14:48:20.445Z'
+modified: '2023-03-25T12:05:18.609Z'
 ---
 
 # sshpass

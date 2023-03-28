@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: haskell
 created: '2021-02-03T12:56:01.739Z'
-modified: '2023-03-24T09:39:30.339Z'
+modified: '2023-03-25T12:33:04.470Z'
 ---
 
 # haskell

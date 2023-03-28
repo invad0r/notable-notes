@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: jira jql
 created: '2019-09-19T06:12:55.493Z'
-modified: '2023-03-22T09:29:11.098Z'
+modified: '2023-03-27T07:50:40.585Z'
 ---
 
 # jira jql

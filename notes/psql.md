@@ -1,8 +1,8 @@
 ---
-tags: [database]
+tags: [database, linux]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2022-08-22T12:14:42.159Z'
+modified: '2023-03-25T12:49:35.022Z'
 ---
 
 # psql
@@ -11,7 +11,9 @@ modified: '2022-08-22T12:14:42.159Z'
 
 ## install
 
-`apt install postgresql`
+```sh
+apt install postgresql
+```
 
 ## usage
 

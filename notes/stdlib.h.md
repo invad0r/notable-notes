@@ -2,7 +2,7 @@
 tags: [c]
 title: stdlib.h
 created: '2020-05-16T12:10:34.736Z'
-modified: '2023-03-22T09:24:35.983Z'
+modified: '2023-03-25T12:41:05.728Z'
 ---
 
 # stdlib.h
@@ -10,6 +10,7 @@ modified: '2023-03-22T09:24:35.983Z'
 > defines four variable types, several macros, and various functions for performing general functions
 
 ## usage
+
 ```c
 /* values */
 size_t            /* unsigned integral type and is the result of the sizeof keyword */
@@ -64,5 +65,6 @@ void qsort                                  /* Sorts an array */
 ```
 
 ## see also
+
 - [[c include]]
 - [tutorialspoint.com/.../stdlib_h.htm](https://www.tutorialspoint.com/c_standard_library/stdlib_h.htm)

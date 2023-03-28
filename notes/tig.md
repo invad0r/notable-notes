@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: tig
 created: '2021-05-12T19:12:35.991Z'
-modified: '2023-03-22T10:37:11.932Z'
+modified: '2023-03-25T12:10:36.125Z'
 ---
 
 # tig

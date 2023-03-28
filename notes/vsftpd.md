@@ -1,7 +1,8 @@
 ---
+tags: [systemd]
 title: vsftpd
 created: '2020-03-31T06:54:59.956Z'
-modified: '2022-02-02T10:02:23.781Z'
+modified: '2023-03-25T12:51:45.379Z'
 ---
 
 # vsftpd
@@ -10,7 +11,9 @@ modified: '2022-02-02T10:02:23.781Z'
 
 ## install
 
-`apt install vsftpd`
+```sh
+apt install vsftpd
+```
 
 ## usage
 
@@ -18,9 +21,7 @@ modified: '2022-02-02T10:02:23.781Z'
 systemctl status vsftpd
 ```
 
-## config
-
-`/etc/vsftpd.conf`
+## `/etc/vsftpd.conf`
 
 ```sh
 anonymous_enable=NO             # allow access to the FTP server only the local users

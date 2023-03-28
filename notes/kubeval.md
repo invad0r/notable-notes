@@ -2,7 +2,7 @@
 tags: [container]
 title: kubeval
 created: '2021-03-18T09:10:51.860Z'
-modified: '2021-10-29T12:39:49.001Z'
+modified: '2023-03-25T12:46:10.678Z'
 ---
 
 # kubeval
@@ -11,15 +11,19 @@ modified: '2021-10-29T12:39:49.001Z'
 
 ## install
 
-`brew tap instrumenta/instrumenta && brew install kubeval`
+```sh
+brew tap instrumenta/instrumenta && brew install kubeval
+```
 
-## usage
+## flag
 
 ```sh
 --output=stdout       # Plaintext
 --output=json         # JSON
 --output=tap          # TAP
 ```
+
+## usage
 
 ```sh
 kubeval FILE.yaml

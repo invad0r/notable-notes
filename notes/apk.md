@@ -1,8 +1,8 @@
 ---
-tags: [linux, packagemanager, shell]
+tags: [container, linux, packagemanager, shell]
 title: apk
 created: '2019-07-30T20:26:52.476Z'
-modified: '2023-03-22T09:24:10.876Z'
+modified: '2023-03-27T05:51:34.613Z'
 ---
 
 # apk

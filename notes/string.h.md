@@ -2,7 +2,7 @@
 tags: [c]
 title: string.h
 created: '2020-05-16T11:30:47.882Z'
-modified: '2023-03-22T09:24:31.654Z'
+modified: '2023-03-25T12:41:18.140Z'
 ---
 
 # string.h
@@ -10,6 +10,7 @@ modified: '2023-03-22T09:24:31.654Z'
 > defines one variable type, one macro, and various functions for manipulating arrays of characters.
 
 ## usage
+
 ```c
 /* values */
 size_t            /* unsigned integral type and is the result of the sizeof keyword */
@@ -46,5 +47,7 @@ strcpy(dest, source)
 char *strcat(char *dest, const char *src)
 strcat(dest, source)
 ```
+
 ## see alos
+
 - [[c include]]

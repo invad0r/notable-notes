@@ -2,7 +2,7 @@
 tags: [network]
 title: wireshark
 created: '2020-01-27T14:43:12.327Z'
-modified: '2021-10-31T14:51:12.828Z'
+modified: '2023-03-25T12:48:59.536Z'
 ---
 
 # wireshark
@@ -11,14 +11,18 @@ modified: '2021-10-31T14:51:12.828Z'
 
 ## install
 
-`brew install wireshark --with-qt`
+```sh
+brew install wireshark --with-qt
+```
 
-## usage
+## flag
 
 ```sh
 -k                        # start capturing immediately
 -i INTERFACE              # name or idx of interface
 ```
+
+## usage
 
 ```sh
 ssh USR@HOST "tcpdump -s0 -U -w - -n -i any 'dst 192.168.144.196||192.168.158.4 || port 53'" | wireshark -k -i -

@@ -2,7 +2,7 @@
 tags: [linux]
 title: envsubst
 created: '2020-04-24T11:43:39.417Z'
-modified: '2022-02-04T09:12:20.390Z'
+modified: '2023-03-27T05:40:05.921Z'
 ---
 
 # envsubst
@@ -12,18 +12,20 @@ modified: '2022-02-04T09:12:20.390Z'
 ## install
 
 ```sh
-brew install gettext
-apt install gettext-base
-yum install gettext
+brew  install gettext
+apt   install gettext-base
+yum   install gettext
 ```
 
-## usage
+## flag
 
 ```sh
 -v, --variables      # output the variables occurring in SHELL-FORMAT
 -h, --help           # display this help and exit
 -V, --version        # output version information and exit
 ```
+
+## usage
 
 ```sh
 envsubst \$FOO,$\BAR < config.file > config.dist

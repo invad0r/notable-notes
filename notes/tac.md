@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: tac
 created: '2022-06-17T09:24:48.712Z'
-modified: '2022-06-20T06:37:41.279Z'
+modified: '2023-03-25T12:25:53.994Z'
 ---
 
 # tac

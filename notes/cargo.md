@@ -2,7 +2,7 @@
 tags: [packagemanager, rust]
 title: cargo
 created: '2020-02-27T16:59:23.781Z'
-modified: '2022-02-01T14:34:30.796Z'
+modified: '2023-03-25T12:50:55.180Z'
 ---
 
 # cargo
@@ -11,16 +11,18 @@ modified: '2022-02-01T14:34:30.796Z'
 
 ## install
 
-`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` will add the [[cargo]], [[rustc]] and [[rustup]]
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+``` 
+
+will add the [[cargo]], [[rustc]] and [[rustup]]
 
 ## usage
 
 ```sh
-cargo install mdcat
-
-cargo install cargo-update
-
-cargo install-update mdcat
+cargo install --list          # list installed crates
+cargo install CRATE
+cargo install-update CRATE
 
 cargo build                   # build your project with 
 
@@ -36,7 +38,14 @@ cargo new hello-rust          # init new project
 
 
 # fun projects
-cargo install gping
+cargo install \
+  exa \
+  rm-improved \
+  jless \
+  gping \
+  cargo-update \
+  mdcat
+  alacritty
 ```
 
 ## see also
@@ -44,3 +53,6 @@ cargo install gping
 - [[rust]]
 - [[rustup]]
 - [doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/index.html)
+- [[exa]]
+- [[rip]]
+- [[jless]]

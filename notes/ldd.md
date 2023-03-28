@@ -2,7 +2,7 @@
 tags: [c]
 title: ldd
 created: '2020-02-21T08:19:15.513Z'
-modified: '2020-09-02T17:32:46.272Z'
+modified: '2023-03-25T12:40:27.602Z'
 ---
 
 # ldd
@@ -10,6 +10,7 @@ modified: '2020-09-02T17:32:46.272Z'
 > print shared library dependencies 
 
 ## usage
+
 ```sh
 ldd file    # prints libraries program needs
 
@@ -20,6 +21,7 @@ ldd a.out
 ```
 
 ## see also
+
 - [[ld]]
 - [[gcc]]
 - [[nm]]

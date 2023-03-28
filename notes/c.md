@@ -2,7 +2,7 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2020-08-31T11:41:08.813Z'
+modified: '2023-03-25T12:39:15.602Z'
 ---
 
 # c
@@ -10,19 +10,21 @@ modified: '2020-08-31T11:41:08.813Z'
 > general-purpose, procedural language supporting structured programming, lexical variable scope, and recursion, with a static type system
 > imperative procedural language. designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support
 
-## usage
-```c
-/* 4 basic arithmetic type specifiers (char, int, float, double) and modifiers (signed, unsigned, short, long) */
+## types
 
-/* char type */
-char                      /* 1%c            1 byte  -128 to 127 or 0 to 255  */
-signed char               /* 1%c            1 byte  -128 to 127              */
+> 4 basic arithmetic type specifiers: `char`, `int`,` float`, `double`
+> and modifiers: `signed`, `unsigned`, `short`, `long`
+
+```c
+/* char type */ 
+         char             /* 1%c            1 byte  -128 to 127 or 0 to 255  */
+signed   char             /* 1%c            1 byte  -128 to 127              */
 unsigned char             /* 1%c            1 byte     0 to 255              */
 
 /* integer types */
-int                       /* 2/4%d          2/4 bytes  -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647 */
-unsigned int              /* 2/4%u          2/4 bytes        0 to 65,535 or 0 to 4,294,967,295              */
-short int                 /* 2 %hd          2 bytes    -32,768 to 32,767                                    */
+          int             /* 2/4%d          2/4 bytes  -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647 */
+unsigned  int             /* 2/4%u          2/4 bytes        0 to 65,535 or 0 to 4,294,967,295              */
+short     int             /* 2 %hd          2 bytes    -32,768 to 32,767                                    */
 unsigned short            /*                2 bytes          0 to 65,535                                    */
 long int                  /* 4/8%li         8 bytes -9223372036854775808 to 9223372036854775807             */
 long long int             /* 8 %lli         */
@@ -46,8 +48,10 @@ void                    /* void indicates that no value is available.  */
 int **test              /* pointer to a pointer */
 ```
 
+[[typing]]
 
 ## see also
+
 - [[asm]]
 - [[wasm]]
 - [[clang]]

@@ -2,7 +2,7 @@
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2023-03-22T08:21:22.277Z'
+modified: '2023-03-27T06:09:06.655Z'
 ---
 
 # java
@@ -71,8 +71,23 @@ mvn spring-boot:run \
   -Dspring-boot.run.arguments=--spring.main.banner-mode=off,--customArgument=custom
 ```
 
+## runtime info
+
+```java
+public class A {
+  public static void main(String[] args) throws Exception {
+    System.out.println( Runtime.getRuntime().totalMemory());
+  }
+}
+```
+
+```sh
+javac A.java && java -Xms256m -Xmx256m A | numfmt --to=iec-i
+```
+
 ## see also
 
+- [[javac]]
 - [[jps]]
 - [[jar]]
 - [[javac]]

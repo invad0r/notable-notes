@@ -1,8 +1,8 @@
 ---
-tags: [ssh]
+tags: [crypto, ssh]
 title: ssh
 created: '2019-07-30T06:19:49.245Z'
-modified: '2022-06-16T10:54:04.656Z'
+modified: '2023-03-25T12:05:08.874Z'
 ---
 
 # ssh

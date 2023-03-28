@@ -2,7 +2,7 @@
 tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2021-11-13T09:48:06.764Z'
+modified: '2023-03-25T12:40:40.022Z'
 ---
 
 # make
@@ -17,7 +17,9 @@ modified: '2021-11-13T09:48:06.764Z'
 
 ## install
 
-`brew install make`
+```sh
+brew install make
+```
 
 ## usage
 

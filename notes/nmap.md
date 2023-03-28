@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2022-06-20T06:38:20.500Z'
+modified: '2023-03-25T12:48:34.741Z'
 ---
 
 # nmap
@@ -11,7 +11,11 @@ modified: '2022-06-20T06:38:20.500Z'
 
 ## install
 
-`brew install nmap`, `apt install nmap`, `yum install nmap`
+```sh
+brew install nmap
+apt  install nmap
+yum  install nmap
+```
 
 ## flags
 

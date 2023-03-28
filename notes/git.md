@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2023-03-24T08:25:52.735Z'
+modified: '2023-03-25T12:23:04.668Z'
 ---
 
 # git
@@ -436,6 +436,34 @@ git push origin --force --all       # overwrite repository, as well as all branc
 git push origin --force --tags      # remove the sensitive file from your tagged releases
 ```
 
+## svn
+
+```sh
+# svn to git migraiton
+git svn clone \
+  --stdlayout \
+  --no-metadata \
+  --authors-file=FILE \ `# see: svn log --xml`
+  svn://HOST/PATH DEST
+
+git svn clone \
+  --stdlayout \
+  --no-metadata \
+  --authors-file=FILE \
+  --prefix=origin/ \
+  https://repo/svn/PATH/TRUNK  DEST
+
+git svn clone \
+  --authors-file=FILE \
+  --prefix=origin/ \
+  --trunk=PATH/TRUNK \
+  https://repo/svn/general \
+  DEST
+```
+
+[how-to-migrate-svn-repository](http://stackoverflow.com/questions/79165/how-to-migrate-svn-repository-with-history-to-a-new-git-repository)
+
+
 ## see also
 
 - [[git config]]
@@ -443,6 +471,8 @@ git push origin --force --tags      # remove the sensitive file from your tagged
 - [[bfg]]
 - [[gh]]
 - [[git-chglog]]
+- [[fossil]]
+- [[snv]]
 - [gitlab.com/2016/12/08/git-tips-and-tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 - [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)
 - [docs.github.com/removing-sensitive-data-from-a-repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)

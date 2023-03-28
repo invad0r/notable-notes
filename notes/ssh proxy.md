@@ -1,8 +1,8 @@
 ---
-tags: [ssh]
+tags: [crypto, ssh]
 title: ssh proxy
 created: '2019-07-30T06:19:49.242Z'
-modified: '2023-03-16T09:12:47.335Z'
+modified: '2023-03-25T12:05:18.550Z'
 ---
 
 # ssh proxy

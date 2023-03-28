@@ -1,7 +1,8 @@
 ---
+tags: [macos]
 title: entr
 created: '2022-04-27T12:10:47.470Z'
-modified: '2023-03-24T08:26:19.243Z'
+modified: '2023-03-25T12:30:39.463Z'
 ---
 
 # entr 

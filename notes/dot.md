@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: dot
 created: '2020-01-20T08:57:17.661Z'
-modified: '2023-03-23T10:14:38.489Z'
+modified: '2023-03-25T12:30:47.828Z'
 ---
 
 # dot

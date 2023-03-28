@@ -1,7 +1,8 @@
 ---
+tags: [container, linux, macos]
 title: xpath
 created: '2020-10-09T12:01:24.801Z'
-modified: '2022-02-02T09:39:37.003Z'
+modified: '2023-03-25T12:10:16.895Z'
 ---
 
 # xpath

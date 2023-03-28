@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: ascii
 created: '2019-07-30T06:19:48.987Z'
-modified: '2023-03-23T10:16:40.798Z'
+modified: '2023-03-25T12:15:18.447Z'
 ---
 
 # ascii
@@ -49,5 +49,6 @@ J    | 112 | 4a  | 74
 - [[url encoding]]
 - [[xxd]]
 - [[od]]
+- [[iconv]]
 - [[baudot]]
 - [jafrog.com/2013/11/23/colors-in-terminal](http://jafrog.com/2013/11/23/colors-in-terminal.html)

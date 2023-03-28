@@ -2,7 +2,7 @@
 tags: [database]
 title: mongodump
 created: '2019-11-14T08:15:23.493Z'
-modified: '2022-02-04T08:24:31.530Z'
+modified: '2023-03-25T12:46:38.622Z'
 ---
 
 # mongodump
@@ -13,7 +13,9 @@ modified: '2022-02-04T08:24:31.530Z'
 
 ## install
 
-`brew tap mongodb/brew && brew install mongodb-database-tools`
+```sh
+brew tap mongodb/brew && brew install mongodb-database-tools
+```
 
 ## usage
 

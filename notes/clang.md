@@ -2,14 +2,14 @@
 tags: [c]
 title: clang
 created: '2020-08-27T10:58:10.930Z'
-modified: '2021-06-08T05:31:12.709Z'
+modified: '2023-03-25T12:52:52.956Z'
 ---
 
 # clang
 
-> `c`, `c++`, and `objective-c` compiler encompassing preprocessing, parsing, optimization, code generation, assembly, and linking
+> [[c]], [[c++]], and [[objective-c]] compiler encompassing preprocessing, parsing, optimization, code generation, assembly, and linking
 
-## usage
+## flag
 
 ```sh
 --target=wasm32         # tells a compiler to use WebAssembly as a target for compilation.
@@ -19,11 +19,21 @@ modified: '2021-06-08T05:31:12.709Z'
 -Wl,--export-all        # tell linker to export all the c functions from the webassembly module 
 ```
 
+## usage
+
 ```sh
-clang --target=wasm32 -O3  -nostdlib -Wl,--no-entry -Wl,--export-all -o FILE.wasm FILE.c
+clang \
+  --target=wasm32 \
+  -O3  \
+  -nostdlib \
+  -Wl,--no-entry \
+  -Wl,--export-all \
+  -o FILE.wasm \
+  FILE.c
 ```
 
 ## see also
+
 - [[emcc]]
 - [[c]]
 - [[c++]]

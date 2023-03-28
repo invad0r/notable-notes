@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: fossil
 created: '2020-07-02T06:23:57.933Z'
-modified: '2023-03-22T08:50:55.267Z'
+modified: '2023-03-25T12:25:04.119Z'
 ---
 
 # fossil
@@ -15,6 +16,12 @@ modified: '2023-03-22T08:50:55.267Z'
 > supports "autosync" mode
 > stores content using an enduring file format in an SQLite database
 > free and Open-Source
+
+## install
+
+```sh
+brew install fossil
+```
 
 ## usage
 

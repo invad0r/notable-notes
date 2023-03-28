@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: lynx
 created: '2022-03-23T15:09:24.848Z'
-modified: '2023-03-23T10:18:31.298Z'
+modified: '2023-03-25T12:30:17.225Z'
 ---
 
 # lynx

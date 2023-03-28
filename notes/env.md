@@ -2,14 +2,14 @@
 tags: [shell]
 title: env
 created: '2020-01-17T07:48:51.293Z'
-modified: '2022-03-03T09:23:36.482Z'
+modified: '2023-03-27T05:23:16.856Z'
 ---
 
 # env
 
 > set environment and execute command, or print environment
 
-## usage
+## flag
 
 ```sh
 -i            # execute utility with only those environment variables specified by name=value options, the environment inherited by env is ignored completely
@@ -20,6 +20,8 @@ modified: '2022-03-03T09:23:36.482Z'
               #   similar to unset command in sh(1).  The value for name must not include the ‘=’ character
 -v            # print verbose information for each step of processing done by the env utility. Additional information will be printed if -v is specified multiple times
 ```
+
+## usage
 
 ```sh
 env         # print environment

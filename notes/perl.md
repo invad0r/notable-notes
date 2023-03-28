@@ -1,7 +1,8 @@
 ---
+tags: [linux]
 title: perl
 created: '2019-07-30T06:19:49.150Z'
-modified: '2023-03-22T10:42:51.856Z'
+modified: '2023-03-25T12:33:10.563Z'
 ---
 
 # perl

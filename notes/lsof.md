@@ -2,7 +2,7 @@
 tags: [linux]
 title: lsof
 created: '2019-07-30T06:19:49.166Z'
-modified: '2020-09-04T08:26:19.227Z'
+modified: '2023-03-25T12:48:12.441Z'
 ---
 
 # lsof
@@ -10,14 +10,26 @@ modified: '2020-09-04T08:26:19.227Z'
 > list open files
 
 ## install
-`brew install lsof` `apt-get install lsof` `apk add lsof` `pacman -S lsof` `yum install lsof` `dnf install lsof`
-## usage
-```sh
-# options
-# -i :PORT
-# -P              don't convert port-number to port-name
-# -w              ignore warnings; "lsof: no pwd entry for UID 100"
 
+```sh
+brew    install lsof
+apt-get install lsof
+yum     install lsof
+dnf     install lsof
+apk     add     lsof
+```
+
+## flag
+
+```sh
+-i :PORT        #
+-P              # don't convert port-number to port-name
+-w              # ignore warnings; "lsof: no pwd entry for UID 100"
+```
+
+## usage
+
+```sh
 lsof -Pi :PORT
 
 lsof -i :80 | grep LISTEN          # lsof command find out what is using port 80
@@ -32,6 +44,7 @@ lsof -i6
 ```
 
 ## see also
+
 - [[bash ulimit]]
 - [[pmap]]
 - [[mount]]

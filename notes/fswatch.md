@@ -1,7 +1,8 @@
 ---
+tags: [macos]
 title: fswatch
 created: '2021-10-19T10:15:19.670Z'
-modified: '2023-03-22T10:32:37.809Z'
+modified: '2023-03-25T12:32:53.495Z'
 ---
 
 # fswatch
@@ -22,5 +23,7 @@ fswatch . | xargs -n 1 -I {} echo {}
 
 ## see also
 
+- [[entr]]
 - [[watch]]
+- [[xargs]]
 - [emcrisostomo.github.io/fswatch](https://emcrisostomo.github.io/fswatch/)

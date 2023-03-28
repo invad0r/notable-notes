@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [crypto, linux]
 title: ssh-keyscan
 created: '2021-06-30T12:48:52.502Z'
-modified: '2023-03-22T10:40:41.594Z'
+modified: '2023-03-25T12:05:18.593Z'
 ---
 
 # ssh-keyscan

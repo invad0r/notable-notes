@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos, shell]
 title: shellcheck
 created: '2021-06-16T16:19:38.843Z'
-modified: '2023-03-22T10:31:15.799Z'
+modified: '2023-03-25T12:29:50.473Z'
 ---
 
 # shellcheck

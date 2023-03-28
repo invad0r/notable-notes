@@ -2,7 +2,7 @@
 tags: [rust]
 title: rip
 created: '2021-05-27T09:10:45.980Z'
-modified: '2021-09-23T06:31:11.477Z'
+modified: '2023-03-25T12:51:12.336Z'
 ---
 
 # rip
@@ -13,14 +13,21 @@ modified: '2021-09-23T06:31:11.477Z'
 
 ## install
 
-`cargo install rm-improved`, `brew install rm-improved`
+```sh
+cargo install rm-improved
+
+brew install rm-improved
+```
+
+## flags
+
+```sh
+-d, --decompose    permanently deletes (unlink) the entire graveyard
+```
 
 ## usage
 
 ```sh
-# flags
-# -d, --decompose    permanently deletes (unlink) the entire graveyard
-
 rip -u      # undo last deletion
 ```
 

@@ -1,15 +1,15 @@
 ---
-tags: [ssh]
+tags: [crypto, ssh]
 title: ssh-keygen
 created: '2019-07-30T06:19:49.245Z'
-modified: '2022-01-20T19:36:47.284Z'
+modified: '2023-03-25T12:05:18.585Z'
 ---
 
 # ssh-keygen
 
 > tool for creating new authentication key pairs for [[ssh]]
 
-## usage
+## flags
 
 ```sh
 -t TYPE             # key-types: rs1, dsa, ecdsa, ed25519, rsa
@@ -20,6 +20,8 @@ modified: '2022-01-20T19:36:47.284Z'
 -a ROUNDS           # When saving a new-format private key (i.e. an ed25519 key or when the -o flag is set)
 -P PASSPHRASE       # passphrase, "" is the empty passphrase
 ```
+
+## usage
 
 ```sh
 ssh-keygen -t rsa -b 4096 -C "john@example.net"    # generate ssh-key 4096-bit rsa

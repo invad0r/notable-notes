@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: rar
 created: '2023-01-27T09:01:58.297Z'
-modified: '2023-03-22T10:31:38.264Z'
+modified: '2023-03-25T12:26:05.034Z'
 ---
 
 # rar

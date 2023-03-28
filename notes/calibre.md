@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: calibre
 created: '2021-02-25T16:55:40.941Z'
-modified: '2023-03-23T10:13:01.700Z'
+modified: '2023-03-25T12:25:33.854Z'
 ---
 
 # calibre
@@ -9,8 +10,8 @@ modified: '2023-03-23T10:13:01.700Z'
 ## install
 
 ```sh
-brew install --cask calibre
-apt install calibre
+brew    install --cask calibre
+apt-get install calibre
 ```
 
 ## usage

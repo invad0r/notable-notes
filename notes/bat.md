@@ -1,7 +1,8 @@
 ---
+tags: [linux, shell]
 title: bat
 created: '2022-01-18T11:18:10.918Z'
-modified: '2022-01-18T11:25:11.878Z'
+modified: '2023-03-25T12:24:03.868Z'
 ---
 
 # bat
@@ -10,14 +11,18 @@ modified: '2022-01-18T11:25:11.878Z'
 
 ## install
 
-`brew install bat`
+```sh
+brew install bat
+```
 
-## usage
+## flag
 
 ```sh
 -A      # Show and highlight non-printable characters
 -n      # show line numbers (only)
 ```
+
+## usage
 
 ```sh
 bat FILE

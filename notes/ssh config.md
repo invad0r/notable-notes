@@ -1,8 +1,8 @@
 ---
-tags: [ssh]
+tags: [crypto, ssh]
 title: ssh config
 created: '2019-08-22T08:32:53.895Z'
-modified: '2022-01-31T19:01:34.628Z'
+modified: '2023-03-25T12:05:48.987Z'
 ---
 
 # ssh config
@@ -10,6 +10,7 @@ modified: '2022-01-31T19:01:34.628Z'
 > ssh client configuration
 
 ## usage
+
 ```sh
 man ssh_config
 
