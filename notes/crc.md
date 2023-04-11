@@ -14,7 +14,7 @@ modified: '2023-03-22T10:24:05.502Z'
 ```sh
 ```
 
-## flags
+## option
 
 ```sh
 -h, --help                # help for crc

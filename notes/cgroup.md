@@ -1,16 +1,20 @@
 ---
-tags: [container]
+tags: [container, linux]
 title: cgroup
 created: '2020-02-26T12:44:48.090Z'
-modified: '2020-09-02T17:29:30.916Z'
+modified: '2023-04-11T20:23:05.675Z'
 ---
 
 # cgroup
 
 ## install
-`yum install libcgroup libcgroup-tools`
+
+```sh
+yum install libcgroup libcgroup-tools
+```
 
 ## usage
+
 ```sh
 lssubsys -am    # show all subsystems (unmounted ones) and mountpoints
 
@@ -24,7 +28,9 @@ cgexec -g "cpu,cpuacct,memory:$CGROUP_ID" \
   chroot "$PWD" \
   /bin/sh -c "/bin/mount -t proc proc /proc && hostname container-fun-times && /usr/bin/fish"
 ```
+
 ## see also
+
 - [[docker]]
-- [[what is a container]]
-- https://twitter.com/b0rk/status/1230606332681691136
+- [[container]]
+- [twitter.com/b0rk/status/1230606332681691136](https://twitter.com/b0rk/status/1230606332681691136)

@@ -1,8 +1,8 @@
 ---
-tags: [container]
+tags: [container, iac, python]
 title: localstack
 created: '2021-05-27T08:52:44.663Z'
-modified: '2022-02-01T14:50:54.662Z'
+modified: '2023-04-11T20:20:29.945Z'
 ---
 
 # localstack
@@ -11,7 +11,9 @@ modified: '2022-02-01T14:50:54.662Z'
 
 ## install
 
-`pip install localstack`
+```sh
+pip install localstack
+```
 
 ## usage
 

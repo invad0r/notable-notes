@@ -9,7 +9,7 @@ modified: '2023-03-25T12:25:53.994Z'
 
 > concatenate and print files in reverse
 
-## flags
+## option
 
 ```sh
 -b, --before                # attach the separator before instead of after

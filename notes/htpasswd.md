@@ -9,7 +9,7 @@ modified: '2023-03-24T08:19:14.013Z'
 
 > used to create and update the flat-files used to store usernames and password for basic authentication of HTTP users
 
-## flag
+## option
 
 ```sh
 -n     # display results on standard output rather than updating a file

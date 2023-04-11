@@ -2,7 +2,7 @@
 tags: [container]
 title: k9s
 created: '2022-02-02T11:10:11.308Z'
-modified: '2023-03-22T10:19:58.568Z'
+modified: '2023-04-11T20:18:36.288Z'
 ---
 
 # k9s
@@ -11,7 +11,14 @@ modified: '2023-03-22T10:19:58.568Z'
 
 ## install
 
-`brew install derailed/k9s/k9s`
+```sh
+brew install derailed/k9s/k9s
+```
+
+## option
+
+```sh
+```
 
 ## usage
 

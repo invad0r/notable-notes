@@ -30,7 +30,7 @@ apt-get install ldap-utils
 LDAPTLS_REQCERT
 ```
 
-## flags
+## option
 
 ```sh
 -d LEVEL      # useful for debugging ldapmodify and ldapadd: 1=Trace, 2=Packets, 4=Arguments, 32=Filters, 128=ACL

@@ -2,14 +2,14 @@
 tags: [shell/bash/builtin]
 title: bash echo
 created: '2019-08-02T06:42:37.582Z'
-modified: '2022-11-25T11:23:48.428Z'
+modified: '2023-04-11T11:11:17.638Z'
 ---
 
 # bash echo
 
 > write arguments to stdout
 
-## flags
+## option
 
 ```sh
 -n        # do not append a newline
@@ -23,9 +23,34 @@ modified: '2022-11-25T11:23:48.428Z'
 echo -n "USER:PWD" | base64     # not linebreak !
 ```
 
+## url encoding
+
+> urls can only be sent over the Internet using the ASCII character-set.
+
+- urls often contain characters outside the `ascii` set and has to be converted into a valid `ascii` format
+- url encoding replaces unsafe `ascii` characters with a `%` followed by two hexadecimal digits
+- urls cannot contain spaces - encoding normally replaces a space with a `+` sign or with `%20`
+
+```sh
+# encode
+echo -ne 'some random\nbytes' | xxd -plain | tr -d '\n' | sed 's/\(..\)/%\1/g'
+curl -s -o /dev/null -w "%{url_effective}\n" --get --data-urlencode "some random" --data-urlencode "foo=bar" ""
+
+# decode
+url_decode ()
+{
+    : "${*//+/ }";
+    echo -e "${_//%/\\x}"
+}
+```
+
 ## see also
 
 - [[bash printf]]
 - [[base64]]
 - [[bash variables]]
 - [[od]]
+- [[ascii]]
+- [[xxd]]
+- [[tr]]
+- [how-to-urlencode-data-for-curl-command](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)

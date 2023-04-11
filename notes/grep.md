@@ -9,7 +9,7 @@ modified: '2022-11-29T08:07:27.584Z'
 
 > file pattern searcher - derived from [[ed]] operation `g/re/p`
 
-## flags
+## option
 
 ```sh
 -s, --no-messages              # suppress error messages

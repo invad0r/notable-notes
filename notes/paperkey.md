@@ -15,7 +15,7 @@ modified: '2023-03-24T08:22:22.393Z'
 brew install paperkey
 ```
 
-## flag
+## option
 
 ```sh
 -o, --output-type TYPE    # TYPES

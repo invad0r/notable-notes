@@ -17,7 +17,7 @@ apt   install gettext-base
 yum   install gettext
 ```
 
-## flag
+## option
 
 ```sh
 -v, --variables      # output the variables occurring in SHELL-FORMAT

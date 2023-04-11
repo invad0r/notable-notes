@@ -11,7 +11,7 @@ modified: '2023-03-23T10:17:46.175Z'
 > or a file in `/etc/apt/sources.list.d/` 
 > or removes an already existing repository
 
-## flags
+## option
 
 ```sh
 -h, --help              # show help message and exit

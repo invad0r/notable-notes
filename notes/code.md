@@ -9,7 +9,7 @@ modified: '2022-10-25T14:43:23.840Z'
 
 > cli bash-wrapper staring visual studio code
 
-## flags
+## option
 
 ```sh
 -h --help                               # print usage

@@ -19,7 +19,7 @@ cargo install rm-improved
 brew install rm-improved
 ```
 
-## flags
+## option
 
 ```sh
 -d, --decompose    permanently deletes (unlink) the entire graveyard

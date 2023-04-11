@@ -17,7 +17,7 @@ apt   install iproute
 brew  install ss
 ```
 
-## flag
+## option
 
 ```sh
 -a      # Show all sockets (listening and non-listening)

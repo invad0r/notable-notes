@@ -2,12 +2,18 @@
 tags: [linux]
 title: sed
 created: '2019-07-30T06:19:49.228Z'
-modified: '2022-01-31T14:00:17.343Z'
+modified: '2023-04-11T11:01:21.058Z'
 ---
 
 # sed
 
 > `Stream EDitor`
+
+## install
+
+```sh
+brew install gsed
+```
 
 ## usage
 

@@ -2,7 +2,7 @@
 tags: [iproute, network]
 title: ip
 created: '2019-09-03T11:51:54.855Z'
-modified: '2022-03-04T07:44:42.167Z'
+modified: '2023-04-11T20:13:58.411Z'
 ---
 
 # ip
@@ -10,9 +10,13 @@ modified: '2022-03-04T07:44:42.167Z'
 > edits and displays the configuration of network interfaces, routing, and tunnels
 
 ## install
-`apt install iproute2`, `yum install iproute`
 
-## flags
+```SH
+apt install iproute2
+yum install iproute
+```
+
+## option
 
 ```sh
 -s, -stats, -statistics       # Output more information. -s -s => more verbose

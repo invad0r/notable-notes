@@ -24,7 +24,7 @@ cmctl completion bash >$(brew --prefix)/etc/bash_completion.d/cmctl
 ```sh
 ```
 
-## flags
+## option
 
 ```sh
 ```

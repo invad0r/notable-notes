@@ -15,7 +15,7 @@ modified: '2023-03-22T10:19:58.630Z'
 brew tap weaveworks/tap && brew install weaveworks/tap/eksctl
 ```
 
-## flags
+## option
 
 ```sh
 --profile=PROFILE       # aws profile used to connect

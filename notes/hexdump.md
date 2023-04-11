@@ -9,7 +9,7 @@ modified: '2022-11-25T11:35:37.692Z'
 
 > `hexdump` utility is a filter which displays specified files, or the STDIN, if no files are specified, in a user specified format
 
-## flags
+## option
 
 ```sh
 -b                  # display one-byte octal 

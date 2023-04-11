@@ -15,7 +15,7 @@ modified: '2023-03-22T10:56:07.227Z'
 pip3 install xkcdpass
 ```
 
-## flag
+## option
 
 ```sh
 -h,             --help                         # show this help message and exit

@@ -19,7 +19,7 @@ GO111MODULE=on go get github.com/mikefarah/yq/v4        # from source
 yq shell-completion bash > /etc/bash_completion.d/yq    # install bach_completion
 ```
 
-## flags
+## option
 
 ```sh
 -C, --colors                  # force print with colors

@@ -9,7 +9,7 @@ modified: '2023-03-25T12:05:18.585Z'
 
 > tool for creating new authentication key pairs for [[ssh]]
 
-## flags
+## option
 
 ```sh
 -t TYPE             # key-types: rs1, dsa, ecdsa, ed25519, rsa

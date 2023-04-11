@@ -13,7 +13,7 @@ modified: '2023-03-23T08:48:25.701Z'
 brew install iam-policy-json-to-terraform
 ```
 
-## flags
+## option
 
 ```sh
 -name string    # name of the policy in generated hcl (default "policy")

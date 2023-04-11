@@ -15,7 +15,7 @@ modified: '2023-03-25T12:48:59.536Z'
 brew install wireshark --with-qt
 ```
 
-## flag
+## option
 
 ```sh
 -k                        # start capturing immediately

@@ -9,7 +9,7 @@ modified: '2022-04-06T08:37:58.499Z'
 
 > copy files and set attributes, but also change ownership/permissions and remove debugging symbols from executables
 
-## flags
+## option
 
 ```sh
 -g, --group=GROUP               # set group ownership, instead of process' current group

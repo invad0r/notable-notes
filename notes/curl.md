@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2023-03-15T08:24:53.787Z'
+modified: '2023-04-11T11:12:08.960Z'
 ---
 
 # curl
@@ -15,7 +15,7 @@ modified: '2023-03-15T08:24:53.787Z'
 brew install curl
 ```
 
-## flags
+## option
 
 ```sh
 -O                         # write output to a file named like original
@@ -142,7 +142,7 @@ curl gopher://gopherddit.com
 - [[telnet]]
 - [[xargs]]
 - [[bash exec]]
-- [[url encoding]]
+- [[bash echo]]
 - [everything.curl.dev](https://everything.curl.dev/)
 - [curl and HTTP 1.1 keepalive test traffic](http://lzone.de/blog/curl+and+HTTP+1.1+keepalive+test+traffic)
 - [loige.co/extracting-data-from-wikipedia](http://loige.co/extracting-data-from-wikipedia-using-curl-grep-cut-and-other-bash-commands)

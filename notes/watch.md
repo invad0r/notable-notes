@@ -15,7 +15,7 @@ modified: '2023-03-25T12:31:26.967Z'
 WATCH_INTERVAL            # persistently set a non-default interval
 ```
 
-## flags
+## option
 
 ```sh
 -n, --interval SECONDS    # update interval,  will not allow quicker than 0.1 second interval, in which the smaller values are converted 

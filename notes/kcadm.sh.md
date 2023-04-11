@@ -16,7 +16,7 @@ tar xzf keycloak-8.0.1.tar.gz && mv keycloak-8.0.1 ~/bin
 export PATH="$PATH:$HOME/bin/keycloak-8.0.1/bin"
 ```
 
-## flags
+## option
 
 ```sh
 -r, --target-realm REALM        # Target realm to issue requests against if not the one authenticated against

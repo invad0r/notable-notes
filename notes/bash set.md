@@ -10,7 +10,7 @@ modified: '2023-03-22T10:07:28.455Z'
 > set/unset values and attributes of shell variables and functions.
 > modify shell behavior - [[bash set]] or [[bash unset]] values of shell options and positional parameters
 
-## flags
+## option
 
 ```sh
 # set                   # unset

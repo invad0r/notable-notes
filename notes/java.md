@@ -9,7 +9,7 @@ modified: '2023-03-27T06:09:06.655Z'
 
 > `java virtual machine` - java application launcher
 
-## flags
+## option
 
 ```sh
 -version                              # current version

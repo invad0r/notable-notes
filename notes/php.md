@@ -9,7 +9,7 @@ modified: '2023-03-22T08:31:34.655Z'
 
 > general-purpose scripting language
 
-## flags
+## option
 
 ```sh
 php -i 

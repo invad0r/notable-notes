@@ -9,7 +9,7 @@ modified: '2023-03-24T08:23:34.442Z'
 
 > change file access and modification times
 
-## flags
+## option
 
 ```sh
 -d      # change the access and modification times to the specified date time instead of the current time of day be in local time

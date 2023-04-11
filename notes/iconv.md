@@ -9,7 +9,7 @@ modified: '2023-03-25T12:15:23.899Z'
 
 > convert some text in one encoding into another encoding
 
-## flag
+## option
 
 ```sh
 -f FROM,  –from-code=FROM    # use FROM encoding for input characters

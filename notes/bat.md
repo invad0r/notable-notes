@@ -15,7 +15,7 @@ modified: '2023-03-25T12:24:03.868Z'
 brew install bat
 ```
 
-## flag
+## option
 
 ```sh
 -A      # Show and highlight non-printable characters

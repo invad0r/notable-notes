@@ -21,7 +21,7 @@ output:  file.i          => file.s    => ile.o    => file
 yum -y install gcc
 ```
 
-## flags
+## option
 
 ```sh
 -o FILE     # output file

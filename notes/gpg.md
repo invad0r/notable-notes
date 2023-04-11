@@ -23,7 +23,7 @@ apt  install gpg2
 ```
 
 
-## flags
+## option
 
 ```sh
 # not specific to the function

@@ -9,7 +9,7 @@ modified: '2023-03-22T08:46:06.920Z'
 
 > walk a file hierarchy
 
-## flags
+## option
 
 ```sh
 -type

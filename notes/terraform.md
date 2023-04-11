@@ -2,12 +2,18 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2023-03-22T09:52:22.099Z'
+modified: '2023-04-11T20:21:15.601Z'
 ---
 
 # terraform
 
 > tool for building, changing, and versioning infrastructure safely and efficiently
+
+## install
+
+```sh
+tfswitch 0.14.4
+```
 
 ## environment variables
 

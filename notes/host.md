@@ -15,7 +15,7 @@ modified: '2023-03-20T08:52:12.648Z'
 brew install bind
 ```
 
-## flags
+## option
 
 ```sh
 -t          # is used to select the query type (CNAME, NS, SOA, SIG, KEY, AXFR,..)

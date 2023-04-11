@@ -9,7 +9,7 @@ modified: '2023-03-15T07:20:00.593Z'
 
 > display file status
 
-## flags
+## option
 
 ```sh
 -l          # display output in ls -lT format

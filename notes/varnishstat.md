@@ -6,7 +6,7 @@ modified: '2023-03-22T11:02:49.852Z'
 
 # varnishstat
 
-## flag
+## option
 
 ```sh
 -1       # instead continuously updated display print to stdout

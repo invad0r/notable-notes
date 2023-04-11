@@ -22,7 +22,7 @@ sdk use     java 22.3.r19-grl
 GRAALVM_HOME=$HOME/Development/graalvm/Contents/Home/
 ```
 
-## flags
+## option
 
 ```sh
 -A, --auto-yes               # respond YES or ACCEPT to all questions

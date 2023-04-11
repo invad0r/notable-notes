@@ -24,7 +24,7 @@ ETCDCTL_KEY           # tmp/key.pem
 ETCDCTL_ENDPOINTS     #
 ```
 
-## flag
+## option
 
 ```sh
     --cacert=""                              # verify certificates of TLS-enabled secure servers using this CA bundle

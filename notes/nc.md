@@ -17,7 +17,7 @@ apt  install netcat
 yum  install netcat
 ```
 
-## flag
+## option
 
 ```sh
 -h, --help                 # display this help and exit

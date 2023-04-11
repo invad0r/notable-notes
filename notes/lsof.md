@@ -19,7 +19,7 @@ dnf     install lsof
 apk     add     lsof
 ```
 
-## flag
+## option
 
 ```sh
 -i :PORT        #

@@ -9,7 +9,7 @@ modified: '2023-03-25T12:07:04.576Z'
 
 >  adds private key identities to the authentication agent
 
-## flag
+## option
 
 ```sh
 -l             # list fingerprints of all identities currently represented by the agent

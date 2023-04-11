@@ -2,14 +2,20 @@
 tags: [container]
 title: kubectx
 created: '2020-10-09T09:19:33.429Z'
-modified: '2022-02-02T13:52:37.089Z'
+modified: '2023-04-11T20:19:07.330Z'
 ---
 
 # kubectx
 
 > switch between clusters
 
-## usage
+## install
+
+```sh
+brew install derailed/k9s/k9s
+```
+
+## option
 
 ```sh
 -c, --current             # show the current context name
@@ -17,6 +23,8 @@ modified: '2022-02-02T13:52:37.089Z'
 -u, --unset               # unset the current context
 -h, --help                # show this message
 ```
+
+## usage
 
 ```sh
 kubectx                   # list the contexts

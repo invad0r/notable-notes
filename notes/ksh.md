@@ -9,7 +9,7 @@ modified: '2023-03-22T10:04:17.277Z'
 
 > korn shell
 
-## flags
+## option
 
 ```sh
 -c COMMAND              # command string 

@@ -46,7 +46,7 @@ AWS_WEB_IDENTITY_TOKEN_FILE         # path to file containing an OAuth 2.0 acces
 
 [docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
 
-## flags
+## option
 
 ```sh
 --color STRING              # support for color output: on, off, auto

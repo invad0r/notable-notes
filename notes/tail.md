@@ -9,7 +9,7 @@ modified: '2023-03-16T13:39:17.500Z'
 
 > print last 10 lines of FILE or `stdin` to `stdout`, with more than one FILE, precede each with a filename header
 
-## flag
+## option
 
 ```sh
 -q                # never print headers

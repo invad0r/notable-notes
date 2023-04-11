@@ -9,7 +9,7 @@ modified: '2023-03-13T09:21:51.496Z'
 
 > print sequences of numbers
 
-## flags
+## option
 
 ```sh
 -f FRMT,  --format FRMT        # printf(3) style format Only the %A, %a, %E, %e, %F, %f, %G, %g are valid

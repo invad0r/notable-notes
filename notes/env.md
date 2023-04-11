@@ -9,7 +9,7 @@ modified: '2023-03-27T05:23:16.856Z'
 
 > set environment and execute command, or print environment
 
-## flag
+## option
 
 ```sh
 -i            # execute utility with only those environment variables specified by name=value options, the environment inherited by env is ignored completely

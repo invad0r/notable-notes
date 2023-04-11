@@ -1,7 +1,7 @@
 ---
 title: markdown
 created: '2019-08-20T08:24:21.200Z'
-modified: '2023-03-23T09:31:57.147Z'
+modified: '2023-04-11T20:27:58.106Z'
 ---
 
 # markdown
@@ -49,3 +49,4 @@ modified: '2023-03-23T09:31:57.147Z'
 - [markdown extra](https://michelf.ca/projects/php-markdown/extra/#table)
 - [resources/tutorial/notes - github.com](https://github.com/notable/notable/tree/master/resources/tutorial/notes)
 - [makeuseof.com/create-markdown-table/](https://www.makeuseof.com/tag/create-markdown-table/)
+- [[markdownlint]]

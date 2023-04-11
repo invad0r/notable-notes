@@ -15,7 +15,7 @@ modified: '2023-03-15T07:52:29.916Z'
 brew install coreutils
 ```
 
-## flags
+## option
 
 ```sh
 -u, --utc, --universal      #  print or set UTC (=Coordinated Universal Time)

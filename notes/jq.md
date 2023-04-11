@@ -15,7 +15,7 @@ modified: '2023-03-22T10:27:29.820Z'
 brew install jq
 ```
 
-## flags
+## option
 
 ```sh
 -c, --compact-output    # compact to single line,1 no pretty print

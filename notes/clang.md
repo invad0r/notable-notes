@@ -9,7 +9,7 @@ modified: '2023-03-25T12:52:52.956Z'
 
 > [[c]], [[c++]], and [[objective-c]] compiler encompassing preprocessing, parsing, optimization, code generation, assembly, and linking
 
-## flag
+## option
 
 ```sh
 --target=wasm32         # tells a compiler to use WebAssembly as a target for compilation.

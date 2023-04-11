@@ -9,7 +9,7 @@ modified: '2023-03-22T08:19:12.976Z'
 
 > kill signal processes by name
 
-## flag
+## option
 
 ```sh
  -f         # match against full argument lists.  The default is to match against process names

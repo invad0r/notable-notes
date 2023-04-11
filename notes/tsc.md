@@ -13,7 +13,7 @@ modified: '2023-03-22T10:43:25.146Z'
 npm install typescript
 ```
 
-## flags
+## option
 
 ```sh
 -h, --help            # Print this message

@@ -16,7 +16,7 @@ curl -LO https://raw.githubusercontent.com/awslabs/amazon-eks-ami/master/files/m
 chmod +x max-pods-calculator.sh
 ```
 
-## flags
+## option
 
 ```sh
 -h, --help                          # print this help

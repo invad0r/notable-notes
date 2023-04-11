@@ -20,7 +20,7 @@ sdk install gradle        # install the latest Gradle
 sdk install gradle 3.0    # install a spefic gradle version
 ```
 
-## flags
+## option
 
 ```sh
 -v, --version       # display version

@@ -2,7 +2,7 @@
 tags: [iac]
 title: tfswitch
 created: '2021-01-18T10:13:21.713Z'
-modified: '2021-10-29T12:45:45.993Z'
+modified: '2023-04-11T20:21:34.889Z'
 ---
 
 # tfswitch
@@ -11,7 +11,9 @@ modified: '2021-10-29T12:45:45.993Z'
 
 ## install
 
-`brew install warrensbox/tap/tfswitch`
+```sh
+brew install warrensbox/tap/tfswitch
+```
 
 ## usage
 

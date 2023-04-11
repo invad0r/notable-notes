@@ -15,7 +15,7 @@ modified: '2023-03-24T08:21:44.717Z'
 brew install mdp
 ```
 
-## flags
+## option
 
 ```sh
 -d, --debug           # enable debug messages on STDERR, add it multiple times to increases debug level

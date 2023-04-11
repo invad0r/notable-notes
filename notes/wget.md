@@ -16,7 +16,7 @@ apt-get install wget
 yum install wget
 ```
 
-## flags
+## option
 
 ```sh
 -q        # no stdout

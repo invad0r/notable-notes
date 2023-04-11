@@ -2,7 +2,7 @@
 tags: [editor]
 title: idea
 created: '2020-08-26T06:33:22.925Z'
-modified: '2020-09-01T13:07:40.535Z'
+modified: '2023-04-11T20:16:27.116Z'
 ---
 
 # idea
@@ -10,14 +10,21 @@ modified: '2020-09-01T13:07:40.535Z'
 > python scrip starting up intellij
 
 ## install
-`Tools->Create Command-Line Launcher...`
+
+```sh
+# Tools->Create Command-Line Launcher...
+```
+
+## option
+
+```sh
+-h, --help      # -
+-w, --wait      # -
+```
 
 ## usage
-```sh
-# options:
-# -h, --help
-# -w, --wait
 
+```sh
 idea DIR
 
 idea diff LEFT RIGHT        # launch diff tool
@@ -35,6 +42,7 @@ idea merge LOCAL REMOTE
 <kbd>Shift + Ctrl + G </kbd>   # unselect next occurrence
 
 ## see also
+
 - [[atom]]
 - [[code]]
 - [emmanuelbernard.com/blog/start-intellij-idea-command-line](https://emmanuelbernard.com/blog/2017/02/27/start-intellij-idea-command-line/)

@@ -9,7 +9,7 @@ modified: '2022-05-30T06:31:59.582Z'
 
 > manages active developer directory for Xcode and BSD tools
 
-## flags
+## option
 
 ```sh
 -s PATH, --switch PATH    # sets the active developer directory to PATH

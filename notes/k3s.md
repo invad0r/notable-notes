@@ -2,12 +2,22 @@
 tags: [container]
 title: k3s
 created: '2021-10-15T07:36:40.840Z'
-modified: '2023-03-16T08:49:37.052Z'
+modified: '2023-04-11T20:18:20.808Z'
 ---
 
 # k3s
 
 > lightweight kubernetes distro aimed for developers & IoT devices
+
+## install
+
+```sh
+```
+
+## option
+
+```sh
+```
 
 ## usage
 

@@ -9,7 +9,7 @@ modified: '2022-05-03T07:44:31.166Z'
 
 > synonym for [[bash mapfile]] - read lines from a FILE into an array variable
 
-## flags
+## option
 
 ```sh
 -d DELIM            # delimiter to terminate lines, instead of newline

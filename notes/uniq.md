@@ -9,7 +9,7 @@ modified: '2022-04-23T10:07:26.945Z'
 
 > report or filter out repeated lines in a file
 
-## flags
+## option
 
 ```sh
 -c, --count                   # Precede each line with count of number of times line occurred in the input

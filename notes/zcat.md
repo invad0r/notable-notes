@@ -9,7 +9,7 @@ modified: '2023-03-25T12:09:55.405Z'
 
 > expands a compressed file to STDOUT
 
-## flag
+## option
 
 ```sh
 -n        # omits compressed file header from the compressed file

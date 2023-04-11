@@ -9,7 +9,7 @@ modified: '2023-03-22T09:28:47.588Z'
 
 > copy data from `stdin` to clipboard
 
-## flags
+## option
 
 ```sh
 -pboard {general | ruler | find | font}      # specifies pasteboard to copy or paste from. default: general

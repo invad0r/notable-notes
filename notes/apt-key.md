@@ -11,7 +11,7 @@ modified: '2023-03-22T09:16:47.409Z'
 
 `apt-key` supports only the binary `openPGP` format (`"GPG key public ring"`) in files with the [[gpg]] extension
 
-## flags
+## option
 
 ```sh
 -v, --version             # get version

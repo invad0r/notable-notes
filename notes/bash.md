@@ -12,7 +12,7 @@ modified: '2022-04-06T11:37:34.390Z'
 
 [gnu.org/what-is-a-shell](https://www.gnu.org/software/bash/manual/html_node/What-is-a-shell_003f.html)
 
-## flags
+## option
 
 ```sh
 # option    name	                effect

@@ -9,7 +9,7 @@ modified: '2023-03-15T07:17:21.133Z'
 
 > formats and prints ARGUMENTS under control of the FORMAT
 
-## flag
+## option
 
 ```sh
 -v VAR   # assign the output to shell variable VAR rather than display it on the standard output

@@ -9,7 +9,7 @@ modified: '2022-05-30T06:34:02.410Z'
 
 > columnate lists
 
-## flags
+## option
 
 ```sh
 -s        # characters to be used to delimit columns for the -t option (default: delimited with whitespace)

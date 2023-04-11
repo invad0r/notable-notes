@@ -9,7 +9,7 @@ modified: '2022-04-06T08:37:14.754Z'
 
 > system software and package installer tool
 
-## flags
+## option
 
 ```sh
 -dominfo                # displays list of domains into which a package can be installed e.g. LocalSystem or CurrentUserHomeDirectory

@@ -9,7 +9,7 @@ modified: '2022-06-16T10:55:57.225Z'
 
 > report time consumed by pipeline's execution
 
-## flags
+## option
 
 ```sh
 -p     # print the timing summary in the portable Posix format

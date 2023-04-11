@@ -15,7 +15,7 @@ modified: '2023-03-25T12:30:39.463Z'
 brew install entr
 ```
 
-## flags
+## option
 
 ```sh
 -a    # respond to all events which occur while the utility is running. Without this option, entr consolidates events in order to avoid looping

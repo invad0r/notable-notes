@@ -11,7 +11,7 @@ modified: '2023-01-27T09:08:33.675Z'
 
 `.tgz` is same as `.tar.gz`/`.tar.gzip`
 
-## flags
+## option
 
 ```sh
 -c          # create archive

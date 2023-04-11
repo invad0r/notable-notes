@@ -25,7 +25,7 @@ apk add --no-cache bind-tools
 IDN_DISABLE       # turn off IDN support
 ```
 
-## flags
+## option
 
 ```sh
 -h                # Print a usage summary

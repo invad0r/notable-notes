@@ -9,7 +9,7 @@ modified: '2023-03-22T10:32:03.357Z'
 
 > word count
 
-## flags
+## option
 
 ```sh
 -c      # number of bytes      in each input file is written to the STDOUT

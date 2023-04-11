@@ -17,7 +17,7 @@ apt  install nmap
 yum  install nmap
 ```
 
-## flags
+## option
 
 ```sh
 # scanning options

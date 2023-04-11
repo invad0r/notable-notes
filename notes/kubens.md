@@ -2,19 +2,27 @@
 tags: [container]
 title: kubens
 created: '2020-10-12T10:37:20.976Z'
-modified: '2022-02-02T13:52:32.012Z'
+modified: '2023-04-11T20:19:40.337Z'
 ---
 
 # kubens
 
 > switch between kubernetes namespaces
 
-## usage
+## install
+
+```sh
+brew install derailed/k9s/k9s
+```
+
+## option
 
 ```sh
 -c, --current             # show the current namespace
 -h, --help                # show this message
 ```
+
+## usage
 
 ```sh
 kubens                    # list the namespaces in the current context

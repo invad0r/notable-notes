@@ -9,7 +9,7 @@ modified: '2022-06-20T06:42:05.132Z'
 
 > list directory contents
 
-## flags
+## option
 
 ```sh
 -1                 # force output to be one entry per line.

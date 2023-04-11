@@ -11,7 +11,7 @@ modified: '2023-03-27T07:47:06.030Z'
 > `javac` accepts source code conforming to the [[java]] language specification (JLS) and produces Java bytecode conforming to the Java Virtual Machine Specification (JVMS)
 > `javac` is itself written in [[java]]. The compiler can also be invoked programmatically
 
-## flag
+## option
 
 ```sh
 --help,                 -help,                 -?         # print this help message

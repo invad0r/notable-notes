@@ -15,7 +15,7 @@ modified: '2023-03-22T10:39:44.062Z'
 brew install findutils      # as gxargs
 ```
 
-## flags
+## option
 
 ```sh
 -I REPL_STR         # Execute utility for each input line, replacing one or more occurrences of replstr in up to replacements

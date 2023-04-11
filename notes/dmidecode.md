@@ -9,7 +9,7 @@ modified: '2023-03-25T12:26:34.344Z'
 
 > DMI table decoder  - tool for dumping a computer's DMI (some say SMBIOS ) table contents in a human-readable format.
 
-## flag
+## option
 
 ```sh
 -t, --type TYPE         #

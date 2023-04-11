@@ -23,7 +23,7 @@ KUBECONFIG          # alternative kube config
 KUBE_EDITOR         # -
 ```
 
-## flags
+## option
 
 ```sh
 -v

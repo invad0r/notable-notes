@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: tr
 created: '2019-07-30T06:19:49.255Z'
-modified: '2022-01-31T13:59:54.409Z'
+modified: '2023-04-11T11:12:03.422Z'
 ---
 
 # tr
@@ -31,5 +31,5 @@ EOF
 - [[cut]]
 - [[sed]]
 - [[seq]]
-- [[url encoding]]
+- [[bash echo]]
 - [[bash parameter expansion]]

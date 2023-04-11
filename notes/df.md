@@ -9,7 +9,7 @@ modified: '2023-03-22T09:13:08.619Z'
 
 > `disk free` reports the amount of available disk space being used by file systems.
 
-## flags
+## option
 
 ```sh
 -h, --human-readable      # human readable, print sizes in powers of 1024 (e.g., 1023M)

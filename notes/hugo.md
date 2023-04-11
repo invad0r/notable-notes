@@ -15,7 +15,7 @@ modified: '2023-03-22T11:06:37.375Z'
 brew install hugo
 ```
 
-## flags
+## option
 
 ```sh
 -b, --baseURL string          # hostname (and path) to the root, e.g. https://spf13.com/

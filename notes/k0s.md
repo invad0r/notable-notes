@@ -2,7 +2,7 @@
 tags: [container]
 title: k0s
 created: '2022-01-27T09:47:59.070Z'
-modified: '2023-03-22T10:19:58.587Z'
+modified: '2023-04-11T20:17:59.474Z'
 ---
 
 # k0s
@@ -11,13 +11,19 @@ modified: '2023-03-22T10:19:58.587Z'
 
 ## install
 
-`curl -sSLf https://get.k0s.sh | sudo sh`
+```sh
+curl -sSLf https://get.k0s.sh | sudo sh
+```
+
+## option
+
+```sh
+--help
+```
 
 ## usage
 
 ```sh
-k0s --help
-
 k0s install controller --single
 
 k0s start

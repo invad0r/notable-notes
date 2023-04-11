@@ -21,7 +21,7 @@ brew install node
 NODE_OPTIONS=--max-old-space-size=32768
 ```
 
-## flags
+## option
 
 ```sh
 -c, --check   # check syntax without executing, exits with error code if script is invalid

@@ -12,7 +12,7 @@ modified: '2023-03-24T08:23:34.433Z'
 After the utility finishes, time writes the total time elapsed, the time consumed by system overhead, and the time used to execute utility to the standard error stream.  
 Times are reported in seconds.
 
-## flag
+## option
 
 ```sh
 -l      # contents of the rusage structure are printed

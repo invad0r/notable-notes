@@ -9,7 +9,7 @@ modified: '2022-06-16T10:54:24.329Z'
 
 > dump traffic on a network
 
-## flags
+## option
 
 ```sh
 -t        # don't print timestamp on each dump line

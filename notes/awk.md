@@ -18,7 +18,7 @@ modified: '2023-03-23T10:13:22.289Z'
 - [[gawk]]: the gnu implementation, with many extensions
 - [[busybox]]: small, intended for embedded systems, not many features
 
-## flags
+## option
 
 ```sh
 -f SCRIPT      # read awk program from file

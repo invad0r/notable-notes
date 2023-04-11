@@ -15,7 +15,7 @@ modified: '2023-03-22T11:04:05.459Z'
 sdk install quarkus
 ```
 
-## flags
+## option
 
 ```sh
 

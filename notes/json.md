@@ -15,7 +15,7 @@ modified: '2023-03-22T10:45:27.350Z'
 npm install -g json
 ```
 
-## flags
+## option
 
 ```sh
 -f FILE           # specify input FILE instead of STDIN

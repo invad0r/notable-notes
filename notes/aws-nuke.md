@@ -50,7 +50,7 @@ resource-types:
 EOF
 ```
 
-## flags
+## option
 
 ```sh
 --no-dry-run              # to actually nuke resources

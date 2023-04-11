@@ -16,7 +16,7 @@ brew    install util-linux
 apt-get install circos-tools 
 ```
 
-## flag
+## option
 
 ```sh
 -a          # append output to FILE or typescript

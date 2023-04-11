@@ -9,7 +9,7 @@ modified: '2023-03-22T10:03:05.385Z'
 
 > provides control over the resources available to the shell and processes it creates, on systems that allow such control
 
-## flag
+## option
 
 ```sh
 -S        # use the `soft` resource limit

@@ -15,7 +15,7 @@ modified: '2023-03-22T09:49:49.262Z'
 brew install coreutils
 ```
 
-## flag
+## option
 
 ```sh
 -d, --delimiter=DELIM     # use DELIM instead of whitespace for field delimiter

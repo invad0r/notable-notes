@@ -17,7 +17,7 @@ brew install alacritty
 cargo install alacritty
 ```
 
-## flags
+## option
 
 ```sh
     --class INSTANCE            # Defines window class/app_id on X11/Wayland [default: Alacritty]

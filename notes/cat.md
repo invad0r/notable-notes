@@ -9,7 +9,7 @@ modified: '2022-06-17T09:24:39.620Z'
 
 > concatenate and print files
 
-## flags
+## option
 
 ```sh
 -e   # display non printin characters

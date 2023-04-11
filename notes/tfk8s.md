@@ -15,7 +15,7 @@ modified: '2023-03-22T10:33:23.155Z'
 brew install tfk8s
 ```
 
-## flags
+## option
 
 ```sh
 -f, --file string         # file containing Kubernetes yaml manifests (default "-")

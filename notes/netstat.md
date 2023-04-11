@@ -18,7 +18,7 @@ zypper  install net-tools
 pacman  -S      netstat-nat
 ```
 
-## flags
+## option
 
 ```sh
 -l, --listening     # show only listening sockets.  (These are omitted by default.)

@@ -16,7 +16,7 @@ apk add graphviz
 brew install graphviz
 ```
 
-## flag
+## option
 
 ```sh
 -Tv       # set output format to 'v'

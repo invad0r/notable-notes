@@ -9,7 +9,7 @@ modified: '2022-03-31T08:08:03.347Z'
 
 > compute and check sha256 message digest
 
-## flags
+## option
 
 ```sh
 -b, --binary            # read in binary mode

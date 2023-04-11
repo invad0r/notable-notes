@@ -9,7 +9,7 @@ modified: '2022-05-30T06:32:48.525Z'
 
 > system software update tool
 
-## flags
+## option
 
 ```sh
 -h, --help             # print command usage

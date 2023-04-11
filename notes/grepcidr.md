@@ -17,7 +17,7 @@ tar xvzf grepcidr-2.0.tar.gz && cd grepcidr-2.0
 make && make install
 ```
 
-## flags
+## option
 
 ```sh
 -V          #  show version

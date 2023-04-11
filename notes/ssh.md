@@ -20,7 +20,7 @@ SSH_ORIGINAL_COMMAND      # set by sshd       - client’s remote command string
 SSH_TTY                   # set by sshd       - name of allocated tty
 ```
 
-## flags
+## option
 
 ```sh
 -n                                         # redirects STDIN from /dev/null which prevents reading from STDIN, used inside loops

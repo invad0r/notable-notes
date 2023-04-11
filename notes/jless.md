@@ -17,7 +17,7 @@ brew install jless
 cargo install jless
 ```
 
-## flags
+## option
 
 ```sh
 -h, --help                     # print help information

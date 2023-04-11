@@ -9,7 +9,7 @@ modified: '2023-03-22T10:40:07.333Z'
 
 > generate configuration scripts
 
-## flags
+## option
 
 ```sh
 # operation modes

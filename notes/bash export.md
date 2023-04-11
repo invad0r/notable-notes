@@ -9,7 +9,7 @@ modified: '2022-03-03T09:23:51.708Z'
 
 > export will make variables/functions available to all shells forked from the current shell.
 
-## flags
+## option
 
 ```sh
 -f                    # refer to shell functions

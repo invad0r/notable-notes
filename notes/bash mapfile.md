@@ -9,7 +9,7 @@ modified: '2022-04-27T14:29:48.400Z'
 
 > read lines from stdin into an indexed array variable
 
-## flag
+## option
 
 ```sh
 -c QUANTUM 	        # Specifies the number of lines that have to be read between every call to the callback specified with -C - default QUANTUM is 5000

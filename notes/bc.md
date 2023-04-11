@@ -9,7 +9,7 @@ modified: '2023-03-22T09:48:39.898Z'
 
 > `basic calculator` is an `arbitrary-precision calculator language`
 
-## flags
+## option
 
 ```sh
 -l, --mathlib       # uses the predefined math routines

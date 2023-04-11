@@ -9,7 +9,7 @@ modified: '2022-04-09T09:39:32.427Z'
 
 > make links between files
 
-## flags
+## option
 
 ```sh
  -F     # if target file already exists and is a directory, then remove it so that the link may occur, should be used with either -f or -i options

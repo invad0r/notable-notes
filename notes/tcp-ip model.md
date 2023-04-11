@@ -2,7 +2,7 @@
 tags: [network]
 title: tcp-ip model
 created: '2021-05-28T06:16:51.067Z'
-modified: '2022-11-16T12:36:05.015Z'
+modified: '2023-04-11T20:35:34.291Z'
 ---
 
 # tcp-ip model
@@ -13,7 +13,7 @@ modified: '2022-11-16T12:36:05.015Z'
 
 ## layers
 
-```
+```txt
 Layer                     |
 --                        |--
 7 http                    | Process/Application Layer
@@ -27,7 +27,7 @@ Layer                     |
 
 `Please Do Not Touch Steve's Pet Aligator` or `Please Do Not Throw Sausage Pizza Away`
 
-```
+```txt
 Layer         |                         |
 --            |--                       |--
 Applicatoin   | End user Layer          | http, ftp, irc, ssh, dns

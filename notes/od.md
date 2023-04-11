@@ -9,7 +9,7 @@ modified: '2022-11-25T11:28:24.762Z'
 
 > `octal dump` - decimal, hex, [[ascii]] dump
 
-## flags
+## option
 
 ```sh
 -b FILE     # displays contents of input in octal format

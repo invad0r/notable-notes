@@ -11,7 +11,7 @@ modified: '2023-03-13T11:20:49.550Z'
 
 ## zip
 
-## flag
+## option
 
 ```sh
 -r, --recurse-paths      # travel the directory structure recursively
@@ -39,7 +39,7 @@ zip -d FILE.jar BOOT-INF/classes/logback/logback-spring.xml   # remove file out 
 
 ## unzip
 
-## flag
+## option
 
 > list, test and extract compressed files in a zip archive
 

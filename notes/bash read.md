@@ -15,7 +15,7 @@ modified: '2022-03-11T08:37:58.622Z'
 REPLY       #
 ```
 
-## flags
+## option
 
 ```sh
 -a          # save to array

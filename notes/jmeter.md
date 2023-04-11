@@ -13,7 +13,7 @@ modified: '2023-03-22T10:22:44.545Z'
 skd install jmeter
 ```
 
-## flags
+## option
 
 ```sh
 -?, --?                           # print command line options and exit

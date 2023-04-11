@@ -9,7 +9,7 @@ modified: '2023-03-22T08:25:30.577Z'
 
 > emscripten
 
-## flags
+## option
 
 ```sh
 -Os                                   # optimize for size: both for wasm and js

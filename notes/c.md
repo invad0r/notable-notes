@@ -2,7 +2,7 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2023-03-25T12:39:15.602Z'
+modified: '2023-04-11T20:39:25.192Z'
 ---
 
 # c
@@ -12,7 +12,7 @@ modified: '2023-03-25T12:39:15.602Z'
 
 ## types
 
-> 4 basic arithmetic type specifiers: `char`, `int`,` float`, `double`
+> 4 basic arithmetic type specifiers: `char`, `int`, `float`, `double`
 > and modifiers: `signed`, `unsigned`, `short`, `long`
 
 ```c

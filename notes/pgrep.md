@@ -9,7 +9,7 @@ modified: '2023-03-24T08:23:34.408Z'
 
 > find signal processes by name
 
-## flag
+## option
 
 ```sh
  -f         # match against full argument lists.  The default is to match against process names

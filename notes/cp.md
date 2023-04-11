@@ -9,7 +9,7 @@ modified: '2022-04-09T09:35:41.742Z'
 
 > copy files
 
-## flags
+## option
 
 ```sh
 -n            # do not overwrite existing file, overrides any previous -f or -i

@@ -22,7 +22,7 @@ brew install ec2-instance-selector
 AWS_PROFILE         # select aws profile
 ```
 
-## flags
+## option
 
 ```sh
 -r REGION           # region

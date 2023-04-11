@@ -9,7 +9,7 @@ modified: '2023-03-22T10:42:51.846Z'
 
 >
 
-## flags
+## option
 
 ```sh
 -?,-h             # show help

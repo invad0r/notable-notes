@@ -77,7 +77,7 @@ go clean -i github.com/motemen/gore...    # remove installed package
 > downloads the packages named by import paths, along with dependencies. Then installs named packages like `go install`
 > ⚠️ has been deprecated for installing binaries since `1.17`
 
-#### flags
+#### option
 
 ```sh
 -d      # stop after downloading the packages; that is, to not install packages

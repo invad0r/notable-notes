@@ -9,7 +9,7 @@ modified: '2023-03-25T12:05:18.593Z'
 
 > gather ssh host public keys from servers
 
-## flag
+## option
 
 ```sh
 -4            # Force ssh-keyscan to use IPv4 addresses only

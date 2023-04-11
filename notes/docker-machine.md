@@ -9,7 +9,7 @@ modified: '2023-03-22T10:10:46.214Z'
 
 > tool that lets you install and manage [[docker]] on virtual hosts
 
-## flags
+## option
 
 ```sh
 

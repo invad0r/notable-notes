@@ -9,7 +9,7 @@ modified: '2023-03-25T12:33:10.563Z'
 
 > perl language interpreter
 
-## flags
+## option
 
 ```sh
 -v                  # print version, patchlevel and license

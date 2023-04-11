@@ -18,7 +18,7 @@ yum install iputils
 ```
 
 
-## flags
+## option
 
 ```sh
 -c count             # stop after sending (and receiving) count ECHO_RESPONSE packets

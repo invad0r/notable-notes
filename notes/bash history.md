@@ -9,7 +9,7 @@ modified: '2022-04-27T14:24:08.446Z'
 
 > display or manipulate the history list
 
-## flags
+## option
 
 ```sh
 -c           # clear the history list by deleting all of the entries

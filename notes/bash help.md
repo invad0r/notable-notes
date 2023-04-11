@@ -9,7 +9,7 @@ modified: '2022-11-25T10:57:31.810Z'
 
 > display information about builtin commands
 
-## flag
+## option
 
 ```sh
 -d              # output short description

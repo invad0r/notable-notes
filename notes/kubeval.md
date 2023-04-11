@@ -15,7 +15,7 @@ modified: '2023-03-25T12:46:10.678Z'
 brew tap instrumenta/instrumenta && brew install kubeval
 ```
 
-## flag
+## option
 
 ```sh
 --output=stdout       # Plaintext

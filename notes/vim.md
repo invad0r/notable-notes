@@ -2,10 +2,22 @@
 tags: [editor]
 title: vim
 created: '2019-07-30T06:19:49.263Z'
-modified: '2023-03-22T09:18:04.331Z'
+modified: '2023-04-11T15:54:28.718Z'
 ---
 
 # vim
+
+> `vi-mproved`
+
+## install
+
+```sh
+```
+
+## option
+
+```sh
+```
 
 ## usage
 

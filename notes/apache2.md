@@ -2,7 +2,7 @@
 tags: [linux]
 title: apache2
 created: '2019-07-30T06:19:48.985Z'
-modified: '2022-02-02T08:52:55.070Z'
+modified: '2023-04-11T15:53:46.578Z'
 ---
 
 # apache2
@@ -11,7 +11,9 @@ modified: '2022-02-02T08:52:55.070Z'
 
 ## install
 
-`apt-get install apache2`
+```sh
+apt-get install apache2
+```
 
 ## usage
 

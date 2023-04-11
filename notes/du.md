@@ -16,7 +16,7 @@ BLOCKSIZE         # if set,     and -k is not specified, the block counts will b
                   # if not set, and -k is not specified, the block counts will be displayed in 512-byte blocks
 ```
 
-## flag
+## option
 
 ```sh
 -c                # display a grand total
