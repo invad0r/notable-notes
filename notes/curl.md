@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: curl
 created: '2019-07-30T06:19:49.032Z'
-modified: '2023-04-11T11:12:08.960Z'
+modified: '2023-04-21T07:24:28.378Z'
 ---
 
 # curl
@@ -13,6 +13,21 @@ modified: '2023-04-11T11:12:08.960Z'
 
 ```sh
 brew install curl
+```
+
+## env
+
+```sh
+CURL_HOME
+```
+
+## config
+
+```sh
+cat <<EOF > ~/.curlrc 
+progress-bar
+-w "\n"
+EOF
 ```
 
 ## option
@@ -35,21 +50,6 @@ brew install curl
 --trace FILE               # full trace dump of all incoming and outgoing data
 ```
 
-## env
-
-```sh
-CURL_HOME
-```
-
-## config
-
-```sh
-cat <<EOF > ~/.curlrc 
-progress-bar
--w "\n"
-EOF
-```
-
 ## usage
 
 ```sh
@@ -63,6 +63,10 @@ curl -XGET --data "param1=val1&param2=val2" "http://HOST/resource"   # sending d
 curl -XGET --form "fileupload=@FILENAME" "http://HOST/resource"      # sending data via GET
 
 curl -XPOST "URL" -d @FILENAME                                      # sending data via POST and filenamedescriptor
+
+# format json data und let curl use data from STDIN
+jq --null-input --arg yaml "$(<FILE.yml)" '.content=$yaml' \
+  | curl "https://HOST/api/v4/ci/lint?include_merged_yaml=true" --header 'Content-Type: application/json' --data @-
 
 
 # data from heredoc

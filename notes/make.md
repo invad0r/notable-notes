@@ -2,18 +2,15 @@
 tags: [buildsystem, c, go]
 title: make
 created: '2019-07-30T06:19:49.167Z'
-modified: '2023-03-25T12:40:40.022Z'
+modified: '2023-05-01T14:37:46.039Z'
 ---
 
 # make
 
-> works on the premise that you have specify a dependency, and then a rule to resolve that dependency [stackoverflow](https://stackoverflow.com/a/2209932/2087704)
-> typically convert a main.c file to a main.o file then run `cc main.c`
+> GNU make utility to maintain groups of programs
 
-> `Makefile.am` is a programmer-defined file and is used by `automake` to generate the `Makefile.in` file 
-
-- `.am` stands for `automake`
-- `.in` input for `configure` think of template
+- works on the premise that you have specify a dependency, and then a rule to resolve that dependency [stackoverflow.com/why-is-no-one-using-make-for-java](https://stackoverflow.com/a/2209932/2087704)
+- typically converts `main.c` to `main.o` then runs `cc main.c`
 
 ## install
 
@@ -21,22 +18,56 @@ modified: '2023-03-25T12:40:40.022Z'
 brew install make
 ```
 
+## option
+
+```sh
+-B,      --always-make                      # unconditionally make all targets
+-p,      --print-data-base                  # print data base (rules and variable values) that results from reading the makefiles; then execute as usual or as otherwise specified
+-f FILE, --file=FILE, --makefile=FILE       # Use file as a makefile
+-n,      --just-print, --dry-run, --recon   # print commands that would be executed, but do not execute them
+-q,      --question                         # question mode, do not run any commands, or print anything; 
+                                            # just return an exit status that is zero if the specified targets are already up to date, nonzero otherwise
+```
+
 ## usage
 
 ```sh
-make -p                       # print default macros
-
-
 make TARGET                   # run specific target
 
-make -f MyOtherMakefile       # specify other file
-
 make -B venv                  # always run target
+
+make -npq                     # debug
 ```
 
 ## Makefile
 
-```make
+```makefile
+target: prerequisites
+  recipe
+```
+
+## pattern rule
+
+```sh
+%.o : %.c ; recipe…
+```
+
+[gnu.org/software/make/manual/html_node/Pattern-Intro](https://www.gnu.org/software/make/manual/html_node/Pattern-Intro.html)
+[gnu.org/software/make/manual/html_node/Pattern-Match](https://www.gnu.org/software/make/manual/html_node/Pattern-Match.html)
+
+## Automatic Variables
+
+```makefile
+all: library.cpp main.cpp
+
+#     $@ evaluates to: all
+#     $< evaluates to: library.cpp
+#     $^ evaluates to: library.cpp main.cpp
+```
+
+[gnu.org/software/make/manual/make.html#Concept-Index](https://www.gnu.org/software/make/manual/make.html#Concept-Index)
+
+```makefile
 # macros / variables
 # macros that are names of programs (such as CC)
 #   CC       Program to compiling C programs; default is `cc`
@@ -66,6 +97,8 @@ clean:
   rm *.txt
 ```
 
+## make script
+
 ```make
 # use script to create file via heredoc
 
@@ -83,19 +116,19 @@ export script = $(value _script)
 
 
 setup:; @ eval "$$script"
-```
-[unix.stackexchange.com/a/516476/440548](https://unix.stackexchange.com/a/516476/440548)
 
 
-```make
 $(call variable,param,param)    # call function is unique in that it can be used to create new parameterized functions
                                 # You can write a complex expression as the value of a variable, then use call to expand it with different values
 ```
-[gnu.org/software/make/manual/Call-Function.html](https://www.gnu.org/software/make/manual/html_node/Call-Function.html)
+
+[unix.stackexchange.com/a/516476/440548](https://unix.stackexchange.com/a/516476/440548)
+[gnu.org/software/make/manual/Call-Function](https://www.gnu.org/software/make/manual/html_node/Call-Function.html)
 
 ## see also
 
 - [[gcc]]
+- [[javac]]
 - [[cmake]]
 - [[automake]]
 - [[bundle rake]]

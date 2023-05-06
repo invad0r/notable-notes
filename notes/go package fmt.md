@@ -2,13 +2,14 @@
 tags: [go]
 title: go package fmt
 created: '2019-07-30T06:19:49.066Z'
-modified: '2023-03-22T09:23:14.405Z'
+modified: '2023-04-27T13:25:21.449Z'
 ---
 
 # go package fmt
 
 
 ## usage
+
 ```go
 fmt.printf("output: %v", o)
 
@@ -24,4 +25,5 @@ fmt.printf("output: %v", o)
 ```
 
 ## see also
+
 - [fmt - The Go Programming Language](https://golang.org/pkg/fmt/#hdr-Printing)

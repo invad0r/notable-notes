@@ -2,7 +2,7 @@
 tags: [macos]
 title: entr
 created: '2022-04-27T12:10:47.470Z'
-modified: '2023-03-25T12:30:39.463Z'
+modified: '2023-04-30T13:23:07.058Z'
 ---
 
 # entr 
@@ -13,6 +13,14 @@ modified: '2023-03-25T12:30:39.463Z'
 
 ```sh
 brew install entr
+```
+
+## env
+
+```sh
+PAGER     # Set to /bin/cat by default to prevent interactive utilities from waiting for keyboard input if output does not fit on the screen
+SHELL     # Specify the shell to use with the -s flag. The default is /bin/sh
+EV_TRACE  # Print file system event messages
 ```
 
 ## option
@@ -34,11 +42,18 @@ brew install entr
 ## usage
 
 ```sh
-entr
+find . -type f -name "*.go" | entr -r go run .
+
+while :; do
+  ls -d src/*.py | entr -d ./setup.py
+done
 ```
 
 ## see also
 
 - [[find]]
 - [[watch]]
+- [[nodemon]]
+- [[go]]
+- [[make]]
 - [eradman.com/entrproject](http://eradman.com/entrproject/)

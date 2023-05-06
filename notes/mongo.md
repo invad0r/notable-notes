@@ -2,12 +2,22 @@
 tags: [database, javascript]
 title: mongo
 created: '2019-07-30T06:19:49.178Z'
-modified: '2022-02-04T08:24:53.228Z'
+modified: '2023-04-30T11:30:01.101Z'
 ---
 
 # mongo
 
 > `mongo` shell is an interactive javascript interface to `mongodb` used to query and update data and perform administrative operations
+
+## install
+
+```sh
+```
+
+## option
+
+```sh
+```
 
 ## usage
 
@@ -104,6 +114,7 @@ for (var i=0; i<states.length; i++) {
 ```
 
 ## see also
+
 - [[mongosh]]
 - [[mongod]]
 - [[mongodump]]

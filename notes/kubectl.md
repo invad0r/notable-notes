@@ -2,7 +2,7 @@
 tags: [container]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2023-03-22T10:09:58.416Z'
+modified: '2023-04-24T08:08:53.768Z'
 ---
 
 # kubectl
@@ -286,6 +286,17 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 
 kubectl get events --sort-by='.metadata.creationTimestamp' \
   -o 'go-template={{range .items}}{{.involvedObject.name}}{{"\t"}}{{.involvedObject.kind}}{{"\t"}}{{.message}}{{"\t"}}{{.reason}}{{"\t"}}{{.type}}{{"\t"}}{{.firstTimestamp}}{{"\n"}}{{end}}'
+```
+
+## label
+
+```sh
+kubectl label pods foo unhealthy=true                 # Update pod 'foo' with the label 'unhealthy' and the value 'true'
+kubectl label --overwrite pods foo status=unhealthy   # Update pod 'foo' with the label 'status' and the value 'unhealthy', overwriting any existing value
+kubectl label pods --all status=unhealthy             # Update all pods in the namespace
+kubectl label -f pod.json status=unhealthy            # Update a pod identified by the type and name in "pod.json"
+kubectl label pods foo status=unhealthy --resource-version=1    # Update pod 'foo' only if the resource is unchanged from version 1
+kubectl label pods foo bar-   # Update pod 'foo' by removing a label named 'bar' if it exists; Does not require the --overwrite flag
 ```
 
 ## logs

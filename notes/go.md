@@ -2,7 +2,7 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2022-04-07T07:19:54.056Z'
+modified: '2023-05-06T09:54:53.786Z'
 ---
 
 # go
@@ -14,17 +14,20 @@ modified: '2022-04-07T07:19:54.056Z'
 ```sh
 curl -O https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz
 tar xvzf go1.13.7.linux-amd64.tar.gz && mv go /usr/local/
-
-export GOPATH=$(go env GOPATH)
-export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
 ```
 
-## environment variables
+## option
+
+```sh
+```
+
+
+## environment
 
 ```sh
 GOROOT             # /usr/local/opt/go/libexec
 GOTOOLDIR          # /usr/local/opt/go/libexec/pkg/tool/darwin_amd64
-GOPATH             # go-workspace and places to look for code/packages; must be set to `go get`, `go build` and `go install`
+GOPATH             # go-workspace, places to look for code/packages; must be set to `go get`, `go build` and `go install`, `go env GOPATH`
 GOBIN              # -
 PKG_CONFIG         # pkg-config
 GOCACHE            # /path/Caches/go-build
@@ -39,28 +42,39 @@ CXX                # clang++
 CGO_ENABLED        # -
 GOMOD              # -
 GO11MODULE
-
-go env            # show current env vars go uses
-go env GOCACHE    # print specific value
-go env -json      # print in json format
-
-go env -w GO111MODULE=auto
 ```
 
 ## usage
 
 ```sh
-go help env     # more information about a command
+go help env                   # more information about a command
+go env                        # show current env vars go uses
+go env GOCACHE                # print specific value
+go env -json                  # print in json format
+go env -w GO111MODULE=auto    # ..
+```
 
-go mod init invad0r/hello         # creates a new module, initializing the `go.mod` that describes it
-                                  # `go build`, `go test` and other package-building commands add new dependencies to `go.mod`
-go mod tidy                       # remove unused dependencies
+## mod
 
+```sh
+go mod init REPO/hello        # creates a new module, initializing the `go.mod` that describes it
+                              # `go build`, `go test` and other package-building commands add new dependencies to `go.mod`
+
+go mod edit -replace example.com/greetings=../greetings     # rewrite path for local development
+
+go mod tidy                   # remove unused dependencies
+```
+
+## list
+
+```sh
 go list -m all                        # lists the current module and all its dependencies
 go list -m -versions rsc.io/sampler   # list available tagged versions of module
 go list -m rsc.io/...                 # list current versions
 
-go doc -all rsc.io/quote/v3       # get documentation
+go doc -all rsc.io/quote/v3                # get documentation
+go doc io.Copy                             # print doc to Copy method of io package
+go doc github.com/gorilla/mux ServeHTTP    # print doc from dependency
 
 go clean -cache -modcache -i -r   # clear cache
 
@@ -129,9 +143,11 @@ if the new line comes after a `token` that could end the statement => insert `;`
 ## see also
 
 - [[go-template]]
-- [[go lang]]
+- [[c]], [[gcc]], [[make]]
+- [[java]], [[javac]], [[mvn]]
+- [[wasm]]
+- [[rust]]
+- [[fmt]]
 - [go-install-vs-go-build/](https://pocketgophers.com/go-install-vs-go-build/)
 - [Does go get command do cache?](https://stackoverflow.com/a/52813009/2087704)
 - [lecstor.com/go-clear-cache](https://lecstor.com/go-clear-cache/)
-- [[gcc]]
-- [[wasm]]

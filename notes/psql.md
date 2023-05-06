@@ -2,17 +2,19 @@
 tags: [database, linux]
 title: psql
 created: '2019-07-30T06:19:49.220Z'
-modified: '2023-03-25T12:49:35.022Z'
+modified: '2023-05-04T12:30:45.313Z'
 ---
 
 # psql
 
-> 
+> postgresql - object-relational database management system written in [[c]]
 
 ## install
 
 ```sh
 apt install postgresql
+
+docker run -ti --rm -e POSTGRES_PASSWORD=password postgres psql -U postgres
 ```
 
 ## usage
@@ -69,7 +71,9 @@ SELECT pg_size_pretty( pg_database_size('DATABASE') );    -- get db size
 ## see also
 
 - [[pg_dump]]
+- [[mysql]]
+- [[mongo]]
+- [postgresql.org/docs/current](https://www.postgresql.org/docs/current/index.html)
 - [PSQL-META-COMMANDS](https://www.postgresql.org/docs/current/static/app-psql.html#APP-PSQL-META-COMMANDS)
 - [alternate-output-format-for-psql](https://stackoverflow.com/questions/9604723/alternate-output-format-for-psql)
-- [[mongo]]
-- [[mysql]]
+

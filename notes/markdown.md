@@ -1,7 +1,7 @@
 ---
 title: markdown
 created: '2019-08-20T08:24:21.200Z'
-modified: '2023-04-11T20:27:58.106Z'
+modified: '2023-04-15T09:36:17.167Z'
 ---
 
 # markdown
@@ -50,3 +50,4 @@ modified: '2023-04-11T20:27:58.106Z'
 - [resources/tutorial/notes - github.com](https://github.com/notable/notable/tree/master/resources/tutorial/notes)
 - [makeuseof.com/create-markdown-table/](https://www.makeuseof.com/tag/create-markdown-table/)
 - [[markdownlint]]
+- [[nerdfonts]]

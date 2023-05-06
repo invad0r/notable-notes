@@ -2,12 +2,23 @@
 tags: [linux]
 title: bfg
 created: '2020-11-20T23:52:19.801Z'
-modified: '2023-03-24T09:53:13.419Z'
+modified: '2023-04-21T06:22:12.511Z'
 ---
 
 # bfg
 
 > removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
+
+
+## install
+
+```sh
+```
+
+## option
+
+```sh
+```
 
 ## usage
 

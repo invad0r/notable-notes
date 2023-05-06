@@ -2,7 +2,7 @@
 tags: [linux]
 title: procps
 created: '2023-03-22T07:58:03.748Z'
-modified: '2023-03-24T08:22:36.779Z'
+modified: '2023-05-05T08:14:29.615Z'
 ---
 
 # procps
@@ -31,6 +31,7 @@ modified: '2023-03-24T08:22:36.779Z'
 
 ## see also
 
+- [[syscall]]
 - [[coreutils]]
 - [gitlab.com/procps-ng/procps](https://gitlab.com/procps-ng/procps)
 - [fabiokung.com/2014/03/13/memory-inside-linux-containers](https://fabiokung.com/2014/03/13/memory-inside-linux-containers/)

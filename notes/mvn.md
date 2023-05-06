@@ -2,12 +2,21 @@
 tags: [buildsystem, java]
 title: mvn
 created: '2019-07-30T06:19:49.084Z'
-modified: '2023-04-11T11:54:25.409Z'
+modified: '2023-04-13T07:17:39.285Z'
 ---
 
 # mvn
 
-> `maven`, yiddish word meaning `accumulator of knowledge`, began as an attempt to simplify the build processes in the Jakarta Turbine project
+> `maven`, yiddish word meaning `accumulator of knowledge`
+> began as an attempt to simplify the build processes in the Jakarta Turbine project
+> at its heart `maven` is a plugin execution framework; all work is done by plugins
+
+- `goal`
+- `phase` - step in build lifecycle, are mapped to underlying goals
+- `build lifecyle` can consist of phases like: `validate`, `compile`, `test`, `package`, `verifiy`, `install`, `deploy`
+- `compile` phase actually executes `validate`, `generate-sources`, `process-sources`, `generate-resources`, `process-resources`, `compile`
+
+`pom.xml` = Project Object Model of a project
 
 ## install
 

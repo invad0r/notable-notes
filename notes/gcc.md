@@ -1,8 +1,8 @@
 ---
-tags: [c, compiler]
+tags: [c, compiler, linux, macos]
 title: gcc
 created: '2019-07-30T06:19:49.029Z'
-modified: '2023-03-22T08:25:04.978Z'
+modified: '2023-05-04T13:51:42.073Z'
 ---
 
 # gcc
@@ -26,6 +26,7 @@ yum -y install gcc
 ```sh
 -o FILE     # output file
 -WTYPE      # warning
+-g FILE     # add debugging symbols for gdb
 ```
 
 ## usage
@@ -34,8 +35,6 @@ yum -y install gcc
 gcc -o file file.c                  # creates dynamically linked binary
 
 gcc -o file file.c -static          # creates static binary
-
-gcc -g file.c                       # add debugging symbols for gdb
 
 gcc -c file.c           # generates      "object file": `file.o`; only run preprocess, compile, and assemble steps
 gcc file.o              # generates "assembler output": `a.out`
@@ -52,12 +51,18 @@ gcc -E -dM -include sys/socket.h - < /dev/null    # dump preprocessor defines of
 $(gcc -print-prog-name=cpp) -v </dev/null         # where gcc looks for header-files
 echo "#include <limits.h>" > t.c; gcc -v t.c; rm t.c
 LC_ALL=C gcc -v -E -xc - < /dev/null 2>&1 | LC_ALL=C sed -ne '/starts here/,/End of/p'
+
+echo | gcc -E -xc -include 'stddef.h' - | grep size_t     # lookup type of size_t
+# typedef long unsigned int size_t;
 ```
 
 ## see also
 
+- [[cc]]
 - [[g++]]
+- [[ld]]
 - [[ldd]]
 - [[go]]
+- [[nm]]
 - [[make]]
 - [[gdb]]

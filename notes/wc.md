@@ -2,12 +2,12 @@
 tags: [linux]
 title: wc
 created: '2022-11-29T08:07:33.392Z'
-modified: '2023-03-22T10:32:03.357Z'
+modified: '2023-04-21T12:12:25.443Z'
 ---
 
 # wc
 
-> word count
+> displays the number of lines, words, and bytes contained in each input
 
 ## option
 
@@ -24,9 +24,14 @@ modified: '2023-03-22T10:32:03.357Z'
 CMD | wc -l | xargs     # pipe to xargs to trim spaces
 
 echo STRING | wc -c
+
+history | wc
+8744   61819  628428
+# no lines, words, bytes
 ```
 
 ## see also
 
 - [[grep]]
 - [[xargs]]
+- [[bash history]]

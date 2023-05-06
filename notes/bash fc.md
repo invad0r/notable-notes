@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash fc
 created: '2019-07-30T06:19:49.048Z'
-modified: '2022-04-27T14:22:23.434Z'
+modified: '2023-04-15T09:33:14.623Z'
 ---
 
 # bash fc
@@ -19,12 +19,16 @@ fc -s ls          # execut last command starting with `ls` could be `ls -lah`
 
 alias r='fc -s'   # typing `r cc' runs the last command beginning with `cc' 
                   # and typing `r' re-executes the last command.
+```
 
-# running in script 
-# if you can't source you have to set option and source history !!
+## running in script 
+
+```sh
 #!/bin/bash
-HISTFILE=~/.bash_history   # Or wherever you bash history file lives
-set -o history             # enable history
+# if you can't source you have to set option and source history !!
+
+HISTFILE=~/.bash_history      # or wherever you bash history file lives
+set -o history                # enable history
 history | grep git
 ```
 

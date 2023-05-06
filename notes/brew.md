@@ -2,7 +2,7 @@
 tags: [macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2023-03-22T09:28:55.930Z'
+modified: '2023-04-15T09:16:02.790Z'
 ---
 
 # brew
@@ -29,7 +29,8 @@ HOMEBREW_NO_ENV_HINTS           # don't show hints
 ## usage
 
 ```sh
-brew list
+brew list           # list all installed formulae and casks
+brew list --cask    # list casks only
 
 brew bundle --help
 brew bundle dump      # write all installed casks/formulae/images/taps into Brewfile in current directory

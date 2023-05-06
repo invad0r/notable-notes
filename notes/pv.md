@@ -2,7 +2,7 @@
 tags: [shell]
 title: pv
 created: '2020-01-22T14:05:40.771Z'
-modified: '2021-05-12T08:47:10.309Z'
+modified: '2023-04-30T11:32:30.090Z'
 ---
 
 # pv
@@ -10,9 +10,13 @@ modified: '2021-05-12T08:47:10.309Z'
 > `pipe-viewr` - monitor the progress of data through a pipe 
 
 ## install
-`brew install pv`
+
+```sh
+brew install pv
+```
 
 ## usage
+
 ```sh
 pv file | nc -w 1 somewhere.com 3000                    # watch how quickly a file is transferred
 
@@ -44,6 +48,7 @@ pv -tpreb /dev/zero | dd of=/dev/mapper/DEVICE bs=128M     # write zeros to devi
 ```
 
 ## see
+
 - [[mysqldump]]
 - [[dialog]]
 - [[tar]]

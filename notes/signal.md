@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [linux, Notebooks]
 title: signal
 created: '2020-01-21T09:37:12.241Z'
-modified: '2022-02-10T10:13:12.132Z'
+modified: '2023-05-05T07:07:35.739Z'
 ---
 
 # signal
@@ -46,10 +46,12 @@ kill -l     # list signals
 
 ## see also
 
-- [linux.die.net/man/7/signal](https://linux.die.net/man/7/signal)
+- [[syscall]]
 - [[kill]]
 - [[bash kill]]
 - [[bash trap]]
 - [[errno]]
 - [[nohup]]
 - [[c stackoverflow segfault]]
+- [[12 factor app]]
+- [linux.die.net/man/7/signal](https://linux.die.net/man/7/signal)

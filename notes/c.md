@@ -2,7 +2,7 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2023-04-11T20:39:25.192Z'
+modified: '2023-05-06T09:57:10.038Z'
 ---
 
 # c
@@ -57,3 +57,4 @@ int **test              /* pointer to a pointer */
 - [[clang]]
 - [[typesystem]]
 - [[sqlite]]
+- [[rust]], [[rustc]], [[cargo]]

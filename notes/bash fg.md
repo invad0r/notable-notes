@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash fg
 created: '2019-08-02T06:42:37.596Z'
-modified: '2022-04-27T14:22:29.052Z'
+modified: '2023-04-12T11:53:07.214Z'
 ---
 
 # bash fg
@@ -36,3 +36,4 @@ fg %?string  # brings job whose command contains string
 - [[bash bg]]
 - [[bash process-handling]]
 - [[bash waits]]
+- [[mktemp]]

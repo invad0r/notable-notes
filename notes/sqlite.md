@@ -2,7 +2,7 @@
 tags: [database]
 title: sqlite
 created: '2019-07-30T06:19:49.240Z'
-modified: '2022-01-31T18:03:49.262Z'
+modified: '2023-04-30T11:32:42.082Z'
 ---
 
 # sqlite
@@ -27,6 +27,8 @@ cat <<EOT > ~/.sqliterc
 .nullvalue NULL
 EOT
 ```
+
+## console
     
 ```sql
 .open ./PATH/TO/DB      -- open from sqlite-shell

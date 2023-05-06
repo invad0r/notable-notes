@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: devops
 created: '2019-07-30T06:19:49.034Z'
-modified: '2021-03-16T15:22:20.008Z'
+modified: '2023-04-24T09:37:10.381Z'
 ---
 
 # devops
@@ -91,6 +91,8 @@ Power & Fear | Japan after WWII
 - hirarchy vs decentralization
 
 ## see also
+
+- [[12 factor app]]
 - [[gitops]]
 - [theagileadmin.com/what-is-devops/](https://theagileadmin.com/what-is-devops/)
 - [[kubernetes]]

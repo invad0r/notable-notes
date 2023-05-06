@@ -2,7 +2,7 @@
 tags: [go]
 title: yq
 created: '2019-08-20T12:05:18.926Z'
-modified: '2023-03-22T11:00:26.459Z'
+modified: '2023-04-20T11:40:38.472Z'
 ---
 
 # yq
@@ -54,8 +54,11 @@ reduce      # powerful way to process a collection of data into a new form
 
 
 env
-strenv      # inject the contents from an environment variable
-```
+strenv          # inject the contents from an environment variable
+
+sort_keys(.)    # sort keys of map
+sort_keys(..)   # sort keys recursively
+``` 
 
 ## usage
 
@@ -79,8 +82,8 @@ yq ea '. as $item ireduce ({}; . * $item )' FILE1.yml FILE2.yml
 
 yq eval '... comments=""' FILE.yaml                 # strip all comments, `...` ensure key nodes are included
 
-diff <(yq e -P FILE1.yaml) <(yq e -P FILE2.yaml)    # using pretty print -P to normalise the styling and running diff
-
+diff -y -W $(tput cols) <(yq e -P FILE1.yaml) <(yq e -P FILE2.yaml)                      # using pretty print to normalise styling and running diff
+diff -y -W $(tput cols) <(yq e 'sort_keys(..)' 1.yaml) <(yq e 'sort_keys(..)' 2.yaml)    # sort keys recursively, reducing diff noise
 
 yq e '. | select(.kind == "Service") ' FILE.yaml    # print only document of kind: Service
 
@@ -100,9 +103,9 @@ kubectl get node -o yaml | yq e '.items[].metadata.labels | (."kubernetes.io/rol
 
 ## see also
 
-- [mikefarah.gitbook.io/yq](https://mikefarah.gitbook.io/yq/)
 - [[yaml]]
 - [[jq]]
 - [[kubectl]]
 - [[docker-compose]]
 - [[bash readarray]]
+- [mikefarah.gitbook.io/yq](https://mikefarah.gitbook.io/yq/)

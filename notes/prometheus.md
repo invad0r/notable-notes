@@ -1,7 +1,8 @@
 ---
+tags: [container]
 title: prometheus
 created: '2019-11-17T17:42:41.438Z'
-modified: '2023-03-27T05:50:15.430Z'
+modified: '2023-05-05T06:58:17.552Z'
 ---
 
 # prometheus

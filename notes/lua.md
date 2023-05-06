@@ -2,7 +2,7 @@
 tags: [lua]
 title: lua
 created: '2020-09-02T12:55:03.179Z'
-modified: '2023-03-22T09:29:08.443Z'
+modified: '2023-04-27T13:25:57.549Z'
 ---
 
 # lua
@@ -30,6 +30,7 @@ lua hello.lua     # run script
 
 ## see also
 
+- [[nvchad]]
 - [[luac]]
 - [[luarocks]]
 - [[nginx]]
@@ -37,4 +38,5 @@ lua hello.lua     # run script
 - [[awk]]
 - [[groovy]]
 - [lua.org/pil/contents.html](https://www.lua.org/pil/contents.html)
+- [Learn Lua in 15 Minutes (2013) | Hacker News](https://news.ycombinator.com/item?id=23694667)
 

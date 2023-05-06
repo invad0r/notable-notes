@@ -1,8 +1,8 @@
 ---
-tags: [packagemanager]
+tags: [linux, packagemanager]
 title: zypper
 created: '2022-01-13T13:56:52.606Z'
-modified: '2022-01-18T08:49:50.716Z'
+modified: '2023-04-12T13:33:10.797Z'
 ---
 
 # zypper

@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2023-03-25T12:23:04.668Z'
+modified: '2023-04-21T06:21:42.579Z'
 ---
 
 # git
@@ -331,6 +331,23 @@ git shortlog -sn --grep="^fix" --no-merges    # filter commit message and don't 
 git show COMMIT           # show changes of commit
 ```
 
+## submodule
+
+```sh
+git submodule status                      # list submodules
+git submodule status --recursive          # list nested submodules
+
+git submodule update --init --recursive   #
+
+
+git submodule add https://github.com/chaconinc/DbConnector
+
+git submodule foreach git status
+git submodule foreach git pull origin master
+```
+
+[git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
 ## stash
 
 ```sh
@@ -466,13 +483,12 @@ git svn clone \
 
 ## see also
 
-- [[git config]]
 - [[ssh]]
 - [[bfg]]
-- [[gh]]
 - [[git-chglog]]
-- [[fossil]]
 - [[snv]]
+- [[fossil]]
+- [git-scm.com/docs](https://git-scm.com/docs)
 - [gitlab.com/2016/12/08/git-tips-and-tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 - [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)
 - [docs.github.com/removing-sensitive-data-from-a-repository](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/removing-sensitive-data-from-a-repository)

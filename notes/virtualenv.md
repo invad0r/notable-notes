@@ -2,7 +2,7 @@
 tags: [python]
 title: virtualenv
 created: '2019-07-30T06:19:49.221Z'
-modified: '2023-03-22T10:56:33.464Z'
+modified: '2023-04-24T09:47:58.787Z'
 ---
 
 # virtualenv
@@ -37,9 +37,10 @@ type python pip python3 pip3    # show different paths
 
 ## see also
 
-- [[python]]
 - [[pip]]
+- [[sam]]
+- [[pyenv]]
+- [[python]]
+- [[12 factor app]]
 - [Stack Overflow - Virtualenv Command Not Found](https://stackoverflow.com/a/36577160)
 - [virtualenv.pypa.io/en/latest/](https://virtualenv.pypa.io/en/latest/)
-- [[pyenv]]
-- [[sam]]

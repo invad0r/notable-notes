@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash echo
 created: '2019-08-02T06:42:37.582Z'
-modified: '2023-04-11T11:11:17.638Z'
+modified: '2023-04-12T11:59:24.762Z'
 ---
 
 # bash echo
@@ -53,4 +53,5 @@ url_decode ()
 - [[ascii]]
 - [[xxd]]
 - [[tr]]
+- [[fmt]]
 - [how-to-urlencode-data-for-curl-command](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)

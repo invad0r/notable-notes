@@ -2,7 +2,7 @@
 tags: [linux, network]
 title: nmap
 created: '2019-07-30T06:19:49.181Z'
-modified: '2023-03-25T12:48:34.741Z'
+modified: '2023-04-29T17:14:58.232Z'
 ---
 
 # nmap
@@ -96,9 +96,10 @@ nmap --script ssl-enum-ciphers -p PORT HOST   # get availables ssl/tls versions
 
 ## see also
 
+- [[ss]]
+- [[lsof]]
 - [[ncat]]
 - [[socat]]
-- [[ss]]
 - [[openssl]]
 - [[wireshart]]
 - [[tcpdump]]

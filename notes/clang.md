@@ -2,7 +2,7 @@
 tags: [c]
 title: clang
 created: '2020-08-27T10:58:10.930Z'
-modified: '2023-03-25T12:52:52.956Z'
+modified: '2023-05-01T19:41:04.401Z'
 ---
 
 # clang
@@ -36,6 +36,7 @@ clang \
 
 - [[emcc]]
 - [[c]]
+- [[cc]]
 - [[c++]]
 - [[objective-c]]
 - [[wasm]]

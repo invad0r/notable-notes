@@ -1,11 +1,11 @@
 ---
 tags: [shell/bash/builtin]
-title: bash pushd popd
+title: bash pushd
 created: '2019-08-02T06:42:37.617Z'
-modified: '2021-05-12T08:46:08.261Z'
+modified: '2023-04-12T11:52:47.224Z'
 ---
 
-# bash pushd popd
+# bash pushd
 
 > add/remove directories to/from stack
 
@@ -27,3 +27,4 @@ popd
 - [[bash dirs]]
 - [[mktemp]]
 - [[z]]
+- [[bash fd]]

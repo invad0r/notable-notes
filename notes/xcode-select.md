@@ -2,7 +2,7 @@
 tags: [macos]
 title: xcode-select
 created: '2020-11-30T13:00:10.243Z'
-modified: '2022-05-30T06:31:59.582Z'
+modified: '2023-05-01T19:43:37.552Z'
 ---
 
 # xcode-select
@@ -31,5 +31,6 @@ xcode-select --install                                    # download and install
 
 ## see also
 
+- [[cc]]
 - [[brew]]
 - [[softwareupdate]]

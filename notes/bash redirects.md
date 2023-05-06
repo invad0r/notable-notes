@@ -2,7 +2,7 @@
 tags: [shell/bash]
 title: bash redirects
 created: '2019-07-30T06:19:49.011Z'
-modified: '2022-06-16T11:00:39.820Z'
+modified: '2023-04-21T12:07:35.076Z'
 ---
 
 # bash redirects
@@ -88,11 +88,12 @@ grep "foo" FILE | diff FILE2 -
 
 ## see also
 
+- [[tee]]
+- [[tar]]
 - [[heredoc]]
 - [[bash read]]
 - [[bash readarray]]
+- [[bash history]]
 - [[bash exec]]
-- [[tee]]
-- [[tar]]
 - [[bash process substitution]]
 - [tldp.org/special-chars.html](http://tldp.org/LDP/abs/html/special-chars.html#DASHREF2)

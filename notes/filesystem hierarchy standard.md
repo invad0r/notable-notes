@@ -2,13 +2,15 @@
 tags: [linux]
 title: filesystem hierarchy standard
 created: '2019-09-02T05:06:01.427Z'
-modified: '2021-03-22T06:58:23.158Z'
+modified: '2023-05-05T06:54:01.629Z'
 ---
 
 # filesystem hierarchy standard
 
 > `fhs - filesystem hierarchy standard` defines the directory structure and content in unix-like os
 > based on the older standard `FSSTND` (filesystem standard)
+
+## path
 
 ```sh
 /         # all files and directories appear under the root directory
@@ -47,10 +49,11 @@ modified: '2021-03-22T06:58:23.158Z'
 /home     # home directories of users
 ```
 
-
 ## see also
+
 - [[filesystem]]
 - [[procfs]]
 - [[sysfs]]
 - [[tmpfs]]
 - [[bash exec]]
+- [[syscall]]

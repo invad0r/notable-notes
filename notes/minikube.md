@@ -2,12 +2,12 @@
 tags: [container]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2023-03-22T10:09:58.434Z'
+modified: '2023-04-24T08:21:12.511Z'
 ---
 
 # minikube
 
-> uses `libmachine`
+> sets up a local Kubernetes cluster, uses `libmachine`
 
 ## installation
 
@@ -80,4 +80,5 @@ minikube addons enable ingress            # provisions: configMap, ingress-contr
 - [[kubectl]]
 - [[kubernetes]]
 - [[docker-machine]]
+- [[istioctl]]
 - [minikube.sigs.k8s.io/docs/](https://minikube.sigs.k8s.io/docs/)

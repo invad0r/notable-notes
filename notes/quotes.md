@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2023-03-22T09:41:42.842Z'
+modified: '2023-04-25T11:23:56.769Z'
 ---
 
 # quotes
@@ -68,19 +68,27 @@ The mass of men lead lives of quiet desperation. What is called Resignation is c
 - Henry David Therau
 ```
 
+## C.S. Lewis
+
 ```
 Very often what God first helps us towards is not the virtue itself but just this power of always trying again. 
 
 - C.S. Lewis
-```
 
-```
+
 The more we let God take us over, the more truly ourselves we become 
 
 - because He made us. He invented us. 
 
 - C.S. Lewis
+
+
+Every moment is always Present for Him. If you like to put it this way, He has all eternity in which to listen to a split second of prayer… 
+
+- C.S. Lewis
 ```
+
+---
 
 ```
 Living by faith includes the call to something greater than cowardly self-preservation. 
@@ -88,14 +96,11 @@ Living by faith includes the call to something greater than cowardly self-preser
 - Tolkien
 ```
 
-```
-Every moment is always Present for Him. If you like to put it this way, He has all eternity in which to listen to a split second of prayer… 
-
-- C.S. Lewis
-```
 
 ```
-A strong man acts within that which constrains him.
+A strong man acts within that which constrains him. 
+
+(series wolfhall, cromwell to king henry VIII)
 ```
 
 
@@ -142,6 +147,12 @@ You cannot keep birds from flying over your head, but you can keep them from bui
 Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy.
 
 - proverbs 28,13
+
+I, even I, am the LORD, And besides Me there is no savior. 
+I have declared and saved, I have proclaimed, And there was no foreign god among you; 
+Therefore you are My witnesses,” Says the LORD, “that I am God.
+
+- Isaiah 43:11-12
 ```
 
 ```
@@ -151,7 +162,9 @@ cela est bien dit, mais il faut cultiver notre jardin.
 ```
 
 ```
-Between stimulus and response, there is a space. In that space is our power to choose our response, and in our response lies our growth and our freedom. - Victor Fankl
+Between stimulus and response, there is a space. In that space is our power to choose our response, and in our response lies our growth and our freedom.
+
+- Victor Fankl
 ```
 
 ```
@@ -200,16 +213,29 @@ Flint Sky:    Fear. Deep rotting fear. They were infected by it.
               Did you see? Fear is a sickness. It will crawl into the soul of anyone who engages it. 
               It has tainted your peace already. I did not raise you to see you live with fear. 
               Strike it from your heart. Do not bring it into our village.
-- apocalypto
+
+- movie, apocalypto
 ```
 
 ```
-I, even I, am the LORD, And besides Me there is no savior. 
-I have declared and saved, I have proclaimed, And there was no foreign god among you; 
-Therefore you are My witnesses,” Says the LORD, “that I am God.
-- Isaiah 43:11-12
+"If you want to make an apple pie from scratch, you must first create the universe"
+
+~ Dr. Carl Sagan
+```
+
+```
+The most important thing to do in solving a problem is to begin.
+
+– Frank Tyger
+```
+
+````
+You don’t understand anything until you learn it more than one way.
+
+– Marvin Minsky
 ```
 
 ## see also
 
+- [[mktemp]]
 - [Some of the Best Catchphrases Of The Ancient Spartans](https://www.warhistoryonline.com/instant-articles/best-spartan-laconic-phrases-boldest-wittiest-lines-ever-recorded.html)

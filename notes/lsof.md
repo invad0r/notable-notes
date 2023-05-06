@@ -2,7 +2,7 @@
 tags: [linux]
 title: lsof
 created: '2019-07-30T06:19:49.166Z'
-modified: '2023-03-25T12:48:12.441Z'
+modified: '2023-04-29T17:15:11.789Z'
 ---
 
 # lsof
@@ -45,9 +45,9 @@ lsof -i6
 
 ## see also
 
-- [[bash ulimit]]
-- [[pmap]]
-- [[mount]]
 - [[ss]]
 - [[nmap]]
+- [[pmap]]
+- [[mount]]
+- [[bash ulimit]]
 - [lsof-no-pwd-entry-for-uid](https://unix.stackexchange.com/a/193920/193945)

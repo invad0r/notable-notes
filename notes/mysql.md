@@ -2,7 +2,7 @@
 tags: [database]
 title: mysql
 created: '2019-07-30T06:19:49.179Z'
-modified: '2021-05-14T06:33:59.327Z'
+modified: '2023-04-30T11:29:16.994Z'
 ---
 
 # mysql
@@ -10,16 +10,33 @@ modified: '2021-05-14T06:33:59.327Z'
 > mysql cli tool
 
 ## install
-`yum install mysql`
+
+```sh
+yum install mysql
+```
+
+## option
+
+```sh
+-u, --user=USER         # user for login if not current user
+-p, --password[=PASS]   # password to use when connecting to server. If password is not given it's asked from the tty
+-P, --port=PORT         # port number to use for connection or 0 for default to, in order of preference, my.cnf, $MYSQL_TCP_PORT, /etc/services, built-in default (3306).
+-h, --host=name         # connect to host
+
+-e, --execute=name      # execute command and quit. Disables --force and history file
+-f, --force             # continue even if we get an SQL error
+```
 
 ## usage
-```sh
-mysql -uUSER -pPASS -hHOST -PPORT
 
+```sh
 mysql -uUSER -pPASS -hHOST -e "show databases;"
 
 mysql -uUSER -pPASS -hHOST -e "SELECT id, name FROM person WHERE name like '%smith%'" database > smiths.txt
 ```
+
+## console
+
 ```sql
 \g        -- go  Send command to mysql server. 
 \G        -- ego Send command to mysql server, display result vertically.
@@ -106,6 +123,7 @@ VALUES (value1, value2, value3, ...);
 ```
 
 ## see also
+
 - [[mongo]]
 - [[psql]]
 - [[sqlite]]

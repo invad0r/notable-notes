@@ -2,7 +2,7 @@
 tags: [buildsystem, container]
 title: buildah
 created: '2021-10-19T11:40:08.335Z'
-modified: '2021-10-29T12:37:57.561Z'
+modified: '2023-04-24T08:04:51.781Z'
 ---
 
 # buildah
@@ -10,7 +10,9 @@ modified: '2021-10-29T12:37:57.561Z'
 
 ## install
 
-`yum -y install buildah`
+```sh
+yum -y install buildah
+```
 
 ## usage
 
@@ -33,4 +35,5 @@ buildah images
 - [[skopeo]]
 - [[docker]]
 - [[crictl]]
+- [[pack]]
 

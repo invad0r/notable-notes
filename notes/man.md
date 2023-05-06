@@ -1,8 +1,8 @@
 ---
-tags: [linux]
+tags: [linux, macos]
 title: man
 created: '2019-07-30T06:19:49.175Z'
-modified: '2023-03-23T07:42:37.798Z'
+modified: '2023-05-05T08:15:39.412Z'
 ---
 
 # man
@@ -23,30 +23,46 @@ MANPAGER=less
 MANPAGER=vim -M +MANPAGER --not-a-term -
 ```
 
+## option
+
+```sh
+
+```
+
 ## usage
 
 ```sh
-man -k intro      # equivalent to apropos
+# on macos
+1.   General Commands
+2.   System Calls
+3.   Library Functions
+4.   Kernel Interfaces
+5.   File Formats
+6.   Games
+7.   Miscellaneous Information
+8.   System Manager's
+9.   Kernel Developer's
 
-man -f intro      # equivalent to whatis; lookup pages and print short description
+#  on linux
+1.   User commands,executable programs, shell commands
+2.   System calls (functions provided by the kernel)
+3 Library calls (functions within program libraries)
+4 Devices documents details of various devices, most of which reside in /dev.
+5 Files describes various file formats, and includes proc(5), which documents the /proc file system.
+6 Games
+7 Overviews, conventions, and miscellaneous. (including macro packages and conventions)
+8 System administration commands (usually only for root)
+9 Kernel routines [Non standard]
+```
+
+```sh
+man -k . | grep '(2)'     # list system calls
+
+man -k intro              # equivalent to apropos
+
+man -f intro              # equivalent to whatis; lookup pages and print short description
 
 man man           # show sections
-#  on linux
-#  1 User commands,executable programs, shell commands
-#   man-pages includes a very few Section 1 pages that document programs supplied by the GNU C library.
-#  2 System calls (functions provided by the kernel)
-#  3 Library calls (functions within program libraries)
-#      printf (3)    print ascii table and hex values
-#      readline (3)  e.g. keymaps
-#  4 Devices documents details of various devices, most of which reside in /dev.
-#  5 Files describes various file formats, and includes proc(5), which documents the /proc file system.
-#  6 Games
-#  7 Overviews, conventions, and miscellaneous. (including macro packages and conventions), e.g. man(7), groff(7)
-#      signal (7)       list linux standart signals e.g. SIGSEGV
-#      ascii (7)        list ascii table
-#      hier (7)         layout of filesystems
-#  8 System administration commands (usually only for root)
-#  9 Kernel routines [Non standard]
 ```
 
 ## custom manpage

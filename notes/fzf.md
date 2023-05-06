@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: fzf
 created: '2019-07-30T06:19:49.058Z'
-modified: '2023-03-23T08:48:36.859Z'
+modified: '2023-04-21T12:26:49.837Z'
 ---
 
 # fzf
@@ -30,6 +30,12 @@ FZF_DEFAULT_OPTS    # default options
 FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
 ```
 
+## option
+
+```sh
+
+```
+
 ## key bindings
 
 ```sh
@@ -48,6 +54,7 @@ FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
 
 ## see also
 
-- [github.com/junegunn/fzf#using-homebrew-or-linuxbrew](https://github.com/junegunn/fzf#using-homebrew-or-linuxbrew)
 - [[tmux]]
+- [[bash history]]
 - [[macos keyboard shortcuts]]
+- [github.com/junegunn/fzf#using-homebrew-or-linuxbrew](https://github.com/junegunn/fzf#using-homebrew-or-linuxbrew)

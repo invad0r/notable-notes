@@ -2,12 +2,18 @@
 tags: [rust, versionmanager]
 title: rustup
 created: '2020-02-27T17:03:43.319Z'
-modified: '2022-02-02T10:06:36.469Z'
+modified: '2023-05-06T09:52:35.563Z'
 ---
 
 # rustup
 
 > rust toolchain installer
+
+## install
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 ## usage
 

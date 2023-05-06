@@ -2,7 +2,7 @@
 tags: [lua]
 title: nginx
 created: '2021-08-31T08:55:05.976Z'
-modified: '2023-03-22T10:42:51.846Z'
+modified: '2023-05-05T08:15:51.100Z'
 ---
 
 # nginx
@@ -49,4 +49,3 @@ Context: 	main, http, mail, stream, server, location
 ## see also
 
 - [nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls](https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/)
-- [[]]

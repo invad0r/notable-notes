@@ -1,8 +1,8 @@
 ---
-tags: [c]
+tags: [c, linux, macos]
 title: gdb
 created: '2020-04-23T11:34:04.413Z'
-modified: '2023-03-25T12:39:51.473Z'
+modified: '2023-05-04T15:35:28.596Z'
 ---
 
 # gdb
@@ -13,6 +13,13 @@ modified: '2023-03-25T12:39:51.473Z'
 
 ```sh
 apt install gdb
+brew install gdb    # x86_64 architecture is require !
+```
+
+## option
+
+```sh
+-q, --quiet, --silent     # won't print warranty etc.
 ```
 
 ## usage
@@ -20,9 +27,10 @@ apt install gdb
 ```sh
 gdb --version
 
-gdb -q BINARY       # --quiet, --silent   won't print warranty etc.
+gdb -q BINARY
 ```
 
 ## see also
 
 - [[gcc]]
+- [[lldb]]

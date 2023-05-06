@@ -2,7 +2,7 @@
 tags: [editor]
 title: vim
 created: '2019-07-30T06:19:49.263Z'
-modified: '2023-04-11T15:54:28.718Z'
+modified: '2023-04-26T17:27:29.240Z'
 ---
 
 # vim
@@ -12,35 +12,24 @@ modified: '2023-04-11T15:54:28.718Z'
 ## install
 
 ```sh
+brew install vim
 ```
 
 ## option
 
 ```sh
+-y                      # easy mode, beavese like click-and-type editore, ctrl+o -> :q to quit
+-p file1 file2 file3    # open files in tabs
 ```
 
 ## usage
 
 ```sh
-vim -p file1 file2 file3    # open files in tabs
-
-vim $(!!)                   # open file from last output
-
-vim -y                      # easy mode, beavese like click-and-type editore, ctrl+o -> :q to quit
+vim $(!!)               # open file from last output
+vim FILE +3             # open File and jump to line 3
 ```
 
 [learnbyexample.github.io/mini/vim-prank/](https://learnbyexample.github.io/mini/vim-prank/)
-
-## vim file
-
-```sh
-# -*- mode: ruby -*-
-# vi: set ft=ruby : 
-
-# vim: ft=json
-```
-
-[[vagrant]]
 
 ## visual mode
 
@@ -331,8 +320,20 @@ C-w = -  Normalize all split sizes, which is very handy when resizing terminal
 :  endfor
 ```
 
+## vim file
+
+```sh
+# -*- mode: ruby -*-
+# vi: set ft=ruby : 
+
+# vim: ft=json
+```
+
+[[vagrant]]
+
 ## see also
 
+- [[nvim]]
 - [[less]]
 - [[code]]
 - [[atom]]

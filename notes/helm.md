@@ -2,7 +2,7 @@
 tags: [container]
 title: helm
 created: '2021-06-04T08:40:48.010Z'
-modified: '2022-03-07T20:23:56.483Z'
+modified: '2023-05-02T07:09:43.180Z'
 ---
 
 # helm
@@ -84,6 +84,21 @@ helm uninstall mysql-1612624192   # uninstall release
 
 helm template CHART                                   # render chart templates locally and display the output
 helm template CHART -x templates/deployment.yaml      # render just one template in a chart
+```
+
+## plugin
+
+```sh
+helm plugin install https://github.com/databus23/helm-diff
+
+helm diff revision RELEASE 100 55
+```
+
+## helmfile
+
+```yaml
+        {{/* if dig "monitoring" "enabled" false .Values.mrz */}}
+        {{if (((.Values.mrz).monitoring).enabled) }}
 ```
 
 ## see also

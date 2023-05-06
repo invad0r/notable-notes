@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: alacritty
 created: '2023-03-07T07:58:26.959Z'
-modified: '2023-03-24T08:23:34.467Z'
+modified: '2023-04-15T09:19:33.713Z'
 ---
 
 # alacritty
@@ -52,3 +52,4 @@ alacrity msg     # send message to the Alacritty socket
 - [[cargo]]
 - [[tmux]]
 - [[bash]]
+- [[nerdfonts]]

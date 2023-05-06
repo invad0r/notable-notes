@@ -2,7 +2,7 @@
 tags: [container]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2023-03-22T10:10:46.197Z'
+modified: '2023-04-24T09:50:11.654Z'
 ---
 
 # docker
@@ -103,6 +103,7 @@ docker network disconnect -f $network_name $container_name
 - [[kubectl]]
 - [[docker-compose]]
 - [[go-template]]
+- [[12 factor app]]
 - [stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)
 - [github.com/moby/moby/issues/31698#issuecomment-320294893](https://github.com/moby/moby/issues/31698#issuecomment-320294893)
 - [docs.docker.com/engine/reference/commandline/cli/#environment-vairables](https://docs.docker.com/engine/reference/commandline/cli/#environment-vairables)

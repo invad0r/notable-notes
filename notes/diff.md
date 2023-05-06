@@ -2,25 +2,26 @@
 tags: [linux]
 title: diff
 created: '2019-07-30T06:19:49.036Z'
-modified: '2022-02-01T14:34:05.587Z'
+modified: '2023-04-20T08:22:01.581Z'
 ---
 
 # diff
 
 > compare files line by line
 
-## usage
+## option
 
 ```sh
--q, --brief                       # output only whether files differ
--i, --ignore-case                 # ignore case differences in file contents
--y, --side-by-side                # output in two columns
+-q,     --brief                   # output only whether files differ
+-i,     --ignore-case             # ignore case differences in file contents
+-y,     --side-by-side            # output in two columns
 -W NUM, --width=NUM               # output at most NUM (default 130) print columns
 ```
 
+## usage
+
 ```sh
 diff -q FILE1 FILE2                    # only output if files differ
-
 diff -y FILE1 FILE2                    # side-by-side
 
 diff --suppress-common-lines -y -W $(tput cols) FILE1 FILE2    # dynamic width, side-by-side
@@ -36,8 +37,8 @@ diff -y <(curl -s URL) <(cat $(brew --prefix)/PATH/git-completion.bash)
 
 ## see also
 
-- [[bash process substitution]]
 - [[tput]]
 - [[column]]
-- [Make diff Use Full Terminal Width in Side-by-Side Mode - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/9303)
 - [[colordiff]]
+- [[bash process substitution]]
+- [Make diff Use Full Terminal Width in Side-by-Side Mode - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/9303)

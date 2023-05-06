@@ -1,7 +1,7 @@
 ---
 title: kcadm.sh
 created: '2020-02-03T09:34:38.160Z'
-modified: '2023-03-27T05:49:12.827Z'
+modified: '2023-05-05T06:56:43.570Z'
 ---
 
 # kcadm.sh
@@ -27,8 +27,8 @@ export PATH="$PATH:$HOME/bin/keycloak-8.0.1/bin"
 -H, --print-headers             # Print response headers
 -F, --fields FILTER             # A filter pattern to specify which fields of a JSON response to output
 -c, --compressed                # Don't pretty print the output
---format FORMAT                 # Set output format to comma-separated-values by using 'csv'. Default format is 'json'
---noquotes                      # Don't quote strings when output format is 'csv'
+    --format FORMAT             # Set output format to comma-separated-values by using 'csv'. Default format is 'json'
+    --noquotes                  # Don't quote strings when output format is 'csv'
 -a, --admin-root URL            # URL of Admin REST endpoint root if not default - e.g. http://localhost:8080/auth/admin
 ```
 
