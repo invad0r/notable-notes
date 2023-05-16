@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [go]
 title: go struct
 created: '2019-07-30T06:19:49.074Z'
-modified: '2020-09-01T13:03:03.950Z'
+modified: '2023-05-10T12:10:02.209Z'
 ---
 
 # go struct

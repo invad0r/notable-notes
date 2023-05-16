@@ -2,7 +2,7 @@
 tags: [python]
 title: youtube-dl
 created: '2019-07-30T06:19:49.267Z'
-modified: '2023-03-22T11:00:04.940Z'
+modified: '2023-05-11T10:37:52.281Z'
 ---
 
 # youtube-dl
@@ -12,6 +12,9 @@ modified: '2023-03-22T11:00:04.940Z'
 ## install
 
 ```sh
+brew install youtube-dl
+
+pip install --upgrade youtube-dl
 ```
 
 ## usage
@@ -21,12 +24,14 @@ youtube-dl --continue --extract-audio --audio-format mp3 --embed-thumbnail h3Q12
 
 youtube-dl --continue --extract-audio --audio-format mp3 --embed-thumbnail --batch-file FILE
 
+youtube-dl --skip-download --write-thumbnail VIDEO_ID    # download just the thumbnail from a youtube video
+
 youtube-dl \
   --extract-audio \
   -f bestaudio \
   -o '/PATH/FILE.mp3' \
-  YOUTUBE_ID
-  --metadata-from-title "%(artist)s - %(title)s" 2>&1
+  --metadata-from-title "%(artist)s - %(title)s" \
+  YOUTUBE_ID 2>&1
 
 youtube-dl `# extract audio from playlist starting at playlist-index: 17` \
   --no-overwrites \
@@ -34,14 +39,13 @@ youtube-dl `# extract audio from playlist starting at playlist-index: 17` \
   --extract-audio \
   --audio-format mp3 \
   --playlist-start 17 \
-  PLs0kY...1zFPzbn
-
-youtube-dl --skip-download --write-thumbnail knGYTLTHV_E    # Download just the thumbnail from a youtube video.
+  LIST_ID
 ```
 
 ## see also
 
 - [[imagemagick]]
 - [[ffmpeg]]
-- [[eyeD3]]
+- [[eyed3]]
 - [[python]]
+- [[curl]]

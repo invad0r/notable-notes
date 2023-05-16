@@ -1,7 +1,7 @@
 ---
 title: markdown
 created: '2019-08-20T08:24:21.200Z'
-modified: '2023-04-15T09:36:17.167Z'
+modified: '2023-05-13T11:47:01.152Z'
 ---
 
 # markdown
@@ -41,6 +41,24 @@ modified: '2023-04-15T09:36:17.167Z'
 
  foo · bar
 ```
+
+## table
+
+```md
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+```
+
+[tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
 
 ## see also
 

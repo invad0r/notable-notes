@@ -2,7 +2,7 @@
 tags: [java]
 title: gu
 created: '2023-03-15T09:15:23.659Z'
-modified: '2023-03-22T10:20:19.928Z'
+modified: '2023-05-11T10:44:16.310Z'
 ---
 
 # gu
@@ -43,6 +43,14 @@ GRAALVM_HOME=$HOME/Development/graalvm/Contents/Home/
 
 ```sh
 gu install native-image
+
+gu install nodejs             # supports running Node.js applications
+
+gu install llvm-toolchain
+
+gu install wasm
+
+native-image -cp bcprov-jdk15on-164.jar:. -H:ReflectionConfigurationFiles=reflection-config.json test
 ```
 
 ## see also
@@ -51,3 +59,6 @@ gu install native-image
 - [[java]]
 - [[mvn]]
 - [[quarkus]]
+- [[native-image]]
+- [[graalvm]]
+- [graalvm.org/22.0/docs/getting-started/](https://www.graalvm.org/22.0/docs/getting-started/)

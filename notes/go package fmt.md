@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [go]
 title: go package fmt
 created: '2019-07-30T06:19:49.066Z'
-modified: '2023-04-27T13:25:21.449Z'
+modified: '2023-05-10T12:10:25.471Z'
 ---
 
 # go package fmt

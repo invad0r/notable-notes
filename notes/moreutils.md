@@ -2,7 +2,7 @@
 tags: [linux, moreutils]
 title: moreutils
 created: '2020-09-01T07:32:18.091Z'
-modified: '2023-03-22T08:11:28.746Z'
+modified: '2023-05-15T13:06:06.171Z'
 ---
 
 # moreutils
@@ -11,6 +11,7 @@ modified: '2023-03-22T08:11:28.746Z'
 
 ```sh
 apt-get install moreutils
+
 brew install moreutils --without-parallel && brew install parallel
 ```
 

@@ -2,7 +2,7 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2023-05-06T09:57:10.038Z'
+modified: '2023-05-08T18:10:19.749Z'
 ---
 
 # c
@@ -50,11 +50,24 @@ int **test              /* pointer to a pointer */
 
 [[typing]]
 
+## string memory
+
+```c
+const char *str    = "Stack";           // Static     Read-only      Code segment
+char *str          = "Stack";           // Static     Read-only      Code segment
+char *str          = malloc(...);       // Dynamic    Read-write     Heap
+char str[]         = "Stack";           // Static     Read-write     Stack
+char strGlobal[10] = "Global";          // Static     Read-write     Data Segment (R/W)
+```
+
+[stackoverflow.com/a/16021546/14523221](https://stackoverflow.com/a/16021546/14523221)
+
 ## see also
 
-- [[asm]]
-- [[wasm]]
+- [[libc]]
+- [[asm]], [[wasm]]
 - [[clang]]
 - [[typesystem]]
 - [[sqlite]]
 - [[rust]], [[rustc]], [[cargo]]
+

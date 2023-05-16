@@ -2,7 +2,7 @@
 tags: [c, compiler, linux, macos]
 title: gcc
 created: '2019-07-30T06:19:49.029Z'
-modified: '2023-05-04T13:51:42.073Z'
+modified: '2023-05-09T06:57:06.105Z'
 ---
 
 # gcc
@@ -58,11 +58,13 @@ echo | gcc -E -xc -include 'stddef.h' - | grep size_t     # lookup type of size_
 
 ## see also
 
+- [[as]]
 - [[cc]]
 - [[g++]]
 - [[ld]]
 - [[ldd]]
 - [[go]]
+- [[rustc]]
 - [[nm]]
 - [[make]]
 - [[gdb]]

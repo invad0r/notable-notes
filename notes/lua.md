@@ -2,7 +2,7 @@
 tags: [lua]
 title: lua
 created: '2020-09-02T12:55:03.179Z'
-modified: '2023-04-27T13:25:57.549Z'
+modified: '2023-05-13T15:07:08.937Z'
 ---
 
 # lua
@@ -28,12 +28,37 @@ lua               # standalone interpreter and interactive shell
 lua hello.lua     # run script
 ```
 
+## language
+
+```lua
+-- Create a prototype object
+local person = {
+  name = "John",
+  age = 30,
+  sayHello = function(self)
+    print("Hello, my name is " .. self.name)
+  end
+}
+
+-- Create a new object that inherits from the prototype
+local student = {
+  studentID = "12345"
+}
+setmetatable(student, {__index = person})
+
+-- Use the inherited properties and methods
+print(student.name)
+print(student.age)
+student:sayHello()
+```
+
 ## see also
 
 - [[nvchad]]
 - [[luac]]
 - [[luarocks]]
 - [[nginx]]
+- [[javascript]]
 - [[tcl]]
 - [[awk]]
 - [[groovy]]

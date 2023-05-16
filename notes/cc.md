@@ -1,8 +1,8 @@
 ---
-tags: [c, macos]
+tags: [c, compiler, macos]
 title: cc
 created: '2023-05-01T19:01:14.225Z'
-modified: '2023-05-01T19:45:33.128Z'
+modified: '2023-05-13T15:14:46.569Z'
 ---
 
 # cc

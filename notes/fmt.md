@@ -2,7 +2,7 @@
 tags: [macos]
 title: fmt
 created: '2023-04-12T11:57:47.449Z'
-modified: '2023-05-05T06:57:12.600Z'
+modified: '2023-05-15T13:06:29.906Z'
 ---
 
 # fmt
@@ -35,5 +35,6 @@ echo -e 'Multiple   spaces    will be collapsed' | fmt -s
 
 ## see also
 
+- [[coreutils]]
 - [[go]]
 - [[bash echo]]

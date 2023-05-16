@@ -2,7 +2,7 @@
 tags: [go]
 title: go methods
 created: '2019-07-30T06:19:49.068Z'
-modified: '2020-03-12T12:24:45.976Z'
+modified: '2023-05-10T12:06:39.108Z'
 ---
 
 # go methods
@@ -11,6 +11,7 @@ modified: '2020-03-12T12:24:45.976Z'
 > A method is a `function` with a special receiver argument. 
 
 ## usage
+
 ```go
 type Vertex struct {
 	X, Y float64
@@ -37,3 +38,5 @@ func (h *handler) ServeHttp () {} // method on pointer; pointer modifies recieve
 ```
 
 ## see also
+
+- [[go]]

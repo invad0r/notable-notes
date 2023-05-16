@@ -2,19 +2,23 @@
 tags: [coreutils]
 title: 'yes'
 created: '2020-05-06T11:21:08.436Z'
-modified: '2020-09-01T12:43:12.188Z'
+modified: '2023-05-13T15:13:40.470Z'
 ---
 
 # yes
 
 > output a string repeatedly until killed
 
+## option
+
+```sh
+--help        # display this help and exit 
+--version     # output version information and exit
+```
+
 ## usage
 
 ```sh
-# --help    display this help and exit 
-# --version output version information and exit
-
 yes [STRING]...     # Repeatedly output a line with all specified STRING(s), or 'y'.
 
 yes OPTION

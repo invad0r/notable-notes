@@ -2,38 +2,72 @@
 tags: [javascript]
 title: javascript
 created: '2019-08-19T12:09:44.017Z'
-modified: '2023-05-02T11:42:44.766Z'
+modified: '2023-05-16T06:56:26.787Z'
 ---
 
 # javascript
 
-> interpreted, or just-in-time compiled programming language with first-class functions
+> interpreted, or jit-compiled programming language with first-class functions
+
+## runtimes
+
+|                |           |
+| ---            | ---       |
+| Node.js        | An open-source, cross-platform, JavaScript runtime built on Chrome's V8 JavaScript engine |
+| Deno           | secure runtime for [[JavaScript]] and [[TypeScript]] built on V8 engine, and designed to improve on Node.js |
+| Rhino          | engine written in [[java]], which allows [[javascript]] to be run on jvm |
+| JerryScript    | engine used on devices with limited resources, such as microcontrollers |
+| SpiderMonkey   | engine used in Mozilla [[firefox]], [[js]] |
+| JavaScriptCore | engine used in Apple's Safari browser |
+| Chakra         | engine used in Microsoft Edge and Internet Explorer |
+| Nashorn        | engine for the JVM, introduced in [[java]] 8 and deprecated on version 15 |
+| QuickJS        | small and embeddable engine with a focus on performance and compliance |
+| V8             | engine used in chrome and Chromium-based browsers                |
+| MuJS           | lightweight interpreter that supports ES5 and a subset of ES6 |
+| Jint           | .NET-based interpreter that allows you to run JavaScript code within a .NET application |
+
+```
+              ┌────────┐      ┌─────────┐    ┌───────┐
+              │ Source ├──────► parser  ├────► AST   │
+              └────────┘      └─────────┘    └───┬───┘
+                   ┌─── ─── ─── ─── ── ─── ─── ──┘
+      ┌────────────┼──────────────────────────────────────────┐
+      │       ┌────▼─────────┐         ┌─────────────┐     d  │
+      │       │ interpreter  │         │  bytecode   │     e  │
+      │ o ┌───┤              ├─────────►             ◄───┐ o  │
+      │ p │   └──────────────┘         └──────┬──────┘   │ p  │
+      │ t               profiling data        │            t  │
+      │ i │           ┌───  ─── ─── ─── ─── ──┘          │ i  │
+      │ m     ┌───────▼──────┐         ┌─────────────┐     m  │
+      │ i │   │ optimizing   │         │ optimized   │   │ i  │
+      │ z └───►  compiler    ├─────────►   code      ├───┘ z  │
+      │ e     └──────────────┘         └─────────────┘     e  │
+      └───────────────────────────────────────────────────────┘
+```
+
+[mathiasbynens.be/notes/prototypes](https://mathiasbynens.be/notes/prototypes)
+
 
 ## install
 
-```sh
-brew install node
-```
+[[node]], [[js]]
 
-## usage
+## datatypes
 
 ```js
-// datatypes
 //[7] data types
-//	  object
-//
-//[6] primitive
-//		boolean
-//		null
-//		undefined
-//		number
-//		string
-//		symbol (ecma6)
-```
+object
 
-## array
+//[6] primitive types
+boolean
+null
+undefined
+number
+string
+symbol          // (ecma6)
 
-```js
+// array
+
 // slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end
 const items = [1,2,3,4,5];
 const slice = items.splice(1,3);
@@ -43,8 +77,8 @@ console.log(slice);                     // [ 2, 3, 4 ]
 
 ## see also
 
-- [[go]]
-- [[node]]
-- [[npm]]
+- [[js]], [[node]], [[nvm]]
+- [[tsc]], [[coffee]]
 - [[mongo]]
+- [[go]], [[rust]], [[java]]
 - [developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

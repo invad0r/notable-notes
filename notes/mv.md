@@ -2,7 +2,7 @@
 tags: [coreutils, macos]
 title: mv
 created: '2020-08-03T12:08:55.090Z'
-modified: '2020-09-01T12:43:12.425Z'
+modified: '2023-05-10T14:15:01.809Z'
 ---
 
 # mv
@@ -10,11 +10,14 @@ modified: '2020-09-01T12:43:12.425Z'
 > move or rename files
 
 ## usage
+
 ```sh
 mv -f foo bar     # rename file without confirmation
 ```
 
 ## see also
+
+- [[rnr]]
 - [[cp]]
 - [[rm]]
 - [[rsync]]

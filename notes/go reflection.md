@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [go]
 title: go reflection
 created: '2019-07-30T06:19:49.072Z'
-modified: '2019-08-20T07:22:54.440Z'
+modified: '2023-05-10T12:06:23.338Z'
 ---
 
 # go reflection

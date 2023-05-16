@@ -2,7 +2,7 @@
 tags: [java, versionmanager]
 title: sdk
 created: '2019-08-20T08:05:04.309Z'
-modified: '2023-03-15T09:15:10.967Z'
+modified: '2023-05-11T06:24:19.206Z'
 ---
 
 # sdk
@@ -28,6 +28,8 @@ SDKMAN_VERSION              # 5.9.1+575
 ## usage
 
 ```sh
+sdk help list
+
 sdk current java
 
 sdk ls java

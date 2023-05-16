@@ -1,11 +1,13 @@
 ---
-tags: [javascript]
+tags: [compiler, javascript, typescript]
 title: tsc
 created: '2022-12-02T14:15:06.277Z'
-modified: '2023-03-22T10:43:25.146Z'
+modified: '2023-05-13T15:13:12.297Z'
 ---
 
 # tsc
+
+> [[typescript]] compiler
 
 ## install
 
@@ -47,5 +49,6 @@ tsc --target esnext               # compiles the current project, with additiona
 
 ## see also
 
-- [[npm]]
-- [[npx]]
+- [[javascript]]
+- [[npm]], [[npx]]
+- [[rustc]], [[javac]]

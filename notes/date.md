@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: date
 created: '2019-07-30T06:19:49.033Z'
-modified: '2023-03-15T07:52:29.916Z'
+modified: '2023-05-15T13:06:55.706Z'
 ---
 
 # date
@@ -64,6 +64,7 @@ echo "$(( (  $(gdate "+%s") - $(gdate -d "2020-10-13T08:30:10+00:00" "+%s") )/(6
 
 ## see also
 
+- [[coreutils]]
 - [[cal]]
 - [[strftime]]
 - [[hwclock]]

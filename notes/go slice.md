@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [go]
 title: go slice
 created: '2019-07-30T06:19:49.073Z'
-modified: '2019-08-20T07:22:54.442Z'
+modified: '2023-05-10T12:07:44.099Z'
 ---
 
 # go slice

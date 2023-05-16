@@ -2,7 +2,7 @@
 tags: [coreutils]
 title: coreutils
 created: '2020-09-01T07:42:52.948Z'
-modified: '2023-03-22T08:07:36.814Z'
+modified: '2023-05-15T13:05:34.885Z'
 ---
 
 # coreutils
@@ -11,6 +11,12 @@ modified: '2023-03-22T08:07:36.814Z'
 
 [[numfmt]] - see [[crane]]
 
+
+## install
+
+```sh
+brew install coreutils
+```
 
 ## commonly used tools provided by this package include
 

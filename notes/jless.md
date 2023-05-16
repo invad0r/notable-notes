@@ -1,8 +1,8 @@
 ---
-tags: [json]
+tags: [json, rust]
 title: jless
 created: '2022-05-17T19:12:45.216Z'
-modified: '2023-03-22T10:28:04.370Z'
+modified: '2023-05-10T14:13:31.135Z'
 ---
 
 # jless

@@ -2,7 +2,7 @@
 tags: [java]
 title: java
 created: '2019-07-30T06:19:49.143Z'
-modified: '2023-03-27T06:09:06.655Z'
+modified: '2023-05-15T07:28:48.598Z'
 ---
 
 # java
@@ -87,6 +87,7 @@ javac A.java && java -Xms256m -Xmx256m A | numfmt --to=iec-i
 
 ## see also
 
+- [[jshell]]
 - [[javac]]
 - [[jps]]
 - [[jar]]

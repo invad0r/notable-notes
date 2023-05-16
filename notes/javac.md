@@ -2,7 +2,7 @@
 tags: [compiler, java]
 title: javac
 created: '2019-08-21T14:45:10.678Z'
-modified: '2023-05-01T13:54:51.574Z'
+modified: '2023-05-10T09:49:20.653Z'
 ---
 
 # javac
@@ -12,6 +12,11 @@ modified: '2023-05-01T13:54:51.574Z'
 - primary java compiler included in the `jdk` from oracle. Martin Odersky implemented the GJ compiler, and his implementation became the basis for javac[2]
 - `javac` accepts source code conforming to the [[java]] language specification (JLS) and produces Java bytecode conforming to the Java Virtual Machine Specification (JVMS)
 - `javac` is itself written in [[java]]. The compiler can also be invoked programmatically
+
+
+only translates Java source code into bytecode
+does not perform any optimization or compilation at runtime.
+used as a one-time compilation step to generate bytecode, which can then be executed by the jvm
 
 ## env
 

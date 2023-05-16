@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2023-04-21T06:21:42.579Z'
+modified: '2023-05-15T14:59:03.256Z'
 ---
 
 # git
@@ -50,8 +50,9 @@ git alias       # list aliases
 
 -v                # verbose
 -vv               # more verbose e.g. show gone branches `[origin/refactoring: gone]`
+```
 
-
+```sh
 git branch BRANCH_NAME      # create new branch, referencing the current HEAD
 
 git branch -d NAME          # remove selected branch, if it is already merged into any other
@@ -69,6 +70,12 @@ git checkout -- FILE      # discard changes in working directory. Operation is u
 git checkout -            # checkout prevous branch
 
 git checkout .            # reset all current changes
+```
+
+## clean
+
+```sh
+git clean -d -f -x      # remove all files not under source control
 ```
 
 ## commit
@@ -186,8 +193,9 @@ git help GUIDE
 
 ```sh
 -n COUNT            # limits list to last n commits
+```
 
-
+```sh
 git log ref..                 # list commits that are present on current branch and not merged into ref.A ref can be e.g. a branch name or a tag name.
 
 git log ..ref                 # list commit, that are present on ref and not merged into current branch.
@@ -210,10 +218,10 @@ git log --graph --abbrev-commit --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Cr
 
 git log -L:<function>:file      # git log of a specific function in a file
 
-# pretty format
-alias glg='git log --graph --pretty=format:"%Cred%h%Creset \
+git log --graph \
+  --pretty=format:"%Cred%h%Creset \
   -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" \
-  --abbrev-commit'
+  --abbrev-commit
 ```
 
 [[bash alias]]

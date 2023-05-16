@@ -2,7 +2,7 @@
 tags: [linux]
 title: sed
 created: '2019-07-30T06:19:49.228Z'
-modified: '2023-04-11T11:01:21.058Z'
+modified: '2023-05-11T09:34:03.246Z'
 ---
 
 # sed
@@ -15,6 +15,12 @@ modified: '2023-04-11T11:01:21.058Z'
 brew install gsed
 ```
 
+## options
+
+```sh
+
+```
+
 ## usage
 
 ```sh
@@ -24,10 +30,10 @@ sed -n "2p"                                   # print second line only
 
 sed -n '2{p;q}' FILE                          # in case there will be no more line 2 after line 2, spare pointless processing by `q`uiting after `p`rinting
 
-sed -i '/2018-01-30/!d' FILE                  # delete all lines except ones matching pattern
 
 sed -i '4d' FILE                              # delete line 4
-sed    '/STRING/d' d                          # delete line containing STRING
+sed    '/STRING/d' FILE                       # delete line containing STRING
+sed -i '/2018-01-30/!d' FILE                  # delete all lines except ones matching pattern
 
 sed '/INCLUDE/ r foo.h'                       #  insert foo.h after 'INCLUDE'
 

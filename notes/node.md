@@ -2,7 +2,7 @@
 tags: [javascript]
 title: node
 created: '2020-02-28T21:20:20.353Z'
-modified: '2022-12-02T14:04:57.662Z'
+modified: '2023-05-13T11:31:42.466Z'
 ---
 
 # node
@@ -68,6 +68,8 @@ var data = require('./FILE')   // load a FILE
 
 ## see also
 
+- [[js]] `spidermonkey` cli
+- [[nodejs event loop]]
 - [[javascript]]
 - [[npm]], [[npx]]
 - [[nvm]]

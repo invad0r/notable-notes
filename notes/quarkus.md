@@ -2,12 +2,12 @@
 tags: [java]
 title: quarkus
 created: '2023-03-14T12:54:49.416Z'
-modified: '2023-03-22T11:04:05.459Z'
+modified: '2023-05-11T06:48:55.496Z'
 ---
 
 # quarkus
 
-> cli for quarkus, which is a k8s native [[java]] framework tailored for OpenJDK HotSpot and GraalVM
+> cli for quarkus, which is a k8s native [[java]] framework tailored for OpenJDK HotSpot and [[graalvm]]
 
 ## install
 
@@ -44,6 +44,7 @@ quarkus build --native --no-tests -Dquarkus.native.container-build=true
 
 ## see also
 
+- [[graalvm]]
 - [[gu]]
 - [[sdk]]
 - [[mvn]]

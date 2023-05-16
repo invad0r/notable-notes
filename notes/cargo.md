@@ -2,7 +2,7 @@
 tags: [packagemanager, rust]
 title: cargo
 created: '2020-02-27T16:59:23.781Z'
-modified: '2023-03-25T12:50:55.180Z'
+modified: '2023-05-10T14:12:38.092Z'
 ---
 
 # cargo
@@ -52,7 +52,7 @@ cargo install \
 
 - [[rust]]
 - [[rustup]]
-- [doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/index.html)
 - [[exa]]
 - [[rip]]
 - [[jless]]
+- [doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/index.html)

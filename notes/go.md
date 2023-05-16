@@ -2,7 +2,7 @@
 tags: [go]
 title: go
 created: '2019-07-30T06:19:49.075Z'
-modified: '2023-05-06T09:54:53.786Z'
+modified: '2023-05-10T12:15:24.340Z'
 ---
 
 # go
@@ -140,9 +140,21 @@ if last token before new line:
 
 if the new line comes after a `token` that could end the statement => insert `;`
 
+## runes atoi itoa
+
+> `runes` are unicode codepoints
+
+## strinconversion Atoi / Itoa
+
+```go
+n := strconv.Atoi(os.Args[1])             # converst a string to integer
+n := strconv.ParseInt(os.Args[1], 10, 0)
+```
+
 ## see also
 
 - [[go-template]]
+- [[go datastructures]]
 - [[c]], [[gcc]], [[make]]
 - [[java]], [[javac]], [[mvn]]
 - [[wasm]]
