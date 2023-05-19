@@ -2,16 +2,18 @@
 tags: [container]
 title: crc
 created: '2023-03-13T11:11:53.909Z'
-modified: '2023-03-22T10:24:05.502Z'
+modified: '2023-05-17T08:00:54.634Z'
 ---
 
 # crc
 
-> tool that manages a local OpenShift 4.x cluster
+> `C`ode`R`eady`C`ontainers - tool that manages a local OpenShift 4.x cluster
 
 ## install
 
 ```sh
+curl -LO https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/2.18.0/crc-macos-installer.pkg
+installer -pkg crc-macos-installer.pkg -target /
 ```
 
 ## option
@@ -46,6 +48,11 @@ crc version               # print version information
 ## see also
 
 - [[oc]]
+- [[istioctl]]
+- [[podman]]
 - [[helm]]
 - [[kubectl]]
 - [[minikube]]
+- [[installer]]
+- [github.com/crc-org/crc](https://github.com/crc-org/crc)
+- [github.com/crc-org/crc/wiki/Debugging-guide](https://github.com/crc-org/crc/wiki/Debugging-guide)

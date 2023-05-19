@@ -2,7 +2,7 @@
 tags: [macos]
 title: installer
 created: '2020-06-10T09:03:37.546Z'
-modified: '2022-04-06T08:37:14.754Z'
+modified: '2023-05-17T07:48:59.347Z'
 ---
 
 # installer
@@ -63,3 +63,5 @@ installer -pkg InstallMe.pkg -target /dev/disk0s5
 ## see also
 
 - [[aws]]
+- [[crc]]
+- [[xar]]

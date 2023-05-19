@@ -2,7 +2,7 @@
 tags: [macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2023-04-15T09:16:02.790Z'
+modified: '2023-05-19T10:28:37.914Z'
 ---
 
 # brew
@@ -37,6 +37,7 @@ brew bundle dump      # write all installed casks/formulae/images/taps into Brew
 
 brew search PACKAGE
 brew search gnu       # list possible installed gnu utils
+brew info gnu
 
 brew update           # update brew itself
 brew up               # alias for update
@@ -49,13 +50,22 @@ brew cleanup -s       # Scrub the cache, including downloads
                       # -n, --dry-run  
                       # -v, --verbose
 
-brew doctor           # check your system for potential problems
+brew doctor                               # check your system for potential problems
 
-brew missing          # check the given formula kegs for missing dependencies
 
-brew man              # generate brew man-pages
+brew deps --tree --installed vim                      # list dependecies of vim formulae
 
-brew install grep --with-default-names     # used with-default-names to avoid prefixing with "g"
+brew deps --formula --for-each $(brew leaves)        `# list all formulas that aren't dependents of any other formulas (leaves)` \
+  | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"        # https://stackoverflow.com/a/55445034/14523221
+
+brew deps --include-build --tree $(brew leaves) vim   # get dependencies printed hierarchically
+
+
+brew missing                              # check the given formula kegs for missing dependencies
+
+brew man                                  # generate brew man-pages
+
+brew install grep --with-default-names    # used with-default-names to avoid prefixing with "g"
 
 brew install
   inetutils

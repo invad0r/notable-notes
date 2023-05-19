@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash echo
 created: '2019-08-02T06:42:37.582Z'
-modified: '2023-04-12T11:59:24.762Z'
+modified: '2023-05-19T10:40:33.953Z'
 ---
 
 # bash echo
@@ -21,6 +21,9 @@ modified: '2023-04-12T11:59:24.762Z'
 
 ```sh
 echo -n "USER:PWD" | base64     # not linebreak !
+
+echo $'\112'  # print character from octal 
+echo $'\x4a'  # print character from hex 
 ```
 
 ## url encoding
@@ -46,12 +49,12 @@ url_decode ()
 
 ## see also
 
-- [[bash printf]]
-- [[base64]]
-- [[bash variables]]
 - [[od]]
-- [[ascii]]
-- [[xxd]]
 - [[tr]]
+- [[xxd]]
 - [[fmt]]
+- [[ascii]]
+- [[base64]]
+- [[bash printf]]
+- [[bash variables]]
 - [how-to-urlencode-data-for-curl-command](https://stackoverflow.com/questions/296536/how-to-urlencode-data-for-curl-command)

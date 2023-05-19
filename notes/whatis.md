@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: whatis
 created: '2019-09-23T06:20:07.498Z'
-modified: '2020-02-04T12:29:40.143Z'
+modified: '2023-05-19T11:12:42.025Z'
 ---
 
 # whatis
@@ -17,5 +17,5 @@ whatis
 
 ## see also
 
-- [[man]]
+- [[man]], [[apropos]]
 - [[apropos]]

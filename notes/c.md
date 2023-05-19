@@ -2,7 +2,7 @@
 tags: [c]
 title: c
 created: '2019-08-19T12:57:28.967Z'
-modified: '2023-05-08T18:10:19.749Z'
+modified: '2023-05-19T11:32:30.888Z'
 ---
 
 # c
@@ -64,6 +64,7 @@ char strGlobal[10] = "Global";          // Static     Read-write     Data Segmen
 
 ## see also
 
+- [[man]]
 - [[libc]]
 - [[asm]], [[wasm]]
 - [[clang]]
