@@ -2,12 +2,12 @@
 tags: [macos]
 title: defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2023-05-05T12:14:08.153Z'
+modified: '2023-05-19T17:56:58.230Z'
 ---
 
 # defaults
 
-> access the mac macos user defaults system
+> access macos user defaults system
 
 ## show hidden files
 
@@ -38,11 +38,15 @@ defaults delete NSGlobalDomain KeyRepeat          # revert to default
 defaults delete NSGlobalDomain InitialKeyRepeat   # revert to default
 ```
 
+[apple.stackexchange.com/how-to-increase-keyboard-key-repeat-rate-on-os-x](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x/83923#83923)
+
 ## toggle display items on desktop
 
 ```sh
-defaults write com.apple.finder CreateDesktop false    && killall Finder
-defaults write com.apple.finder CreateDesktop true     && killall Finder
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+defaults write com.apple.finder CreateDesktop true
+killall Finder
 ```
 
 ## screenshots
@@ -52,10 +56,19 @@ defaults write com.apple.screencapture location "$HOME/Pictures/screenshots"    
 defaults write com.apple.screencapture name screenshot                            # use diff name prefix
 ```
 
+## displays app switcher on both the screens `⌘ + tab`
 
+```sh
+defaults write com.apple.Dock appswitcher-all-displays -bool true
+killall Dock
+```
 
+[superuser.com/a/1625752/1236589](https://superuser.com/a/1625752/1236589)
 
 ## see also
 
 - [[tmux]]
-- [apple.stackexchange.com/how-to-increase-keyboard-key-repeat-rate-on-os-x](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x/83923#83923)
+- [[open]]
+- [[mdfind]]
+- [[macos keyboard shortcuts]]
+

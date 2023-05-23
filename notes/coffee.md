@@ -2,10 +2,12 @@
 tags: [compiler, javascript]
 title: coffee
 created: '2023-05-13T12:00:15.256Z'
-modified: '2023-05-13T15:14:36.497Z'
+modified: '2023-05-19T12:49:42.109Z'
 ---
 
 # coffee
+
+> execute scripts, compile `.coffee` files into `.js`, and provide a repl
 
 ## install
 

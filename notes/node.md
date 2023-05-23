@@ -1,8 +1,8 @@
 ---
-tags: [javascript]
+tags: [javascript, runtime]
 title: node
 created: '2020-02-28T21:20:20.353Z'
-modified: '2023-05-13T11:31:42.466Z'
+modified: '2023-05-19T13:02:14.871Z'
 ---
 
 # node
@@ -18,14 +18,16 @@ brew install node
 # environment
 
 ```sh
-NODE_OPTIONS=--max-old-space-size=32768
+NODE_OPTIONS          # set opts e.g. NODE_OPTIONS=--max-old-space-size=32768
 ```
 
 ## option
 
 ```sh
+-             # alias for STDIN
+--            # indicate end of cli options, pass rest of the script args
 -c, --check   # check syntax without executing, exits with error code if script is invalid
--e, --eval    # string Evaluate string as JavaScript.
+-e, --eval    # string Evaluate string as js
 ```
 
 ## usage
@@ -71,8 +73,8 @@ var data = require('./FILE')   // load a FILE
 - [[js]] `spidermonkey` cli
 - [[nodejs event loop]]
 - [[javascript]]
-- [[npm]], [[npx]]
-- [[nvm]]
+- [[npm]], [[npx]], [[nvm]]
 - [[yarn]]
+- [[deno]]
 - [nodejs.org/api/process.html](https://nodejs.org/api/process.html)
 - [nodejs.org/api/repl.html#repl_commands_and_special_keys](https://nodejs.org/api/repl.html#repl_commands_and_special_keys)

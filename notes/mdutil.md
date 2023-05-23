@@ -2,7 +2,7 @@
 tags: [macos]
 title: mdutil
 created: '2020-02-04T12:20:33.596Z'
-modified: '2021-10-01T11:42:20.013Z'
+modified: '2023-05-19T17:44:52.138Z'
 ---
 
 # mdutil
@@ -22,4 +22,5 @@ mdutil -E /               # erase and rebuild entire spotlight-index
 ## see also
 
 - [[mdfind]]
+- [[defaults]]
 - [[macos keyboard shortcuts]]

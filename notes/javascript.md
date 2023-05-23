@@ -2,7 +2,7 @@
 tags: [javascript]
 title: javascript
 created: '2019-08-19T12:09:44.017Z'
-modified: '2023-05-16T06:56:26.787Z'
+modified: '2023-05-19T12:50:44.148Z'
 ---
 
 # javascript
@@ -13,8 +13,8 @@ modified: '2023-05-16T06:56:26.787Z'
 
 |                |           |
 | ---            | ---       |
-| Node.js        | An open-source, cross-platform, JavaScript runtime built on Chrome's V8 JavaScript engine |
-| Deno           | secure runtime for [[JavaScript]] and [[TypeScript]] built on V8 engine, and designed to improve on Node.js |
+| [[node]].js    | open-source, cross-platform, JavaScript runtime built on Chrome's V8 JavaScript engine |
+| [[deno]]       | secure runtime for [[javascript]] and [[typescript]] built on V8 engine, and designed to improve on Node.js |
 | Rhino          | engine written in [[java]], which allows [[javascript]] to be run on jvm |
 | JerryScript    | engine used on devices with limited resources, such as microcontrollers |
 | SpiderMonkey   | engine used in Mozilla [[firefox]], [[js]] |

@@ -2,10 +2,12 @@
 tags: [Notebooks]
 title: wasm
 created: '2020-08-19T07:23:59.679Z'
-modified: '2023-03-23T10:11:30.764Z'
+modified: '2023-05-19T12:55:56.502Z'
 ---
 
 # wasm
+
+> webassembly
 
 > virtual instruction set architecture
 > binary instruction format for stack-based virtual machine
@@ -44,9 +46,8 @@ int sign(int x) { return (x % 2) * (2 - (x % 4)); }
 
 ## see also
 
+- [[deno]]
 - [[asm]]
-- [[rust]]
-- [[go]]
-- [[clang]]
+- [[rust]], [[go]], [[clang]]
 - [[emcc]]
 - [evilmartians.com/chronicles/hands-on-webassembly-try-the-basics](https://evilmartians.com/chronicles/hands-on-webassembly-try-the-basics)

@@ -1,8 +1,8 @@
 ---
-tags: [c, javascript]
+tags: [c, javascript, runtime]
 title: js
 created: '2023-05-13T11:31:48.624Z'
-modified: '2023-05-13T15:20:16.567Z'
+modified: '2023-05-23T06:55:42.141Z'
 ---
 
 # js
@@ -63,7 +63,7 @@ js> for (let prop in globalThis) {
 ## see also
 
 - [[javascript]]
-- [[node]]
+- [[node]], [[deno]], [[bun]]
 - [spidermonkey.dev/](https://spidermonkey.dev/)
 - [udn.realityripple.com/docs/Mozilla/Projects/SpiderMonkey/Introduction_to_the_JavaScript_shell](https://udn.realityripple.com/docs/Mozilla/Projects/SpiderMonkey/Introduction_to_the_JavaScript_shell)
 - [udn.realityripple.com/docs/Mozilla/Projects/SpiderMonkey/Hacking_Tips](https://udn.realityripple.com/docs/Mozilla/Projects/SpiderMonkey/Hacking_Tips)
