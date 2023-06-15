@@ -2,7 +2,7 @@
 tags: [container]
 title: kubectl
 created: '2019-07-30T06:19:49.145Z'
-modified: '2023-04-24T08:08:53.768Z'
+modified: '2023-05-25T15:52:23.863Z'
 ---
 
 # kubectl
@@ -354,18 +354,15 @@ kubectl access-matrix               # use plugin to see the level of access user
 
 ## see also
 
-- [kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [[kubernetes]], [[oc]]
 - [[helm]], [[kustomize]]
-- [[cmctl]]
-- [[nerdctl]]
+- [[cmctl]], [[nerdctl]]
 - [[bazel]]
-- [[kubectx]], [[kubens]]
-- [[kubeseal]]
-- [[kubeval]]
+- [[kubectx]], [[kubens]], [[kubeseal]], [[kubeval]]
 - [[kim]], [[opa]]
 - [[aws]], [[eksctl]], [[kops]]
 - [[minikube]], [[k3s]], [[k3d]], [[k0s]], [[k9s]]
 - [[yml]], [[jsonpath]], [[go-template]]
 - [[socat]]
+- [kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create](https://stackoverflow.com/questions/47369351/kubectl-apply-vs-kubectl-create)

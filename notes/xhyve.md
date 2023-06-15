@@ -2,14 +2,16 @@
 tags: [virtualization]
 title: xhyve
 created: '2020-03-13T13:21:40.521Z'
-modified: '2020-09-02T18:04:27.893Z'
+modified: '2023-05-30T13:01:50.567Z'
 ---
 
 # xhyve
 
 ## install
 
-`brew install --HEAD xhyve`
+```sh
+brew install --HEAD xhyve
+```
 
 ## usage
 

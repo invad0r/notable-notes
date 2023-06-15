@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: gitlab-backup
 created: '2020-01-03T14:20:17.882Z'
-modified: '2021-10-31T14:56:47.417Z'
+modified: '2023-05-24T08:43:18.804Z'
 ---
 
 # gitlab-backup

@@ -2,7 +2,7 @@
 tags: [macos]
 title: defaults
 created: '2019-07-30T06:19:49.183Z'
-modified: '2023-05-19T17:56:58.230Z'
+modified: '2023-06-02T06:21:34.519Z'
 ---
 
 # defaults
@@ -71,4 +71,4 @@ killall Dock
 - [[open]]
 - [[mdfind]]
 - [[macos keyboard shortcuts]]
-
+- [[system_profiler]]

@@ -2,7 +2,7 @@
 tags: [container]
 title: podman
 created: '2021-09-06T12:17:24.319Z'
-modified: '2023-05-16T16:02:05.392Z'
+modified: '2023-05-30T07:23:55.859Z'
 ---
 
 # podman
@@ -34,5 +34,6 @@ podman run -ti --rm IMAGE
 ## see also
 
 - [[docker]]
+- [[colima]]
 - [[skopeo]]
 - [[crc]]

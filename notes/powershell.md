@@ -1,12 +1,14 @@
 ---
+tags: [powershell]
 title: powershell
 created: '2019-07-30T06:19:49.207Z'
-modified: '2023-03-22T10:43:01.575Z'
+modified: '2023-05-24T08:44:46.566Z'
 ---
 
 # powershell
 
 ## usage
+
 ```sh
 echo $null >> script.bat    # equivalent to `touch script.bat`
 
@@ -34,13 +36,15 @@ Foo-Bar | Out-File docker.json -Append  #  write output to file
 ```
 
 ## cmdlets
+
 ```sh
 alias
 gal                     # alias: Get-Alias
 [ gci | dir | ls ]      # alias: Get-ChildItem
 ```
 
-command
+## command
+
 ```sh
 get-command
 gcm       # alias for get-command
@@ -84,6 +88,7 @@ Dir C:\Test*.txt -ex "sample.txt"
 ```
 
 ## vsphere
+
 ```sh
 docker run --rm --name powercli -it --volume $(pwd):/usr/scripts vmware/powerclicore
 
@@ -108,7 +113,9 @@ Get-VM -name * \
   |Select Name,@{N=’vNIC’;E={($_.ExtensionData.Config.Hardware.Device \
   | where{$_ -is [VMware.Vim.VirtualEthernetCard]}).Count}}
 ```
+
 ### Get full information about the VMs
+
 ```sh
 Get-VM -name * \
   | Select Name,@{N=’vDisk’;E={($_.ExtensionData.Config.Hardware.Device \
@@ -129,4 +136,5 @@ Get-VM log \
 
 Get-Datastore | Select Name,@{N=’CanonicalName’;E={$_.Extensiondata.Info.Vmfs.Extent[0].DiskName}}
 ```
+
 [day-to-day useful PowerCLi commands/scripts](https://arabitnetwork.com/2018/07/31/for-vmware-admins-day-to-day-useful-powercli-commands-scripts/amp/)

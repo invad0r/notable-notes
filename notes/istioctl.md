@@ -2,7 +2,7 @@
 tags: [container]
 title: istioctl
 created: '2023-04-24T08:21:24.730Z'
-modified: '2023-05-17T07:30:30.728Z'
+modified: '2023-05-23T08:16:33.750Z'
 ---
 
 # istioctl
@@ -24,6 +24,10 @@ curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.17.2 TARGET_ARCH=x86_64
 istioctl install --set profile=demo -y
 
 istioctl analyze
+
+istioctl dashboard envoy deployment/productpage-v1
+istioctl dash      envoy productpage-123-456.default
+istioctl d         envoy productpage-123-456.default
 ```
 
 ## see also

@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: macos keyboard shortcuts
 created: '2020-08-24T08:09:16.562Z'
-modified: '2023-05-19T17:46:40.399Z'
+modified: '2023-06-01T05:50:40.829Z'
 ---
 
 # macos keyboard shortcuts
@@ -70,3 +70,4 @@ modified: '2023-05-19T17:46:40.399Z'
 - [[mdutil]]
 - [[zbar]]
 - [[defaults]]
+- [[gource]]

@@ -1,7 +1,8 @@
 ---
+tags: [cloud, linux]
 title: redis-cli
 created: '2022-10-05T12:58:56.515Z'
-modified: '2023-03-22T10:46:27.511Z'
+modified: '2023-05-24T08:40:38.318Z'
 ---
 
 # redis-cli

@@ -1,7 +1,8 @@
 ---
+tags: [cloud, linux]
 title: varnishstat
 created: '2019-10-09T05:55:54.665Z'
-modified: '2023-03-22T11:02:49.852Z'
+modified: '2023-05-24T08:41:51.929Z'
 ---
 
 # varnishstat

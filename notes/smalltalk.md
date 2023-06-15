@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: smalltalk
 created: '2020-06-23T07:14:41.338Z'
-modified: '2020-06-23T07:18:03.158Z'
+modified: '2023-05-24T08:42:29.219Z'
 ---
 
 # smalltalk

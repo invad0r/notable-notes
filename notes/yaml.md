@@ -1,39 +1,48 @@
 ---
+tags: [Notebooks]
 title: yaml
 created: '2019-07-30T06:19:49.267Z'
-modified: '2021-10-29T12:31:23.951Z'
+modified: '2023-05-24T11:35:21.366Z'
 ---
 
 # yaml
 
-> yaml ain't markup langau - is a human friendly data serialization standard for all programming languages
+> `y`aml `a`in't `m`arkup `l`anguage - is a human friendly data serialization standard for all programming languages
 
 ## usage
 
 ```yml
---- # are used to signal the start of a document; serves to signal the start of a document if no directives are present.
+%YAML 1.2     # directive
+---           # separate directives from document content, also serves to signal start of doc if no directives are present
+foo: bar
+...           # indicate end of document without starting a new one, for use in communication channels
+```
 
+## collection types: maps / dictionaries
 
-# collection types: maps / dictionaries
+```yml
 val:
   sval: "bar"
   bval: true
-  
-# collection types: sequence / arrays
+```
+## collection types: sequence / arrays
+
+```yml
 val:
 - sval=bar
 - bval=true   # true is not evaluated at first !
+```
 
+# block scalars
 
-# Block Scalars
+```yml
+Block Style Indicator:
+- literal: `|`
+- float: `>`
 
-# Block Style Indicator
-# - literal: `|`
-# - float: `>`
-
-# Block Chomping Indicator
-# - strip: `-`
-# - keep: `+`
+Block Chomping Indicator:
+- strip: `-`
+- keep: `+`
 
 
 example: | \n   # Keep newlines (literal)
@@ -52,11 +61,10 @@ example: >3     # indendation indicator
 
 ## see also
 
-- [[yq]]
-- [yaml.org/spec/1.2](https://yaml.org/spec/1.2/spec.pdf)
-- [YAML Multiline Strings](https://yaml-multiline.info/)
+- [[json]]
+- [[yq]], [[jq]]
 - [[heredoc]]
-- [[python]]
-- [[ruby]]
-- [[docker-compose]]
-- [[kubectl]]
+- [[python]], [[ruby]], [[javascript]], [[go]]
+- [[kubectl]], [[docker-compose]]
+- [yaml.org/](https://yaml.org/)
+- [yaml-multiline.info](https://yaml-multiline.info/)

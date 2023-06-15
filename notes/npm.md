@@ -2,7 +2,7 @@
 tags: [javascript, packagemanager]
 title: npm
 created: '2019-07-30T06:19:49.182Z'
-modified: '2022-12-02T14:01:41.135Z'
+modified: '2023-05-23T07:55:34.842Z'
 ---
 
 # npm
@@ -103,7 +103,8 @@ npm --registry HOST/repository/npm-all/ install gulp-coffee
 
 ```sh
 npm ls PACKAGE_SPEC
-npm ls -g   
+npm ls -g
+npm list -g
 ```
 
 ## config - manage the npm configuration files

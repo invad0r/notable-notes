@@ -1,7 +1,8 @@
 ---
+tags: [javascript, node, Notebooks]
 title: nodejs event loop
 created: '2023-05-08T17:48:15.446Z'
-modified: '2023-05-08T17:55:26.540Z'
+modified: '2023-05-24T08:41:05.014Z'
 ---
 
 # nodejs event loop

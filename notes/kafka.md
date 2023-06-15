@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: kafka
 created: '2019-07-30T06:19:49.147Z'
-modified: '2023-05-05T07:05:02.268Z'
+modified: '2023-05-24T08:42:56.213Z'
 ---
 
 # kafka

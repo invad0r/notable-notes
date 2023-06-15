@@ -1,8 +1,8 @@
 ---
-tags: [javascript, runtime, zig]
+tags: [javascript, runtime, typescript, zig]
 title: bun
 created: '2023-05-23T06:55:46.191Z'
-modified: '2023-05-23T07:00:32.775Z'
+modified: '2023-05-24T08:46:01.758Z'
 ---
 
 # bun

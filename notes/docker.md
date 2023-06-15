@@ -2,7 +2,7 @@
 tags: [container]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2023-04-24T09:50:11.654Z'
+modified: '2023-05-30T08:54:22.935Z'
 ---
 
 # docker
@@ -15,6 +15,11 @@ modified: '2023-04-24T09:50:11.654Z'
 brew install bash-completion  # prerquesite
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
+
+curl -LO https://desktop.docker.com/mac/main/{arm64,amd64}/Docker.dmg
+hdiutil attach Docker.dmg
+/Volumes/Docker/Docker.app/Contents/MacOS/install
+hdiutil detach /Volumes/Docker
 ```
 
 ## env
@@ -102,6 +107,8 @@ docker network disconnect -f $network_name $container_name
 - [[brew]]
 - [[kubectl]]
 - [[docker-compose]]
+- [[minikube]]
+- [[hdiutil]], [[softwareupdate]]
 - [[go-template]]
 - [[12 factor app]]
 - [stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#](https://stackoverflow.com/questions/42364695/how-to-clear-docker-task-history#)

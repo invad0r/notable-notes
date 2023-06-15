@@ -2,7 +2,7 @@
 tags: [Notebooks]
 title: cap theorem
 created: '2021-12-26T14:43:50.251Z'
-modified: '2023-03-23T10:13:09.711Z'
+modified: '2023-05-24T14:42:19.842Z'
 ---
 
 # cap theorem
@@ -37,3 +37,8 @@ AP-DataBase: avail. + part. tol. -> cassandra, couchbase, (nosql eventual consis
 CP-DataBase: spanner, cockroach
 
 mvcc mutliversionconcurencycontrol
+
+## see also
+
+- [[erlang]], [[rabbitmqctl]]
+- [infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/)

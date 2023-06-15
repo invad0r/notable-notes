@@ -1,7 +1,8 @@
 ---
+tags: [linux, macos]
 title: uname
 created: '2023-05-15T13:04:32.582Z'
-modified: '2023-05-15T13:09:59.852Z'
+modified: '2023-05-24T08:38:59.420Z'
 ---
 
 # uname

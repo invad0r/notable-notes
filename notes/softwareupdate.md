@@ -2,7 +2,7 @@
 tags: [macos]
 title: softwareupdate
 created: '2021-09-30T06:53:42.930Z'
-modified: '2022-05-30T06:32:48.525Z'
+modified: '2023-05-30T08:51:48.799Z'
 ---
 
 # softwareupdate
@@ -32,9 +32,12 @@ modified: '2022-05-30T06:32:48.525Z'
 
 ```sh
 softwareupdate --all --install --force
+
+softwareupdate --install-rosetta            # install Rosetta 2 manually, used for docker-for-macos
 ```
 
 ## see also
 
 - [[xcode-select]]
 - [[brew]]
+- [[docker]]

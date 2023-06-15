@@ -2,7 +2,7 @@
 tags: [linux]
 title: sha256sum
 created: '2019-11-26T06:51:16.688Z'
-modified: '2022-03-31T08:08:03.347Z'
+modified: '2023-05-30T09:03:13.871Z'
 ---
 
 # sha256sum
@@ -39,3 +39,4 @@ sha256sum -c FILE FILE_linux_amd64.zip 2>&1 | grep OK    # reads checksums from 
 - [[openssl]]
 - [[md5sum]]
 - [[gpg]]
+- [[hdiutil]]

@@ -2,7 +2,7 @@
 tags: [linux, macos]
 title: git
 created: '2019-07-30T06:19:49.063Z'
-modified: '2023-05-15T14:59:03.256Z'
+modified: '2023-06-01T05:23:12.654Z'
 ---
 
 # git
@@ -496,6 +496,8 @@ git svn clone \
 - [[git-chglog]]
 - [[snv]]
 - [[fossil]]
+- [[gource]]
+- [ohshitgit.com/](https://ohshitgit.com/)
 - [git-scm.com/docs](https://git-scm.com/docs)
 - [gitlab.com/2016/12/08/git-tips-and-tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 - [stackoverflow.com/search-for-string-in-a-single-files-history](https://stackoverflow.com/a/10223136)

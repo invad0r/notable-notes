@@ -1,7 +1,8 @@
 ---
+tags: [zig]
 title: zig
 created: '2023-05-23T07:00:36.740Z'
-modified: '2023-05-23T07:02:08.636Z'
+modified: '2023-05-24T08:38:50.555Z'
 ---
 
 # zig

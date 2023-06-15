@@ -1,7 +1,8 @@
 ---
+tags: [markdown, Notebooks]
 title: markdown
 created: '2019-08-20T08:24:21.200Z'
-modified: '2023-05-13T11:47:01.152Z'
+modified: '2023-05-24T14:22:59.701Z'
 ---
 
 # markdown
@@ -69,3 +70,4 @@ modified: '2023-05-13T11:47:01.152Z'
 - [makeuseof.com/create-markdown-table/](https://www.makeuseof.com/tag/create-markdown-table/)
 - [[markdownlint]]
 - [[nerdfonts]]
+- [github.com/hackmdio/CodiMD](https://github.com/hackmdio/CodiMD)

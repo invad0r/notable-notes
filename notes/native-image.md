@@ -1,7 +1,8 @@
 ---
+tags: [cloud, container, java]
 title: native-image
 created: '2023-05-11T10:44:23.796Z'
-modified: '2023-05-11T11:03:08.873Z'
+modified: '2023-05-24T08:43:30.769Z'
 ---
 
 # native-image

@@ -1,7 +1,8 @@
 ---
+tags: [markdown, Notebooks]
 title: mermaid
 created: '2019-08-01T10:42:32.003Z'
-modified: '2023-03-23T10:10:51.754Z'
+modified: '2023-05-24T08:39:20.674Z'
 ---
 
 # mermaid

@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: gitlab-ctl
 created: '2019-12-30T14:01:10.332Z'
-modified: '2023-03-16T09:11:15.198Z'
+modified: '2023-05-24T08:43:18.777Z'
 ---
 
 # gitlab-ctl

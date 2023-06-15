@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: metaprogramming
 created: '2023-05-06T14:15:38.796Z'
-modified: '2023-05-10T10:17:28.706Z'
+modified: '2023-05-24T08:42:21.302Z'
 ---
 
 # metaprogramming

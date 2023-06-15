@@ -2,7 +2,7 @@
 tags: [javascript, json]
 title: json
 created: '2022-12-02T10:57:31.255Z'
-modified: '2023-03-22T10:45:27.350Z'
+modified: '2023-05-24T11:44:03.727Z'
 ---
 
 # json
@@ -37,7 +37,11 @@ curl -is HOST | json -H forks           # drop headers
 
 ## see also
 
-- [[jq]]
+- [[jq]], [[yq]]
 - [[npm]]
 - [[curl]]
+- [[yaml]]
 - [trentm.com/json/#EXAMPLES](http://trentm.com/json/#EXAMPLES)
+- [[javascript object notation]]
+- [json.org/json-en](https://www.json.org/json-en.html)
+- [infoq.com/presentations/Heretical-Open-Source/](https://www.infoq.com/presentations/Heretical-Open-Source/)

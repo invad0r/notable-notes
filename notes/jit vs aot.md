@@ -1,7 +1,8 @@
 ---
+tags: [Notebooks]
 title: jit vs aot
 created: '2023-05-11T06:49:21.963Z'
-modified: '2023-05-11T06:53:14.024Z'
+modified: '2023-05-24T08:38:39.285Z'
 ---
 
 # jit vs aot

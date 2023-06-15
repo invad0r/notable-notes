@@ -1,7 +1,8 @@
 ---
+tags: [javascript]
 title: coffeescript
 created: '2023-05-13T11:57:06.368Z'
-modified: '2023-05-13T12:32:44.711Z'
+modified: '2023-05-24T08:41:17.237Z'
 ---
 
 # coffeescript

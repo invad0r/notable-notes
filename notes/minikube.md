@@ -2,7 +2,7 @@
 tags: [container]
 title: minikube
 created: '2019-07-30T06:19:49.146Z'
-modified: '2023-04-24T08:21:12.511Z'
+modified: '2023-05-30T08:54:46.922Z'
 ---
 
 # minikube
@@ -50,6 +50,8 @@ minikube start --nodes 2 -p multinode-demo      # start multpile nodes
 minikube stop
 minikube delete                                 # clear local state
 
+minikube profile list                           # list profiles
+
 minikube status
 
 minikube dashboard
@@ -79,6 +81,6 @@ minikube addons enable ingress            # provisions: configMap, ingress-contr
 - [[kind]]
 - [[kubectl]]
 - [[kubernetes]]
-- [[docker-machine]]
+- [[docker]], [[docker-machine]]
 - [[istioctl]]
 - [minikube.sigs.k8s.io/docs/](https://minikube.sigs.k8s.io/docs/)

@@ -2,7 +2,7 @@
 tags: [macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2023-05-19T10:28:37.914Z'
+modified: '2023-05-23T08:33:22.832Z'
 ---
 
 # brew
@@ -75,6 +75,7 @@ brew install
   rmtrash
   mkcert
   bash-completion@2
+  stats # https://github.com/exelban/stats
 
 
 brew unlink PACKAGE       # switch between mutliple version of package

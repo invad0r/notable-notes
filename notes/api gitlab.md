@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: api gitlab
 created: '2023-03-11T10:08:17.544Z'
-modified: '2023-03-11T10:39:14.521Z'
+modified: '2023-05-24T08:44:54.814Z'
 ---
 
 # api gitlab

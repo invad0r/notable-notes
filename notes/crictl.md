@@ -2,7 +2,7 @@
 tags: [container]
 title: crictl
 created: '2021-05-27T09:57:46.096Z'
-modified: '2023-03-22T11:12:52.287Z'
+modified: '2023-05-30T07:25:29.582Z'
 ---
 
 # crictl
@@ -25,11 +25,10 @@ crictl inspect CONTAINER_ID
 
 ## see also
 
-- [github.com/cri-o/tutorials/crictl](https://github.com/cri-o/cri-o/blob/master/tutorials/crictl.md)
-- [[docker]]
+- [[docker]], [[podman]]
 - [[ctr]]
 - [[kubectl]]
 - [[skopeo]]
-- [[podman]]
 - [[buildah]]
 - [cri-o.io](https://cri-o.io/)
+- [github.com/cri-o/tutorials/crictl](https://github.com/cri-o/cri-o/blob/master/tutorials/crictl.md)

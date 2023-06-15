@@ -2,10 +2,44 @@
 tags: [Notebooks]
 title: quotes
 created: '2019-07-30T06:19:27.513Z'
-modified: '2023-04-25T11:23:56.769Z'
+modified: '2023-05-29T06:51:29.596Z'
 ---
 
 # quotes
+
+```
+As a programmer, never underestimate your ability to come up with ridiculously complex soluations for simple problems
+
+- Thomas Fuchs
+```
+
+```
+Get your data structures correct first, and the rest of the program will write itself.
+
+- Davice Jones
+```
+
+```
+Data dominates.
+If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident.
+
+Data structures, not algorithms, are central to programming.
+
+Rob Pike's 5. Rule of Programming
+```
+
+```
+"scalabilit" the #1 problem don't actually have but still solve.
+
+- Eberhard Wolff
+```
+
+```
+Duplication is better htna the wrong abstractions
+
+- RDC
+```
+
 
 ```
 do you wish me a good morning, or mean that it is a good morning wether I want it or not; 

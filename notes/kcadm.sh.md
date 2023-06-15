@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: kcadm.sh
 created: '2020-02-03T09:34:38.160Z'
-modified: '2023-05-05T06:56:43.570Z'
+modified: '2023-05-24T08:43:18.813Z'
 ---
 
 # kcadm.sh

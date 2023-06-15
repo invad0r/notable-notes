@@ -2,12 +2,17 @@
 tags: [javascript]
 title: javascript
 created: '2019-08-19T12:09:44.017Z'
-modified: '2023-05-19T12:50:44.148Z'
+modified: '2023-05-23T16:49:55.443Z'
 ---
 
 # javascript
 
 > interpreted, or jit-compiled programming language with first-class functions
+
+> has more in common with functional languages like [[lisp]] or [[scheme]] than with [[c]] or [[java]]. 
+> It has arrays instead of lists and objects instead of property lists. 
+> Functions are first class. It has closures. You get lambdas without having to balance all those parens.
+> [crockford.com/javascript/javascript](https://crockford.com/javascript/javascript.html)
 
 ## runtimes
 
@@ -50,7 +55,7 @@ modified: '2023-05-19T12:50:44.148Z'
 
 ## install
 
-[[node]], [[js]]
+[[node]], [[js]], [[deno]], [[bun]]
 
 ## datatypes
 
@@ -75,10 +80,96 @@ console.log(items);                     // [ 1, 5 ]
 console.log(slice);                     // [ 2, 3, 4 ]
 ```
 
+## object patterns
+
+> `private` and `privileged` members can only be made when an object is constructed. Public members can be added at any time.
+
+```js
+function Container(param) {
+    // var dec = function dec(...) {...};
+    // shorthand:
+    function dec() {                          // private method
+        if (secret > 0) {
+            secret -= 1;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    this.member = param;                      // public
+    var secret = 3;                           // private
+    var that = this;                          // private, convention used to make the object available to private methods
+
+    this.service = function () {              // protected method
+        return dec() ? that.member : null;    // 3 calls allowed
+    };
+}
+
+Container.prototype.memberName = value;       // public
+
+c = new Container("foo");
+```
+
+[crockford.com/javascript/private](https://crockford.com/javascript/private.html)
+
+## implement "react hooks"
+
+```js
+function useState(initVal) {
+  _val = initVal;
+  const state = () => _val; // add `() =>` turns it into setter function
+  const setState = newVal => {
+    _val = newVal;
+  }
+  return [state, setState]
+}
+
+const [count, setCount] = useState(1)
+console.log(count())
+setCount(2)
+console.log(count())
+```
+
+[react.dev/reference/react](https://react.dev/reference/react)
+[Can Swyx recreate React Hooks and useState in under 30 min? - JSConf.Asia](https://www.youtube.com/watch?v=KJP1E-Y-xyo)
+
+## closure
+
+```js
+function getAdd() {
+  let foo = 1;
+  return function() { // anonymous function which is the closure, "encloses" foo value
+    foo = foo + 1;
+    return foo;
+  }
+}
+const add = getAdd();
+
+/*
+ * "module pattern" / "IIFE" (=immediately-invoked function expression)
+ */
+const add = (getAdd() {
+  let foo = 1;
+  return function() { // anonymous function which is the closure, "encloses" foo value
+    foo = foo + 1;
+    return foo;
+  }
+})();
+
+// change internal state
+console.log(add());
+console.log(add());
+// foo = 23  // can't change internal val foo !
+console.log(add());
+console.log(add());
+```
+
 ## see also
 
-- [[js]], [[node]], [[nvm]]
+- [[nvm]]
 - [[tsc]], [[coffee]]
 - [[mongo]]
 - [[go]], [[rust]], [[java]]
 - [developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+

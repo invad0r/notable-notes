@@ -1,8 +1,8 @@
 ---
-tags: [javascript, runtime, rust]
+tags: [javascript, runtime, rust, typescript]
 title: deno
 created: '2023-05-19T12:51:29.466Z'
-modified: '2023-05-19T13:13:25.759Z'
+modified: '2023-05-24T08:45:57.081Z'
 ---
 
 # deno

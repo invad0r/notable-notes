@@ -1,7 +1,8 @@
 ---
+tags: [cloud]
 title: promtool
 created: '2019-07-30T06:19:49.218Z'
-modified: '2023-03-27T05:50:19.429Z'
+modified: '2023-05-24T08:42:35.056Z'
 ---
 
 # promtool

@@ -2,7 +2,7 @@
 tags: [erlang]
 title: rabbitmqctl
 created: '2019-07-30T06:19:49.223Z'
-modified: '2022-11-23T11:11:35.063Z'
+modified: '2023-05-24T14:42:06.126Z'
 ---
 
 # rabbitmqctl
@@ -23,5 +23,6 @@ rabbitmqctl eval 'application:get_all_env(kernel).'
 
 ## see also
 
+- [[erlang]]
 - [[aws]] `sns`/`sqs`
 - [[kafka]]

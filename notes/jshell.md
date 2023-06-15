@@ -1,7 +1,8 @@
 ---
+tags: [java, repl]
 title: jshell
 created: '2023-05-15T07:28:53.482Z'
-modified: '2023-05-15T07:37:24.146Z'
+modified: '2023-05-24T08:42:49.265Z'
 ---
 
 # jshell

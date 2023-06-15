@@ -1,7 +1,8 @@
 ---
+tags: [javascript, typescript]
 title: typescript
 created: '2023-05-13T11:54:07.859Z'
-modified: '2023-05-13T11:56:35.361Z'
+modified: '2023-05-24T08:39:35.384Z'
 ---
 
 # typescript
