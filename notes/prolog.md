@@ -1,7 +1,8 @@
 ---
+tags: [runtime]
 title: prolog
 created: '2023-05-25T11:31:02.833Z'
-modified: '2023-05-25T11:34:32.276Z'
+modified: '2023-07-19T11:19:55.188Z'
 ---
 
 # prolog

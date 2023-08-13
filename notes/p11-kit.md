@@ -2,7 +2,7 @@
 tags: [crypto]
 title: p11-kit
 created: '2020-03-09T12:25:18.791Z'
-modified: '2023-03-24T08:19:14.058Z'
+modified: '2023-07-11T11:40:42.664Z'
 ---
 
 # p11-kit
@@ -22,3 +22,4 @@ trust extract --format=x509-directory --filter=ca-anchors /path/to/dir    # extr
 
 - [[keytool]]
 - [[openssl]]
+- [[mkcert]]

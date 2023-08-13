@@ -2,7 +2,7 @@
 tags: [container, linux, macos, virtualization]
 title: colima
 created: '2023-05-30T07:23:59.486Z'
-modified: '2023-05-30T07:42:57.492Z'
+modified: '2023-06-15T06:55:58.973Z'
 ---
 
 # colima
@@ -39,7 +39,7 @@ colima ssh                # SSH into the VM
 colima ssh-config         # show SSH connection config
 
 colima start              # start Colima
-colima start --arch x86_64 --memory 4
+colima start --arch x86_64 --cpu 4 --memory 16
 
 colima status             # show the status of Colima
 colima stop               # stop Colima

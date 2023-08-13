@@ -2,7 +2,7 @@
 tags: [container]
 title: docker
 created: '2019-07-30T06:19:49.045Z'
-modified: '2023-05-30T08:54:22.935Z'
+modified: '2023-07-04T11:18:52.809Z'
 ---
 
 # docker
@@ -12,6 +12,9 @@ modified: '2023-05-30T08:54:22.935Z'
 ## install
 
 ```sh
+brew install docker docker-compose
+
+# when using the .dmg
 brew install bash-completion  # prerquesite
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d/docker-compose
@@ -108,6 +111,7 @@ docker network disconnect -f $network_name $container_name
 - [[kubectl]]
 - [[docker-compose]]
 - [[minikube]]
+- [[cosign]]
 - [[hdiutil]], [[softwareupdate]]
 - [[go-template]]
 - [[12 factor app]]

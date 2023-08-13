@@ -2,7 +2,7 @@
 tags: [crypto, linux, network]
 title: openssl
 created: '2019-07-30T06:19:49.183Z'
-modified: '2023-03-24T08:19:14.051Z'
+modified: '2023-07-12T08:13:51.407Z'
 ---
 
 # openssl
@@ -48,9 +48,13 @@ openssl rsa -aes256 -in private_key_noenc.key -out private_key_enc.key
 openssl rsa  -noout -modulus -in example.key | openssl sha256
 openssl x509 -noout -modulus -in example.crt | openssl sha256
 openssl req  -noout -modulus -in example.csr | openssl sha256
+```
 
+## req - pkcs10 x509 
 
-# req - pkcs10 x509 - certificate Signing Request (csr) management
+> certificate Signing Request (csr) management
+
+```sh
 # generate a self-signed certificate and key
 openssl req -x509 -nodes -days 365 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem
 openssl req -x509 -nodes -days 365         -newkey rsa:2048 -keyout key.pem -out cert.pem
@@ -67,25 +71,25 @@ openssl req -x509 -newkey rsa:2048 -keyout local.key -out local.crt -days 90 \
 # -newkey rsa:bits   generate a new RSA key of 'bits' in size
 # -newkey dsa:file   generate a new DSA key, parameters taken from CA in 'file'
 # -newkey ec:file    generate a new EC  key, parameters taken from CA in 'file'
+```
 
+## read csr
 
-# read csr
+```sh
 openssl req -noout -text -in int-ca_intermediate.csr
 
 openssl req -in mycsr.csr -noout -text
+```
 
+## x509 certificate data management
 
-# x509 certificate data management
+```sh
 openssl x509 -in somecert{.crt,.pem} -text -noout             # certificate-information from file
 
 openssl x509 -inform der -in aps.cer -noout -text
-
-openssl x509 -in git.domain.net.crt -noout -subject
-
-openssl x509 -in git.domain.net.crt -noout -dates
-
-openssl x509 -in git.domain.net.crt -noout -fingerprint
-
+openssl x509 -in FILE.cert -noout -subject
+openssl x509 -in FILE.cert -noout -dates
+openssl x509 -in FILE.cert -noout -fingerprint
 ```
 
 ## pkcs12
@@ -215,6 +219,8 @@ openssl rand -base64 32      # generate random numner
 ## see also
 
 - [[gpg]]
+- [[certutil]]
+- [[mkcert]]
 - [[keytool]]
 - [[p11-kit]]
 - [[keybase]]

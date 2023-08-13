@@ -2,7 +2,7 @@
 tags: [container]
 title: crane
 created: '2021-10-19T11:44:42.215Z'
-modified: '2023-03-15T09:49:47.974Z'
+modified: '2023-07-04T11:27:50.870Z'
 ---
 
 # crane
@@ -49,6 +49,7 @@ crane digest IMAGE
 
 - [[skopeo]]
 - [[coreutils]]
+- [[cosign]]
 - [[jq]]
 - [github.com/google/go-containerregistry/crane/README.md](https://github.com/google/go-containerregistry/blob/main/cmd/crane/README.md)
 - [github.com/google/go-containerregistry/crane/recipes.md](https://github.com/google/go-containerregistry/blob/main/cmd/crane/recipes.md)

@@ -2,7 +2,7 @@
 tags: [macos, packagemanager]
 title: brew
 created: '2019-07-30T06:19:49.028Z'
-modified: '2023-05-23T08:33:22.832Z'
+modified: '2023-06-19T07:10:18.111Z'
 ---
 
 # brew
@@ -77,6 +77,8 @@ brew install
   bash-completion@2
   stats # https://github.com/exelban/stats
 
+
+brew install --cask qlvideo
 
 brew unlink PACKAGE       # switch between mutliple version of package
 brew link PACKAGE@10

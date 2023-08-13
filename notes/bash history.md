@@ -2,14 +2,14 @@
 tags: [shell/bash/builtin]
 title: bash history
 created: '2019-08-02T06:42:37.603Z'
-modified: '2023-04-21T12:21:46.970Z'
+modified: '2023-06-28T08:37:31.485Z'
 ---
 
 # bash history
 
 > display or manipulate the history list
 
-## environment variables
+## environment
 
 ```sh
 man bash                      # get available env vars

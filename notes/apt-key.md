@@ -2,12 +2,12 @@
 tags: [linux]
 title: apt-key
 created: '2022-02-02T08:54:23.749Z'
-modified: '2023-03-22T09:16:47.409Z'
+modified: '2023-07-19T11:17:06.469Z'
 ---
 
 # apt-key
 
-> used to manage the list of keys used by apt to authenticate packages
+> manage list of keys used by apt to authenticate packages
 
 `apt-key` supports only the binary `openPGP` format (`"GPG key public ring"`) in files with the [[gpg]] extension
 

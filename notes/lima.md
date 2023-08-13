@@ -1,7 +1,8 @@
 ---
+tags: [container, linux, macos, virtualization]
 title: lima
 created: '2023-05-30T07:38:10.191Z'
-modified: '2023-05-31T07:43:03.406Z'
+modified: '2023-06-15T06:12:51.762Z'
 ---
 
 # lima

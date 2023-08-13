@@ -2,7 +2,7 @@
 tags: [crypto]
 title: gpg
 created: '2019-07-30T06:19:49.076Z'
-modified: '2023-03-24T08:19:13.995Z'
+modified: '2023-07-31T07:43:06.086Z'
 ---
 
 # gpg
@@ -19,9 +19,22 @@ modified: '2023-03-24T08:19:13.995Z'
 ```sh
 brew install gpg      # version 1: for embedded and server usage, as it brings less dependencies and smaller binaries
 brew install gpg2     # version 2: targeted to desktop; requires several other modules to be installed
-apt  install gpg2
+apt-get install gpg2
 ```
 
+## environment
+
+```sh
+HOME                      # to locate the default home directory
+GNUPGHOME                 # If set directory used instead of "~/.gnupg"
+GPG_AGENT_INFO            # is obsolete; it was used by GnuPG versions before 2.1
+PINENTRY_USER_DATA        # is passed via gpg-agent to pinentry. It is useful to convey extra information to a custom pinentry
+COLUMNS
+LINES                     # to size some displays to the full size of the screen
+LANGUAGE
+GNUPG_BUILD_ROOT          # used by regression test suite as a helper under operating systems without proper support
+GNUPG_EXEC_DEBUG_FLAGS    # allows to enable diagnostics for process management. Bit 0 enables general diagnostics
+```
 
 ## option
 
@@ -110,13 +123,51 @@ rsa       # Rivest Shamir and Adleman (encryption/decrypt)
 .asc      # ASCII-armored
 ```
 
-## usage
+## info
 
 ```sh
 gpg --version
 gpg --help
 gpg --dump-options            # print a list of all available options and commands
+```
 
+```sh
+gpg -a --export "KEY ID" | gpg --list-packets --verbose
+```
+
+[davesteele.github.io//anatomy-of-a-gpg-key/](https://davesteele.github.io/gpg/2014/09/20/anatomy-of-a-gpg-key/)
+
+## generate keypair
+
+```sh
+gpg --generate-key
+gpg --gen-key
+
+gpg --quick-generate-key
+gpg --quick-gen-key
+
+gpg --full-generate-key
+gpg --full-gen-key
+
+cat <<EOF >genkey.txt
+Key-Type: 1
+Key-Length: 4096
+Subkey-Type: 1
+Subkey-Length: 4096
+Name-Real: FOOBAR
+Name-Email: foo@bar.com
+Expire-Date: 0
+Passphrase: "somepassphrase"
+EOF
+
+gpg --gen-key --batch genkey.txt
+
+gpg --batch --passphrase '' --quick-gen-key USER_ID default default
+```
+
+## usage
+
+```sh
 gpg -k --with-colons          # outputs colon seperated fields for parsing with `awk`
 gpg -k --with-colons KEY_ID | awk -F: '/^pub:/ { print $5 }'
 
@@ -176,7 +227,7 @@ gpg --verify FILE_SHA256SUMS.sig FILE_SHA256SUMS                    # verify fil
 - [[gpgconf]]
 - [[keybase]]
 - [[openssl]]
-- [[gpg-agent]]
+- [[gpg-connect-agent]]
 - [[sha256sum]]
 - [[nc]]
 - [keys.openpgp.org/about/usage](https://keys.openpgp.org/about/usage)

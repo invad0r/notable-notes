@@ -2,7 +2,7 @@
 tags: [shell/bash/builtin]
 title: bash kill
 created: '2019-08-02T06:42:37.606Z'
-modified: '2022-04-27T14:29:12.970Z'
+modified: '2023-06-28T08:27:34.830Z'
 ---
 
 # bash kill
@@ -16,7 +16,7 @@ modified: '2022-04-27T14:29:12.970Z'
 - send processes-identified by PID or JOBSPEC the signal named by SIGSPEC or SIGNUM
 - if neither SIGSPEC nor SIGNUM is present, then SIGTERM is assumed
 
-## usage
+## option
 
 ```sh
 -s SIG    # SIG is a signal name
@@ -24,6 +24,8 @@ modified: '2022-04-27T14:29:12.970Z'
 -l        # list the signal names; if arguments follow `-l' they are assumed to be signal numbers for which names should be listed
 -L        # synonym for -l
 ```
+
+## usage
 
 ```sh
 kill -l             # list signals

@@ -2,7 +2,7 @@
 tags: [iac]
 title: vault
 created: '2019-09-26T05:56:37.432Z'
-modified: '2023-03-24T08:24:12.546Z'
+modified: '2023-07-04T11:25:41.630Z'
 ---
 
 # vault
@@ -64,3 +64,5 @@ vault write transit/path/decrypt/foo ciphertext=vault:v1:3kd1XR2w1lk..8KIWy2VVBA
 - [[tee]]
 - [[jq]]
 - [[bash process substitution]]
+- [[cosign]]
+

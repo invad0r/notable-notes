@@ -2,7 +2,7 @@
 tags: [crypto, ssh]
 title: ssh-add
 created: '2019-07-30T06:19:49.243Z'
-modified: '2023-03-25T12:07:04.576Z'
+modified: '2023-07-19T11:16:41.316Z'
 ---
 
 # ssh-add
@@ -28,4 +28,5 @@ eval "$(ssh-agent -s)"        # add-ssh-key-to-agent
 ## see also
 
 - [[ssh]]
+- [[keychain]]
 - [[bash eval]]

@@ -2,14 +2,14 @@
 tags: [shell/bash]
 title: bash declare
 created: '2019-07-30T06:19:48.996Z'
-modified: '2022-02-10T09:13:33.034Z'
+modified: '2023-06-28T08:27:14.740Z'
 ---
 
 # bash declare
 
 > set variable values and attributes
 
-## usage
+## option
 
 ```sh
 # print all values of one type
@@ -27,6 +27,8 @@ modified: '2022-02-10T09:13:33.034Z'
 -r          # makes the variables read-only
 -x          # marks the variables for export via the environment
 ```
+
+## usage
 
 ```sh
 declare -r foo=bar        # readonly
