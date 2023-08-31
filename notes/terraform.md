@@ -2,7 +2,7 @@
 tags: [iac]
 title: terraform
 created: '2019-07-30T06:19:49.078Z'
-modified: '2023-08-13T08:07:07.923Z'
+modified: '2023-08-31T08:07:55.146Z'
 ---
 
 # terraform
@@ -198,4 +198,3 @@ resource "null_resource" "provision_certs" {
 - [terraform.io/docs/configuration/resources](https://www.terraform.io/docs/configuration/resources.html#syntax)
 - [terraform.io/docs/commands/environment-variables](https://www.terraform.io/docs/commands/environment-variables.html)
 - [terraform.io/docs/cli/commands/state/mv](https://www.terraform.io/docs/cli/commands/state/mv.html)
-
